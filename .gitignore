@@ -1,0 +1,32 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temporários
+.temp/
+temp/
+
+# Node (se usar alguma ferramenta com node)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+
+# Arquivos sensíveis (não incluir no público)
+.env
+.env.local
+secrets.json
