@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-RegulatedAuthorization-br-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>invalid</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[0].constraint[5]</td><td>Erro na restrição 'reg-br-001' com a expressão 'identifier.where(system = 'http://anvisa.gov.br/medicamentos/registro').value.matches('^1\.[0-9]{4}\.[0-9]{4}\.[0-9]{3}-[0-9]{1}$')': Error @1, 132: Unknown FHIRPath character escape \.</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[15]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[24]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[33]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[40].fixed.ofType(CodeableConcept).coding[0].system</td><td>Não foi possível encontrar uma definição para o CodeSystem 'urn:iso:std:iso:3166', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[40]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.differential.element[4]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.differential.element[7]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.differential.element[10]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.differential.element[14].fixed.ofType(CodeableConcept).coding[0].system</td><td>Não foi possível encontrar uma definição para o CodeSystem 'urn:iso:std:iso:3166', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.differential.element[14]</td><td>A restrição falhou: eld-24: 'pattern[x] should be used rather than fixed[x]' (definido em http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</td><td></td></tr>
+<tr><td>warning</td><td>business-rule</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[0].constraint[8]</td><td>reg-br-004: O lado esquerdo é inerentemente uma coleção, pelo que a expressão 'region.coding.code = 'BR'' pode falhar ou devolver falso se houver mais do que um item no conteúdo que está a ser avaliado</td><td></td></tr>
+<tr><td>warning</td><td>exception</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.snapshot.element[40].fixed.ofType(CodeableConcept)</td><td>Para o tipo complexo CodeableConcept, considere a possibilidade de utilizar um padrão em vez de um valor fixo para evitar restringir demasiado a instância</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition</td><td>Validar recurso em relação ao perfil http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0</td><td></td></tr>
+<tr><td>information</td><td>business-rule</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.extension[0].value.ofType(code)</td><td>Referência ao projeto CodeSystem http://hl7.org/fhir/standards-status|1.0.0</td><td></td></tr>
+<tr><td>information</td><td>business-rule</td><td>StructureDefinition/RegulatedAuthorization-br: StructureDefinition.jurisdiction[0]</td><td>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</td><td></td></tr>
+</table>
+</body>
+</html>

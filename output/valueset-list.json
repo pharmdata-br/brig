@@ -1,0 +1,757 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-dose-form-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdministrableDoseFormBR",
+      "title" : "Formas Farmacêuticas Administráveis - Brasil",
+      "description" : "Formas farmacêuticas na apresentação final, prontas para administração ao paciente",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-property-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdministrablePropertyBR",
+      "title" : "Propriedades Administráveis - Brasil",
+      "description" : "Tipos de propriedades específicas para produtos administráveis",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-unit-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdministrableUnitBR",
+      "title" : "Unidades Administráveis - Brasil",
+      "description" : "Unidades que descrevem a apresentação final administrável",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdverseEffectBRValueSet",
+      "title" : "Efeitos Adversos - Brasil",
+      "description" : "ValueSet de efeitos adversos comuns no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-frequency-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdverseEffectFrequencyBRValueSet",
+      "title" : "Frequência de Efeitos Adversos - Brasil",
+      "description" : "ValueSet de classificação de frequência de efeitos adversos conforme padrão brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ANVISACategoryBR",
+      "title" : "Categorias ANVISA - Brasil",
+      "description" : "Categorias de produtos medicinais conforme classificação da ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-category-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-regulatory-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ANVISARegulatoryStatusBR",
+      "title" : "Status Regulatório ANVISA - Brasil",
+      "description" : "Status regulatório de substâncias junto à ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-regulatory-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-government-systems",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "BrazilianGovernmentSystems",
+      "title" : "Sistemas Oficiais do Governo Brasileiro",
+      "description" : "Sistemas de identificação oficiais do governo brasileiro utilizados no BRIG",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-government-systems"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-pharmaceutical-terminology",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "BrazilianPharmaceuticalTerminology",
+      "title" : "Terminologia Farmacêutica Brasileira",
+      "description" : "Terminologia padronizada para uso farmacêutico no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/change-severity-level",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ChangeSeverityLevel",
+      "title" : "Níveis de Severidade de Mudança",
+      "description" : "Níveis de severidade para classificação de mudanças em identificadores",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/change-severity-level"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ClinicalUseCategoryBRValueSet",
+      "title" : "Categorias de Uso Clínico - Brasil",
+      "description" : "ValueSet de categorias específicas brasileiras para uso clínico incluindo programas governamentais.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ClinicalUseStatusBRValueSet",
+      "title" : "Status de Uso Clínico - Brasil",
+      "description" : "ValueSet dos status das definições de uso clínico para o contexto brasileiro.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ClinicalUseTypeBRValueSet",
+      "title" : "Tipos de Uso Clínico - Brasil",
+      "description" : "ValueSet dos tipos de definição de uso clínico para o contexto brasileiro.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/comorbidity-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ComorbidityBRValueSet",
+      "title" : "Comorbidades - Brasil",
+      "description" : "ValueSet de comorbidades relevantes para indicações e contraindicações no contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/concentration-unit-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ConcentrationUnitBR",
+      "title" : "Unidades de Concentração - Brasil",
+      "description" : "Unidades utilizadas para expressar concentrações de ingredientes",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br",
+        "http://unitsofmeasure.org"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/container-materials-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ContainerMaterialsBR",
+      "title" : "Materiais de Container - Brasil",
+      "description" : "Materiais padronizados para containers de embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/container-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ContainerTypeBR",
+      "title" : "Tipos de Container - Brasil",
+      "description" : "Tipos de containers padronizados para embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/contraindication-condition-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ContraindicationConditionBRValueSet",
+      "title" : "Condições de Contraindicação - Brasil",
+      "description" : "ValueSet de condições médicas que constituem contraindicações no contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/controlled-substance-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ControlledSubstanceCategoryBR",
+      "title" : "Categorias de Substâncias Controladas - Brasil",
+      "description" : "Categorias de controle de substâncias conforme Portaria SVS/MS n° 344/1998",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/controlled-substance-category-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/dcb-brasileiras",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "DCBBrasileiras",
+      "title" : "Denominações Comuns Brasileiras (DCB)",
+      "description" : "Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/exemplo-valueset-brasileiro",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ExemploValueSetBrasileiro",
+      "title" : "Exemplo de ValueSet Brasileiro",
+      "description" : "ValueSet de exemplo com terminologia farmacêutica brasileira padronizada conforme contexto regulatório nacional",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-brasileiro"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/gmp-certification-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "GMPCertificationStatusBR",
+      "title" : "Status de Certificação GMP - Brasil",
+      "description" : "Status de certificação de Boas Práticas de Fabricação",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gmp-certification-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-change-reason",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IdentifierChangeReason",
+      "title" : "Motivos de Mudança de Identificador",
+      "description" : "Motivos padronizados para mudanças que requerem novos identificadores MPID/PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-lifecycle-status",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IdentifierLifecycleStatus",
+      "title" : "Status de Lifecycle do Identificador",
+      "description" : "Status do ciclo de vida de identificadores MPID/PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-function-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IngredientFunctionBR",
+      "title" : "Funções de Ingredientes - Brasil",
+      "description" : "Funções específicas detalhadas de ingredientes em medicamentos",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-role-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IngredientRoleBR",
+      "title" : "Papéis de Ingredientes - Brasil",
+      "description" : "Papéis/funções de ingredientes em medicamentos conforme padrões brasileiros",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-role-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-effect-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "InteractionEffectBRValueSet",
+      "title" : "Efeitos de Interação - Brasil",
+      "description" : "ValueSet dos efeitos clínicos de interações medicamentosas no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-substance-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "InteractionSubstanceBRValueSet",
+      "title" : "Substâncias para Interação - Brasil",
+      "description" : "ValueSet de substâncias comuns que causam interações medicamentosas no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "InteractionTypeBRValueSet",
+      "title" : "Tipos de Interação - Brasil",
+      "description" : "ValueSet dos tipos de interação medicamentosa para o contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-basis-anvisa-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "LegalBasisANVISABR",
+      "title" : "Base Legal ANVISA Brasil",
+      "description" : "Conjunto de valores para bases legais ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-status-supply-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "LegalStatusSupplyBR",
+      "title" : "Status Legal de Fornecimento - Brasil",
+      "description" : "Status legal para dispensação de produtos medicinais no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/marketing-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MarketingStatusBR",
+      "title" : "Status de Comercialização - Brasil",
+      "description" : "Status de comercialização de produtos medicinais no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/medicinal-product-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MedicinalProductTypeBR",
+      "title" : "Tipos de Produto Medicinal - Brasil",
+      "description" : "Tipos de produtos medicinais conforme classificação brasileira/ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-defining-elements",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MPIDDefiningElements",
+      "title" : "Elementos Definidores de MPID",
+      "description" : "Elementos que, quando alterados, requerem geração de novo MPID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-requiring-changes",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MPIDRequiringChanges",
+      "title" : "Mudanças que Requerem Novo MPID",
+      "description" : "Tipos de mudanças que requerem geração de novo MPID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-values-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MPIDValues",
+      "title" : "Valores MPID - Brasil",
+      "description" : "Valores válidos para identificadores MPID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-anvisa-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationANVISAStatusBR",
+      "title" : "Status ANVISA da Organização - Brasil",
+      "description" : "Status da organização junto à ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-anvisa-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-contact-purpose-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationContactPurposeBR",
+      "title" : "Finalidades de Contato Organizacional - Brasil",
+      "description" : "Finalidades específicas de contatos organizacionais no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationOperationalCategoryBR",
+      "title" : "Categorias Operacionais de Organização - Brasil",
+      "description" : "Categorias operacionais de organizações no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-category-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-scope-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationOperationalScopeBR",
+      "title" : "Escopo Operacional de Organização - Brasil",
+      "description" : "Escopo geográfico de operação de organizações",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-size-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationSizeCategoryBR",
+      "title" : "Categorias de Porte de Organização - Brasil",
+      "description" : "Categorias de porte de organizações conforme legislação brasileira",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-size-category-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-special-classification-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationSpecialClassificationBR",
+      "title" : "Classificações Especiais de Organização - Brasil",
+      "description" : "Classificações especiais de organizações conforme legislação brasileira",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-specialized-activities-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationSpecializedActivitiesBR",
+      "title" : "Atividades Especializadas de Organização - Brasil",
+      "description" : "Atividades especializadas realizadas por organizações",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-specialized-activities-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-type-anvisa-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationTypeANVISABR",
+      "title" : "Tipos de Organização ANVISA - Brasil",
+      "description" : "Tipos de organizações no contexto regulatório da ANVISA baseado em classificações oficiais brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-type-anvisa-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/package-characteristic-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackageCharacteristicBR",
+      "title" : "Características de Embalagem - Brasil",
+      "description" : "Características especiais de embalagens farmacêuticas no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/package-components-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackageComponentsBR",
+      "title" : "Componentes de Embalagem - Brasil",
+      "description" : "Componentes padronizados para embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-components-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaged-product-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackagedProductTypeBR",
+      "title" : "Tipos de Produto Embalado - Brasil",
+      "description" : "Tipos de produtos embalados utilizados no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-material-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackagingMaterialBR",
+      "title" : "Materiais de Embalagem - Brasil",
+      "description" : "Materiais utilizados em embalagens farmacêuticas no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackagingTypeBR",
+      "title" : "Tipos de Embalagem - Brasil",
+      "description" : "Tipos de embalagem utilizados para produtos farmacêuticos no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-requiring-changes",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PCIDRequiringChanges",
+      "title" : "Mudanças que Requerem Novo PCID",
+      "description" : "Tipos de mudanças que requerem geração de novo PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-values-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PCIDValues",
+      "title" : "Valores PCID - Brasil",
+      "description" : "Valores válidos para identificadores PCID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/phpid-values-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PHPIDValues",
+      "title" : "Valores PHPID - Brasil",
+      "description" : "Valores válidos para identificadores PHPID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/phpid-br"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/presentation-unit-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PresentationUnitBR",
+      "title" : "Unidades de Apresentação - Brasil",
+      "description" : "Unidades utilizadas para expressar apresentações de produtos",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/product-name-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ProductNameTypeBR",
+      "title" : "Tipos de Nome de Produto - Brasil",
+      "description" : "Tipos de nomes para produtos medicinais no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/reference-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ReferenceTypeBR",
+      "title" : "Tipos de Referência - Brasil",
+      "description" : "Tipos de relação de referência entre produtos medicinais",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/reference-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationStatusBR",
+      "title" : "Status de Autorização Regulatória Brasil",
+      "description" : "Conjunto de valores para status de autorizações regulatórias ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationTypeBR",
+      "title" : "Tipo de Autorização Regulatória Brasil",
+      "description" : "Conjunto de valores para tipos de autorizações regulatórias ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulatory-procedure-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RegulatoryProcedureTypeBR",
+      "title" : "Tipo de Procedimento Regulatório Brasil",
+      "description" : "Conjunto de valores para tipos de procedimentos regulatórios",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/route-administration-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RouteAdministrationBR",
+      "title" : "Vias de Administração - Brasil",
+      "description" : "Vias de administração de medicamentos conforme padrões brasileiros",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/route-administration-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/structured-name-types",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "StructuredNameTypes",
+      "title" : "Tipos de Nome Estruturado",
+      "description" : "Tipos de elementos estruturados que podem compor um nome de produto",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/structured-name-types"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceClassificationBR",
+      "title" : "Classificação de Substância - Brasil",
+      "description" : "Classificação de substâncias no contexto brasileiro/ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-gsrs-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceClassificationGSRSBR",
+      "title" : "Classificação de Substância GSRS/Brasil",
+      "description" : "Conjunto de valores para classificação de substâncias GSRS e brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-code-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceCodeBR",
+      "title" : "Códigos de Substância - Brasil",
+      "description" : "Códigos padronizados para substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code",
+        "http://www.whocc.no/atc",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-grade-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceGradeBR",
+      "title" : "Grau de Substância - Brasil",
+      "description" : "Graus ou qualidades de substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-name-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceNameTypeBR",
+      "title" : "Tipos de Nome de Substância - Brasil",
+      "description" : "Tipos de nomes para substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceStatusBR",
+      "title" : "Status de Substância - Brasil",
+      "description" : "Status regulatório de substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-gsrs-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceStatusGSRSBR",
+      "title" : "Status de Substância GSRS/Brasil",
+      "description" : "Conjunto de valores para status de substâncias GSRS e brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br",
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indication-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "TherapeuticIndicationBRValueSet",
+      "title" : "Indicações Terapêuticas - Brasil",
+      "description" : "ValueSet de indicações terapêuticas baseado em CID-10 e SNOMED-CT para o contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indications-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "TherapeuticIndicationsBR",
+      "title" : "Indicações Terapêuticas - Brasil",
+      "description" : "Indicações terapêuticas padronizadas para produtos medicinais brasileiros",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/therapeutic-indications-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/umc-coordination-status",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "UMCCoordinationStatus",
+      "title" : "Status de Coordenação UMC",
+      "description" : "Status do processo de coordenação com Uppsala Monitoring Centre",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/umc-coordination-status"
+      ]
+    }
+  ]
+}

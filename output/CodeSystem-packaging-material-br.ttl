@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "packaging-material-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem packaging-material-br</b></p><a name=\"packaging-material-br\"> </a><a name=\"hcpackaging-material-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">vidro<a name=\"packaging-material-br-vidro\"> </a></td><td>Vidro</td><td>Embalagem de vidro</td></tr><tr><td style=\"white-space:nowrap\">plastico<a name=\"packaging-material-br-plastico\"> </a></td><td>Plástico</td><td>Embalagem plástica</td></tr><tr><td style=\"white-space:nowrap\">aluminio<a name=\"packaging-material-br-aluminio\"> </a></td><td>Alumínio</td><td>Embalagem de alumínio</td></tr><tr><td style=\"white-space:nowrap\">papel<a name=\"packaging-material-br-papel\"> </a></td><td>Papel</td><td>Embalagem de papel/papelão</td></tr><tr><td style=\"white-space:nowrap\">pvc<a name=\"packaging-material-br-pvc\"> </a></td><td>PVC</td><td>Cloreto de polivinila</td></tr><tr><td style=\"white-space:nowrap\">pe<a name=\"packaging-material-br-pe\"> </a></td><td>Polietileno</td><td>Polietileno</td></tr><tr><td style=\"white-space:nowrap\">pp<a name=\"packaging-material-br-pp\"> </a></td><td>Polipropileno</td><td>Polipropileno</td></tr><tr><td style=\"white-space:nowrap\">pet<a name=\"packaging-material-br-pet\"> </a></td><td>PET</td><td>Politereftalato de etileno</td></tr><tr><td style=\"white-space:nowrap\">pvdc<a name=\"packaging-material-br-pvdc\"> </a></td><td>PVDC</td><td>Cloreto de polivinilideno</td></tr><tr><td style=\"white-space:nowrap\">borracha<a name=\"packaging-material-br-borracha\"> </a></td><td>Borracha</td><td>Material de borracha/elastômero</td></tr><tr><td style=\"white-space:nowrap\">metal<a name=\"packaging-material-br-metal\"> </a></td><td>Metal</td><td>Material metálico geral</td></tr><tr><td style=\"white-space:nowrap\">lamina-aluminio<a name=\"packaging-material-br-lamina-aluminio\"> </a></td><td>Lâmina de Alumínio</td><td>Lâmina/folha de alumínio</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "PackagingMaterialBR"] ; # 
+  fhir:title [ fhir:v "Materiais de Embalagem - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para materiais de embalagem no Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "vidro" ] ;
+     fhir:display [ fhir:v "Vidro" ] ;
+     fhir:definition [ fhir:v "Embalagem de vidro" ]
+  ] [
+     fhir:code [ fhir:v "plastico" ] ;
+     fhir:display [ fhir:v "Plástico" ] ;
+     fhir:definition [ fhir:v "Embalagem plástica" ]
+  ] [
+     fhir:code [ fhir:v "aluminio" ] ;
+     fhir:display [ fhir:v "Alumínio" ] ;
+     fhir:definition [ fhir:v "Embalagem de alumínio" ]
+  ] [
+     fhir:code [ fhir:v "papel" ] ;
+     fhir:display [ fhir:v "Papel" ] ;
+     fhir:definition [ fhir:v "Embalagem de papel/papelão" ]
+  ] [
+     fhir:code [ fhir:v "pvc" ] ;
+     fhir:display [ fhir:v "PVC" ] ;
+     fhir:definition [ fhir:v "Cloreto de polivinila" ]
+  ] [
+     fhir:code [ fhir:v "pe" ] ;
+     fhir:display [ fhir:v "Polietileno" ] ;
+     fhir:definition [ fhir:v "Polietileno" ]
+  ] [
+     fhir:code [ fhir:v "pp" ] ;
+     fhir:display [ fhir:v "Polipropileno" ] ;
+     fhir:definition [ fhir:v "Polipropileno" ]
+  ] [
+     fhir:code [ fhir:v "pet" ] ;
+     fhir:display [ fhir:v "PET" ] ;
+     fhir:definition [ fhir:v "Politereftalato de etileno" ]
+  ] [
+     fhir:code [ fhir:v "pvdc" ] ;
+     fhir:display [ fhir:v "PVDC" ] ;
+     fhir:definition [ fhir:v "Cloreto de polivinilideno" ]
+  ] [
+     fhir:code [ fhir:v "borracha" ] ;
+     fhir:display [ fhir:v "Borracha" ] ;
+     fhir:definition [ fhir:v "Material de borracha/elastômero" ]
+  ] [
+     fhir:code [ fhir:v "metal" ] ;
+     fhir:display [ fhir:v "Metal" ] ;
+     fhir:definition [ fhir:v "Material metálico geral" ]
+  ] [
+     fhir:code [ fhir:v "lamina-aluminio" ] ;
+     fhir:display [ fhir:v "Lâmina de Alumínio" ] ;
+     fhir:definition [ fhir:v "Lâmina/folha de alumínio" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

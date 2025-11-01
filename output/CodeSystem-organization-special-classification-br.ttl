@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-special-classification-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-special-classification-br</b></p><a name=\"organization-special-classification-br\"> </a><a name=\"hcorganization-special-classification-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">mei<a name=\"organization-special-classification-br-mei\"> </a></td><td>MEI</td><td>Microempreendedor Individual</td></tr><tr><td style=\"white-space:nowrap\">epp<a name=\"organization-special-classification-br-epp\"> </a></td><td>EPP</td><td>Empresa de Pequeno Porte</td></tr><tr><td style=\"white-space:nowrap\">me<a name=\"organization-special-classification-br-me\"> </a></td><td>ME</td><td>Microempresa</td></tr><tr><td style=\"white-space:nowrap\">simples-nacional<a name=\"organization-special-classification-br-simples-nacional\"> </a></td><td>Simples Nacional</td><td>Optante pelo Simples Nacional</td></tr><tr><td style=\"white-space:nowrap\">lucro-presumido<a name=\"organization-special-classification-br-lucro-presumido\"> </a></td><td>Lucro Presumido</td><td>Tributação pelo Lucro Presumido</td></tr><tr><td style=\"white-space:nowrap\">lucro-real<a name=\"organization-special-classification-br-lucro-real\"> </a></td><td>Lucro Real</td><td>Tributação pelo Lucro Real</td></tr><tr><td style=\"white-space:nowrap\">multinacional<a name=\"organization-special-classification-br-multinacional\"> </a></td><td>Multinacional</td><td>Empresa multinacional</td></tr><tr><td style=\"white-space:nowrap\">startup<a name=\"organization-special-classification-br-startup\"> </a></td><td>Startup</td><td>Empresa de tecnologia em estágio inicial</td></tr><tr><td style=\"white-space:nowrap\">ong<a name=\"organization-special-classification-br-ong\"> </a></td><td>ONG</td><td>Organização Não Governamental</td></tr><tr><td style=\"white-space:nowrap\">oscip<a name=\"organization-special-classification-br-oscip\"> </a></td><td>OSCIP</td><td>Organização da Sociedade Civil de Interesse Público</td></tr><tr><td style=\"white-space:nowrap\">cooperativa<a name=\"organization-special-classification-br-cooperativa\"> </a></td><td>Cooperativa</td><td>Sociedade cooperativa</td></tr><tr><td style=\"white-space:nowrap\">fundacao<a name=\"organization-special-classification-br-fundacao\"> </a></td><td>Fundação</td><td>Fundação privada</td></tr><tr><td style=\"white-space:nowrap\">instituto<a name=\"organization-special-classification-br-instituto\"> </a></td><td>Instituto</td><td>Instituto privado</td></tr><tr><td style=\"white-space:nowrap\">associacao<a name=\"organization-special-classification-br-associacao\"> </a></td><td>Associação</td><td>Associação civil</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "OrganizationSpecialClassificationBR"] ; # 
+  fhir:title [ fhir:v "Classificações Especiais de Organização - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para classificações especiais de organizações"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mei" ] ;
+     fhir:display [ fhir:v "MEI" ] ;
+     fhir:definition [ fhir:v "Microempreendedor Individual" ]
+  ] [
+     fhir:code [ fhir:v "epp" ] ;
+     fhir:display [ fhir:v "EPP" ] ;
+     fhir:definition [ fhir:v "Empresa de Pequeno Porte" ]
+  ] [
+     fhir:code [ fhir:v "me" ] ;
+     fhir:display [ fhir:v "ME" ] ;
+     fhir:definition [ fhir:v "Microempresa" ]
+  ] [
+     fhir:code [ fhir:v "simples-nacional" ] ;
+     fhir:display [ fhir:v "Simples Nacional" ] ;
+     fhir:definition [ fhir:v "Optante pelo Simples Nacional" ]
+  ] [
+     fhir:code [ fhir:v "lucro-presumido" ] ;
+     fhir:display [ fhir:v "Lucro Presumido" ] ;
+     fhir:definition [ fhir:v "Tributação pelo Lucro Presumido" ]
+  ] [
+     fhir:code [ fhir:v "lucro-real" ] ;
+     fhir:display [ fhir:v "Lucro Real" ] ;
+     fhir:definition [ fhir:v "Tributação pelo Lucro Real" ]
+  ] [
+     fhir:code [ fhir:v "multinacional" ] ;
+     fhir:display [ fhir:v "Multinacional" ] ;
+     fhir:definition [ fhir:v "Empresa multinacional" ]
+  ] [
+     fhir:code [ fhir:v "startup" ] ;
+     fhir:display [ fhir:v "Startup" ] ;
+     fhir:definition [ fhir:v "Empresa de tecnologia em estágio inicial" ]
+  ] [
+     fhir:code [ fhir:v "ong" ] ;
+     fhir:display [ fhir:v "ONG" ] ;
+     fhir:definition [ fhir:v "Organização Não Governamental" ]
+  ] [
+     fhir:code [ fhir:v "oscip" ] ;
+     fhir:display [ fhir:v "OSCIP" ] ;
+     fhir:definition [ fhir:v "Organização da Sociedade Civil de Interesse Público" ]
+  ] [
+     fhir:code [ fhir:v "cooperativa" ] ;
+     fhir:display [ fhir:v "Cooperativa" ] ;
+     fhir:definition [ fhir:v "Sociedade cooperativa" ]
+  ] [
+     fhir:code [ fhir:v "fundacao" ] ;
+     fhir:display [ fhir:v "Fundação" ] ;
+     fhir:definition [ fhir:v "Fundação privada" ]
+  ] [
+     fhir:code [ fhir:v "instituto" ] ;
+     fhir:display [ fhir:v "Instituto" ] ;
+     fhir:definition [ fhir:v "Instituto privado" ]
+  ] [
+     fhir:code [ fhir:v "associacao" ] ;
+     fhir:display [ fhir:v "Associação" ] ;
+     fhir:definition [ fhir:v "Associação civil" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

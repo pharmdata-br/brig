@@ -1,0 +1,92 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>RegulatedAuthorization-regulated-authorization-dipirona-example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json"><code style="white-space: pre; text-wrap: nowrap;" class="language-json"><a name="l17">​</a>{
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization">resourceType</a>" : "RegulatedAuthorization",
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.id">id</a>" : "regulated-authorization-dipirona-example",
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+      <a style="color: Maroon" href="StructureDefinition-RegulatedAuthorization-br.html">&#x1F517;</a> "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/RegulatedAuthorization-br"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Narrativa gerada: RegulatedAuthorization regulated-authorization-dipirona-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\"regulated-authorization-dipirona-example\"&gt; &lt;/a&gt;&lt;a name=\"hcregulated-authorization-dipirona-example\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Perfil: &lt;a href=\"StructureDefinition-RegulatedAuthorization-br.html\"&gt;Autorização Regulatória - Brasil&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://anvisa.gov.br/medicamentos/registro&lt;/code&gt;/1.0123.4567.001-8\u00a0(utilização:\u00a0official,\u00a0), &lt;code&gt;http://anvisa.gov.br/processos&lt;/code&gt;/25351.123456/2023-15\u00a0(utilização:\u00a0secondary,\u00a0)&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"MedicinalProductDefinition-dipirona-500mg-example.html\"&gt;Dipirona Sódica 500mg Comprimidos&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br similar-drug}\"&gt;Medicamento Similar&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: &lt;span title=\"Códigos:{urn:iso:std:iso:3166 BR}\"&gt;Brazil&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br active}\"&gt;Ativo&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2023-08-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;validityPeriod&lt;/b&gt;: 2023-08-15 --&amp;gt; 2033-08-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;basis&lt;/b&gt;: &lt;span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br rdc-753-2022}\"&gt;RDC 753/2022&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\"Organization-organization-neoquimica-example.html\"&gt;Laboratório Neoqúimica Ltda.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;regulator&lt;/b&gt;: &lt;a href=\"Organization-organization-anvisa-example.html\"&gt;Agência Nacional de Vigilância Sanitária - ANVISA&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://anvisa.gov.br/medicamentos/registro",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "1.0123.4567.001-8"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.use">use</a>" : "secondary",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://anvisa.gov.br/processos",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "25351.123456/2023-15"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.subject">subject</a>" : [
+    {
+      <a style="color: Maroon" href="MedicinalProductDefinition-dipirona-500mg-example.html">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/dipirona-500mg-example",
+      "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">display</a>" : "Dipirona Sódica 500mg Comprimidos"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "similar-drug",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Medicamento Similar"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.region">region</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "BR"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.status">status</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "active",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Ativo"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.statusDate">statusDate</a>" : "2023-08-15",
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.validityPeriod">validityPeriod</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.start">start</a>" : "2023-08-15",
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.end">end</a>" : "2033-08-15"
+  },
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.basis">basis</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "rdc-753-2022",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "RDC 753/2022"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.holder">holder</a>" : {
+    <a style="color: Maroon" href="Organization-organization-neoquimica-example.html">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "Organization/organization-neoquimica-example",
+    "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">display</a>" : "Laboratório Neoqúimica Ltda."
+  },
+  "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.regulator">regulator</a>" : {
+    <a style="color: Maroon" href="Organization-organization-anvisa-example.html">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "Organization/organization-anvisa-example",
+    "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">display</a>" : "Agência Nacional de Vigilância Sanitária - ANVISA"
+  }
+}</code></pre>
+</body>
+</html>

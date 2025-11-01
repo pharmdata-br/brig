@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mpid-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem mpid-br</b></p><a name="mpid-br"> </a><a name="hcmpid-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">BR-ANVISA-001234<a name="mpid-br-BR-ANVISA-001234"> </a></td><td>MPID Exemplo 1</td><td>Exemplo de MPID brasileiro para demonstração</td></tr><tr><td style="white-space:nowrap">BR-NEO-567890<a name="mpid-br-BR-NEO-567890"> </a></td><td>MPID Exemplo 2</td><td>Exemplo de MPID brasileiro para demonstração</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br"/>
+  <version value="0.0.2"/>
+  <name value="MPIDBrazil"/>
+  <title value="MPID - Identificador de Produto Medicinal - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para identificadores de produtos medicinais conforme ISO 11615"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Implementação brasileira do MPID conforme ISO 11615 - Medicinal product identification"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="BR-ANVISA-001234"/>
+    <display value="MPID Exemplo 1"/>
+    <definition value="Exemplo de MPID brasileiro para demonstração"/>
+  </concept>
+  <concept>
+    <code value="BR-NEO-567890"/>
+    <display value="MPID Exemplo 2"/>
+    <definition value="Exemplo de MPID brasileiro para demonstração"/>
+  </concept>
+</CodeSystem>

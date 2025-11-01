@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir">
+  <id value="dipirona-clinical-indication-example"/>
+  <meta>
+    <profile value="http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ClinicalUseDefinition dipirona-clinical-indication-example</b></p><a name="dipirona-clinical-indication-example"> </a><a name="hcdipirona-clinical-indication-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-ClinicalUseDefinition-br.html">Definição de Uso Clínico - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br</code>/BRIG-CU-DIP-001</p><p><b>type</b>: Indication</p><p><b>category</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br cbaf}">Componente Básico da Assistência Farmacêutica</span>, <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br otc}">Medicamento isento de prescrição</span></p><p><b>subject</b>: <a href="MedicinalProductDefinition-dipirona-500mg-example.html">MedicinalProductDefinition: identifier = http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br#BRIG-MPID-DIP-500,http://anvisa.gov.br/medicamentos/registro#100000000001; type = Medicamento; domain = Human use; status = Active; combinedPharmaceuticalDoseForm = Tablet; route = Oral; legalStatusOfSupply = Prescrição Médica; classification = metamizole sodium</a></p><p><b>status</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br active}">Ativo</span></p><blockquote><p><b>indication</b></p><h3>DiseaseSymptomProcedures</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://hl7.org/fhir/sid/icd-10 R52.9}">Dor não especificada</span></td></tr></table><h3>DiseaseStatuses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://snomed.info/sct 255212004}">Dor aguda a moderada</span></td></tr></table><h3>Comorbidities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://hl7.org/fhir/sid/icd-10 R50.9}">Febre não especificada</span></td></tr></table><h3>IntendedEffects</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://snomed.info/sct 182856006}">Analgesia (procedure)</span></td></tr></table><p><b>duration</b>: 5 dias</p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br"/>
+    <value value="BRIG-CU-DIP-001"/>
+  </identifier>
+  <type value="indication"/>
+  <category>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"/>
+      <code value="cbaf"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"/>
+      <code value="otc"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="MedicinalProductDefinition/dipirona-500mg-example"/>
+  </subject>
+  <status>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br"/>
+      <code value="active"/>
+    </coding>
+  </status>
+  <indication>
+    <diseaseSymptomProcedure>
+      <concept>
+        <coding>
+          <system value="http://hl7.org/fhir/sid/icd-10"/>
+          <code value="R52.9"/>
+          <display value="Dor não especificada"/>
+        </coding>
+      </concept>
+    </diseaseSymptomProcedure>
+    <diseaseStatus>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="255212004"/>
+          <display value="Acute (qualifier value)"/>
+        </coding>
+        <text value="Dor aguda a moderada"/>
+      </concept>
+    </diseaseStatus>
+    <comorbidity>
+      <concept>
+        <coding>
+          <system value="http://hl7.org/fhir/sid/icd-10"/>
+          <code value="R50.9"/>
+          <display value="Febre não especificada"/>
+        </coding>
+      </concept>
+    </comorbidity>
+    <intendedEffect>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="182856006"/>
+          <display value="Analgesia (procedure)"/>
+        </coding>
+      </concept>
+    </intendedEffect>
+    <durationString value="5 dias"/>
+  </indication>
+</ClinicalUseDefinition>

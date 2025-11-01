@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/ClinicalUseDefinition/paracetamol-clinical-interaction-example> a fhir:ClinicalUseDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "paracetamol-clinical-interaction-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br"^^xsd:anyURI ;
+       fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ClinicalUseDefinition paracetamol-clinical-interaction-example</b></p><a name=\"paracetamol-clinical-interaction-example\"> </a><a name=\"hcparacetamol-clinical-interaction-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-ClinicalUseDefinition-br.html\">Definição de Uso Clínico - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br</code>/BRIG-CU-PAR-002</p><p><b>type</b>: Interaction</p><p><b>category</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br cbaf}\">Componente Básico da Assistência Farmacêutica</span></p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-paracetamol-750mg-example.html\">MedicinalProductDefinition: identifier = http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br#BRIG-MPID-PAR-750,http://anvisa.gov.br/medicamentos/registro#100000000002; type = Medicamento; domain = Human use; status = Active; combinedPharmaceuticalDoseForm = Tablet; route = Oral; legalStatusOfSupply = Venda Livre; classification = paracetamol</a></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br active}\">Ativo</span></p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://snomed.info/sct 419442005}\">Ethyl alcohol (substance)</span></td></tr></table><p><b>type</b>: <span title=\"Códigos:{http://snomed.info/sct 182817000}\">Interação farmacocinética</span></p><h3>Effects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://snomed.info/sct 197354008}\">Toxic effect of paracetamol (disorder)</span></td></tr></table><p><b>incidence</b>: <span title=\"Códigos:{http://snomed.info/sct 255212004}\">Frequent (qualifier value)</span></p><p><b>management</b>: <span title=\"Códigos:{http://snomed.info/sct 182840001}\">Drug treatment stopped (situation)</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "BRIG-CU-PAR-002" ]
+  ] ) ; # 
+  fhir:type [ fhir:v "interaction"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cbaf" ]
+     ] )
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://farmaco.maxapex.net/brig/fhir/MedicinalProductDefinition/paracetamol-750mg-example> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/paracetamol-750mg-example" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:interaction [
+     fhir:interactant ( [
+       fhir:item [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:419442005 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "419442005" ] ;
+           fhir:display [ fhir:v "Ethyl alcohol (substance)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:type [
+       fhir:coding ( [
+         a sct:182817000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "182817000" ] ;
+         fhir:display [ fhir:v "Drug interaction with ethanol (disorder)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Interação farmacocinética" ]
+     ] ;
+     fhir:effect [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:197354008 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "197354008" ] ;
+           fhir:display [ fhir:v "Toxic effect of paracetamol (disorder)" ]
+         ] )
+       ]
+     ] ;
+     fhir:incidence [
+       fhir:coding ( [
+         a sct:255212004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "255212004" ] ;
+         fhir:display [ fhir:v "Frequent (qualifier value)" ]
+       ] )
+     ] ;
+     fhir:management ( [
+       fhir:coding ( [
+         a sct:182840001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "182840001" ] ;
+         fhir:display [ fhir:v "Drug treatment stopped (situation)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="gsrs-substance-classification-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem gsrs-substance-classification-br</b></p><a name="gsrs-substance-classification-br"> </a><a name="hcgsrs-substance-classification-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">chemical<a name="gsrs-substance-classification-br-chemical"> </a></td><td>Chemical Substance</td><td>Substância química definida</td></tr><tr><td style="white-space:nowrap">protein<a name="gsrs-substance-classification-br-protein"> </a></td><td>Protein</td><td>Substância proteica</td></tr><tr><td style="white-space:nowrap">nucleicAcid<a name="gsrs-substance-classification-br-nucleicAcid"> </a></td><td>Nucleic Acid</td><td>Ácido nucleico</td></tr><tr><td style="white-space:nowrap">polymer<a name="gsrs-substance-classification-br-polymer"> </a></td><td>Polymer</td><td>Substância polimérica</td></tr><tr><td style="white-space:nowrap">structurallyDiverse<a name="gsrs-substance-classification-br-structurallyDiverse"> </a></td><td>Structurally Diverse</td><td>Substância estruturalmente diversa</td></tr><tr><td style="white-space:nowrap">mixture<a name="gsrs-substance-classification-br-mixture"> </a></td><td>Mixture</td><td>Mistura de substâncias</td></tr><tr><td style="white-space:nowrap">specifiedSubstanceGroup1<a name="gsrs-substance-classification-br-specifiedSubstanceGroup1"> </a></td><td>Specified Substance Group 1</td><td>Grupo de substâncias especificadas tipo 1</td></tr><tr><td style="white-space:nowrap">active<a name="gsrs-substance-classification-br-active"> </a></td><td>Substância Ativa</td><td>Substância ativa farmacêutica</td></tr><tr><td style="white-space:nowrap">excipient<a name="gsrs-substance-classification-br-excipient"> </a></td><td>Excipiente</td><td>Substância excipiente</td></tr><tr><td style="white-space:nowrap">controlled<a name="gsrs-substance-classification-br-controlled"> </a></td><td>Controlada</td><td>Substância controlada pela ANVISA</td></tr><tr><td style="white-space:nowrap">precursor<a name="gsrs-substance-classification-br-precursor"> </a></td><td>Precursor</td><td>Precursor químico</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br"/>
+  <version value="0.0.2"/>
+  <name value="GSRSSubstanceClassificationBR"/>
+  <title value="GSRS Substance Classification - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Classificação de substâncias conforme GSRS adaptado para Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="chemical"/>
+    <display value="Chemical Substance"/>
+    <definition value="Substância química definida"/>
+  </concept>
+  <concept>
+    <code value="protein"/>
+    <display value="Protein"/>
+    <definition value="Substância proteica"/>
+  </concept>
+  <concept>
+    <code value="nucleicAcid"/>
+    <display value="Nucleic Acid"/>
+    <definition value="Ácido nucleico"/>
+  </concept>
+  <concept>
+    <code value="polymer"/>
+    <display value="Polymer"/>
+    <definition value="Substância polimérica"/>
+  </concept>
+  <concept>
+    <code value="structurallyDiverse"/>
+    <display value="Structurally Diverse"/>
+    <definition value="Substância estruturalmente diversa"/>
+  </concept>
+  <concept>
+    <code value="mixture"/>
+    <display value="Mixture"/>
+    <definition value="Mistura de substâncias"/>
+  </concept>
+  <concept>
+    <code value="specifiedSubstanceGroup1"/>
+    <display value="Specified Substance Group 1"/>
+    <definition value="Grupo de substâncias especificadas tipo 1"/>
+  </concept>
+  <concept>
+    <code value="active"/>
+    <display value="Substância Ativa"/>
+    <definition value="Substância ativa farmacêutica"/>
+  </concept>
+  <concept>
+    <code value="excipient"/>
+    <display value="Excipiente"/>
+    <definition value="Substância excipiente"/>
+  </concept>
+  <concept>
+    <code value="controlled"/>
+    <display value="Controlada"/>
+    <definition value="Substância controlada pela ANVISA"/>
+  </concept>
+  <concept>
+    <code value="precursor"/>
+    <display value="Precursor"/>
+    <definition value="Precursor químico"/>
+  </concept>
+</CodeSystem>

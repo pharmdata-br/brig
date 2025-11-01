@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "pcid-requiring-changes",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet pcid-requiring-changes</b></p><a name=\"pcid-requiring-changes\"> </a><a name=\"hcpcid-requiring-changes\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"CodeSystem-identifier-change-reason.html\"><code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-package-change\">package-change</a></td><td style=\"color: #cccccc\">Mudança de Embalagem</td><td>Alteração significativa na embalagem primária ou secundária</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-container-change\">container-change</a></td><td style=\"color: #cccccc\">Mudança de Container</td><td>Alteração do tipo ou material do container primário</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-quantity-change\">quantity-change</a></td><td style=\"color: #cccccc\">Mudança de Quantidade</td><td>Alteração da quantidade de unidades por embalagem</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-component-change\">component-change</a></td><td style=\"color: #cccccc\">Mudança de Componente</td><td>Adição, remoção ou modificação de componentes da embalagem</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-requiring-changes",
+  "version" : "0.0.2",
+  "name" : "PCIDRequiringChanges",
+  "title" : "Mudanças que Requerem Novo PCID",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Tipos de mudanças que requerem geração de novo PCID",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason",
+      "concept" : [{
+        "code" : "package-change"
+      },
+      {
+        "code" : "container-change"
+      },
+      {
+        "code" : "quantity-change"
+      },
+      {
+        "code" : "component-change"
+      }]
+    }]
+  }
+}

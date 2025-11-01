@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "administrable-dose-form-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem administrable-dose-form-br</b></p><a name=\"administrable-dose-form-br\"> </a><a name=\"hcadministrable-dose-form-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">solucao-oral<a name=\"administrable-dose-form-br-solucao-oral\"> </a></td><td>Solução Oral</td><td>Solução líquida pronta para administração oral</td></tr><tr><td style=\"white-space:nowrap\">suspensao-oral<a name=\"administrable-dose-form-br-suspensao-oral\"> </a></td><td>Suspensão Oral</td><td>Suspensão líquida pronta para administração oral (após reconstituição se necessário)</td></tr><tr><td style=\"white-space:nowrap\">solucao-injetavel<a name=\"administrable-dose-form-br-solucao-injetavel\"> </a></td><td>Solução Injetável</td><td>Solução estéril pronta para administração parenteral (após reconstituição se necessário)</td></tr><tr><td style=\"white-space:nowrap\">suspensao-injetavel<a name=\"administrable-dose-form-br-suspensao-injetavel\"> </a></td><td>Suspensão Injetável</td><td>Suspensão estéril pronta para administração parenteral (após reconstituição se necessário)</td></tr><tr><td style=\"white-space:nowrap\">emulsao-injetavel<a name=\"administrable-dose-form-br-emulsao-injetavel\"> </a></td><td>Emulsão Injetável</td><td>Emulsão estéril pronta para administração parenteral</td></tr><tr><td style=\"white-space:nowrap\">comprimido-oral<a name=\"administrable-dose-form-br-comprimido-oral\"> </a></td><td>Comprimido para Uso Oral</td><td>Comprimido pronto para administração oral</td></tr><tr><td style=\"white-space:nowrap\">capsula-oral<a name=\"administrable-dose-form-br-capsula-oral\"> </a></td><td>Cápsula para Uso Oral</td><td>Cápsula pronta para administração oral</td></tr><tr><td style=\"white-space:nowrap\">comprimido-sublingual<a name=\"administrable-dose-form-br-comprimido-sublingual\"> </a></td><td>Comprimido Sublingual</td><td>Comprimido pronto para administração sublingual</td></tr><tr><td style=\"white-space:nowrap\">comprimido-bucal<a name=\"administrable-dose-form-br-comprimido-bucal\"> </a></td><td>Comprimido Bucal</td><td>Comprimido pronto para administração bucal</td></tr><tr><td style=\"white-space:nowrap\">creme-topico<a name=\"administrable-dose-form-br-creme-topico\"> </a></td><td>Creme Tópico</td><td>Creme pronto para aplicação tópica</td></tr><tr><td style=\"white-space:nowrap\">pomada-topica<a name=\"administrable-dose-form-br-pomada-topica\"> </a></td><td>Pomada Tópica</td><td>Pomada pronta para aplicação tópica</td></tr><tr><td style=\"white-space:nowrap\">gel-topico<a name=\"administrable-dose-form-br-gel-topico\"> </a></td><td>Gel Tópico</td><td>Gel pronto para aplicação tópica</td></tr><tr><td style=\"white-space:nowrap\">locao-topica<a name=\"administrable-dose-form-br-locao-topica\"> </a></td><td>Loção Tópica</td><td>Loção pronta para aplicação tópica</td></tr><tr><td style=\"white-space:nowrap\">aerossol-inalacao<a name=\"administrable-dose-form-br-aerossol-inalacao\"> </a></td><td>Aerossol para Inalação</td><td>Aerossol pronto para inalação</td></tr><tr><td style=\"white-space:nowrap\">solucao-inalacao<a name=\"administrable-dose-form-br-solucao-inalacao\"> </a></td><td>Solução para Inalação</td><td>Solução pronta para inalação (após diluição se necessário)</td></tr><tr><td style=\"white-space:nowrap\">supositorio-retal<a name=\"administrable-dose-form-br-supositorio-retal\"> </a></td><td>Supositório Retal</td><td>Supositório pronto para inserção retal</td></tr><tr><td style=\"white-space:nowrap\">ovulo-vaginal<a name=\"administrable-dose-form-br-ovulo-vaginal\"> </a></td><td>Óvulo Vaginal</td><td>Óvulo pronto para inserção vaginal</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "AdministrableDoseFormBR"] ; # 
+  fhir:title [ fhir:v "Formas Farmacêuticas Administráveis - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para formas farmacêuticas na apresentação final administrável"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "17"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "solucao-oral" ] ;
+     fhir:display [ fhir:v "Solução Oral" ] ;
+     fhir:definition [ fhir:v "Solução líquida pronta para administração oral" ]
+  ] [
+     fhir:code [ fhir:v "suspensao-oral" ] ;
+     fhir:display [ fhir:v "Suspensão Oral" ] ;
+     fhir:definition [ fhir:v "Suspensão líquida pronta para administração oral (após reconstituição se necessário)" ]
+  ] [
+     fhir:code [ fhir:v "solucao-injetavel" ] ;
+     fhir:display [ fhir:v "Solução Injetável" ] ;
+     fhir:definition [ fhir:v "Solução estéril pronta para administração parenteral (após reconstituição se necessário)" ]
+  ] [
+     fhir:code [ fhir:v "suspensao-injetavel" ] ;
+     fhir:display [ fhir:v "Suspensão Injetável" ] ;
+     fhir:definition [ fhir:v "Suspensão estéril pronta para administração parenteral (após reconstituição se necessário)" ]
+  ] [
+     fhir:code [ fhir:v "emulsao-injetavel" ] ;
+     fhir:display [ fhir:v "Emulsão Injetável" ] ;
+     fhir:definition [ fhir:v "Emulsão estéril pronta para administração parenteral" ]
+  ] [
+     fhir:code [ fhir:v "comprimido-oral" ] ;
+     fhir:display [ fhir:v "Comprimido para Uso Oral" ] ;
+     fhir:definition [ fhir:v "Comprimido pronto para administração oral" ]
+  ] [
+     fhir:code [ fhir:v "capsula-oral" ] ;
+     fhir:display [ fhir:v "Cápsula para Uso Oral" ] ;
+     fhir:definition [ fhir:v "Cápsula pronta para administração oral" ]
+  ] [
+     fhir:code [ fhir:v "comprimido-sublingual" ] ;
+     fhir:display [ fhir:v "Comprimido Sublingual" ] ;
+     fhir:definition [ fhir:v "Comprimido pronto para administração sublingual" ]
+  ] [
+     fhir:code [ fhir:v "comprimido-bucal" ] ;
+     fhir:display [ fhir:v "Comprimido Bucal" ] ;
+     fhir:definition [ fhir:v "Comprimido pronto para administração bucal" ]
+  ] [
+     fhir:code [ fhir:v "creme-topico" ] ;
+     fhir:display [ fhir:v "Creme Tópico" ] ;
+     fhir:definition [ fhir:v "Creme pronto para aplicação tópica" ]
+  ] [
+     fhir:code [ fhir:v "pomada-topica" ] ;
+     fhir:display [ fhir:v "Pomada Tópica" ] ;
+     fhir:definition [ fhir:v "Pomada pronta para aplicação tópica" ]
+  ] [
+     fhir:code [ fhir:v "gel-topico" ] ;
+     fhir:display [ fhir:v "Gel Tópico" ] ;
+     fhir:definition [ fhir:v "Gel pronto para aplicação tópica" ]
+  ] [
+     fhir:code [ fhir:v "locao-topica" ] ;
+     fhir:display [ fhir:v "Loção Tópica" ] ;
+     fhir:definition [ fhir:v "Loção pronta para aplicação tópica" ]
+  ] [
+     fhir:code [ fhir:v "aerossol-inalacao" ] ;
+     fhir:display [ fhir:v "Aerossol para Inalação" ] ;
+     fhir:definition [ fhir:v "Aerossol pronto para inalação" ]
+  ] [
+     fhir:code [ fhir:v "solucao-inalacao" ] ;
+     fhir:display [ fhir:v "Solução para Inalação" ] ;
+     fhir:definition [ fhir:v "Solução pronta para inalação (após diluição se necessário)" ]
+  ] [
+     fhir:code [ fhir:v "supositorio-retal" ] ;
+     fhir:display [ fhir:v "Supositório Retal" ] ;
+     fhir:definition [ fhir:v "Supositório pronto para inserção retal" ]
+  ] [
+     fhir:code [ fhir:v "ovulo-vaginal" ] ;
+     fhir:display [ fhir:v "Óvulo Vaginal" ] ;
+     fhir:definition [ fhir:v "Óvulo pronto para inserção vaginal" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

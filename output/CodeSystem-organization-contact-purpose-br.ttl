@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-contact-purpose-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-contact-purpose-br</b></p><a name=\"organization-contact-purpose-br\"> </a><a name=\"hcorganization-contact-purpose-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">regulatory-affairs<a name=\"organization-contact-purpose-br-regulatory-affairs\"> </a></td><td>Assuntos Regulatórios</td><td>Responsável por questões regulatórias e relacionamento com ANVISA</td></tr><tr><td style=\"white-space:nowrap\">technical-responsible<a name=\"organization-contact-purpose-br-technical-responsible\"> </a></td><td>Responsável Técnico</td><td>Responsável técnico conforme exigência legal</td></tr><tr><td style=\"white-space:nowrap\">pharmacovigilance<a name=\"organization-contact-purpose-br-pharmacovigilance\"> </a></td><td>Farmacovigilância</td><td>Responsável por farmacovigilância e monitoramento pós-comercialização</td></tr><tr><td style=\"white-space:nowrap\">quality-assurance<a name=\"organization-contact-purpose-br-quality-assurance\"> </a></td><td>Garantia de Qualidade</td><td>Responsável pela garantia de qualidade</td></tr><tr><td style=\"white-space:nowrap\">operations<a name=\"organization-contact-purpose-br-operations\"> </a></td><td>Operações</td><td>Responsável por operações e produção</td></tr><tr><td style=\"white-space:nowrap\">logistics<a name=\"organization-contact-purpose-br-logistics\"> </a></td><td>Logística</td><td>Responsável por logística e distribuição</td></tr><tr><td style=\"white-space:nowrap\">procurement<a name=\"organization-contact-purpose-br-procurement\"> </a></td><td>Compras</td><td>Responsável por aquisições e suprimentos</td></tr><tr><td style=\"white-space:nowrap\">sales<a name=\"organization-contact-purpose-br-sales\"> </a></td><td>Vendas</td><td>Responsável por vendas e comercialização</td></tr><tr><td style=\"white-space:nowrap\">legal<a name=\"organization-contact-purpose-br-legal\"> </a></td><td>Jurídico</td><td>Responsável por questões jurídicas</td></tr><tr><td style=\"white-space:nowrap\">finance<a name=\"organization-contact-purpose-br-finance\"> </a></td><td>Financeiro</td><td>Responsável por questões financeiras</td></tr><tr><td style=\"white-space:nowrap\">hr<a name=\"organization-contact-purpose-br-hr\"> </a></td><td>Recursos Humanos</td><td>Responsável por recursos humanos</td></tr><tr><td style=\"white-space:nowrap\">administration<a name=\"organization-contact-purpose-br-administration\"> </a></td><td>Administração</td><td>Contato administrativo geral</td></tr><tr><td style=\"white-space:nowrap\">clinical-research<a name=\"organization-contact-purpose-br-clinical-research\"> </a></td><td>Pesquisa Clínica</td><td>Responsável por pesquisa clínica</td></tr><tr><td style=\"white-space:nowrap\">medical-affairs<a name=\"organization-contact-purpose-br-medical-affairs\"> </a></td><td>Assuntos Médicos</td><td>Responsável por assuntos médicos e científicos</td></tr><tr><td style=\"white-space:nowrap\">biostatistics<a name=\"organization-contact-purpose-br-biostatistics\"> </a></td><td>Bioestatística</td><td>Responsável por análises bioestatísticas</td></tr><tr><td style=\"white-space:nowrap\">data-management<a name=\"organization-contact-purpose-br-data-management\"> </a></td><td>Gestão de Dados</td><td>Responsável por gestão de dados clínicos</td></tr><tr><td style=\"white-space:nowrap\">emergency<a name=\"organization-contact-purpose-br-emergency\"> </a></td><td>Emergência</td><td>Contato de emergência 24h</td></tr><tr><td style=\"white-space:nowrap\">safety<a name=\"organization-contact-purpose-br-safety\"> </a></td><td>Segurança</td><td>Responsável por segurança e eventos adversos</td></tr><tr><td style=\"white-space:nowrap\">recall<a name=\"organization-contact-purpose-br-recall\"> </a></td><td>Recolhimento</td><td>Responsável por recall e recolhimento de produtos</td></tr><tr><td style=\"white-space:nowrap\">media<a name=\"organization-contact-purpose-br-media\"> </a></td><td>Mídia</td><td>Responsável por comunicação com mídia</td></tr><tr><td style=\"white-space:nowrap\">public-relations<a name=\"organization-contact-purpose-br-public-relations\"> </a></td><td>Relações Públicas</td><td>Responsável por relações públicas</td></tr><tr><td style=\"white-space:nowrap\">customer-service<a name=\"organization-contact-purpose-br-customer-service\"> </a></td><td>Atendimento ao Cliente</td><td>Atendimento ao cliente/consumidor</td></tr><tr><td style=\"white-space:nowrap\">it-support<a name=\"organization-contact-purpose-br-it-support\"> </a></td><td>Suporte de TI</td><td>Suporte técnico de sistemas de informação</td></tr><tr><td style=\"white-space:nowrap\">edi<a name=\"organization-contact-purpose-br-edi\"> </a></td><td>EDI</td><td>Responsável por intercâmbio eletrônico de dados</td></tr><tr><td style=\"white-space:nowrap\">api-integration<a name=\"organization-contact-purpose-br-api-integration\"> </a></td><td>Integração API</td><td>Responsável por integrações de API</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "OrganizationContactPurposeBR"] ; # 
+  fhir:title [ fhir:v "Finalidades de Contato Organizacional - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para finalidades de contatos organizacionais no Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "25"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "regulatory-affairs" ] ;
+     fhir:display [ fhir:v "Assuntos Regulatórios" ] ;
+     fhir:definition [ fhir:v "Responsável por questões regulatórias e relacionamento com ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "technical-responsible" ] ;
+     fhir:display [ fhir:v "Responsável Técnico" ] ;
+     fhir:definition [ fhir:v "Responsável técnico conforme exigência legal" ]
+  ] [
+     fhir:code [ fhir:v "pharmacovigilance" ] ;
+     fhir:display [ fhir:v "Farmacovigilância" ] ;
+     fhir:definition [ fhir:v "Responsável por farmacovigilância e monitoramento pós-comercialização" ]
+  ] [
+     fhir:code [ fhir:v "quality-assurance" ] ;
+     fhir:display [ fhir:v "Garantia de Qualidade" ] ;
+     fhir:definition [ fhir:v "Responsável pela garantia de qualidade" ]
+  ] [
+     fhir:code [ fhir:v "operations" ] ;
+     fhir:display [ fhir:v "Operações" ] ;
+     fhir:definition [ fhir:v "Responsável por operações e produção" ]
+  ] [
+     fhir:code [ fhir:v "logistics" ] ;
+     fhir:display [ fhir:v "Logística" ] ;
+     fhir:definition [ fhir:v "Responsável por logística e distribuição" ]
+  ] [
+     fhir:code [ fhir:v "procurement" ] ;
+     fhir:display [ fhir:v "Compras" ] ;
+     fhir:definition [ fhir:v "Responsável por aquisições e suprimentos" ]
+  ] [
+     fhir:code [ fhir:v "sales" ] ;
+     fhir:display [ fhir:v "Vendas" ] ;
+     fhir:definition [ fhir:v "Responsável por vendas e comercialização" ]
+  ] [
+     fhir:code [ fhir:v "legal" ] ;
+     fhir:display [ fhir:v "Jurídico" ] ;
+     fhir:definition [ fhir:v "Responsável por questões jurídicas" ]
+  ] [
+     fhir:code [ fhir:v "finance" ] ;
+     fhir:display [ fhir:v "Financeiro" ] ;
+     fhir:definition [ fhir:v "Responsável por questões financeiras" ]
+  ] [
+     fhir:code [ fhir:v "hr" ] ;
+     fhir:display [ fhir:v "Recursos Humanos" ] ;
+     fhir:definition [ fhir:v "Responsável por recursos humanos" ]
+  ] [
+     fhir:code [ fhir:v "administration" ] ;
+     fhir:display [ fhir:v "Administração" ] ;
+     fhir:definition [ fhir:v "Contato administrativo geral" ]
+  ] [
+     fhir:code [ fhir:v "clinical-research" ] ;
+     fhir:display [ fhir:v "Pesquisa Clínica" ] ;
+     fhir:definition [ fhir:v "Responsável por pesquisa clínica" ]
+  ] [
+     fhir:code [ fhir:v "medical-affairs" ] ;
+     fhir:display [ fhir:v "Assuntos Médicos" ] ;
+     fhir:definition [ fhir:v "Responsável por assuntos médicos e científicos" ]
+  ] [
+     fhir:code [ fhir:v "biostatistics" ] ;
+     fhir:display [ fhir:v "Bioestatística" ] ;
+     fhir:definition [ fhir:v "Responsável por análises bioestatísticas" ]
+  ] [
+     fhir:code [ fhir:v "data-management" ] ;
+     fhir:display [ fhir:v "Gestão de Dados" ] ;
+     fhir:definition [ fhir:v "Responsável por gestão de dados clínicos" ]
+  ] [
+     fhir:code [ fhir:v "emergency" ] ;
+     fhir:display [ fhir:v "Emergência" ] ;
+     fhir:definition [ fhir:v "Contato de emergência 24h" ]
+  ] [
+     fhir:code [ fhir:v "safety" ] ;
+     fhir:display [ fhir:v "Segurança" ] ;
+     fhir:definition [ fhir:v "Responsável por segurança e eventos adversos" ]
+  ] [
+     fhir:code [ fhir:v "recall" ] ;
+     fhir:display [ fhir:v "Recolhimento" ] ;
+     fhir:definition [ fhir:v "Responsável por recall e recolhimento de produtos" ]
+  ] [
+     fhir:code [ fhir:v "media" ] ;
+     fhir:display [ fhir:v "Mídia" ] ;
+     fhir:definition [ fhir:v "Responsável por comunicação com mídia" ]
+  ] [
+     fhir:code [ fhir:v "public-relations" ] ;
+     fhir:display [ fhir:v "Relações Públicas" ] ;
+     fhir:definition [ fhir:v "Responsável por relações públicas" ]
+  ] [
+     fhir:code [ fhir:v "customer-service" ] ;
+     fhir:display [ fhir:v "Atendimento ao Cliente" ] ;
+     fhir:definition [ fhir:v "Atendimento ao cliente/consumidor" ]
+  ] [
+     fhir:code [ fhir:v "it-support" ] ;
+     fhir:display [ fhir:v "Suporte de TI" ] ;
+     fhir:definition [ fhir:v "Suporte técnico de sistemas de informação" ]
+  ] [
+     fhir:code [ fhir:v "edi" ] ;
+     fhir:display [ fhir:v "EDI" ] ;
+     fhir:definition [ fhir:v "Responsável por intercâmbio eletrônico de dados" ]
+  ] [
+     fhir:code [ fhir:v "api-integration" ] ;
+     fhir:display [ fhir:v "Integração API" ] ;
+     fhir:definition [ fhir:v "Responsável por integrações de API" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,132 @@
+{
+  "resourceType" : "PackagedProductDefinition",
+  "id" : "midazolam-5mg-package",
+  "meta" : {
+    "lastUpdated" : "2025-08-02T10:00:00Z",
+    "profile" : ["http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Midazolam Cristália 5mg/mL - Embalagem</h2><p><strong>EAN/GTIN:</strong> 7891234567891</p><p><strong>Código ANVISA:</strong> PKG-MID-5MG-10AMP</p><p><strong>Conteúdo:</strong> 10 ampolas de 3mL (5mg/mL)</p><p><strong>Embalagem:</strong> Caixa de papelão com ampolas de vidro âmbar</p><p><strong>Armazenamento:</strong> Conservar sob refrigeração, proteger da luz</p><p><strong>Status:</strong> Medicamento controlado - Prescrição médica obrigatória</p><p><strong>Fabricante:</strong> Cristália Brasil</p><p><strong>Produto base:</strong> Midazolam 5mg/mL injetável</p><p><strong>Classificação:</strong> Medicamento hospitalar de uso controlado</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br",
+    "value" : "BR-CRISTALIA-567890-P001"
+  },
+  {
+    "system" : "http://hl7.org/fhir/sid/gs1",
+    "value" : "7891234567891"
+  },
+  {
+    "system" : "http://anvisa.gov.br/produtos/embalagem",
+    "value" : "PKG-MID-5MG-10AMP"
+  }],
+  "name" : "Midazolam Cristália 5mg/mL - Caixa 10 ampolas 3mL",
+  "type" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br",
+      "code" : "medicamento-hospitalar"
+    }]
+  },
+  "packageFor" : [{
+    "reference" : "MedicinalProductDefinitionBR/midazolam-5mg-injection"
+  }],
+  "legalStatusOfSupply" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+        "code" : "receita-azul"
+      }]
+    }
+  }],
+  "marketingStatus" : [{
+    "country" : {
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "BR"
+      }]
+    },
+    "status" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br",
+        "code" : "active"
+      }]
+    },
+    "dateRange" : {
+      "start" : "2019-08-10"
+    }
+  }],
+  "manufacturer" : [{
+    "reference" : "OrganizationANVISASimple/cristalia-brasil"
+  }],
+  "packaging" : {
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br",
+        "code" : "caixa"
+      }]
+    },
+    "quantity" : 1,
+    "material" : [{
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+        "code" : "papel"
+      }]
+    },
+    {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+        "code" : "vidro"
+      }]
+    }],
+    "containedItem" : [{
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br",
+            "code" : "midazolam-amp-5mg-3ml",
+            "display" : "Midazolam 5mg/mL ampola 3mL"
+          }]
+        }
+      },
+      "amount" : {
+        "value" : 10,
+        "unit" : "ampola",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }]
+  },
+  "characteristic" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br",
+        "code" : "armazenamento",
+        "display" : "Condições de armazenamento"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br",
+        "code" : "refrigeracao",
+        "display" : "Refrigeração (2-8°C)"
+      }]
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br",
+        "code" : "protecao-luz",
+        "display" : "Proteção contra luz"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br",
+        "code" : "proteger-luz",
+        "display" : "Proteger da luz"
+      }]
+    }
+  }]
+}

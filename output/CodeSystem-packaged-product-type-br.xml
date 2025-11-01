@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="packaged-product-type-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem packaged-product-type-br</b></p><a name="packaged-product-type-br"> </a><a name="hcpackaged-product-type-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">medicamento<a name="packaged-product-type-br-medicamento"> </a></td><td>Medicamento Embalado</td><td>Produto medicinal em embalagem comercial para dispensação</td></tr><tr><td style="white-space:nowrap">medicamento-hospitalar<a name="packaged-product-type-br-medicamento-hospitalar"> </a></td><td>Medicamento Hospitalar</td><td>Produto medicinal em embalagem para uso hospitalar</td></tr><tr><td style="white-space:nowrap">medicamento-controlado<a name="packaged-product-type-br-medicamento-controlado"> </a></td><td>Medicamento Controlado</td><td>Produto medicinal controlado em embalagem específica com requisitos especiais</td></tr><tr><td style="white-space:nowrap">medicamento-generico<a name="packaged-product-type-br-medicamento-generico"> </a></td><td>Medicamento Genérico</td><td>Medicamento genérico em embalagem comercial</td></tr><tr><td style="white-space:nowrap">medicamento-similar<a name="packaged-product-type-br-medicamento-similar"> </a></td><td>Medicamento Similar</td><td>Medicamento similar em embalagem comercial</td></tr><tr><td style="white-space:nowrap">medicamento-referencia<a name="packaged-product-type-br-medicamento-referencia"> </a></td><td>Medicamento de Referência</td><td>Medicamento de referência (inovador) em embalagem comercial</td></tr><tr><td style="white-space:nowrap">fitoterapico<a name="packaged-product-type-br-fitoterapico"> </a></td><td>Fitoterápico</td><td>Produto fitoterápico em embalagem comercial</td></tr><tr><td style="white-space:nowrap">homeopatico<a name="packaged-product-type-br-homeopatico"> </a></td><td>Homeopático</td><td>Produto homeopático em embalagem comercial</td></tr><tr><td style="white-space:nowrap">cosmetico<a name="packaged-product-type-br-cosmetico"> </a></td><td>Cosmético</td><td>Produto cosmético em embalagem comercial</td></tr><tr><td style="white-space:nowrap">saneante<a name="packaged-product-type-br-saneante"> </a></td><td>Saneante</td><td>Produto saneante em embalagem comercial</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br"/>
+  <version value="0.0.2"/>
+  <name value="PackagedProductTypeBR"/>
+  <title value="Tipos de Produto Embalado - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para tipos de produtos embalados no Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="medicamento"/>
+    <display value="Medicamento Embalado"/>
+    <definition value="Produto medicinal em embalagem comercial para dispensação"/>
+  </concept>
+  <concept>
+    <code value="medicamento-hospitalar"/>
+    <display value="Medicamento Hospitalar"/>
+    <definition value="Produto medicinal em embalagem para uso hospitalar"/>
+  </concept>
+  <concept>
+    <code value="medicamento-controlado"/>
+    <display value="Medicamento Controlado"/>
+    <definition value="Produto medicinal controlado em embalagem específica com requisitos especiais"/>
+  </concept>
+  <concept>
+    <code value="medicamento-generico"/>
+    <display value="Medicamento Genérico"/>
+    <definition value="Medicamento genérico em embalagem comercial"/>
+  </concept>
+  <concept>
+    <code value="medicamento-similar"/>
+    <display value="Medicamento Similar"/>
+    <definition value="Medicamento similar em embalagem comercial"/>
+  </concept>
+  <concept>
+    <code value="medicamento-referencia"/>
+    <display value="Medicamento de Referência"/>
+    <definition value="Medicamento de referência (inovador) em embalagem comercial"/>
+  </concept>
+  <concept>
+    <code value="fitoterapico"/>
+    <display value="Fitoterápico"/>
+    <definition value="Produto fitoterápico em embalagem comercial"/>
+  </concept>
+  <concept>
+    <code value="homeopatico"/>
+    <display value="Homeopático"/>
+    <definition value="Produto homeopático em embalagem comercial"/>
+  </concept>
+  <concept>
+    <code value="cosmetico"/>
+    <display value="Cosmético"/>
+    <definition value="Produto cosmético em embalagem comercial"/>
+  </concept>
+  <concept>
+    <code value="saneante"/>
+    <display value="Saneante"/>
+    <definition value="Produto saneante em embalagem comercial"/>
+  </concept>
+</CodeSystem>

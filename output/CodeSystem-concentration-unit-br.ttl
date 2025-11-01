@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "concentration-unit-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem concentration-unit-br</b></p><a name=\"concentration-unit-br\"> </a><a name=\"hcconcentration-unit-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">mg<a name=\"concentration-unit-br-mg\"> </a></td><td>mg</td><td>Miligramas</td></tr><tr><td style=\"white-space:nowrap\">g<a name=\"concentration-unit-br-g\"> </a></td><td>g</td><td>Gramas</td></tr><tr><td style=\"white-space:nowrap\">mcg<a name=\"concentration-unit-br-mcg\"> </a></td><td>mcg</td><td>Microgramas</td></tr><tr><td style=\"white-space:nowrap\">kg<a name=\"concentration-unit-br-kg\"> </a></td><td>kg</td><td>Quilogramas</td></tr><tr><td style=\"white-space:nowrap\">ml<a name=\"concentration-unit-br-ml\"> </a></td><td>mL</td><td>Mililitros</td></tr><tr><td style=\"white-space:nowrap\">l<a name=\"concentration-unit-br-l\"> </a></td><td>L</td><td>Litros</td></tr><tr><td style=\"white-space:nowrap\">mg-ml<a name=\"concentration-unit-br-mg-ml\"> </a></td><td>mg/mL</td><td>Miligramas por mililitro</td></tr><tr><td style=\"white-space:nowrap\">mcg-ml<a name=\"concentration-unit-br-mcg-ml\"> </a></td><td>mcg/mL</td><td>Microgramas por mililitro</td></tr><tr><td style=\"white-space:nowrap\">g-l<a name=\"concentration-unit-br-g-l\"> </a></td><td>g/L</td><td>Gramas por litro</td></tr><tr><td style=\"white-space:nowrap\">percent-p-p<a name=\"concentration-unit-br-percent-p-p\"> </a></td><td>% p/p</td><td>Porcentagem peso por peso</td></tr><tr><td style=\"white-space:nowrap\">percent-p-v<a name=\"concentration-unit-br-percent-p-v\"> </a></td><td>% p/v</td><td>Porcentagem peso por volume</td></tr><tr><td style=\"white-space:nowrap\">percent-v-v<a name=\"concentration-unit-br-percent-v-v\"> </a></td><td>% v/v</td><td>Porcentagem volume por volume</td></tr><tr><td style=\"white-space:nowrap\">ui<a name=\"concentration-unit-br-ui\"> </a></td><td>UI</td><td>Unidades Internacionais</td></tr><tr><td style=\"white-space:nowrap\">ui-ml<a name=\"concentration-unit-br-ui-ml\"> </a></td><td>UI/mL</td><td>Unidades Internacionais por mililitro</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "ConcentrationUnitBR"] ; # 
+  fhir:title [ fhir:v "Unidades de Concentração - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para unidades de concentração específicas brasileiras"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mg" ] ;
+     fhir:display [ fhir:v "mg" ] ;
+     fhir:definition [ fhir:v "Miligramas" ]
+  ] [
+     fhir:code [ fhir:v "g" ] ;
+     fhir:display [ fhir:v "g" ] ;
+     fhir:definition [ fhir:v "Gramas" ]
+  ] [
+     fhir:code [ fhir:v "mcg" ] ;
+     fhir:display [ fhir:v "mcg" ] ;
+     fhir:definition [ fhir:v "Microgramas" ]
+  ] [
+     fhir:code [ fhir:v "kg" ] ;
+     fhir:display [ fhir:v "kg" ] ;
+     fhir:definition [ fhir:v "Quilogramas" ]
+  ] [
+     fhir:code [ fhir:v "ml" ] ;
+     fhir:display [ fhir:v "mL" ] ;
+     fhir:definition [ fhir:v "Mililitros" ]
+  ] [
+     fhir:code [ fhir:v "l" ] ;
+     fhir:display [ fhir:v "L" ] ;
+     fhir:definition [ fhir:v "Litros" ]
+  ] [
+     fhir:code [ fhir:v "mg-ml" ] ;
+     fhir:display [ fhir:v "mg/mL" ] ;
+     fhir:definition [ fhir:v "Miligramas por mililitro" ]
+  ] [
+     fhir:code [ fhir:v "mcg-ml" ] ;
+     fhir:display [ fhir:v "mcg/mL" ] ;
+     fhir:definition [ fhir:v "Microgramas por mililitro" ]
+  ] [
+     fhir:code [ fhir:v "g-l" ] ;
+     fhir:display [ fhir:v "g/L" ] ;
+     fhir:definition [ fhir:v "Gramas por litro" ]
+  ] [
+     fhir:code [ fhir:v "percent-p-p" ] ;
+     fhir:display [ fhir:v "% p/p" ] ;
+     fhir:definition [ fhir:v "Porcentagem peso por peso" ]
+  ] [
+     fhir:code [ fhir:v "percent-p-v" ] ;
+     fhir:display [ fhir:v "% p/v" ] ;
+     fhir:definition [ fhir:v "Porcentagem peso por volume" ]
+  ] [
+     fhir:code [ fhir:v "percent-v-v" ] ;
+     fhir:display [ fhir:v "% v/v" ] ;
+     fhir:definition [ fhir:v "Porcentagem volume por volume" ]
+  ] [
+     fhir:code [ fhir:v "ui" ] ;
+     fhir:display [ fhir:v "UI" ] ;
+     fhir:definition [ fhir:v "Unidades Internacionais" ]
+  ] [
+     fhir:code [ fhir:v "ui-ml" ] ;
+     fhir:display [ fhir:v "UI/mL" ] ;
+     fhir:definition [ fhir:v "Unidades Internacionais por mililitro" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

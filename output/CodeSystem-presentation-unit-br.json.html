@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Unidades de Apresentação - Brasil - JSON Representation - BRIG - Guia de Implementação Brasileiro para IDMP v0.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"7.161"}
+    h3,h4,h5,h6{--heading-prefix:"7.161"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">BRIG - Guia de Implementação Brasileiro para IDMP</span>
+            <br/>
+            <span style="display:inline-block;">0.0.2 - Protótipo
+
+
+
+  <img src="assets/images/bra.svg" alt="Brazil flag" title="Brazil" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guia de Implementação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="implementation-guide.html">Visão Geral</a>
+      </li>
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="examples.html">Exemplos</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Recursos FHIR
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#2">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Code Systems</a>
+      </li>
+      <li><a name="l213">​</a>
+        <a href="artifacts.html#6">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Unidades de Apresentação - Brasil</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">!!BRIG - Guia de Implementação Brasileiro para IDMP - Compilação de desenvolvimento local (v0.0.2) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href="http://farmaco.maxapex.net/brig/fhir/history.html">Diretório de versões publicadas</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-presentation-unit-br.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-presentation-unit-br.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Unidades de Apresentação - Brasil - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Standard Status">Informative</a>
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-presentation-unit-br.json" no-download="true">Raw json</a> | <a download="null" href="CodeSystem-presentation-unit-br.json">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json"><code style="white-space: pre; text-wrap: nowrap;" class="language-json">{
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">id</a>" : "presentation-unit-br",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Narrativa gerada: CodeSystem presentation-unit-br&lt;/b&gt;&lt;/p&gt;&lt;a name=\"presentation-unit-br\"&gt; &lt;/a&gt;&lt;a name=\"hcpresentation-unit-br\"&gt; &lt;/a&gt;&lt;p&gt;Este case-sensitive sistema de código &lt;code&gt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br&lt;/code&gt; define o seguinte códigos:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;comprimido&lt;a name=\"presentation-unit-br-comprimido\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;comprimido&lt;/td&gt;&lt;td&gt;Por comprimido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;dragea&lt;a name=\"presentation-unit-br-dragea\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;drágea&lt;/td&gt;&lt;td&gt;Por drágea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;capsula&lt;a name=\"presentation-unit-br-capsula\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cápsula&lt;/td&gt;&lt;td&gt;Por cápsula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;capsula-dura&lt;a name=\"presentation-unit-br-capsula-dura\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cápsula dura&lt;/td&gt;&lt;td&gt;Por cápsula dura&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;capsula-mole&lt;a name=\"presentation-unit-br-capsula-mole\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;cápsula mole&lt;/td&gt;&lt;td&gt;Por cápsula mole&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;supositorio&lt;a name=\"presentation-unit-br-supositorio\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;supositório&lt;/td&gt;&lt;td&gt;Por supositório&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ovulo&lt;a name=\"presentation-unit-br-ovulo\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;óvulo&lt;/td&gt;&lt;td&gt;Por óvulo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;adesivo&lt;a name=\"presentation-unit-br-adesivo\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;adesivo&lt;/td&gt;&lt;td&gt;Por adesivo transdérmico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;dose&lt;a name=\"presentation-unit-br-dose\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;dose&lt;/td&gt;&lt;td&gt;Por dose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;aplicacao&lt;a name=\"presentation-unit-br-aplicacao\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;aplicação&lt;/td&gt;&lt;td&gt;Por aplicação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ml-dose&lt;a name=\"presentation-unit-br-ml-dose\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;mL por dose&lt;/td&gt;&lt;td&gt;Mililitros por dose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;frasco&lt;a name=\"presentation-unit-br-frasco\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;frasco&lt;/td&gt;&lt;td&gt;Por frasco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;ampola&lt;a name=\"presentation-unit-br-ampola\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ampola&lt;/td&gt;&lt;td&gt;Por ampola&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;seringa&lt;a name=\"presentation-unit-br-seringa\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;seringa&lt;/td&gt;&lt;td&gt;Por seringa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;bisnaga&lt;a name=\"presentation-unit-br-bisnaga\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;bisnaga&lt;/td&gt;&lt;td&gt;Por bisnaga&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "informative",
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">_valueCode</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#code#code.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCanonical</a>" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">url</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">version</a>" : "0.0.2",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">name</a>" : "PresentationUnitBR",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">title</a>" : "Unidades de Apresentação - Brasil",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">date</a>" : "2025-08-02",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">publisher</a>" : "Eugênio Neves",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Eugênio Neves",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://farmaco.maxapex.net"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "eugenio@farmaco.io"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Eugênio Neves",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "eugenio@farmaco.io"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://farmaco.maxapex.net/brig/fhir"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">description</a>" : "Sistema de códigos para unidades de apresentação de produtos farmacêuticos",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "BR"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.copyright">copyright</a>" : "Copyright &copy; 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR&reg; é marca registrada da HL7 International, usada com permissão.",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">count</a>" : 15,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "comprimido",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "comprimido",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por comprimido"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "dragea",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "drágea",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por drágea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "capsula",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "cápsula",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por cápsula"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "capsula-dura",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "cápsula dura",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por cápsula dura"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "capsula-mole",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "cápsula mole",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por cápsula mole"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "supositorio",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "supositório",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por supositório"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "ovulo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "óvulo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por óvulo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "adesivo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "adesivo",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por adesivo transdérmico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "dose",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "dose",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por dose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "aplicacao",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "aplicação",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por aplicação"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "ml-dose",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "mL por dose",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Mililitros por dose"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "frasco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "frasco",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por frasco"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "ampola",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "ampola",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por ampola"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "seringa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "seringa",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por seringa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "bisnaga",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "bisnaga",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Por bisnaga"
+    }
+  ]
+}</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://farmaco.maxapex.net">Eugênio Neves</a>.  Package brig.idmp.brazil#0.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Sep 10, 2025 17:43-0300">2025-09-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

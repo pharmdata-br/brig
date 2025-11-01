@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "presentation-unit-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem presentation-unit-br</b></p><a name=\"presentation-unit-br\"> </a><a name=\"hcpresentation-unit-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">comprimido<a name=\"presentation-unit-br-comprimido\"> </a></td><td>comprimido</td><td>Por comprimido</td></tr><tr><td style=\"white-space:nowrap\">dragea<a name=\"presentation-unit-br-dragea\"> </a></td><td>drágea</td><td>Por drágea</td></tr><tr><td style=\"white-space:nowrap\">capsula<a name=\"presentation-unit-br-capsula\"> </a></td><td>cápsula</td><td>Por cápsula</td></tr><tr><td style=\"white-space:nowrap\">capsula-dura<a name=\"presentation-unit-br-capsula-dura\"> </a></td><td>cápsula dura</td><td>Por cápsula dura</td></tr><tr><td style=\"white-space:nowrap\">capsula-mole<a name=\"presentation-unit-br-capsula-mole\"> </a></td><td>cápsula mole</td><td>Por cápsula mole</td></tr><tr><td style=\"white-space:nowrap\">supositorio<a name=\"presentation-unit-br-supositorio\"> </a></td><td>supositório</td><td>Por supositório</td></tr><tr><td style=\"white-space:nowrap\">ovulo<a name=\"presentation-unit-br-ovulo\"> </a></td><td>óvulo</td><td>Por óvulo</td></tr><tr><td style=\"white-space:nowrap\">adesivo<a name=\"presentation-unit-br-adesivo\"> </a></td><td>adesivo</td><td>Por adesivo transdérmico</td></tr><tr><td style=\"white-space:nowrap\">dose<a name=\"presentation-unit-br-dose\"> </a></td><td>dose</td><td>Por dose</td></tr><tr><td style=\"white-space:nowrap\">aplicacao<a name=\"presentation-unit-br-aplicacao\"> </a></td><td>aplicação</td><td>Por aplicação</td></tr><tr><td style=\"white-space:nowrap\">ml-dose<a name=\"presentation-unit-br-ml-dose\"> </a></td><td>mL por dose</td><td>Mililitros por dose</td></tr><tr><td style=\"white-space:nowrap\">frasco<a name=\"presentation-unit-br-frasco\"> </a></td><td>frasco</td><td>Por frasco</td></tr><tr><td style=\"white-space:nowrap\">ampola<a name=\"presentation-unit-br-ampola\"> </a></td><td>ampola</td><td>Por ampola</td></tr><tr><td style=\"white-space:nowrap\">seringa<a name=\"presentation-unit-br-seringa\"> </a></td><td>seringa</td><td>Por seringa</td></tr><tr><td style=\"white-space:nowrap\">bisnaga<a name=\"presentation-unit-br-bisnaga\"> </a></td><td>bisnaga</td><td>Por bisnaga</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "PresentationUnitBR"] ; # 
+  fhir:title [ fhir:v "Unidades de Apresentação - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para unidades de apresentação de produtos farmacêuticos"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "comprimido" ] ;
+     fhir:display [ fhir:v "comprimido" ] ;
+     fhir:definition [ fhir:v "Por comprimido" ]
+  ] [
+     fhir:code [ fhir:v "dragea" ] ;
+     fhir:display [ fhir:v "drágea" ] ;
+     fhir:definition [ fhir:v "Por drágea" ]
+  ] [
+     fhir:code [ fhir:v "capsula" ] ;
+     fhir:display [ fhir:v "cápsula" ] ;
+     fhir:definition [ fhir:v "Por cápsula" ]
+  ] [
+     fhir:code [ fhir:v "capsula-dura" ] ;
+     fhir:display [ fhir:v "cápsula dura" ] ;
+     fhir:definition [ fhir:v "Por cápsula dura" ]
+  ] [
+     fhir:code [ fhir:v "capsula-mole" ] ;
+     fhir:display [ fhir:v "cápsula mole" ] ;
+     fhir:definition [ fhir:v "Por cápsula mole" ]
+  ] [
+     fhir:code [ fhir:v "supositorio" ] ;
+     fhir:display [ fhir:v "supositório" ] ;
+     fhir:definition [ fhir:v "Por supositório" ]
+  ] [
+     fhir:code [ fhir:v "ovulo" ] ;
+     fhir:display [ fhir:v "óvulo" ] ;
+     fhir:definition [ fhir:v "Por óvulo" ]
+  ] [
+     fhir:code [ fhir:v "adesivo" ] ;
+     fhir:display [ fhir:v "adesivo" ] ;
+     fhir:definition [ fhir:v "Por adesivo transdérmico" ]
+  ] [
+     fhir:code [ fhir:v "dose" ] ;
+     fhir:display [ fhir:v "dose" ] ;
+     fhir:definition [ fhir:v "Por dose" ]
+  ] [
+     fhir:code [ fhir:v "aplicacao" ] ;
+     fhir:display [ fhir:v "aplicação" ] ;
+     fhir:definition [ fhir:v "Por aplicação" ]
+  ] [
+     fhir:code [ fhir:v "ml-dose" ] ;
+     fhir:display [ fhir:v "mL por dose" ] ;
+     fhir:definition [ fhir:v "Mililitros por dose" ]
+  ] [
+     fhir:code [ fhir:v "frasco" ] ;
+     fhir:display [ fhir:v "frasco" ] ;
+     fhir:definition [ fhir:v "Por frasco" ]
+  ] [
+     fhir:code [ fhir:v "ampola" ] ;
+     fhir:display [ fhir:v "ampola" ] ;
+     fhir:definition [ fhir:v "Por ampola" ]
+  ] [
+     fhir:code [ fhir:v "seringa" ] ;
+     fhir:display [ fhir:v "seringa" ] ;
+     fhir:definition [ fhir:v "Por seringa" ]
+  ] [
+     fhir:code [ fhir:v "bisnaga" ] ;
+     fhir:display [ fhir:v "bisnaga" ] ;
+     fhir:definition [ fhir:v "Por bisnaga" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

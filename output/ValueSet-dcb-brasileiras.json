@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "dcb-brasileiras",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet dcb-brasileiras</b></p><a name=\"dcb-brasileiras\"> </a><a name=\"hcdcb-brasileiras\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-dcb-brasileiras.html\"><code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/dcb-brasileiras",
+  "version" : "0.0.2",
+  "name" : "DCBBrasileiras",
+  "title" : "Denominações Comuns Brasileiras (DCB)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "ANVISA - Agência Nacional de Vigilância Sanitária",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras"
+    }]
+  }
+}

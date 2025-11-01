@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="therapeutic-indication-br"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: ValueSet therapeutic-indication-br</b></p><a name="therapeutic-indication-br"> </a><a name="hctherapeutic-indication-br"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir estes códigos, tal como definidos em <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>R50.9</td><td>Febre não especificada</td></tr><tr><td>R52.9</td><td>Dor não especificada</td></tr><tr><td>G43.9</td><td>Enxaqueca não especificada</td></tr><tr><td>M25.50</td><td>Dor articular</td></tr><tr><td>K08.89</td><td>Dor odontológica</td></tr><tr><td>N94.6</td><td>Dismenorreia</td></tr><tr><td>I10</td><td>Hipertensão essencial</td></tr><tr><td>E78.5</td><td>Hiperlipidemia</td></tr><tr><td>E11.9</td><td>Diabetes mellitus tipo 2</td></tr><tr><td>J06.9</td><td>Infecção aguda das vias aéreas superiores</td></tr></table></li><li>Incluir estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="http://snomed.info/id/386661006">386661006</a></td><td>Fever (finding)</td></tr><tr><td><a href="http://snomed.info/id/22253000">22253000</a></td><td>Pain (finding)</td></tr><tr><td><a href="http://snomed.info/id/37796009">37796009</a></td><td>Migraine (disorder)</td></tr><tr><td><a href="http://snomed.info/id/57676002">57676002</a></td><td>Arthralgia (finding)</td></tr><tr><td><a href="http://snomed.info/id/27355003">27355003</a></td><td>Toothache (finding)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indication-br"/>
+  <version value="0.0.2"/>
+  <name value="TherapeuticIndicationBRValueSet"/>
+  <title value="Indicações Terapêuticas - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet de indicações terapêuticas baseado em CID-10 e SNOMED-CT para o contexto brasileiro."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <concept>
+        <code value="R50.9"/>
+        <display value="Febre não especificada"/>
+      </concept>
+      <concept>
+        <code value="R52.9"/>
+        <display value="Dor não especificada"/>
+      </concept>
+      <concept>
+        <code value="G43.9"/>
+        <display value="Enxaqueca não especificada"/>
+      </concept>
+      <concept>
+        <code value="M25.50"/>
+        <display value="Dor articular"/>
+      </concept>
+      <concept>
+        <code value="K08.89"/>
+        <display value="Dor odontológica"/>
+      </concept>
+      <concept>
+        <code value="N94.6"/>
+        <display value="Dismenorreia"/>
+      </concept>
+      <concept>
+        <code value="I10"/>
+        <display value="Hipertensão essencial"/>
+      </concept>
+      <concept>
+        <code value="E78.5"/>
+        <display value="Hiperlipidemia"/>
+      </concept>
+      <concept>
+        <code value="E11.9"/>
+        <display value="Diabetes mellitus tipo 2"/>
+      </concept>
+      <concept>
+        <code value="J06.9"/>
+        <display value="Infecção aguda das vias aéreas superiores"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="386661006"/>
+        <display value="Fever (finding)"/>
+      </concept>
+      <concept>
+        <code value="22253000"/>
+        <display value="Pain (finding)"/>
+      </concept>
+      <concept>
+        <code value="37796009"/>
+        <display value="Migraine (disorder)"/>
+      </concept>
+      <concept>
+        <code value="57676002"/>
+        <display value="Arthralgia (finding)"/>
+      </concept>
+      <concept>
+        <code value="27355003"/>
+        <display value="Toothache (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

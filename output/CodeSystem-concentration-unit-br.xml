@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="concentration-unit-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem concentration-unit-br</b></p><a name="concentration-unit-br"> </a><a name="hcconcentration-unit-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">mg<a name="concentration-unit-br-mg"> </a></td><td>mg</td><td>Miligramas</td></tr><tr><td style="white-space:nowrap">g<a name="concentration-unit-br-g"> </a></td><td>g</td><td>Gramas</td></tr><tr><td style="white-space:nowrap">mcg<a name="concentration-unit-br-mcg"> </a></td><td>mcg</td><td>Microgramas</td></tr><tr><td style="white-space:nowrap">kg<a name="concentration-unit-br-kg"> </a></td><td>kg</td><td>Quilogramas</td></tr><tr><td style="white-space:nowrap">ml<a name="concentration-unit-br-ml"> </a></td><td>mL</td><td>Mililitros</td></tr><tr><td style="white-space:nowrap">l<a name="concentration-unit-br-l"> </a></td><td>L</td><td>Litros</td></tr><tr><td style="white-space:nowrap">mg-ml<a name="concentration-unit-br-mg-ml"> </a></td><td>mg/mL</td><td>Miligramas por mililitro</td></tr><tr><td style="white-space:nowrap">mcg-ml<a name="concentration-unit-br-mcg-ml"> </a></td><td>mcg/mL</td><td>Microgramas por mililitro</td></tr><tr><td style="white-space:nowrap">g-l<a name="concentration-unit-br-g-l"> </a></td><td>g/L</td><td>Gramas por litro</td></tr><tr><td style="white-space:nowrap">percent-p-p<a name="concentration-unit-br-percent-p-p"> </a></td><td>% p/p</td><td>Porcentagem peso por peso</td></tr><tr><td style="white-space:nowrap">percent-p-v<a name="concentration-unit-br-percent-p-v"> </a></td><td>% p/v</td><td>Porcentagem peso por volume</td></tr><tr><td style="white-space:nowrap">percent-v-v<a name="concentration-unit-br-percent-v-v"> </a></td><td>% v/v</td><td>Porcentagem volume por volume</td></tr><tr><td style="white-space:nowrap">ui<a name="concentration-unit-br-ui"> </a></td><td>UI</td><td>Unidades Internacionais</td></tr><tr><td style="white-space:nowrap">ui-ml<a name="concentration-unit-br-ui-ml"> </a></td><td>UI/mL</td><td>Unidades Internacionais por mililitro</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br"/>
+  <version value="0.0.2"/>
+  <name value="ConcentrationUnitBR"/>
+  <title value="Unidades de Concentração - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para unidades de concentração específicas brasileiras"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="mg"/>
+    <display value="mg"/>
+    <definition value="Miligramas"/>
+  </concept>
+  <concept>
+    <code value="g"/>
+    <display value="g"/>
+    <definition value="Gramas"/>
+  </concept>
+  <concept>
+    <code value="mcg"/>
+    <display value="mcg"/>
+    <definition value="Microgramas"/>
+  </concept>
+  <concept>
+    <code value="kg"/>
+    <display value="kg"/>
+    <definition value="Quilogramas"/>
+  </concept>
+  <concept>
+    <code value="ml"/>
+    <display value="mL"/>
+    <definition value="Mililitros"/>
+  </concept>
+  <concept>
+    <code value="l"/>
+    <display value="L"/>
+    <definition value="Litros"/>
+  </concept>
+  <concept>
+    <code value="mg-ml"/>
+    <display value="mg/mL"/>
+    <definition value="Miligramas por mililitro"/>
+  </concept>
+  <concept>
+    <code value="mcg-ml"/>
+    <display value="mcg/mL"/>
+    <definition value="Microgramas por mililitro"/>
+  </concept>
+  <concept>
+    <code value="g-l"/>
+    <display value="g/L"/>
+    <definition value="Gramas por litro"/>
+  </concept>
+  <concept>
+    <code value="percent-p-p"/>
+    <display value="% p/p"/>
+    <definition value="Porcentagem peso por peso"/>
+  </concept>
+  <concept>
+    <code value="percent-p-v"/>
+    <display value="% p/v"/>
+    <definition value="Porcentagem peso por volume"/>
+  </concept>
+  <concept>
+    <code value="percent-v-v"/>
+    <display value="% v/v"/>
+    <definition value="Porcentagem volume por volume"/>
+  </concept>
+  <concept>
+    <code value="ui"/>
+    <display value="UI"/>
+    <definition value="Unidades Internacionais"/>
+  </concept>
+  <concept>
+    <code value="ui-ml"/>
+    <display value="UI/mL"/>
+    <definition value="Unidades Internacionais por mililitro"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SubstanceDefinition xmlns="http://hl7.org/fhir">
+  <id value="dipirona-sodica-substance"/>
+  <meta>
+    <lastUpdated value="2025-08-02T10:00:00Z"/>
+    <profile value="http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Dipirona Sódica</h2><p><strong>DCB:</strong> 02532</p><p><strong>CAS:</strong> 68-89-3</p><p><strong>Código ANVISA:</strong> SUB002</p><p><strong>Classificação:</strong> Substância Ativa</p><p><strong>Status:</strong> Aprovada pela ANVISA</p><p><strong>Grau:</strong> Farmacêutico</p><p><strong>Fórmula Molecular:</strong> C13H16N3NaO4S</p><p><strong>Peso Molecular:</strong> 351.34 g/mol</p><p><strong>Ponto de Fusão:</strong> 215°C</p><p><strong>Descrição:</strong> Analgésico e antipirético derivado da pirazolona</p><p><strong>Código ATC:</strong> N02BB02</p></div>
+  </text>
+  <identifier>
+    <system value="https://anvisa.gov.br/dcb"/>
+    <value value="02532"/>
+  </identifier>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.6.61"/>
+    <value value="68-89-3"/>
+  </identifier>
+  <identifier>
+    <system value="https://anvisa.gov.br/substancias/codigo"/>
+    <value value="SUB002"/>
+  </identifier>
+  <status>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"/>
+      <code value="active"/>
+    </coding>
+  </status>
+  <classification>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"/>
+      <code value="active"/>
+    </coding>
+  </classification>
+  <domain>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicinalproduct-domain"/>
+      <code value="Human"/>
+    </coding>
+  </domain>
+  <grade>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br"/>
+      <code value="pharmaceutical"/>
+    </coding>
+  </grade>
+  <description value="A dipirona sódica é um fármaco analgésico e antipirético, derivado da pirazolona, amplamente utilizado no Brasil para o tratamento da dor e febre."/>
+  <manufacturer>
+    <reference value="OrganizationANVISASimple/neo-quimica-brasil"/>
+  </manufacturer>
+  <supplier>
+    <reference value="OrganizationANVISASimple/distribuidora-farmaceutica-br"/>
+  </supplier>
+  <property>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/substance-property-type"/>
+        <code value="MolecularWeight"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="351.34"/>
+      <unit value="grams per mole"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="g/mol"/>
+    </valueQuantity>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/substance-property-type"/>
+        <code value="MeltingPoint"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="215"/>
+      <unit value="degree Celsius"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="Cel"/>
+    </valueQuantity>
+  </property>
+  <structure>
+    <representation>
+      <representation value="C13H16N3NaO4S"/>
+      <format>
+        <coding>
+          <system value="http://hl7.org/fhir/substance-representation-format"/>
+          <code value="SMILES"/>
+        </coding>
+      </format>
+    </representation>
+  </structure>
+  <name>
+    <name value="Dipirona Sódica"/>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"/>
+        <code value="official"/>
+      </coding>
+    </type>
+  </name>
+  <name>
+    <name value="Metamizol Sódico"/>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"/>
+        <code value="common"/>
+      </coding>
+    </type>
+  </name>
+</SubstanceDefinition>

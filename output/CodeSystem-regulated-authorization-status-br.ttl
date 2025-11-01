@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "regulated-authorization-status-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem regulated-authorization-status-br</b></p><a name=\"regulated-authorization-status-br\"> </a><a name=\"hcregulated-authorization-status-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"regulated-authorization-status-br-active\"> </a></td><td>Ativo</td><td>Autorização regulatória ativa e válida</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"regulated-authorization-status-br-suspended\"> </a></td><td>Suspenso</td><td>Autorização temporariamente suspensa pela ANVISA</td></tr><tr><td style=\"white-space:nowrap\">cancelled<a name=\"regulated-authorization-status-br-cancelled\"> </a></td><td>Cancelado</td><td>Autorização cancelada definitivamente</td></tr><tr><td style=\"white-space:nowrap\">discontinued<a name=\"regulated-authorization-status-br-discontinued\"> </a></td><td>Descontinuado</td><td>Produto descontinuado pelo detentor</td></tr><tr><td style=\"white-space:nowrap\">expired<a name=\"regulated-authorization-status-br-expired\"> </a></td><td>Expirado</td><td>Autorização expirada por fim de validade</td></tr><tr><td style=\"white-space:nowrap\">pending<a name=\"regulated-authorization-status-br-pending\"> </a></td><td>Pendente</td><td>Processo de autorização em análise</td></tr><tr><td style=\"white-space:nowrap\">under-review<a name=\"regulated-authorization-status-br-under-review\"> </a></td><td>Em Revisão</td><td>Autorização sob revisão regulatória</td></tr><tr><td style=\"white-space:nowrap\">renewal-required<a name=\"regulated-authorization-status-br-renewal-required\"> </a></td><td>Renovação Necessária</td><td>Autorização próxima do vencimento, renovação necessária</td></tr><tr><td style=\"white-space:nowrap\">revoked<a name=\"regulated-authorization-status-br-revoked\"> </a></td><td>Revogado</td><td>Autorização revogada por decisão regulatória</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"regulated-authorization-status-br-withdrawn\"> </a></td><td>Retirado</td><td>Produto retirado do mercado por solicitação do detentor</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "RegulatedAuthorizationStatusBR"] ; # 
+  fhir:title [ fhir:v "Status de Autorização Regulatória ANVISA"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Status de autorizações regulatórias conforme processos ANVISA para medicamentos"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Ativo" ] ;
+     fhir:definition [ fhir:v "Autorização regulatória ativa e válida" ]
+  ] [
+     fhir:code [ fhir:v "suspended" ] ;
+     fhir:display [ fhir:v "Suspenso" ] ;
+     fhir:definition [ fhir:v "Autorização temporariamente suspensa pela ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "cancelled" ] ;
+     fhir:display [ fhir:v "Cancelado" ] ;
+     fhir:definition [ fhir:v "Autorização cancelada definitivamente" ]
+  ] [
+     fhir:code [ fhir:v "discontinued" ] ;
+     fhir:display [ fhir:v "Descontinuado" ] ;
+     fhir:definition [ fhir:v "Produto descontinuado pelo detentor" ]
+  ] [
+     fhir:code [ fhir:v "expired" ] ;
+     fhir:display [ fhir:v "Expirado" ] ;
+     fhir:definition [ fhir:v "Autorização expirada por fim de validade" ]
+  ] [
+     fhir:code [ fhir:v "pending" ] ;
+     fhir:display [ fhir:v "Pendente" ] ;
+     fhir:definition [ fhir:v "Processo de autorização em análise" ]
+  ] [
+     fhir:code [ fhir:v "under-review" ] ;
+     fhir:display [ fhir:v "Em Revisão" ] ;
+     fhir:definition [ fhir:v "Autorização sob revisão regulatória" ]
+  ] [
+     fhir:code [ fhir:v "renewal-required" ] ;
+     fhir:display [ fhir:v "Renovação Necessária" ] ;
+     fhir:definition [ fhir:v "Autorização próxima do vencimento, renovação necessária" ]
+  ] [
+     fhir:code [ fhir:v "revoked" ] ;
+     fhir:display [ fhir:v "Revogado" ] ;
+     fhir:definition [ fhir:v "Autorização revogada por decisão regulatória" ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Retirado" ] ;
+     fhir:definition [ fhir:v "Produto retirado do mercado por solicitação do detentor" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

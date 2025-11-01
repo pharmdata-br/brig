@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "legal-status-supply-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem legal-status-supply-br</b></p><a name=\"legal-status-supply-br\"> </a><a name=\"hclegal-status-supply-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">venda-livre<a name=\"legal-status-supply-br-venda-livre\"> </a></td><td>Venda Livre</td><td>Medicamento de venda livre, sem necessidade de prescrição médica</td></tr><tr><td style=\"white-space:nowrap\">prescricao-medica<a name=\"legal-status-supply-br-prescricao-medica\"> </a></td><td>Prescrição Médica</td><td>Medicamento que requer prescrição médica para dispensação</td></tr><tr><td style=\"white-space:nowrap\">prescricao-medica-renovavel<a name=\"legal-status-supply-br-prescricao-medica-renovavel\"> </a></td><td>Prescrição Médica Renovável</td><td>Medicamento com prescrição médica que permite renovação</td></tr><tr><td style=\"white-space:nowrap\">receita-especial<a name=\"legal-status-supply-br-receita-especial\"> </a></td><td>Receita Especial</td><td>Medicamento que requer receita de controle especial</td></tr><tr><td style=\"white-space:nowrap\">receita-azul<a name=\"legal-status-supply-br-receita-azul\"> </a></td><td>Receita Azul</td><td>Medicamento controlado que requer receita azul (lista C1)</td></tr><tr><td style=\"white-space:nowrap\">receita-amarela<a name=\"legal-status-supply-br-receita-amarela\"> </a></td><td>Receita Amarela</td><td>Medicamento controlado que requer receita amarela (lista C2)</td></tr><tr><td style=\"white-space:nowrap\">notificacao-a<a name=\"legal-status-supply-br-notificacao-a\"> </a></td><td>Notificação A</td><td>Medicamento que requer notificação de receita A (entorpecentes)</td></tr><tr><td style=\"white-space:nowrap\">notificacao-b<a name=\"legal-status-supply-br-notificacao-b\"> </a></td><td>Notificação B</td><td>Medicamento que requer notificação de receita B (psicotrópicos)</td></tr><tr><td style=\"white-space:nowrap\">uso-hospitalar<a name=\"legal-status-supply-br-uso-hospitalar\"> </a></td><td>Uso Hospitalar</td><td>Medicamento de uso restrito a ambiente hospitalar</td></tr><tr><td style=\"white-space:nowrap\">uso-restrito<a name=\"legal-status-supply-br-uso-restrito\"> </a></td><td>Uso Restrito</td><td>Medicamento de uso restrito conforme regulamentação específica</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "LegalStatusSupplyBR"] ; # 
+  fhir:title [ fhir:v "Status Legal de Fornecimento - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para status legal de dispensação no contexto brasileiro"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "venda-livre" ] ;
+     fhir:display [ fhir:v "Venda Livre" ] ;
+     fhir:definition [ fhir:v "Medicamento de venda livre, sem necessidade de prescrição médica" ]
+  ] [
+     fhir:code [ fhir:v "prescricao-medica" ] ;
+     fhir:display [ fhir:v "Prescrição Médica" ] ;
+     fhir:definition [ fhir:v "Medicamento que requer prescrição médica para dispensação" ]
+  ] [
+     fhir:code [ fhir:v "prescricao-medica-renovavel" ] ;
+     fhir:display [ fhir:v "Prescrição Médica Renovável" ] ;
+     fhir:definition [ fhir:v "Medicamento com prescrição médica que permite renovação" ]
+  ] [
+     fhir:code [ fhir:v "receita-especial" ] ;
+     fhir:display [ fhir:v "Receita Especial" ] ;
+     fhir:definition [ fhir:v "Medicamento que requer receita de controle especial" ]
+  ] [
+     fhir:code [ fhir:v "receita-azul" ] ;
+     fhir:display [ fhir:v "Receita Azul" ] ;
+     fhir:definition [ fhir:v "Medicamento controlado que requer receita azul (lista C1)" ]
+  ] [
+     fhir:code [ fhir:v "receita-amarela" ] ;
+     fhir:display [ fhir:v "Receita Amarela" ] ;
+     fhir:definition [ fhir:v "Medicamento controlado que requer receita amarela (lista C2)" ]
+  ] [
+     fhir:code [ fhir:v "notificacao-a" ] ;
+     fhir:display [ fhir:v "Notificação A" ] ;
+     fhir:definition [ fhir:v "Medicamento que requer notificação de receita A (entorpecentes)" ]
+  ] [
+     fhir:code [ fhir:v "notificacao-b" ] ;
+     fhir:display [ fhir:v "Notificação B" ] ;
+     fhir:definition [ fhir:v "Medicamento que requer notificação de receita B (psicotrópicos)" ]
+  ] [
+     fhir:code [ fhir:v "uso-hospitalar" ] ;
+     fhir:display [ fhir:v "Uso Hospitalar" ] ;
+     fhir:definition [ fhir:v "Medicamento de uso restrito a ambiente hospitalar" ]
+  ] [
+     fhir:code [ fhir:v "uso-restrito" ] ;
+     fhir:display [ fhir:v "Uso Restrito" ] ;
+     fhir:definition [ fhir:v "Medicamento de uso restrito conforme regulamentação específica" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

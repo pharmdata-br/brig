@@ -1,0 +1,82 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mpid-requiring-changes",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet mpid-requiring-changes</b></p><a name=\"mpid-requiring-changes\"> </a><a name=\"hcmpid-requiring-changes\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"CodeSystem-identifier-change-reason.html\"><code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-mah-transfer\">mah-transfer</a></td><td style=\"color: #cccccc\">Transferência de Titular</td><td>Mudança do titular da autorização de marketing</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-legal-status-change\">legal-status-change</a></td><td style=\"color: #cccccc\">Mudança de Status Legal</td><td>Alteração do status legal de fornecimento (prescrição, OTC, controlado)</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-indication-change\">indication-change</a></td><td style=\"color: #cccccc\">Mudança de Indicação Terapêutica</td><td>Adição, remoção ou modificação significativa de indicações terapêuticas</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-strength-change\">strength-change</a></td><td style=\"color: #cccccc\">Mudança de Concentração</td><td>Alteração na concentração ou força da substância ativa</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-form-change\">form-change</a></td><td style=\"color: #cccccc\">Mudança de Forma Farmacêutica</td><td>Alteração da forma farmacêutica do produto</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-route-change\">route-change</a></td><td style=\"color: #cccccc\">Mudança de Via de Administração</td><td>Adição, remoção ou modificação das vias de administração</td></tr><tr><td><a href=\"CodeSystem-identifier-change-reason.html#identifier-change-reason-substance-change\">substance-change</a></td><td style=\"color: #cccccc\">Mudança de Substância Ativa</td><td>Alteração, adição ou remoção de substância ativa</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-requiring-changes",
+  "version" : "0.0.2",
+  "name" : "MPIDRequiringChanges",
+  "title" : "Mudanças que Requerem Novo MPID",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Tipos de mudanças que requerem geração de novo MPID",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason",
+      "concept" : [{
+        "code" : "mah-transfer"
+      },
+      {
+        "code" : "legal-status-change"
+      },
+      {
+        "code" : "indication-change"
+      },
+      {
+        "code" : "strength-change"
+      },
+      {
+        "code" : "form-change"
+      },
+      {
+        "code" : "route-change"
+      },
+      {
+        "code" : "substance-change"
+      }]
+    }]
+  }
+}

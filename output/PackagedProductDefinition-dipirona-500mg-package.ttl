@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/PackagedProductDefinition/dipirona-500mg-package> a fhir:PackagedProductDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dipirona-500mg-package"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-08-02T10:00:00Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"^^xsd:anyURI ;
+       fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Dipirona Sódica Neo Química 500mg - Embalagem</h2><p><strong>EAN/GTIN:</strong> 7891234567890</p><p><strong>Código ANVISA:</strong> PKG-DIP-500-20</p><p><strong>Conteúdo:</strong> 20 comprimidos de 500mg</p><p><strong>Embalagem:</strong> Caixa de papelão com blister PVC/Alumínio</p><p><strong>Armazenamento:</strong> Temperatura ambiente</p><p><strong>Status:</strong> Ativo para comercialização</p><p><strong>Fabricante:</strong> Neo Química Brasil</p><p><strong>Produto base:</strong> Dipirona Sódica 500mg</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "BR-NEO-001234-P001" ]
+  ] [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/gs1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7891234567890" ]
+  ] [
+     fhir:system [ fhir:v "http://anvisa.gov.br/produtos/embalagem"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "PKG-DIP-500-20" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Dipirona Sódica Neo Química 500mg - Caixa 20 comprimidos"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "medicamento" ]
+     ] )
+  ] ; # 
+  fhir:packageFor ( [
+     fhir:link <http://farmaco.maxapex.net/brig/fhir/MedicinalProductDefinitionBR/dipirona-500mg-comp> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinitionBR/dipirona-500mg-comp" ]
+  ] ) ; # 
+  fhir:legalStatusOfSupply ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "venda-livre" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BR" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active" ]
+       ] )
+     ] ;
+     fhir:dateRange [
+       fhir:start [ fhir:v "2020-03-15"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:manufacturer ( [
+     fhir:link <http://farmaco.maxapex.net/brig/fhir/OrganizationANVISASimple/neo-quimica-brasil> ;
+     fhir:reference [ fhir:v "OrganizationANVISASimple/neo-quimica-brasil" ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "caixa" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v 1 ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "papel" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "plastico" ]
+       ] )
+     ] ) ;
+     fhir:containedItem ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "dipirona-comp-500mg" ] ;
+             fhir:display [ fhir:v "Dipirona Sódica 500mg comprimido" ]
+           ] )
+         ]
+       ] ;
+       fhir:amount [
+         fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "comprimido" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "{tab}" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:characteristic ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "armazenamento" ] ;
+         fhir:display [ fhir:v "Condições de armazenamento" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "temperatura-ambiente" ] ;
+         fhir:display [ fhir:v "Temperatura ambiente" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

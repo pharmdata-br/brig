@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "clinical-use-category-br"] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem clinical-use-category-br</b></p><a name=\"clinical-use-category-br\"> </a><a name=\"hcclinical-use-category-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">ceaf<a name=\"clinical-use-category-br-ceaf\"> </a></td><td>Componente Especializado da Assistência Farmacêutica</td><td>Medicamento incluído no CEAF para doenças raras e de alto custo</td></tr><tr><td style=\"white-space:nowrap\">cbaf<a name=\"clinical-use-category-br-cbaf\"> </a></td><td>Componente Básico da Assistência Farmacêutica</td><td>Medicamento do componente básico da assistência farmacêutica</td></tr><tr><td style=\"white-space:nowrap\">rename<a name=\"clinical-use-category-br-rename\"> </a></td><td>Relação Nacional de Medicamentos Essenciais</td><td>Medicamento incluído na RENAME</td></tr><tr><td style=\"white-space:nowrap\">pediatric<a name=\"clinical-use-category-br-pediatric\"> </a></td><td>Uso pediátrico</td><td>Indicação específica para população pediátrica</td></tr><tr><td style=\"white-space:nowrap\">geriatric<a name=\"clinical-use-category-br-geriatric\"> </a></td><td>Uso geriátrico</td><td>Indicação específica para população geriátrica</td></tr><tr><td style=\"white-space:nowrap\">pregnancy<a name=\"clinical-use-category-br-pregnancy\"> </a></td><td>Gestação</td><td>Considerações especiais para gestantes</td></tr><tr><td style=\"white-space:nowrap\">lactation<a name=\"clinical-use-category-br-lactation\"> </a></td><td>Lactação</td><td>Considerações especiais para lactantes</td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"clinical-use-category-br-hospital\"> </a></td><td>Uso hospitalar</td><td>Medicamento de uso exclusivamente hospitalar</td></tr><tr><td style=\"white-space:nowrap\">controlled<a name=\"clinical-use-category-br-controlled\"> </a></td><td>Controle especial</td><td>Medicamento sujeito a controle especial</td></tr><tr><td style=\"white-space:nowrap\">biological<a name=\"clinical-use-category-br-biological\"> </a></td><td>Medicamento biológico</td><td>Produto biológico com considerações especiais</td></tr><tr><td style=\"white-space:nowrap\">herbal<a name=\"clinical-use-category-br-herbal\"> </a></td><td>Medicamento fitoterápico</td><td>Produto fitoterápico registrado</td></tr><tr><td style=\"white-space:nowrap\">otc<a name=\"clinical-use-category-br-otc\"> </a></td><td>Medicamento isento de prescrição</td><td>Medicamento de venda livre (OTC)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "ClinicalUseCategoryBR"] ; # 
+  fhir:title [ fhir:v "Categorias de Uso Clínico - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Categorias específicas brasileiras para classificação de uso clínico."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:compositional [ fhir:v false] ; # 
+  fhir:versionNeeded [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ceaf" ] ;
+     fhir:display [ fhir:v "Componente Especializado da Assistência Farmacêutica" ] ;
+     fhir:definition [ fhir:v "Medicamento incluído no CEAF para doenças raras e de alto custo" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "CEAF" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "cbaf" ] ;
+     fhir:display [ fhir:v "Componente Básico da Assistência Farmacêutica" ] ;
+     fhir:definition [ fhir:v "Medicamento do componente básico da assistência farmacêutica" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "CBAF" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "rename" ] ;
+     fhir:display [ fhir:v "Relação Nacional de Medicamentos Essenciais" ] ;
+     fhir:definition [ fhir:v "Medicamento incluído na RENAME" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "RENAME" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "pediatric" ] ;
+     fhir:display [ fhir:v "Uso pediátrico" ] ;
+     fhir:definition [ fhir:v "Indicação específica para população pediátrica" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Pediátrico" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "geriatric" ] ;
+     fhir:display [ fhir:v "Uso geriátrico" ] ;
+     fhir:definition [ fhir:v "Indicação específica para população geriátrica" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Geriátrico" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "pregnancy" ] ;
+     fhir:display [ fhir:v "Gestação" ] ;
+     fhir:definition [ fhir:v "Considerações especiais para gestantes" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Gestação" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "lactation" ] ;
+     fhir:display [ fhir:v "Lactação" ] ;
+     fhir:definition [ fhir:v "Considerações especiais para lactantes" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Lactação" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "hospital" ] ;
+     fhir:display [ fhir:v "Uso hospitalar" ] ;
+     fhir:definition [ fhir:v "Medicamento de uso exclusivamente hospitalar" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Hospitalar" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "controlled" ] ;
+     fhir:display [ fhir:v "Controle especial" ] ;
+     fhir:definition [ fhir:v "Medicamento sujeito a controle especial" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Controle especial" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "biological" ] ;
+     fhir:display [ fhir:v "Medicamento biológico" ] ;
+     fhir:definition [ fhir:v "Produto biológico com considerações especiais" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Biológico" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "herbal" ] ;
+     fhir:display [ fhir:v "Medicamento fitoterápico" ] ;
+     fhir:definition [ fhir:v "Produto fitoterápico registrado" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Fitoterápico" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "otc" ] ;
+     fhir:display [ fhir:v "Medicamento isento de prescrição" ] ;
+     fhir:definition [ fhir:v "Medicamento de venda livre (OTC)" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Isento de prescrição" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

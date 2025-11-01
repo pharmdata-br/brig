@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="container-materials-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem container-materials-br</b></p><a name="container-materials-br"> </a><a name="hccontainer-materials-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">pvc<a name="container-materials-br-pvc"> </a></td><td>PVC</td><td>Cloreto de polivinila</td></tr><tr><td style="white-space:nowrap">pe<a name="container-materials-br-pe"> </a></td><td>Polietileno</td><td>Polietileno (PE)</td></tr><tr><td style="white-space:nowrap">pp<a name="container-materials-br-pp"> </a></td><td>Polipropileno</td><td>Polipropileno (PP)</td></tr><tr><td style="white-space:nowrap">pet<a name="container-materials-br-pet"> </a></td><td>PET</td><td>Tereftalato de polietileno</td></tr><tr><td style="white-space:nowrap">pvdc<a name="container-materials-br-pvdc"> </a></td><td>PVDC</td><td>Cloreto de polivinilideno</td></tr><tr><td style="white-space:nowrap">eva<a name="container-materials-br-eva"> </a></td><td>EVA</td><td>Acetato-vinilo de etileno</td></tr><tr><td style="white-space:nowrap">aluminum<a name="container-materials-br-aluminum"> </a></td><td>Alumínio</td><td>Folha ou lâmina de alumínio</td></tr><tr><td style="white-space:nowrap">tinplate<a name="container-materials-br-tinplate"> </a></td><td>Folha de flandres</td><td>Aço com revestimento de estanho</td></tr><tr><td style="white-space:nowrap">stainless-steel<a name="container-materials-br-stainless-steel"> </a></td><td>Aço inoxidável</td><td>Aço inoxidável</td></tr><tr><td style="white-space:nowrap">glass-clear<a name="container-materials-br-glass-clear"> </a></td><td>Vidro transparente</td><td>Vidro transparente incolor</td></tr><tr><td style="white-space:nowrap">glass-amber<a name="container-materials-br-glass-amber"> </a></td><td>Vidro âmbar</td><td>Vidro com coloração âmbar</td></tr><tr><td style="white-space:nowrap">glass-blue<a name="container-materials-br-glass-blue"> </a></td><td>Vidro azul</td><td>Vidro com coloração azul</td></tr><tr><td style="white-space:nowrap">cardboard<a name="container-materials-br-cardboard"> </a></td><td>Papelão</td><td>Papelão ou cartão</td></tr><tr><td style="white-space:nowrap">paper<a name="container-materials-br-paper"> </a></td><td>Papel</td><td>Papel comum ou especial</td></tr><tr><td style="white-space:nowrap">rubber<a name="container-materials-br-rubber"> </a></td><td>Borracha</td><td>Borracha natural ou sintética</td></tr><tr><td style="white-space:nowrap">silicone<a name="container-materials-br-silicone"> </a></td><td>Silicone</td><td>Silicone médico</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br"/>
+  <version value="0.0.2"/>
+  <name value="ContainerMaterialsBR"/>
+  <title value="Materiais de Container - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para materiais de containers brasileiros"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="pvc"/>
+    <display value="PVC"/>
+    <definition value="Cloreto de polivinila"/>
+  </concept>
+  <concept>
+    <code value="pe"/>
+    <display value="Polietileno"/>
+    <definition value="Polietileno (PE)"/>
+  </concept>
+  <concept>
+    <code value="pp"/>
+    <display value="Polipropileno"/>
+    <definition value="Polipropileno (PP)"/>
+  </concept>
+  <concept>
+    <code value="pet"/>
+    <display value="PET"/>
+    <definition value="Tereftalato de polietileno"/>
+  </concept>
+  <concept>
+    <code value="pvdc"/>
+    <display value="PVDC"/>
+    <definition value="Cloreto de polivinilideno"/>
+  </concept>
+  <concept>
+    <code value="eva"/>
+    <display value="EVA"/>
+    <definition value="Acetato-vinilo de etileno"/>
+  </concept>
+  <concept>
+    <code value="aluminum"/>
+    <display value="Alumínio"/>
+    <definition value="Folha ou lâmina de alumínio"/>
+  </concept>
+  <concept>
+    <code value="tinplate"/>
+    <display value="Folha de flandres"/>
+    <definition value="Aço com revestimento de estanho"/>
+  </concept>
+  <concept>
+    <code value="stainless-steel"/>
+    <display value="Aço inoxidável"/>
+    <definition value="Aço inoxidável"/>
+  </concept>
+  <concept>
+    <code value="glass-clear"/>
+    <display value="Vidro transparente"/>
+    <definition value="Vidro transparente incolor"/>
+  </concept>
+  <concept>
+    <code value="glass-amber"/>
+    <display value="Vidro âmbar"/>
+    <definition value="Vidro com coloração âmbar"/>
+  </concept>
+  <concept>
+    <code value="glass-blue"/>
+    <display value="Vidro azul"/>
+    <definition value="Vidro com coloração azul"/>
+  </concept>
+  <concept>
+    <code value="cardboard"/>
+    <display value="Papelão"/>
+    <definition value="Papelão ou cartão"/>
+  </concept>
+  <concept>
+    <code value="paper"/>
+    <display value="Papel"/>
+    <definition value="Papel comum ou especial"/>
+  </concept>
+  <concept>
+    <code value="rubber"/>
+    <display value="Borracha"/>
+    <definition value="Borracha natural ou sintética"/>
+  </concept>
+  <concept>
+    <code value="silicone"/>
+    <display value="Silicone"/>
+    <definition value="Silicone médico"/>
+  </concept>
+</CodeSystem>

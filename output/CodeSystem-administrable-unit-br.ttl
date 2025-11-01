@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "administrable-unit-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem administrable-unit-br</b></p><a name=\"administrable-unit-br\"> </a><a name=\"hcadministrable-unit-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">ml-dose<a name=\"administrable-unit-br-ml-dose\"> </a></td><td>mL por dose</td><td>Mililitros por dose administrada</td></tr><tr><td style=\"white-space:nowrap\">dose-unitaria<a name=\"administrable-unit-br-dose-unitaria\"> </a></td><td>Dose unitária</td><td>Uma dose completa pronta para administração</td></tr><tr><td style=\"white-space:nowrap\">aplicacao<a name=\"administrable-unit-br-aplicacao\"> </a></td><td>Aplicação</td><td>Uma aplicação tópica</td></tr><tr><td style=\"white-space:nowrap\">comprimido<a name=\"administrable-unit-br-comprimido\"> </a></td><td>Comprimido</td><td>Um comprimido pronto para administração</td></tr><tr><td style=\"white-space:nowrap\">capsula<a name=\"administrable-unit-br-capsula\"> </a></td><td>Cápsula</td><td>Uma cápsula pronta para administração</td></tr><tr><td style=\"white-space:nowrap\">supositorio<a name=\"administrable-unit-br-supositorio\"> </a></td><td>Supositório</td><td>Um supositório pronto para inserção</td></tr><tr><td style=\"white-space:nowrap\">inalacao<a name=\"administrable-unit-br-inalacao\"> </a></td><td>Inalação</td><td>Uma dose inalatória</td></tr><tr><td style=\"white-space:nowrap\">borrifo<a name=\"administrable-unit-br-borrifo\"> </a></td><td>Borrifo</td><td>Um borrifo nasal ou oral</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "AdministrableUnitBR"] ; # 
+  fhir:title [ fhir:v "Unidades Administráveis - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para unidades de apresentação administrável"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ml-dose" ] ;
+     fhir:display [ fhir:v "mL por dose" ] ;
+     fhir:definition [ fhir:v "Mililitros por dose administrada" ]
+  ] [
+     fhir:code [ fhir:v "dose-unitaria" ] ;
+     fhir:display [ fhir:v "Dose unitária" ] ;
+     fhir:definition [ fhir:v "Uma dose completa pronta para administração" ]
+  ] [
+     fhir:code [ fhir:v "aplicacao" ] ;
+     fhir:display [ fhir:v "Aplicação" ] ;
+     fhir:definition [ fhir:v "Uma aplicação tópica" ]
+  ] [
+     fhir:code [ fhir:v "comprimido" ] ;
+     fhir:display [ fhir:v "Comprimido" ] ;
+     fhir:definition [ fhir:v "Um comprimido pronto para administração" ]
+  ] [
+     fhir:code [ fhir:v "capsula" ] ;
+     fhir:display [ fhir:v "Cápsula" ] ;
+     fhir:definition [ fhir:v "Uma cápsula pronta para administração" ]
+  ] [
+     fhir:code [ fhir:v "supositorio" ] ;
+     fhir:display [ fhir:v "Supositório" ] ;
+     fhir:definition [ fhir:v "Um supositório pronto para inserção" ]
+  ] [
+     fhir:code [ fhir:v "inalacao" ] ;
+     fhir:display [ fhir:v "Inalação" ] ;
+     fhir:definition [ fhir:v "Uma dose inalatória" ]
+  ] [
+     fhir:code [ fhir:v "borrifo" ] ;
+     fhir:display [ fhir:v "Borrifo" ] ;
+     fhir:definition [ fhir:v "Um borrifo nasal ou oral" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

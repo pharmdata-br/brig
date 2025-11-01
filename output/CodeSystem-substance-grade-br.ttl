@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-grade-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-grade-br</b></p><a name=\"substance-grade-br\"> </a><a name=\"hcsubstance-grade-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">pharmaceutical<a name=\"substance-grade-br-pharmaceutical\"> </a></td><td>Grau Farmacêutico</td><td>Grau farmacêutico conforme farmacopeias</td></tr><tr><td style=\"white-space:nowrap\">food<a name=\"substance-grade-br-food\"> </a></td><td>Grau Alimentício</td><td>Grau adequado para uso alimentício</td></tr><tr><td style=\"white-space:nowrap\">cosmetic<a name=\"substance-grade-br-cosmetic\"> </a></td><td>Grau Cosmético</td><td>Grau adequado para uso cosmético</td></tr><tr><td style=\"white-space:nowrap\">technical<a name=\"substance-grade-br-technical\"> </a></td><td>Grau Técnico</td><td>Grau técnico ou industrial</td></tr><tr><td style=\"white-space:nowrap\">analytical<a name=\"substance-grade-br-analytical\"> </a></td><td>Grau Analítico</td><td>Grau para reagente analítico</td></tr><tr><td style=\"white-space:nowrap\">usp<a name=\"substance-grade-br-usp\"> </a></td><td>USP</td><td>Grau conforme United States Pharmacopeia</td></tr><tr><td style=\"white-space:nowrap\">ep<a name=\"substance-grade-br-ep\"> </a></td><td>EP</td><td>Grau conforme European Pharmacopoeia</td></tr><tr><td style=\"white-space:nowrap\">fb<a name=\"substance-grade-br-fb\"> </a></td><td>FB</td><td>Grau conforme Farmacopeia Brasileira</td></tr><tr><td style=\"white-space:nowrap\">research<a name=\"substance-grade-br-research\"> </a></td><td>Grau Pesquisa</td><td>Grau adequado para pesquisa científica</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "SubstanceGradeBR"] ; # 
+  fhir:title [ fhir:v "Grau de Substância - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para graus de qualidade de substâncias"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pharmaceutical" ] ;
+     fhir:display [ fhir:v "Grau Farmacêutico" ] ;
+     fhir:definition [ fhir:v "Grau farmacêutico conforme farmacopeias" ]
+  ] [
+     fhir:code [ fhir:v "food" ] ;
+     fhir:display [ fhir:v "Grau Alimentício" ] ;
+     fhir:definition [ fhir:v "Grau adequado para uso alimentício" ]
+  ] [
+     fhir:code [ fhir:v "cosmetic" ] ;
+     fhir:display [ fhir:v "Grau Cosmético" ] ;
+     fhir:definition [ fhir:v "Grau adequado para uso cosmético" ]
+  ] [
+     fhir:code [ fhir:v "technical" ] ;
+     fhir:display [ fhir:v "Grau Técnico" ] ;
+     fhir:definition [ fhir:v "Grau técnico ou industrial" ]
+  ] [
+     fhir:code [ fhir:v "analytical" ] ;
+     fhir:display [ fhir:v "Grau Analítico" ] ;
+     fhir:definition [ fhir:v "Grau para reagente analítico" ]
+  ] [
+     fhir:code [ fhir:v "usp" ] ;
+     fhir:display [ fhir:v "USP" ] ;
+     fhir:definition [ fhir:v "Grau conforme United States Pharmacopeia" ]
+  ] [
+     fhir:code [ fhir:v "ep" ] ;
+     fhir:display [ fhir:v "EP" ] ;
+     fhir:definition [ fhir:v "Grau conforme European Pharmacopoeia" ]
+  ] [
+     fhir:code [ fhir:v "fb" ] ;
+     fhir:display [ fhir:v "FB" ] ;
+     fhir:definition [ fhir:v "Grau conforme Farmacopeia Brasileira" ]
+  ] [
+     fhir:code [ fhir:v "research" ] ;
+     fhir:display [ fhir:v "Grau Pesquisa" ] ;
+     fhir:definition [ fhir:v "Grau adequado para pesquisa científica" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

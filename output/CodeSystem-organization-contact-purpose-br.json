@@ -1,0 +1,184 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "organization-contact-purpose-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-contact-purpose-br</b></p><a name=\"organization-contact-purpose-br\"> </a><a name=\"hcorganization-contact-purpose-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">regulatory-affairs<a name=\"organization-contact-purpose-br-regulatory-affairs\"> </a></td><td>Assuntos Regulatórios</td><td>Responsável por questões regulatórias e relacionamento com ANVISA</td></tr><tr><td style=\"white-space:nowrap\">technical-responsible<a name=\"organization-contact-purpose-br-technical-responsible\"> </a></td><td>Responsável Técnico</td><td>Responsável técnico conforme exigência legal</td></tr><tr><td style=\"white-space:nowrap\">pharmacovigilance<a name=\"organization-contact-purpose-br-pharmacovigilance\"> </a></td><td>Farmacovigilância</td><td>Responsável por farmacovigilância e monitoramento pós-comercialização</td></tr><tr><td style=\"white-space:nowrap\">quality-assurance<a name=\"organization-contact-purpose-br-quality-assurance\"> </a></td><td>Garantia de Qualidade</td><td>Responsável pela garantia de qualidade</td></tr><tr><td style=\"white-space:nowrap\">operations<a name=\"organization-contact-purpose-br-operations\"> </a></td><td>Operações</td><td>Responsável por operações e produção</td></tr><tr><td style=\"white-space:nowrap\">logistics<a name=\"organization-contact-purpose-br-logistics\"> </a></td><td>Logística</td><td>Responsável por logística e distribuição</td></tr><tr><td style=\"white-space:nowrap\">procurement<a name=\"organization-contact-purpose-br-procurement\"> </a></td><td>Compras</td><td>Responsável por aquisições e suprimentos</td></tr><tr><td style=\"white-space:nowrap\">sales<a name=\"organization-contact-purpose-br-sales\"> </a></td><td>Vendas</td><td>Responsável por vendas e comercialização</td></tr><tr><td style=\"white-space:nowrap\">legal<a name=\"organization-contact-purpose-br-legal\"> </a></td><td>Jurídico</td><td>Responsável por questões jurídicas</td></tr><tr><td style=\"white-space:nowrap\">finance<a name=\"organization-contact-purpose-br-finance\"> </a></td><td>Financeiro</td><td>Responsável por questões financeiras</td></tr><tr><td style=\"white-space:nowrap\">hr<a name=\"organization-contact-purpose-br-hr\"> </a></td><td>Recursos Humanos</td><td>Responsável por recursos humanos</td></tr><tr><td style=\"white-space:nowrap\">administration<a name=\"organization-contact-purpose-br-administration\"> </a></td><td>Administração</td><td>Contato administrativo geral</td></tr><tr><td style=\"white-space:nowrap\">clinical-research<a name=\"organization-contact-purpose-br-clinical-research\"> </a></td><td>Pesquisa Clínica</td><td>Responsável por pesquisa clínica</td></tr><tr><td style=\"white-space:nowrap\">medical-affairs<a name=\"organization-contact-purpose-br-medical-affairs\"> </a></td><td>Assuntos Médicos</td><td>Responsável por assuntos médicos e científicos</td></tr><tr><td style=\"white-space:nowrap\">biostatistics<a name=\"organization-contact-purpose-br-biostatistics\"> </a></td><td>Bioestatística</td><td>Responsável por análises bioestatísticas</td></tr><tr><td style=\"white-space:nowrap\">data-management<a name=\"organization-contact-purpose-br-data-management\"> </a></td><td>Gestão de Dados</td><td>Responsável por gestão de dados clínicos</td></tr><tr><td style=\"white-space:nowrap\">emergency<a name=\"organization-contact-purpose-br-emergency\"> </a></td><td>Emergência</td><td>Contato de emergência 24h</td></tr><tr><td style=\"white-space:nowrap\">safety<a name=\"organization-contact-purpose-br-safety\"> </a></td><td>Segurança</td><td>Responsável por segurança e eventos adversos</td></tr><tr><td style=\"white-space:nowrap\">recall<a name=\"organization-contact-purpose-br-recall\"> </a></td><td>Recolhimento</td><td>Responsável por recall e recolhimento de produtos</td></tr><tr><td style=\"white-space:nowrap\">media<a name=\"organization-contact-purpose-br-media\"> </a></td><td>Mídia</td><td>Responsável por comunicação com mídia</td></tr><tr><td style=\"white-space:nowrap\">public-relations<a name=\"organization-contact-purpose-br-public-relations\"> </a></td><td>Relações Públicas</td><td>Responsável por relações públicas</td></tr><tr><td style=\"white-space:nowrap\">customer-service<a name=\"organization-contact-purpose-br-customer-service\"> </a></td><td>Atendimento ao Cliente</td><td>Atendimento ao cliente/consumidor</td></tr><tr><td style=\"white-space:nowrap\">it-support<a name=\"organization-contact-purpose-br-it-support\"> </a></td><td>Suporte de TI</td><td>Suporte técnico de sistemas de informação</td></tr><tr><td style=\"white-space:nowrap\">edi<a name=\"organization-contact-purpose-br-edi\"> </a></td><td>EDI</td><td>Responsável por intercâmbio eletrônico de dados</td></tr><tr><td style=\"white-space:nowrap\">api-integration<a name=\"organization-contact-purpose-br-api-integration\"> </a></td><td>Integração API</td><td>Responsável por integrações de API</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br",
+  "version" : "0.0.2",
+  "name" : "OrganizationContactPurposeBR",
+  "title" : "Finalidades de Contato Organizacional - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para finalidades de contatos organizacionais no Brasil",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 25,
+  "concept" : [{
+    "code" : "regulatory-affairs",
+    "display" : "Assuntos Regulatórios",
+    "definition" : "Responsável por questões regulatórias e relacionamento com ANVISA"
+  },
+  {
+    "code" : "technical-responsible",
+    "display" : "Responsável Técnico",
+    "definition" : "Responsável técnico conforme exigência legal"
+  },
+  {
+    "code" : "pharmacovigilance",
+    "display" : "Farmacovigilância",
+    "definition" : "Responsável por farmacovigilância e monitoramento pós-comercialização"
+  },
+  {
+    "code" : "quality-assurance",
+    "display" : "Garantia de Qualidade",
+    "definition" : "Responsável pela garantia de qualidade"
+  },
+  {
+    "code" : "operations",
+    "display" : "Operações",
+    "definition" : "Responsável por operações e produção"
+  },
+  {
+    "code" : "logistics",
+    "display" : "Logística",
+    "definition" : "Responsável por logística e distribuição"
+  },
+  {
+    "code" : "procurement",
+    "display" : "Compras",
+    "definition" : "Responsável por aquisições e suprimentos"
+  },
+  {
+    "code" : "sales",
+    "display" : "Vendas",
+    "definition" : "Responsável por vendas e comercialização"
+  },
+  {
+    "code" : "legal",
+    "display" : "Jurídico",
+    "definition" : "Responsável por questões jurídicas"
+  },
+  {
+    "code" : "finance",
+    "display" : "Financeiro",
+    "definition" : "Responsável por questões financeiras"
+  },
+  {
+    "code" : "hr",
+    "display" : "Recursos Humanos",
+    "definition" : "Responsável por recursos humanos"
+  },
+  {
+    "code" : "administration",
+    "display" : "Administração",
+    "definition" : "Contato administrativo geral"
+  },
+  {
+    "code" : "clinical-research",
+    "display" : "Pesquisa Clínica",
+    "definition" : "Responsável por pesquisa clínica"
+  },
+  {
+    "code" : "medical-affairs",
+    "display" : "Assuntos Médicos",
+    "definition" : "Responsável por assuntos médicos e científicos"
+  },
+  {
+    "code" : "biostatistics",
+    "display" : "Bioestatística",
+    "definition" : "Responsável por análises bioestatísticas"
+  },
+  {
+    "code" : "data-management",
+    "display" : "Gestão de Dados",
+    "definition" : "Responsável por gestão de dados clínicos"
+  },
+  {
+    "code" : "emergency",
+    "display" : "Emergência",
+    "definition" : "Contato de emergência 24h"
+  },
+  {
+    "code" : "safety",
+    "display" : "Segurança",
+    "definition" : "Responsável por segurança e eventos adversos"
+  },
+  {
+    "code" : "recall",
+    "display" : "Recolhimento",
+    "definition" : "Responsável por recall e recolhimento de produtos"
+  },
+  {
+    "code" : "media",
+    "display" : "Mídia",
+    "definition" : "Responsável por comunicação com mídia"
+  },
+  {
+    "code" : "public-relations",
+    "display" : "Relações Públicas",
+    "definition" : "Responsável por relações públicas"
+  },
+  {
+    "code" : "customer-service",
+    "display" : "Atendimento ao Cliente",
+    "definition" : "Atendimento ao cliente/consumidor"
+  },
+  {
+    "code" : "it-support",
+    "display" : "Suporte de TI",
+    "definition" : "Suporte técnico de sistemas de informação"
+  },
+  {
+    "code" : "edi",
+    "display" : "EDI",
+    "definition" : "Responsável por intercâmbio eletrônico de dados"
+  },
+  {
+    "code" : "api-integration",
+    "display" : "Integração API",
+    "definition" : "Responsável por integrações de API"
+  }]
+}

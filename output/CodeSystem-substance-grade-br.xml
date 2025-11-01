@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="substance-grade-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem substance-grade-br</b></p><a name="substance-grade-br"> </a><a name="hcsubstance-grade-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">pharmaceutical<a name="substance-grade-br-pharmaceutical"> </a></td><td>Grau Farmacêutico</td><td>Grau farmacêutico conforme farmacopeias</td></tr><tr><td style="white-space:nowrap">food<a name="substance-grade-br-food"> </a></td><td>Grau Alimentício</td><td>Grau adequado para uso alimentício</td></tr><tr><td style="white-space:nowrap">cosmetic<a name="substance-grade-br-cosmetic"> </a></td><td>Grau Cosmético</td><td>Grau adequado para uso cosmético</td></tr><tr><td style="white-space:nowrap">technical<a name="substance-grade-br-technical"> </a></td><td>Grau Técnico</td><td>Grau técnico ou industrial</td></tr><tr><td style="white-space:nowrap">analytical<a name="substance-grade-br-analytical"> </a></td><td>Grau Analítico</td><td>Grau para reagente analítico</td></tr><tr><td style="white-space:nowrap">usp<a name="substance-grade-br-usp"> </a></td><td>USP</td><td>Grau conforme United States Pharmacopeia</td></tr><tr><td style="white-space:nowrap">ep<a name="substance-grade-br-ep"> </a></td><td>EP</td><td>Grau conforme European Pharmacopoeia</td></tr><tr><td style="white-space:nowrap">fb<a name="substance-grade-br-fb"> </a></td><td>FB</td><td>Grau conforme Farmacopeia Brasileira</td></tr><tr><td style="white-space:nowrap">research<a name="substance-grade-br-research"> </a></td><td>Grau Pesquisa</td><td>Grau adequado para pesquisa científica</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br"/>
+  <version value="0.0.2"/>
+  <name value="SubstanceGradeBR"/>
+  <title value="Grau de Substância - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para graus de qualidade de substâncias"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="pharmaceutical"/>
+    <display value="Grau Farmacêutico"/>
+    <definition value="Grau farmacêutico conforme farmacopeias"/>
+  </concept>
+  <concept>
+    <code value="food"/>
+    <display value="Grau Alimentício"/>
+    <definition value="Grau adequado para uso alimentício"/>
+  </concept>
+  <concept>
+    <code value="cosmetic"/>
+    <display value="Grau Cosmético"/>
+    <definition value="Grau adequado para uso cosmético"/>
+  </concept>
+  <concept>
+    <code value="technical"/>
+    <display value="Grau Técnico"/>
+    <definition value="Grau técnico ou industrial"/>
+  </concept>
+  <concept>
+    <code value="analytical"/>
+    <display value="Grau Analítico"/>
+    <definition value="Grau para reagente analítico"/>
+  </concept>
+  <concept>
+    <code value="usp"/>
+    <display value="USP"/>
+    <definition value="Grau conforme United States Pharmacopeia"/>
+  </concept>
+  <concept>
+    <code value="ep"/>
+    <display value="EP"/>
+    <definition value="Grau conforme European Pharmacopoeia"/>
+  </concept>
+  <concept>
+    <code value="fb"/>
+    <display value="FB"/>
+    <definition value="Grau conforme Farmacopeia Brasileira"/>
+  </concept>
+  <concept>
+    <code value="research"/>
+    <display value="Grau Pesquisa"/>
+    <definition value="Grau adequado para pesquisa científica"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="gsrs-substance-status-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem gsrs-substance-status-br</b></p><a name="gsrs-substance-status-br"> </a><a name="hcgsrs-substance-status-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">active<a name="gsrs-substance-status-br-active"> </a></td><td>Active</td><td>Substância ativa e validada no sistema GSRS</td></tr><tr><td style="white-space:nowrap">inactive<a name="gsrs-substance-status-br-inactive"> </a></td><td>Inactive</td><td>Substância inativa ou descontinuada</td></tr><tr><td style="white-space:nowrap">pending<a name="gsrs-substance-status-br-pending"> </a></td><td>Pending</td><td>Substância pendente de validação GSRS</td></tr><tr><td style="white-space:nowrap">validated<a name="gsrs-substance-status-br-validated"> </a></td><td>Validated</td><td>Substância validada pela autoridade regulatória</td></tr><tr><td style="white-space:nowrap">provisional<a name="gsrs-substance-status-br-provisional"> </a></td><td>Provisional</td><td>Substância com registro provisório</td></tr><tr><td style="white-space:nowrap">deprecated<a name="gsrs-substance-status-br-deprecated"> </a></td><td>Deprecated</td><td>Substância depreciada - usar alternativa</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br"/>
+  <version value="0.0.2"/>
+  <name value="GSRSSubstanceStatusBR"/>
+  <title value="GSRS Substance Status - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Status de substâncias conforme padrão GSRS adaptado para Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="active"/>
+    <display value="Active"/>
+    <definition value="Substância ativa e validada no sistema GSRS"/>
+  </concept>
+  <concept>
+    <code value="inactive"/>
+    <display value="Inactive"/>
+    <definition value="Substância inativa ou descontinuada"/>
+  </concept>
+  <concept>
+    <code value="pending"/>
+    <display value="Pending"/>
+    <definition value="Substância pendente de validação GSRS"/>
+  </concept>
+  <concept>
+    <code value="validated"/>
+    <display value="Validated"/>
+    <definition value="Substância validada pela autoridade regulatória"/>
+  </concept>
+  <concept>
+    <code value="provisional"/>
+    <display value="Provisional"/>
+    <definition value="Substância com registro provisório"/>
+  </concept>
+  <concept>
+    <code value="deprecated"/>
+    <display value="Deprecated"/>
+    <definition value="Substância depreciada - usar alternativa"/>
+  </concept>
+</CodeSystem>

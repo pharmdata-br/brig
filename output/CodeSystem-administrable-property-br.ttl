@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "administrable-property-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem administrable-property-br</b></p><a name=\"administrable-property-br\"> </a><a name=\"hcadministrable-property-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">reconstitution<a name=\"administrable-property-br-reconstitution\"> </a></td><td>Reconstituição</td><td>Propriedades relacionadas à reconstituição do produto</td></tr><tr><td style=\"white-space:nowrap\">dilution<a name=\"administrable-property-br-dilution\"> </a></td><td>Diluição</td><td>Propriedades relacionadas à diluição do produto</td></tr><tr><td style=\"white-space:nowrap\">ph<a name=\"administrable-property-br-ph\"> </a></td><td>pH</td><td>Valor de pH da solução final</td></tr><tr><td style=\"white-space:nowrap\">osmolaridade<a name=\"administrable-property-br-osmolaridade\"> </a></td><td>Osmolaridade</td><td>Osmolaridade da solução final</td></tr><tr><td style=\"white-space:nowrap\">concentracao-final<a name=\"administrable-property-br-concentracao-final\"> </a></td><td>Concentração Final</td><td>Concentração do produto na forma administrável final</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "AdministrablePropertyBR"] ; # 
+  fhir:title [ fhir:v "Propriedades Administráveis - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para propriedades de produtos administráveis"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "reconstitution" ] ;
+     fhir:display [ fhir:v "Reconstituição" ] ;
+     fhir:definition [ fhir:v "Propriedades relacionadas à reconstituição do produto" ]
+  ] [
+     fhir:code [ fhir:v "dilution" ] ;
+     fhir:display [ fhir:v "Diluição" ] ;
+     fhir:definition [ fhir:v "Propriedades relacionadas à diluição do produto" ]
+  ] [
+     fhir:code [ fhir:v "ph" ] ;
+     fhir:display [ fhir:v "pH" ] ;
+     fhir:definition [ fhir:v "Valor de pH da solução final" ]
+  ] [
+     fhir:code [ fhir:v "osmolaridade" ] ;
+     fhir:display [ fhir:v "Osmolaridade" ] ;
+     fhir:definition [ fhir:v "Osmolaridade da solução final" ]
+  ] [
+     fhir:code [ fhir:v "concentracao-final" ] ;
+     fhir:display [ fhir:v "Concentração Final" ] ;
+     fhir:definition [ fhir:v "Concentração do produto na forma administrável final" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

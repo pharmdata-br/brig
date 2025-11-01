@@ -1,0 +1,134 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "brazilian-government-systems",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem brazilian-government-systems</b></p><a name=\"brazilian-government-systems\"> </a><a name=\"hcbrazilian-government-systems\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-government-systems</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">cnpj-ms<a name=\"brazilian-government-systems-cnpj-ms\"> </a></td><td>CNPJ - Ministério da Saúde</td><td>Sistema oficial de CNPJ conforme padrão do Ministério da Saúde: https://saude.gov.br/fhir/sid/cnpj</td></tr><tr><td style=\"white-space:nowrap\">cnes<a name=\"brazilian-government-systems-cnes\"> </a></td><td>CNES</td><td>Cadastro Nacional de Estabelecimentos de Saúde: http://cnes.datasus.gov.br</td></tr><tr><td style=\"white-space:nowrap\">anvisa-medicamento-registro<a name=\"brazilian-government-systems-anvisa-medicamento-registro\"> </a></td><td>Registro de Medicamentos ANVISA</td><td>Sistema de registro de medicamentos da ANVISA: http://anvisa.gov.br/medicamentos/registro</td></tr><tr><td style=\"white-space:nowrap\">anvisa-dcb<a name=\"brazilian-government-systems-anvisa-dcb\"> </a></td><td>DCB - Denominação Comum Brasileira</td><td>Denominação Comum Brasileira da ANVISA: https://anvisa.gov.br/dcb</td></tr><tr><td style=\"white-space:nowrap\">anvisa-substancia-codigo<a name=\"brazilian-government-systems-anvisa-substancia-codigo\"> </a></td><td>Código de Substância ANVISA</td><td>Código de substâncias da ANVISA: https://anvisa.gov.br/substancias/codigo</td></tr><tr><td style=\"white-space:nowrap\">anvisa-afe<a name=\"brazilian-government-systems-anvisa-afe\"> </a></td><td>AFE - Autorização de Funcionamento de Empresa</td><td>Autorização de Funcionamento de Empresa da ANVISA: http://anvisa.gov.br/afe</td></tr><tr><td style=\"white-space:nowrap\">anvisa-autorizacao-especial<a name=\"brazilian-government-systems-anvisa-autorizacao-especial\"> </a></td><td>Autorização Especial ANVISA</td><td>Autorização especial da ANVISA: http://anvisa.gov.br/autorizacao-especial</td></tr><tr><td style=\"white-space:nowrap\">anvisa-produto-embalagem<a name=\"brazilian-government-systems-anvisa-produto-embalagem\"> </a></td><td>Código de Produto Embalado ANVISA</td><td>Código de identificação de produto embalado da ANVISA: http://anvisa.gov.br/produtos/embalagem</td></tr><tr><td style=\"white-space:nowrap\">gs1-gtin<a name=\"brazilian-government-systems-gs1-gtin\"> </a></td><td>GS1 GTIN</td><td>Global Trade Item Number: http://hl7.org/fhir/sid/gs1</td></tr><tr><td style=\"white-space:nowrap\">cas-number<a name=\"brazilian-government-systems-cas-number\"> </a></td><td>CAS Number</td><td>Chemical Abstracts Service Registry Number: urn:oid:2.16.840.1.113883.6.61</td></tr><tr><td style=\"white-space:nowrap\">fda-unii<a name=\"brazilian-government-systems-fda-unii\"> </a></td><td>FDA UNII</td><td>FDA Unique Ingredient Identifier: http://fdasis.nlm.nih.gov</td></tr><tr><td style=\"white-space:nowrap\">ema-sub-id<a name=\"brazilian-government-systems-ema-sub-id\"> </a></td><td>EMA SUB-ID</td><td>European Medicines Agency Substance ID: http://ema.europa.eu/identifier</td></tr><tr><td style=\"white-space:nowrap\">ema-spor-org<a name=\"brazilian-government-systems-ema-spor-org\"> </a></td><td>EMA SPOR Organization</td><td>EMA SPOR Organization ID: http://spor.ema.europa.eu/v1/organisations</td></tr><tr><td style=\"white-space:nowrap\">fda-establishment<a name=\"brazilian-government-systems-fda-establishment\"> </a></td><td>FDA Establishment ID</td><td>FDA Establishment Identifier: http://www.fda.gov/establishment-identifier</td></tr><tr><td style=\"white-space:nowrap\">duns<a name=\"brazilian-government-systems-duns\"> </a></td><td>DUNS Number</td><td>Data Universal Numbering System: http://www.duns.com/</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-government-systems",
+  "version" : "0.0.2",
+  "name" : "BrazilianGovernmentSystems",
+  "title" : "Sistemas Oficiais do Governo Brasileiro",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para referenciar sistemas oficiais do governo brasileiro",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 15,
+  "concept" : [{
+    "code" : "cnpj-ms",
+    "display" : "CNPJ - Ministério da Saúde",
+    "definition" : "Sistema oficial de CNPJ conforme padrão do Ministério da Saúde: https://saude.gov.br/fhir/sid/cnpj"
+  },
+  {
+    "code" : "cnes",
+    "display" : "CNES",
+    "definition" : "Cadastro Nacional de Estabelecimentos de Saúde: http://cnes.datasus.gov.br"
+  },
+  {
+    "code" : "anvisa-medicamento-registro",
+    "display" : "Registro de Medicamentos ANVISA",
+    "definition" : "Sistema de registro de medicamentos da ANVISA: http://anvisa.gov.br/medicamentos/registro"
+  },
+  {
+    "code" : "anvisa-dcb",
+    "display" : "DCB - Denominação Comum Brasileira",
+    "definition" : "Denominação Comum Brasileira da ANVISA: https://anvisa.gov.br/dcb"
+  },
+  {
+    "code" : "anvisa-substancia-codigo",
+    "display" : "Código de Substância ANVISA",
+    "definition" : "Código de substâncias da ANVISA: https://anvisa.gov.br/substancias/codigo"
+  },
+  {
+    "code" : "anvisa-afe",
+    "display" : "AFE - Autorização de Funcionamento de Empresa",
+    "definition" : "Autorização de Funcionamento de Empresa da ANVISA: http://anvisa.gov.br/afe"
+  },
+  {
+    "code" : "anvisa-autorizacao-especial",
+    "display" : "Autorização Especial ANVISA",
+    "definition" : "Autorização especial da ANVISA: http://anvisa.gov.br/autorizacao-especial"
+  },
+  {
+    "code" : "anvisa-produto-embalagem",
+    "display" : "Código de Produto Embalado ANVISA",
+    "definition" : "Código de identificação de produto embalado da ANVISA: http://anvisa.gov.br/produtos/embalagem"
+  },
+  {
+    "code" : "gs1-gtin",
+    "display" : "GS1 GTIN",
+    "definition" : "Global Trade Item Number: http://hl7.org/fhir/sid/gs1"
+  },
+  {
+    "code" : "cas-number",
+    "display" : "CAS Number",
+    "definition" : "Chemical Abstracts Service Registry Number: urn:oid:2.16.840.1.113883.6.61"
+  },
+  {
+    "code" : "fda-unii",
+    "display" : "FDA UNII",
+    "definition" : "FDA Unique Ingredient Identifier: http://fdasis.nlm.nih.gov"
+  },
+  {
+    "code" : "ema-sub-id",
+    "display" : "EMA SUB-ID",
+    "definition" : "European Medicines Agency Substance ID: http://ema.europa.eu/identifier"
+  },
+  {
+    "code" : "ema-spor-org",
+    "display" : "EMA SPOR Organization",
+    "definition" : "EMA SPOR Organization ID: http://spor.ema.europa.eu/v1/organisations"
+  },
+  {
+    "code" : "fda-establishment",
+    "display" : "FDA Establishment ID",
+    "definition" : "FDA Establishment Identifier: http://www.fda.gov/establishment-identifier"
+  },
+  {
+    "code" : "duns",
+    "display" : "DUNS Number",
+    "definition" : "Data Universal Numbering System: http://www.duns.com/"
+  }]
+}

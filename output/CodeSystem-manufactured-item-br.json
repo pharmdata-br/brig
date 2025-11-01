@@ -1,0 +1,69 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "manufactured-item-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem manufactured-item-br</b></p><a name=\"manufactured-item-br\"> </a><a name=\"hcmanufactured-item-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">dipirona-comp-500mg<a name=\"manufactured-item-br-dipirona-comp-500mg\"> </a></td><td>Dipirona Sódica 500mg comprimido</td><td>Comprimido de dipirona sódica 500mg</td></tr><tr><td style=\"white-space:nowrap\">midazolam-amp-5mg-3ml<a name=\"manufactured-item-br-midazolam-amp-5mg-3ml\"> </a></td><td>Midazolam 5mg/mL ampola 3mL</td><td>Ampola de midazolam 5mg/mL com 3mL</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br",
+  "version" : "0.0.2",
+  "name" : "ManufacturedItemBR",
+  "title" : "Itens Fabricados - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Códigos para itens farmacêuticos fabricados",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "dipirona-comp-500mg",
+    "display" : "Dipirona Sódica 500mg comprimido",
+    "definition" : "Comprimido de dipirona sódica 500mg"
+  },
+  {
+    "code" : "midazolam-amp-5mg-3ml",
+    "display" : "Midazolam 5mg/mL ampola 3mL",
+    "definition" : "Ampola de midazolam 5mg/mL com 3mL"
+  }]
+}

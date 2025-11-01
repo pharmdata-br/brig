@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalUseDefinition xmlns="http://hl7.org/fhir">
+  <id value="paracetamol-clinical-interaction-example"/>
+  <meta>
+    <profile value="http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ClinicalUseDefinition paracetamol-clinical-interaction-example</b></p><a name="paracetamol-clinical-interaction-example"> </a><a name="hcparacetamol-clinical-interaction-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-ClinicalUseDefinition-br.html">Definição de Uso Clínico - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br</code>/BRIG-CU-PAR-002</p><p><b>type</b>: Interaction</p><p><b>category</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br cbaf}">Componente Básico da Assistência Farmacêutica</span></p><p><b>subject</b>: <a href="MedicinalProductDefinition-paracetamol-750mg-example.html">MedicinalProductDefinition: identifier = http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br#BRIG-MPID-PAR-750,http://anvisa.gov.br/medicamentos/registro#100000000002; type = Medicamento; domain = Human use; status = Active; combinedPharmaceuticalDoseForm = Tablet; route = Oral; legalStatusOfSupply = Venda Livre; classification = paracetamol</a></p><p><b>status</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br active}">Ativo</span></p><blockquote><p><b>interaction</b></p><h3>Interactants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://snomed.info/sct 419442005}">Ethyl alcohol (substance)</span></td></tr></table><p><b>type</b>: <span title="Códigos:{http://snomed.info/sct 182817000}">Interação farmacocinética</span></p><h3>Effects</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://snomed.info/sct 197354008}">Toxic effect of paracetamol (disorder)</span></td></tr></table><p><b>incidence</b>: <span title="Códigos:{http://snomed.info/sct 255212004}">Frequent (qualifier value)</span></p><p><b>management</b>: <span title="Códigos:{http://snomed.info/sct 182840001}">Drug treatment stopped (situation)</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br"/>
+    <value value="BRIG-CU-PAR-002"/>
+  </identifier>
+  <type value="interaction"/>
+  <category>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"/>
+      <code value="cbaf"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="MedicinalProductDefinition/paracetamol-750mg-example"/>
+  </subject>
+  <status>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br"/>
+      <code value="active"/>
+    </coding>
+  </status>
+  <interaction>
+    <interactant>
+      <itemCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="419442005"/>
+          <display value="Ethyl alcohol (substance)"/>
+        </coding>
+      </itemCodeableConcept>
+    </interactant>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="182817000"/>
+        <display value="Drug interaction with ethanol (disorder)"/>
+      </coding>
+      <text value="Interação farmacocinética"/>
+    </type>
+    <effect>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="197354008"/>
+          <display value="Toxic effect of paracetamol (disorder)"/>
+        </coding>
+      </concept>
+    </effect>
+    <incidence>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="255212004"/>
+        <display value="Frequent (qualifier value)"/>
+      </coding>
+    </incidence>
+    <management>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="182840001"/>
+        <display value="Drug treatment stopped (situation)"/>
+      </coding>
+    </management>
+  </interaction>
+</ClinicalUseDefinition>

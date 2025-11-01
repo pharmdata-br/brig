@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-operational-scope-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-operational-scope-br</b></p><a name=\"organization-operational-scope-br\"> </a><a name=\"hcorganization-operational-scope-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">local<a name=\"organization-operational-scope-br-local\"> </a></td><td>Local</td><td>Operação local (municipal)</td></tr><tr><td style=\"white-space:nowrap\">state<a name=\"organization-operational-scope-br-state\"> </a></td><td>Estadual</td><td>Operação estadual</td></tr><tr><td style=\"white-space:nowrap\">regional<a name=\"organization-operational-scope-br-regional\"> </a></td><td>Regional</td><td>Operação em região específica do país</td></tr><tr><td style=\"white-space:nowrap\">national<a name=\"organization-operational-scope-br-national\"> </a></td><td>Nacional</td><td>Operação em todo território nacional</td></tr><tr><td style=\"white-space:nowrap\">international<a name=\"organization-operational-scope-br-international\"> </a></td><td>Internacional</td><td>Operação internacional com atividades no Brasil</td></tr><tr><td style=\"white-space:nowrap\">mercosul<a name=\"organization-operational-scope-br-mercosul\"> </a></td><td>MERCOSUL</td><td>Operação nos países do MERCOSUL</td></tr><tr><td style=\"white-space:nowrap\">latin-america<a name=\"organization-operational-scope-br-latin-america\"> </a></td><td>América Latina</td><td>Operação na América Latina</td></tr><tr><td style=\"white-space:nowrap\">global<a name=\"organization-operational-scope-br-global\"> </a></td><td>Global</td><td>Operação global</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "OrganizationOperationalScopeBR"] ; # 
+  fhir:title [ fhir:v "Escopo Operacional de Organização - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para escopo geográfico de operação"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "local" ] ;
+     fhir:display [ fhir:v "Local" ] ;
+     fhir:definition [ fhir:v "Operação local (municipal)" ]
+  ] [
+     fhir:code [ fhir:v "state" ] ;
+     fhir:display [ fhir:v "Estadual" ] ;
+     fhir:definition [ fhir:v "Operação estadual" ]
+  ] [
+     fhir:code [ fhir:v "regional" ] ;
+     fhir:display [ fhir:v "Regional" ] ;
+     fhir:definition [ fhir:v "Operação em região específica do país" ]
+  ] [
+     fhir:code [ fhir:v "national" ] ;
+     fhir:display [ fhir:v "Nacional" ] ;
+     fhir:definition [ fhir:v "Operação em todo território nacional" ]
+  ] [
+     fhir:code [ fhir:v "international" ] ;
+     fhir:display [ fhir:v "Internacional" ] ;
+     fhir:definition [ fhir:v "Operação internacional com atividades no Brasil" ]
+  ] [
+     fhir:code [ fhir:v "mercosul" ] ;
+     fhir:display [ fhir:v "MERCOSUL" ] ;
+     fhir:definition [ fhir:v "Operação nos países do MERCOSUL" ]
+  ] [
+     fhir:code [ fhir:v "latin-america" ] ;
+     fhir:display [ fhir:v "América Latina" ] ;
+     fhir:definition [ fhir:v "Operação na América Latina" ]
+  ] [
+     fhir:code [ fhir:v "global" ] ;
+     fhir:display [ fhir:v "Global" ] ;
+     fhir:definition [ fhir:v "Operação global" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

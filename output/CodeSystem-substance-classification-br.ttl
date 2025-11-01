@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-classification-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-classification-br</b></p><a name=\"substance-classification-br\"> </a><a name=\"hcsubstance-classification-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"substance-classification-br-active\"> </a></td><td>Substância Ativa</td><td>Princípio ativo farmacologicamente ativo</td></tr><tr><td style=\"white-space:nowrap\">excipient<a name=\"substance-classification-br-excipient\"> </a></td><td>Excipiente</td><td>Substância farmacologicamente inativa usada como veículo</td></tr><tr><td style=\"white-space:nowrap\">controlled<a name=\"substance-classification-br-controlled\"> </a></td><td>Substância Controlada</td><td>Substância sujeita a controle especial</td></tr><tr><td style=\"white-space:nowrap\">narcotic<a name=\"substance-classification-br-narcotic\"> </a></td><td>Entorpecente</td><td>Substância entorpecente (Lista A)</td></tr><tr><td style=\"white-space:nowrap\">psychotropic<a name=\"substance-classification-br-psychotropic\"> </a></td><td>Psicotrópico</td><td>Substância psicotrópica (Lista B)</td></tr><tr><td style=\"white-space:nowrap\">precursor<a name=\"substance-classification-br-precursor\"> </a></td><td>Precursor</td><td>Substância precursora de drogas</td></tr><tr><td style=\"white-space:nowrap\">natural<a name=\"substance-classification-br-natural\"> </a></td><td>Natural</td><td>Substância de origem natural</td></tr><tr><td style=\"white-space:nowrap\">synthetic<a name=\"substance-classification-br-synthetic\"> </a></td><td>Sintética</td><td>Substância de origem sintética</td></tr><tr><td style=\"white-space:nowrap\">semi-synthetic<a name=\"substance-classification-br-semi-synthetic\"> </a></td><td>Semi-sintética</td><td>Substância semi-sintética</td></tr><tr><td style=\"white-space:nowrap\">biotechnology<a name=\"substance-classification-br-biotechnology\"> </a></td><td>Biotecnológica</td><td>Substância produzida por biotecnologia</td></tr><tr><td style=\"white-space:nowrap\">radiopharmaceutical<a name=\"substance-classification-br-radiopharmaceutical\"> </a></td><td>Radiofarmacêutica</td><td>Substância radiofarmacêutica</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "SubstanceClassificationBR"] ; # 
+  fhir:title [ fhir:v "Classificação de Substância - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para classificação de substâncias no Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Substância Ativa" ] ;
+     fhir:definition [ fhir:v "Princípio ativo farmacologicamente ativo" ]
+  ] [
+     fhir:code [ fhir:v "excipient" ] ;
+     fhir:display [ fhir:v "Excipiente" ] ;
+     fhir:definition [ fhir:v "Substância farmacologicamente inativa usada como veículo" ]
+  ] [
+     fhir:code [ fhir:v "controlled" ] ;
+     fhir:display [ fhir:v "Substância Controlada" ] ;
+     fhir:definition [ fhir:v "Substância sujeita a controle especial" ]
+  ] [
+     fhir:code [ fhir:v "narcotic" ] ;
+     fhir:display [ fhir:v "Entorpecente" ] ;
+     fhir:definition [ fhir:v "Substância entorpecente (Lista A)" ]
+  ] [
+     fhir:code [ fhir:v "psychotropic" ] ;
+     fhir:display [ fhir:v "Psicotrópico" ] ;
+     fhir:definition [ fhir:v "Substância psicotrópica (Lista B)" ]
+  ] [
+     fhir:code [ fhir:v "precursor" ] ;
+     fhir:display [ fhir:v "Precursor" ] ;
+     fhir:definition [ fhir:v "Substância precursora de drogas" ]
+  ] [
+     fhir:code [ fhir:v "natural" ] ;
+     fhir:display [ fhir:v "Natural" ] ;
+     fhir:definition [ fhir:v "Substância de origem natural" ]
+  ] [
+     fhir:code [ fhir:v "synthetic" ] ;
+     fhir:display [ fhir:v "Sintética" ] ;
+     fhir:definition [ fhir:v "Substância de origem sintética" ]
+  ] [
+     fhir:code [ fhir:v "semi-synthetic" ] ;
+     fhir:display [ fhir:v "Semi-sintética" ] ;
+     fhir:definition [ fhir:v "Substância semi-sintética" ]
+  ] [
+     fhir:code [ fhir:v "biotechnology" ] ;
+     fhir:display [ fhir:v "Biotecnológica" ] ;
+     fhir:definition [ fhir:v "Substância produzida por biotecnologia" ]
+  ] [
+     fhir:code [ fhir:v "radiopharmaceutical" ] ;
+     fhir:display [ fhir:v "Radiofarmacêutica" ] ;
+     fhir:definition [ fhir:v "Substância radiofarmacêutica" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

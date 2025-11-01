@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="route-administration-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem route-administration-br</b></p><a name="route-administration-br"> </a><a name="hcroute-administration-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/route-administration-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">oral<a name="route-administration-br-oral"> </a></td><td>Via Oral</td><td>Administração pela boca para deglutição</td></tr><tr><td style="white-space:nowrap">sublingual<a name="route-administration-br-sublingual"> </a></td><td>Via Sublingual</td><td>Administração sob a língua</td></tr><tr><td style="white-space:nowrap">bucal<a name="route-administration-br-bucal"> </a></td><td>Via Bucal</td><td>Administração na mucosa bucal</td></tr><tr><td style="white-space:nowrap">intravenosa<a name="route-administration-br-intravenosa"> </a></td><td>Via Intravenosa</td><td>Administração diretamente na veia</td></tr><tr><td style="white-space:nowrap">intramuscular<a name="route-administration-br-intramuscular"> </a></td><td>Via Intramuscular</td><td>Administração no músculo</td></tr><tr><td style="white-space:nowrap">subcutanea<a name="route-administration-br-subcutanea"> </a></td><td>Via Subcutânea</td><td>Administração no tecido subcutâneo</td></tr><tr><td style="white-space:nowrap">intra-articular<a name="route-administration-br-intra-articular"> </a></td><td>Via Intra-articular</td><td>Administração dentro da articulação</td></tr><tr><td style="white-space:nowrap">intratecal<a name="route-administration-br-intratecal"> </a></td><td>Via Intratecal</td><td>Administração no espaço subaracnóideo</td></tr><tr><td style="white-space:nowrap">topica<a name="route-administration-br-topica"> </a></td><td>Via Tópica</td><td>Aplicação na pele</td></tr><tr><td style="white-space:nowrap">oftalmica<a name="route-administration-br-oftalmica"> </a></td><td>Via Oftálmica</td><td>Aplicação nos olhos</td></tr><tr><td style="white-space:nowrap">otica<a name="route-administration-br-otica"> </a></td><td>Via Ótica</td><td>Aplicação nos ouvidos</td></tr><tr><td style="white-space:nowrap">nasal<a name="route-administration-br-nasal"> </a></td><td>Via Nasal</td><td>Aplicação no nariz</td></tr><tr><td style="white-space:nowrap">retal<a name="route-administration-br-retal"> </a></td><td>Via Retal</td><td>Administração por via retal</td></tr><tr><td style="white-space:nowrap">vaginal<a name="route-administration-br-vaginal"> </a></td><td>Via Vaginal</td><td>Administração por via vaginal</td></tr><tr><td style="white-space:nowrap">inalatoria<a name="route-administration-br-inalatoria"> </a></td><td>Via Inalatória</td><td>Administração por inalação</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/route-administration-br"/>
+  <version value="0.0.2"/>
+  <name value="RouteAdministrationBR"/>
+  <title value="Vias de Administração - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para vias de administração de medicamentos"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="oral"/>
+    <display value="Via Oral"/>
+    <definition value="Administração pela boca para deglutição"/>
+  </concept>
+  <concept>
+    <code value="sublingual"/>
+    <display value="Via Sublingual"/>
+    <definition value="Administração sob a língua"/>
+  </concept>
+  <concept>
+    <code value="bucal"/>
+    <display value="Via Bucal"/>
+    <definition value="Administração na mucosa bucal"/>
+  </concept>
+  <concept>
+    <code value="intravenosa"/>
+    <display value="Via Intravenosa"/>
+    <definition value="Administração diretamente na veia"/>
+  </concept>
+  <concept>
+    <code value="intramuscular"/>
+    <display value="Via Intramuscular"/>
+    <definition value="Administração no músculo"/>
+  </concept>
+  <concept>
+    <code value="subcutanea"/>
+    <display value="Via Subcutânea"/>
+    <definition value="Administração no tecido subcutâneo"/>
+  </concept>
+  <concept>
+    <code value="intra-articular"/>
+    <display value="Via Intra-articular"/>
+    <definition value="Administração dentro da articulação"/>
+  </concept>
+  <concept>
+    <code value="intratecal"/>
+    <display value="Via Intratecal"/>
+    <definition value="Administração no espaço subaracnóideo"/>
+  </concept>
+  <concept>
+    <code value="topica"/>
+    <display value="Via Tópica"/>
+    <definition value="Aplicação na pele"/>
+  </concept>
+  <concept>
+    <code value="oftalmica"/>
+    <display value="Via Oftálmica"/>
+    <definition value="Aplicação nos olhos"/>
+  </concept>
+  <concept>
+    <code value="otica"/>
+    <display value="Via Ótica"/>
+    <definition value="Aplicação nos ouvidos"/>
+  </concept>
+  <concept>
+    <code value="nasal"/>
+    <display value="Via Nasal"/>
+    <definition value="Aplicação no nariz"/>
+  </concept>
+  <concept>
+    <code value="retal"/>
+    <display value="Via Retal"/>
+    <definition value="Administração por via retal"/>
+  </concept>
+  <concept>
+    <code value="vaginal"/>
+    <display value="Via Vaginal"/>
+    <definition value="Administração por via vaginal"/>
+  </concept>
+  <concept>
+    <code value="inalatoria"/>
+    <display value="Via Inalatória"/>
+    <definition value="Administração por inalação"/>
+  </concept>
+</CodeSystem>

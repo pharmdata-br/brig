@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="substance-classification-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem substance-classification-br</b></p><a name="substance-classification-br"> </a><a name="hcsubstance-classification-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">active<a name="substance-classification-br-active"> </a></td><td>Substância Ativa</td><td>Princípio ativo farmacologicamente ativo</td></tr><tr><td style="white-space:nowrap">excipient<a name="substance-classification-br-excipient"> </a></td><td>Excipiente</td><td>Substância farmacologicamente inativa usada como veículo</td></tr><tr><td style="white-space:nowrap">controlled<a name="substance-classification-br-controlled"> </a></td><td>Substância Controlada</td><td>Substância sujeita a controle especial</td></tr><tr><td style="white-space:nowrap">narcotic<a name="substance-classification-br-narcotic"> </a></td><td>Entorpecente</td><td>Substância entorpecente (Lista A)</td></tr><tr><td style="white-space:nowrap">psychotropic<a name="substance-classification-br-psychotropic"> </a></td><td>Psicotrópico</td><td>Substância psicotrópica (Lista B)</td></tr><tr><td style="white-space:nowrap">precursor<a name="substance-classification-br-precursor"> </a></td><td>Precursor</td><td>Substância precursora de drogas</td></tr><tr><td style="white-space:nowrap">natural<a name="substance-classification-br-natural"> </a></td><td>Natural</td><td>Substância de origem natural</td></tr><tr><td style="white-space:nowrap">synthetic<a name="substance-classification-br-synthetic"> </a></td><td>Sintética</td><td>Substância de origem sintética</td></tr><tr><td style="white-space:nowrap">semi-synthetic<a name="substance-classification-br-semi-synthetic"> </a></td><td>Semi-sintética</td><td>Substância semi-sintética</td></tr><tr><td style="white-space:nowrap">biotechnology<a name="substance-classification-br-biotechnology"> </a></td><td>Biotecnológica</td><td>Substância produzida por biotecnologia</td></tr><tr><td style="white-space:nowrap">radiopharmaceutical<a name="substance-classification-br-radiopharmaceutical"> </a></td><td>Radiofarmacêutica</td><td>Substância radiofarmacêutica</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"/>
+  <version value="0.0.2"/>
+  <name value="SubstanceClassificationBR"/>
+  <title value="Classificação de Substância - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para classificação de substâncias no Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="active"/>
+    <display value="Substância Ativa"/>
+    <definition value="Princípio ativo farmacologicamente ativo"/>
+  </concept>
+  <concept>
+    <code value="excipient"/>
+    <display value="Excipiente"/>
+    <definition value="Substância farmacologicamente inativa usada como veículo"/>
+  </concept>
+  <concept>
+    <code value="controlled"/>
+    <display value="Substância Controlada"/>
+    <definition value="Substância sujeita a controle especial"/>
+  </concept>
+  <concept>
+    <code value="narcotic"/>
+    <display value="Entorpecente"/>
+    <definition value="Substância entorpecente (Lista A)"/>
+  </concept>
+  <concept>
+    <code value="psychotropic"/>
+    <display value="Psicotrópico"/>
+    <definition value="Substância psicotrópica (Lista B)"/>
+  </concept>
+  <concept>
+    <code value="precursor"/>
+    <display value="Precursor"/>
+    <definition value="Substância precursora de drogas"/>
+  </concept>
+  <concept>
+    <code value="natural"/>
+    <display value="Natural"/>
+    <definition value="Substância de origem natural"/>
+  </concept>
+  <concept>
+    <code value="synthetic"/>
+    <display value="Sintética"/>
+    <definition value="Substância de origem sintética"/>
+  </concept>
+  <concept>
+    <code value="semi-synthetic"/>
+    <display value="Semi-sintética"/>
+    <definition value="Substância semi-sintética"/>
+  </concept>
+  <concept>
+    <code value="biotechnology"/>
+    <display value="Biotecnológica"/>
+    <definition value="Substância produzida por biotecnologia"/>
+  </concept>
+  <concept>
+    <code value="radiopharmaceutical"/>
+    <display value="Radiofarmacêutica"/>
+    <definition value="Substância radiofarmacêutica"/>
+  </concept>
+</CodeSystem>

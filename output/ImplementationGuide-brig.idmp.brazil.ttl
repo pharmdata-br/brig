@@ -1,0 +1,3380 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "brig.idmp.brazil"] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide brig.idmp.brazil</b></p><a name=\"brig.idmp.brazil\"> </a><a name=\"hcbrig.idmp.brazil\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><h2>BRIGIDMPBrazil</h2><p>O URL oficial para este guia de implementação é: </p><pre>http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil</pre><div><p>Guia de Implementação brasileiro para Identificação de Produtos Medicinais (IDMP)  usando padrões FHIR R5, desenvolvido para harmonização de dados farmacêuticos  no contexto regulatório da ANVISA. Implementação completa com ClinicalUseDefinition-br.  Primeira implementação mundial 100% completa dos padrões IDMP. Documentação 100% em português brasileiro.</p>\n</div></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "draft"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "BRIGIDMPBrazil"] ; # 
+  fhir:title [ fhir:v "BRIG - Guia de Implementação Brasileiro para IDMP"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-09-10T17:41:16-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Guia de Implementação brasileiro para Identificação de Produtos Medicinais (IDMP)  usando padrões FHIR R5, desenvolvido para harmonização de dados farmacêuticos  no contexto regulatório da ANVISA. Implementação completa com ClinicalUseDefinition-br.  Primeira implementação mundial 100% completa dos padrões IDMP. Documentação 100% em português brasileiro."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:packageId [ fhir:v "brig.idmp.brazil"] ; # 
+  fhir:license [ fhir:v "MIT"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "6.5.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_r5_core" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/ImplementationGuide/fhir"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/ImplementationGuide/fhir>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.r5.core" ] ;
+     fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_extensions" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r5#0.7.1"
+       ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/organization-anvisa-example> ;
+         fhir:reference [ fhir:v "Organization/organization-anvisa-example" ]
+       ] ;
+       fhir:name [ fhir:v "ANVISA - Agência Nacional de Vigilância Sanitária" ] ;
+       fhir:description [ fhir:v "Autoridade regulatória brasileira (ANVISA)" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-specialized-activities-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-specialized-activities-br" ]
+       ] ;
+       fhir:name [ fhir:v "Atividades Especializadas de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Atividades especializadas realizadas por organizações" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-specialized-activities-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-specialized-activities-br" ]
+       ] ;
+       fhir:name [ fhir:v "Atividades Especializadas de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para atividades especializadas de organizações" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/RegulatedAuthorization-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/RegulatedAuthorization-br" ]
+       ] ;
+       fhir:name [ fhir:v "Autorização Regulatória - Brasil" ] ;
+       fhir:description [ fhir:v "Profile brasileiro para RegulatedAuthorization representando autorizações ANVISA para medicamentos e produtos de saúde" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br> ;
+         fhir:reference [ fhir:v "CodeSystem/legal-basis-anvisa-br" ]
+       ] ;
+       fhir:name [ fhir:v "Base Legal ANVISA" ] ;
+       fhir:description [ fhir:v "Bases legais para autorizações regulatórias ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-basis-anvisa-br> ;
+         fhir:reference [ fhir:v "ValueSet/legal-basis-anvisa-br" ]
+       ] ;
+       fhir:name [ fhir:v "Base Legal ANVISA Brasil" ] ;
+       fhir:description [ fhir:v "Conjunto de valores para bases legais ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/package-characteristic-br> ;
+         fhir:reference [ fhir:v "ValueSet/package-characteristic-br" ]
+       ] ;
+       fhir:name [ fhir:v "Características de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Características especiais de embalagens farmacêuticas no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br> ;
+         fhir:reference [ fhir:v "CodeSystem/package-characteristic-br" ]
+       ] ;
+       fhir:name [ fhir:v "Características de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para características de embalagens no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/anvisa-category> ;
+         fhir:reference [ fhir:v "StructureDefinition/anvisa-category" ]
+       ] ;
+       fhir:name [ fhir:v "Categoria ANVISA" ] ;
+       fhir:description [ fhir:v "Categoria específica da ANVISA para classificação do produto medicinal" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/controlled-substance-category> ;
+         fhir:reference [ fhir:v "StructureDefinition/controlled-substance-category" ]
+       ] ;
+       fhir:name [ fhir:v "Categoria de Substância Controlada" ] ;
+       fhir:description [ fhir:v "Categoria de controle da substância conforme legislação brasileira" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/organization-operational-category-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/organization-operational-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categoria Operacional da Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Categoria operacional específica da organização no contexto regulatório brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-category-br> ;
+         fhir:reference [ fhir:v "ValueSet/anvisa-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias ANVISA - Brasil" ] ;
+       fhir:description [ fhir:v "Categorias de produtos medicinais conforme classificação da ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-category-br> ;
+         fhir:reference [ fhir:v "CodeSystem/anvisa-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias ANVISA - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para categorias de produtos medicinais da ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-size-category-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-size-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias de Porte de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Categorias de porte de organizações conforme legislação brasileira" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-size-category-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-size-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias de Porte de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para categorias de porte de organizações no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/controlled-substance-category-br> ;
+         fhir:reference [ fhir:v "ValueSet/controlled-substance-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias de Substâncias Controladas - Brasil" ] ;
+       fhir:description [ fhir:v "Categorias de controle de substâncias conforme Portaria SVS/MS n° 344/1998" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/controlled-substance-category-br> ;
+         fhir:reference [ fhir:v "CodeSystem/controlled-substance-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias de Substâncias Controladas - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para categorias de controle de substâncias no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-category-br> ;
+         fhir:reference [ fhir:v "ValueSet/clinical-use-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet de categorias específicas brasileiras para uso clínico incluindo programas governamentais." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br> ;
+         fhir:reference [ fhir:v "CodeSystem/clinical-use-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "Categorias específicas brasileiras para classificação de uso clínico." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-category-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-operational-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias Operacionais de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Categorias operacionais de organizações no contexto regulatório brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-category-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-operational-category-br" ]
+       ] ;
+       fhir:name [ fhir:v "Categorias Operacionais de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para categorias operacionais de organizações" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-br> ;
+         fhir:reference [ fhir:v "ValueSet/substance-classification-br" ]
+       ] ;
+       fhir:name [ fhir:v "Classificação de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Classificação de substâncias no contexto brasileiro/ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br> ;
+         fhir:reference [ fhir:v "CodeSystem/substance-classification-br" ]
+       ] ;
+       fhir:name [ fhir:v "Classificação de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para classificação de substâncias no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-gsrs-br> ;
+         fhir:reference [ fhir:v "ValueSet/substance-classification-gsrs-br" ]
+       ] ;
+       fhir:name [ fhir:v "Classificação de Substância GSRS/Brasil" ] ;
+       fhir:description [ fhir:v "Conjunto de valores para classificação de substâncias GSRS e brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-special-classification-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-special-classification-br" ]
+       ] ;
+       fhir:name [ fhir:v "Classificações Especiais de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Classificações especiais de organizações conforme legislação brasileira" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-special-classification-br" ]
+       ] ;
+       fhir:name [ fhir:v "Classificações Especiais de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para classificações especiais de organizações" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/comorbidity-br> ;
+         fhir:reference [ fhir:v "ValueSet/comorbidity-br" ]
+       ] ;
+       fhir:name [ fhir:v "Comorbidades - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet de comorbidades relevantes para indicações e contraindicações no contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/package-components-br> ;
+         fhir:reference [ fhir:v "ValueSet/package-components-br" ]
+       ] ;
+       fhir:name [ fhir:v "Componentes de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Componentes padronizados para embalagens brasileiras" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-components-br> ;
+         fhir:reference [ fhir:v "CodeSystem/package-components-br" ]
+       ] ;
+       fhir:name [ fhir:v "Componentes de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para componentes de embalagens brasileiras" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/contraindication-condition-br> ;
+         fhir:reference [ fhir:v "ValueSet/contraindication-condition-br" ]
+       ] ;
+       fhir:name [ fhir:v "Condições de Contraindicação - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet de condições médicas que constituem contraindicações no contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/manufactured-item-criteria> ;
+         fhir:reference [ fhir:v "StructureDefinition/manufactured-item-criteria" ]
+       ] ;
+       fhir:name [ fhir:v "Critérios do Item Manufaturado" ] ;
+       fhir:description [ fhir:v "Critérios específicos do item manufaturado que são elementos definidores do PCID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code> ;
+         fhir:reference [ fhir:v "CodeSystem/anvisa-substance-code" ]
+       ] ;
+       fhir:name [ fhir:v "Códigos ANVISA de Substância" ] ;
+       fhir:description [ fhir:v "Sistema de códigos específicos da ANVISA para substâncias" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-code-br> ;
+         fhir:reference [ fhir:v "ValueSet/substance-code-br" ]
+       ] ;
+       fhir:name [ fhir:v "Códigos de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Códigos padronizados para substâncias no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ManufacturedItemDefinition-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/ManufacturedItemDefinition-br" ]
+       ] ;
+       fhir:name [ fhir:v "Definição de Item Fabricado - Brasil" ] ;
+       fhir:description [ fhir:v "Profile brasileiro para ManufacturedItemDefinition - formas farmacêuticas fabricadas" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/AdministrableProductDefinition-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/AdministrableProductDefinition-br" ]
+       ] ;
+       fhir:name [ fhir:v "Definição de Produto Administrável - Brasil" ] ;
+       fhir:description [ fhir:v "Profile brasileiro para AdministrableProductDefinition - representa a forma final administrável do medicamento após preparo/reconstituição" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/PackagedProductDefinition-br" ]
+       ] ;
+       fhir:name [ fhir:v "Definição de Produto Embalado - Brasil" ] ;
+       fhir:description [ fhir:v "Profile brasileiro para PackagedProductDefinition baseado no IDMP, adaptado para o contexto regulatório da ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicinalProductDefinition-br" ]
+       ] ;
+       fhir:name [ fhir:v "Definição de Produto Medicinal - Brasil" ] ;
+       fhir:description [ fhir:v "Perfil brasileiro para MedicinalProductDefinition baseado no IDMP, adaptado para o contexto regulatório da ANVISA. Documenta produtos medicinais conforme padrões ISO 11615 e regulamentações brasileiras." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/SubstanceDefinition-br" ]
+       ] ;
+       fhir:name [ fhir:v "Definição de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Profile brasileiro para SubstanceDefinition baseado no IDMP, adaptado para o contexto regulatório da ANVISA com suporte básico GSRS" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/ClinicalUseDefinition-br" ]
+       ] ;
+       fhir:name [ fhir:v "Definição de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "Perfil brasileiro para ClinicalUseDefinition adaptado para indicações terapêuticas, contraindicações, interações medicamentosas e critérios DCE-SUS no contexto regulatório brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/dcb-brasileiras> ;
+         fhir:reference [ fhir:v "ValueSet/dcb-brasileiras" ]
+       ] ;
+       fhir:name [ fhir:v "Denominações Comuns Brasileiras (DCB)" ] ;
+       fhir:description [ fhir:v "Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras> ;
+         fhir:reference [ fhir:v "CodeSystem/dcb-brasileiras" ]
+       ] ;
+       fhir:name [ fhir:v "Denominações Comuns Brasileiras (DCB)" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para Denominações Comuns Brasileiras conforme ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/package-component-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/package-component-details" ]
+       ] ;
+       fhir:name [ fhir:v "Detalhes de Componentes da Embalagem" ] ;
+       fhir:description [ fhir:v "Detalhes específicos dos componentes que são elementos definidores do PCID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/package-item-container-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/package-item-container-details" ]
+       ] ;
+       fhir:name [ fhir:v "Detalhes de Container do Item da Embalagem" ] ;
+       fhir:description [ fhir:v "Detalhes específicos do container que são elementos definidores do PCID - mudanças requerem novo PCID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ClinicalUseDefinition/dipirona-clinical-contraindication-example> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/dipirona-clinical-contraindication-example" ]
+       ] ;
+       fhir:name [ fhir:v "Dipirona - Contraindicação por Hipersensibilidade" ] ;
+       fhir:description [ fhir:v "Exemplo de contraindicação da Dipirona 500mg em pacientes com hipersensibilidade conhecida à dipirona ou pirazolonas." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ClinicalUseDefinition/dipirona-clinical-indication-example> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/dipirona-clinical-indication-example" ]
+       ] ;
+       fhir:name [ fhir:v "Dipirona - Indicação para Dor e Febre" ] ;
+       fhir:description [ fhir:v "Exemplo de uso clínico da Dipirona 500mg para tratamento de dor e febre - indicação terapêutica conforme padrão brasileiro." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PackagedProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/PackagedProductDefinition/dipirona-package-example> ;
+         fhir:reference [ fhir:v "PackagedProductDefinition/dipirona-package-example" ]
+       ] ;
+       fhir:name [ fhir:v "Dipirona 500mg - Embalagem" ] ;
+       fhir:description [ fhir:v "Embalagem exemplo de Dipirona 500mg" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicinalProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/MedicinalProductDefinition/dipirona-500mg-example> ;
+         fhir:reference [ fhir:v "MedicinalProductDefinition/dipirona-500mg-example" ]
+       ] ;
+       fhir:name [ fhir:v "Dipirona 500mg Comprimido" ] ;
+       fhir:description [ fhir:v "Exemplo básico de produto medicinal Dipirona 500mg comprimido para referências" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/associated-devices> ;
+         fhir:reference [ fhir:v "StructureDefinition/associated-devices" ]
+       ] ;
+       fhir:name [ fhir:v "Dispositivos Associados" ] ;
+       fhir:description [ fhir:v "Dispositivos associados ao produto medicinal que são elementos definidores do MPID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-br> ;
+         fhir:reference [ fhir:v "ValueSet/adverse-effect-br" ]
+       ] ;
+       fhir:name [ fhir:v "Efeitos Adversos - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet de efeitos adversos comuns no contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-effect-br> ;
+         fhir:reference [ fhir:v "ValueSet/interaction-effect-br" ]
+       ] ;
+       fhir:name [ fhir:v "Efeitos de Interação - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet dos efeitos clínicos de interações medicamentosas no contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-defining-elements> ;
+         fhir:reference [ fhir:v "ValueSet/mpid-defining-elements" ]
+       ] ;
+       fhir:name [ fhir:v "Elementos Definidores de MPID" ] ;
+       fhir:description [ fhir:v "Elementos que, quando alterados, requerem geração de novo MPID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements> ;
+         fhir:reference [ fhir:v "CodeSystem/mpid-defining-elements" ]
+       ] ;
+       fhir:name [ fhir:v "Elementos Definidores de MPID" ] ;
+       fhir:description [ fhir:v "Códigos para elementos que definem quando criar novo MPID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/organization-ems-example> ;
+         fhir:reference [ fhir:v "Organization/organization-ems-example" ]
+       ] ;
+       fhir:name [ fhir:v "EMS S/A" ] ;
+       fhir:description [ fhir:v "Empresa farmacêutica brasileira - exemplo de detentor de registro" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-scope-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-operational-scope-br" ]
+       ] ;
+       fhir:name [ fhir:v "Escopo Operacional de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Escopo geográfico de operação de organizações" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-operational-scope-br" ]
+       ] ;
+       fhir:name [ fhir:v "Escopo Operacional de Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para escopo geográfico de operação" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SubstanceDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/SubstanceDefinition/dipirona-sodica-substance> ;
+         fhir:reference [ fhir:v "SubstanceDefinition/dipirona-sodica-substance" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Dipirona Sódica (Substância)" ] ;
+       fhir:description [ fhir:v "Exemplo de substância ativa brasileira - Dipirona Sódica" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicinalProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/MedicinalProductDefinition/dipirona-500mg-comp> ;
+         fhir:reference [ fhir:v "MedicinalProductDefinition/dipirona-500mg-comp" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Dipirona Sódica 500mg" ] ;
+       fhir:description [ fhir:v "Exemplo de produto medicinal brasileiro - Dipirona Sódica 500mg comprimidos" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PackagedProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/PackagedProductDefinition/dipirona-500mg-package> ;
+         fhir:reference [ fhir:v "PackagedProductDefinition/dipirona-500mg-package" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Dipirona Sódica 500mg Embalagem" ] ;
+       fhir:description [ fhir:v "Exemplo de produto embalado brasileiro - Dipirona Sódica 500mg, caixa com 20 comprimidos" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/farmaceutica-brasileira-ltda> ;
+         fhir:reference [ fhir:v "Organization/farmaceutica-brasileira-ltda" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Farmacêutica Brasileira Ltda" ] ;
+       fhir:description [ fhir:v "Exemplo de organização farmacêutica brasileira simplificada" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SubstanceDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/SubstanceDefinition/midazolam-substance> ;
+         fhir:reference [ fhir:v "SubstanceDefinition/midazolam-substance" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Midazolam (Substância Controlada)" ] ;
+       fhir:description [ fhir:v "Exemplo de substância controlada brasileira - Midazolam (Lista B1)" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PackagedProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/PackagedProductDefinition/midazolam-5mg-package> ;
+         fhir:reference [ fhir:v "PackagedProductDefinition/midazolam-5mg-package" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Midazolam 5mg/mL Embalagem" ] ;
+       fhir:description [ fhir:v "Exemplo de produto embalado brasileiro - Midazolam 5mg/mL, caixa com 10 ampolas de 3mL" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/multinacional-pharma-brasil> ;
+         fhir:reference [ fhir:v "Organization/multinacional-pharma-brasil" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Multinacional Pharma Brasil" ] ;
+       fhir:description [ fhir:v "Exemplo de organização farmacêutica multinacional simplificada" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/org-simple-example> ;
+         fhir:reference [ fhir:v "Organization/org-simple-example" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo - Organização Simples" ] ;
+       fhir:description [ fhir:v "Exemplo básico de organização com identificadores mínimos" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-codesystem-brasileiro> ;
+         fhir:reference [ fhir:v "CodeSystem/exemplo-codesystem-brasileiro" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo de CodeSystem Brasileiro" ] ;
+       fhir:description [ fhir:v "Sistema de códigos de exemplo com terminologia farmacêutica brasileira padronizada" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/exemplo-extensao-brasileira> ;
+         fhir:reference [ fhir:v "StructureDefinition/exemplo-extensao-brasileira" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo de Extensão Brasileira" ] ;
+       fhir:description [ fhir:v "Extensão de exemplo demonstrando padrões de documentação BRIG com terminologia farmacêutica brasileira adequada" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/exemplo-perfil-brasileiro> ;
+         fhir:reference [ fhir:v "StructureDefinition/exemplo-perfil-brasileiro" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo de Perfil Brasileiro" ] ;
+       fhir:description [ fhir:v "Perfil de exemplo demonstrando padrões de documentação BRIG em português brasileiro, incluindo terminologia técnica adequada ao contexto regulatório nacional." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/exemplo-valueset-brasileiro> ;
+         fhir:reference [ fhir:v "ValueSet/exemplo-valueset-brasileiro" ]
+       ] ;
+       fhir:name [ fhir:v "Exemplo de ValueSet Brasileiro" ] ;
+       fhir:description [ fhir:v "ValueSet de exemplo com terminologia farmacêutica brasileira padronizada conforme contexto regulatório nacional" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/manufacturer-example> ;
+         fhir:reference [ fhir:v "Organization/manufacturer-example" ]
+       ] ;
+       fhir:name [ fhir:v "Fabricante Exemplo" ] ;
+       fhir:description [ fhir:v "Organização fabricante exemplo para referências" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/manufacturer-paracetamol-example> ;
+         fhir:reference [ fhir:v "Organization/manufacturer-paracetamol-example" ]
+       ] ;
+       fhir:name [ fhir:v "Fabricante Paracetamol Exemplo" ] ;
+       fhir:description [ fhir:v "Organização fabricante exemplo para paracetamol" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-contact-purpose-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-contact-purpose-br" ]
+       ] ;
+       fhir:name [ fhir:v "Finalidades de Contato Organizacional - Brasil" ] ;
+       fhir:description [ fhir:v "Finalidades específicas de contatos organizacionais no contexto regulatório brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-contact-purpose-br" ]
+       ] ;
+       fhir:name [ fhir:v "Finalidades de Contato Organizacional - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para finalidades de contatos organizacionais no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-dose-form-br> ;
+         fhir:reference [ fhir:v "ValueSet/administrable-dose-form-br" ]
+       ] ;
+       fhir:name [ fhir:v "Formas Farmacêuticas Administráveis - Brasil" ] ;
+       fhir:description [ fhir:v "Formas farmacêuticas na apresentação final, prontas para administração ao paciente" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br> ;
+         fhir:reference [ fhir:v "CodeSystem/administrable-dose-form-br" ]
+       ] ;
+       fhir:name [ fhir:v "Formas Farmacêuticas Administráveis - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para formas farmacêuticas na apresentação final administrável" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-frequency-br> ;
+         fhir:reference [ fhir:v "ValueSet/adverse-effect-frequency-br" ]
+       ] ;
+       fhir:name [ fhir:v "Frequência de Efeitos Adversos - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet de classificação de frequência de efeitos adversos conforme padrão brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-function-br> ;
+         fhir:reference [ fhir:v "ValueSet/ingredient-function-br" ]
+       ] ;
+       fhir:name [ fhir:v "Funções de Ingredientes - Brasil" ] ;
+       fhir:description [ fhir:v "Funções específicas detalhadas de ingredientes em medicamentos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br> ;
+         fhir:reference [ fhir:v "CodeSystem/ingredient-function-br" ]
+       ] ;
+       fhir:name [ fhir:v "Funções de Ingredientes - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para funções específicas de ingredientes" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-grade-br> ;
+         fhir:reference [ fhir:v "ValueSet/substance-grade-br" ]
+       ] ;
+       fhir:name [ fhir:v "Grau de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Graus ou qualidades de substâncias no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br> ;
+         fhir:reference [ fhir:v "CodeSystem/substance-grade-br" ]
+       ] ;
+       fhir:name [ fhir:v "Grau de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para graus de qualidade de substâncias" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br> ;
+         fhir:reference [ fhir:v "CodeSystem/gsrs-substance-classification-br" ]
+       ] ;
+       fhir:name [ fhir:v "GSRS Substance Classification - Brasil" ] ;
+       fhir:description [ fhir:v "Classificação de substâncias conforme GSRS adaptado para Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/gsrs-substance-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "GSRS Substance Status - Brasil" ] ;
+       fhir:description [ fhir:v "Status de substâncias conforme padrão GSRS adaptado para Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br> ;
+         fhir:reference [ fhir:v "CodeSystem/clinical-use-id-br" ]
+       ] ;
+       fhir:name [ fhir:v "Identificadores de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de identificadores únicos para definições de uso clínico no contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/documentation-language> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentation-language" ]
+       ] ;
+       fhir:name [ fhir:v "Idioma de Documentação" ] ;
+       fhir:description [ fhir:v "Define o idioma padrão para toda documentação BRIG - sempre português brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indications-br> ;
+         fhir:reference [ fhir:v "ValueSet/therapeutic-indications-br" ]
+       ] ;
+       fhir:name [ fhir:v "Indicações Terapêuticas - Brasil" ] ;
+       fhir:description [ fhir:v "Indicações terapêuticas padronizadas para produtos medicinais brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indication-br> ;
+         fhir:reference [ fhir:v "ValueSet/therapeutic-indication-br" ]
+       ] ;
+       fhir:name [ fhir:v "Indicações Terapêuticas - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet de indicações terapêuticas baseado em CID-10 e SNOMED-CT para o contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/therapeutic-indications-br> ;
+         fhir:reference [ fhir:v "CodeSystem/therapeutic-indications-br" ]
+       ] ;
+       fhir:name [ fhir:v "Indicações Terapêuticas - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para indicações terapêuticas de produtos medicinais brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/therapeutic-indications-defining> ;
+         fhir:reference [ fhir:v "StructureDefinition/therapeutic-indications-defining" ]
+       ] ;
+       fhir:name [ fhir:v "Indicações Terapêuticas Definidoras" ] ;
+       fhir:description [ fhir:v "Indicações terapêuticas que são elementos definidores do MPID - mudanças requerem novo MPID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Ingredient-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/Ingredient-br" ]
+       ] ;
+       fhir:name [ fhir:v "Ingrediente - Brasil" ] ;
+       fhir:description [ fhir:v "Profile brasileiro para Ingredient - representa o USO de uma substância em um produto medicinal específico, incluindo papel e concentração" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br> ;
+         fhir:reference [ fhir:v "CodeSystem/manufactured-item-br" ]
+       ] ;
+       fhir:name [ fhir:v "Itens Fabricados - Brasil" ] ;
+       fhir:description [ fhir:v "Códigos para itens farmacêuticos fabricados" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/Organization/organization-neoquimica-example> ;
+         fhir:reference [ fhir:v "Organization/organization-neoquimica-example" ]
+       ] ;
+       fhir:name [ fhir:v "Laboratório Neoquímica Ltda." ] ;
+       fhir:description [ fhir:v "Empresa farmacêutica brasileira - exemplo de detentor de registro" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/container-materials-br> ;
+         fhir:reference [ fhir:v "ValueSet/container-materials-br" ]
+       ] ;
+       fhir:name [ fhir:v "Materiais de Container - Brasil" ] ;
+       fhir:description [ fhir:v "Materiais padronizados para containers de embalagens brasileiras" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br> ;
+         fhir:reference [ fhir:v "CodeSystem/container-materials-br" ]
+       ] ;
+       fhir:name [ fhir:v "Materiais de Container - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para materiais de containers brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-material-br> ;
+         fhir:reference [ fhir:v "ValueSet/packaging-material-br" ]
+       ] ;
+       fhir:name [ fhir:v "Materiais de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Materiais utilizados em embalagens farmacêuticas no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br> ;
+         fhir:reference [ fhir:v "CodeSystem/packaging-material-br" ]
+       ] ;
+       fhir:name [ fhir:v "Materiais de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para materiais de embalagem no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-change-reason> ;
+         fhir:reference [ fhir:v "ValueSet/identifier-change-reason" ]
+       ] ;
+       fhir:name [ fhir:v "Motivos de Mudança de Identificador" ] ;
+       fhir:description [ fhir:v "Motivos padronizados para mudanças que requerem novos identificadores MPID/PCID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason> ;
+         fhir:reference [ fhir:v "CodeSystem/identifier-change-reason" ]
+       ] ;
+       fhir:name [ fhir:v "Motivos de Mudança de Identificador" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para motivos de mudança de identificadores MPID/PCID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br> ;
+         fhir:reference [ fhir:v "CodeSystem/mpid-br" ]
+       ] ;
+       fhir:name [ fhir:v "MPID - Identificador de Produto Medicinal - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para identificadores de produtos medicinais conforme ISO 11615" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-requiring-changes> ;
+         fhir:reference [ fhir:v "ValueSet/mpid-requiring-changes" ]
+       ] ;
+       fhir:name [ fhir:v "Mudanças que Requerem Novo MPID" ] ;
+       fhir:description [ fhir:v "Tipos de mudanças que requerem geração de novo MPID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-requiring-changes> ;
+         fhir:reference [ fhir:v "ValueSet/pcid-requiring-changes" ]
+       ] ;
+       fhir:name [ fhir:v "Mudanças que Requerem Novo PCID" ] ;
+       fhir:description [ fhir:v "Tipos de mudanças que requerem geração de novo PCID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/change-severity-level> ;
+         fhir:reference [ fhir:v "ValueSet/change-severity-level" ]
+       ] ;
+       fhir:name [ fhir:v "Níveis de Severidade de Mudança" ] ;
+       fhir:description [ fhir:v "Níveis de severidade para classificação de mudanças em identificadores" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/change-severity-level> ;
+         fhir:reference [ fhir:v "CodeSystem/change-severity-level" ]
+       ] ;
+       fhir:name [ fhir:v "Níveis de Severidade de Mudança" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para classificação da severidade de mudanças" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple> ;
+         fhir:reference [ fhir:v "StructureDefinition/Organization-anvisa-simple" ]
+       ] ;
+       fhir:name [ fhir:v "Organização ANVISA - Brasil (Simplificado)" ] ;
+       fhir:description [ fhir:v "Profile brasileiro simplificado para Organization no contexto regulatório da ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/brazilian-terminology-standards> ;
+         fhir:reference [ fhir:v "StructureDefinition/brazilian-terminology-standards" ]
+       ] ;
+       fhir:name [ fhir:v "Padrões de Terminologia Brasileira" ] ;
+       fhir:description [ fhir:v "Define padrões específicos de terminologia para contexto farmacêutico brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-role-br> ;
+         fhir:reference [ fhir:v "ValueSet/ingredient-role-br" ]
+       ] ;
+       fhir:name [ fhir:v "Papéis de Ingredientes - Brasil" ] ;
+       fhir:description [ fhir:v "Papéis/funções de ingredientes em medicamentos conforme padrões brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-role-br> ;
+         fhir:reference [ fhir:v "CodeSystem/ingredient-role-br" ]
+       ] ;
+       fhir:name [ fhir:v "Papéis de Ingredientes - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para papéis de ingredientes em medicamentos brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SubstanceDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/SubstanceDefinition/paracetamol-substance-gsrs-br> ;
+         fhir:reference [ fhir:v "SubstanceDefinition/paracetamol-substance-gsrs-br" ]
+       ] ;
+       fhir:name [ fhir:v "Paracetamol - Exemplo GSRS/Brasil" ] ;
+       fhir:description [ fhir:v "Exemplo de SubstanceDefinition para Paracetamol com identificadores UNII, DCB e CAS" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ClinicalUseDefinition/paracetamol-clinical-indication-example> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/paracetamol-clinical-indication-example" ]
+       ] ;
+       fhir:name [ fhir:v "Paracetamol - Indicação para Febre" ] ;
+       fhir:description [ fhir:v "Exemplo de uso clínico do Paracetamol 750mg para tratamento de febre e dor leve a moderada." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ClinicalUseDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ClinicalUseDefinition/paracetamol-clinical-interaction-example> ;
+         fhir:reference [ fhir:v "ClinicalUseDefinition/paracetamol-clinical-interaction-example" ]
+       ] ;
+       fhir:name [ fhir:v "Paracetamol - Interação com Álcool" ] ;
+       fhir:description [ fhir:v "Exemplo de interação medicamentosa do Paracetamol com álcool - risco de hepatotoxicidade." ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PackagedProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/PackagedProductDefinition/paracetamol-package-example> ;
+         fhir:reference [ fhir:v "PackagedProductDefinition/paracetamol-package-example" ]
+       ] ;
+       fhir:name [ fhir:v "Paracetamol 750mg - Embalagem" ] ;
+       fhir:description [ fhir:v "Embalagem exemplo de Paracetamol 750mg" ] ;
+       fhir:isExample [ fhir:v true ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicinalProductDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/MedicinalProductDefinition/paracetamol-750mg-example> ;
+         fhir:reference [ fhir:v "MedicinalProductDefinition/paracetamol-750mg-example" ]
+       ] ;
+       fhir:name [ fhir:v "Paracetamol 750mg Comprimido" ] ;
+       fhir:description [ fhir:v "Exemplo básico de produto medicinal Paracetamol 750mg comprimido para referências" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/product-name-parts> ;
+         fhir:reference [ fhir:v "StructureDefinition/product-name-parts" ]
+       ] ;
+       fhir:name [ fhir:v "Partes do Nome do Produto" ] ;
+       fhir:description [ fhir:v "Partes específicas do nome do produto que são elementos definidores para MPID conforme padrões internacionais" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br> ;
+         fhir:reference [ fhir:v "CodeSystem/pcid-br" ]
+       ] ;
+       fhir:name [ fhir:v "PCID - Identificador de Produto Embalado - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para identificadores de produtos embalados conforme ISO 11615" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/phpid-br> ;
+         fhir:reference [ fhir:v "CodeSystem/phpid-br" ]
+       ] ;
+       fhir:name [ fhir:v "PHPID - Identificador de Produto Farmacêutico - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para identificadores de produtos farmacêuticos (administráveis) conforme ISO 11615" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/organization-business-size-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/organization-business-size-br" ]
+       ] ;
+       fhir:name [ fhir:v "Porte da Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Classificação do porte da organização conforme critérios brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-property-br> ;
+         fhir:reference [ fhir:v "ValueSet/administrable-property-br" ]
+       ] ;
+       fhir:name [ fhir:v "Propriedades Administráveis - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de propriedades específicas para produtos administráveis" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property-br> ;
+         fhir:reference [ fhir:v "CodeSystem/administrable-property-br" ]
+       ] ;
+       fhir:name [ fhir:v "Propriedades Administráveis - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para propriedades de produtos administráveis" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/generic-reference> ;
+         fhir:reference [ fhir:v "StructureDefinition/generic-reference" ]
+       ] ;
+       fhir:name [ fhir:v "Referência Genérica" ] ;
+       fhir:description [ fhir:v "Referência ao produto de referência para medicamentos genéricos ou similares" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "RegulatedAuthorization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/RegulatedAuthorization/regulated-authorization-dipirona-example> ;
+         fhir:reference [ fhir:v "RegulatedAuthorization/regulated-authorization-dipirona-example" ]
+       ] ;
+       fhir:name [ fhir:v "Registro ANVISA - Dipirona 500mg" ] ;
+       fhir:description [ fhir:v "Exemplo de RegulatedAuthorization para registro ANVISA da dipirona 500mg" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/RegulatedAuthorization-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/RegulatedAuthorization-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules> ;
+         fhir:reference [ fhir:v "StructureDefinition/identifier-lifecycle-rules" ]
+       ] ;
+       fhir:name [ fhir:v "Regras de Lifecycle de Identificadores" ] ;
+       fhir:description [ fhir:v "Regras e tracking para lifecycle de identificadores MPID/PCID - define quando manter vs criar novos identificadores" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/name-validation-rules> ;
+         fhir:reference [ fhir:v "StructureDefinition/name-validation-rules" ]
+       ] ;
+       fhir:name [ fhir:v "Regras de Validação de Nome" ] ;
+       fhir:description [ fhir:v "Regras específicas para validação de nomes de produtos brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "RegulatedAuthorization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/RegulatedAuthorization/regulated-authorization-renewal-example> ;
+         fhir:reference [ fhir:v "RegulatedAuthorization/regulated-authorization-renewal-example" ]
+       ] ;
+       fhir:name [ fhir:v "Renovação de Registro ANVISA - Paracetamol 750mg" ] ;
+       fhir:description [ fhir:v "Exemplo de RegulatedAuthorization para renovação de registro ANVISA do paracetamol 750mg" ] ;
+       fhir:isExample [ fhir:v true ] ;
+       fhir:profile ( [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/RegulatedAuthorization-br"^^xsd:anyURI ;
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/RegulatedAuthorization-br>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-government-systems> ;
+         fhir:reference [ fhir:v "ValueSet/brazilian-government-systems" ]
+       ] ;
+       fhir:name [ fhir:v "Sistemas Oficiais do Governo Brasileiro" ] ;
+       fhir:description [ fhir:v "Sistemas de identificação oficiais do governo brasileiro utilizados no BRIG" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-government-systems> ;
+         fhir:reference [ fhir:v "CodeSystem/brazilian-government-systems" ]
+       ] ;
+       fhir:name [ fhir:v "Sistemas Oficiais do Governo Brasileiro" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para referenciar sistemas oficiais do governo brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-anvisa-status-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-anvisa-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status ANVISA da Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Status da organização junto à ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-anvisa-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-anvisa-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status ANVISA da Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para status da organização junto à ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/regulated-authorization-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Autorização Regulatória ANVISA" ] ;
+       fhir:description [ fhir:v "Status de autorizações regulatórias conforme processos ANVISA para medicamentos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-status-br> ;
+         fhir:reference [ fhir:v "ValueSet/regulated-authorization-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Autorização Regulatória Brasil" ] ;
+       fhir:description [ fhir:v "Conjunto de valores para status de autorizações regulatórias ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/gmp-certification-status-br> ;
+         fhir:reference [ fhir:v "ValueSet/gmp-certification-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Certificação GMP - Brasil" ] ;
+       fhir:description [ fhir:v "Status de certificação de Boas Práticas de Fabricação" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/gmp-certification-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/gmp-certification-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Certificação GMP - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para status de certificação GMP" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/marketing-status-br> ;
+         fhir:reference [ fhir:v "ValueSet/marketing-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Comercialização - Brasil" ] ;
+       fhir:description [ fhir:v "Status de comercialização de produtos medicinais no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/marketing-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Comercialização - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para status de comercialização no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/umc-coordination-status> ;
+         fhir:reference [ fhir:v "ValueSet/umc-coordination-status" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Coordenação UMC" ] ;
+       fhir:description [ fhir:v "Status do processo de coordenação com Uppsala Monitoring Centre" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/umc-coordination-status> ;
+         fhir:reference [ fhir:v "CodeSystem/umc-coordination-status" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Coordenação UMC" ] ;
+       fhir:description [ fhir:v "Códigos para status de coordenação com Uppsala Monitoring Centre" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/identifier-lifecycle-status" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Lifecycle do Identificador" ] ;
+       fhir:description [ fhir:v "Status atual do identificador no seu ciclo de vida" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-lifecycle-status> ;
+         fhir:reference [ fhir:v "ValueSet/identifier-lifecycle-status" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Lifecycle do Identificador" ] ;
+       fhir:description [ fhir:v "Status do ciclo de vida de identificadores MPID/PCID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status> ;
+         fhir:reference [ fhir:v "CodeSystem/identifier-lifecycle-status" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Lifecycle do Identificador" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para status do ciclo de vida de identificadores" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-br> ;
+         fhir:reference [ fhir:v "ValueSet/substance-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Status regulatório de substâncias no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/substance-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para status regulatório de substâncias no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-gsrs-br> ;
+         fhir:reference [ fhir:v "ValueSet/substance-status-gsrs-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Substância GSRS/Brasil" ] ;
+       fhir:description [ fhir:v "Conjunto de valores para status de substâncias GSRS e brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-status-br> ;
+         fhir:reference [ fhir:v "ValueSet/clinical-use-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet dos status das definições de uso clínico para o contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/clinical-use-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "Status das definições de uso clínico adaptados para o contexto regulatório brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-status-supply-br> ;
+         fhir:reference [ fhir:v "ValueSet/legal-status-supply-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status Legal de Fornecimento - Brasil" ] ;
+       fhir:description [ fhir:v "Status legal para dispensação de produtos medicinais no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br> ;
+         fhir:reference [ fhir:v "CodeSystem/legal-status-supply-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status Legal de Fornecimento - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para status legal de dispensação no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/legal-status-defining> ;
+         fhir:reference [ fhir:v "StructureDefinition/legal-status-defining" ]
+       ] ;
+       fhir:name [ fhir:v "Status Legal Definidor" ] ;
+       fhir:description [ fhir:v "Status legal que é elemento definidor do MPID - mudanças requerem novo MPID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/anvisa-regulatory-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/anvisa-regulatory-status" ]
+       ] ;
+       fhir:name [ fhir:v "Status Regulatório ANVISA" ] ;
+       fhir:description [ fhir:v "Status regulatório da substância junto à ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-regulatory-status-br> ;
+         fhir:reference [ fhir:v "ValueSet/anvisa-regulatory-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status Regulatório ANVISA - Brasil" ] ;
+       fhir:description [ fhir:v "Status regulatório de substâncias junto à ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-regulatory-status-br> ;
+         fhir:reference [ fhir:v "CodeSystem/anvisa-regulatory-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status Regulatório ANVISA - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para status regulatório de substâncias na ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/organization-regulatory-status-br> ;
+         fhir:reference [ fhir:v "StructureDefinition/organization-regulatory-status-br" ]
+       ] ;
+       fhir:name [ fhir:v "Status Regulatório da Organização - Brasil" ] ;
+       fhir:description [ fhir:v "Status regulatório da organização junto à ANVISA e outros órgãos brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-substance-br> ;
+         fhir:reference [ fhir:v "ValueSet/interaction-substance-br" ]
+       ] ;
+       fhir:name [ fhir:v "Substâncias para Interação - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet de substâncias comuns que causam interações medicamentosas no contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-pharmaceutical-terminology> ;
+         fhir:reference [ fhir:v "ValueSet/brazilian-pharmaceutical-terminology" ]
+       ] ;
+       fhir:name [ fhir:v "Terminologia Farmacêutica Brasileira" ] ;
+       fhir:description [ fhir:v "Terminologia padronizada para uso farmacêutico no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology> ;
+         fhir:reference [ fhir:v "CodeSystem/brazilian-pharmaceutical-terminology" ]
+       ] ;
+       fhir:name [ fhir:v "Terminologia Farmacêutica Brasileira" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para terminologia farmacêutica brasileira padronizada" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/regulated-authorization-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipo de Autorização Regulatória ANVISA" ] ;
+       fhir:description [ fhir:v "Tipos de autorizações regulatórias conforme processos ANVISA para medicamentos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/regulated-authorization-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipo de Autorização Regulatória Brasil" ] ;
+       fhir:description [ fhir:v "Conjunto de valores para tipos de autorizações regulatórias ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/regulatory-procedure-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/regulatory-procedure-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipo de Procedimento Regulatório Brasil" ] ;
+       fhir:description [ fhir:v "Conjunto de valores para tipos de procedimentos regulatórios" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/regulatory-procedure-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipo de Procedimento Regulatório Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de procedimentos regulatórios ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/container-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/container-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Container - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de containers padronizados para embalagens brasileiras" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/container-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Container - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de containers de embalagens brasileiras" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/packaging-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de embalagem utilizados para produtos farmacêuticos no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/packaging-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Embalagem - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de embalagem no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/interaction-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Interação - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet dos tipos de interação medicamentosa para o contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/product-name-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/product-name-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Nome de Produto - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de nomes para produtos medicinais no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/product-name-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Nome de Produto - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de nomes de produtos medicinais" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-name-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/substance-name-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Nome de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de nomes para substâncias no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/substance-name-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Nome de Substância - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de nomes de substâncias" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/structured-name-types> ;
+         fhir:reference [ fhir:v "ValueSet/structured-name-types" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Nome Estruturado" ] ;
+       fhir:description [ fhir:v "Tipos de elementos estruturados que podem compor um nome de produto" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/structured-name-types> ;
+         fhir:reference [ fhir:v "CodeSystem/structured-name-types" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Nome Estruturado" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para elementos estruturados de nomes de produtos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-type-anvisa-br> ;
+         fhir:reference [ fhir:v "ValueSet/organization-type-anvisa-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Organização ANVISA - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de organizações no contexto regulatório da ANVISA baseado em classificações oficiais brasileiras" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-type-anvisa-br> ;
+         fhir:reference [ fhir:v "CodeSystem/organization-type-anvisa-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Organização ANVISA - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de organizações no contexto regulatório da ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/packaged-product-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/packaged-product-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Produto Embalado - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de produtos embalados utilizados no contexto regulatório brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/packaged-product-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Produto Embalado - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de produtos embalados no Brasil" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/medicinal-product-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/medicinal-product-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Produto Medicinal - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de produtos medicinais conforme classificação brasileira/ANVISA" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/medicinal-product-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Produto Medicinal - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de produtos medicinais no contexto brasileiro" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/reference-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/reference-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Referência - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de relação de referência entre produtos medicinais" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/reference-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/reference-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Referência - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para tipos de relação de referência" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-type-br> ;
+         fhir:reference [ fhir:v "ValueSet/clinical-use-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "ValueSet dos tipos de definição de uso clínico para o contexto brasileiro." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br> ;
+         fhir:reference [ fhir:v "CodeSystem/clinical-use-type-br" ]
+       ] ;
+       fhir:name [ fhir:v "Tipos de Uso Clínico - Brasil" ] ;
+       fhir:description [ fhir:v "Tipos de definição de uso clínico adaptados para o contexto brasileiro incluindo indicações terapêuticas, contraindicações, interações medicamentosas e critérios DCE-SUS." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/umc-integration-mapping> ;
+         fhir:reference [ fhir:v "StructureDefinition/umc-integration-mapping" ]
+       ] ;
+       fhir:name [ fhir:v "UMC Integration Mapping" ] ;
+       fhir:description [ fhir:v "Extension para mapping futuro com Uppsala Monitoring Centre para coordenação internacional de identificadores PHPID" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-unit-br> ;
+         fhir:reference [ fhir:v "ValueSet/administrable-unit-br" ]
+       ] ;
+       fhir:name [ fhir:v "Unidades Administráveis - Brasil" ] ;
+       fhir:description [ fhir:v "Unidades que descrevem a apresentação final administrável" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br> ;
+         fhir:reference [ fhir:v "CodeSystem/administrable-unit-br" ]
+       ] ;
+       fhir:name [ fhir:v "Unidades Administráveis - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para unidades de apresentação administrável" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/presentation-unit-br> ;
+         fhir:reference [ fhir:v "ValueSet/presentation-unit-br" ]
+       ] ;
+       fhir:name [ fhir:v "Unidades de Apresentação - Brasil" ] ;
+       fhir:description [ fhir:v "Unidades utilizadas para expressar apresentações de produtos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br> ;
+         fhir:reference [ fhir:v "CodeSystem/presentation-unit-br" ]
+       ] ;
+       fhir:name [ fhir:v "Unidades de Apresentação - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para unidades de apresentação de produtos farmacêuticos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/concentration-unit-br> ;
+         fhir:reference [ fhir:v "ValueSet/concentration-unit-br" ]
+       ] ;
+       fhir:name [ fhir:v "Unidades de Concentração - Brasil" ] ;
+       fhir:description [ fhir:v "Unidades utilizadas para expressar concentrações de ingredientes" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br> ;
+         fhir:reference [ fhir:v "CodeSystem/concentration-unit-br" ]
+       ] ;
+       fhir:name [ fhir:v "Unidades de Concentração - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para unidades de concentração específicas brasileiras" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-values-br> ;
+         fhir:reference [ fhir:v "ValueSet/mpid-values-br" ]
+       ] ;
+       fhir:name [ fhir:v "Valores MPID - Brasil" ] ;
+       fhir:description [ fhir:v "Valores válidos para identificadores MPID brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-values-br> ;
+         fhir:reference [ fhir:v "ValueSet/pcid-values-br" ]
+       ] ;
+       fhir:name [ fhir:v "Valores PCID - Brasil" ] ;
+       fhir:description [ fhir:v "Valores válidos para identificadores PCID brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/phpid-values-br> ;
+         fhir:reference [ fhir:v "ValueSet/phpid-values-br" ]
+       ] ;
+       fhir:name [ fhir:v "Valores PHPID - Brasil" ] ;
+       fhir:description [ fhir:v "Valores válidos para identificadores PHPID brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/ValueSet/route-administration-br> ;
+         fhir:reference [ fhir:v "ValueSet/route-administration-br" ]
+       ] ;
+       fhir:name [ fhir:v "Vias de Administração - Brasil" ] ;
+       fhir:description [ fhir:v "Vias de administração de medicamentos conforme padrões brasileiros" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://farmaco.maxapex.net/brig/fhir/CodeSystem/route-administration-br> ;
+         fhir:reference [ fhir:v "CodeSystem/route-administration-br" ]
+       ] ;
+       fhir:name [ fhir:v "Vias de Administração - Brasil" ] ;
+       fhir:description [ fhir:v "Sistema de códigos para vias de administração de medicamentos" ] ;
+       fhir:isExample [ fhir:v false ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "informative"
+         ]
+       ] ) ;
+       fhir:source [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "informative"
+           ]
+         ] ) ;
+         fhir:source [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "BRIG - Início" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "informative"
+           ]
+         ] ) ;
+         fhir:source [
+           a fhir:url ;
+           fhir:v "implementation-guide.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "implementation-guide.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Guia de Implementação" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "informative"
+           ]
+         ] ) ;
+         fhir:source [
+           a fhir:url ;
+           fhir:v "profiles.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Profiles Brasileiros" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "informative"
+           ]
+         ] ) ;
+         fhir:source [
+           a fhir:url ;
+           fhir:v "terminology.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "terminology.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Terminologias" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "informative"
+           ]
+         ] ) ;
+         fhir:source [
+           a fhir:url ;
+           fhir:v "examples.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Exemplos" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "informative"
+           ]
+         ] ) ;
+         fhir:source [
+           a fhir:url ;
+           fhir:v "downloads.html"^^xsd:anyURI
+         ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2025" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "Protótipo" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/pagecontent" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/includes" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "http://farmaco.maxapex.net/brig/fhir/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "show-inherited-invariants" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "usage-stats-opt-out" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludexml" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludejson" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludettl" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludemap" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludeexample" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

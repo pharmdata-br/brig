@@ -1,0 +1,109 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ingredient-function-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem ingredient-function-br</b></p><a name=\"ingredient-function-br\"> </a><a name=\"hcingredient-function-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">revestimento<a name=\"ingredient-function-br-revestimento\"> </a></td><td>Revestimento</td><td>Componente do revestimento de comprimidos/cápsulas</td></tr><tr><td style=\"white-space:nowrap\">nucleo<a name=\"ingredient-function-br-nucleo\"> </a></td><td>Núcleo</td><td>Componente do núcleo da forma farmacêutica</td></tr><tr><td style=\"white-space:nowrap\">liberacao-controlada<a name=\"ingredient-function-br-liberacao-controlada\"> </a></td><td>Liberação Controlada</td><td>Componente que modifica a liberação do fármaco</td></tr><tr><td style=\"white-space:nowrap\">gastroprotetor<a name=\"ingredient-function-br-gastroprotetor\"> </a></td><td>Gastroprotetor</td><td>Componente que protege contra o pH gástrico</td></tr><tr><td style=\"white-space:nowrap\">enterico<a name=\"ingredient-function-br-enterico\"> </a></td><td>Entérico</td><td>Componente do revestimento entérico</td></tr><tr><td style=\"white-space:nowrap\">quelante<a name=\"ingredient-function-br-quelante\"> </a></td><td>Quelante</td><td>Substância que complexa íons metálicos</td></tr><tr><td style=\"white-space:nowrap\">sequestrante<a name=\"ingredient-function-br-sequestrante\"> </a></td><td>Sequestrante</td><td>Substância que remove impurezas</td></tr><tr><td style=\"white-space:nowrap\">crioprotetor<a name=\"ingredient-function-br-crioprotetor\"> </a></td><td>Crioprotetor</td><td>Substância que protege contra congelamento</td></tr><tr><td style=\"white-space:nowrap\">identificacao<a name=\"ingredient-function-br-identificacao\"> </a></td><td>Identificação</td><td>Substância para identificação visual do produto</td></tr><tr><td style=\"white-space:nowrap\">diferenciacao<a name=\"ingredient-function-br-diferenciacao\"> </a></td><td>Diferenciação</td><td>Substância para diferenciação entre apresentações</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br",
+  "version" : "0.0.2",
+  "name" : "IngredientFunctionBR",
+  "title" : "Funções de Ingredientes - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para funções específicas de ingredientes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "revestimento",
+    "display" : "Revestimento",
+    "definition" : "Componente do revestimento de comprimidos/cápsulas"
+  },
+  {
+    "code" : "nucleo",
+    "display" : "Núcleo",
+    "definition" : "Componente do núcleo da forma farmacêutica"
+  },
+  {
+    "code" : "liberacao-controlada",
+    "display" : "Liberação Controlada",
+    "definition" : "Componente que modifica a liberação do fármaco"
+  },
+  {
+    "code" : "gastroprotetor",
+    "display" : "Gastroprotetor",
+    "definition" : "Componente que protege contra o pH gástrico"
+  },
+  {
+    "code" : "enterico",
+    "display" : "Entérico",
+    "definition" : "Componente do revestimento entérico"
+  },
+  {
+    "code" : "quelante",
+    "display" : "Quelante",
+    "definition" : "Substância que complexa íons metálicos"
+  },
+  {
+    "code" : "sequestrante",
+    "display" : "Sequestrante",
+    "definition" : "Substância que remove impurezas"
+  },
+  {
+    "code" : "crioprotetor",
+    "display" : "Crioprotetor",
+    "definition" : "Substância que protege contra congelamento"
+  },
+  {
+    "code" : "identificacao",
+    "display" : "Identificação",
+    "definition" : "Substância para identificação visual do produto"
+  },
+  {
+    "code" : "diferenciacao",
+    "display" : "Diferenciação",
+    "definition" : "Substância para diferenciação entre apresentações"
+  }]
+}

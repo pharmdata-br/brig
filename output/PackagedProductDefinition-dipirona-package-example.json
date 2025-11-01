@@ -1,0 +1,37 @@
+{
+  "resourceType" : "PackagedProductDefinition",
+  "id" : "dipirona-package-example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: PackagedProductDefinition dipirona-package-example</b></p><a name=\"dipirona-package-example\"> </a><a name=\"hcdipirona-package-example\"> </a><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-id-br</code>/BRIG-PKG-DIP-500</p><p><b>name</b>: Dipirona 500mg - Caixa com 20 comprimidos</p><p><b>type</b>: <span title=\"Códigos:{http://hl7.org/fhir/packaging-type Box}\">Box</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-dipirona-500mg-example.html\">MedicinalProductDefinition: identifier = http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br#BRIG-MPID-DIP-500,http://anvisa.gov.br/medicamentos/registro#100000000001; type = Medicamento; domain = Human use; status = Active; combinedPharmaceuticalDoseForm = Tablet; route = Oral; legalStatusOfSupply = Prescrição Médica; classification = metamizole sodium</a></p><p><b>status</b>: <span title=\"Códigos:{http://hl7.org/fhir/publication-status active}\">Active</span></p><h3>Packagings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://hl7.org/fhir/packaging-type Blister}\">Blister</span></td><td>20</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-id-br",
+    "value" : "BRIG-PKG-DIP-500"
+  }],
+  "name" : "Dipirona 500mg - Caixa com 20 comprimidos",
+  "type" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/packaging-type",
+      "code" : "Box"
+    }]
+  },
+  "packageFor" : [{
+    "reference" : "MedicinalProductDefinition/dipirona-500mg-example"
+  }],
+  "status" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/publication-status",
+      "code" : "active"
+    }]
+  },
+  "packaging" : {
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/packaging-type",
+        "code" : "Blister"
+      }]
+    },
+    "quantity" : 20
+  }
+}

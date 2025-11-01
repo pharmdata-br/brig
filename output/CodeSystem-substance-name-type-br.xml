@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="substance-name-type-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem substance-name-type-br</b></p><a name="substance-name-type-br"> </a><a name="hcsubstance-name-type-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">official<a name="substance-name-type-br-official"> </a></td><td>Nome Oficial</td><td>Nome oficial ou sistemático da substância</td></tr><tr><td style="white-space:nowrap">common<a name="substance-name-type-br-common"> </a></td><td>Nome Comum</td><td>Nome comum ou trivial da substância</td></tr><tr><td style="white-space:nowrap">dcb<a name="substance-name-type-br-dcb"> </a></td><td>DCB</td><td>Denominação Comum Brasileira</td></tr><tr><td style="white-space:nowrap">dci<a name="substance-name-type-br-dci"> </a></td><td>DCI</td><td>Denominação Comum Internacional</td></tr><tr><td style="white-space:nowrap">chemical<a name="substance-name-type-br-chemical"> </a></td><td>Nome Químico</td><td>Nome químico sistemático (IUPAC)</td></tr><tr><td style="white-space:nowrap">trade<a name="substance-name-type-br-trade"> </a></td><td>Nome Comercial</td><td>Nome comercial ou de marca</td></tr><tr><td style="white-space:nowrap">synonym<a name="substance-name-type-br-synonym"> </a></td><td>Sinônimo</td><td>Nome sinônimo ou alternativo</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"/>
+  <version value="0.0.2"/>
+  <name value="SubstanceNameTypeBR"/>
+  <title value="Tipos de Nome de Substância - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para tipos de nomes de substâncias"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="official"/>
+    <display value="Nome Oficial"/>
+    <definition value="Nome oficial ou sistemático da substância"/>
+  </concept>
+  <concept>
+    <code value="common"/>
+    <display value="Nome Comum"/>
+    <definition value="Nome comum ou trivial da substância"/>
+  </concept>
+  <concept>
+    <code value="dcb"/>
+    <display value="DCB"/>
+    <definition value="Denominação Comum Brasileira"/>
+  </concept>
+  <concept>
+    <code value="dci"/>
+    <display value="DCI"/>
+    <definition value="Denominação Comum Internacional"/>
+  </concept>
+  <concept>
+    <code value="chemical"/>
+    <display value="Nome Químico"/>
+    <definition value="Nome químico sistemático (IUPAC)"/>
+  </concept>
+  <concept>
+    <code value="trade"/>
+    <display value="Nome Comercial"/>
+    <definition value="Nome comercial ou de marca"/>
+  </concept>
+  <concept>
+    <code value="synonym"/>
+    <display value="Sinônimo"/>
+    <definition value="Nome sinônimo ou alternativo"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,79 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "change-severity-level",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem change-severity-level</b></p><a name=\"change-severity-level\"> </a><a name=\"hcchange-severity-level\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/change-severity-level</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">minor<a name=\"change-severity-level-minor\"> </a></td><td>Menor</td><td>Mudança menor que não afeta segurança ou eficácia</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"change-severity-level-moderate\"> </a></td><td>Moderada</td><td>Mudança moderada com impacto limitado</td></tr><tr><td style=\"white-space:nowrap\">major<a name=\"change-severity-level-major\"> </a></td><td>Maior</td><td>Mudança significativa que afeta características do produto</td></tr><tr><td style=\"white-space:nowrap\">critical<a name=\"change-severity-level-critical\"> </a></td><td>Crítica</td><td>Mudança crítica que afeta segurança ou eficácia do produto</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/change-severity-level",
+  "version" : "0.0.2",
+  "name" : "ChangeSeverityLevel",
+  "title" : "Níveis de Severidade de Mudança",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para classificação da severidade de mudanças",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "minor",
+    "display" : "Menor",
+    "definition" : "Mudança menor que não afeta segurança ou eficácia"
+  },
+  {
+    "code" : "moderate",
+    "display" : "Moderada",
+    "definition" : "Mudança moderada com impacto limitado"
+  },
+  {
+    "code" : "major",
+    "display" : "Maior",
+    "definition" : "Mudança significativa que afeta características do produto"
+  },
+  {
+    "code" : "critical",
+    "display" : "Crítica",
+    "definition" : "Mudança crítica que afeta segurança ou eficácia do produto"
+  }]
+}

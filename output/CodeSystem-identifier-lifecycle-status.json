@@ -1,0 +1,84 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "identifier-lifecycle-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem identifier-lifecycle-status</b></p><a name=\"identifier-lifecycle-status\"> </a><a name=\"hcidentifier-lifecycle-status\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"identifier-lifecycle-status-active\"> </a></td><td>Ativo</td><td>Identificador atualmente ativo</td></tr><tr><td style=\"white-space:nowrap\">superseded<a name=\"identifier-lifecycle-status-superseded\"> </a></td><td>Substituído</td><td>Identificador substituído por nova versão</td></tr><tr><td style=\"white-space:nowrap\">deprecated<a name=\"identifier-lifecycle-status-deprecated\"> </a></td><td>Depreciado</td><td>Identificador depreciado mas ainda válido</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"identifier-lifecycle-status-withdrawn\"> </a></td><td>Retirado</td><td>Identificador retirado e não mais válido</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"identifier-lifecycle-status-suspended\"> </a></td><td>Suspenso</td><td>Identificador temporariamente suspenso</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status",
+  "version" : "0.0.2",
+  "name" : "IdentifierLifecycleStatus",
+  "title" : "Status de Lifecycle do Identificador",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para status do ciclo de vida de identificadores",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "active",
+    "display" : "Ativo",
+    "definition" : "Identificador atualmente ativo"
+  },
+  {
+    "code" : "superseded",
+    "display" : "Substituído",
+    "definition" : "Identificador substituído por nova versão"
+  },
+  {
+    "code" : "deprecated",
+    "display" : "Depreciado",
+    "definition" : "Identificador depreciado mas ainda válido"
+  },
+  {
+    "code" : "withdrawn",
+    "display" : "Retirado",
+    "definition" : "Identificador retirado e não mais válido"
+  },
+  {
+    "code" : "suspended",
+    "display" : "Suspenso",
+    "definition" : "Identificador temporariamente suspenso"
+  }]
+}

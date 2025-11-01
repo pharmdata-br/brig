@@ -1,0 +1,183 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>PackagedProductDefinition-midazolam-5mg-package-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json"><code style="white-space: pre; text-wrap: nowrap;" class="language-json"><a name="l17">​</a>{
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition">resourceType</a>" : "PackagedProductDefinition",
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.id">id</a>" : "midazolam-5mg-package",
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2025-08-02T10:00:00Z",
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+      <a style="color: Maroon" href="StructureDefinition-PackagedProductDefinition-br.html">&#x1F517;</a> "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;Midazolam Cristália 5mg/mL - Embalagem&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;EAN/GTIN:&lt;/strong&gt; 7891234567891&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Código ANVISA:&lt;/strong&gt; PKG-MID-5MG-10AMP&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Conteúdo:&lt;/strong&gt; 10 ampolas de 3mL (5mg/mL)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Embalagem:&lt;/strong&gt; Caixa de papelão com ampolas de vidro âmbar&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Armazenamento:&lt;/strong&gt; Conservar sob refrigeração, proteger da luz&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Medicamento controlado - Prescrição médica obrigatória&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fabricante:&lt;/strong&gt; Cristália Brasil&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Produto base:&lt;/strong&gt; Midazolam 5mg/mL injetável&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Classificação:&lt;/strong&gt; Medicamento hospitalar de uso controlado&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "BR-CRISTALIA-567890-P001"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://hl7.org/fhir/sid/gs1",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "7891234567891"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://anvisa.gov.br/produtos/embalagem",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "PKG-MID-5MG-10AMP"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.name">name</a>" : "Midazolam Cristália 5mg/mL - Caixa 10 ampolas 3mL",
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "medicamento-hospitalar"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packageFor">packageFor</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinitionBR/midazolam-5mg-injection"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.legalStatusOfSupply">legalStatusOfSupply</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.legalStatusOfSupply.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "receita-azul"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.marketingStatus">marketingStatus</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.country">country</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "BR"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.status">status</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "active"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.dateRange">dateRange</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.start">start</a>" : "2019-08-10"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">manufacturer</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "OrganizationANVISASimple/cristalia-brasil"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging">packaging</a>" : {
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.type">type</a>" : {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "caixa"
+        }
+      ]
+    },
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.quantity">quantity</a>" : 1,
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.material">material</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "papel"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "vidro"
+          }
+        ]
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem">containedItem</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.item">item</a>" : {
+          "<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "midazolam-amp-5mg-3ml",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Midazolam 5mg/mL ampola 3mL"
+              }
+            ]
+          }
+        },
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.amount">amount</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 10,
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a>" : "ampola",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a>" : "1"
+        }
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.characteristic">characteristic</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.property.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "armazenamento",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Condições de armazenamento"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.property.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "refrigeracao",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Refrigeração (2-8°C)"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.property.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "protecao-luz",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Proteção contra luz"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.property.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "proteger-luz",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Proteger da luz"
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+</body>
+</html>

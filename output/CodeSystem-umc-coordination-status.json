@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "umc-coordination-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem umc-coordination-status</b></p><a name=\"umc-coordination-status\"> </a><a name=\"hcumc-coordination-status\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/umc-coordination-status</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">pending<a name=\"umc-coordination-status-pending\"> </a></td><td>Pendente</td><td>Coordenação com UMC pendente</td></tr><tr><td style=\"white-space:nowrap\">requested<a name=\"umc-coordination-status-requested\"> </a></td><td>Solicitado</td><td>Solicitação enviada ao UMC</td></tr><tr><td style=\"white-space:nowrap\">in-review<a name=\"umc-coordination-status-in-review\"> </a></td><td>Em Revisão</td><td>Solicitação em revisão pelo UMC</td></tr><tr><td style=\"white-space:nowrap\">approved<a name=\"umc-coordination-status-approved\"> </a></td><td>Aprovado</td><td>PHPID aprovado pelo UMC</td></tr><tr><td style=\"white-space:nowrap\">assigned<a name=\"umc-coordination-status-assigned\"> </a></td><td>Atribuído</td><td>PHPID oficial atribuído pelo UMC</td></tr><tr><td style=\"white-space:nowrap\">rejected<a name=\"umc-coordination-status-rejected\"> </a></td><td>Rejeitado</td><td>Solicitação rejeitada pelo UMC</td></tr><tr><td style=\"white-space:nowrap\">on-hold<a name=\"umc-coordination-status-on-hold\"> </a></td><td>Em Espera</td><td>Processo em espera aguardando informações adicionais</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/umc-coordination-status",
+  "version" : "0.0.2",
+  "name" : "UMCCoordinationStatus",
+  "title" : "Status de Coordenação UMC",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Códigos para status de coordenação com Uppsala Monitoring Centre",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "pending",
+    "display" : "Pendente",
+    "definition" : "Coordenação com UMC pendente"
+  },
+  {
+    "code" : "requested",
+    "display" : "Solicitado",
+    "definition" : "Solicitação enviada ao UMC"
+  },
+  {
+    "code" : "in-review",
+    "display" : "Em Revisão",
+    "definition" : "Solicitação em revisão pelo UMC"
+  },
+  {
+    "code" : "approved",
+    "display" : "Aprovado",
+    "definition" : "PHPID aprovado pelo UMC"
+  },
+  {
+    "code" : "assigned",
+    "display" : "Atribuído",
+    "definition" : "PHPID oficial atribuído pelo UMC"
+  },
+  {
+    "code" : "rejected",
+    "display" : "Rejeitado",
+    "definition" : "Solicitação rejeitada pelo UMC"
+  },
+  {
+    "code" : "on-hold",
+    "display" : "Em Espera",
+    "definition" : "Processo em espera aguardando informações adicionais"
+  }]
+}

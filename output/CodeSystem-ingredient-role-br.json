@@ -1,0 +1,159 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ingredient-role-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem ingredient-role-br</b></p><a name=\"ingredient-role-br\"> </a><a name=\"hcingredient-role-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-role-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">ativo<a name=\"ingredient-role-br-ativo\"> </a></td><td>Ingrediente Ativo</td><td>Substância responsável pelo efeito terapêutico principal</td></tr><tr><td style=\"white-space:nowrap\">co-ativo<a name=\"ingredient-role-br-co-ativo\"> </a></td><td>Co-ativo</td><td>Substância ativa secundária que contribui para o efeito terapêutico</td></tr><tr><td style=\"white-space:nowrap\">excipiente<a name=\"ingredient-role-br-excipiente\"> </a></td><td>Excipiente</td><td>Substância inativa que compõe a formulação</td></tr><tr><td style=\"white-space:nowrap\">diluente<a name=\"ingredient-role-br-diluente\"> </a></td><td>Diluente</td><td>Substância utilizada para diluir o ingrediente ativo</td></tr><tr><td style=\"white-space:nowrap\">aglutinante<a name=\"ingredient-role-br-aglutinante\"> </a></td><td>Aglutinante</td><td>Substância que promove a coesão dos componentes</td></tr><tr><td style=\"white-space:nowrap\">desintegrante<a name=\"ingredient-role-br-desintegrante\"> </a></td><td>Desintegrante</td><td>Substância que facilita a desintegração da forma farmacêutica</td></tr><tr><td style=\"white-space:nowrap\">lubrificante<a name=\"ingredient-role-br-lubrificante\"> </a></td><td>Lubrificante</td><td>Substância que reduz o atrito durante a fabricação</td></tr><tr><td style=\"white-space:nowrap\">deslizante<a name=\"ingredient-role-br-deslizante\"> </a></td><td>Deslizante</td><td>Substância que melhora o fluxo dos pós</td></tr><tr><td style=\"white-space:nowrap\">conservante<a name=\"ingredient-role-br-conservante\"> </a></td><td>Conservante</td><td>Substância que previne deterioração microbiana</td></tr><tr><td style=\"white-space:nowrap\">antioxidante<a name=\"ingredient-role-br-antioxidante\"> </a></td><td>Antioxidante</td><td>Substância que previne oxidação</td></tr><tr><td style=\"white-space:nowrap\">estabilizante<a name=\"ingredient-role-br-estabilizante\"> </a></td><td>Estabilizante</td><td>Substância que mantém a estabilidade da formulação</td></tr><tr><td style=\"white-space:nowrap\">tampao<a name=\"ingredient-role-br-tampao\"> </a></td><td>Sistema Tampão</td><td>Substância que mantém o pH estável</td></tr><tr><td style=\"white-space:nowrap\">edulcorante<a name=\"ingredient-role-br-edulcorante\"> </a></td><td>Edulcorante</td><td>Substância que confere sabor doce</td></tr><tr><td style=\"white-space:nowrap\">aromatizante<a name=\"ingredient-role-br-aromatizante\"> </a></td><td>Aromatizante</td><td>Substância que confere aroma ou sabor</td></tr><tr><td style=\"white-space:nowrap\">corante<a name=\"ingredient-role-br-corante\"> </a></td><td>Corante</td><td>Substância que confere cor</td></tr><tr><td style=\"white-space:nowrap\">opacificante<a name=\"ingredient-role-br-opacificante\"> </a></td><td>Opacificante</td><td>Substância que confere opacidade</td></tr><tr><td style=\"white-space:nowrap\">emulsificante<a name=\"ingredient-role-br-emulsificante\"> </a></td><td>Emulsificante</td><td>Substância que promove a formação de emulsões</td></tr><tr><td style=\"white-space:nowrap\">solubilizante<a name=\"ingredient-role-br-solubilizante\"> </a></td><td>Solubilizante</td><td>Substância que aumenta a solubilidade</td></tr><tr><td style=\"white-space:nowrap\">isotonizante<a name=\"ingredient-role-br-isotonizante\"> </a></td><td>Isotonizante</td><td>Substância que ajusta a tonicidade</td></tr><tr><td style=\"white-space:nowrap\">umectante<a name=\"ingredient-role-br-umectante\"> </a></td><td>Umectante</td><td>Substância que retém umidade</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-role-br",
+  "version" : "0.0.2",
+  "name" : "IngredientRoleBR",
+  "title" : "Papéis de Ingredientes - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para papéis de ingredientes em medicamentos brasileiros",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 20,
+  "concept" : [{
+    "code" : "ativo",
+    "display" : "Ingrediente Ativo",
+    "definition" : "Substância responsável pelo efeito terapêutico principal"
+  },
+  {
+    "code" : "co-ativo",
+    "display" : "Co-ativo",
+    "definition" : "Substância ativa secundária que contribui para o efeito terapêutico"
+  },
+  {
+    "code" : "excipiente",
+    "display" : "Excipiente",
+    "definition" : "Substância inativa que compõe a formulação"
+  },
+  {
+    "code" : "diluente",
+    "display" : "Diluente",
+    "definition" : "Substância utilizada para diluir o ingrediente ativo"
+  },
+  {
+    "code" : "aglutinante",
+    "display" : "Aglutinante",
+    "definition" : "Substância que promove a coesão dos componentes"
+  },
+  {
+    "code" : "desintegrante",
+    "display" : "Desintegrante",
+    "definition" : "Substância que facilita a desintegração da forma farmacêutica"
+  },
+  {
+    "code" : "lubrificante",
+    "display" : "Lubrificante",
+    "definition" : "Substância que reduz o atrito durante a fabricação"
+  },
+  {
+    "code" : "deslizante",
+    "display" : "Deslizante",
+    "definition" : "Substância que melhora o fluxo dos pós"
+  },
+  {
+    "code" : "conservante",
+    "display" : "Conservante",
+    "definition" : "Substância que previne deterioração microbiana"
+  },
+  {
+    "code" : "antioxidante",
+    "display" : "Antioxidante",
+    "definition" : "Substância que previne oxidação"
+  },
+  {
+    "code" : "estabilizante",
+    "display" : "Estabilizante",
+    "definition" : "Substância que mantém a estabilidade da formulação"
+  },
+  {
+    "code" : "tampao",
+    "display" : "Sistema Tampão",
+    "definition" : "Substância que mantém o pH estável"
+  },
+  {
+    "code" : "edulcorante",
+    "display" : "Edulcorante",
+    "definition" : "Substância que confere sabor doce"
+  },
+  {
+    "code" : "aromatizante",
+    "display" : "Aromatizante",
+    "definition" : "Substância que confere aroma ou sabor"
+  },
+  {
+    "code" : "corante",
+    "display" : "Corante",
+    "definition" : "Substância que confere cor"
+  },
+  {
+    "code" : "opacificante",
+    "display" : "Opacificante",
+    "definition" : "Substância que confere opacidade"
+  },
+  {
+    "code" : "emulsificante",
+    "display" : "Emulsificante",
+    "definition" : "Substância que promove a formação de emulsões"
+  },
+  {
+    "code" : "solubilizante",
+    "display" : "Solubilizante",
+    "definition" : "Substância que aumenta a solubilidade"
+  },
+  {
+    "code" : "isotonizante",
+    "display" : "Isotonizante",
+    "definition" : "Substância que ajusta a tonicidade"
+  },
+  {
+    "code" : "umectante",
+    "display" : "Umectante",
+    "definition" : "Substância que retém umidade"
+  }]
+}

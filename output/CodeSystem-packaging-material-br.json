@@ -1,0 +1,119 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "packaging-material-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem packaging-material-br</b></p><a name=\"packaging-material-br\"> </a><a name=\"hcpackaging-material-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">vidro<a name=\"packaging-material-br-vidro\"> </a></td><td>Vidro</td><td>Embalagem de vidro</td></tr><tr><td style=\"white-space:nowrap\">plastico<a name=\"packaging-material-br-plastico\"> </a></td><td>Plástico</td><td>Embalagem plástica</td></tr><tr><td style=\"white-space:nowrap\">aluminio<a name=\"packaging-material-br-aluminio\"> </a></td><td>Alumínio</td><td>Embalagem de alumínio</td></tr><tr><td style=\"white-space:nowrap\">papel<a name=\"packaging-material-br-papel\"> </a></td><td>Papel</td><td>Embalagem de papel/papelão</td></tr><tr><td style=\"white-space:nowrap\">pvc<a name=\"packaging-material-br-pvc\"> </a></td><td>PVC</td><td>Cloreto de polivinila</td></tr><tr><td style=\"white-space:nowrap\">pe<a name=\"packaging-material-br-pe\"> </a></td><td>Polietileno</td><td>Polietileno</td></tr><tr><td style=\"white-space:nowrap\">pp<a name=\"packaging-material-br-pp\"> </a></td><td>Polipropileno</td><td>Polipropileno</td></tr><tr><td style=\"white-space:nowrap\">pet<a name=\"packaging-material-br-pet\"> </a></td><td>PET</td><td>Politereftalato de etileno</td></tr><tr><td style=\"white-space:nowrap\">pvdc<a name=\"packaging-material-br-pvdc\"> </a></td><td>PVDC</td><td>Cloreto de polivinilideno</td></tr><tr><td style=\"white-space:nowrap\">borracha<a name=\"packaging-material-br-borracha\"> </a></td><td>Borracha</td><td>Material de borracha/elastômero</td></tr><tr><td style=\"white-space:nowrap\">metal<a name=\"packaging-material-br-metal\"> </a></td><td>Metal</td><td>Material metálico geral</td></tr><tr><td style=\"white-space:nowrap\">lamina-aluminio<a name=\"packaging-material-br-lamina-aluminio\"> </a></td><td>Lâmina de Alumínio</td><td>Lâmina/folha de alumínio</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+  "version" : "0.0.2",
+  "name" : "PackagingMaterialBR",
+  "title" : "Materiais de Embalagem - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para materiais de embalagem no Brasil",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "vidro",
+    "display" : "Vidro",
+    "definition" : "Embalagem de vidro"
+  },
+  {
+    "code" : "plastico",
+    "display" : "Plástico",
+    "definition" : "Embalagem plástica"
+  },
+  {
+    "code" : "aluminio",
+    "display" : "Alumínio",
+    "definition" : "Embalagem de alumínio"
+  },
+  {
+    "code" : "papel",
+    "display" : "Papel",
+    "definition" : "Embalagem de papel/papelão"
+  },
+  {
+    "code" : "pvc",
+    "display" : "PVC",
+    "definition" : "Cloreto de polivinila"
+  },
+  {
+    "code" : "pe",
+    "display" : "Polietileno",
+    "definition" : "Polietileno"
+  },
+  {
+    "code" : "pp",
+    "display" : "Polipropileno",
+    "definition" : "Polipropileno"
+  },
+  {
+    "code" : "pet",
+    "display" : "PET",
+    "definition" : "Politereftalato de etileno"
+  },
+  {
+    "code" : "pvdc",
+    "display" : "PVDC",
+    "definition" : "Cloreto de polivinilideno"
+  },
+  {
+    "code" : "borracha",
+    "display" : "Borracha",
+    "definition" : "Material de borracha/elastômero"
+  },
+  {
+    "code" : "metal",
+    "display" : "Metal",
+    "definition" : "Material metálico geral"
+  },
+  {
+    "code" : "lamina-aluminio",
+    "display" : "Lâmina de Alumínio",
+    "definition" : "Lâmina/folha de alumínio"
+  }]
+}

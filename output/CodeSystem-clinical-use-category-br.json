@@ -1,0 +1,170 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "clinical-use-category-br",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem clinical-use-category-br</b></p><a name=\"clinical-use-category-br\"> </a><a name=\"hcclinical-use-category-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">ceaf<a name=\"clinical-use-category-br-ceaf\"> </a></td><td>Componente Especializado da Assistência Farmacêutica</td><td>Medicamento incluído no CEAF para doenças raras e de alto custo</td></tr><tr><td style=\"white-space:nowrap\">cbaf<a name=\"clinical-use-category-br-cbaf\"> </a></td><td>Componente Básico da Assistência Farmacêutica</td><td>Medicamento do componente básico da assistência farmacêutica</td></tr><tr><td style=\"white-space:nowrap\">rename<a name=\"clinical-use-category-br-rename\"> </a></td><td>Relação Nacional de Medicamentos Essenciais</td><td>Medicamento incluído na RENAME</td></tr><tr><td style=\"white-space:nowrap\">pediatric<a name=\"clinical-use-category-br-pediatric\"> </a></td><td>Uso pediátrico</td><td>Indicação específica para população pediátrica</td></tr><tr><td style=\"white-space:nowrap\">geriatric<a name=\"clinical-use-category-br-geriatric\"> </a></td><td>Uso geriátrico</td><td>Indicação específica para população geriátrica</td></tr><tr><td style=\"white-space:nowrap\">pregnancy<a name=\"clinical-use-category-br-pregnancy\"> </a></td><td>Gestação</td><td>Considerações especiais para gestantes</td></tr><tr><td style=\"white-space:nowrap\">lactation<a name=\"clinical-use-category-br-lactation\"> </a></td><td>Lactação</td><td>Considerações especiais para lactantes</td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"clinical-use-category-br-hospital\"> </a></td><td>Uso hospitalar</td><td>Medicamento de uso exclusivamente hospitalar</td></tr><tr><td style=\"white-space:nowrap\">controlled<a name=\"clinical-use-category-br-controlled\"> </a></td><td>Controle especial</td><td>Medicamento sujeito a controle especial</td></tr><tr><td style=\"white-space:nowrap\">biological<a name=\"clinical-use-category-br-biological\"> </a></td><td>Medicamento biológico</td><td>Produto biológico com considerações especiais</td></tr><tr><td style=\"white-space:nowrap\">herbal<a name=\"clinical-use-category-br-herbal\"> </a></td><td>Medicamento fitoterápico</td><td>Produto fitoterápico registrado</td></tr><tr><td style=\"white-space:nowrap\">otc<a name=\"clinical-use-category-br-otc\"> </a></td><td>Medicamento isento de prescrição</td><td>Medicamento de venda livre (OTC)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br",
+  "version" : "0.0.2",
+  "name" : "ClinicalUseCategoryBR",
+  "title" : "Categorias de Uso Clínico - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Categorias específicas brasileiras para classificação de uso clínico.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "compositional" : false,
+  "versionNeeded" : false,
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "ceaf",
+    "display" : "Componente Especializado da Assistência Farmacêutica",
+    "definition" : "Medicamento incluído no CEAF para doenças raras e de alto custo",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "CEAF"
+    }]
+  },
+  {
+    "code" : "cbaf",
+    "display" : "Componente Básico da Assistência Farmacêutica",
+    "definition" : "Medicamento do componente básico da assistência farmacêutica",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "CBAF"
+    }]
+  },
+  {
+    "code" : "rename",
+    "display" : "Relação Nacional de Medicamentos Essenciais",
+    "definition" : "Medicamento incluído na RENAME",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "RENAME"
+    }]
+  },
+  {
+    "code" : "pediatric",
+    "display" : "Uso pediátrico",
+    "definition" : "Indicação específica para população pediátrica",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Pediátrico"
+    }]
+  },
+  {
+    "code" : "geriatric",
+    "display" : "Uso geriátrico",
+    "definition" : "Indicação específica para população geriátrica",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Geriátrico"
+    }]
+  },
+  {
+    "code" : "pregnancy",
+    "display" : "Gestação",
+    "definition" : "Considerações especiais para gestantes",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Gestação"
+    }]
+  },
+  {
+    "code" : "lactation",
+    "display" : "Lactação",
+    "definition" : "Considerações especiais para lactantes",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Lactação"
+    }]
+  },
+  {
+    "code" : "hospital",
+    "display" : "Uso hospitalar",
+    "definition" : "Medicamento de uso exclusivamente hospitalar",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Hospitalar"
+    }]
+  },
+  {
+    "code" : "controlled",
+    "display" : "Controle especial",
+    "definition" : "Medicamento sujeito a controle especial",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Controle especial"
+    }]
+  },
+  {
+    "code" : "biological",
+    "display" : "Medicamento biológico",
+    "definition" : "Produto biológico com considerações especiais",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Biológico"
+    }]
+  },
+  {
+    "code" : "herbal",
+    "display" : "Medicamento fitoterápico",
+    "definition" : "Produto fitoterápico registrado",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Fitoterápico"
+    }]
+  },
+  {
+    "code" : "otc",
+    "display" : "Medicamento isento de prescrição",
+    "definition" : "Medicamento de venda livre (OTC)",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Isento de prescrição"
+    }]
+  }]
+}

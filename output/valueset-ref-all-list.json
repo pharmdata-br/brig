@@ -1,0 +1,1769 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-dose-form-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdministrableDoseFormBR",
+      "title" : "Formas Farmacêuticas Administráveis - Brasil",
+      "description" : "Formas farmacêuticas na apresentação final, prontas para administração ao paciente",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-property-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdministrablePropertyBR",
+      "title" : "Propriedades Administráveis - Brasil",
+      "description" : "Tipos de propriedades específicas para produtos administráveis",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-unit-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdministrableUnitBR",
+      "title" : "Unidades Administráveis - Brasil",
+      "description" : "Unidades que descrevem a apresentação final administrável",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdverseEffectBRValueSet",
+      "title" : "Efeitos Adversos - Brasil",
+      "description" : "ValueSet de efeitos adversos comuns no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-frequency-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "AdverseEffectFrequencyBRValueSet",
+      "title" : "Frequência de Efeitos Adversos - Brasil",
+      "description" : "ValueSet de classificação de frequência de efeitos adversos conforme padrão brasileiro.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ANVISACategoryBR",
+      "title" : "Categorias ANVISA - Brasil",
+      "description" : "Categorias de produtos medicinais conforme classificação da ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-category-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-anvisa-category.html" : "Categoria ANVISA"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-regulatory-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ANVISARegulatoryStatusBR",
+      "title" : "Status Regulatório ANVISA - Brasil",
+      "description" : "Status regulatório de substâncias junto à ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-regulatory-status-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-anvisa-regulatory-status.html" : "Status Regulatório ANVISA"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-government-systems",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "BrazilianGovernmentSystems",
+      "title" : "Sistemas Oficiais do Governo Brasileiro",
+      "description" : "Sistemas de identificação oficiais do governo brasileiro utilizados no BRIG",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-government-systems"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-pharmaceutical-terminology",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "BrazilianPharmaceuticalTerminology",
+      "title" : "Terminologia Farmacêutica Brasileira",
+      "description" : "Terminologia padronizada para uso farmacêutico no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-brazilian-terminology-standards.html" : "Padrões de Terminologia Brasileira"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/change-severity-level",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ChangeSeverityLevel",
+      "title" : "Níveis de Severidade de Mudança",
+      "description" : "Níveis de severidade para classificação de mudanças em identificadores",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/change-severity-level"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-identifier-lifecycle-rules.html" : "Regras de Lifecycle de Identificadores"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ClinicalUseCategoryBRValueSet",
+      "title" : "Categorias de Uso Clínico - Brasil",
+      "description" : "ValueSet de categorias específicas brasileiras para uso clínico incluindo programas governamentais.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ClinicalUseStatusBRValueSet",
+      "title" : "Status de Uso Clínico - Brasil",
+      "description" : "ValueSet dos status das definições de uso clínico para o contexto brasileiro.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ClinicalUseTypeBRValueSet",
+      "title" : "Tipos de Uso Clínico - Brasil",
+      "description" : "ValueSet dos tipos de definição de uso clínico para o contexto brasileiro.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/comorbidity-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ComorbidityBRValueSet",
+      "title" : "Comorbidades - Brasil",
+      "description" : "ValueSet de comorbidades relevantes para indicações e contraindicações no contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/concentration-unit-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ConcentrationUnitBR",
+      "title" : "Unidades de Concentração - Brasil",
+      "description" : "Unidades utilizadas para expressar concentrações de ingredientes",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br",
+        "http://unitsofmeasure.org"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/container-materials-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ContainerMaterialsBR",
+      "title" : "Materiais de Container - Brasil",
+      "description" : "Materiais padronizados para containers de embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-package-item-container-details.html" : "Detalhes de Container do Item da Embalagem",
+      "StructureDefinition-package-component-details.html" : "Detalhes de Componentes da Embalagem"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/container-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ContainerTypeBR",
+      "title" : "Tipos de Container - Brasil",
+      "description" : "Tipos de containers padronizados para embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-package-item-container-details.html" : "Detalhes de Container do Item da Embalagem"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/contraindication-condition-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ContraindicationConditionBRValueSet",
+      "title" : "Condições de Contraindicação - Brasil",
+      "description" : "ValueSet de condições médicas que constituem contraindicações no contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/controlled-substance-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ControlledSubstanceCategoryBR",
+      "title" : "Categorias de Substâncias Controladas - Brasil",
+      "description" : "Categorias de controle de substâncias conforme Portaria SVS/MS n° 344/1998",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/controlled-substance-category-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-controlled-substance-category.html" : "Categoria de Substância Controlada"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/dcb-brasileiras",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "DCBBrasileiras",
+      "title" : "Denominações Comuns Brasileiras (DCB)",
+      "description" : "Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/exemplo-valueset-brasileiro",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ExemploValueSetBrasileiro",
+      "title" : "Exemplo de ValueSet Brasileiro",
+      "description" : "ValueSet de exemplo com terminologia farmacêutica brasileira padronizada conforme contexto regulatório nacional",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-brasileiro"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/gmp-certification-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "GMPCertificationStatusBR",
+      "title" : "Status de Certificação GMP - Brasil",
+      "description" : "Status de certificação de Boas Práticas de Fabricação",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gmp-certification-status-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organization-regulatory-status-br.html" : "Status Regulatório da Organização - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-change-reason",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IdentifierChangeReason",
+      "title" : "Motivos de Mudança de Identificador",
+      "description" : "Motivos padronizados para mudanças que requerem novos identificadores MPID/PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-identifier-lifecycle-rules.html" : "Regras de Lifecycle de Identificadores"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-lifecycle-status",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IdentifierLifecycleStatus",
+      "title" : "Status de Lifecycle do Identificador",
+      "description" : "Status do ciclo de vida de identificadores MPID/PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-identifier-lifecycle-status.html" : "Status de Lifecycle do Identificador"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-function-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IngredientFunctionBR",
+      "title" : "Funções de Ingredientes - Brasil",
+      "description" : "Funções específicas detalhadas de ingredientes em medicamentos",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-role-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "IngredientRoleBR",
+      "title" : "Papéis de Ingredientes - Brasil",
+      "description" : "Papéis/funções de ingredientes em medicamentos conforme padrões brasileiros",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-role-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-effect-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "InteractionEffectBRValueSet",
+      "title" : "Efeitos de Interação - Brasil",
+      "description" : "ValueSet dos efeitos clínicos de interações medicamentosas no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-substance-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "InteractionSubstanceBRValueSet",
+      "title" : "Substâncias para Interação - Brasil",
+      "description" : "ValueSet de substâncias comuns que causam interações medicamentosas no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "InteractionTypeBRValueSet",
+      "title" : "Tipos de Interação - Brasil",
+      "description" : "ValueSet dos tipos de interação medicamentosa para o contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-basis-anvisa-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "LegalBasisANVISABR",
+      "title" : "Base Legal ANVISA Brasil",
+      "description" : "Conjunto de valores para bases legais ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-status-supply-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "LegalStatusSupplyBR",
+      "title" : "Status Legal de Fornecimento - Brasil",
+      "description" : "Status legal para dispensação de produtos medicinais no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-legal-status-defining.html" : "Status Legal Definidor"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/marketing-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MarketingStatusBR",
+      "title" : "Status de Comercialização - Brasil",
+      "description" : "Status de comercialização de produtos medicinais no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/medicinal-product-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MedicinalProductTypeBR",
+      "title" : "Tipos de Produto Medicinal - Brasil",
+      "description" : "Tipos de produtos medicinais conforme classificação brasileira/ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-defining-elements",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MPIDDefiningElements",
+      "title" : "Elementos Definidores de MPID",
+      "description" : "Elementos que, quando alterados, requerem geração de novo MPID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-requiring-changes",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MPIDRequiringChanges",
+      "title" : "Mudanças que Requerem Novo MPID",
+      "description" : "Tipos de mudanças que requerem geração de novo MPID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-values-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "MPIDValues",
+      "title" : "Valores MPID - Brasil",
+      "description" : "Valores válidos para identificadores MPID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-anvisa-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationANVISAStatusBR",
+      "title" : "Status ANVISA da Organização - Brasil",
+      "description" : "Status da organização junto à ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-anvisa-status-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organization-regulatory-status-br.html" : "Status Regulatório da Organização - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-contact-purpose-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationContactPurposeBR",
+      "title" : "Finalidades de Contato Organizacional - Brasil",
+      "description" : "Finalidades específicas de contatos organizacionais no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationOperationalCategoryBR",
+      "title" : "Categorias Operacionais de Organização - Brasil",
+      "description" : "Categorias operacionais de organizações no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-category-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organization-operational-category-br.html" : "Categoria Operacional da Organização - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-scope-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationOperationalScopeBR",
+      "title" : "Escopo Operacional de Organização - Brasil",
+      "description" : "Escopo geográfico de operação de organizações",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organization-operational-category-br.html" : "Categoria Operacional da Organização - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-size-category-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationSizeCategoryBR",
+      "title" : "Categorias de Porte de Organização - Brasil",
+      "description" : "Categorias de porte de organizações conforme legislação brasileira",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-size-category-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organization-business-size-br.html" : "Porte da Organização - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-special-classification-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationSpecialClassificationBR",
+      "title" : "Classificações Especiais de Organização - Brasil",
+      "description" : "Classificações especiais de organizações conforme legislação brasileira",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organization-business-size-br.html" : "Porte da Organização - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-specialized-activities-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationSpecializedActivitiesBR",
+      "title" : "Atividades Especializadas de Organização - Brasil",
+      "description" : "Atividades especializadas realizadas por organizações",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-specialized-activities-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-organization-operational-category-br.html" : "Categoria Operacional da Organização - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-type-anvisa-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "OrganizationTypeANVISABR",
+      "title" : "Tipos de Organização ANVISA - Brasil",
+      "description" : "Tipos de organizações no contexto regulatório da ANVISA baseado em classificações oficiais brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-type-anvisa-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/package-characteristic-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackageCharacteristicBR",
+      "title" : "Características de Embalagem - Brasil",
+      "description" : "Características especiais de embalagens farmacêuticas no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/package-components-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackageComponentsBR",
+      "title" : "Componentes de Embalagem - Brasil",
+      "description" : "Componentes padronizados para embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-components-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-package-component-details.html" : "Detalhes de Componentes da Embalagem"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaged-product-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackagedProductTypeBR",
+      "title" : "Tipos de Produto Embalado - Brasil",
+      "description" : "Tipos de produtos embalados utilizados no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-material-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackagingMaterialBR",
+      "title" : "Materiais de Embalagem - Brasil",
+      "description" : "Materiais utilizados em embalagens farmacêuticas no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PackagingTypeBR",
+      "title" : "Tipos de Embalagem - Brasil",
+      "description" : "Tipos de embalagem utilizados para produtos farmacêuticos no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-requiring-changes",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PCIDRequiringChanges",
+      "title" : "Mudanças que Requerem Novo PCID",
+      "description" : "Tipos de mudanças que requerem geração de novo PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-values-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PCIDValues",
+      "title" : "Valores PCID - Brasil",
+      "description" : "Valores válidos para identificadores PCID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/phpid-values-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PHPIDValues",
+      "title" : "Valores PHPID - Brasil",
+      "description" : "Valores válidos para identificadores PHPID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/phpid-br"]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/presentation-unit-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "PresentationUnitBR",
+      "title" : "Unidades de Apresentação - Brasil",
+      "description" : "Unidades utilizadas para expressar apresentações de produtos",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/product-name-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ProductNameTypeBR",
+      "title" : "Tipos de Nome de Produto - Brasil",
+      "description" : "Tipos de nomes para produtos medicinais no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/reference-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "ReferenceTypeBR",
+      "title" : "Tipos de Referência - Brasil",
+      "description" : "Tipos de relação de referência entre produtos medicinais",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/reference-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-generic-reference.html" : "Referência Genérica"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationStatusBR",
+      "title" : "Status de Autorização Regulatória Brasil",
+      "description" : "Conjunto de valores para status de autorizações regulatórias ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationTypeBR",
+      "title" : "Tipo de Autorização Regulatória Brasil",
+      "description" : "Conjunto de valores para tipos de autorizações regulatórias ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulatory-procedure-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RegulatoryProcedureTypeBR",
+      "title" : "Tipo de Procedimento Regulatório Brasil",
+      "description" : "Conjunto de valores para tipos de procedimentos regulatórios",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/route-administration-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "RouteAdministrationBR",
+      "title" : "Vias de Administração - Brasil",
+      "description" : "Vias de administração de medicamentos conforme padrões brasileiros",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/route-administration-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/structured-name-types",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "StructuredNameTypes",
+      "title" : "Tipos de Nome Estruturado",
+      "description" : "Tipos de elementos estruturados que podem compor um nome de produto",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/structured-name-types"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceClassificationBR",
+      "title" : "Classificação de Substância - Brasil",
+      "description" : "Classificação de substâncias no contexto brasileiro/ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-gsrs-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceClassificationGSRSBR",
+      "title" : "Classificação de Substância GSRS/Brasil",
+      "description" : "Conjunto de valores para classificação de substâncias GSRS e brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-code-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceCodeBR",
+      "title" : "Códigos de Substância - Brasil",
+      "description" : "Códigos padronizados para substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code",
+        "http://www.whocc.no/atc",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-grade-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceGradeBR",
+      "title" : "Grau de Substância - Brasil",
+      "description" : "Graus ou qualidades de substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-name-type-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceNameTypeBR",
+      "title" : "Tipos de Nome de Substância - Brasil",
+      "description" : "Tipos de nomes para substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceStatusBR",
+      "title" : "Status de Substância - Brasil",
+      "description" : "Status regulatório de substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-gsrs-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "SubstanceStatusGSRSBR",
+      "title" : "Status de Substância GSRS/Brasil",
+      "description" : "Conjunto de valores para status de substâncias GSRS e brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br",
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indication-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "TherapeuticIndicationBRValueSet",
+      "title" : "Indicações Terapêuticas - Brasil",
+      "description" : "ValueSet de indicações terapêuticas baseado em CID-10 e SNOMED-CT para o contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indications-br",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "TherapeuticIndicationsBR",
+      "title" : "Indicações Terapêuticas - Brasil",
+      "description" : "Indicações terapêuticas padronizadas para produtos medicinais brasileiros",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/therapeutic-indications-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-therapeutic-indications-defining.html" : "Indicações Terapêuticas Definidoras"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/umc-coordination-status",
+      "version" : "0.0.2",
+      "status" : "draft",
+      "name" : "UMCCoordinationStatus",
+      "title" : "Status de Coordenação UMC",
+      "description" : "Status do processo de coordenação com Uppsala Monitoring Centre",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/umc-coordination-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-umc-integration-mapping.html" : "UMC Integration Mapping"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-anvisa-simple.html" : "Organização ANVISA - Brasil (Simplificado)",
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil",
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil",
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-exemplo-perfil-brasileiro.html" : "Exemplo de Perfil Brasileiro",
+      "StructureDefinition-ManufacturedItemDefinition-br.html" : "Definição de Item Fabricado - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/animal-tissue-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AnimalTissueType",
+      "title" : "Animal Tissue Type",
+      "description" : "A tissue type of an animal.",
+      "systems" : ["http://hl7.org/fhir/animal-tissue-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3165"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3165"],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/combined-dose-form",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CombinedDoseForm",
+      "title" : "Combined Dose Form",
+      "description" : "Dose forms for a product as a whole, considering all individual parts, but before any mixing",
+      "systems" : ["http://hl7.org/fhir/combined-dose-form"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3019"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3019"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/country",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "CountryValueSet",
+      "title" : "Country ValueSet",
+      "description" : "This value set defines a base set of codes for countries.   \r\n   \r\n   Note: The codes for countries are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html).",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3297"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3297"],
+      "uses" : {
+      },
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/disease-status",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DiseaseStatus",
+      "title" : "Disease Status",
+      "description" : "The status of a disease or symptom.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3117"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3117"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/disease-symptom-procedure",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "DiseaseSymptomProcedure",
+      "title" : "Disease Symptom Procedure",
+      "description" : "A symptom, disease or procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3114"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3114"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierTypeCodes",
+      "title" : "Identifier Type Codes",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-anvisa-simple.html" : "Organização ANVISA - Brasil (Simplificado)",
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil",
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-anvisa-simple.html" : "Organização ANVISA - Brasil (Simplificado)",
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil",
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "IngredientManufacturerRole",
+      "title" : "Ingredient Manufacturer Role",
+      "description" : "The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role.",
+      "systems" : ["http://hl7.org/fhir/ingredient-manufacturer-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3247"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3247"],
+      "uses" : {
+      },
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/interaction-incidence",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "InteractionIncidence",
+      "title" : "Interaction Incidence",
+      "description" : "A categorisation for incidence of occurence of an interaction.",
+      "systems" : ["http://hl7.org/fhir/interaction-incidence"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3108"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3108"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/interaction-management",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "InteractionManagement",
+      "title" : "Interaction Management",
+      "description" : "A type of management for an interaction of a medication or other substance.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3110"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3110"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-3",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "Iso316613",
+      "title" : "Iso 3166 Part 1: 3 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 3-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-generic-reference.html" : "Referência Genérica"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "JurisdictionValueSet",
+      "title" : "Jurisdiction ValueSet",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-anvisa-simple.html" : "Organização ANVISA - Brasil (Simplificado)",
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil",
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil",
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-exemplo-perfil-brasileiro.html" : "Exemplo de Perfil Brasileiro",
+      "StructureDefinition-ManufacturedItemDefinition-br.html" : "Definição de Item Fabricado - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manufactured-dose-form",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ManufacturedDoseForm",
+      "title" : "Manufactured Dose Form",
+      "description" : "Dose form for a medication, as manufactured (and before any mixing etc.), not necessarily ready for administration to the patient.",
+      "systems" : ["http://hl7.org/fhir/manufactured-dose-form"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3042"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3042"],
+      "uses" : {
+      },
+      "StructureDefinition-ManufacturedItemDefinition-br.html" : "Definição de Item Fabricado - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.375",
+        "2.16.840.1.113883.4.642.2.199",
+        "2.16.840.1.113883.4.642.3.360"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-additional-monitoring",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "AdditionalMonitoring",
+      "title" : "Additional Monitoring",
+      "description" : "Extra monitoring defined for a Medicinal Product.",
+      "systems" : [
+        "http://hl7.org/fhir/medicinal-product-additional-monitoring"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3020"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3020"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-confidentiality",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ProductConfidentiality",
+      "title" : "Product Confidentiality",
+      "description" : "Confidentiality rating, e.g. commercial sensitivity for a Medicinal Product.",
+      "systems" : ["http://hl7.org/fhir/medicinal-product-confidentiality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3026"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3026"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-cross-reference-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ProductCrossReferenceType",
+      "title" : "Product Cross Reference Type",
+      "description" : "Relationship to another Medicinal Product.",
+      "systems" : ["http://hl7.org/fhir/medicinal-product-cross-reference-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3029"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3029"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-domain",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicinalProductDomain",
+      "title" : "Medicinal Product Domain",
+      "description" : "Applicable domain for this product (e.g. human, veterinary)",
+      "systems" : ["http://hl7.org/fhir/medicinal-product-domain"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3018"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3018"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-name-part-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ProductNamePartType",
+      "title" : "Product Name Part Type",
+      "description" : "Type of part of a name for a Medicinal Product.",
+      "systems" : ["http://hl7.org/fhir/medicinal-product-name-part-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3028"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3028"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-package-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "MedicinalProductPackageType",
+      "title" : "Medicinal Product Package Type",
+      "description" : "Types of medicinal product packs",
+      "systems" : ["http://hl7.org/fhir/medicinal-product-package-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3014"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3014"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-pediatric-use",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "PediatricUse",
+      "title" : "Pediatric Use",
+      "description" : "Extra measures defined for a Medicinal Product, such as heightened reporting requirements.",
+      "systems" : ["http://hl7.org/fhir/medicinal-product-pediatric-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3025"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3025"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicinal-product-special-measures",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SpecialMeasures",
+      "title" : "Special Measures",
+      "description" : "Extra measures defined for a Medicinal Product, such as a requirement to conduct post-authorization studies.",
+      "systems" : ["http://hl7.org/fhir/medicinal-product-special-measures"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3024"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization Type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.228",
+        "2.16.840.1.113883.4.642.3.414",
+        "2.16.840.1.113883.4.642.3.403"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.228",
+        "2.16.840.1.113883.4.642.3.414",
+        "2.16.840.1.113883.4.642.3.403"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Organization-anvisa-simple.html" : "Organização ANVISA - Brasil (Simplificado)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/package-material",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "PackageMaterial",
+      "title" : "Package Material",
+      "description" : "A material used in the construction of packages and their components.",
+      "systems" : ["http://hl7.org/fhir/package-material"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3071"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3071"],
+      "uses" : {
+      },
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/product-characteristic-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ProductCharacteristic",
+      "title" : "Product Characteristic",
+      "description" : "This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3016"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3016"],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-ManufacturedItemDefinition-br.html" : "Definição de Item Fabricado - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/product-intended-use",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ProductIntendedUse",
+      "title" : "Product Intended Use",
+      "description" : "The overall intended use of a product.",
+      "systems" : ["http://hl7.org/fhir/product-intended-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2996"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2996"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil",
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil",
+      "StructureDefinition-PackagedProductDefinition-br.html" : "Definição de Produto Embalado - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-ManufacturedItemDefinition-br.html" : "Definição de Item Fabricado - Brasil",
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/regulated-authorization-case-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationCaseType",
+      "title" : "Regulated Authorization Case Type",
+      "description" : "The type of a case involved in an application.",
+      "systems" : ["http://hl7.org/fhir/regulated-authorization-case-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2998"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2998"],
+      "uses" : {
+      },
+      "StructureDefinition-RegulatedAuthorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-amount-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceAmountType",
+      "title" : "Substance Amount Type",
+      "description" : "The relationship between two substance types.",
+      "systems" : ["http://hl7.org/fhir/substance-amount-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1612"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1612"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTSubstanceCodes",
+      "title" : "SNOMED CT Substance Codes",
+      "description" : "This value set includes all substance codes from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3023"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3023"],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-Ingredient-br.html" : "Ingrediente - Brasil",
+      "StructureDefinition-MedicinalProductDefinition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-ManufacturedItemDefinition-br.html" : "Definição de Item Fabricado - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-form",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceForm",
+      "title" : "Substance Form",
+      "description" : "The substance form, whether it is the base form or a salt.",
+      "systems" : ["http://hl7.org/fhir/substance-form"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3313"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3313"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-name-authority",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceNameAuthority",
+      "title" : "Substance Name Authority",
+      "description" : "An authority that officates substance names.",
+      "systems" : ["http://hl7.org/fhir/substance-name-authority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3259"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-name-domain",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceNameDomain",
+      "title" : "Substance Name Domain",
+      "description" : "The use context of a substance name for example if there is a different name when used as a drug active ingredient as opposed to a food colour additive.",
+      "systems" : ["http://hl7.org/fhir/substance-name-domain"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3260"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3260"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-optical-activity",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "OpticalActivity",
+      "title" : "Optical Activity",
+      "description" : "The optical rotation type of a substance.",
+      "systems" : ["http://hl7.org/fhir/substance-optical-activity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3250"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-relationship-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceRelationshipType",
+      "title" : "Substance Relationship Type",
+      "description" : "The relationship between two substance types.",
+      "systems" : ["http://hl7.org/fhir/substance-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3251"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3251"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-representation-format",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceRepresentationFormat",
+      "title" : "Substance Representation Format",
+      "description" : "A format of a substance representation.",
+      "systems" : ["http://hl7.org/fhir/substance-representation-format"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3257"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-representation-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SubstanceRepresentationType",
+      "title" : "Substance Representation Type",
+      "description" : "The type of a name given to a substance.",
+      "systems" : ["http://hl7.org/fhir/substance-representation-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3261"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-source-material-genus",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SourceMaterialGenus",
+      "title" : "Source Material Genus",
+      "description" : "The genus of an organism, typically referring to the Latin epithet of the genus element of the plant/animal scientific name.",
+      "systems" : ["http://hl7.org/fhir/substance-source-material-genus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3253"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-source-material-part",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SourceMaterialPart",
+      "title" : "Source Material Part",
+      "description" : "An anatomical origin of the source material within an organism.",
+      "systems" : ["http://hl7.org/fhir/substance-source-material-part"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3255"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-source-material-species",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SourceMaterialSpecies",
+      "title" : "Source Material Species",
+      "description" : "A species of origin a substance raw material.",
+      "systems" : ["http://hl7.org/fhir/substance-source-material-species"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3248"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-source-material-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SourceMaterialType",
+      "title" : "Source Material Type",
+      "description" : "A classification that provides the origin of the substance raw material.",
+      "systems" : ["http://hl7.org/fhir/substance-source-material-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3256"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3256"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-stereochemistry",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "Stereochemistry",
+      "title" : "Stereochemistry",
+      "description" : "The optical rotation type of a substance.",
+      "systems" : ["http://hl7.org/fhir/substance-stereochemistry"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3258"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3258"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-structure-technique",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "StructureTechnique",
+      "title" : "Structure Technique",
+      "description" : "The method used to elucidate the structure or characterization of the drug substance.",
+      "systems" : ["http://hl7.org/fhir/substance-structure-technique"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3254"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3254"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-weight-method",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "WeightMethod",
+      "title" : "Weight Method",
+      "description" : "The method by which the substance weight was measured.",
+      "systems" : ["http://hl7.org/fhir/substance-weight-method"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3263"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3263"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-weight-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "WeightType",
+      "title" : "Weight Type",
+      "description" : "The type of substance weight measurement.",
+      "systems" : ["http://hl7.org/fhir/substance-weight-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3249"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3249"],
+      "uses" : {
+      },
+      "StructureDefinition-SubstanceDefinition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/target-species",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TargetSpecies",
+      "title" : "Target Species",
+      "description" : "A species for which a medicinal product is intended.",
+      "systems" : ["http://hl7.org/fhir/target-species"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3166"],
+      "uses" : {
+      },
+      "StructureDefinition-AdministrableProductDefinition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/therapy",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "Therapy",
+      "title" : "Therapy",
+      "description" : "A therapy.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3112"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3112"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/therapy-relationship-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "TherapyRelationshipType",
+      "title" : "Therapy Relationship Type",
+      "description" : "Classification of relationship between a therapy and a contraindication or an indication.",
+      "systems" : ["http://hl7.org/fhir/therapy-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3113"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/undesirable-effect-frequency",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "UndesirablEffectFrequency",
+      "title" : "Undesirabl Effect Frequency",
+      "description" : "A categorisation for a frequency of occurence of an undesirable effect.",
+      "systems" : ["http://hl7.org/fhir/undesirable-effect-frequency"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3118"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3118"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/unit-of-presentation",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "UnitOfPresentation",
+      "title" : "Unit Of Presentation",
+      "description" : "The presentation type in which an administrable medicinal product is given to a patient.",
+      "systems" : ["http://hl7.org/fhir/unit-of-presentation"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3168"],
+      "uses" : {
+      },
+      "StructureDefinition-ManufacturedItemDefinition-br.html" : "Definição de Item Fabricado - Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/warning-type",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "WarningType",
+      "title" : "Warning Type",
+      "description" : "Classification of warning type.",
+      "systems" : ["http://hl7.org/fhir/warning-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3104"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3104"],
+      "uses" : {
+      },
+      "StructureDefinition-ClinicalUseDefinition-br.html" : "Definição de Uso Clínico - Brasil"
+    }
+  ]
+}

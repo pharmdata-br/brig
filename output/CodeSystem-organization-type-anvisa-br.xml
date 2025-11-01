@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organization-type-anvisa-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem organization-type-anvisa-br</b></p><a name="organization-type-anvisa-br"> </a><a name="hcorganization-type-anvisa-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-type-anvisa-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">manufacturer<a name="organization-type-anvisa-br-manufacturer"> </a></td><td>Fabricante</td><td>Empresa que produz medicamentos, dispositivos médicos ou outros produtos regulados</td></tr><tr><td style="white-space:nowrap">manufacturer-api<a name="organization-type-anvisa-br-manufacturer-api"> </a></td><td>Fabricante de IFA</td><td>Fabricante de Insumo Farmacêutico Ativo (API)</td></tr><tr><td style="white-space:nowrap">manufacturer-finished<a name="organization-type-anvisa-br-manufacturer-finished"> </a></td><td>Fabricante de Produto Acabado</td><td>Fabricante de produtos farmacêuticos acabados</td></tr><tr><td style="white-space:nowrap">manufacturer-device<a name="organization-type-anvisa-br-manufacturer-device"> </a></td><td>Fabricante de Dispositivo Médico</td><td>Fabricante de dispositivos médicos, equipamentos e correlatos</td></tr><tr><td style="white-space:nowrap">importer<a name="organization-type-anvisa-br-importer"> </a></td><td>Importador</td><td>Empresa responsável pela importação de produtos regulados</td></tr><tr><td style="white-space:nowrap">importer-api<a name="organization-type-anvisa-br-importer-api"> </a></td><td>Importador de IFA</td><td>Importador de Insumos Farmacêuticos Ativos</td></tr><tr><td style="white-space:nowrap">importer-finished<a name="organization-type-anvisa-br-importer-finished"> </a></td><td>Importador de Produto Acabado</td><td>Importador de produtos farmacêuticos acabados</td></tr><tr><td style="white-space:nowrap">importer-device<a name="organization-type-anvisa-br-importer-device"> </a></td><td>Importador de Dispositivo Médico</td><td>Importador de dispositivos médicos</td></tr><tr><td style="white-space:nowrap">distributor<a name="organization-type-anvisa-br-distributor"> </a></td><td>Distribuidor</td><td>Empresa de distribuição de produtos regulados</td></tr><tr><td style="white-space:nowrap">distributor-pharma<a name="organization-type-anvisa-br-distributor-pharma"> </a></td><td>Distribuidor Farmacêutico</td><td>Empresa de distribuição de medicamentos</td></tr><tr><td style="white-space:nowrap">distributor-device<a name="organization-type-anvisa-br-distributor-device"> </a></td><td>Distribuidor de Dispositivo Médico</td><td>Distribuidor de dispositivos médicos</td></tr><tr><td style="white-space:nowrap">hospital<a name="organization-type-anvisa-br-hospital"> </a></td><td>Hospital</td><td>Estabelecimento hospitalar</td></tr><tr><td style="white-space:nowrap">clinic<a name="organization-type-anvisa-br-clinic"> </a></td><td>Clínica</td><td>Clínica ou ambulatório</td></tr><tr><td style="white-space:nowrap">pharmacy<a name="organization-type-anvisa-br-pharmacy"> </a></td><td>Farmácia</td><td>Farmácia ou drogaria</td></tr><tr><td style="white-space:nowrap">laboratory<a name="organization-type-anvisa-br-laboratory"> </a></td><td>Laboratório</td><td>Laboratório de análises clínicas ou patologia</td></tr><tr><td style="white-space:nowrap">research-org<a name="organization-type-anvisa-br-research-org"> </a></td><td>Organização de Pesquisa</td><td>Instituição de pesquisa clínica ou pré-clínica</td></tr><tr><td style="white-space:nowrap">cro<a name="organization-type-anvisa-br-cro"> </a></td><td>CRO</td><td>Contract Research Organization - Organização de Pesquisa por Contrato</td></tr><tr><td style="white-space:nowrap">university<a name="organization-type-anvisa-br-university"> </a></td><td>Universidade</td><td>Instituição de ensino superior com atividades de pesquisa</td></tr><tr><td style="white-space:nowrap">regulatory-authority<a name="organization-type-anvisa-br-regulatory-authority"> </a></td><td>Autoridade Regulatória</td><td>Órgão governamental de regulação sanitária</td></tr><tr><td style="white-space:nowrap">government-agency<a name="organization-type-anvisa-br-government-agency"> </a></td><td>Órgão Governamental</td><td>Agência ou órgão da administração pública</td></tr><tr><td style="white-space:nowrap">consultant<a name="organization-type-anvisa-br-consultant"> </a></td><td>Consultoria</td><td>Empresa de consultoria regulatória</td></tr><tr><td style="white-space:nowrap">testing-lab<a name="organization-type-anvisa-br-testing-lab"> </a></td><td>Laboratório de Ensaios</td><td>Laboratório de controle de qualidade e ensaios</td></tr><tr><td style="white-space:nowrap">transport<a name="organization-type-anvisa-br-transport"> </a></td><td>Transportadora</td><td>Empresa de transporte de produtos regulados</td></tr><tr><td style="white-space:nowrap">marketing-authorization-holder<a name="organization-type-anvisa-br-marketing-authorization-holder"> </a></td><td>Titular de Registro</td><td>Empresa titular da autorização de comercialização</td></tr><tr><td style="white-space:nowrap">license-holder<a name="organization-type-anvisa-br-license-holder"> </a></td><td>Titular de Licença</td><td>Titular de licença ou autorização específica</td></tr><tr><td style="white-space:nowrap">foreign-manufacturer<a name="organization-type-anvisa-br-foreign-manufacturer"> </a></td><td>Fabricante Estrangeiro</td><td>Fabricante localizado fora do Brasil</td></tr><tr><td style="white-space:nowrap">international-org<a name="organization-type-anvisa-br-international-org"> </a></td><td>Organização Internacional</td><td>Organização internacional com operações no Brasil</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-type-anvisa-br"/>
+  <version value="0.0.2"/>
+  <name value="OrganizationTypeANVISABR"/>
+  <title value="Tipos de Organização ANVISA - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para tipos de organizações no contexto regulatório da ANVISA"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="27"/>
+  <concept>
+    <code value="manufacturer"/>
+    <display value="Fabricante"/>
+    <definition value="Empresa que produz medicamentos, dispositivos médicos ou outros produtos regulados"/>
+  </concept>
+  <concept>
+    <code value="manufacturer-api"/>
+    <display value="Fabricante de IFA"/>
+    <definition value="Fabricante de Insumo Farmacêutico Ativo (API)"/>
+  </concept>
+  <concept>
+    <code value="manufacturer-finished"/>
+    <display value="Fabricante de Produto Acabado"/>
+    <definition value="Fabricante de produtos farmacêuticos acabados"/>
+  </concept>
+  <concept>
+    <code value="manufacturer-device"/>
+    <display value="Fabricante de Dispositivo Médico"/>
+    <definition value="Fabricante de dispositivos médicos, equipamentos e correlatos"/>
+  </concept>
+  <concept>
+    <code value="importer"/>
+    <display value="Importador"/>
+    <definition value="Empresa responsável pela importação de produtos regulados"/>
+  </concept>
+  <concept>
+    <code value="importer-api"/>
+    <display value="Importador de IFA"/>
+    <definition value="Importador de Insumos Farmacêuticos Ativos"/>
+  </concept>
+  <concept>
+    <code value="importer-finished"/>
+    <display value="Importador de Produto Acabado"/>
+    <definition value="Importador de produtos farmacêuticos acabados"/>
+  </concept>
+  <concept>
+    <code value="importer-device"/>
+    <display value="Importador de Dispositivo Médico"/>
+    <definition value="Importador de dispositivos médicos"/>
+  </concept>
+  <concept>
+    <code value="distributor"/>
+    <display value="Distribuidor"/>
+    <definition value="Empresa de distribuição de produtos regulados"/>
+  </concept>
+  <concept>
+    <code value="distributor-pharma"/>
+    <display value="Distribuidor Farmacêutico"/>
+    <definition value="Empresa de distribuição de medicamentos"/>
+  </concept>
+  <concept>
+    <code value="distributor-device"/>
+    <display value="Distribuidor de Dispositivo Médico"/>
+    <definition value="Distribuidor de dispositivos médicos"/>
+  </concept>
+  <concept>
+    <code value="hospital"/>
+    <display value="Hospital"/>
+    <definition value="Estabelecimento hospitalar"/>
+  </concept>
+  <concept>
+    <code value="clinic"/>
+    <display value="Clínica"/>
+    <definition value="Clínica ou ambulatório"/>
+  </concept>
+  <concept>
+    <code value="pharmacy"/>
+    <display value="Farmácia"/>
+    <definition value="Farmácia ou drogaria"/>
+  </concept>
+  <concept>
+    <code value="laboratory"/>
+    <display value="Laboratório"/>
+    <definition value="Laboratório de análises clínicas ou patologia"/>
+  </concept>
+  <concept>
+    <code value="research-org"/>
+    <display value="Organização de Pesquisa"/>
+    <definition value="Instituição de pesquisa clínica ou pré-clínica"/>
+  </concept>
+  <concept>
+    <code value="cro"/>
+    <display value="CRO"/>
+    <definition value="Contract Research Organization - Organização de Pesquisa por Contrato"/>
+  </concept>
+  <concept>
+    <code value="university"/>
+    <display value="Universidade"/>
+    <definition value="Instituição de ensino superior com atividades de pesquisa"/>
+  </concept>
+  <concept>
+    <code value="regulatory-authority"/>
+    <display value="Autoridade Regulatória"/>
+    <definition value="Órgão governamental de regulação sanitária"/>
+  </concept>
+  <concept>
+    <code value="government-agency"/>
+    <display value="Órgão Governamental"/>
+    <definition value="Agência ou órgão da administração pública"/>
+  </concept>
+  <concept>
+    <code value="consultant"/>
+    <display value="Consultoria"/>
+    <definition value="Empresa de consultoria regulatória"/>
+  </concept>
+  <concept>
+    <code value="testing-lab"/>
+    <display value="Laboratório de Ensaios"/>
+    <definition value="Laboratório de controle de qualidade e ensaios"/>
+  </concept>
+  <concept>
+    <code value="transport"/>
+    <display value="Transportadora"/>
+    <definition value="Empresa de transporte de produtos regulados"/>
+  </concept>
+  <concept>
+    <code value="marketing-authorization-holder"/>
+    <display value="Titular de Registro"/>
+    <definition value="Empresa titular da autorização de comercialização"/>
+  </concept>
+  <concept>
+    <code value="license-holder"/>
+    <display value="Titular de Licença"/>
+    <definition value="Titular de licença ou autorização específica"/>
+  </concept>
+  <concept>
+    <code value="foreign-manufacturer"/>
+    <display value="Fabricante Estrangeiro"/>
+    <definition value="Fabricante localizado fora do Brasil"/>
+  </concept>
+  <concept>
+    <code value="international-org"/>
+    <display value="Organização Internacional"/>
+    <definition value="Organização internacional com operações no Brasil"/>
+  </concept>
+</CodeSystem>

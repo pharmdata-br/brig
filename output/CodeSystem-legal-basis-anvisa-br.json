@@ -1,0 +1,89 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "legal-basis-anvisa-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem legal-basis-anvisa-br</b></p><a name=\"legal-basis-anvisa-br\"> </a><a name=\"hclegal-basis-anvisa-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">rdc-753-2022<a name=\"legal-basis-anvisa-br-rdc-753-2022\"> </a></td><td>RDC 753/2022</td><td>Resolução que dispõe sobre registro de medicamentos sintéticos e semissintéticos</td></tr><tr><td style=\"white-space:nowrap\">rdc-948-2024<a name=\"legal-basis-anvisa-br-rdc-948-2024\"> </a></td><td>RDC 948/2024</td><td>Resolução que dispõe sobre requisitos sanitários para regularização de medicamentos</td></tr><tr><td style=\"white-space:nowrap\">rdc-317-2019<a name=\"legal-basis-anvisa-br-rdc-317-2019\"> </a></td><td>RDC 317/2019</td><td>Resolução sobre validade de registros de medicamentos</td></tr><tr><td style=\"white-space:nowrap\">lei-6360-1976<a name=\"legal-basis-anvisa-br-lei-6360-1976\"> </a></td><td>Lei 6.360/1976</td><td>Lei de Vigilância Sanitária</td></tr><tr><td style=\"white-space:nowrap\">lei-9782-1999<a name=\"legal-basis-anvisa-br-lei-9782-1999\"> </a></td><td>Lei 9.782/1999</td><td>Lei de criação da ANVISA</td></tr><tr><td style=\"white-space:nowrap\">decreto-8077-2013<a name=\"legal-basis-anvisa-br-decreto-8077-2013\"> </a></td><td>Decreto 8.077/2013</td><td>Decreto sobre regulamentação da Lei 12.401/2011</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br",
+  "version" : "0.0.2",
+  "name" : "LegalBasisANVISABR",
+  "title" : "Base Legal ANVISA",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Bases legais para autorizações regulatórias ANVISA",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "rdc-753-2022",
+    "display" : "RDC 753/2022",
+    "definition" : "Resolução que dispõe sobre registro de medicamentos sintéticos e semissintéticos"
+  },
+  {
+    "code" : "rdc-948-2024",
+    "display" : "RDC 948/2024",
+    "definition" : "Resolução que dispõe sobre requisitos sanitários para regularização de medicamentos"
+  },
+  {
+    "code" : "rdc-317-2019",
+    "display" : "RDC 317/2019",
+    "definition" : "Resolução sobre validade de registros de medicamentos"
+  },
+  {
+    "code" : "lei-6360-1976",
+    "display" : "Lei 6.360/1976",
+    "definition" : "Lei de Vigilância Sanitária"
+  },
+  {
+    "code" : "lei-9782-1999",
+    "display" : "Lei 9.782/1999",
+    "definition" : "Lei de criação da ANVISA"
+  },
+  {
+    "code" : "decreto-8077-2013",
+    "display" : "Decreto 8.077/2013",
+    "definition" : "Decreto sobre regulamentação da Lei 12.401/2011"
+  }]
+}

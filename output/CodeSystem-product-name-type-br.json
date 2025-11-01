@@ -1,0 +1,89 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "product-name-type-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem product-name-type-br</b></p><a name=\"product-name-type-br\"> </a><a name=\"hcproduct-name-type-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">commercial<a name=\"product-name-type-br-commercial\"> </a></td><td>Nome Comercial</td><td>Nome de fantasia do produto registrado para comercialização</td></tr><tr><td style=\"white-space:nowrap\">scientific<a name=\"product-name-type-br-scientific\"> </a></td><td>Nome Científico</td><td>Denominação Comum Brasileira (DCB) ou nome científico do princípio ativo</td></tr><tr><td style=\"white-space:nowrap\">brand<a name=\"product-name-type-br-brand\"> </a></td><td>Marca</td><td>Nome da marca sob a qual o produto é comercializado</td></tr><tr><td style=\"white-space:nowrap\">generic<a name=\"product-name-type-br-generic\"> </a></td><td>Nome Genérico</td><td>Denominação do medicamento genérico conforme DCB</td></tr><tr><td style=\"white-space:nowrap\">popular<a name=\"product-name-type-br-popular\"> </a></td><td>Nome Popular</td><td>Nome pelo qual o produto é popularmente conhecido</td></tr><tr><td style=\"white-space:nowrap\">international<a name=\"product-name-type-br-international\"> </a></td><td>Nome Internacional</td><td>Denominação Comum Internacional (DCI) do princípio ativo</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br",
+  "version" : "0.0.2",
+  "name" : "ProductNameTypeBR",
+  "title" : "Tipos de Nome de Produto - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para tipos de nomes de produtos medicinais",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "commercial",
+    "display" : "Nome Comercial",
+    "definition" : "Nome de fantasia do produto registrado para comercialização"
+  },
+  {
+    "code" : "scientific",
+    "display" : "Nome Científico",
+    "definition" : "Denominação Comum Brasileira (DCB) ou nome científico do princípio ativo"
+  },
+  {
+    "code" : "brand",
+    "display" : "Marca",
+    "definition" : "Nome da marca sob a qual o produto é comercializado"
+  },
+  {
+    "code" : "generic",
+    "display" : "Nome Genérico",
+    "definition" : "Denominação do medicamento genérico conforme DCB"
+  },
+  {
+    "code" : "popular",
+    "display" : "Nome Popular",
+    "definition" : "Nome pelo qual o produto é popularmente conhecido"
+  },
+  {
+    "code" : "international",
+    "display" : "Nome Internacional",
+    "definition" : "Denominação Comum Internacional (DCI) do princípio ativo"
+  }]
+}

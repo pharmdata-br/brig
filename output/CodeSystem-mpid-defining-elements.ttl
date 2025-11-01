@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mpid-defining-elements"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mpid-defining-elements</b></p><a name=\"mpid-defining-elements\"> </a><a name=\"hcmpid-defining-elements\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">therapeutic-indication<a name=\"mpid-defining-elements-therapeutic-indication\"> </a></td><td>Indicação Terapêutica</td><td>Mudança em indicação terapêutica requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">legal-status<a name=\"mpid-defining-elements-legal-status\"> </a></td><td>Status Legal</td><td>Mudança em status legal requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">associated-device<a name=\"mpid-defining-elements-associated-device\"> </a></td><td>Dispositivo Associado</td><td>Mudança em dispositivo associado pode requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">active-substance<a name=\"mpid-defining-elements-active-substance\"> </a></td><td>Substância Ativa</td><td>Mudança em substância ativa requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">strength<a name=\"mpid-defining-elements-strength\"> </a></td><td>Concentração</td><td>Mudança em concentração requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">pharmaceutical-form<a name=\"mpid-defining-elements-pharmaceutical-form\"> </a></td><td>Forma Farmacêutica</td><td>Mudança em forma farmacêutica requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">route-administration<a name=\"mpid-defining-elements-route-administration\"> </a></td><td>Via de Administração</td><td>Mudança em via de administração requer novo MPID</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "MPIDDefiningElements"] ; # 
+  fhir:title [ fhir:v "Elementos Definidores de MPID"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos para elementos que definem quando criar novo MPID"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "therapeutic-indication" ] ;
+     fhir:display [ fhir:v "Indicação Terapêutica" ] ;
+     fhir:definition [ fhir:v "Mudança em indicação terapêutica requer novo MPID" ]
+  ] [
+     fhir:code [ fhir:v "legal-status" ] ;
+     fhir:display [ fhir:v "Status Legal" ] ;
+     fhir:definition [ fhir:v "Mudança em status legal requer novo MPID" ]
+  ] [
+     fhir:code [ fhir:v "associated-device" ] ;
+     fhir:display [ fhir:v "Dispositivo Associado" ] ;
+     fhir:definition [ fhir:v "Mudança em dispositivo associado pode requer novo MPID" ]
+  ] [
+     fhir:code [ fhir:v "active-substance" ] ;
+     fhir:display [ fhir:v "Substância Ativa" ] ;
+     fhir:definition [ fhir:v "Mudança em substância ativa requer novo MPID" ]
+  ] [
+     fhir:code [ fhir:v "strength" ] ;
+     fhir:display [ fhir:v "Concentração" ] ;
+     fhir:definition [ fhir:v "Mudança em concentração requer novo MPID" ]
+  ] [
+     fhir:code [ fhir:v "pharmaceutical-form" ] ;
+     fhir:display [ fhir:v "Forma Farmacêutica" ] ;
+     fhir:definition [ fhir:v "Mudança em forma farmacêutica requer novo MPID" ]
+  ] [
+     fhir:code [ fhir:v "route-administration" ] ;
+     fhir:display [ fhir:v "Via de Administração" ] ;
+     fhir:definition [ fhir:v "Mudança em via de administração requer novo MPID" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

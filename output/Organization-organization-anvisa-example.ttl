@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/Organization/organization-anvisa-example> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-anvisa-example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization organization-anvisa-example</b></p><a name=\"organization-anvisa-example\"> </a><a name=\"hcorganization-anvisa-example\"> </a><p><b>identifier</b>: <code>https://anvisa.gov.br/cnpj</code>/03.798.064/0001-10</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/organization-type govt}\">Government</span></p><p><b>name</b>: Agência Nacional de Vigilância Sanitária - ANVISA</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://anvisa.gov.br/cnpj"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "03.798.064/0001-10" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "govt" ] ;
+       fhir:display [ fhir:v "Government" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Agência Nacional de Vigilância Sanitária - ANVISA"] . # 
+
+# -------------------------------------------------------------------------------------
+

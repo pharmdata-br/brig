@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="gmp-certification-status-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem gmp-certification-status-br</b></p><a name="gmp-certification-status-br"> </a><a name="hcgmp-certification-status-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/gmp-certification-status-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">certified<a name="gmp-certification-status-br-certified"> </a></td><td>Certificada</td><td>Certificação GMP válida e ativa</td></tr><tr><td style="white-space:nowrap">expired<a name="gmp-certification-status-br-expired"> </a></td><td>Vencida</td><td>Certificação GMP vencida</td></tr><tr><td style="white-space:nowrap">suspended<a name="gmp-certification-status-br-suspended"> </a></td><td>Suspensa</td><td>Certificação GMP temporariamente suspensa</td></tr><tr><td style="white-space:nowrap">pending<a name="gmp-certification-status-br-pending"> </a></td><td>Pendente</td><td>Processo de certificação em andamento</td></tr><tr><td style="white-space:nowrap">not-applicable<a name="gmp-certification-status-br-not-applicable"> </a></td><td>Não Aplicável</td><td>Certificação GMP não aplicável para este tipo de organização</td></tr><tr><td style="white-space:nowrap">denied<a name="gmp-certification-status-br-denied"> </a></td><td>Negada</td><td>Certificação GMP negada</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/gmp-certification-status-br"/>
+  <version value="0.0.2"/>
+  <name value="GMPCertificationStatusBR"/>
+  <title value="Status de Certificação GMP - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para status de certificação GMP"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="certified"/>
+    <display value="Certificada"/>
+    <definition value="Certificação GMP válida e ativa"/>
+  </concept>
+  <concept>
+    <code value="expired"/>
+    <display value="Vencida"/>
+    <definition value="Certificação GMP vencida"/>
+  </concept>
+  <concept>
+    <code value="suspended"/>
+    <display value="Suspensa"/>
+    <definition value="Certificação GMP temporariamente suspensa"/>
+  </concept>
+  <concept>
+    <code value="pending"/>
+    <display value="Pendente"/>
+    <definition value="Processo de certificação em andamento"/>
+  </concept>
+  <concept>
+    <code value="not-applicable"/>
+    <display value="Não Aplicável"/>
+    <definition value="Certificação GMP não aplicável para este tipo de organização"/>
+  </concept>
+  <concept>
+    <code value="denied"/>
+    <display value="Negada"/>
+    <definition value="Certificação GMP negada"/>
+  </concept>
+</CodeSystem>

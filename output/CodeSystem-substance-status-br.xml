@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="substance-status-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem substance-status-br</b></p><a name="substance-status-br"> </a><a name="hcsubstance-status-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">active<a name="substance-status-br-active"> </a></td><td>Ativa</td><td>Substância com status ativo para uso em medicamentos</td></tr><tr><td style="white-space:nowrap">inactive<a name="substance-status-br-inactive"> </a></td><td>Inativa</td><td>Substância com status inativo</td></tr><tr><td style="white-space:nowrap">superseded<a name="substance-status-br-superseded"> </a></td><td>Substituída</td><td>Substância substituída por outra</td></tr><tr><td style="white-space:nowrap">provisional<a name="substance-status-br-provisional"> </a></td><td>Provisória</td><td>Substância com aprovação provisória</td></tr><tr><td style="white-space:nowrap">withdrawn<a name="substance-status-br-withdrawn"> </a></td><td>Retirada</td><td>Substância retirada do mercado</td></tr><tr><td style="white-space:nowrap">under-review<a name="substance-status-br-under-review"> </a></td><td>Em Análise</td><td>Substância em processo de análise regulatória</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"/>
+  <version value="0.0.2"/>
+  <name value="SubstanceStatusBR"/>
+  <title value="Status de Substância - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para status regulatório de substâncias no Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="active"/>
+    <display value="Ativa"/>
+    <definition value="Substância com status ativo para uso em medicamentos"/>
+  </concept>
+  <concept>
+    <code value="inactive"/>
+    <display value="Inativa"/>
+    <definition value="Substância com status inativo"/>
+  </concept>
+  <concept>
+    <code value="superseded"/>
+    <display value="Substituída"/>
+    <definition value="Substância substituída por outra"/>
+  </concept>
+  <concept>
+    <code value="provisional"/>
+    <display value="Provisória"/>
+    <definition value="Substância com aprovação provisória"/>
+  </concept>
+  <concept>
+    <code value="withdrawn"/>
+    <display value="Retirada"/>
+    <definition value="Substância retirada do mercado"/>
+  </concept>
+  <concept>
+    <code value="under-review"/>
+    <display value="Em Análise"/>
+    <definition value="Substância em processo de análise regulatória"/>
+  </concept>
+</CodeSystem>

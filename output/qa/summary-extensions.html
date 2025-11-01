@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>summary-extensions</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid">
+ <tr><td><b>Code</b></td><td><b>Value Types</b></td><td><b>Definition</b></td></tr>
+ <tr><td><a name="l30">​</a><a href="StructureDefinition-anvisa-category.html">anvisa-category</a></td><td> <span style="color:white; background-color: red; font-weight:bold">S</span> <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Categoria específica da ANVISA para classificação do produto medicinal</td></tr>
+ <tr><td><a name="l44">​</a><a href="StructureDefinition-anvisa-regulatory-status.html">anvisa-regulatory-status</a></td><td></td><td>Status regulatório da substância junto à ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;status</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Status atual da substância junto à ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;approvalDate</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date" title="date">date</a></td><td>Data de aprovação da substância pela ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;expiryDate</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date" title="date">date</a></td><td>Data de expiração da aprovação regulatória</td></tr>
+ <tr><td>&nbsp;&nbsp;restrictions</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Restrições específicas de uso impostas pela ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;lastReviewDate</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date" title="date">date</a></td><td>Data da última revisão regulatória pela ANVISA</td></tr>
+ <tr><td><a name="l97">​</a><a href="StructureDefinition-associated-devices.html">associated-devices</a></td><td><a href="http://hl7.org/fhir/R5/references.html#Reference" title="Reference">Reference</a></td><td>Dispositivos associados ao produto medicinal que são elementos definidores do MPID</td></tr>
+ <tr><td><a name="l107">​</a><a href="StructureDefinition-brazilian-terminology-standards.html">brazilian-terminology-standards</a></td><td></td><td>Define padrões específicos de terminologia para contexto farmacêutico brasileiro</td></tr>
+ <tr><td>&nbsp;&nbsp;preferredTerminology</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Terminologia técnica preferida no contexto brasileiro</td></tr>
+ <tr><td>&nbsp;&nbsp;contextualMeaning</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Explicação adicional do termo no contexto regulatório brasileiro</td></tr>
+ <tr><td>&nbsp;&nbsp;anvisaAlignment</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#boolean" title="boolean">boolean</a></td><td>Indica se o termo está alinhado com terminologia oficial ANVISA</td></tr>
+ <tr><td><a name="l142">​</a><a href="StructureDefinition-controlled-substance-category.html">controlled-substance-category</a></td><td> <span style="color:white; background-color: red; font-weight:bold">S</span> <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Categoria de controle da substância conforme legislação brasileira</td></tr>
+ <tr><td><a name="l156">​</a><a href="StructureDefinition-documentation-language.html">documentation-language</a></td><td><a href="http://hl7.org/fhir/R5/datatypes.html#code" title="code">code</a></td><td>Define o idioma padrão para toda documentação BRIG - sempre português brasileiro</td></tr>
+ <tr><td><a name="l166">​</a><a href="StructureDefinition-exemplo-extensao-brasileira.html">exemplo-extensao-brasileira</a></td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Extensão de exemplo demonstrando padrões de documentação BRIG com terminologia farmacêutica brasileira adequada</td></tr>
+ <tr><td><a name="l176">​</a><a href="StructureDefinition-generic-reference.html">generic-reference</a></td><td></td><td>Referência ao produto de referência para medicamentos genéricos ou similares</td></tr>
+ <tr><td>&nbsp;&nbsp;referenceProduct</td><td><a href="http://hl7.org/fhir/R5/references.html#Reference" title="Reference">Reference</a></td><td>Referência ao produto medicinal que serve como referência</td></tr>
+ <tr><td>&nbsp;&nbsp;referenceType</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Tipo de relação de referência (genérico, similar, biosimilar)</td></tr>
+ <tr><td>&nbsp;&nbsp;bioequivalenceStudy</td><td><a href="http://hl7.org/fhir/R5/references.html#Reference" title="Reference">Reference</a></td><td>Referência ao estudo de bioequivalência realizado</td></tr>
+ <tr><td>&nbsp;&nbsp;referenceCountry</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>País onde o produto de referência foi aprovado</td></tr>
+ <tr><td><a name="l220">​</a><a href="StructureDefinition-identifier-lifecycle-rules.html">identifier-lifecycle-rules</a></td><td></td><td>Regras e tracking para lifecycle de identificadores MPID/PCID - define quando manter vs criar novos identificadores</td></tr>
+ <tr><td>&nbsp;&nbsp;previousMPID</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>MPID anterior quando houve mudança que requer novo MPID</td></tr>
+ <tr><td>&nbsp;&nbsp;previousPCID</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>PCID anterior quando houve mudança que requer novo PCID</td></tr>
+ <tr><td>&nbsp;&nbsp;changeReason</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Motivo específico que causou a necessidade de novo identificador</td></tr>
+ <tr><td>&nbsp;&nbsp;changeDate</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date" title="date">date</a></td><td>Data em que a mudança foi implementada e novo identificador gerado</td></tr>
+ <tr><td>&nbsp;&nbsp;changeSeverity</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#code" title="code">code</a></td><td>Nível de severidade da mudança para rastreabilidade regulatória</td></tr>
+ <tr><td>&nbsp;&nbsp;impactedProducts</td><td><a href="http://hl7.org/fhir/R5/references.html#Reference" title="Reference">Reference</a></td><td>Referências a outros produtos que foram impactados pela mudança</td></tr>
+ <tr><td><a name="l282">​</a><a href="StructureDefinition-identifier-lifecycle-status.html">identifier-lifecycle-status</a></td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Status atual do identificador no seu ciclo de vida</td></tr>
+ <tr><td><a name="l292">​</a><a href="StructureDefinition-legal-status-defining.html">legal-status-defining</a></td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Status legal que é elemento definidor do MPID - mudanças requerem novo MPID</td></tr>
+ <tr><td><a name="l302">​</a><a href="StructureDefinition-manufactured-item-criteria.html">manufactured-item-criteria</a></td><td></td><td>Critérios específicos do item manufaturado que são elementos definidores do PCID</td></tr>
+ <tr><td>&nbsp;&nbsp;manufacturedDoseForm</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Forma farmacêutica específica do item manufaturado</td></tr>
+ <tr><td>&nbsp;&nbsp;unitOfPresentation</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Unidade de apresentação específica do item manufaturado</td></tr>
+ <tr><td>&nbsp;&nbsp;quantityPerPackage</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#integer" title="integer">integer</a></td><td>Quantidade de unidades do item manufaturado por embalagem</td></tr>
+ <tr><td><a name="l337">​</a><a href="StructureDefinition-name-validation-rules.html">name-validation-rules</a></td><td></td><td>Regras específicas para validação de nomes de produtos brasileiros</td></tr>
+ <tr><td>&nbsp;&nbsp;requiresInventedName</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#boolean" title="boolean">boolean</a></td><td>Indica se o produto requer nome fantasia obrigatório</td></tr>
+ <tr><td>&nbsp;&nbsp;requiresScientificName</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#boolean" title="boolean">boolean</a></td><td>Indica se o produto requer DCB/DCI obrigatório</td></tr>
+ <tr><td>&nbsp;&nbsp;allowedCharacters</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Regex para caracteres permitidos no nome</td></tr>
+ <tr><td><a name="l372">​</a><a href="StructureDefinition-organization-business-size-br.html">organization-business-size-br</a></td><td></td><td>Classificação do porte da organização conforme critérios brasileiros</td></tr>
+ <tr><td>&nbsp;&nbsp;sizeCategory</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Categoria de porte da empresa conforme classificação brasileira</td></tr>
+ <tr><td>&nbsp;&nbsp;annualRevenue</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#Money" title="Money">Money</a></td><td>Receita bruta anual da organização em reais</td></tr>
+ <tr><td>&nbsp;&nbsp;employeeCount</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#positiveInt" title="positiveInt">positiveInt</a></td><td>Número total de funcionários da organização</td></tr>
+ <tr><td>&nbsp;&nbsp;classification</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Classificação especial da organização (MEI, EPP, etc.)</td></tr>
+ <tr><td><a name="l416">​</a><a href="StructureDefinition-organization-operational-category-br.html">organization-operational-category-br</a></td><td></td><td>Categoria operacional específica da organização no contexto regulatório brasileiro</td></tr>
+ <tr><td>&nbsp;&nbsp;primaryCategory</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Categoria operacional principal da organização</td></tr>
+ <tr><td>&nbsp;&nbsp;secondaryCategories</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Categorias operacionais secundárias da organização</td></tr>
+ <tr><td>&nbsp;&nbsp;specializedActivities</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Atividades especializadas realizadas pela organização</td></tr>
+ <tr><td>&nbsp;&nbsp;operationalScope</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Escopo geográfico de operação da organização</td></tr>
+ <tr><td><a name="l460">​</a><a href="StructureDefinition-organization-regulatory-status-br.html">organization-regulatory-status-br</a></td><td></td><td>Status regulatório da organização junto à ANVISA e outros órgãos brasileiros</td></tr>
+ <tr><td>&nbsp;&nbsp;anvisaStatus</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Status atual da organização junto à ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;anvisaLicenseDate</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date" title="date">date</a></td><td>Data de emissão da licença ou autorização ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;anvisaExpiryDate</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date" title="date">date</a></td><td>Data de expiração da licença ou autorização</td></tr>
+ <tr><td>&nbsp;&nbsp;restrictions</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Restrições ou limitações impostas pela ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;lastInspectionDate</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date" title="date">date</a></td><td>Data da última inspeção realizada pela ANVISA</td></tr>
+ <tr><td>&nbsp;&nbsp;gmpCertification</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Status da certificação de Boas Práticas de Fabricação</td></tr>
+ <tr><td><a name="l522">​</a><a href="StructureDefinition-package-component-details.html">package-component-details</a></td><td></td><td>Detalhes específicos dos componentes que são elementos definidores do PCID</td></tr>
+ <tr><td>&nbsp;&nbsp;componentType</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Tipo específico do componente da embalagem</td></tr>
+ <tr><td>&nbsp;&nbsp;componentMaterials</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Materiais utilizados na composição do componente</td></tr>
+ <tr><td><a name="l548">​</a><a href="StructureDefinition-package-item-container-details.html">package-item-container-details</a></td><td></td><td>Detalhes específicos do container que são elementos definidores do PCID - mudanças requerem novo PCID</td></tr>
+ <tr><td>&nbsp;&nbsp;containerType</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Tipo específico do container que é elemento definidor do PCID</td></tr>
+ <tr><td>&nbsp;&nbsp;containerQuantity</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#integer" title="integer">integer</a></td><td>Quantidade de containers por unidade de embalagem</td></tr>
+ <tr><td>&nbsp;&nbsp;containerMaterials</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Materiais utilizados na composição do container</td></tr>
+ <tr><td><a name="l583">​</a><a href="StructureDefinition-product-name-parts.html">product-name-parts</a></td><td></td><td>Partes específicas do nome do produto que são elementos definidores para MPID conforme padrões internacionais</td></tr>
+ <tr><td>&nbsp;&nbsp;inventedNamePart</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Parte do nome que representa o nome fantasia/comercial inventado pela empresa</td></tr>
+ <tr><td>&nbsp;&nbsp;scientificNamePart</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Parte do nome que representa o nome científico/DCI/DCB da substância ativa</td></tr>
+ <tr><td>&nbsp;&nbsp;companyNamePart</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Parte do nome que inclui o nome ou abreviação da empresa fabricante</td></tr>
+ <tr><td>&nbsp;&nbsp;strengthPart</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Parte do nome que especifica a concentração ou dosagem do produto</td></tr>
+ <tr><td>&nbsp;&nbsp;formPart</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Parte do nome que especifica a forma farmacêutica do produto</td></tr>
+ <tr><td>&nbsp;&nbsp;containerPart</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Parte do nome que especifica o tipo de container ou embalagem</td></tr>
+ <tr><td>&nbsp;&nbsp;populationPart</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Parte do nome que especifica a população alvo (pediátrico, geriátrico, etc.)</td></tr>
+ <tr><td><a name="l654">​</a><a href="StructureDefinition-therapeutic-indications-defining.html">therapeutic-indications-defining</a></td><td><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" title="CodeableConcept">CodeableConcept</a></td><td>Indicações terapêuticas que são elementos definidores do MPID - mudanças requerem novo MPID</td></tr>
+ <tr><td><a name="l664">​</a><a href="StructureDefinition-umc-integration-mapping.html">umc-integration-mapping</a></td><td></td><td>Extension para mapping futuro com Uppsala Monitoring Centre para coordenação internacional de identificadores PHPID</td></tr>
+ <tr><td>&nbsp;&nbsp;umcRequestId</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Identificador da solicitação de coordenação com UMC</td></tr>
+ <tr><td>&nbsp;&nbsp;umcStatus</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#code" title="code">code</a></td><td>Status atual da coordenação com Uppsala Monitoring Centre</td></tr>
+ <tr><td>&nbsp;&nbsp;coordinationNotes</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string" title="string">string</a></td><td>Notas sobre o processo de coordenação internacional</td></tr>
+</table>
+</body>
+</html>

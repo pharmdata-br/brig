@@ -1,0 +1,119 @@
+{
+  "resourceType" : "MedicinalProductDefinition",
+  "id" : "dipirona-500mg-comp",
+  "meta" : {
+    "lastUpdated" : "2025-08-02T10:00:00Z",
+    "profile" : ["http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Dipirona Sódica Neo Química 500mg</h2><p><strong>Registro ANVISA:</strong> 1.0123.4567.001-8</p><p><strong>Forma farmacêutica:</strong> Comprimidos</p><p><strong>Via de administração:</strong> Oral</p><p><strong>Dosagem:</strong> 500mg por comprimido</p><p><strong>Embalagem:</strong> 20 comprimidos</p><p><strong>Status:</strong> Ativo para comercialização</p><p><strong>Classificação:</strong> Medicamento de venda livre</p><p><strong>Indicações:</strong> Analgésico e antitérmico</p><p><strong>Fabricante:</strong> Neo Química Brasil</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br",
+    "value" : "BR-NEO-001234"
+  },
+  {
+    "system" : "http://anvisa.gov.br/medicamentos/registro",
+    "value" : "1.0123.4567.001-8"
+  },
+  {
+    "system" : "http://hl7.org/fhir/sid/gs1",
+    "value" : "7891234567890"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br",
+      "code" : "medicamento"
+    }]
+  },
+  "combinedPharmaceuticalDoseForm" : {
+    "coding" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "10219000",
+      "display" : "Tablet"
+    }]
+  },
+  "route" : [{
+    "coding" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "20053000",
+      "display" : "Oral use"
+    }]
+  }],
+  "indication" : "Dor e febre",
+  "legalStatusOfSupply" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+      "code" : "venda-livre"
+    }]
+  },
+  "classification" : [{
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "N02BB02",
+      "display" : "Metamizole sodium"
+    }]
+  }],
+  "marketingStatus" : [{
+    "country" : {
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "BR"
+      }]
+    },
+    "status" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br",
+        "code" : "active"
+      }]
+    },
+    "dateRange" : {
+      "start" : "2020-03-15"
+    }
+  }],
+  "contact" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br",
+        "code" : "regulatory-affairs"
+      }]
+    },
+    "contact" : {
+      "reference" : "OrganizationANVISASimple/neo-quimica-brasil"
+    }
+  }],
+  "name" : [{
+    "productName" : "Dipirona Sódica Neo Química",
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br",
+        "code" : "commercial"
+      }]
+    }
+  },
+  {
+    "productName" : "Dipirona Sódica",
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br",
+        "code" : "scientific"
+      }]
+    }
+  }],
+  "characteristic" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/medicinal-product-type",
+        "code" : "GenericProduct"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "code" : "GENRL",
+        "display" : "generic"
+      }]
+    }
+  }]
+}

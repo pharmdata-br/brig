@@ -1,0 +1,84 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "regulatory-procedure-type-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem regulatory-procedure-type-br</b></p><a name=\"regulatory-procedure-type-br\"> </a><a name=\"hcregulatory-procedure-type-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">standard-procedure<a name=\"regulatory-procedure-type-br-standard-procedure\"> </a></td><td>Procedimento Padrão</td><td>Procedimento regulatório padrão ANVISA</td></tr><tr><td style=\"white-space:nowrap\">priority-procedure<a name=\"regulatory-procedure-type-br-priority-procedure\"> </a></td><td>Procedimento Prioritário</td><td>Procedimento com análise prioritária</td></tr><tr><td style=\"white-space:nowrap\">fast-track<a name=\"regulatory-procedure-type-br-fast-track\"> </a></td><td>Via Rápida</td><td>Procedimento via rápida para medicamentos inovadores</td></tr><tr><td style=\"white-space:nowrap\">simplified-procedure<a name=\"regulatory-procedure-type-br-simplified-procedure\"> </a></td><td>Procedimento Simplificado</td><td>Procedimento simplificado para casos específicos</td></tr><tr><td style=\"white-space:nowrap\">appeal-procedure<a name=\"regulatory-procedure-type-br-appeal-procedure\"> </a></td><td>Procedimento de Recurso</td><td>Procedimento de recurso contra decisão ANVISA</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br",
+  "version" : "0.0.2",
+  "name" : "RegulatoryProcedureTypeBR",
+  "title" : "Tipo de Procedimento Regulatório Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Tipos de procedimentos regulatórios ANVISA",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "standard-procedure",
+    "display" : "Procedimento Padrão",
+    "definition" : "Procedimento regulatório padrão ANVISA"
+  },
+  {
+    "code" : "priority-procedure",
+    "display" : "Procedimento Prioritário",
+    "definition" : "Procedimento com análise prioritária"
+  },
+  {
+    "code" : "fast-track",
+    "display" : "Via Rápida",
+    "definition" : "Procedimento via rápida para medicamentos inovadores"
+  },
+  {
+    "code" : "simplified-procedure",
+    "display" : "Procedimento Simplificado",
+    "definition" : "Procedimento simplificado para casos específicos"
+  },
+  {
+    "code" : "appeal-procedure",
+    "display" : "Procedimento de Recurso",
+    "definition" : "Procedimento de recurso contra decisão ANVISA"
+  }]
+}

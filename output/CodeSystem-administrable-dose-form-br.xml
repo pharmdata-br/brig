@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="administrable-dose-form-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem administrable-dose-form-br</b></p><a name="administrable-dose-form-br"> </a><a name="hcadministrable-dose-form-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">solucao-oral<a name="administrable-dose-form-br-solucao-oral"> </a></td><td>Solução Oral</td><td>Solução líquida pronta para administração oral</td></tr><tr><td style="white-space:nowrap">suspensao-oral<a name="administrable-dose-form-br-suspensao-oral"> </a></td><td>Suspensão Oral</td><td>Suspensão líquida pronta para administração oral (após reconstituição se necessário)</td></tr><tr><td style="white-space:nowrap">solucao-injetavel<a name="administrable-dose-form-br-solucao-injetavel"> </a></td><td>Solução Injetável</td><td>Solução estéril pronta para administração parenteral (após reconstituição se necessário)</td></tr><tr><td style="white-space:nowrap">suspensao-injetavel<a name="administrable-dose-form-br-suspensao-injetavel"> </a></td><td>Suspensão Injetável</td><td>Suspensão estéril pronta para administração parenteral (após reconstituição se necessário)</td></tr><tr><td style="white-space:nowrap">emulsao-injetavel<a name="administrable-dose-form-br-emulsao-injetavel"> </a></td><td>Emulsão Injetável</td><td>Emulsão estéril pronta para administração parenteral</td></tr><tr><td style="white-space:nowrap">comprimido-oral<a name="administrable-dose-form-br-comprimido-oral"> </a></td><td>Comprimido para Uso Oral</td><td>Comprimido pronto para administração oral</td></tr><tr><td style="white-space:nowrap">capsula-oral<a name="administrable-dose-form-br-capsula-oral"> </a></td><td>Cápsula para Uso Oral</td><td>Cápsula pronta para administração oral</td></tr><tr><td style="white-space:nowrap">comprimido-sublingual<a name="administrable-dose-form-br-comprimido-sublingual"> </a></td><td>Comprimido Sublingual</td><td>Comprimido pronto para administração sublingual</td></tr><tr><td style="white-space:nowrap">comprimido-bucal<a name="administrable-dose-form-br-comprimido-bucal"> </a></td><td>Comprimido Bucal</td><td>Comprimido pronto para administração bucal</td></tr><tr><td style="white-space:nowrap">creme-topico<a name="administrable-dose-form-br-creme-topico"> </a></td><td>Creme Tópico</td><td>Creme pronto para aplicação tópica</td></tr><tr><td style="white-space:nowrap">pomada-topica<a name="administrable-dose-form-br-pomada-topica"> </a></td><td>Pomada Tópica</td><td>Pomada pronta para aplicação tópica</td></tr><tr><td style="white-space:nowrap">gel-topico<a name="administrable-dose-form-br-gel-topico"> </a></td><td>Gel Tópico</td><td>Gel pronto para aplicação tópica</td></tr><tr><td style="white-space:nowrap">locao-topica<a name="administrable-dose-form-br-locao-topica"> </a></td><td>Loção Tópica</td><td>Loção pronta para aplicação tópica</td></tr><tr><td style="white-space:nowrap">aerossol-inalacao<a name="administrable-dose-form-br-aerossol-inalacao"> </a></td><td>Aerossol para Inalação</td><td>Aerossol pronto para inalação</td></tr><tr><td style="white-space:nowrap">solucao-inalacao<a name="administrable-dose-form-br-solucao-inalacao"> </a></td><td>Solução para Inalação</td><td>Solução pronta para inalação (após diluição se necessário)</td></tr><tr><td style="white-space:nowrap">supositorio-retal<a name="administrable-dose-form-br-supositorio-retal"> </a></td><td>Supositório Retal</td><td>Supositório pronto para inserção retal</td></tr><tr><td style="white-space:nowrap">ovulo-vaginal<a name="administrable-dose-form-br-ovulo-vaginal"> </a></td><td>Óvulo Vaginal</td><td>Óvulo pronto para inserção vaginal</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br"/>
+  <version value="0.0.2"/>
+  <name value="AdministrableDoseFormBR"/>
+  <title value="Formas Farmacêuticas Administráveis - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para formas farmacêuticas na apresentação final administrável"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="17"/>
+  <concept>
+    <code value="solucao-oral"/>
+    <display value="Solução Oral"/>
+    <definition value="Solução líquida pronta para administração oral"/>
+  </concept>
+  <concept>
+    <code value="suspensao-oral"/>
+    <display value="Suspensão Oral"/>
+    <definition value="Suspensão líquida pronta para administração oral (após reconstituição se necessário)"/>
+  </concept>
+  <concept>
+    <code value="solucao-injetavel"/>
+    <display value="Solução Injetável"/>
+    <definition value="Solução estéril pronta para administração parenteral (após reconstituição se necessário)"/>
+  </concept>
+  <concept>
+    <code value="suspensao-injetavel"/>
+    <display value="Suspensão Injetável"/>
+    <definition value="Suspensão estéril pronta para administração parenteral (após reconstituição se necessário)"/>
+  </concept>
+  <concept>
+    <code value="emulsao-injetavel"/>
+    <display value="Emulsão Injetável"/>
+    <definition value="Emulsão estéril pronta para administração parenteral"/>
+  </concept>
+  <concept>
+    <code value="comprimido-oral"/>
+    <display value="Comprimido para Uso Oral"/>
+    <definition value="Comprimido pronto para administração oral"/>
+  </concept>
+  <concept>
+    <code value="capsula-oral"/>
+    <display value="Cápsula para Uso Oral"/>
+    <definition value="Cápsula pronta para administração oral"/>
+  </concept>
+  <concept>
+    <code value="comprimido-sublingual"/>
+    <display value="Comprimido Sublingual"/>
+    <definition value="Comprimido pronto para administração sublingual"/>
+  </concept>
+  <concept>
+    <code value="comprimido-bucal"/>
+    <display value="Comprimido Bucal"/>
+    <definition value="Comprimido pronto para administração bucal"/>
+  </concept>
+  <concept>
+    <code value="creme-topico"/>
+    <display value="Creme Tópico"/>
+    <definition value="Creme pronto para aplicação tópica"/>
+  </concept>
+  <concept>
+    <code value="pomada-topica"/>
+    <display value="Pomada Tópica"/>
+    <definition value="Pomada pronta para aplicação tópica"/>
+  </concept>
+  <concept>
+    <code value="gel-topico"/>
+    <display value="Gel Tópico"/>
+    <definition value="Gel pronto para aplicação tópica"/>
+  </concept>
+  <concept>
+    <code value="locao-topica"/>
+    <display value="Loção Tópica"/>
+    <definition value="Loção pronta para aplicação tópica"/>
+  </concept>
+  <concept>
+    <code value="aerossol-inalacao"/>
+    <display value="Aerossol para Inalação"/>
+    <definition value="Aerossol pronto para inalação"/>
+  </concept>
+  <concept>
+    <code value="solucao-inalacao"/>
+    <display value="Solução para Inalação"/>
+    <definition value="Solução pronta para inalação (após diluição se necessário)"/>
+  </concept>
+  <concept>
+    <code value="supositorio-retal"/>
+    <display value="Supositório Retal"/>
+    <definition value="Supositório pronto para inserção retal"/>
+  </concept>
+  <concept>
+    <code value="ovulo-vaginal"/>
+    <display value="Óvulo Vaginal"/>
+    <definition value="Óvulo pronto para inserção vaginal"/>
+  </concept>
+</CodeSystem>

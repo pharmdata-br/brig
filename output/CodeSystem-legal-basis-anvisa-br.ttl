@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "legal-basis-anvisa-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem legal-basis-anvisa-br</b></p><a name=\"legal-basis-anvisa-br\"> </a><a name=\"hclegal-basis-anvisa-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">rdc-753-2022<a name=\"legal-basis-anvisa-br-rdc-753-2022\"> </a></td><td>RDC 753/2022</td><td>Resolução que dispõe sobre registro de medicamentos sintéticos e semissintéticos</td></tr><tr><td style=\"white-space:nowrap\">rdc-948-2024<a name=\"legal-basis-anvisa-br-rdc-948-2024\"> </a></td><td>RDC 948/2024</td><td>Resolução que dispõe sobre requisitos sanitários para regularização de medicamentos</td></tr><tr><td style=\"white-space:nowrap\">rdc-317-2019<a name=\"legal-basis-anvisa-br-rdc-317-2019\"> </a></td><td>RDC 317/2019</td><td>Resolução sobre validade de registros de medicamentos</td></tr><tr><td style=\"white-space:nowrap\">lei-6360-1976<a name=\"legal-basis-anvisa-br-lei-6360-1976\"> </a></td><td>Lei 6.360/1976</td><td>Lei de Vigilância Sanitária</td></tr><tr><td style=\"white-space:nowrap\">lei-9782-1999<a name=\"legal-basis-anvisa-br-lei-9782-1999\"> </a></td><td>Lei 9.782/1999</td><td>Lei de criação da ANVISA</td></tr><tr><td style=\"white-space:nowrap\">decreto-8077-2013<a name=\"legal-basis-anvisa-br-decreto-8077-2013\"> </a></td><td>Decreto 8.077/2013</td><td>Decreto sobre regulamentação da Lei 12.401/2011</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "LegalBasisANVISABR"] ; # 
+  fhir:title [ fhir:v "Base Legal ANVISA"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Bases legais para autorizações regulatórias ANVISA"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "rdc-753-2022" ] ;
+     fhir:display [ fhir:v "RDC 753/2022" ] ;
+     fhir:definition [ fhir:v "Resolução que dispõe sobre registro de medicamentos sintéticos e semissintéticos" ]
+  ] [
+     fhir:code [ fhir:v "rdc-948-2024" ] ;
+     fhir:display [ fhir:v "RDC 948/2024" ] ;
+     fhir:definition [ fhir:v "Resolução que dispõe sobre requisitos sanitários para regularização de medicamentos" ]
+  ] [
+     fhir:code [ fhir:v "rdc-317-2019" ] ;
+     fhir:display [ fhir:v "RDC 317/2019" ] ;
+     fhir:definition [ fhir:v "Resolução sobre validade de registros de medicamentos" ]
+  ] [
+     fhir:code [ fhir:v "lei-6360-1976" ] ;
+     fhir:display [ fhir:v "Lei 6.360/1976" ] ;
+     fhir:definition [ fhir:v "Lei de Vigilância Sanitária" ]
+  ] [
+     fhir:code [ fhir:v "lei-9782-1999" ] ;
+     fhir:display [ fhir:v "Lei 9.782/1999" ] ;
+     fhir:definition [ fhir:v "Lei de criação da ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "decreto-8077-2013" ] ;
+     fhir:display [ fhir:v "Decreto 8.077/2013" ] ;
+     fhir:definition [ fhir:v "Decreto sobre regulamentação da Lei 12.401/2011" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

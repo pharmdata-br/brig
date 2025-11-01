@@ -1,0 +1,1150 @@
+[
+  {
+    "id" : "administrable-dose-form-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-dose-form-br",
+    "version" : "0.0.2",
+    "name" : "AdministrableDoseFormBR"
+  },
+  {
+    "id" : "administrable-property-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property-br",
+    "version" : "0.0.2",
+    "name" : "AdministrablePropertyBR"
+  },
+  {
+    "id" : "administrable-unit-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br",
+    "version" : "0.0.2",
+    "name" : "AdministrableUnitBR"
+  },
+  {
+    "id" : "anvisa-category-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-category-br",
+    "version" : "0.0.2",
+    "name" : "ANVISACategoryBR"
+  },
+  {
+    "id" : "anvisa-regulatory-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-regulatory-status-br",
+    "version" : "0.0.2",
+    "name" : "ANVISARegulatoryStatusBR"
+  },
+  {
+    "id" : "anvisa-substance-code",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code",
+    "version" : "0.0.2",
+    "name" : "ANVISASubstanceCode"
+  },
+  {
+    "id" : "brazilian-government-systems",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-government-systems",
+    "version" : "0.0.2",
+    "name" : "BrazilianGovernmentSystems"
+  },
+  {
+    "id" : "brazilian-pharmaceutical-terminology",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology",
+    "version" : "0.0.2",
+    "name" : "BrazilianPharmaceuticalTerminology"
+  },
+  {
+    "id" : "change-severity-level",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/change-severity-level",
+    "version" : "0.0.2",
+    "name" : "ChangeSeverityLevel"
+  },
+  {
+    "id" : "clinical-use-category-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseCategoryBR"
+  },
+  {
+    "id" : "clinical-use-id-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-id-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseIdBR"
+  },
+  {
+    "id" : "clinical-use-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseStatusBR"
+  },
+  {
+    "id" : "clinical-use-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseTypeBR"
+  },
+  {
+    "id" : "concentration-unit-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br",
+    "version" : "0.0.2",
+    "name" : "ConcentrationUnitBR"
+  },
+  {
+    "id" : "container-materials-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br",
+    "version" : "0.0.2",
+    "name" : "ContainerMaterialsBR"
+  },
+  {
+    "id" : "container-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br",
+    "version" : "0.0.2",
+    "name" : "ContainerTypeBR"
+  },
+  {
+    "id" : "controlled-substance-category-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/controlled-substance-category-br",
+    "version" : "0.0.2",
+    "name" : "ControlledSubstanceCategoryBR"
+  },
+  {
+    "id" : "dcb-brasileiras",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras",
+    "version" : "0.0.2",
+    "name" : "DCBBrasileiras"
+  },
+  {
+    "id" : "exemplo-codesystem-brasileiro",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-codesystem-brasileiro",
+    "version" : "0.0.2",
+    "name" : "ExemploCodeSystemBrasileiro"
+  },
+  {
+    "id" : "gmp-certification-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gmp-certification-status-br",
+    "version" : "0.0.2",
+    "name" : "GMPCertificationStatusBR"
+  },
+  {
+    "id" : "gsrs-substance-classification-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br",
+    "version" : "0.0.2",
+    "name" : "GSRSSubstanceClassificationBR"
+  },
+  {
+    "id" : "gsrs-substance-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br",
+    "version" : "0.0.2",
+    "name" : "GSRSSubstanceStatusBR"
+  },
+  {
+    "id" : "identifier-change-reason",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason",
+    "version" : "0.0.2",
+    "name" : "IdentifierChangeReason"
+  },
+  {
+    "id" : "identifier-lifecycle-status",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status",
+    "version" : "0.0.2",
+    "name" : "IdentifierLifecycleStatus"
+  },
+  {
+    "id" : "ingredient-function-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br",
+    "version" : "0.0.2",
+    "name" : "IngredientFunctionBR"
+  },
+  {
+    "id" : "ingredient-role-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-role-br",
+    "version" : "0.0.2",
+    "name" : "IngredientRoleBR"
+  },
+  {
+    "id" : "legal-basis-anvisa-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br",
+    "version" : "0.0.2",
+    "name" : "LegalBasisANVISABR"
+  },
+  {
+    "id" : "legal-status-supply-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+    "version" : "0.0.2",
+    "name" : "LegalStatusSupplyBR"
+  },
+  {
+    "id" : "manufactured-item-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br",
+    "version" : "0.0.2",
+    "name" : "ManufacturedItemBR"
+  },
+  {
+    "id" : "marketing-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br",
+    "version" : "0.0.2",
+    "name" : "MarketingStatusBR"
+  },
+  {
+    "id" : "medicinal-product-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br",
+    "version" : "0.0.2",
+    "name" : "MedicinalProductTypeBR"
+  },
+  {
+    "id" : "mpid-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br",
+    "version" : "0.0.2",
+    "name" : "MPIDBrazil"
+  },
+  {
+    "id" : "mpid-defining-elements",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements",
+    "version" : "0.0.2",
+    "name" : "MPIDDefiningElements"
+  },
+  {
+    "id" : "organization-anvisa-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-anvisa-status-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationANVISAStatusBR"
+  },
+  {
+    "id" : "organization-contact-purpose-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationContactPurposeBR"
+  },
+  {
+    "id" : "organization-operational-category-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-category-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationOperationalCategoryBR"
+  },
+  {
+    "id" : "organization-operational-scope-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationOperationalScopeBR"
+  },
+  {
+    "id" : "organization-size-category-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-size-category-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationSizeCategoryBR"
+  },
+  {
+    "id" : "organization-special-classification-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationSpecialClassificationBR"
+  },
+  {
+    "id" : "organization-specialized-activities-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-specialized-activities-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationSpecializedActivitiesBR"
+  },
+  {
+    "id" : "organization-type-anvisa-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-type-anvisa-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationTypeANVISABR"
+  },
+  {
+    "id" : "package-characteristic-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br",
+    "version" : "0.0.2",
+    "name" : "PackageCharacteristicBR"
+  },
+  {
+    "id" : "package-components-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-components-br",
+    "version" : "0.0.2",
+    "name" : "PackageComponentsBR"
+  },
+  {
+    "id" : "packaged-product-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br",
+    "version" : "0.0.2",
+    "name" : "PackagedProductTypeBR"
+  },
+  {
+    "id" : "packaging-material-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+    "version" : "0.0.2",
+    "name" : "PackagingMaterialBR"
+  },
+  {
+    "id" : "packaging-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br",
+    "version" : "0.0.2",
+    "name" : "PackagingTypeBR"
+  },
+  {
+    "id" : "pcid-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br",
+    "version" : "0.0.2",
+    "name" : "PCIDBrazil"
+  },
+  {
+    "id" : "phpid-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/phpid-br",
+    "version" : "0.0.2",
+    "name" : "PHPIDBrazil"
+  },
+  {
+    "id" : "presentation-unit-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/presentation-unit-br",
+    "version" : "0.0.2",
+    "name" : "PresentationUnitBR"
+  },
+  {
+    "id" : "product-name-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br",
+    "version" : "0.0.2",
+    "name" : "ProductNameTypeBR"
+  },
+  {
+    "id" : "reference-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/reference-type-br",
+    "version" : "0.0.2",
+    "name" : "ReferenceTypeBR"
+  },
+  {
+    "id" : "regulated-authorization-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br",
+    "version" : "0.0.2",
+    "name" : "RegulatedAuthorizationStatusBR"
+  },
+  {
+    "id" : "regulated-authorization-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br",
+    "version" : "0.0.2",
+    "name" : "RegulatedAuthorizationTypeBR"
+  },
+  {
+    "id" : "regulatory-procedure-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br",
+    "version" : "0.0.2",
+    "name" : "RegulatoryProcedureTypeBR"
+  },
+  {
+    "id" : "route-administration-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/route-administration-br",
+    "version" : "0.0.2",
+    "name" : "RouteAdministrationBR"
+  },
+  {
+    "id" : "structured-name-types",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/structured-name-types",
+    "version" : "0.0.2",
+    "name" : "StructuredNameTypes"
+  },
+  {
+    "id" : "substance-classification-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceClassificationBR"
+  },
+  {
+    "id" : "substance-grade-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceGradeBR"
+  },
+  {
+    "id" : "substance-name-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceNameTypeBR"
+  },
+  {
+    "id" : "substance-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceStatusBR"
+  },
+  {
+    "id" : "therapeutic-indications-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/therapeutic-indications-br",
+    "version" : "0.0.2",
+    "name" : "TherapeuticIndicationsBR"
+  },
+  {
+    "id" : "umc-coordination-status",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/umc-coordination-status",
+    "version" : "0.0.2",
+    "name" : "UMCCoordinationStatus"
+  },
+  {
+    "id" : "brig.idmp.brazil",
+    "type" : "ImplementationGuide",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil",
+    "version" : "0.0.2",
+    "name" : "BRIGIDMPBrazil"
+  },
+  {
+    "id" : "AdministrableProductDefinition-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/AdministrableProductDefinition-br",
+    "version" : "0.0.2",
+    "name" : "AdministrableProductDefinitionBR"
+  },
+  {
+    "id" : "ClinicalUseDefinition-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ClinicalUseDefinition-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseDefinitionBR"
+  },
+  {
+    "id" : "Ingredient-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Ingredient-br",
+    "version" : "0.0.2",
+    "name" : "IngredientBR"
+  },
+  {
+    "id" : "ManufacturedItemDefinition-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/ManufacturedItemDefinition-br",
+    "version" : "0.0.2",
+    "name" : "ManufacturedItemDefinitionBR"
+  },
+  {
+    "id" : "MedicinalProductDefinition-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br",
+    "version" : "0.0.2",
+    "name" : "MedicinalProductDefinitionBR"
+  },
+  {
+    "id" : "Organization-anvisa-simple",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple",
+    "version" : "0.0.2",
+    "name" : "OrganizationANVISASimple"
+  },
+  {
+    "id" : "PackagedProductDefinition-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br",
+    "version" : "0.0.2",
+    "name" : "PackagedProductDefinitionBR"
+  },
+  {
+    "id" : "RegulatedAuthorization-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/RegulatedAuthorization-br",
+    "version" : "0.0.2",
+    "name" : "RegulatedAuthorizationBR"
+  },
+  {
+    "id" : "SubstanceDefinition-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceDefinitionBR"
+  },
+  {
+    "id" : "anvisa-category",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/anvisa-category",
+    "version" : "0.0.2",
+    "name" : "ANVISACategory"
+  },
+  {
+    "id" : "anvisa-regulatory-status",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/anvisa-regulatory-status",
+    "version" : "0.0.2",
+    "name" : "ANVISARegulatoryStatus"
+  },
+  {
+    "id" : "associated-devices",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/associated-devices",
+    "version" : "0.0.2",
+    "name" : "AssociatedDevices"
+  },
+  {
+    "id" : "brazilian-terminology-standards",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/brazilian-terminology-standards",
+    "version" : "0.0.2",
+    "name" : "BrazilianTerminologyStandards"
+  },
+  {
+    "id" : "controlled-substance-category",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/controlled-substance-category",
+    "version" : "0.0.2",
+    "name" : "ControlledSubstanceCategory"
+  },
+  {
+    "id" : "documentation-language",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/documentation-language",
+    "version" : "0.0.2",
+    "name" : "DocumentationLanguage"
+  },
+  {
+    "id" : "exemplo-extensao-brasileira",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/exemplo-extensao-brasileira",
+    "version" : "0.0.2",
+    "name" : "ExemploExtensaoBrasileira"
+  },
+  {
+    "id" : "exemplo-perfil-brasileiro",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/exemplo-perfil-brasileiro",
+    "version" : "0.0.2",
+    "name" : "ExemploPerfilBrasileiro"
+  },
+  {
+    "id" : "generic-reference",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/generic-reference",
+    "version" : "0.0.2",
+    "name" : "GenericReference"
+  },
+  {
+    "id" : "identifier-lifecycle-rules",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules",
+    "version" : "0.0.2",
+    "name" : "IdentifierLifecycleRules"
+  },
+  {
+    "id" : "identifier-lifecycle-status",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-status",
+    "version" : "0.0.2",
+    "name" : "IdentifierLifecycleStatus"
+  },
+  {
+    "id" : "legal-status-defining",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/legal-status-defining",
+    "version" : "0.0.2",
+    "name" : "LegalStatusDefining"
+  },
+  {
+    "id" : "manufactured-item-criteria",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/manufactured-item-criteria",
+    "version" : "0.0.2",
+    "name" : "ManufacturedItemCriteria"
+  },
+  {
+    "id" : "name-validation-rules",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/name-validation-rules",
+    "version" : "0.0.2",
+    "name" : "NameValidationRules"
+  },
+  {
+    "id" : "organization-business-size-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/organization-business-size-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationBusinessSizeBR"
+  },
+  {
+    "id" : "organization-operational-category-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/organization-operational-category-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationOperationalCategoryBR"
+  },
+  {
+    "id" : "organization-regulatory-status-br",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/organization-regulatory-status-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationRegulatoryStatusBR"
+  },
+  {
+    "id" : "package-component-details",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/package-component-details",
+    "version" : "0.0.2",
+    "name" : "PackageComponentDetails"
+  },
+  {
+    "id" : "package-item-container-details",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/package-item-container-details",
+    "version" : "0.0.2",
+    "name" : "PackageItemContainerDetails"
+  },
+  {
+    "id" : "product-name-parts",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/product-name-parts",
+    "version" : "0.0.2",
+    "name" : "ProductNameParts"
+  },
+  {
+    "id" : "therapeutic-indications-defining",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/therapeutic-indications-defining",
+    "version" : "0.0.2",
+    "name" : "TherapeuticIndicationsDefining"
+  },
+  {
+    "id" : "umc-integration-mapping",
+    "type" : "StructureDefinition",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/umc-integration-mapping",
+    "version" : "0.0.2",
+    "name" : "UMCIntegrationMapping"
+  },
+  {
+    "id" : "administrable-dose-form-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-dose-form-br",
+    "version" : "0.0.2",
+    "name" : "AdministrableDoseFormBR"
+  },
+  {
+    "id" : "administrable-property-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-property-br",
+    "version" : "0.0.2",
+    "name" : "AdministrablePropertyBR"
+  },
+  {
+    "id" : "administrable-unit-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/administrable-unit-br",
+    "version" : "0.0.2",
+    "name" : "AdministrableUnitBR"
+  },
+  {
+    "id" : "adverse-effect-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-br",
+    "version" : "0.0.2",
+    "name" : "AdverseEffectBRValueSet"
+  },
+  {
+    "id" : "adverse-effect-frequency-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/adverse-effect-frequency-br",
+    "version" : "0.0.2",
+    "name" : "AdverseEffectFrequencyBRValueSet"
+  },
+  {
+    "id" : "anvisa-category-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-category-br",
+    "version" : "0.0.2",
+    "name" : "ANVISACategoryBR"
+  },
+  {
+    "id" : "anvisa-regulatory-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/anvisa-regulatory-status-br",
+    "version" : "0.0.2",
+    "name" : "ANVISARegulatoryStatusBR"
+  },
+  {
+    "id" : "brazilian-government-systems",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-government-systems",
+    "version" : "0.0.2",
+    "name" : "BrazilianGovernmentSystems"
+  },
+  {
+    "id" : "brazilian-pharmaceutical-terminology",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/brazilian-pharmaceutical-terminology",
+    "version" : "0.0.2",
+    "name" : "BrazilianPharmaceuticalTerminology"
+  },
+  {
+    "id" : "change-severity-level",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/change-severity-level",
+    "version" : "0.0.2",
+    "name" : "ChangeSeverityLevel"
+  },
+  {
+    "id" : "clinical-use-category-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-category-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseCategoryBRValueSet"
+  },
+  {
+    "id" : "clinical-use-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-status-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseStatusBRValueSet"
+  },
+  {
+    "id" : "clinical-use-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/clinical-use-type-br",
+    "version" : "0.0.2",
+    "name" : "ClinicalUseTypeBRValueSet"
+  },
+  {
+    "id" : "comorbidity-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/comorbidity-br",
+    "version" : "0.0.2",
+    "name" : "ComorbidityBRValueSet"
+  },
+  {
+    "id" : "concentration-unit-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/concentration-unit-br",
+    "version" : "0.0.2",
+    "name" : "ConcentrationUnitBR"
+  },
+  {
+    "id" : "container-materials-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/container-materials-br",
+    "version" : "0.0.2",
+    "name" : "ContainerMaterialsBR"
+  },
+  {
+    "id" : "container-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/container-type-br",
+    "version" : "0.0.2",
+    "name" : "ContainerTypeBR"
+  },
+  {
+    "id" : "contraindication-condition-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/contraindication-condition-br",
+    "version" : "0.0.2",
+    "name" : "ContraindicationConditionBRValueSet"
+  },
+  {
+    "id" : "controlled-substance-category-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/controlled-substance-category-br",
+    "version" : "0.0.2",
+    "name" : "ControlledSubstanceCategoryBR"
+  },
+  {
+    "id" : "dcb-brasileiras",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/dcb-brasileiras",
+    "version" : "0.0.2",
+    "name" : "DCBBrasileiras"
+  },
+  {
+    "id" : "exemplo-valueset-brasileiro",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/exemplo-valueset-brasileiro",
+    "version" : "0.0.2",
+    "name" : "ExemploValueSetBrasileiro"
+  },
+  {
+    "id" : "gmp-certification-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/gmp-certification-status-br",
+    "version" : "0.0.2",
+    "name" : "GMPCertificationStatusBR"
+  },
+  {
+    "id" : "identifier-change-reason",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-change-reason",
+    "version" : "0.0.2",
+    "name" : "IdentifierChangeReason"
+  },
+  {
+    "id" : "identifier-lifecycle-status",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/identifier-lifecycle-status",
+    "version" : "0.0.2",
+    "name" : "IdentifierLifecycleStatus"
+  },
+  {
+    "id" : "ingredient-function-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-function-br",
+    "version" : "0.0.2",
+    "name" : "IngredientFunctionBR"
+  },
+  {
+    "id" : "ingredient-role-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/ingredient-role-br",
+    "version" : "0.0.2",
+    "name" : "IngredientRoleBR"
+  },
+  {
+    "id" : "interaction-effect-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-effect-br",
+    "version" : "0.0.2",
+    "name" : "InteractionEffectBRValueSet"
+  },
+  {
+    "id" : "interaction-substance-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-substance-br",
+    "version" : "0.0.2",
+    "name" : "InteractionSubstanceBRValueSet"
+  },
+  {
+    "id" : "interaction-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/interaction-type-br",
+    "version" : "0.0.2",
+    "name" : "InteractionTypeBRValueSet"
+  },
+  {
+    "id" : "legal-basis-anvisa-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-basis-anvisa-br",
+    "version" : "0.0.2",
+    "name" : "LegalBasisANVISABR"
+  },
+  {
+    "id" : "legal-status-supply-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-status-supply-br",
+    "version" : "0.0.2",
+    "name" : "LegalStatusSupplyBR"
+  },
+  {
+    "id" : "marketing-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/marketing-status-br",
+    "version" : "0.0.2",
+    "name" : "MarketingStatusBR"
+  },
+  {
+    "id" : "medicinal-product-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/medicinal-product-type-br",
+    "version" : "0.0.2",
+    "name" : "MedicinalProductTypeBR"
+  },
+  {
+    "id" : "mpid-defining-elements",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-defining-elements",
+    "version" : "0.0.2",
+    "name" : "MPIDDefiningElements"
+  },
+  {
+    "id" : "mpid-requiring-changes",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-requiring-changes",
+    "version" : "0.0.2",
+    "name" : "MPIDRequiringChanges"
+  },
+  {
+    "id" : "mpid-values-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-values-br",
+    "version" : "0.0.2",
+    "name" : "MPIDValues"
+  },
+  {
+    "id" : "organization-anvisa-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-anvisa-status-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationANVISAStatusBR"
+  },
+  {
+    "id" : "organization-contact-purpose-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-contact-purpose-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationContactPurposeBR"
+  },
+  {
+    "id" : "organization-operational-category-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-category-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationOperationalCategoryBR"
+  },
+  {
+    "id" : "organization-operational-scope-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-operational-scope-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationOperationalScopeBR"
+  },
+  {
+    "id" : "organization-size-category-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-size-category-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationSizeCategoryBR"
+  },
+  {
+    "id" : "organization-special-classification-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-special-classification-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationSpecialClassificationBR"
+  },
+  {
+    "id" : "organization-specialized-activities-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-specialized-activities-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationSpecializedActivitiesBR"
+  },
+  {
+    "id" : "organization-type-anvisa-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/organization-type-anvisa-br",
+    "version" : "0.0.2",
+    "name" : "OrganizationTypeANVISABR"
+  },
+  {
+    "id" : "package-characteristic-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/package-characteristic-br",
+    "version" : "0.0.2",
+    "name" : "PackageCharacteristicBR"
+  },
+  {
+    "id" : "package-components-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/package-components-br",
+    "version" : "0.0.2",
+    "name" : "PackageComponentsBR"
+  },
+  {
+    "id" : "packaged-product-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaged-product-type-br",
+    "version" : "0.0.2",
+    "name" : "PackagedProductTypeBR"
+  },
+  {
+    "id" : "packaging-material-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-material-br",
+    "version" : "0.0.2",
+    "name" : "PackagingMaterialBR"
+  },
+  {
+    "id" : "packaging-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/packaging-type-br",
+    "version" : "0.0.2",
+    "name" : "PackagingTypeBR"
+  },
+  {
+    "id" : "pcid-requiring-changes",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-requiring-changes",
+    "version" : "0.0.2",
+    "name" : "PCIDRequiringChanges"
+  },
+  {
+    "id" : "pcid-values-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/pcid-values-br",
+    "version" : "0.0.2",
+    "name" : "PCIDValues"
+  },
+  {
+    "id" : "phpid-values-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/phpid-values-br",
+    "version" : "0.0.2",
+    "name" : "PHPIDValues"
+  },
+  {
+    "id" : "presentation-unit-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/presentation-unit-br",
+    "version" : "0.0.2",
+    "name" : "PresentationUnitBR"
+  },
+  {
+    "id" : "product-name-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/product-name-type-br",
+    "version" : "0.0.2",
+    "name" : "ProductNameTypeBR"
+  },
+  {
+    "id" : "reference-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/reference-type-br",
+    "version" : "0.0.2",
+    "name" : "ReferenceTypeBR"
+  },
+  {
+    "id" : "regulated-authorization-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-status-br",
+    "version" : "0.0.2",
+    "name" : "RegulatedAuthorizationStatusBR"
+  },
+  {
+    "id" : "regulated-authorization-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-type-br",
+    "version" : "0.0.2",
+    "name" : "RegulatedAuthorizationTypeBR"
+  },
+  {
+    "id" : "regulatory-procedure-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulatory-procedure-type-br",
+    "version" : "0.0.2",
+    "name" : "RegulatoryProcedureTypeBR"
+  },
+  {
+    "id" : "route-administration-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/route-administration-br",
+    "version" : "0.0.2",
+    "name" : "RouteAdministrationBR"
+  },
+  {
+    "id" : "structured-name-types",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/structured-name-types",
+    "version" : "0.0.2",
+    "name" : "StructuredNameTypes"
+  },
+  {
+    "id" : "substance-classification-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceClassificationBR"
+  },
+  {
+    "id" : "substance-classification-gsrs-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-gsrs-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceClassificationGSRSBR"
+  },
+  {
+    "id" : "substance-code-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-code-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceCodeBR"
+  },
+  {
+    "id" : "substance-grade-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-grade-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceGradeBR"
+  },
+  {
+    "id" : "substance-name-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-name-type-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceNameTypeBR"
+  },
+  {
+    "id" : "substance-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceStatusBR"
+  },
+  {
+    "id" : "substance-status-gsrs-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-gsrs-br",
+    "version" : "0.0.2",
+    "name" : "SubstanceStatusGSRSBR"
+  },
+  {
+    "id" : "therapeutic-indication-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indication-br",
+    "version" : "0.0.2",
+    "name" : "TherapeuticIndicationBRValueSet"
+  },
+  {
+    "id" : "therapeutic-indications-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/therapeutic-indications-br",
+    "version" : "0.0.2",
+    "name" : "TherapeuticIndicationsBR"
+  },
+  {
+    "id" : "umc-coordination-status",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/umc-coordination-status",
+    "version" : "0.0.2",
+    "name" : "UMCCoordinationStatus"
+  }
+]

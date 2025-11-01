@@ -1,0 +1,109 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "medicinal-product-type-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem medicinal-product-type-br</b></p><a name=\"medicinal-product-type-br\"> </a><a name=\"hcmedicinal-product-type-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">medicamento<a name=\"medicinal-product-type-br-medicamento\"> </a></td><td>Medicamento</td><td>Produto farmacêutico tecnicamente obtido ou elaborado, com finalidade profilática, curativa, paliativa ou para fins de diagnóstico</td></tr><tr><td style=\"white-space:nowrap\">vacina<a name=\"medicinal-product-type-br-vacina\"> </a></td><td>Vacina</td><td>Preparação que contém agente imunizante com a finalidade de produzir imunidade ativa específica</td></tr><tr><td style=\"white-space:nowrap\">soro<a name=\"medicinal-product-type-br-soro\"> </a></td><td>Soro</td><td>Preparação que contém imunoglobulinas específicas com finalidade profilática ou terapêutica</td></tr><tr><td style=\"white-space:nowrap\">hemoderivado<a name=\"medicinal-product-type-br-hemoderivado\"> </a></td><td>Hemoderivado</td><td>Produto obtido a partir do sangue humano para uso terapêutico</td></tr><tr><td style=\"white-space:nowrap\">radioativo<a name=\"medicinal-product-type-br-radioativo\"> </a></td><td>Radiofármaco</td><td>Preparação farmacêutica que contém um ou mais radionuclídeos</td></tr><tr><td style=\"white-space:nowrap\">biologico<a name=\"medicinal-product-type-br-biologico\"> </a></td><td>Produto Biológico</td><td>Produto obtido de fluidos ou tecidos de origem biológica</td></tr><tr><td style=\"white-space:nowrap\">fitoterápico<a name=\"medicinal-product-type-br-fitoter.225pico\"> </a></td><td>Fitoterápico</td><td>Medicamento obtido empregando-se exclusivamente matérias-primas ativas vegetais</td></tr><tr><td style=\"white-space:nowrap\">homeopatico<a name=\"medicinal-product-type-br-homeopatico\"> </a></td><td>Homeopático</td><td>Medicamento preparado segundo as normas e princípios da arte farmacêutica homeopática</td></tr><tr><td style=\"white-space:nowrap\">dinamizado<a name=\"medicinal-product-type-br-dinamizado\"> </a></td><td>Medicamento Dinamizado</td><td>Medicamento preparado a partir de insumo ativo ou inerte dinamizado segundo técnica especial</td></tr><tr><td style=\"white-space:nowrap\">antroposófico<a name=\"medicinal-product-type-br-antropos.243fico\"> </a></td><td>Medicamento Antroposófico</td><td>Medicamento obtido empregando matérias-primas de acordo com a farmacotécnica antroposófica</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br",
+  "version" : "0.0.2",
+  "name" : "MedicinalProductTypeBR",
+  "title" : "Tipos de Produto Medicinal - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para tipos de produtos medicinais no contexto brasileiro",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "medicamento",
+    "display" : "Medicamento",
+    "definition" : "Produto farmacêutico tecnicamente obtido ou elaborado, com finalidade profilática, curativa, paliativa ou para fins de diagnóstico"
+  },
+  {
+    "code" : "vacina",
+    "display" : "Vacina",
+    "definition" : "Preparação que contém agente imunizante com a finalidade de produzir imunidade ativa específica"
+  },
+  {
+    "code" : "soro",
+    "display" : "Soro",
+    "definition" : "Preparação que contém imunoglobulinas específicas com finalidade profilática ou terapêutica"
+  },
+  {
+    "code" : "hemoderivado",
+    "display" : "Hemoderivado",
+    "definition" : "Produto obtido a partir do sangue humano para uso terapêutico"
+  },
+  {
+    "code" : "radioativo",
+    "display" : "Radiofármaco",
+    "definition" : "Preparação farmacêutica que contém um ou mais radionuclídeos"
+  },
+  {
+    "code" : "biologico",
+    "display" : "Produto Biológico",
+    "definition" : "Produto obtido de fluidos ou tecidos de origem biológica"
+  },
+  {
+    "code" : "fitoterápico",
+    "display" : "Fitoterápico",
+    "definition" : "Medicamento obtido empregando-se exclusivamente matérias-primas ativas vegetais"
+  },
+  {
+    "code" : "homeopatico",
+    "display" : "Homeopático",
+    "definition" : "Medicamento preparado segundo as normas e princípios da arte farmacêutica homeopática"
+  },
+  {
+    "code" : "dinamizado",
+    "display" : "Medicamento Dinamizado",
+    "definition" : "Medicamento preparado a partir de insumo ativo ou inerte dinamizado segundo técnica especial"
+  },
+  {
+    "code" : "antroposófico",
+    "display" : "Medicamento Antroposófico",
+    "definition" : "Medicamento obtido empregando matérias-primas de acordo com a farmacotécnica antroposófica"
+  }]
+}

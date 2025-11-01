@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PackagedProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="dipirona-500mg-package"/>
+  <meta>
+    <lastUpdated value="2025-08-02T10:00:00Z"/>
+    <profile value="http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Dipirona Sódica Neo Química 500mg - Embalagem</h2><p><strong>EAN/GTIN:</strong> 7891234567890</p><p><strong>Código ANVISA:</strong> PKG-DIP-500-20</p><p><strong>Conteúdo:</strong> 20 comprimidos de 500mg</p><p><strong>Embalagem:</strong> Caixa de papelão com blister PVC/Alumínio</p><p><strong>Armazenamento:</strong> Temperatura ambiente</p><p><strong>Status:</strong> Ativo para comercialização</p><p><strong>Fabricante:</strong> Neo Química Brasil</p><p><strong>Produto base:</strong> Dipirona Sódica 500mg</p></div>
+  </text>
+  <identifier>
+    <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br"/>
+    <value value="BR-NEO-001234-P001"/>
+  </identifier>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/gs1"/>
+    <value value="7891234567890"/>
+  </identifier>
+  <identifier>
+    <system value="http://anvisa.gov.br/produtos/embalagem"/>
+    <value value="PKG-DIP-500-20"/>
+  </identifier>
+  <name value="Dipirona Sódica Neo Química 500mg - Caixa 20 comprimidos"/>
+  <type>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br"/>
+      <code value="medicamento"/>
+    </coding>
+  </type>
+  <packageFor>
+    <reference value="MedicinalProductDefinitionBR/dipirona-500mg-comp"/>
+  </packageFor>
+  <legalStatusOfSupply>
+    <code>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"/>
+        <code value="venda-livre"/>
+      </coding>
+    </code>
+  </legalStatusOfSupply>
+  <marketingStatus>
+    <country>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="BR"/>
+      </coding>
+    </country>
+    <status>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br"/>
+        <code value="active"/>
+      </coding>
+    </status>
+    <dateRange>
+      <start value="2020-03-15"/>
+    </dateRange>
+  </marketingStatus>
+  <manufacturer>
+    <reference value="OrganizationANVISASimple/neo-quimica-brasil"/>
+  </manufacturer>
+  <packaging>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br"/>
+        <code value="caixa"/>
+      </coding>
+    </type>
+    <quantity value="1"/>
+    <material>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br"/>
+        <code value="papel"/>
+      </coding>
+    </material>
+    <material>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br"/>
+        <code value="plastico"/>
+      </coding>
+    </material>
+    <containedItem>
+      <item>
+        <concept>
+          <coding>
+            <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br"/>
+            <code value="dipirona-comp-500mg"/>
+            <display value="Dipirona Sódica 500mg comprimido"/>
+          </coding>
+        </concept>
+      </item>
+      <amount>
+        <value value="20"/>
+        <unit value="comprimido"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tab}"/>
+      </amount>
+    </containedItem>
+  </packaging>
+  <characteristic>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br"/>
+        <code value="armazenamento"/>
+        <display value="Condições de armazenamento"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br"/>
+        <code value="temperatura-ambiente"/>
+        <display value="Temperatura ambiente"/>
+      </coding>
+    </valueCodeableConcept>
+  </characteristic>
+</PackagedProductDefinition>

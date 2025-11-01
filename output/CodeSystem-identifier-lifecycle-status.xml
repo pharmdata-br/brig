@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="identifier-lifecycle-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem identifier-lifecycle-status</b></p><a name="identifier-lifecycle-status"> </a><a name="hcidentifier-lifecycle-status"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">active<a name="identifier-lifecycle-status-active"> </a></td><td>Ativo</td><td>Identificador atualmente ativo</td></tr><tr><td style="white-space:nowrap">superseded<a name="identifier-lifecycle-status-superseded"> </a></td><td>Substituído</td><td>Identificador substituído por nova versão</td></tr><tr><td style="white-space:nowrap">deprecated<a name="identifier-lifecycle-status-deprecated"> </a></td><td>Depreciado</td><td>Identificador depreciado mas ainda válido</td></tr><tr><td style="white-space:nowrap">withdrawn<a name="identifier-lifecycle-status-withdrawn"> </a></td><td>Retirado</td><td>Identificador retirado e não mais válido</td></tr><tr><td style="white-space:nowrap">suspended<a name="identifier-lifecycle-status-suspended"> </a></td><td>Suspenso</td><td>Identificador temporariamente suspenso</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status"/>
+  <version value="0.0.2"/>
+  <name value="IdentifierLifecycleStatus"/>
+  <title value="Status de Lifecycle do Identificador"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para status do ciclo de vida de identificadores"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="active"/>
+    <display value="Ativo"/>
+    <definition value="Identificador atualmente ativo"/>
+  </concept>
+  <concept>
+    <code value="superseded"/>
+    <display value="Substituído"/>
+    <definition value="Identificador substituído por nova versão"/>
+  </concept>
+  <concept>
+    <code value="deprecated"/>
+    <display value="Depreciado"/>
+    <definition value="Identificador depreciado mas ainda válido"/>
+  </concept>
+  <concept>
+    <code value="withdrawn"/>
+    <display value="Retirado"/>
+    <definition value="Identificador retirado e não mais válido"/>
+  </concept>
+  <concept>
+    <code value="suspended"/>
+    <display value="Suspenso"/>
+    <definition value="Identificador temporariamente suspenso"/>
+  </concept>
+</CodeSystem>

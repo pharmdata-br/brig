@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="anvisa-category-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem anvisa-category-br</b></p><a name="anvisa-category-br"> </a><a name="hcanvisa-category-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-category-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">new<a name="anvisa-category-br-new"> </a></td><td>Medicamento Novo</td><td>Medicamento com princípio ativo sintético ou semi-sintético, conhecido e usado em terapêutica, que não esteja registrado no país</td></tr><tr><td style="white-space:nowrap">generic<a name="anvisa-category-br-generic"> </a></td><td>Medicamento Genérico</td><td>Medicamento similar a um produto de referência ou inovador, que se pretende ser intercambiável com este produto</td></tr><tr><td style="white-space:nowrap">similar<a name="anvisa-category-br-similar"> </a></td><td>Medicamento Similar</td><td>Aquele que contém o mesmo ou os mesmos princípios ativos, apresenta a mesma concentração, forma farmacêutica, via de administração, posologia e indicação terapêutica</td></tr><tr><td style="white-space:nowrap">reference<a name="anvisa-category-br-reference"> </a></td><td>Medicamento de Referência</td><td>Produto inovador registrado no órgão federal responsável pela vigilância sanitária e comercializado no país</td></tr><tr><td style="white-space:nowrap">specific<a name="anvisa-category-br-specific"> </a></td><td>Medicamento Específico</td><td>Medicamento com características particulares ou específicas</td></tr><tr><td style="white-space:nowrap">biological<a name="anvisa-category-br-biological"> </a></td><td>Produto Biológico</td><td>Produto obtido de fluidos ou tecidos de origem biológica, incluindo vacinas, soros, hemoderivados</td></tr><tr><td style="white-space:nowrap">biosimilar<a name="anvisa-category-br-biosimilar"> </a></td><td>Produto Biosimilar</td><td>Produto biológico similar a um produto biológico de referência já registrado</td></tr><tr><td style="white-space:nowrap">phytotherapeutic<a name="anvisa-category-br-phytotherapeutic"> </a></td><td>Fitoterápico</td><td>Medicamento obtido empregando-se exclusivamente matérias-primas ativas vegetais</td></tr><tr><td style="white-space:nowrap">homeopathic<a name="anvisa-category-br-homeopathic"> </a></td><td>Homeopático</td><td>Medicamento preparado segundo as normas e princípios da arte farmacêutica homeopática</td></tr><tr><td style="white-space:nowrap">radiopharmaceutical<a name="anvisa-category-br-radiopharmaceutical"> </a></td><td>Radiofármaco</td><td>Preparação farmacêutica que contém um ou mais radionuclídeos</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-category-br"/>
+  <version value="0.0.2"/>
+  <name value="ANVISACategoryBR"/>
+  <title value="Categorias ANVISA - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para categorias de produtos medicinais da ANVISA"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="new"/>
+    <display value="Medicamento Novo"/>
+    <definition value="Medicamento com princípio ativo sintético ou semi-sintético, conhecido e usado em terapêutica, que não esteja registrado no país"/>
+  </concept>
+  <concept>
+    <code value="generic"/>
+    <display value="Medicamento Genérico"/>
+    <definition value="Medicamento similar a um produto de referência ou inovador, que se pretende ser intercambiável com este produto"/>
+  </concept>
+  <concept>
+    <code value="similar"/>
+    <display value="Medicamento Similar"/>
+    <definition value="Aquele que contém o mesmo ou os mesmos princípios ativos, apresenta a mesma concentração, forma farmacêutica, via de administração, posologia e indicação terapêutica"/>
+  </concept>
+  <concept>
+    <code value="reference"/>
+    <display value="Medicamento de Referência"/>
+    <definition value="Produto inovador registrado no órgão federal responsável pela vigilância sanitária e comercializado no país"/>
+  </concept>
+  <concept>
+    <code value="specific"/>
+    <display value="Medicamento Específico"/>
+    <definition value="Medicamento com características particulares ou específicas"/>
+  </concept>
+  <concept>
+    <code value="biological"/>
+    <display value="Produto Biológico"/>
+    <definition value="Produto obtido de fluidos ou tecidos de origem biológica, incluindo vacinas, soros, hemoderivados"/>
+  </concept>
+  <concept>
+    <code value="biosimilar"/>
+    <display value="Produto Biosimilar"/>
+    <definition value="Produto biológico similar a um produto biológico de referência já registrado"/>
+  </concept>
+  <concept>
+    <code value="phytotherapeutic"/>
+    <display value="Fitoterápico"/>
+    <definition value="Medicamento obtido empregando-se exclusivamente matérias-primas ativas vegetais"/>
+  </concept>
+  <concept>
+    <code value="homeopathic"/>
+    <display value="Homeopático"/>
+    <definition value="Medicamento preparado segundo as normas e princípios da arte farmacêutica homeopática"/>
+  </concept>
+  <concept>
+    <code value="radiopharmaceutical"/>
+    <display value="Radiofármaco"/>
+    <definition value="Preparação farmacêutica que contém um ou mais radionuclídeos"/>
+  </concept>
+</CodeSystem>

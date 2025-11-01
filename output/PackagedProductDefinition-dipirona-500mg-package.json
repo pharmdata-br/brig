@@ -1,0 +1,116 @@
+{
+  "resourceType" : "PackagedProductDefinition",
+  "id" : "dipirona-500mg-package",
+  "meta" : {
+    "lastUpdated" : "2025-08-02T10:00:00Z",
+    "profile" : ["http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Dipirona Sódica Neo Química 500mg - Embalagem</h2><p><strong>EAN/GTIN:</strong> 7891234567890</p><p><strong>Código ANVISA:</strong> PKG-DIP-500-20</p><p><strong>Conteúdo:</strong> 20 comprimidos de 500mg</p><p><strong>Embalagem:</strong> Caixa de papelão com blister PVC/Alumínio</p><p><strong>Armazenamento:</strong> Temperatura ambiente</p><p><strong>Status:</strong> Ativo para comercialização</p><p><strong>Fabricante:</strong> Neo Química Brasil</p><p><strong>Produto base:</strong> Dipirona Sódica 500mg</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br",
+    "value" : "BR-NEO-001234-P001"
+  },
+  {
+    "system" : "http://hl7.org/fhir/sid/gs1",
+    "value" : "7891234567890"
+  },
+  {
+    "system" : "http://anvisa.gov.br/produtos/embalagem",
+    "value" : "PKG-DIP-500-20"
+  }],
+  "name" : "Dipirona Sódica Neo Química 500mg - Caixa 20 comprimidos",
+  "type" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br",
+      "code" : "medicamento"
+    }]
+  },
+  "packageFor" : [{
+    "reference" : "MedicinalProductDefinitionBR/dipirona-500mg-comp"
+  }],
+  "legalStatusOfSupply" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+        "code" : "venda-livre"
+      }]
+    }
+  }],
+  "marketingStatus" : [{
+    "country" : {
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "BR"
+      }]
+    },
+    "status" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br",
+        "code" : "active"
+      }]
+    },
+    "dateRange" : {
+      "start" : "2020-03-15"
+    }
+  }],
+  "manufacturer" : [{
+    "reference" : "OrganizationANVISASimple/neo-quimica-brasil"
+  }],
+  "packaging" : {
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br",
+        "code" : "caixa"
+      }]
+    },
+    "quantity" : 1,
+    "material" : [{
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+        "code" : "papel"
+      }]
+    },
+    {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+        "code" : "plastico"
+      }]
+    }],
+    "containedItem" : [{
+      "item" : {
+        "concept" : {
+          "coding" : [{
+            "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br",
+            "code" : "dipirona-comp-500mg",
+            "display" : "Dipirona Sódica 500mg comprimido"
+          }]
+        }
+      },
+      "amount" : {
+        "value" : 20,
+        "unit" : "comprimido",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "{tab}"
+      }
+    }]
+  },
+  "characteristic" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br",
+        "code" : "armazenamento",
+        "display" : "Condições de armazenamento"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br",
+        "code" : "temperatura-ambiente",
+        "display" : "Temperatura ambiente"
+      }]
+    }
+  }]
+}

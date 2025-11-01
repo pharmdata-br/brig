@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "container-type-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem container-type-br</b></p><a name=\"container-type-br\"> </a><a name=\"hccontainer-type-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">blister<a name=\"container-type-br-blister\"> </a></td><td>Blister</td><td>Embalagem blister para comprimidos/cápsulas</td></tr><tr><td style=\"white-space:nowrap\">bottle<a name=\"container-type-br-bottle\"> </a></td><td>Frasco</td><td>Frasco para líquidos ou sólidos</td></tr><tr><td style=\"white-space:nowrap\">vial<a name=\"container-type-br-vial\"> </a></td><td>Ampola/Frasco-ampola</td><td>Ampola de vidro ou frasco-ampola</td></tr><tr><td style=\"white-space:nowrap\">ampoule<a name=\"container-type-br-ampoule\"> </a></td><td>Ampola</td><td>Ampola de vidro selada</td></tr><tr><td style=\"white-space:nowrap\">syringe<a name=\"container-type-br-syringe\"> </a></td><td>Seringa</td><td>Seringa pré-carregada</td></tr><tr><td style=\"white-space:nowrap\">cartridge<a name=\"container-type-br-cartridge\"> </a></td><td>Refil/Cartucho</td><td>Cartucho ou refil para dispositivos</td></tr><tr><td style=\"white-space:nowrap\">sachet<a name=\"container-type-br-sachet\"> </a></td><td>Sachê</td><td>Envelope/sachê para pós ou líquidos</td></tr><tr><td style=\"white-space:nowrap\">tube<a name=\"container-type-br-tube\"> </a></td><td>Bisnaga</td><td>Bisnaga para cremes/pomadas</td></tr><tr><td style=\"white-space:nowrap\">inhaler<a name=\"container-type-br-inhaler\"> </a></td><td>Inalador</td><td>Dispositivo inalador</td></tr><tr><td style=\"white-space:nowrap\">patch<a name=\"container-type-br-patch\"> </a></td><td>Adesivo</td><td>Adesivo transdérmico</td></tr><tr><td style=\"white-space:nowrap\">box<a name=\"container-type-br-box\"> </a></td><td>Caixa</td><td>Caixa de papelão</td></tr><tr><td style=\"white-space:nowrap\">pouch<a name=\"container-type-br-pouch\"> </a></td><td>Bolsa</td><td>Bolsa plástica</td></tr><tr><td style=\"white-space:nowrap\">strip<a name=\"container-type-br-strip\"> </a></td><td>Tira</td><td>Tira de embalagem unitária</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "ContainerTypeBR"] ; # 
+  fhir:title [ fhir:v "Tipos de Container - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para tipos de containers de embalagens brasileiras"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "blister" ] ;
+     fhir:display [ fhir:v "Blister" ] ;
+     fhir:definition [ fhir:v "Embalagem blister para comprimidos/cápsulas" ]
+  ] [
+     fhir:code [ fhir:v "bottle" ] ;
+     fhir:display [ fhir:v "Frasco" ] ;
+     fhir:definition [ fhir:v "Frasco para líquidos ou sólidos" ]
+  ] [
+     fhir:code [ fhir:v "vial" ] ;
+     fhir:display [ fhir:v "Ampola/Frasco-ampola" ] ;
+     fhir:definition [ fhir:v "Ampola de vidro ou frasco-ampola" ]
+  ] [
+     fhir:code [ fhir:v "ampoule" ] ;
+     fhir:display [ fhir:v "Ampola" ] ;
+     fhir:definition [ fhir:v "Ampola de vidro selada" ]
+  ] [
+     fhir:code [ fhir:v "syringe" ] ;
+     fhir:display [ fhir:v "Seringa" ] ;
+     fhir:definition [ fhir:v "Seringa pré-carregada" ]
+  ] [
+     fhir:code [ fhir:v "cartridge" ] ;
+     fhir:display [ fhir:v "Refil/Cartucho" ] ;
+     fhir:definition [ fhir:v "Cartucho ou refil para dispositivos" ]
+  ] [
+     fhir:code [ fhir:v "sachet" ] ;
+     fhir:display [ fhir:v "Sachê" ] ;
+     fhir:definition [ fhir:v "Envelope/sachê para pós ou líquidos" ]
+  ] [
+     fhir:code [ fhir:v "tube" ] ;
+     fhir:display [ fhir:v "Bisnaga" ] ;
+     fhir:definition [ fhir:v "Bisnaga para cremes/pomadas" ]
+  ] [
+     fhir:code [ fhir:v "inhaler" ] ;
+     fhir:display [ fhir:v "Inalador" ] ;
+     fhir:definition [ fhir:v "Dispositivo inalador" ]
+  ] [
+     fhir:code [ fhir:v "patch" ] ;
+     fhir:display [ fhir:v "Adesivo" ] ;
+     fhir:definition [ fhir:v "Adesivo transdérmico" ]
+  ] [
+     fhir:code [ fhir:v "box" ] ;
+     fhir:display [ fhir:v "Caixa" ] ;
+     fhir:definition [ fhir:v "Caixa de papelão" ]
+  ] [
+     fhir:code [ fhir:v "pouch" ] ;
+     fhir:display [ fhir:v "Bolsa" ] ;
+     fhir:definition [ fhir:v "Bolsa plástica" ]
+  ] [
+     fhir:code [ fhir:v "strip" ] ;
+     fhir:display [ fhir:v "Tira" ] ;
+     fhir:definition [ fhir:v "Tira de embalagem unitária" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

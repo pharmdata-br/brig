@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="structured-name-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem structured-name-types</b></p><a name="structured-name-types"> </a><a name="hcstructured-name-types"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/structured-name-types</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">invented-name<a name="structured-name-types-invented-name"> </a></td><td>Nome Fantasia</td><td>Parte do nome comercial inventada pela empresa</td></tr><tr><td style="white-space:nowrap">scientific-name<a name="structured-name-types-scientific-name"> </a></td><td>Nome Científico</td><td>Denominação Comum Brasileira (DCB) ou Internacional (DCI)</td></tr><tr><td style="white-space:nowrap">company-name<a name="structured-name-types-company-name"> </a></td><td>Nome da Empresa</td><td>Nome ou abreviação do fabricante/titular</td></tr><tr><td style="white-space:nowrap">strength<a name="structured-name-types-strength"> </a></td><td>Concentração</td><td>Especificação da dosagem ou concentração</td></tr><tr><td style="white-space:nowrap">pharmaceutical-form<a name="structured-name-types-pharmaceutical-form"> </a></td><td>Forma Farmacêutica</td><td>Especificação da forma farmacêutica no nome</td></tr><tr><td style="white-space:nowrap">container-type<a name="structured-name-types-container-type"> </a></td><td>Tipo de Container</td><td>Especificação do container na denominação</td></tr><tr><td style="white-space:nowrap">target-population<a name="structured-name-types-target-population"> </a></td><td>População Alvo</td><td>Especificação da população alvo (pediátrico, adulto, etc.)</td></tr><tr><td style="white-space:nowrap">therapeutic-indication<a name="structured-name-types-therapeutic-indication"> </a></td><td>Indicação Terapêutica</td><td>Indicação terapêutica incluída no nome</td></tr><tr><td style="white-space:nowrap">route-administration<a name="structured-name-types-route-administration"> </a></td><td>Via de Administração</td><td>Via de administração especificada no nome</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/structured-name-types"/>
+  <version value="0.0.2"/>
+  <name value="StructuredNameTypes"/>
+  <title value="Tipos de Nome Estruturado"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para elementos estruturados de nomes de produtos"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="invented-name"/>
+    <display value="Nome Fantasia"/>
+    <definition value="Parte do nome comercial inventada pela empresa"/>
+  </concept>
+  <concept>
+    <code value="scientific-name"/>
+    <display value="Nome Científico"/>
+    <definition value="Denominação Comum Brasileira (DCB) ou Internacional (DCI)"/>
+  </concept>
+  <concept>
+    <code value="company-name"/>
+    <display value="Nome da Empresa"/>
+    <definition value="Nome ou abreviação do fabricante/titular"/>
+  </concept>
+  <concept>
+    <code value="strength"/>
+    <display value="Concentração"/>
+    <definition value="Especificação da dosagem ou concentração"/>
+  </concept>
+  <concept>
+    <code value="pharmaceutical-form"/>
+    <display value="Forma Farmacêutica"/>
+    <definition value="Especificação da forma farmacêutica no nome"/>
+  </concept>
+  <concept>
+    <code value="container-type"/>
+    <display value="Tipo de Container"/>
+    <definition value="Especificação do container na denominação"/>
+  </concept>
+  <concept>
+    <code value="target-population"/>
+    <display value="População Alvo"/>
+    <definition value="Especificação da população alvo (pediátrico, adulto, etc.)"/>
+  </concept>
+  <concept>
+    <code value="therapeutic-indication"/>
+    <display value="Indicação Terapêutica"/>
+    <definition value="Indicação terapêutica incluída no nome"/>
+  </concept>
+  <concept>
+    <code value="route-administration"/>
+    <display value="Via de Administração"/>
+    <definition value="Via de administração especificada no nome"/>
+  </concept>
+</CodeSystem>

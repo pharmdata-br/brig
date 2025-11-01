@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="container-type-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem container-type-br</b></p><a name="container-type-br"> </a><a name="hccontainer-type-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">blister<a name="container-type-br-blister"> </a></td><td>Blister</td><td>Embalagem blister para comprimidos/cápsulas</td></tr><tr><td style="white-space:nowrap">bottle<a name="container-type-br-bottle"> </a></td><td>Frasco</td><td>Frasco para líquidos ou sólidos</td></tr><tr><td style="white-space:nowrap">vial<a name="container-type-br-vial"> </a></td><td>Ampola/Frasco-ampola</td><td>Ampola de vidro ou frasco-ampola</td></tr><tr><td style="white-space:nowrap">ampoule<a name="container-type-br-ampoule"> </a></td><td>Ampola</td><td>Ampola de vidro selada</td></tr><tr><td style="white-space:nowrap">syringe<a name="container-type-br-syringe"> </a></td><td>Seringa</td><td>Seringa pré-carregada</td></tr><tr><td style="white-space:nowrap">cartridge<a name="container-type-br-cartridge"> </a></td><td>Refil/Cartucho</td><td>Cartucho ou refil para dispositivos</td></tr><tr><td style="white-space:nowrap">sachet<a name="container-type-br-sachet"> </a></td><td>Sachê</td><td>Envelope/sachê para pós ou líquidos</td></tr><tr><td style="white-space:nowrap">tube<a name="container-type-br-tube"> </a></td><td>Bisnaga</td><td>Bisnaga para cremes/pomadas</td></tr><tr><td style="white-space:nowrap">inhaler<a name="container-type-br-inhaler"> </a></td><td>Inalador</td><td>Dispositivo inalador</td></tr><tr><td style="white-space:nowrap">patch<a name="container-type-br-patch"> </a></td><td>Adesivo</td><td>Adesivo transdérmico</td></tr><tr><td style="white-space:nowrap">box<a name="container-type-br-box"> </a></td><td>Caixa</td><td>Caixa de papelão</td></tr><tr><td style="white-space:nowrap">pouch<a name="container-type-br-pouch"> </a></td><td>Bolsa</td><td>Bolsa plástica</td></tr><tr><td style="white-space:nowrap">strip<a name="container-type-br-strip"> </a></td><td>Tira</td><td>Tira de embalagem unitária</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br"/>
+  <version value="0.0.2"/>
+  <name value="ContainerTypeBR"/>
+  <title value="Tipos de Container - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para tipos de containers de embalagens brasileiras"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="blister"/>
+    <display value="Blister"/>
+    <definition value="Embalagem blister para comprimidos/cápsulas"/>
+  </concept>
+  <concept>
+    <code value="bottle"/>
+    <display value="Frasco"/>
+    <definition value="Frasco para líquidos ou sólidos"/>
+  </concept>
+  <concept>
+    <code value="vial"/>
+    <display value="Ampola/Frasco-ampola"/>
+    <definition value="Ampola de vidro ou frasco-ampola"/>
+  </concept>
+  <concept>
+    <code value="ampoule"/>
+    <display value="Ampola"/>
+    <definition value="Ampola de vidro selada"/>
+  </concept>
+  <concept>
+    <code value="syringe"/>
+    <display value="Seringa"/>
+    <definition value="Seringa pré-carregada"/>
+  </concept>
+  <concept>
+    <code value="cartridge"/>
+    <display value="Refil/Cartucho"/>
+    <definition value="Cartucho ou refil para dispositivos"/>
+  </concept>
+  <concept>
+    <code value="sachet"/>
+    <display value="Sachê"/>
+    <definition value="Envelope/sachê para pós ou líquidos"/>
+  </concept>
+  <concept>
+    <code value="tube"/>
+    <display value="Bisnaga"/>
+    <definition value="Bisnaga para cremes/pomadas"/>
+  </concept>
+  <concept>
+    <code value="inhaler"/>
+    <display value="Inalador"/>
+    <definition value="Dispositivo inalador"/>
+  </concept>
+  <concept>
+    <code value="patch"/>
+    <display value="Adesivo"/>
+    <definition value="Adesivo transdérmico"/>
+  </concept>
+  <concept>
+    <code value="box"/>
+    <display value="Caixa"/>
+    <definition value="Caixa de papelão"/>
+  </concept>
+  <concept>
+    <code value="pouch"/>
+    <display value="Bolsa"/>
+    <definition value="Bolsa plástica"/>
+  </concept>
+  <concept>
+    <code value="strip"/>
+    <display value="Tira"/>
+    <definition value="Tira de embalagem unitária"/>
+  </concept>
+</CodeSystem>

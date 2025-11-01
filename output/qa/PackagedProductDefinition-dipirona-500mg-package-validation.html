@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>PackagedProductDefinition-dipirona-500mg-package-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>invalid</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.identifier[1].system</td><td>Não foi possível encontrar uma definição para o valor URL 'http://hl7.org/fhir/sid/gs1'</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.packageFor[0]</td><td>Não é possível resolver o recurso com a referência 'MedicinalProductDefinitionBR/dipirona-500mg-comp'</td><td></td></tr>
+<tr><td>error</td><td>structure</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.manufacturer[0]</td><td>Não é possível resolver o recurso com a referência 'OrganizationANVISASimple/neo-quimica-brasil'</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.characteristic[0].type.coding[0].code</td><td>Código desconhecido 'armazenamento' no CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br' versão '0.0.2'</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.identifier[2].system</td><td>Não foi possível encontrar uma definição para o valor URL 'http://anvisa.gov.br/produtos/embalagem'</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.marketingStatus[0].country.coding[0].system</td><td>Não foi possível encontrar uma definição para o CodeSystem 'urn:iso:std:iso:3166', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>business-rule</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.packaging.containedItem[0].amount</td><td>Não é possível validar o código '{tab}' no sistema 'http://unitsofmeasure.org' porque o validador está a ser executado sem serviços de terminologia</td><td></td></tr>
+<tr><td>warning</td><td>business-rule</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.packaging.containedItem[0].amount</td><td>Os códigos UCUM que contêm anotações legíveis por humanos como {tab} podem ser enganadores (por exemplo, são ignorados quando se comparam unidades). A melhor prática é não depender de anotações no código UCUM, pelo que esta utilização deve ser verificada e o código Quantity.unit 'comprimido' DEVERIA conter a anotação (não contém)</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.characteristic[0].value.ofType(CodeableConcept).coding[0].system</td><td>Não foi possível encontrar uma definição para o CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition</td><td>Validar recurso em relação ao perfil http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br|0.0.2</td><td></td></tr>
+<tr><td>information</td><td>business-rule</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.marketingStatus[0].status</td><td>Referência ao experimental CodeSystem http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br|0.0.2</td><td></td></tr>
+<tr><td>information</td><td>business-rule</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.packaging.containedItem[0].item.concept</td><td>Referência ao experimental CodeSystem http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br|0.0.2</td><td></td></tr>
+<tr><td>information</td><td>business-rule</td><td>PackagedProductDefinition/dipirona-500mg-package: PackagedProductDefinition.characteristic[0].type</td><td>Referência ao experimental CodeSystem http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br|0.0.2</td><td></td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/SubstanceDefinition/dipirona-sodica-substance> a fhir:SubstanceDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dipirona-sodica-substance"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-08-02T10:00:00Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"^^xsd:anyURI ;
+       fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Dipirona Sódica</h2><p><strong>DCB:</strong> 02532</p><p><strong>CAS:</strong> 68-89-3</p><p><strong>Código ANVISA:</strong> SUB002</p><p><strong>Classificação:</strong> Substância Ativa</p><p><strong>Status:</strong> Aprovada pela ANVISA</p><p><strong>Grau:</strong> Farmacêutico</p><p><strong>Fórmula Molecular:</strong> C13H16N3NaO4S</p><p><strong>Peso Molecular:</strong> 351.34 g/mol</p><p><strong>Ponto de Fusão:</strong> 215°C</p><p><strong>Descrição:</strong> Analgésico e antipirético derivado da pirazolona</p><p><strong>Código ATC:</strong> N02BB02</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://anvisa.gov.br/dcb"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "02532" ]
+  ] [
+     fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.61"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "68-89-3" ]
+  ] [
+     fhir:system [ fhir:v "https://anvisa.gov.br/substancias/codigo"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "SUB002" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/medicinalproduct-domain"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Human" ]
+     ] )
+  ] ; # 
+  fhir:grade ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "pharmaceutical" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A dipirona sódica é um fármaco analgésico e antipirético, derivado da pirazolona, amplamente utilizado no Brasil para o tratamento da dor e febre."] ; # 
+  fhir:manufacturer ( [
+     fhir:link <http://farmaco.maxapex.net/brig/fhir/OrganizationANVISASimple/neo-quimica-brasil> ;
+     fhir:reference [ fhir:v "OrganizationANVISASimple/neo-quimica-brasil" ]
+  ] ) ; # 
+  fhir:supplier ( [
+     fhir:link <http://farmaco.maxapex.net/brig/fhir/OrganizationANVISASimple/distribuidora-farmaceutica-br> ;
+     fhir:reference [ fhir:v "OrganizationANVISASimple/distribuidora-farmaceutica-br" ]
+  ] ) ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/substance-property-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MolecularWeight" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 351.34 ] ;
+       fhir:unit [ fhir:v "grams per mole" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "g/mol" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/substance-property-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MeltingPoint" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "215"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "degree Celsius" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Cel" ]
+     ]
+  ] ) ; # 
+  fhir:structure [
+     fhir:representation ( [
+       fhir:representation [ fhir:v "C13H16N3NaO4S" ] ;
+       fhir:format [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/substance-representation-format"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "SMILES" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:name ( [
+     fhir:name [ fhir:v "Dipirona Sódica" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "official" ]
+       ] )
+     ]
+  ] [
+     fhir:name [ fhir:v "Metamizol Sódico" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "common" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

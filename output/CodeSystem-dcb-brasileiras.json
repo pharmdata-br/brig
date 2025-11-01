@@ -1,0 +1,189 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "dcb-brasileiras",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem dcb-brasileiras</b></p><a name=\"dcb-brasileiras\"> </a><a name=\"hcdcb-brasileiras\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">dipirona<a name=\"dcb-brasileiras-dipirona\"> </a></td><td>Dipirona</td><td>Analgésico e antitérmico</td></tr><tr><td style=\"white-space:nowrap\">paracetamol<a name=\"dcb-brasileiras-paracetamol\"> </a></td><td>Paracetamol</td><td>Analgésico e antitérmico</td></tr><tr><td style=\"white-space:nowrap\">ibuprofeno<a name=\"dcb-brasileiras-ibuprofeno\"> </a></td><td>Ibuprofeno</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style=\"white-space:nowrap\">diclofenaco<a name=\"dcb-brasileiras-diclofenaco\"> </a></td><td>Diclofenaco</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style=\"white-space:nowrap\">nimesulida<a name=\"dcb-brasileiras-nimesulida\"> </a></td><td>Nimesulida</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style=\"white-space:nowrap\">amoxicilina<a name=\"dcb-brasileiras-amoxicilina\"> </a></td><td>Amoxicilina</td><td>Antibiótico beta-lactâmico</td></tr><tr><td style=\"white-space:nowrap\">azitromicina<a name=\"dcb-brasileiras-azitromicina\"> </a></td><td>Azitromicina</td><td>Antibiótico macrolídeo</td></tr><tr><td style=\"white-space:nowrap\">ciprofloxacino<a name=\"dcb-brasileiras-ciprofloxacino\"> </a></td><td>Ciprofloxacino</td><td>Antibiótico fluoroquinolona</td></tr><tr><td style=\"white-space:nowrap\">cefalexina<a name=\"dcb-brasileiras-cefalexina\"> </a></td><td>Cefalexina</td><td>Antibiótico cefalosporina</td></tr><tr><td style=\"white-space:nowrap\">losartana<a name=\"dcb-brasileiras-losartana\"> </a></td><td>Losartana</td><td>Anti-hipertensivo antagonista da angiotensina II</td></tr><tr><td style=\"white-space:nowrap\">enalapril<a name=\"dcb-brasileiras-enalapril\"> </a></td><td>Enalapril</td><td>Inibidor da enzima conversora da angiotensina</td></tr><tr><td style=\"white-space:nowrap\">hidroclorotiazida<a name=\"dcb-brasileiras-hidroclorotiazida\"> </a></td><td>Hidroclorotiazida</td><td>Diurético tiazídico</td></tr><tr><td style=\"white-space:nowrap\">anlodipino<a name=\"dcb-brasileiras-anlodipino\"> </a></td><td>Anlodipino</td><td>Bloqueador dos canais de cálcio</td></tr><tr><td style=\"white-space:nowrap\">fluoxetina<a name=\"dcb-brasileiras-fluoxetina\"> </a></td><td>Fluoxetina</td><td>Antidepressivo inibidor seletivo da recaptação de serotonina</td></tr><tr><td style=\"white-space:nowrap\">sertralina<a name=\"dcb-brasileiras-sertralina\"> </a></td><td>Sertralina</td><td>Antidepressivo inibidor seletivo da recaptação de serotonina</td></tr><tr><td style=\"white-space:nowrap\">risperidona<a name=\"dcb-brasileiras-risperidona\"> </a></td><td>Risperidona</td><td>Antipsicótico atípico</td></tr><tr><td style=\"white-space:nowrap\">clonazepam<a name=\"dcb-brasileiras-clonazepam\"> </a></td><td>Clonazepam</td><td>Benzodiazepínico anticonvulsivante</td></tr><tr><td style=\"white-space:nowrap\">metformina<a name=\"dcb-brasileiras-metformina\"> </a></td><td>Metformina</td><td>Antidiabético oral biguanida</td></tr><tr><td style=\"white-space:nowrap\">glibenclamida<a name=\"dcb-brasileiras-glibenclamida\"> </a></td><td>Glibenclamida</td><td>Antidiabético oral sulfoniluréia</td></tr><tr><td style=\"white-space:nowrap\">levotiroxina<a name=\"dcb-brasileiras-levotiroxina\"> </a></td><td>Levotiroxina</td><td>Hormônio da tireoide</td></tr><tr><td style=\"white-space:nowrap\">salbutamol<a name=\"dcb-brasileiras-salbutamol\"> </a></td><td>Salbutamol</td><td>Broncodilatador beta-2 agonista</td></tr><tr><td style=\"white-space:nowrap\">budesonida<a name=\"dcb-brasileiras-budesonida\"> </a></td><td>Budesonida</td><td>Corticosteroide inalatório</td></tr><tr><td style=\"white-space:nowrap\">montelucaste<a name=\"dcb-brasileiras-montelucaste\"> </a></td><td>Montelucaste</td><td>Antagonista dos receptores de leucotrienos</td></tr><tr><td style=\"white-space:nowrap\">omeprazol<a name=\"dcb-brasileiras-omeprazol\"> </a></td><td>Omeprazol</td><td>Inibidor da bomba de prótons</td></tr><tr><td style=\"white-space:nowrap\">ranitidina<a name=\"dcb-brasileiras-ranitidina\"> </a></td><td>Ranitidina</td><td>Antagonista dos receptores H2</td></tr><tr><td style=\"white-space:nowrap\">domperidona<a name=\"dcb-brasileiras-domperidona\"> </a></td><td>Domperidona</td><td>Antiemético procinético</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras",
+  "version" : "0.0.2",
+  "name" : "DCBBrasileiras",
+  "title" : "Denominações Comuns Brasileiras (DCB)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para Denominações Comuns Brasileiras conforme ANVISA",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 26,
+  "concept" : [{
+    "code" : "dipirona",
+    "display" : "Dipirona",
+    "definition" : "Analgésico e antitérmico"
+  },
+  {
+    "code" : "paracetamol",
+    "display" : "Paracetamol",
+    "definition" : "Analgésico e antitérmico"
+  },
+  {
+    "code" : "ibuprofeno",
+    "display" : "Ibuprofeno",
+    "definition" : "Anti-inflamatório não esteroidal"
+  },
+  {
+    "code" : "diclofenaco",
+    "display" : "Diclofenaco",
+    "definition" : "Anti-inflamatório não esteroidal"
+  },
+  {
+    "code" : "nimesulida",
+    "display" : "Nimesulida",
+    "definition" : "Anti-inflamatório não esteroidal"
+  },
+  {
+    "code" : "amoxicilina",
+    "display" : "Amoxicilina",
+    "definition" : "Antibiótico beta-lactâmico"
+  },
+  {
+    "code" : "azitromicina",
+    "display" : "Azitromicina",
+    "definition" : "Antibiótico macrolídeo"
+  },
+  {
+    "code" : "ciprofloxacino",
+    "display" : "Ciprofloxacino",
+    "definition" : "Antibiótico fluoroquinolona"
+  },
+  {
+    "code" : "cefalexina",
+    "display" : "Cefalexina",
+    "definition" : "Antibiótico cefalosporina"
+  },
+  {
+    "code" : "losartana",
+    "display" : "Losartana",
+    "definition" : "Anti-hipertensivo antagonista da angiotensina II"
+  },
+  {
+    "code" : "enalapril",
+    "display" : "Enalapril",
+    "definition" : "Inibidor da enzima conversora da angiotensina"
+  },
+  {
+    "code" : "hidroclorotiazida",
+    "display" : "Hidroclorotiazida",
+    "definition" : "Diurético tiazídico"
+  },
+  {
+    "code" : "anlodipino",
+    "display" : "Anlodipino",
+    "definition" : "Bloqueador dos canais de cálcio"
+  },
+  {
+    "code" : "fluoxetina",
+    "display" : "Fluoxetina",
+    "definition" : "Antidepressivo inibidor seletivo da recaptação de serotonina"
+  },
+  {
+    "code" : "sertralina",
+    "display" : "Sertralina",
+    "definition" : "Antidepressivo inibidor seletivo da recaptação de serotonina"
+  },
+  {
+    "code" : "risperidona",
+    "display" : "Risperidona",
+    "definition" : "Antipsicótico atípico"
+  },
+  {
+    "code" : "clonazepam",
+    "display" : "Clonazepam",
+    "definition" : "Benzodiazepínico anticonvulsivante"
+  },
+  {
+    "code" : "metformina",
+    "display" : "Metformina",
+    "definition" : "Antidiabético oral biguanida"
+  },
+  {
+    "code" : "glibenclamida",
+    "display" : "Glibenclamida",
+    "definition" : "Antidiabético oral sulfoniluréia"
+  },
+  {
+    "code" : "levotiroxina",
+    "display" : "Levotiroxina",
+    "definition" : "Hormônio da tireoide"
+  },
+  {
+    "code" : "salbutamol",
+    "display" : "Salbutamol",
+    "definition" : "Broncodilatador beta-2 agonista"
+  },
+  {
+    "code" : "budesonida",
+    "display" : "Budesonida",
+    "definition" : "Corticosteroide inalatório"
+  },
+  {
+    "code" : "montelucaste",
+    "display" : "Montelucaste",
+    "definition" : "Antagonista dos receptores de leucotrienos"
+  },
+  {
+    "code" : "omeprazol",
+    "display" : "Omeprazol",
+    "definition" : "Inibidor da bomba de prótons"
+  },
+  {
+    "code" : "ranitidina",
+    "display" : "Ranitidina",
+    "definition" : "Antagonista dos receptores H2"
+  },
+  {
+    "code" : "domperidona",
+    "display" : "Domperidona",
+    "definition" : "Antiemético procinético"
+  }]
+}

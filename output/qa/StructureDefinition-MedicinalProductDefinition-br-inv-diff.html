@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-MedicinalProductDefinition-br-inv-diff</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<h4>Restrições</h4>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grau</b></td><td><b>Caminho(s)</b></td><td><b>Detalhes</b></td><td><b>Requisitos</b></td></tr>
+<tr><td>mpd-br-002</td><td>warning</td><td>MedicinalProductDefinition</td><td>Produtos genéricos devem ter a extensão generic-reference preenchida<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/anvisa-category' and valueCodeableConcept.coding.code = 'generic').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/generic-reference').exists()</td><td></td></tr>
+<tr><td>mpd-br-003</td><td>warning</td><td>MedicinalProductDefinition</td><td>Registro ANVISA deve seguir padrão brasileiro<br/>: identifier.where(system = 'http://anvisa.gov.br/medicamentos/registro').value.matches('^[0-9]{1}\.[0-9]{4}\.[0-9]{4}\.[0-9]{3}-[0-9]{1}$')</td><td></td></tr>
+<tr><td>mpd-br-004</td><td>warning</td><td>MedicinalProductDefinition</td><td>Mudança em indicações terapêuticas definidoras requer novo MPID<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/therapeutic-indications-defining').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/therapeutic-indications-defining').all(valueCodeableConcept.exists())</td><td></td></tr>
+<tr><td>mpd-br-005</td><td>warning</td><td>MedicinalProductDefinition</td><td>Mudança em status legal definidor requer novo MPID<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/legal-status-defining').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/legal-status-defining').valueCodeableConcept.exists()</td><td></td></tr>
+<tr><td>mpd-br-006</td><td>warning</td><td>MedicinalProductDefinition</td><td>Motivo de mudança deve ser consistente com tipo de elemento alterado<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').extension.where(url = 'changeReason').valueCodeableConcept.exists()</td><td></td></tr>
+<tr><td>mpd-br-007</td><td>error</td><td>MedicinalProductDefinition</td><td>MPID anterior deve ser fornecido quando há mudança que requer novo MPID<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').extension.where(url = 'changeReason').valueCodeableConcept.coding.where(code.memberOf('http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-requiring-changes')).exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').extension.where(url = 'previousMPID').valueString.exists()</td><td></td></tr>
+<tr><td>mpd-br-008</td><td>error</td><td>MedicinalProductDefinition</td><td>Produto deve ter pelo menos nome fantasia OU nome científico<br/>: name.where(type.coding.code = 'commercial').exists() or name.where(type.coding.code = 'scientific').exists()</td><td></td></tr>
+</table>
+</body>
+</html>

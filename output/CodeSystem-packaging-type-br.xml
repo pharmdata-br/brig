@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="packaging-type-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem packaging-type-br</b></p><a name="packaging-type-br"> </a><a name="hcpackaging-type-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">blister<a name="packaging-type-br-blister"> </a></td><td>Blister</td><td>Embalagem blister para comprimidos/cápsulas</td></tr><tr><td style="white-space:nowrap">frasco<a name="packaging-type-br-frasco"> </a></td><td>Frasco</td><td>Frasco para líquidos ou sólidos</td></tr><tr><td style="white-space:nowrap">ampola<a name="packaging-type-br-ampola"> </a></td><td>Ampola</td><td>Ampola para injetáveis</td></tr><tr><td style="white-space:nowrap">seringa<a name="packaging-type-br-seringa"> </a></td><td>Seringa Preenchida</td><td>Seringa pré-preenchida</td></tr><tr><td style="white-space:nowrap">vial<a name="packaging-type-br-vial"> </a></td><td>Frasco-ampola (Vial)</td><td>Frasco-ampola para injetáveis</td></tr><tr><td style="white-space:nowrap">sachê<a name="packaging-type-br-sach.234"> </a></td><td>Sachê</td><td>Sachê para pós ou granulados</td></tr><tr><td style="white-space:nowrap">tubo<a name="packaging-type-br-tubo"> </a></td><td>Tubo</td><td>Tubo para cremes/pomadas</td></tr><tr><td style="white-space:nowrap">envelope<a name="packaging-type-br-envelope"> </a></td><td>Envelope</td><td>Envelope para produtos em pó</td></tr><tr><td style="white-space:nowrap">caixa<a name="packaging-type-br-caixa"> </a></td><td>Caixa</td><td>Caixa de papelão</td></tr><tr><td style="white-space:nowrap">estojo<a name="packaging-type-br-estojo"> </a></td><td>Estojo</td><td>Estojo para múltiplas unidades</td></tr><tr><td style="white-space:nowrap">cartucho<a name="packaging-type-br-cartucho"> </a></td><td>Cartucho</td><td>Cartucho para produtos específicos</td></tr><tr><td style="white-space:nowrap">frasco-gotejador<a name="packaging-type-br-frasco-gotejador"> </a></td><td>Frasco Gotejador</td><td>Frasco com sistema gotejador</td></tr><tr><td style="white-space:nowrap">spray<a name="packaging-type-br-spray"> </a></td><td>Frasco Spray</td><td>Frasco com sistema de spray</td></tr><tr><td style="white-space:nowrap">inalador<a name="packaging-type-br-inalador"> </a></td><td>Inalador</td><td>Dispositivo inalador</td></tr><tr><td style="white-space:nowrap">dispositivo-aplicacao<a name="packaging-type-br-dispositivo-aplicacao"> </a></td><td>Dispositivo de Aplicação</td><td>Dispositivo especial para aplicação</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br"/>
+  <version value="0.0.2"/>
+  <name value="PackagingTypeBR"/>
+  <title value="Tipos de Embalagem - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para tipos de embalagem no Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="blister"/>
+    <display value="Blister"/>
+    <definition value="Embalagem blister para comprimidos/cápsulas"/>
+  </concept>
+  <concept>
+    <code value="frasco"/>
+    <display value="Frasco"/>
+    <definition value="Frasco para líquidos ou sólidos"/>
+  </concept>
+  <concept>
+    <code value="ampola"/>
+    <display value="Ampola"/>
+    <definition value="Ampola para injetáveis"/>
+  </concept>
+  <concept>
+    <code value="seringa"/>
+    <display value="Seringa Preenchida"/>
+    <definition value="Seringa pré-preenchida"/>
+  </concept>
+  <concept>
+    <code value="vial"/>
+    <display value="Frasco-ampola (Vial)"/>
+    <definition value="Frasco-ampola para injetáveis"/>
+  </concept>
+  <concept>
+    <code value="sachê"/>
+    <display value="Sachê"/>
+    <definition value="Sachê para pós ou granulados"/>
+  </concept>
+  <concept>
+    <code value="tubo"/>
+    <display value="Tubo"/>
+    <definition value="Tubo para cremes/pomadas"/>
+  </concept>
+  <concept>
+    <code value="envelope"/>
+    <display value="Envelope"/>
+    <definition value="Envelope para produtos em pó"/>
+  </concept>
+  <concept>
+    <code value="caixa"/>
+    <display value="Caixa"/>
+    <definition value="Caixa de papelão"/>
+  </concept>
+  <concept>
+    <code value="estojo"/>
+    <display value="Estojo"/>
+    <definition value="Estojo para múltiplas unidades"/>
+  </concept>
+  <concept>
+    <code value="cartucho"/>
+    <display value="Cartucho"/>
+    <definition value="Cartucho para produtos específicos"/>
+  </concept>
+  <concept>
+    <code value="frasco-gotejador"/>
+    <display value="Frasco Gotejador"/>
+    <definition value="Frasco com sistema gotejador"/>
+  </concept>
+  <concept>
+    <code value="spray"/>
+    <display value="Frasco Spray"/>
+    <definition value="Frasco com sistema de spray"/>
+  </concept>
+  <concept>
+    <code value="inalador"/>
+    <display value="Inalador"/>
+    <definition value="Dispositivo inalador"/>
+  </concept>
+  <concept>
+    <code value="dispositivo-aplicacao"/>
+    <display value="Dispositivo de Aplicação"/>
+    <definition value="Dispositivo especial para aplicação"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "product-name-type-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem product-name-type-br</b></p><a name=\"product-name-type-br\"> </a><a name=\"hcproduct-name-type-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">commercial<a name=\"product-name-type-br-commercial\"> </a></td><td>Nome Comercial</td><td>Nome de fantasia do produto registrado para comercialização</td></tr><tr><td style=\"white-space:nowrap\">scientific<a name=\"product-name-type-br-scientific\"> </a></td><td>Nome Científico</td><td>Denominação Comum Brasileira (DCB) ou nome científico do princípio ativo</td></tr><tr><td style=\"white-space:nowrap\">brand<a name=\"product-name-type-br-brand\"> </a></td><td>Marca</td><td>Nome da marca sob a qual o produto é comercializado</td></tr><tr><td style=\"white-space:nowrap\">generic<a name=\"product-name-type-br-generic\"> </a></td><td>Nome Genérico</td><td>Denominação do medicamento genérico conforme DCB</td></tr><tr><td style=\"white-space:nowrap\">popular<a name=\"product-name-type-br-popular\"> </a></td><td>Nome Popular</td><td>Nome pelo qual o produto é popularmente conhecido</td></tr><tr><td style=\"white-space:nowrap\">international<a name=\"product-name-type-br-international\"> </a></td><td>Nome Internacional</td><td>Denominação Comum Internacional (DCI) do princípio ativo</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "ProductNameTypeBR"] ; # 
+  fhir:title [ fhir:v "Tipos de Nome de Produto - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para tipos de nomes de produtos medicinais"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "commercial" ] ;
+     fhir:display [ fhir:v "Nome Comercial" ] ;
+     fhir:definition [ fhir:v "Nome de fantasia do produto registrado para comercialização" ]
+  ] [
+     fhir:code [ fhir:v "scientific" ] ;
+     fhir:display [ fhir:v "Nome Científico" ] ;
+     fhir:definition [ fhir:v "Denominação Comum Brasileira (DCB) ou nome científico do princípio ativo" ]
+  ] [
+     fhir:code [ fhir:v "brand" ] ;
+     fhir:display [ fhir:v "Marca" ] ;
+     fhir:definition [ fhir:v "Nome da marca sob a qual o produto é comercializado" ]
+  ] [
+     fhir:code [ fhir:v "generic" ] ;
+     fhir:display [ fhir:v "Nome Genérico" ] ;
+     fhir:definition [ fhir:v "Denominação do medicamento genérico conforme DCB" ]
+  ] [
+     fhir:code [ fhir:v "popular" ] ;
+     fhir:display [ fhir:v "Nome Popular" ] ;
+     fhir:definition [ fhir:v "Nome pelo qual o produto é popularmente conhecido" ]
+  ] [
+     fhir:code [ fhir:v "international" ] ;
+     fhir:display [ fhir:v "Nome Internacional" ] ;
+     fhir:definition [ fhir:v "Denominação Comum Internacional (DCI) do princípio ativo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

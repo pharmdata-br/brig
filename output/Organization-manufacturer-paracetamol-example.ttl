@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/Organization/manufacturer-paracetamol-example> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "manufacturer-paracetamol-example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization manufacturer-paracetamol-example</b></p><a name=\"manufacturer-paracetamol-example\"> </a><a name=\"hcmanufacturer-paracetamol-example\"> </a><p><b>identifier</b>: <code>https://anvisa.gov.br/cnpj</code>/00.000.000/0002-00</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Indústria Farmacêutica Exemplo Ltda.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://anvisa.gov.br/cnpj"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "00.000.000/0002-00" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "prov" ] ;
+       fhir:display [ fhir:v "Healthcare Provider" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Indústria Farmacêutica Exemplo Ltda."] . # 
+
+# -------------------------------------------------------------------------------------
+

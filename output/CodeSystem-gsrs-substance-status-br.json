@@ -1,0 +1,89 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "gsrs-substance-status-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem gsrs-substance-status-br</b></p><a name=\"gsrs-substance-status-br\"> </a><a name=\"hcgsrs-substance-status-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"gsrs-substance-status-br-active\"> </a></td><td>Active</td><td>Substância ativa e validada no sistema GSRS</td></tr><tr><td style=\"white-space:nowrap\">inactive<a name=\"gsrs-substance-status-br-inactive\"> </a></td><td>Inactive</td><td>Substância inativa ou descontinuada</td></tr><tr><td style=\"white-space:nowrap\">pending<a name=\"gsrs-substance-status-br-pending\"> </a></td><td>Pending</td><td>Substância pendente de validação GSRS</td></tr><tr><td style=\"white-space:nowrap\">validated<a name=\"gsrs-substance-status-br-validated\"> </a></td><td>Validated</td><td>Substância validada pela autoridade regulatória</td></tr><tr><td style=\"white-space:nowrap\">provisional<a name=\"gsrs-substance-status-br-provisional\"> </a></td><td>Provisional</td><td>Substância com registro provisório</td></tr><tr><td style=\"white-space:nowrap\">deprecated<a name=\"gsrs-substance-status-br-deprecated\"> </a></td><td>Deprecated</td><td>Substância depreciada - usar alternativa</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br",
+  "version" : "0.0.2",
+  "name" : "GSRSSubstanceStatusBR",
+  "title" : "GSRS Substance Status - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Status de substâncias conforme padrão GSRS adaptado para Brasil",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "Substância ativa e validada no sistema GSRS"
+  },
+  {
+    "code" : "inactive",
+    "display" : "Inactive",
+    "definition" : "Substância inativa ou descontinuada"
+  },
+  {
+    "code" : "pending",
+    "display" : "Pending",
+    "definition" : "Substância pendente de validação GSRS"
+  },
+  {
+    "code" : "validated",
+    "display" : "Validated",
+    "definition" : "Substância validada pela autoridade regulatória"
+  },
+  {
+    "code" : "provisional",
+    "display" : "Provisional",
+    "definition" : "Substância com registro provisório"
+  },
+  {
+    "code" : "deprecated",
+    "display" : "Deprecated",
+    "definition" : "Substância depreciada - usar alternativa"
+  }]
+}

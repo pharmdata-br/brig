@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ingredient-function-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem ingredient-function-br</b></p><a name="ingredient-function-br"> </a><a name="hcingredient-function-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">revestimento<a name="ingredient-function-br-revestimento"> </a></td><td>Revestimento</td><td>Componente do revestimento de comprimidos/cápsulas</td></tr><tr><td style="white-space:nowrap">nucleo<a name="ingredient-function-br-nucleo"> </a></td><td>Núcleo</td><td>Componente do núcleo da forma farmacêutica</td></tr><tr><td style="white-space:nowrap">liberacao-controlada<a name="ingredient-function-br-liberacao-controlada"> </a></td><td>Liberação Controlada</td><td>Componente que modifica a liberação do fármaco</td></tr><tr><td style="white-space:nowrap">gastroprotetor<a name="ingredient-function-br-gastroprotetor"> </a></td><td>Gastroprotetor</td><td>Componente que protege contra o pH gástrico</td></tr><tr><td style="white-space:nowrap">enterico<a name="ingredient-function-br-enterico"> </a></td><td>Entérico</td><td>Componente do revestimento entérico</td></tr><tr><td style="white-space:nowrap">quelante<a name="ingredient-function-br-quelante"> </a></td><td>Quelante</td><td>Substância que complexa íons metálicos</td></tr><tr><td style="white-space:nowrap">sequestrante<a name="ingredient-function-br-sequestrante"> </a></td><td>Sequestrante</td><td>Substância que remove impurezas</td></tr><tr><td style="white-space:nowrap">crioprotetor<a name="ingredient-function-br-crioprotetor"> </a></td><td>Crioprotetor</td><td>Substância que protege contra congelamento</td></tr><tr><td style="white-space:nowrap">identificacao<a name="ingredient-function-br-identificacao"> </a></td><td>Identificação</td><td>Substância para identificação visual do produto</td></tr><tr><td style="white-space:nowrap">diferenciacao<a name="ingredient-function-br-diferenciacao"> </a></td><td>Diferenciação</td><td>Substância para diferenciação entre apresentações</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function-br"/>
+  <version value="0.0.2"/>
+  <name value="IngredientFunctionBR"/>
+  <title value="Funções de Ingredientes - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para funções específicas de ingredientes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="revestimento"/>
+    <display value="Revestimento"/>
+    <definition value="Componente do revestimento de comprimidos/cápsulas"/>
+  </concept>
+  <concept>
+    <code value="nucleo"/>
+    <display value="Núcleo"/>
+    <definition value="Componente do núcleo da forma farmacêutica"/>
+  </concept>
+  <concept>
+    <code value="liberacao-controlada"/>
+    <display value="Liberação Controlada"/>
+    <definition value="Componente que modifica a liberação do fármaco"/>
+  </concept>
+  <concept>
+    <code value="gastroprotetor"/>
+    <display value="Gastroprotetor"/>
+    <definition value="Componente que protege contra o pH gástrico"/>
+  </concept>
+  <concept>
+    <code value="enterico"/>
+    <display value="Entérico"/>
+    <definition value="Componente do revestimento entérico"/>
+  </concept>
+  <concept>
+    <code value="quelante"/>
+    <display value="Quelante"/>
+    <definition value="Substância que complexa íons metálicos"/>
+  </concept>
+  <concept>
+    <code value="sequestrante"/>
+    <display value="Sequestrante"/>
+    <definition value="Substância que remove impurezas"/>
+  </concept>
+  <concept>
+    <code value="crioprotetor"/>
+    <display value="Crioprotetor"/>
+    <definition value="Substância que protege contra congelamento"/>
+  </concept>
+  <concept>
+    <code value="identificacao"/>
+    <display value="Identificação"/>
+    <definition value="Substância para identificação visual do produto"/>
+  </concept>
+  <concept>
+    <code value="diferenciacao"/>
+    <display value="Diferenciação"/>
+    <definition value="Substância para diferenciação entre apresentações"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,139 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "container-materials-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem container-materials-br</b></p><a name=\"container-materials-br\"> </a><a name=\"hccontainer-materials-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">pvc<a name=\"container-materials-br-pvc\"> </a></td><td>PVC</td><td>Cloreto de polivinila</td></tr><tr><td style=\"white-space:nowrap\">pe<a name=\"container-materials-br-pe\"> </a></td><td>Polietileno</td><td>Polietileno (PE)</td></tr><tr><td style=\"white-space:nowrap\">pp<a name=\"container-materials-br-pp\"> </a></td><td>Polipropileno</td><td>Polipropileno (PP)</td></tr><tr><td style=\"white-space:nowrap\">pet<a name=\"container-materials-br-pet\"> </a></td><td>PET</td><td>Tereftalato de polietileno</td></tr><tr><td style=\"white-space:nowrap\">pvdc<a name=\"container-materials-br-pvdc\"> </a></td><td>PVDC</td><td>Cloreto de polivinilideno</td></tr><tr><td style=\"white-space:nowrap\">eva<a name=\"container-materials-br-eva\"> </a></td><td>EVA</td><td>Acetato-vinilo de etileno</td></tr><tr><td style=\"white-space:nowrap\">aluminum<a name=\"container-materials-br-aluminum\"> </a></td><td>Alumínio</td><td>Folha ou lâmina de alumínio</td></tr><tr><td style=\"white-space:nowrap\">tinplate<a name=\"container-materials-br-tinplate\"> </a></td><td>Folha de flandres</td><td>Aço com revestimento de estanho</td></tr><tr><td style=\"white-space:nowrap\">stainless-steel<a name=\"container-materials-br-stainless-steel\"> </a></td><td>Aço inoxidável</td><td>Aço inoxidável</td></tr><tr><td style=\"white-space:nowrap\">glass-clear<a name=\"container-materials-br-glass-clear\"> </a></td><td>Vidro transparente</td><td>Vidro transparente incolor</td></tr><tr><td style=\"white-space:nowrap\">glass-amber<a name=\"container-materials-br-glass-amber\"> </a></td><td>Vidro âmbar</td><td>Vidro com coloração âmbar</td></tr><tr><td style=\"white-space:nowrap\">glass-blue<a name=\"container-materials-br-glass-blue\"> </a></td><td>Vidro azul</td><td>Vidro com coloração azul</td></tr><tr><td style=\"white-space:nowrap\">cardboard<a name=\"container-materials-br-cardboard\"> </a></td><td>Papelão</td><td>Papelão ou cartão</td></tr><tr><td style=\"white-space:nowrap\">paper<a name=\"container-materials-br-paper\"> </a></td><td>Papel</td><td>Papel comum ou especial</td></tr><tr><td style=\"white-space:nowrap\">rubber<a name=\"container-materials-br-rubber\"> </a></td><td>Borracha</td><td>Borracha natural ou sintética</td></tr><tr><td style=\"white-space:nowrap\">silicone<a name=\"container-materials-br-silicone\"> </a></td><td>Silicone</td><td>Silicone médico</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br",
+  "version" : "0.0.2",
+  "name" : "ContainerMaterialsBR",
+  "title" : "Materiais de Container - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para materiais de containers brasileiros",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 16,
+  "concept" : [{
+    "code" : "pvc",
+    "display" : "PVC",
+    "definition" : "Cloreto de polivinila"
+  },
+  {
+    "code" : "pe",
+    "display" : "Polietileno",
+    "definition" : "Polietileno (PE)"
+  },
+  {
+    "code" : "pp",
+    "display" : "Polipropileno",
+    "definition" : "Polipropileno (PP)"
+  },
+  {
+    "code" : "pet",
+    "display" : "PET",
+    "definition" : "Tereftalato de polietileno"
+  },
+  {
+    "code" : "pvdc",
+    "display" : "PVDC",
+    "definition" : "Cloreto de polivinilideno"
+  },
+  {
+    "code" : "eva",
+    "display" : "EVA",
+    "definition" : "Acetato-vinilo de etileno"
+  },
+  {
+    "code" : "aluminum",
+    "display" : "Alumínio",
+    "definition" : "Folha ou lâmina de alumínio"
+  },
+  {
+    "code" : "tinplate",
+    "display" : "Folha de flandres",
+    "definition" : "Aço com revestimento de estanho"
+  },
+  {
+    "code" : "stainless-steel",
+    "display" : "Aço inoxidável",
+    "definition" : "Aço inoxidável"
+  },
+  {
+    "code" : "glass-clear",
+    "display" : "Vidro transparente",
+    "definition" : "Vidro transparente incolor"
+  },
+  {
+    "code" : "glass-amber",
+    "display" : "Vidro âmbar",
+    "definition" : "Vidro com coloração âmbar"
+  },
+  {
+    "code" : "glass-blue",
+    "display" : "Vidro azul",
+    "definition" : "Vidro com coloração azul"
+  },
+  {
+    "code" : "cardboard",
+    "display" : "Papelão",
+    "definition" : "Papelão ou cartão"
+  },
+  {
+    "code" : "paper",
+    "display" : "Papel",
+    "definition" : "Papel comum ou especial"
+  },
+  {
+    "code" : "rubber",
+    "display" : "Borracha",
+    "definition" : "Borracha natural ou sintética"
+  },
+  {
+    "code" : "silicone",
+    "display" : "Silicone",
+    "definition" : "Silicone médico"
+  }]
+}

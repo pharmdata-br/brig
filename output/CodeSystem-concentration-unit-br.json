@@ -1,0 +1,129 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "concentration-unit-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem concentration-unit-br</b></p><a name=\"concentration-unit-br\"> </a><a name=\"hcconcentration-unit-br\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">mg<a name=\"concentration-unit-br-mg\"> </a></td><td>mg</td><td>Miligramas</td></tr><tr><td style=\"white-space:nowrap\">g<a name=\"concentration-unit-br-g\"> </a></td><td>g</td><td>Gramas</td></tr><tr><td style=\"white-space:nowrap\">mcg<a name=\"concentration-unit-br-mcg\"> </a></td><td>mcg</td><td>Microgramas</td></tr><tr><td style=\"white-space:nowrap\">kg<a name=\"concentration-unit-br-kg\"> </a></td><td>kg</td><td>Quilogramas</td></tr><tr><td style=\"white-space:nowrap\">ml<a name=\"concentration-unit-br-ml\"> </a></td><td>mL</td><td>Mililitros</td></tr><tr><td style=\"white-space:nowrap\">l<a name=\"concentration-unit-br-l\"> </a></td><td>L</td><td>Litros</td></tr><tr><td style=\"white-space:nowrap\">mg-ml<a name=\"concentration-unit-br-mg-ml\"> </a></td><td>mg/mL</td><td>Miligramas por mililitro</td></tr><tr><td style=\"white-space:nowrap\">mcg-ml<a name=\"concentration-unit-br-mcg-ml\"> </a></td><td>mcg/mL</td><td>Microgramas por mililitro</td></tr><tr><td style=\"white-space:nowrap\">g-l<a name=\"concentration-unit-br-g-l\"> </a></td><td>g/L</td><td>Gramas por litro</td></tr><tr><td style=\"white-space:nowrap\">percent-p-p<a name=\"concentration-unit-br-percent-p-p\"> </a></td><td>% p/p</td><td>Porcentagem peso por peso</td></tr><tr><td style=\"white-space:nowrap\">percent-p-v<a name=\"concentration-unit-br-percent-p-v\"> </a></td><td>% p/v</td><td>Porcentagem peso por volume</td></tr><tr><td style=\"white-space:nowrap\">percent-v-v<a name=\"concentration-unit-br-percent-v-v\"> </a></td><td>% v/v</td><td>Porcentagem volume por volume</td></tr><tr><td style=\"white-space:nowrap\">ui<a name=\"concentration-unit-br-ui\"> </a></td><td>UI</td><td>Unidades Internacionais</td></tr><tr><td style=\"white-space:nowrap\">ui-ml<a name=\"concentration-unit-br-ui-ml\"> </a></td><td>UI/mL</td><td>Unidades Internacionais por mililitro</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/concentration-unit-br",
+  "version" : "0.0.2",
+  "name" : "ConcentrationUnitBR",
+  "title" : "Unidades de Concentração - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para unidades de concentração específicas brasileiras",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "mg",
+    "display" : "mg",
+    "definition" : "Miligramas"
+  },
+  {
+    "code" : "g",
+    "display" : "g",
+    "definition" : "Gramas"
+  },
+  {
+    "code" : "mcg",
+    "display" : "mcg",
+    "definition" : "Microgramas"
+  },
+  {
+    "code" : "kg",
+    "display" : "kg",
+    "definition" : "Quilogramas"
+  },
+  {
+    "code" : "ml",
+    "display" : "mL",
+    "definition" : "Mililitros"
+  },
+  {
+    "code" : "l",
+    "display" : "L",
+    "definition" : "Litros"
+  },
+  {
+    "code" : "mg-ml",
+    "display" : "mg/mL",
+    "definition" : "Miligramas por mililitro"
+  },
+  {
+    "code" : "mcg-ml",
+    "display" : "mcg/mL",
+    "definition" : "Microgramas por mililitro"
+  },
+  {
+    "code" : "g-l",
+    "display" : "g/L",
+    "definition" : "Gramas por litro"
+  },
+  {
+    "code" : "percent-p-p",
+    "display" : "% p/p",
+    "definition" : "Porcentagem peso por peso"
+  },
+  {
+    "code" : "percent-p-v",
+    "display" : "% p/v",
+    "definition" : "Porcentagem peso por volume"
+  },
+  {
+    "code" : "percent-v-v",
+    "display" : "% v/v",
+    "definition" : "Porcentagem volume por volume"
+  },
+  {
+    "code" : "ui",
+    "display" : "UI",
+    "definition" : "Unidades Internacionais"
+  },
+  {
+    "code" : "ui-ml",
+    "display" : "UI/mL",
+    "definition" : "Unidades Internacionais por mililitro"
+  }]
+}

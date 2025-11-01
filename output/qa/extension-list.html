@@ -1,0 +1,376 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>extension-list</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="list">
+  <tr>
+    <td>Identity</td>
+    <td>Card.</td>
+    <td>Type</td>
+    <td>Context</td>
+    <td>WG</td>
+    <td>Status</td>
+  </tr>
+  <tr>
+    <td>
+      <input size="15" id="filter-identity" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="3" id="filter-card" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="8" id="filter-type" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="20" id="filter-context" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="3" id="filter-wg" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="6" id="filter-status" type="text" class="filter-input"/>
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l74">​</a>
+      <a href="StructureDefinition-anvisa-category.html" title="Categoria específica da ANVISA para classificação do produto medicinal">anvisa-category</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l106">​</a>
+      <a href="StructureDefinition-anvisa-regulatory-status.html" title="Status regulatório da substância junto à ANVISA">anvisa-regulatory-status</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/substancedefinition.html">SubstanceDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l135">​</a>
+      <a href="StructureDefinition-associated-devices.html" title="Dispositivos associados ao produto medicinal que são elementos definidores do MPID">associated-devices</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/references.html#Reference">Reference</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr class="data-row" data-change="false">
+    <td><a name="l167">​</a>
+      <a href="StructureDefinition-brazilian-terminology-standards.html" title="Define padrões específicos de terminologia para contexto farmacêutico brasileiro">brazilian-terminology-standards</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Draft" class="draft-flag">Draft</a>
+: FMM0
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l196">​</a>
+      <a href="StructureDefinition-controlled-substance-category.html" title="Categoria de controle da substância conforme legislação brasileira">controlled-substance-category</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/substancedefinition.html">SubstanceDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr class="data-row" data-change="false">
+    <td><a name="l228">​</a>
+      <a href="StructureDefinition-documentation-language.html" title="Define o idioma padrão para toda documentação BRIG - sempre português brasileiro">documentation-language</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a>
+,       <a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a>
+,       <a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Draft" class="draft-flag">Draft</a>
+: FMM0
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l266">​</a>
+      <a href="StructureDefinition-exemplo-extensao-brasileira.html" title="Extensão de exemplo demonstrando padrões de documentação BRIG com terminologia farmacêutica brasileira adequada">exemplo-extensao-brasileira</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l298">​</a>
+      <a href="StructureDefinition-generic-reference.html" title="Referência ao produto de referência para medicamentos genéricos ou similares">generic-reference</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l327">​</a>
+      <a href="StructureDefinition-identifier-lifecycle-rules.html" title="Regras e tracking para lifecycle de identificadores MPID/PCID - define quando manter vs criar novos identificadores">identifier-lifecycle-rules</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+,       <a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">PackagedProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l359">​</a>
+      <a href="StructureDefinition-identifier-lifecycle-status.html" title="Status atual do identificador no seu ciclo de vida">identifier-lifecycle-status</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l391">​</a>
+      <a href="StructureDefinition-legal-status-defining.html" title="Status legal que é elemento definidor do MPID - mudanças requerem novo MPID">legal-status-defining</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l423">​</a>
+      <a href="StructureDefinition-manufactured-item-criteria.html" title="Critérios específicos do item manufaturado que são elementos definidores do PCID">manufactured-item-criteria</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">PackagedProductDefinition.packaging.containedItem</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l452">​</a>
+      <a href="StructureDefinition-name-validation-rules.html" title="Regras específicas para validação de nomes de produtos brasileiros">name-validation-rules</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition.name</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l481">​</a>
+      <a href="StructureDefinition-organization-business-size-br.html" title="Classificação do porte da organização conforme critérios brasileiros">organization-business-size-br</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l510">​</a>
+      <a href="StructureDefinition-organization-operational-category-br.html" title="Categoria operacional específica da organização no contexto regulatório brasileiro">organization-operational-category-br</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l539">​</a>
+      <a href="StructureDefinition-organization-regulatory-status-br.html" title="Status regulatório da organização junto à ANVISA e outros órgãos brasileiros">organization-regulatory-status-br</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l568">​</a>
+      <a href="StructureDefinition-package-component-details.html" title="Detalhes específicos dos componentes que são elementos definidores do PCID">package-component-details</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">PackagedProductDefinition.packaging</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l597">​</a>
+      <a href="StructureDefinition-package-item-container-details.html" title="Detalhes específicos do container que são elementos definidores do PCID - mudanças requerem novo PCID">package-item-container-details</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">PackagedProductDefinition.packaging.containedItem</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l626">​</a>
+      <a href="StructureDefinition-product-name-parts.html" title="Partes específicas do nome do produto que são elementos definidores para MPID conforme padrões internacionais">product-name-parts</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition.name</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l655">​</a>
+      <a href="StructureDefinition-therapeutic-indications-defining.html" title="Indicações terapêuticas que são elementos definidores do MPID - mudanças requerem novo MPID">therapeutic-indications-defining</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l687">​</a>
+      <a href="StructureDefinition-umc-integration-mapping.html" title="Extension para mapping futuro com Uppsala Monitoring Centre para coordenação internacional de identificadores PHPID">umc-integration-mapping</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/administrableproductdefinition.html">AdministrableProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+</table>
+<p>22 Extensions</p>
+<script src="assets/js/table.js"> </script>
+<button onclick="clearAllFilters()" style="padding: 8px 16px; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer;">Clear All Filters</button>
+</body>
+</html>

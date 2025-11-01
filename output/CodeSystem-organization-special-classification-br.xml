@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organization-special-classification-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem organization-special-classification-br</b></p><a name="organization-special-classification-br"> </a><a name="hcorganization-special-classification-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">mei<a name="organization-special-classification-br-mei"> </a></td><td>MEI</td><td>Microempreendedor Individual</td></tr><tr><td style="white-space:nowrap">epp<a name="organization-special-classification-br-epp"> </a></td><td>EPP</td><td>Empresa de Pequeno Porte</td></tr><tr><td style="white-space:nowrap">me<a name="organization-special-classification-br-me"> </a></td><td>ME</td><td>Microempresa</td></tr><tr><td style="white-space:nowrap">simples-nacional<a name="organization-special-classification-br-simples-nacional"> </a></td><td>Simples Nacional</td><td>Optante pelo Simples Nacional</td></tr><tr><td style="white-space:nowrap">lucro-presumido<a name="organization-special-classification-br-lucro-presumido"> </a></td><td>Lucro Presumido</td><td>Tributação pelo Lucro Presumido</td></tr><tr><td style="white-space:nowrap">lucro-real<a name="organization-special-classification-br-lucro-real"> </a></td><td>Lucro Real</td><td>Tributação pelo Lucro Real</td></tr><tr><td style="white-space:nowrap">multinacional<a name="organization-special-classification-br-multinacional"> </a></td><td>Multinacional</td><td>Empresa multinacional</td></tr><tr><td style="white-space:nowrap">startup<a name="organization-special-classification-br-startup"> </a></td><td>Startup</td><td>Empresa de tecnologia em estágio inicial</td></tr><tr><td style="white-space:nowrap">ong<a name="organization-special-classification-br-ong"> </a></td><td>ONG</td><td>Organização Não Governamental</td></tr><tr><td style="white-space:nowrap">oscip<a name="organization-special-classification-br-oscip"> </a></td><td>OSCIP</td><td>Organização da Sociedade Civil de Interesse Público</td></tr><tr><td style="white-space:nowrap">cooperativa<a name="organization-special-classification-br-cooperativa"> </a></td><td>Cooperativa</td><td>Sociedade cooperativa</td></tr><tr><td style="white-space:nowrap">fundacao<a name="organization-special-classification-br-fundacao"> </a></td><td>Fundação</td><td>Fundação privada</td></tr><tr><td style="white-space:nowrap">instituto<a name="organization-special-classification-br-instituto"> </a></td><td>Instituto</td><td>Instituto privado</td></tr><tr><td style="white-space:nowrap">associacao<a name="organization-special-classification-br-associacao"> </a></td><td>Associação</td><td>Associação civil</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br"/>
+  <version value="0.0.2"/>
+  <name value="OrganizationSpecialClassificationBR"/>
+  <title value="Classificações Especiais de Organização - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para classificações especiais de organizações"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="mei"/>
+    <display value="MEI"/>
+    <definition value="Microempreendedor Individual"/>
+  </concept>
+  <concept>
+    <code value="epp"/>
+    <display value="EPP"/>
+    <definition value="Empresa de Pequeno Porte"/>
+  </concept>
+  <concept>
+    <code value="me"/>
+    <display value="ME"/>
+    <definition value="Microempresa"/>
+  </concept>
+  <concept>
+    <code value="simples-nacional"/>
+    <display value="Simples Nacional"/>
+    <definition value="Optante pelo Simples Nacional"/>
+  </concept>
+  <concept>
+    <code value="lucro-presumido"/>
+    <display value="Lucro Presumido"/>
+    <definition value="Tributação pelo Lucro Presumido"/>
+  </concept>
+  <concept>
+    <code value="lucro-real"/>
+    <display value="Lucro Real"/>
+    <definition value="Tributação pelo Lucro Real"/>
+  </concept>
+  <concept>
+    <code value="multinacional"/>
+    <display value="Multinacional"/>
+    <definition value="Empresa multinacional"/>
+  </concept>
+  <concept>
+    <code value="startup"/>
+    <display value="Startup"/>
+    <definition value="Empresa de tecnologia em estágio inicial"/>
+  </concept>
+  <concept>
+    <code value="ong"/>
+    <display value="ONG"/>
+    <definition value="Organização Não Governamental"/>
+  </concept>
+  <concept>
+    <code value="oscip"/>
+    <display value="OSCIP"/>
+    <definition value="Organização da Sociedade Civil de Interesse Público"/>
+  </concept>
+  <concept>
+    <code value="cooperativa"/>
+    <display value="Cooperativa"/>
+    <definition value="Sociedade cooperativa"/>
+  </concept>
+  <concept>
+    <code value="fundacao"/>
+    <display value="Fundação"/>
+    <definition value="Fundação privada"/>
+  </concept>
+  <concept>
+    <code value="instituto"/>
+    <display value="Instituto"/>
+    <definition value="Instituto privado"/>
+  </concept>
+  <concept>
+    <code value="associacao"/>
+    <display value="Associação"/>
+    <definition value="Associação civil"/>
+  </concept>
+</CodeSystem>

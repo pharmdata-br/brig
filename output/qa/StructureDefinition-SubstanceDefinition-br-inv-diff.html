@@ -1,0 +1,17 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-SubstanceDefinition-br-inv-diff</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<h4>Restrições</h4>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grau</b></td><td><b>Caminho(s)</b></td><td><b>Detalhes</b></td><td><b>Requisitos</b></td></tr>
+<tr><td>sub-br-001</td><td>warning</td><td>SubstanceDefinition</td><td>Substâncias ativas devem ter UNII ou DCB ou código internacional (CAS)<br/>: classification.where(coding.system = 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-gsrs-br' and coding.code = 'active').exists() implies (identifier.where(system = 'http://fdasis.nlm.nih.gov').exists() or identifier.where(system = 'https://anvisa.gov.br/dcb').exists() or identifier.where(system = 'urn:oid:2.16.840.1.113883.6.61').exists())</td><td></td></tr>
+<tr><td>sub-br-002</td><td>error</td><td>SubstanceDefinition</td><td>Substâncias controladas devem ter extensão de categoria de controle<br/>: classification.where(coding.system = 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-gsrs-br' and coding.code = 'controlled').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/controlled-substance-category').exists()</td><td></td></tr>
+<tr><td>sub-br-003</td><td>error</td><td>SubstanceDefinition</td><td>Pelo menos um identificador deve estar presente<br/>: identifier.exists()</td><td></td></tr>
+<tr><td>sub-br-004</td><td>warning</td><td>SubstanceDefinition</td><td>Substâncias com UNII devem ter fórmula molecular quando aplicável<br/>: identifier.where(system = 'http://fdasis.nlm.nih.gov').exists() and classification.where(coding.code = 'chemical').exists() implies structure.molecularFormula.exists()</td><td></td></tr>
+</table>
+</body>
+</html>

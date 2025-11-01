@@ -1,0 +1,208 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/SubstanceDefinition/paracetamol-substance-gsrs-br> a fhir:SubstanceDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "paracetamol-substance-gsrs-br"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"^^xsd:anyURI ;
+       fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: SubstanceDefinition paracetamol-substance-gsrs-br</b></p><a name=\"paracetamol-substance-gsrs-br\"> </a><a name=\"hcparacetamol-substance-gsrs-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-SubstanceDefinition-br.html\">Definição de Substância - Brasil</a></p></div><p><b>identifier</b>: UNII/362O9ITL9D (utilização: official, ), <code>https://anvisa.gov.br/dcb</code>/06783, <code>urn:oid:2.16.840.1.113883.6.61</code>/103-90-2, <code>https://anvisa.gov.br/substancias/codigo</code>/ANVISA-PARA-001</p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br validated}\">Validated</span></p><p><b>classification</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br chemical}\">Chemical Substance</span>, <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br active}\">Substância Ativa</span></p><p><b>domain</b>: <span title=\"Códigos:{http://hl7.org/fhir/medicinal-product-domain Human}\">Human use</span></p><p><b>grade</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br pharmaceutical}\">Grau Farmacêutico</span></p><p><b>description</b>: </p><div><p>O paracetamol (acetaminofeno) é um analgésico e antipirético amplamente utilizado. É um inibidor fraco da síntese de prostaglandinas com ação predominantemente central.</p>\n</div><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br solubility}\">Solubility</span></p><p><b>value</b>: <span title=\"Códigos:\">14 mg/mL em água a 25°C</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br meltingPoint}\">Melting Point</span></p><p><b>value</b>: 169 °C<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigoCel = 'Cel')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br logP}\">LogP</span></p><p><b>value</b>: 0.46 {LogP}<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código{LogP} = '{LogP}')</span></p></blockquote><blockquote><p><b>structure</b></p><p><b>molecularFormula</b>: C8H9NO2</p><h3>MolecularWeights</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Amount</b></td></tr><tr><td style=\"display: none\">*</td><td>151.163 g/mol<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigog/mol = 'g/mol')</span></td></tr></table><blockquote><p><b>representation</b></p><p><b>type</b>: <span title=\"Códigos:{http://hl7.org/fhir/substance-representation-type SMILES}\">SMILES</span></p><p><b>representation</b>: CC(=O)NC1=CC=C(C=C1)O</p></blockquote><blockquote><p><b>representation</b></p><p><b>type</b>: <span title=\"Códigos:{http://hl7.org/fhir/substance-representation-type InChI}\">InChI</span></p><p><b>representation</b>: InChI=1S/C8H9NO2/c1-6(10)9-7-2-4-8(11)5-3-7/h2-5,11H,1H3,(H,9,10)</p></blockquote></blockquote><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://www.whocc.no/atc N02BE01}\">paracetamol</span></td></tr></table><blockquote><p><b>name</b></p><p><b>name</b>: N-(4-hidroxifenil)acetamida</p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br official}\">Nome Oficial</span></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br current}\">current</span></p><p><b>preferred</b>: true</p></blockquote><blockquote><p><b>name</b></p><p><b>name</b>: Paracetamol</p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br common}\">Nome Comum</span></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br current}\">current</span></p><p><b>language</b>: <span title=\"Códigos:{urn:ietf:bcp:47 pt-BR}\">pt-BR</span></p></blockquote><blockquote><p><b>name</b></p><p><b>name</b>: Acetaminophen</p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br common}\">Nome Comum</span></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br current}\">current</span></p><p><b>language</b>: <span title=\"Códigos:{urn:ietf:bcp:47 en}\">en</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://fdasis.nlm.nih.gov"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "362O9ITL9D" ]
+  ] [
+     fhir:system [ fhir:v "https://anvisa.gov.br/dcb"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "06783" ]
+  ] [
+     fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.61"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "103-90-2" ]
+  ] [
+     fhir:system [ fhir:v "https://anvisa.gov.br/substancias/codigo"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ANVISA-PARA-001" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "validated" ] ;
+       fhir:display [ fhir:v "Validated" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "chemical" ] ;
+       fhir:display [ fhir:v "Chemical Substance" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Substância Ativa" ]
+     ] )
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/medicinal-product-domain"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Human" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:grade ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade-br"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "pharmaceutical" ] ;
+       fhir:display [ fhir:v "Grau Farmacêutico" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "O paracetamol (acetaminofeno) é um analgésico e antipirético amplamente utilizado. É um inibidor fraco da síntese de prostaglandinas com ação predominantemente central."] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "solubility" ]
+       ] ) ;
+       fhir:text [ fhir:v "Solubility" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "14 mg/mL em água a 25°C" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "meltingPoint" ]
+       ] ) ;
+       fhir:text [ fhir:v "Melting Point" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "169"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "°C" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Cel" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "logP" ]
+       ] ) ;
+       fhir:text [ fhir:v "LogP" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.46 ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{LogP}" ]
+     ]
+  ] ) ; # 
+  fhir:structure [
+     fhir:molecularFormula [ fhir:v "C8H9NO2" ] ;
+     fhir:molecularWeight [
+       fhir:amount [
+         fhir:value [ fhir:v 151.163 ] ;
+         fhir:unit [ fhir:v "g/mol" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g/mol" ]
+       ]
+     ] ;
+     fhir:representation ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/substance-representation-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "SMILES" ]
+         ] )
+       ] ;
+       fhir:representation [ fhir:v "CC(=O)NC1=CC=C(C=C1)O" ]
+     ] [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/substance-representation-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "InChI" ]
+         ] )
+       ] ;
+       fhir:representation [ fhir:v "InChI=1S/C8H9NO2/c1-6(10)9-7-2-4-8(11)5-3-7/h2-5,11H,1H3,(H,9,10)" ]
+     ] )
+  ] ; # 
+  fhir:code ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N02BE01" ] ;
+         fhir:display [ fhir:v "paracetamol" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:name [ fhir:v "N-(4-hidroxifenil)acetamida" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "official" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "current" ]
+       ] )
+     ] ;
+     fhir:preferred [ fhir:v true ]
+  ] [
+     fhir:name [ fhir:v "Paracetamol" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "common" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "current" ]
+       ] )
+     ] ;
+     fhir:language ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "pt-BR" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "Acetaminophen" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "common" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "current" ]
+       ] )
+     ] ;
+     fhir:language ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "en" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

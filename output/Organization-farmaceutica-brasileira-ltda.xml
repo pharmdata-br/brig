@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="farmaceutica-brasileira-ltda"/>
+  <meta>
+    <profile value="http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: Organization farmaceutica-brasileira-ltda</b></p><a name="farmaceutica-brasileira-ltda"> </a><a name="hcfarmaceutica-brasileira-ltda"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-Organization-anvisa-simple.html">Organização ANVISA - Brasil (Simplificado)</a></p></div><p><b>identifier</b>: <code>https://saude.gov.br/fhir/sid/cnpj</code>/12.345.678/0001-90, <code>http://anvisa.gov.br/afe</code>/AFE123456789</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Farmacêutica Brasileira Ltda</p></div>
+  </text>
+  <identifier>
+    <system value="https://saude.gov.br/fhir/sid/cnpj"/>
+    <value value="12.345.678/0001-90"/>
+  </identifier>
+  <identifier>
+    <system value="http://anvisa.gov.br/afe"/>
+    <value value="AFE123456789"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+    </coding>
+  </type>
+  <name value="Farmacêutica Brasileira Ltda"/>
+</Organization>

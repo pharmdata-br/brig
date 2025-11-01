@@ -1,0 +1,166 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "brazilian-pharmaceutical-terminology"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem brazilian-pharmaceutical-terminology</b></p><a name=\"brazilian-pharmaceutical-terminology\"> </a><a name=\"hcbrazilian-pharmaceutical-terminology\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">marketing-authorization-holder<a name=\"brazilian-pharmaceutical-terminology-marketing-authorization-holder\"> </a></td><td>Detentor do Registro</td><td>Empresa responsável pelo registro do medicamento junto à ANVISA</td></tr><tr><td style=\"white-space:nowrap\">pharmaceutical-form<a name=\"brazilian-pharmaceutical-terminology-pharmaceutical-form\"> </a></td><td>Forma Farmacêutica</td><td>Forma física final do medicamento (comprimido, cápsula, solução, etc.)</td></tr><tr><td style=\"white-space:nowrap\">legal-status<a name=\"brazilian-pharmaceutical-terminology-legal-status\"> </a></td><td>Status Legal de Dispensação</td><td>Classificação legal para dispensação (prescrição médica, venda livre, controlado)</td></tr><tr><td style=\"white-space:nowrap\">package<a name=\"brazilian-pharmaceutical-terminology-package\"> </a></td><td>Embalagem</td><td>Sistema de acondicionamento do produto farmacêutico</td></tr><tr><td style=\"white-space:nowrap\">container<a name=\"brazilian-pharmaceutical-terminology-container\"> </a></td><td>Recipiente</td><td>Recipiente primário que contém diretamente o medicamento</td></tr><tr><td style=\"white-space:nowrap\">strength<a name=\"brazilian-pharmaceutical-terminology-strength\"> </a></td><td>Concentração</td><td>Quantidade de substância ativa por unidade de dosagem</td></tr><tr><td style=\"white-space:nowrap\">dosage<a name=\"brazilian-pharmaceutical-terminology-dosage\"> </a></td><td>Dosagem</td><td>Quantidade específica de medicamento a ser administrada</td></tr><tr><td style=\"white-space:nowrap\">active-substance<a name=\"brazilian-pharmaceutical-terminology-active-substance\"> </a></td><td>Substância Ativa</td><td>Componente farmacologicamente ativo do medicamento</td></tr><tr><td style=\"white-space:nowrap\">excipient<a name=\"brazilian-pharmaceutical-terminology-excipient\"> </a></td><td>Excipiente</td><td>Componente inativo do medicamento</td></tr><tr><td style=\"white-space:nowrap\">route-administration<a name=\"brazilian-pharmaceutical-terminology-route-administration\"> </a></td><td>Via de Administração</td><td>Método pelo qual o medicamento é introduzido no organismo</td></tr><tr><td style=\"white-space:nowrap\">therapeutic-indication<a name=\"brazilian-pharmaceutical-terminology-therapeutic-indication\"> </a></td><td>Indicação Terapêutica</td><td>Condição médica para a qual o medicamento é indicado</td></tr><tr><td style=\"white-space:nowrap\">contraindication<a name=\"brazilian-pharmaceutical-terminology-contraindication\"> </a></td><td>Contraindicação</td><td>Situação em que o medicamento não deve ser usado</td></tr><tr><td style=\"white-space:nowrap\">adverse-reaction<a name=\"brazilian-pharmaceutical-terminology-adverse-reaction\"> </a></td><td>Reação Adversa</td><td>Efeito indesejado relacionado ao uso do medicamento</td></tr><tr><td style=\"white-space:nowrap\">presentation-unit<a name=\"brazilian-pharmaceutical-terminology-presentation-unit\"> </a></td><td>Unidade de Apresentação</td><td>Unidade individual do medicamento (comprimido, cápsula, ampola, etc.)</td></tr><tr><td style=\"white-space:nowrap\">commercial-package<a name=\"brazilian-pharmaceutical-terminology-commercial-package\"> </a></td><td>Embalagem Comercial</td><td>Embalagem final para comercialização do produto</td></tr><tr><td style=\"white-space:nowrap\">primary-package<a name=\"brazilian-pharmaceutical-terminology-primary-package\"> </a></td><td>Embalagem Primária</td><td>Embalagem em contato direto com o medicamento</td></tr><tr><td style=\"white-space:nowrap\">secondary-package<a name=\"brazilian-pharmaceutical-terminology-secondary-package\"> </a></td><td>Embalagem Secundária</td><td>Embalagem que contém a embalagem primária</td></tr><tr><td style=\"white-space:nowrap\">batch-lot<a name=\"brazilian-pharmaceutical-terminology-batch-lot\"> </a></td><td>Lote</td><td>Quantidade de produto fabricada em condições uniformes</td></tr><tr><td style=\"white-space:nowrap\">expiry-date<a name=\"brazilian-pharmaceutical-terminology-expiry-date\"> </a></td><td>Data de Validade</td><td>Data limite para uso seguro do medicamento</td></tr><tr><td style=\"white-space:nowrap\">storage-conditions<a name=\"brazilian-pharmaceutical-terminology-storage-conditions\"> </a></td><td>Condições de Armazenamento</td><td>Requisitos específicos para conservação do medicamento</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "BrazilianPharmaceuticalTerminology"] ; # 
+  fhir:title [ fhir:v "Terminologia Farmacêutica Brasileira"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para terminologia farmacêutica brasileira padronizada"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "20"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "marketing-authorization-holder" ] ;
+     fhir:display [ fhir:v "Detentor do Registro" ] ;
+     fhir:definition [ fhir:v "Empresa responsável pelo registro do medicamento junto à ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "pharmaceutical-form" ] ;
+     fhir:display [ fhir:v "Forma Farmacêutica" ] ;
+     fhir:definition [ fhir:v "Forma física final do medicamento (comprimido, cápsula, solução, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "legal-status" ] ;
+     fhir:display [ fhir:v "Status Legal de Dispensação" ] ;
+     fhir:definition [ fhir:v "Classificação legal para dispensação (prescrição médica, venda livre, controlado)" ]
+  ] [
+     fhir:code [ fhir:v "package" ] ;
+     fhir:display [ fhir:v "Embalagem" ] ;
+     fhir:definition [ fhir:v "Sistema de acondicionamento do produto farmacêutico" ]
+  ] [
+     fhir:code [ fhir:v "container" ] ;
+     fhir:display [ fhir:v "Recipiente" ] ;
+     fhir:definition [ fhir:v "Recipiente primário que contém diretamente o medicamento" ]
+  ] [
+     fhir:code [ fhir:v "strength" ] ;
+     fhir:display [ fhir:v "Concentração" ] ;
+     fhir:definition [ fhir:v "Quantidade de substância ativa por unidade de dosagem" ]
+  ] [
+     fhir:code [ fhir:v "dosage" ] ;
+     fhir:display [ fhir:v "Dosagem" ] ;
+     fhir:definition [ fhir:v "Quantidade específica de medicamento a ser administrada" ]
+  ] [
+     fhir:code [ fhir:v "active-substance" ] ;
+     fhir:display [ fhir:v "Substância Ativa" ] ;
+     fhir:definition [ fhir:v "Componente farmacologicamente ativo do medicamento" ]
+  ] [
+     fhir:code [ fhir:v "excipient" ] ;
+     fhir:display [ fhir:v "Excipiente" ] ;
+     fhir:definition [ fhir:v "Componente inativo do medicamento" ]
+  ] [
+     fhir:code [ fhir:v "route-administration" ] ;
+     fhir:display [ fhir:v "Via de Administração" ] ;
+     fhir:definition [ fhir:v "Método pelo qual o medicamento é introduzido no organismo" ]
+  ] [
+     fhir:code [ fhir:v "therapeutic-indication" ] ;
+     fhir:display [ fhir:v "Indicação Terapêutica" ] ;
+     fhir:definition [ fhir:v "Condição médica para a qual o medicamento é indicado" ]
+  ] [
+     fhir:code [ fhir:v "contraindication" ] ;
+     fhir:display [ fhir:v "Contraindicação" ] ;
+     fhir:definition [ fhir:v "Situação em que o medicamento não deve ser usado" ]
+  ] [
+     fhir:code [ fhir:v "adverse-reaction" ] ;
+     fhir:display [ fhir:v "Reação Adversa" ] ;
+     fhir:definition [ fhir:v "Efeito indesejado relacionado ao uso do medicamento" ]
+  ] [
+     fhir:code [ fhir:v "presentation-unit" ] ;
+     fhir:display [ fhir:v "Unidade de Apresentação" ] ;
+     fhir:definition [ fhir:v "Unidade individual do medicamento (comprimido, cápsula, ampola, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "commercial-package" ] ;
+     fhir:display [ fhir:v "Embalagem Comercial" ] ;
+     fhir:definition [ fhir:v "Embalagem final para comercialização do produto" ]
+  ] [
+     fhir:code [ fhir:v "primary-package" ] ;
+     fhir:display [ fhir:v "Embalagem Primária" ] ;
+     fhir:definition [ fhir:v "Embalagem em contato direto com o medicamento" ]
+  ] [
+     fhir:code [ fhir:v "secondary-package" ] ;
+     fhir:display [ fhir:v "Embalagem Secundária" ] ;
+     fhir:definition [ fhir:v "Embalagem que contém a embalagem primária" ]
+  ] [
+     fhir:code [ fhir:v "batch-lot" ] ;
+     fhir:display [ fhir:v "Lote" ] ;
+     fhir:definition [ fhir:v "Quantidade de produto fabricada em condições uniformes" ]
+  ] [
+     fhir:code [ fhir:v "expiry-date" ] ;
+     fhir:display [ fhir:v "Data de Validade" ] ;
+     fhir:definition [ fhir:v "Data limite para uso seguro do medicamento" ]
+  ] [
+     fhir:code [ fhir:v "storage-conditions" ] ;
+     fhir:display [ fhir:v "Condições de Armazenamento" ] ;
+     fhir:definition [ fhir:v "Requisitos específicos para conservação do medicamento" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

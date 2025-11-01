@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="exemplo-codesystem-brasileiro"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: CodeSystem exemplo-codesystem-brasileiro</b></p><a name="exemplo-codesystem-brasileiro"> </a><a name="hcexemplo-codesystem-brasileiro"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-codesystem-brasileiro</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">detentor-registro<a name="exemplo-codesystem-brasileiro-detentor-registro"> </a></td><td>Detentor do Registro</td><td>Empresa responsável pelo registro do medicamento junto à ANVISA</td></tr><tr><td style="white-space:nowrap">forma-farmaceutica<a name="exemplo-codesystem-brasileiro-forma-farmaceutica"> </a></td><td>Forma Farmacêutica</td><td>Forma física final do medicamento conforme padrões brasileiros</td></tr><tr><td style="white-space:nowrap">concentracao<a name="exemplo-codesystem-brasileiro-concentracao"> </a></td><td>Concentração</td><td>Quantidade de substância ativa por unidade de dosagem</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-codesystem-brasileiro"/>
+  <version value="0.0.2"/>
+  <name value="ExemploCodeSystemBrasileiro"/>
+  <title value="Exemplo de CodeSystem Brasileiro"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos de exemplo com terminologia farmacêutica brasileira padronizada"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Exemplificar sistema de códigos com terminologia brasileira adequada"/>
+  <copyright value="Copyright © 2025 BRIG Brasil. Códigos em português brasileiro."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="detentor-registro"/>
+    <display value="Detentor do Registro"/>
+    <definition value="Empresa responsável pelo registro do medicamento junto à ANVISA"/>
+  </concept>
+  <concept>
+    <code value="forma-farmaceutica"/>
+    <display value="Forma Farmacêutica"/>
+    <definition value="Forma física final do medicamento conforme padrões brasileiros"/>
+  </concept>
+  <concept>
+    <code value="concentracao"/>
+    <display value="Concentração"/>
+    <definition value="Quantidade de substância ativa por unidade de dosagem"/>
+  </concept>
+</CodeSystem>

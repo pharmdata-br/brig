@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicinalProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="dipirona-500mg-comp"/>
+  <meta>
+    <lastUpdated value="2025-08-02T10:00:00Z"/>
+    <profile value="http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Dipirona Sódica Neo Química 500mg</h2><p><strong>Registro ANVISA:</strong> 1.0123.4567.001-8</p><p><strong>Forma farmacêutica:</strong> Comprimidos</p><p><strong>Via de administração:</strong> Oral</p><p><strong>Dosagem:</strong> 500mg por comprimido</p><p><strong>Embalagem:</strong> 20 comprimidos</p><p><strong>Status:</strong> Ativo para comercialização</p><p><strong>Classificação:</strong> Medicamento de venda livre</p><p><strong>Indicações:</strong> Analgésico e antitérmico</p><p><strong>Fabricante:</strong> Neo Química Brasil</p></div>
+  </text>
+  <identifier>
+    <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br"/>
+    <value value="BR-NEO-001234"/>
+  </identifier>
+  <identifier>
+    <system value="http://anvisa.gov.br/medicamentos/registro"/>
+    <value value="1.0123.4567.001-8"/>
+  </identifier>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/gs1"/>
+    <value value="7891234567890"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br"/>
+      <code value="medicamento"/>
+    </coding>
+  </type>
+  <combinedPharmaceuticalDoseForm>
+    <coding>
+      <system value="http://standardterms.edqm.eu"/>
+      <code value="10219000"/>
+      <display value="Tablet"/>
+    </coding>
+  </combinedPharmaceuticalDoseForm>
+  <route>
+    <coding>
+      <system value="http://standardterms.edqm.eu"/>
+      <code value="20053000"/>
+      <display value="Oral use"/>
+    </coding>
+  </route>
+  <indication value="Dor e febre"/>
+  <legalStatusOfSupply>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"/>
+      <code value="venda-livre"/>
+    </coding>
+  </legalStatusOfSupply>
+  <classification>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="N02BB02"/>
+      <display value="Metamizole sodium"/>
+    </coding>
+  </classification>
+  <marketingStatus>
+    <country>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="BR"/>
+      </coding>
+    </country>
+    <status>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br"/>
+        <code value="active"/>
+      </coding>
+    </status>
+    <dateRange>
+      <start value="2020-03-15"/>
+    </dateRange>
+  </marketingStatus>
+  <contact>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br"/>
+        <code value="regulatory-affairs"/>
+      </coding>
+    </type>
+    <contact>
+      <reference value="OrganizationANVISASimple/neo-quimica-brasil"/>
+    </contact>
+  </contact>
+  <name>
+    <productName value="Dipirona Sódica Neo Química"/>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br"/>
+        <code value="commercial"/>
+      </coding>
+    </type>
+  </name>
+  <name>
+    <productName value="Dipirona Sódica"/>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br"/>
+        <code value="scientific"/>
+      </coding>
+    </type>
+  </name>
+  <characteristic>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/medicinal-product-type"/>
+        <code value="GenericProduct"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+        <code value="GENRL"/>
+        <display value="generic"/>
+      </coding>
+    </valueCodeableConcept>
+  </characteristic>
+</MedicinalProductDefinition>

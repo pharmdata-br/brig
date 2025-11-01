@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "substance-code-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet substance-code-br</b></p><a name=\"substance-code-br\"> </a><a name=\"hcsubstance-code-br\"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir todos os códigos definidos em <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a></li><li>Incluir códigos de<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> onde concept  é um 105590001 (Substance)</li><li>Incluir todos os códigos definidos em <a href=\"CodeSystem-anvisa-substance-code.html\"><code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-code-br",
+  "version" : "0.0.2",
+  "name" : "SubstanceCodeBR",
+  "title" : "Códigos de Substância - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Códigos padronizados para substâncias no contexto brasileiro",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "105590001"
+      }]
+    },
+    {
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code"
+    }]
+  }
+}

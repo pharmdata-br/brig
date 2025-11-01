@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-MedicinalProductDefinition-br-inv-key</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<h4>Restrições</h4>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grau</b></td><td><b>Caminho(s)</b></td><td><b>Detalhes</b></td><td><b>Requisitos</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>MedicinalProductDefinition</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>MedicinalProductDefinition</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>MedicinalProductDefinition</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>MedicinalProductDefinition</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>MedicinalProductDefinition</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>mpd-br-002</td><td>warning</td><td>MedicinalProductDefinition</td><td>Produtos genéricos devem ter a extensão generic-reference preenchida<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/anvisa-category' and valueCodeableConcept.coding.code = 'generic').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/generic-reference').exists()</td><td></td></tr>
+<tr><td>mpd-br-003</td><td>warning</td><td>MedicinalProductDefinition</td><td>Registro ANVISA deve seguir padrão brasileiro<br/>: identifier.where(system = 'http://anvisa.gov.br/medicamentos/registro').value.matches('^[0-9]{1}\.[0-9]{4}\.[0-9]{4}\.[0-9]{3}-[0-9]{1}$')</td><td></td></tr>
+<tr><td>mpd-br-004</td><td>warning</td><td>MedicinalProductDefinition</td><td>Mudança em indicações terapêuticas definidoras requer novo MPID<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/therapeutic-indications-defining').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/therapeutic-indications-defining').all(valueCodeableConcept.exists())</td><td></td></tr>
+<tr><td>mpd-br-005</td><td>warning</td><td>MedicinalProductDefinition</td><td>Mudança em status legal definidor requer novo MPID<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/legal-status-defining').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/legal-status-defining').valueCodeableConcept.exists()</td><td></td></tr>
+<tr><td>mpd-br-006</td><td>warning</td><td>MedicinalProductDefinition</td><td>Motivo de mudança deve ser consistente com tipo de elemento alterado<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').extension.where(url = 'changeReason').valueCodeableConcept.exists()</td><td></td></tr>
+<tr><td>mpd-br-007</td><td>error</td><td>MedicinalProductDefinition</td><td>MPID anterior deve ser fornecido quando há mudança que requer novo MPID<br/>: extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').extension.where(url = 'changeReason').valueCodeableConcept.coding.where(code.memberOf('http://farmaco.maxapex.net/brig/fhir/ValueSet/mpid-requiring-changes')).exists() implies extension.where(url = 'http://farmaco.maxapex.net/brig/fhir/StructureDefinition/identifier-lifecycle-rules').extension.where(url = 'previousMPID').valueString.exists()</td><td></td></tr>
+<tr><td>mpd-br-008</td><td>error</td><td>MedicinalProductDefinition</td><td>Produto deve ter pelo menos nome fantasia OU nome científico<br/>: name.where(type.coding.code = 'commercial').exists() or name.where(type.coding.code = 'scientific').exists()</td><td></td></tr>
+</table>
+</body>
+</html>

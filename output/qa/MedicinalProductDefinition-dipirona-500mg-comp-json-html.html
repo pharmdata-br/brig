@@ -1,0 +1,168 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>MedicinalProductDefinition-dipirona-500mg-comp-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json"><code style="white-space: pre; text-wrap: nowrap;" class="language-json"><a name="l17">​</a>{
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition">resourceType</a>" : "MedicinalProductDefinition",
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.id">id</a>" : "dipirona-500mg-comp",
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2025-08-02T10:00:00Z",
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+      <a style="color: Maroon" href="StructureDefinition-MedicinalProductDefinition-br.html">&#x1F517;</a> "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;Dipirona Sódica Neo Química 500mg&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Registro ANVISA:&lt;/strong&gt; 1.0123.4567.001-8&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Forma farmacêutica:&lt;/strong&gt; Comprimidos&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Via de administração:&lt;/strong&gt; Oral&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Dosagem:&lt;/strong&gt; 500mg por comprimido&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Embalagem:&lt;/strong&gt; 20 comprimidos&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Ativo para comercialização&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Classificação:&lt;/strong&gt; Medicamento de venda livre&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Indicações:&lt;/strong&gt; Analgésico e antitérmico&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fabricante:&lt;/strong&gt; Neo Química Brasil&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "BR-NEO-001234"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://anvisa.gov.br/medicamentos/registro",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "1.0123.4567.001-8"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://hl7.org/fhir/sid/gs1",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "7891234567890"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "medicamento"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.combinedPharmaceuticalDoseForm">combinedPharmaceuticalDoseForm</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://standardterms.edqm.eu",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "10219000",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Tablet"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.route">route</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://standardterms.edqm.eu",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "20053000",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Oral use"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.indication">indication</a>" : "Dor e febre",
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.legalStatusOfSupply">legalStatusOfSupply</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "venda-livre"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.classification">classification</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://www.whocc.no/atc",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "N02BB02",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Metamizole sodium"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.marketingStatus">marketingStatus</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.country">country</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "BR"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.status">status</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "active"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.dateRange">dateRange</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.start">start</a>" : "2020-03-15"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.contact.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "regulatory-affairs"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.contact.contact">contact</a>" : {
+        "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "OrganizationANVISASimple/neo-quimica-brasil"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name">name</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">productName</a>" : "Dipirona Sódica Neo Química",
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "commercial"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">productName</a>" : "Dipirona Sódica",
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "scientific"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.characteristic">characteristic</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.characteristic.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/medicinal-product-type",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "GenericProduct"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.characteristic.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "GENRL",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "generic"
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+</body>
+</html>

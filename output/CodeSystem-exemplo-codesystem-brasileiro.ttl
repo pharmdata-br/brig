@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-codesystem-brasileiro> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "exemplo-codesystem-brasileiro"] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem exemplo-codesystem-brasileiro</b></p><a name=\"exemplo-codesystem-brasileiro\"> </a><a name=\"hcexemplo-codesystem-brasileiro\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-codesystem-brasileiro</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">detentor-registro<a name=\"exemplo-codesystem-brasileiro-detentor-registro\"> </a></td><td>Detentor do Registro</td><td>Empresa responsável pelo registro do medicamento junto à ANVISA</td></tr><tr><td style=\"white-space:nowrap\">forma-farmaceutica<a name=\"exemplo-codesystem-brasileiro-forma-farmaceutica\"> </a></td><td>Forma Farmacêutica</td><td>Forma física final do medicamento conforme padrões brasileiros</td></tr><tr><td style=\"white-space:nowrap\">concentracao<a name=\"exemplo-codesystem-brasileiro-concentracao\"> </a></td><td>Concentração</td><td>Quantidade de substância ativa por unidade de dosagem</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:link <http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-codesystem-brasileiro"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.2"] ; # 
+  fhir:name [ fhir:v "ExemploCodeSystemBrasileiro"] ; # 
+  fhir:title [ fhir:v "Exemplo de CodeSystem Brasileiro"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Eugênio Neves"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Eugênio Neves" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://farmaco.maxapex.net/brig/fhir" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos de exemplo com terminologia farmacêutica brasileira padronizada"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:purpose [ fhir:v "Exemplificar sistema de códigos com terminologia brasileira adequada"] ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 BRIG Brasil. Códigos em português brasileiro."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "detentor-registro" ] ;
+     fhir:display [ fhir:v "Detentor do Registro" ] ;
+     fhir:definition [ fhir:v "Empresa responsável pelo registro do medicamento junto à ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "forma-farmaceutica" ] ;
+     fhir:display [ fhir:v "Forma Farmacêutica" ] ;
+     fhir:definition [ fhir:v "Forma física final do medicamento conforme padrões brasileiros" ]
+  ] [
+     fhir:code [ fhir:v "concentracao" ] ;
+     fhir:display [ fhir:v "Concentração" ] ;
+     fhir:definition [ fhir:v "Quantidade de substância ativa por unidade de dosagem" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

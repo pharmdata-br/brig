@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="legal-status-supply-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem legal-status-supply-br</b></p><a name="legal-status-supply-br"> </a><a name="hclegal-status-supply-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">venda-livre<a name="legal-status-supply-br-venda-livre"> </a></td><td>Venda Livre</td><td>Medicamento de venda livre, sem necessidade de prescrição médica</td></tr><tr><td style="white-space:nowrap">prescricao-medica<a name="legal-status-supply-br-prescricao-medica"> </a></td><td>Prescrição Médica</td><td>Medicamento que requer prescrição médica para dispensação</td></tr><tr><td style="white-space:nowrap">prescricao-medica-renovavel<a name="legal-status-supply-br-prescricao-medica-renovavel"> </a></td><td>Prescrição Médica Renovável</td><td>Medicamento com prescrição médica que permite renovação</td></tr><tr><td style="white-space:nowrap">receita-especial<a name="legal-status-supply-br-receita-especial"> </a></td><td>Receita Especial</td><td>Medicamento que requer receita de controle especial</td></tr><tr><td style="white-space:nowrap">receita-azul<a name="legal-status-supply-br-receita-azul"> </a></td><td>Receita Azul</td><td>Medicamento controlado que requer receita azul (lista C1)</td></tr><tr><td style="white-space:nowrap">receita-amarela<a name="legal-status-supply-br-receita-amarela"> </a></td><td>Receita Amarela</td><td>Medicamento controlado que requer receita amarela (lista C2)</td></tr><tr><td style="white-space:nowrap">notificacao-a<a name="legal-status-supply-br-notificacao-a"> </a></td><td>Notificação A</td><td>Medicamento que requer notificação de receita A (entorpecentes)</td></tr><tr><td style="white-space:nowrap">notificacao-b<a name="legal-status-supply-br-notificacao-b"> </a></td><td>Notificação B</td><td>Medicamento que requer notificação de receita B (psicotrópicos)</td></tr><tr><td style="white-space:nowrap">uso-hospitalar<a name="legal-status-supply-br-uso-hospitalar"> </a></td><td>Uso Hospitalar</td><td>Medicamento de uso restrito a ambiente hospitalar</td></tr><tr><td style="white-space:nowrap">uso-restrito<a name="legal-status-supply-br-uso-restrito"> </a></td><td>Uso Restrito</td><td>Medicamento de uso restrito conforme regulamentação específica</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"/>
+  <version value="0.0.2"/>
+  <name value="LegalStatusSupplyBR"/>
+  <title value="Status Legal de Fornecimento - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para status legal de dispensação no contexto brasileiro"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="venda-livre"/>
+    <display value="Venda Livre"/>
+    <definition value="Medicamento de venda livre, sem necessidade de prescrição médica"/>
+  </concept>
+  <concept>
+    <code value="prescricao-medica"/>
+    <display value="Prescrição Médica"/>
+    <definition value="Medicamento que requer prescrição médica para dispensação"/>
+  </concept>
+  <concept>
+    <code value="prescricao-medica-renovavel"/>
+    <display value="Prescrição Médica Renovável"/>
+    <definition value="Medicamento com prescrição médica que permite renovação"/>
+  </concept>
+  <concept>
+    <code value="receita-especial"/>
+    <display value="Receita Especial"/>
+    <definition value="Medicamento que requer receita de controle especial"/>
+  </concept>
+  <concept>
+    <code value="receita-azul"/>
+    <display value="Receita Azul"/>
+    <definition value="Medicamento controlado que requer receita azul (lista C1)"/>
+  </concept>
+  <concept>
+    <code value="receita-amarela"/>
+    <display value="Receita Amarela"/>
+    <definition value="Medicamento controlado que requer receita amarela (lista C2)"/>
+  </concept>
+  <concept>
+    <code value="notificacao-a"/>
+    <display value="Notificação A"/>
+    <definition value="Medicamento que requer notificação de receita A (entorpecentes)"/>
+  </concept>
+  <concept>
+    <code value="notificacao-b"/>
+    <display value="Notificação B"/>
+    <definition value="Medicamento que requer notificação de receita B (psicotrópicos)"/>
+  </concept>
+  <concept>
+    <code value="uso-hospitalar"/>
+    <display value="Uso Hospitalar"/>
+    <definition value="Medicamento de uso restrito a ambiente hospitalar"/>
+  </concept>
+  <concept>
+    <code value="uso-restrito"/>
+    <display value="Uso Restrito"/>
+    <definition value="Medicamento de uso restrito conforme regulamentação específica"/>
+  </concept>
+</CodeSystem>

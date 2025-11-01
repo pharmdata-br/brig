@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="administrable-unit-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem administrable-unit-br</b></p><a name="administrable-unit-br"> </a><a name="hcadministrable-unit-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">ml-dose<a name="administrable-unit-br-ml-dose"> </a></td><td>mL por dose</td><td>Mililitros por dose administrada</td></tr><tr><td style="white-space:nowrap">dose-unitaria<a name="administrable-unit-br-dose-unitaria"> </a></td><td>Dose unitária</td><td>Uma dose completa pronta para administração</td></tr><tr><td style="white-space:nowrap">aplicacao<a name="administrable-unit-br-aplicacao"> </a></td><td>Aplicação</td><td>Uma aplicação tópica</td></tr><tr><td style="white-space:nowrap">comprimido<a name="administrable-unit-br-comprimido"> </a></td><td>Comprimido</td><td>Um comprimido pronto para administração</td></tr><tr><td style="white-space:nowrap">capsula<a name="administrable-unit-br-capsula"> </a></td><td>Cápsula</td><td>Uma cápsula pronta para administração</td></tr><tr><td style="white-space:nowrap">supositorio<a name="administrable-unit-br-supositorio"> </a></td><td>Supositório</td><td>Um supositório pronto para inserção</td></tr><tr><td style="white-space:nowrap">inalacao<a name="administrable-unit-br-inalacao"> </a></td><td>Inalação</td><td>Uma dose inalatória</td></tr><tr><td style="white-space:nowrap">borrifo<a name="administrable-unit-br-borrifo"> </a></td><td>Borrifo</td><td>Um borrifo nasal ou oral</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit-br"/>
+  <version value="0.0.2"/>
+  <name value="AdministrableUnitBR"/>
+  <title value="Unidades Administráveis - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para unidades de apresentação administrável"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="ml-dose"/>
+    <display value="mL por dose"/>
+    <definition value="Mililitros por dose administrada"/>
+  </concept>
+  <concept>
+    <code value="dose-unitaria"/>
+    <display value="Dose unitária"/>
+    <definition value="Uma dose completa pronta para administração"/>
+  </concept>
+  <concept>
+    <code value="aplicacao"/>
+    <display value="Aplicação"/>
+    <definition value="Uma aplicação tópica"/>
+  </concept>
+  <concept>
+    <code value="comprimido"/>
+    <display value="Comprimido"/>
+    <definition value="Um comprimido pronto para administração"/>
+  </concept>
+  <concept>
+    <code value="capsula"/>
+    <display value="Cápsula"/>
+    <definition value="Uma cápsula pronta para administração"/>
+  </concept>
+  <concept>
+    <code value="supositorio"/>
+    <display value="Supositório"/>
+    <definition value="Um supositório pronto para inserção"/>
+  </concept>
+  <concept>
+    <code value="inalacao"/>
+    <display value="Inalação"/>
+    <definition value="Uma dose inalatória"/>
+  </concept>
+  <concept>
+    <code value="borrifo"/>
+    <display value="Borrifo"/>
+    <definition value="Um borrifo nasal ou oral"/>
+  </concept>
+</CodeSystem>

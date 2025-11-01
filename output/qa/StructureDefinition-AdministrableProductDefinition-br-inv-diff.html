@@ -1,0 +1,15 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-AdministrableProductDefinition-br-inv-diff</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<h4>Restrições</h4>
+<table class="list">
+<tr><td width="60"><b>Id</b></td><td><b>Grau</b></td><td><b>Caminho(s)</b></td><td><b>Detalhes</b></td><td><b>Requisitos</b></td></tr>
+<tr><td>apd-br-001</td><td>error</td><td>AdministrableProductDefinition</td><td>Produto administrável deve referenciar produto medicinal brasileiro válido<br/>: formOf.all(resolve().conformsTo('http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br'))</td><td></td></tr>
+<tr><td>apd-br-002</td><td>warning</td><td>AdministrableProductDefinition</td><td>Via de administração deve ser compatível com a forma farmacêutica administrável<br/>: true</td><td></td></tr>
+</table>
+</body>
+</html>

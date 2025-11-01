@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organization-specialized-activities-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem organization-specialized-activities-br</b></p><a name="organization-specialized-activities-br"> </a><a name="hcorganization-specialized-activities-br"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-specialized-activities-br</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">controlled-substances<a name="organization-specialized-activities-br-controlled-substances"> </a></td><td>Substâncias Controladas</td><td>Manipulação de substâncias sujeitas a controle especial</td></tr><tr><td style="white-space:nowrap">sterile-production<a name="organization-specialized-activities-br-sterile-production"> </a></td><td>Produção Estéril</td><td>Produção de medicamentos estéreis</td></tr><tr><td style="white-space:nowrap">biotechnology<a name="organization-specialized-activities-br-biotechnology"> </a></td><td>Biotecnologia</td><td>Produção de medicamentos biotecnológicos</td></tr><tr><td style="white-space:nowrap">radiopharmaceuticals<a name="organization-specialized-activities-br-radiopharmaceuticals"> </a></td><td>Radiofármacos</td><td>Produção e manipulação de radiofármacos</td></tr><tr><td style="white-space:nowrap">blood-products<a name="organization-specialized-activities-br-blood-products"> </a></td><td>Hemoderivados</td><td>Produção de produtos derivados do sangue</td></tr><tr><td style="white-space:nowrap">vaccines<a name="organization-specialized-activities-br-vaccines"> </a></td><td>Vacinas</td><td>Produção de vacinas e imunobiológicos</td></tr><tr><td style="white-space:nowrap">clinical-trials<a name="organization-specialized-activities-br-clinical-trials"> </a></td><td>Ensaios Clínicos</td><td>Condução de ensaios clínicos</td></tr><tr><td style="white-space:nowrap">pharmacovigilance<a name="organization-specialized-activities-br-pharmacovigilance"> </a></td><td>Farmacovigilância</td><td>Atividades de farmacovigilância</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-specialized-activities-br"/>
+  <version value="0.0.2"/>
+  <name value="OrganizationSpecializedActivitiesBR"/>
+  <title value="Atividades Especializadas de Organização - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="Eugênio Neves"/>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eugênio Neves"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://farmaco.maxapex.net/brig/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para atividades especializadas de organizações"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="controlled-substances"/>
+    <display value="Substâncias Controladas"/>
+    <definition value="Manipulação de substâncias sujeitas a controle especial"/>
+  </concept>
+  <concept>
+    <code value="sterile-production"/>
+    <display value="Produção Estéril"/>
+    <definition value="Produção de medicamentos estéreis"/>
+  </concept>
+  <concept>
+    <code value="biotechnology"/>
+    <display value="Biotecnologia"/>
+    <definition value="Produção de medicamentos biotecnológicos"/>
+  </concept>
+  <concept>
+    <code value="radiopharmaceuticals"/>
+    <display value="Radiofármacos"/>
+    <definition value="Produção e manipulação de radiofármacos"/>
+  </concept>
+  <concept>
+    <code value="blood-products"/>
+    <display value="Hemoderivados"/>
+    <definition value="Produção de produtos derivados do sangue"/>
+  </concept>
+  <concept>
+    <code value="vaccines"/>
+    <display value="Vacinas"/>
+    <definition value="Produção de vacinas e imunobiológicos"/>
+  </concept>
+  <concept>
+    <code value="clinical-trials"/>
+    <display value="Ensaios Clínicos"/>
+    <definition value="Condução de ensaios clínicos"/>
+  </concept>
+  <concept>
+    <code value="pharmacovigilance"/>
+    <display value="Farmacovigilância"/>
+    <definition value="Atividades de farmacovigilância"/>
+  </concept>
+</CodeSystem>

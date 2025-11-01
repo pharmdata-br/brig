@@ -1,0 +1,163 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>PackagedProductDefinition-dipirona-500mg-package-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json"><code style="white-space: pre; text-wrap: nowrap;" class="language-json"><a name="l17">​</a>{
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition">resourceType</a>" : "PackagedProductDefinition",
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.id">id</a>" : "dipirona-500mg-package",
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2025-08-02T10:00:00Z",
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+      <a style="color: Maroon" href="StructureDefinition-PackagedProductDefinition-br.html">&#x1F517;</a> "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;Dipirona Sódica Neo Química 500mg - Embalagem&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;EAN/GTIN:&lt;/strong&gt; 7891234567890&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Código ANVISA:&lt;/strong&gt; PKG-DIP-500-20&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Conteúdo:&lt;/strong&gt; 20 comprimidos de 500mg&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Embalagem:&lt;/strong&gt; Caixa de papelão com blister PVC/Alumínio&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Armazenamento:&lt;/strong&gt; Temperatura ambiente&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Ativo para comercialização&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fabricante:&lt;/strong&gt; Neo Química Brasil&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Produto base:&lt;/strong&gt; Dipirona Sódica 500mg&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "BR-NEO-001234-P001"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://hl7.org/fhir/sid/gs1",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "7891234567890"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://anvisa.gov.br/produtos/embalagem",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "PKG-DIP-500-20"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.name">name</a>" : "Dipirona Sódica Neo Química 500mg - Caixa 20 comprimidos",
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "medicamento"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packageFor">packageFor</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinitionBR/dipirona-500mg-comp"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.legalStatusOfSupply">legalStatusOfSupply</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.legalStatusOfSupply.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "venda-livre"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.marketingStatus">marketingStatus</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.country">country</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "BR"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.status">status</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "active"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.dateRange">dateRange</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.start">start</a>" : "2020-03-15"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.manufacturer">manufacturer</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "OrganizationANVISASimple/neo-quimica-brasil"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging">packaging</a>" : {
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.type">type</a>" : {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "caixa"
+        }
+      ]
+    },
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.quantity">quantity</a>" : 1,
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.material">material</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "papel"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "plastico"
+          }
+        ]
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem">containedItem</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.item">item</a>" : {
+          "<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item-br",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "dipirona-comp-500mg",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Dipirona Sódica 500mg comprimido"
+              }
+            ]
+          }
+        },
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.amount">amount</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 20,
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a>" : "comprimido",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a>" : "{tab}"
+        }
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.characteristic">characteristic</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.property.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "armazenamento",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Condições de armazenamento"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.property.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "temperatura-ambiente",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Temperatura ambiente"
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+</body>
+</html>

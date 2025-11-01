@@ -1,0 +1,139 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "identifier-change-reason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem identifier-change-reason</b></p><a name=\"identifier-change-reason\"> </a><a name=\"hcidentifier-change-reason\"> </a><p>Este case-sensitive sistema de código <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">mah-transfer<a name=\"identifier-change-reason-mah-transfer\"> </a></td><td>Transferência de Titular</td><td>Mudança do titular da autorização de marketing</td></tr><tr><td style=\"white-space:nowrap\">legal-status-change<a name=\"identifier-change-reason-legal-status-change\"> </a></td><td>Mudança de Status Legal</td><td>Alteração do status legal de fornecimento (prescrição, OTC, controlado)</td></tr><tr><td style=\"white-space:nowrap\">indication-change<a name=\"identifier-change-reason-indication-change\"> </a></td><td>Mudança de Indicação Terapêutica</td><td>Adição, remoção ou modificação significativa de indicações terapêuticas</td></tr><tr><td style=\"white-space:nowrap\">strength-change<a name=\"identifier-change-reason-strength-change\"> </a></td><td>Mudança de Concentração</td><td>Alteração na concentração ou força da substância ativa</td></tr><tr><td style=\"white-space:nowrap\">form-change<a name=\"identifier-change-reason-form-change\"> </a></td><td>Mudança de Forma Farmacêutica</td><td>Alteração da forma farmacêutica do produto</td></tr><tr><td style=\"white-space:nowrap\">route-change<a name=\"identifier-change-reason-route-change\"> </a></td><td>Mudança de Via de Administração</td><td>Adição, remoção ou modificação das vias de administração</td></tr><tr><td style=\"white-space:nowrap\">substance-change<a name=\"identifier-change-reason-substance-change\"> </a></td><td>Mudança de Substância Ativa</td><td>Alteração, adição ou remoção de substância ativa</td></tr><tr><td style=\"white-space:nowrap\">package-change<a name=\"identifier-change-reason-package-change\"> </a></td><td>Mudança de Embalagem</td><td>Alteração significativa na embalagem primária ou secundária</td></tr><tr><td style=\"white-space:nowrap\">container-change<a name=\"identifier-change-reason-container-change\"> </a></td><td>Mudança de Container</td><td>Alteração do tipo ou material do container primário</td></tr><tr><td style=\"white-space:nowrap\">quantity-change<a name=\"identifier-change-reason-quantity-change\"> </a></td><td>Mudança de Quantidade</td><td>Alteração da quantidade de unidades por embalagem</td></tr><tr><td style=\"white-space:nowrap\">component-change<a name=\"identifier-change-reason-component-change\"> </a></td><td>Mudança de Componente</td><td>Adição, remoção ou modificação de componentes da embalagem</td></tr><tr><td style=\"white-space:nowrap\">regulatory-requirement<a name=\"identifier-change-reason-regulatory-requirement\"> </a></td><td>Exigência Regulatória</td><td>Mudança requerida por autoridade regulatória</td></tr><tr><td style=\"white-space:nowrap\">safety-update<a name=\"identifier-change-reason-safety-update\"> </a></td><td>Atualização de Segurança</td><td>Mudança motivada por questões de segurança</td></tr><tr><td style=\"white-space:nowrap\">quality-improvement<a name=\"identifier-change-reason-quality-improvement\"> </a></td><td>Melhoria de Qualidade</td><td>Mudança para melhoramento da qualidade do produto</td></tr><tr><td style=\"white-space:nowrap\">brand-change<a name=\"identifier-change-reason-brand-change\"> </a></td><td>Mudança de Marca</td><td>Alteração da marca comercial do produto</td></tr><tr><td style=\"white-space:nowrap\">manufacturer-change<a name=\"identifier-change-reason-manufacturer-change\"> </a></td><td>Mudança de Fabricante</td><td>Alteração do fabricante responsável</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://farmaco.maxapex.net/brig/fhir/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason",
+  "version" : "0.0.2",
+  "name" : "IdentifierChangeReason",
+  "title" : "Motivos de Mudança de Identificador",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "Eugênio Neves",
+  "contact" : [{
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "Eugênio Neves",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://farmaco.maxapex.net/brig/fhir"
+    }]
+  }],
+  "description" : "Sistema de códigos para motivos de mudança de identificadores MPID/PCID",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 16,
+  "concept" : [{
+    "code" : "mah-transfer",
+    "display" : "Transferência de Titular",
+    "definition" : "Mudança do titular da autorização de marketing"
+  },
+  {
+    "code" : "legal-status-change",
+    "display" : "Mudança de Status Legal",
+    "definition" : "Alteração do status legal de fornecimento (prescrição, OTC, controlado)"
+  },
+  {
+    "code" : "indication-change",
+    "display" : "Mudança de Indicação Terapêutica",
+    "definition" : "Adição, remoção ou modificação significativa de indicações terapêuticas"
+  },
+  {
+    "code" : "strength-change",
+    "display" : "Mudança de Concentração",
+    "definition" : "Alteração na concentração ou força da substância ativa"
+  },
+  {
+    "code" : "form-change",
+    "display" : "Mudança de Forma Farmacêutica",
+    "definition" : "Alteração da forma farmacêutica do produto"
+  },
+  {
+    "code" : "route-change",
+    "display" : "Mudança de Via de Administração",
+    "definition" : "Adição, remoção ou modificação das vias de administração"
+  },
+  {
+    "code" : "substance-change",
+    "display" : "Mudança de Substância Ativa",
+    "definition" : "Alteração, adição ou remoção de substância ativa"
+  },
+  {
+    "code" : "package-change",
+    "display" : "Mudança de Embalagem",
+    "definition" : "Alteração significativa na embalagem primária ou secundária"
+  },
+  {
+    "code" : "container-change",
+    "display" : "Mudança de Container",
+    "definition" : "Alteração do tipo ou material do container primário"
+  },
+  {
+    "code" : "quantity-change",
+    "display" : "Mudança de Quantidade",
+    "definition" : "Alteração da quantidade de unidades por embalagem"
+  },
+  {
+    "code" : "component-change",
+    "display" : "Mudança de Componente",
+    "definition" : "Adição, remoção ou modificação de componentes da embalagem"
+  },
+  {
+    "code" : "regulatory-requirement",
+    "display" : "Exigência Regulatória",
+    "definition" : "Mudança requerida por autoridade regulatória"
+  },
+  {
+    "code" : "safety-update",
+    "display" : "Atualização de Segurança",
+    "definition" : "Mudança motivada por questões de segurança"
+  },
+  {
+    "code" : "quality-improvement",
+    "display" : "Melhoria de Qualidade",
+    "definition" : "Mudança para melhoramento da qualidade do produto"
+  },
+  {
+    "code" : "brand-change",
+    "display" : "Mudança de Marca",
+    "definition" : "Alteração da marca comercial do produto"
+  },
+  {
+    "code" : "manufacturer-change",
+    "display" : "Mudança de Fabricante",
+    "definition" : "Alteração do fabricante responsável"
+  }]
+}

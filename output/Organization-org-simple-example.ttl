@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://farmaco.maxapex.net/brig/fhir/Organization/org-simple-example> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "org-simple-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple"^^xsd:anyURI ;
+       fhir:link <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/Organization-anvisa-simple>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization org-simple-example</b></p><a name=\"org-simple-example\"> </a><a name=\"hcorg-simple-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-Organization-anvisa-simple.html\">Organização ANVISA - Brasil (Simplificado)</a></p></div><p><b>identifier</b>: <code>https://saude.gov.br/fhir/sid/cnpj</code>/11.222.333/0001-44, <code>http://anvisa.gov.br/afe</code>/AFE111222333</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Organização Simples Ltda</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://saude.gov.br/fhir/sid/cnpj"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "11.222.333/0001-44" ]
+  ] [
+     fhir:system [ fhir:v "http://anvisa.gov.br/afe"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "AFE111222333" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "prov" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Organização Simples Ltda"] . # 
+
+# -------------------------------------------------------------------------------------
+
