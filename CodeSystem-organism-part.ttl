@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organism-part> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organism-part"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organism-part</b></p><a name=\"organism-part\"> </a><a name=\"hcorganism-part\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">root<a name=\"organism-part-root\"> </a></td><td>Raiz</td><td>Raiz da planta</td></tr><tr><td style=\"white-space:nowrap\">stem<a name=\"organism-part-stem\"> </a></td><td>Caule</td><td>Caule da planta</td></tr><tr><td style=\"white-space:nowrap\">leaf<a name=\"organism-part-leaf\"> </a></td><td>Folha</td><td>Folha da planta</td></tr><tr><td style=\"white-space:nowrap\">flower<a name=\"organism-part-flower\"> </a></td><td>Flor</td><td>Flor da planta</td></tr><tr><td style=\"white-space:nowrap\">fruit<a name=\"organism-part-fruit\"> </a></td><td>Fruto</td><td>Fruto da planta</td></tr><tr><td style=\"white-space:nowrap\">seed<a name=\"organism-part-seed\"> </a></td><td>Semente</td><td>Semente da planta</td></tr><tr><td style=\"white-space:nowrap\">bark<a name=\"organism-part-bark\"> </a></td><td>Casca</td><td>Casca da planta</td></tr><tr><td style=\"white-space:nowrap\">resin<a name=\"organism-part-resin\"> </a></td><td>Resina</td><td>Resina ou exsudato</td></tr><tr><td style=\"white-space:nowrap\">whole-organism<a name=\"organism-part-whole-organism\"> </a></td><td>Organismo Inteiro</td><td>Organismo completo</td></tr><tr><td style=\"white-space:nowrap\">blood<a name=\"organism-part-blood\"> </a></td><td>Sangue</td><td>Sangue ou plasma</td></tr><tr><td style=\"white-space:nowrap\">tissue<a name=\"organism-part-tissue\"> </a></td><td>Tecido</td><td>Tecido específico</td></tr><tr><td style=\"white-space:nowrap\">organ<a name=\"organism-part-organ\"> </a></td><td>Órgão</td><td>Órgão específico</td></tr><tr><td style=\"white-space:nowrap\">gland<a name=\"organism-part-gland\"> </a></td><td>Glândula</td><td>Secreção glandular</td></tr><tr><td style=\"white-space:nowrap\">whole-cell<a name=\"organism-part-whole-cell\"> </a></td><td>Célula Inteira</td><td>Célula microbiana inteira</td></tr><tr><td style=\"white-space:nowrap\">cell-wall<a name=\"organism-part-cell-wall\"> </a></td><td>Parede Celular</td><td>Parede celular</td></tr><tr><td style=\"white-space:nowrap\">cell-culture<a name=\"organism-part-cell-culture\"> </a></td><td>Cultura Celular</td><td>Produto de cultura celular</td></tr><tr><td style=\"white-space:nowrap\">fermentation-broth<a name=\"organism-part-fermentation-broth\"> </a></td><td>Caldo de Fermentação</td><td>Caldo de fermentação microbiana</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organism-part"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organism-part>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "OrganismPart"] ; # 
+  fhir:title [ fhir:v "Parte do Organismo"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Partes de organismos usadas como fonte de substâncias"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "17"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "root" ] ;
+     fhir:display [ fhir:v "Raiz" ] ;
+     fhir:definition [ fhir:v "Raiz da planta" ]
+  ] [
+     fhir:code [ fhir:v "stem" ] ;
+     fhir:display [ fhir:v "Caule" ] ;
+     fhir:definition [ fhir:v "Caule da planta" ]
+  ] [
+     fhir:code [ fhir:v "leaf" ] ;
+     fhir:display [ fhir:v "Folha" ] ;
+     fhir:definition [ fhir:v "Folha da planta" ]
+  ] [
+     fhir:code [ fhir:v "flower" ] ;
+     fhir:display [ fhir:v "Flor" ] ;
+     fhir:definition [ fhir:v "Flor da planta" ]
+  ] [
+     fhir:code [ fhir:v "fruit" ] ;
+     fhir:display [ fhir:v "Fruto" ] ;
+     fhir:definition [ fhir:v "Fruto da planta" ]
+  ] [
+     fhir:code [ fhir:v "seed" ] ;
+     fhir:display [ fhir:v "Semente" ] ;
+     fhir:definition [ fhir:v "Semente da planta" ]
+  ] [
+     fhir:code [ fhir:v "bark" ] ;
+     fhir:display [ fhir:v "Casca" ] ;
+     fhir:definition [ fhir:v "Casca da planta" ]
+  ] [
+     fhir:code [ fhir:v "resin" ] ;
+     fhir:display [ fhir:v "Resina" ] ;
+     fhir:definition [ fhir:v "Resina ou exsudato" ]
+  ] [
+     fhir:code [ fhir:v "whole-organism" ] ;
+     fhir:display [ fhir:v "Organismo Inteiro" ] ;
+     fhir:definition [ fhir:v "Organismo completo" ]
+  ] [
+     fhir:code [ fhir:v "blood" ] ;
+     fhir:display [ fhir:v "Sangue" ] ;
+     fhir:definition [ fhir:v "Sangue ou plasma" ]
+  ] [
+     fhir:code [ fhir:v "tissue" ] ;
+     fhir:display [ fhir:v "Tecido" ] ;
+     fhir:definition [ fhir:v "Tecido específico" ]
+  ] [
+     fhir:code [ fhir:v "organ" ] ;
+     fhir:display [ fhir:v "Órgão" ] ;
+     fhir:definition [ fhir:v "Órgão específico" ]
+  ] [
+     fhir:code [ fhir:v "gland" ] ;
+     fhir:display [ fhir:v "Glândula" ] ;
+     fhir:definition [ fhir:v "Secreção glandular" ]
+  ] [
+     fhir:code [ fhir:v "whole-cell" ] ;
+     fhir:display [ fhir:v "Célula Inteira" ] ;
+     fhir:definition [ fhir:v "Célula microbiana inteira" ]
+  ] [
+     fhir:code [ fhir:v "cell-wall" ] ;
+     fhir:display [ fhir:v "Parede Celular" ] ;
+     fhir:definition [ fhir:v "Parede celular" ]
+  ] [
+     fhir:code [ fhir:v "cell-culture" ] ;
+     fhir:display [ fhir:v "Cultura Celular" ] ;
+     fhir:definition [ fhir:v "Produto de cultura celular" ]
+  ] [
+     fhir:code [ fhir:v "fermentation-broth" ] ;
+     fhir:display [ fhir:v "Caldo de Fermentação" ] ;
+     fhir:definition [ fhir:v "Caldo de fermentação microbiana" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

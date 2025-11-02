@@ -1,0 +1,108 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "source-material-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem source-material-type</b></p><a name=\"source-material-type\"> </a><a name=\"hcsource-material-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">animal<a name=\"source-material-type-animal\"> </a></td><td>Animal</td><td>Origem animal</td></tr><tr><td style=\"white-space:nowrap\">plant<a name=\"source-material-type-plant\"> </a></td><td>Vegetal</td><td>Origem vegetal</td></tr><tr><td style=\"white-space:nowrap\">microbial<a name=\"source-material-type-microbial\"> </a></td><td>Microbiano</td><td>Origem microbiana (bactérias, fungos, leveduras)</td></tr><tr><td style=\"white-space:nowrap\">mineral<a name=\"source-material-type-mineral\"> </a></td><td>Mineral</td><td>Origem mineral</td></tr><tr><td style=\"white-space:nowrap\">synthetic<a name=\"source-material-type-synthetic\"> </a></td><td>Sintético</td><td>Origem sintética</td></tr><tr><td style=\"white-space:nowrap\">semi-synthetic<a name=\"source-material-type-semi-synthetic\"> </a></td><td>Semi-sintético</td><td>Origem semi-sintética (modificação de produto natural)</td></tr><tr><td style=\"white-space:nowrap\">human<a name=\"source-material-type-human\"> </a></td><td>Humano</td><td>Origem humana</td></tr><tr><td style=\"white-space:nowrap\">biotechnology<a name=\"source-material-type-biotechnology\"> </a></td><td>Biotecnologia</td><td>Produzido por biotecnologia (recombinante)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/source-material-type",
+  "version" : "0.0.3",
+  "name" : "SourceMaterialType",
+  "title" : "Tipo de Material de Origem",
+  "status" : "active",
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Tipos de material de origem para substâncias biológicas",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "animal",
+    "display" : "Animal",
+    "definition" : "Origem animal"
+  },
+  {
+    "code" : "plant",
+    "display" : "Vegetal",
+    "definition" : "Origem vegetal"
+  },
+  {
+    "code" : "microbial",
+    "display" : "Microbiano",
+    "definition" : "Origem microbiana (bactérias, fungos, leveduras)"
+  },
+  {
+    "code" : "mineral",
+    "display" : "Mineral",
+    "definition" : "Origem mineral"
+  },
+  {
+    "code" : "synthetic",
+    "display" : "Sintético",
+    "definition" : "Origem sintética"
+  },
+  {
+    "code" : "semi-synthetic",
+    "display" : "Semi-sintético",
+    "definition" : "Origem semi-sintética (modificação de produto natural)"
+  },
+  {
+    "code" : "human",
+    "display" : "Humano",
+    "definition" : "Origem humana"
+  },
+  {
+    "code" : "biotechnology",
+    "display" : "Biotecnologia",
+    "definition" : "Produzido por biotecnologia (recombinante)"
+  }]
+}

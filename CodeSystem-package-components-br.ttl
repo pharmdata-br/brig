@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-components-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "package-components-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem package-components-br</b></p><a name=\"package-components-br\"> </a><a name=\"hcpackage-components-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">cap<a name=\"package-components-br-cap\"> </a></td><td>Tampa</td><td>Tampa roscada ou encaixe</td></tr><tr><td style=\"white-space:nowrap\">lid<a name=\"package-components-br-lid\"> </a></td><td>Lacre</td><td>Lacre de segurança</td></tr><tr><td style=\"white-space:nowrap\">stopper<a name=\"package-components-br-stopper\"> </a></td><td>Rolha</td><td>Rolha de borracha ou plástico</td></tr><tr><td style=\"white-space:nowrap\">closure<a name=\"package-components-br-closure\"> </a></td><td>Fechamento</td><td>Sistema de fechamento genérico</td></tr><tr><td style=\"white-space:nowrap\">label<a name=\"package-components-br-label\"> </a></td><td>Rótulo</td><td>Rótulo com informações do produto</td></tr><tr><td style=\"white-space:nowrap\">insert<a name=\"package-components-br-insert\"> </a></td><td>Bula</td><td>Bula ou folheto informativo</td></tr><tr><td style=\"white-space:nowrap\">leaflet<a name=\"package-components-br-leaflet\"> </a></td><td>Folheto</td><td>Folheto informativo adicional</td></tr><tr><td style=\"white-space:nowrap\">barcode<a name=\"package-components-br-barcode\"> </a></td><td>Código de barras</td><td>Etiqueta com código de barras</td></tr><tr><td style=\"white-space:nowrap\">desiccant<a name=\"package-components-br-desiccant\"> </a></td><td>Dessecante</td><td>Sachê ou pastilha dessecante</td></tr><tr><td style=\"white-space:nowrap\">cotton<a name=\"package-components-br-cotton\"> </a></td><td>Algodão</td><td>Algodão protetor</td></tr><tr><td style=\"white-space:nowrap\">separator<a name=\"package-components-br-separator\"> </a></td><td>Separador</td><td>Divisória ou separador interno</td></tr><tr><td style=\"white-space:nowrap\">applicator<a name=\"package-components-br-applicator\"> </a></td><td>Aplicador</td><td>Dispositivo aplicador</td></tr><tr><td style=\"white-space:nowrap\">seal<a name=\"package-components-br-seal\"> </a></td><td>Selo</td><td>Selo de proteção ou inviolabilidade</td></tr><tr><td style=\"white-space:nowrap\">shrink-wrap<a name=\"package-components-br-shrink-wrap\"> </a></td><td>Filme plástico</td><td>Filme plástico termocontrátil</td></tr><tr><td style=\"white-space:nowrap\">protective-cap<a name=\"package-components-br-protective-cap\"> </a></td><td>Tampa protetora</td><td>Tampa protetora adicional</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-components-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-components-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "PackageComponentsBR"] ; # 
+  fhir:title [ fhir:v "Componentes de Embalagem - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para componentes de embalagens brasileiras"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cap" ] ;
+     fhir:display [ fhir:v "Tampa" ] ;
+     fhir:definition [ fhir:v "Tampa roscada ou encaixe" ]
+  ] [
+     fhir:code [ fhir:v "lid" ] ;
+     fhir:display [ fhir:v "Lacre" ] ;
+     fhir:definition [ fhir:v "Lacre de segurança" ]
+  ] [
+     fhir:code [ fhir:v "stopper" ] ;
+     fhir:display [ fhir:v "Rolha" ] ;
+     fhir:definition [ fhir:v "Rolha de borracha ou plástico" ]
+  ] [
+     fhir:code [ fhir:v "closure" ] ;
+     fhir:display [ fhir:v "Fechamento" ] ;
+     fhir:definition [ fhir:v "Sistema de fechamento genérico" ]
+  ] [
+     fhir:code [ fhir:v "label" ] ;
+     fhir:display [ fhir:v "Rótulo" ] ;
+     fhir:definition [ fhir:v "Rótulo com informações do produto" ]
+  ] [
+     fhir:code [ fhir:v "insert" ] ;
+     fhir:display [ fhir:v "Bula" ] ;
+     fhir:definition [ fhir:v "Bula ou folheto informativo" ]
+  ] [
+     fhir:code [ fhir:v "leaflet" ] ;
+     fhir:display [ fhir:v "Folheto" ] ;
+     fhir:definition [ fhir:v "Folheto informativo adicional" ]
+  ] [
+     fhir:code [ fhir:v "barcode" ] ;
+     fhir:display [ fhir:v "Código de barras" ] ;
+     fhir:definition [ fhir:v "Etiqueta com código de barras" ]
+  ] [
+     fhir:code [ fhir:v "desiccant" ] ;
+     fhir:display [ fhir:v "Dessecante" ] ;
+     fhir:definition [ fhir:v "Sachê ou pastilha dessecante" ]
+  ] [
+     fhir:code [ fhir:v "cotton" ] ;
+     fhir:display [ fhir:v "Algodão" ] ;
+     fhir:definition [ fhir:v "Algodão protetor" ]
+  ] [
+     fhir:code [ fhir:v "separator" ] ;
+     fhir:display [ fhir:v "Separador" ] ;
+     fhir:definition [ fhir:v "Divisória ou separador interno" ]
+  ] [
+     fhir:code [ fhir:v "applicator" ] ;
+     fhir:display [ fhir:v "Aplicador" ] ;
+     fhir:definition [ fhir:v "Dispositivo aplicador" ]
+  ] [
+     fhir:code [ fhir:v "seal" ] ;
+     fhir:display [ fhir:v "Selo" ] ;
+     fhir:definition [ fhir:v "Selo de proteção ou inviolabilidade" ]
+  ] [
+     fhir:code [ fhir:v "shrink-wrap" ] ;
+     fhir:display [ fhir:v "Filme plástico" ] ;
+     fhir:definition [ fhir:v "Filme plástico termocontrátil" ]
+  ] [
+     fhir:code [ fhir:v "protective-cap" ] ;
+     fhir:display [ fhir:v "Tampa protetora" ] ;
+     fhir:definition [ fhir:v "Tampa protetora adicional" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

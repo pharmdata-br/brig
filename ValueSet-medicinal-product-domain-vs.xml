@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medicinal-product-domain-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet medicinal-product-domain-vs</b></p><a name="medicinal-product-domain-vs"> </a><a name="hcmedicinal-product-domain-vs"> </a><ul><li>Include todos os códigos definidos em <a href="CodeSystem-medicinal-product-domain.html"><code>https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-domain</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.0.3</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-domain-vs"/>
+  <version value="0.0.3"/>
+  <name value="MedicinalProductDomain"/>
+  <title value="Domínio de Produto Medicinal"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Domínio aplicável para o produto medicinal"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <compose>
+    <include>
+      <system value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-domain"/>
+    </include>
+  </compose>
+</ValueSet>

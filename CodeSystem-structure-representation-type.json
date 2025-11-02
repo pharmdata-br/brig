@@ -1,0 +1,108 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "structure-representation-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem structure-representation-type</b></p><a name=\"structure-representation-type\"> </a><a name=\"hcstructure-representation-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">SMILES<a name=\"structure-representation-type-SMILES\"> </a></td><td>SMILES</td><td>Simplified Molecular Input Line Entry System</td></tr><tr><td style=\"white-space:nowrap\">InChI<a name=\"structure-representation-type-InChI\"> </a></td><td>InChI</td><td>IUPAC International Chemical Identifier</td></tr><tr><td style=\"white-space:nowrap\">InChIKey<a name=\"structure-representation-type-InChIKey\"> </a></td><td>InChI Key</td><td>InChI Hash Key</td></tr><tr><td style=\"white-space:nowrap\">MOL<a name=\"structure-representation-type-MOL\"> </a></td><td>MOL File</td><td>MDL Molfile format</td></tr><tr><td style=\"white-space:nowrap\">SDF<a name=\"structure-representation-type-SDF\"> </a></td><td>SDF</td><td>Structure Data File</td></tr><tr><td style=\"white-space:nowrap\">PDB<a name=\"structure-representation-type-PDB\"> </a></td><td>PDB</td><td>Protein Data Bank format</td></tr><tr><td style=\"white-space:nowrap\">CML<a name=\"structure-representation-type-CML\"> </a></td><td>CML</td><td>Chemical Markup Language</td></tr><tr><td style=\"white-space:nowrap\">CDX<a name=\"structure-representation-type-CDX\"> </a></td><td>ChemDraw</td><td>ChemDraw format</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-representation-type",
+  "version" : "0.0.3",
+  "name" : "StructureRepresentationType",
+  "title" : "Tipo de Representação Estrutural",
+  "status" : "active",
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Formatos de representação de estruturas químicas",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "SMILES",
+    "display" : "SMILES",
+    "definition" : "Simplified Molecular Input Line Entry System"
+  },
+  {
+    "code" : "InChI",
+    "display" : "InChI",
+    "definition" : "IUPAC International Chemical Identifier"
+  },
+  {
+    "code" : "InChIKey",
+    "display" : "InChI Key",
+    "definition" : "InChI Hash Key"
+  },
+  {
+    "code" : "MOL",
+    "display" : "MOL File",
+    "definition" : "MDL Molfile format"
+  },
+  {
+    "code" : "SDF",
+    "display" : "SDF",
+    "definition" : "Structure Data File"
+  },
+  {
+    "code" : "PDB",
+    "display" : "PDB",
+    "definition" : "Protein Data Bank format"
+  },
+  {
+    "code" : "CML",
+    "display" : "CML",
+    "definition" : "Chemical Markup Language"
+  },
+  {
+    "code" : "CDX",
+    "display" : "ChemDraw",
+    "definition" : "ChemDraw format"
+  }]
+}

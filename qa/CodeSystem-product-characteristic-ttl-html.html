@@ -1,0 +1,219 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>CodeSystem-product-characteristic-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;product-characteristic&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem product-characteristic&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;product-characteristic\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcproduct-characteristic\&quot;&gt; &lt;/a&gt;&lt;p&gt;Este  sistema de código  define o seguinte código:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;color&lt;a name=\&quot;product-characteristic-color\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cor&lt;/td&gt;&lt;td&gt;Cor ou coloração do produto medicinal ou componente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;shape&lt;a name=\&quot;product-characteristic-shape\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Forma&lt;/td&gt;&lt;td&gt;Forma geométrica do produto (ex: redondo, oval, oblongo, triangular)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;size&lt;a name=\&quot;product-characteristic-size\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tamanho&lt;/td&gt;&lt;td&gt;Dimensões físicas do produto (comprimento, largura, altura, diâmetro)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;weight&lt;a name=\&quot;product-characteristic-weight\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peso&lt;/td&gt;&lt;td&gt;Massa ou peso do produto ou componente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;thickness&lt;a name=\&quot;product-characteristic-thickness\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Espessura&lt;/td&gt;&lt;td&gt;Espessura medida do produto sólido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;imprint&lt;a name=\&quot;product-characteristic-imprint\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gravação&lt;/td&gt;&lt;td&gt;Texto, código ou símbolo gravado ou impresso no produto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;score&lt;a name=\&quot;product-characteristic-score\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sulco&lt;/td&gt;&lt;td&gt;Presença, número e tipo de sulcos para divisão do produto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;coating&lt;a name=\&quot;product-characteristic-coating\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Revestimento&lt;/td&gt;&lt;td&gt;Tipo e características do revestimento (entérico, film-coated, sugar-coated)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;appearance&lt;a name=\&quot;product-characteristic-appearance\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aparência&lt;/td&gt;&lt;td&gt;Aparência visual geral do produto (brilhante, fosco, translúcido, opaco)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pack-type&lt;a name=\&quot;product-characteristic-pack-type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tipo de Embalagem&lt;/td&gt;&lt;td&gt;Tipo de embalagem primária (blister, frasco, ampola, seringa pré-preenchida)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pack-material&lt;a name=\&quot;product-characteristic-pack-material\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Material de Embalagem&lt;/td&gt;&lt;td&gt;Material da embalagem primária (PVC, vidro, HDPE, alumínio)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pack-size&lt;a name=\&quot;product-characteristic-pack-size\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tamanho de Embalagem&lt;/td&gt;&lt;td&gt;Quantidade de unidades na embalagem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;release-profile&lt;a name=\&quot;product-characteristic-release-profile\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perfil de Liberação&lt;/td&gt;&lt;td&gt;Perfil de liberação do princípio ativo (liberação imediata, prolongada, modificada)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dissolution-rate&lt;a name=\&quot;product-characteristic-dissolution-rate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Taxa de Dissolução&lt;/td&gt;&lt;td&gt;Taxa de dissolução do produto conforme especificação farmacopeica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;disintegration-time&lt;a name=\&quot;product-characteristic-disintegration-time\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tempo de Desintegração&lt;/td&gt;&lt;td&gt;Tempo de desintegração conforme especificação farmacopeica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ph&lt;a name=\&quot;product-characteristic-ph\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pH&lt;/td&gt;&lt;td&gt;Valor de pH do produto ou solução&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;osmolarity&lt;a name=\&quot;product-characteristic-osmolarity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Osmolaridade&lt;/td&gt;&lt;td&gt;Osmolaridade de soluções injetáveis ou oftálmicas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;viscosity&lt;a name=\&quot;product-characteristic-viscosity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Viscosidade&lt;/td&gt;&lt;td&gt;Viscosidade de líquidos, géis ou semissólidos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;specific-gravity&lt;a name=\&quot;product-characteristic-specific-gravity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Densidade&lt;/td&gt;&lt;td&gt;Densidade ou peso específico do produto líquido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;taste&lt;a name=\&quot;product-characteristic-taste\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sabor&lt;/td&gt;&lt;td&gt;Sabor característico do produto (para formas orais)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;odor&lt;a name=\&quot;product-characteristic-odor\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Odor&lt;/td&gt;&lt;td&gt;Odor característico do produto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;flavor&lt;a name=\&quot;product-characteristic-flavor\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aroma&lt;/td&gt;&lt;td&gt;Aroma adicionado ao produto (ex: morango, laranja, menta)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;shelf-life&lt;a name=\&quot;product-characteristic-shelf-life\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prazo de Validade&lt;/td&gt;&lt;td&gt;Prazo de validade em meses a partir da fabricação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;storage-temperature&lt;a name=\&quot;product-characteristic-storage-temperature\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Temperatura de Armazenamento&lt;/td&gt;&lt;td&gt;Faixa de temperatura para armazenamento&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;light-sensitivity&lt;a name=\&quot;product-characteristic-light-sensitivity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sensibilidade à Luz&lt;/td&gt;&lt;td&gt;Grau de sensibilidade à luz (proteger da luz, opaco, etc.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dose-strength&lt;a name=\&quot;product-characteristic-dose-strength\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potência&lt;/td&gt;&lt;td&gt;Concentração ou potência do princípio ativo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dose-volume&lt;a name=\&quot;product-characteristic-dose-volume\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume de Dose&lt;/td&gt;&lt;td&gt;Volume administrado por dose (para líquidos)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dose-unit&lt;a name=\&quot;product-characteristic-dose-unit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unidade de Dose&lt;/td&gt;&lt;td&gt;Unidade posológica (comprimido, cápsula, ml, aplicação)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bioequivalence&lt;a name=\&quot;product-characteristic-bioequivalence\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bioequivalência&lt;/td&gt;&lt;td&gt;Indicação de estudo de bioequivalência realizado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;excipient&lt;a name=\&quot;product-characteristic-excipient\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Excipiente&lt;/td&gt;&lt;td&gt;Excipientes funcionais relevantes (ex: contém lactose, glúten, corantes azóicos)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#integer">a</a> fhir:Integer ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#integer">fhir:v</a> 0 ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#integer#integer.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">a</a> fhir:Canonical ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&gt;         ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot; ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#code#code.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">a</a> fhir:Canonical ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&gt;         ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.0.3&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ProductCharacteristic&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Características de Produto Medicinal&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-30&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Características observáveis e mensuráveis de produtos medicinais. CodeSystem brasileiro como alternativa ao SNOMED CT Observable Entity.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;BR&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.purpose">fhir:purpose</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Descrever características físicas, químicas e farmacêuticas de produtos medicinais para fins de identificação, controle de qualidade e rastreabilidade&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;30&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;color&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cor ou coloração do produto medicinal ou componente&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;shape&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Forma&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Forma geométrica do produto (ex: redondo, oval, oblongo, triangular)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;size&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tamanho&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dimensões físicas do produto (comprimento, largura, altura, diâmetro)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;weight&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Peso&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Massa ou peso do produto ou componente&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;thickness&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Espessura&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Espessura medida do produto sólido&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;imprint&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Gravação&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Texto, código ou símbolo gravado ou impresso no produto&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;score&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sulco&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Presença, número e tipo de sulcos para divisão do produto&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;coating&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Revestimento&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tipo e características do revestimento (entérico, film-coated, sugar-coated)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;appearance&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aparência&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aparência visual geral do produto (brilhante, fosco, translúcido, opaco)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pack-type&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tipo de Embalagem&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tipo de embalagem primária (blister, frasco, ampola, seringa pré-preenchida)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pack-material&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Material de Embalagem&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Material da embalagem primária (PVC, vidro, HDPE, alumínio)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pack-size&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tamanho de Embalagem&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Quantidade de unidades na embalagem&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;release-profile&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Perfil de Liberação&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Perfil de liberação do princípio ativo (liberação imediata, prolongada, modificada)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;dissolution-rate&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Taxa de Dissolução&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Taxa de dissolução do produto conforme especificação farmacopeica&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;disintegration-time&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tempo de Desintegração&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tempo de desintegração conforme especificação farmacopeica&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;ph&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;pH&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valor de pH do produto ou solução&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;osmolarity&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Osmolaridade&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Osmolaridade de soluções injetáveis ou oftálmicas&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;viscosity&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Viscosidade&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Viscosidade de líquidos, géis ou semissólidos&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;specific-gravity&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Densidade&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Densidade ou peso específico do produto líquido&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;taste&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sabor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sabor característico do produto (para formas orais)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;odor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Odor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Odor característico do produto&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;flavor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aroma&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aroma adicionado ao produto (ex: morango, laranja, menta)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;shelf-life&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Prazo de Validade&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Prazo de validade em meses a partir da fabricação&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;storage-temperature&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Temperatura de Armazenamento&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Faixa de temperatura para armazenamento&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;light-sensitivity&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sensibilidade à Luz&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Grau de sensibilidade à luz (proteger da luz, opaco, etc.)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;dose-strength&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Potência&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Concentração ou potência do princípio ativo&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;dose-volume&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Volume de Dose&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Volume administrado por dose (para líquidos)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;dose-unit&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Unidade de Dose&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Unidade posológica (comprimido, cápsula, ml, aplicação)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;bioequivalence&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Bioequivalência&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Indicação de estudo de bioequivalência realizado&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;excipient&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Excipiente&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Excipientes funcionais relevantes (ex: contém lactose, glúten, corantes azóicos)&quot; ]
+  ] ) . # 
+
+</code></pre>
+
+</body>
+</html>

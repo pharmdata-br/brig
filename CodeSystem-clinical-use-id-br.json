@@ -1,0 +1,61 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "clinical-use-id-br",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem clinical-use-id-br</b></p><a name=\"clinical-use-id-br\"> </a><a name=\"hcclinical-use-id-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-id-br",
+  "version" : "0.0.3",
+  "name" : "ClinicalUseIdBR",
+  "title" : "Identificadores de Uso Clínico - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de identificadores únicos para definições de uso clínico no contexto brasileiro.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "compositional" : false,
+  "versionNeeded" : false,
+  "content" : "complete"
+}

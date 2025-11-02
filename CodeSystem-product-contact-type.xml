@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="product-contact-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem product-contact-type</b></p><a name="product-contact-type"> </a><a name="hcproduct-contact-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">regulatory-affairs<a name="product-contact-type-regulatory-affairs"> </a></td><td>Assuntos Regulatórios</td><td>Contato para questões regulatórias, registros e conformidade</td></tr><tr><td style="white-space:nowrap">pharmacovigilance<a name="product-contact-type-pharmacovigilance"> </a></td><td>Farmacovigilância</td><td>Contato para notificação de eventos adversos e questões de segurança</td></tr><tr><td style="white-space:nowrap">quality-assurance<a name="product-contact-type-quality-assurance"> </a></td><td>Garantia de Qualidade</td><td>Contato para questões de qualidade do produto e desvios</td></tr><tr><td style="white-space:nowrap">medical-information<a name="product-contact-type-medical-information"> </a></td><td>Informação Médica</td><td>Contato para informações médico-científicas sobre o produto</td></tr><tr><td style="white-space:nowrap">technical-support<a name="product-contact-type-technical-support"> </a></td><td>Suporte Técnico</td><td>Contato para suporte técnico e questões de uso do produto</td></tr><tr><td style="white-space:nowrap">supply-chain<a name="product-contact-type-supply-chain"> </a></td><td>Cadeia de Suprimentos</td><td>Contato para questões de distribuição e disponibilidade</td></tr><tr><td style="white-space:nowrap">product-complaints<a name="product-contact-type-product-complaints"> </a></td><td>Reclamações de Produto</td><td>Contato para reclamações relacionadas à qualidade ou eficácia</td></tr><tr><td style="white-space:nowrap">adverse-event-reporting<a name="product-contact-type-adverse-event-reporting"> </a></td><td>Notificação de Eventos Adversos</td><td>Contato específico para notificação de eventos adversos</td></tr><tr><td style="white-space:nowrap">quality-defect<a name="product-contact-type-quality-defect"> </a></td><td>Defeito de Qualidade</td><td>Contato para notificação de defeitos ou problemas de qualidade</td></tr><tr><td style="white-space:nowrap">general-inquiry<a name="product-contact-type-general-inquiry"> </a></td><td>Consulta Geral</td><td>Contato para consultas gerais sobre o produto</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-contact-type"/>
+  <version value="0.0.3"/>
+  <name value="ProductContactType"/>
+  <title value="Tipos de Contato para Produto Medicinal"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de contato organizacional relacionados a produtos medicinais (ex: farmacovigilância, assuntos regulatórios)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="regulatory-affairs"/>
+    <display value="Assuntos Regulatórios"/>
+    <definition value="Contato para questões regulatórias, registros e conformidade"/>
+  </concept>
+  <concept>
+    <code value="pharmacovigilance"/>
+    <display value="Farmacovigilância"/>
+    <definition value="Contato para notificação de eventos adversos e questões de segurança"/>
+  </concept>
+  <concept>
+    <code value="quality-assurance"/>
+    <display value="Garantia de Qualidade"/>
+    <definition value="Contato para questões de qualidade do produto e desvios"/>
+  </concept>
+  <concept>
+    <code value="medical-information"/>
+    <display value="Informação Médica"/>
+    <definition value="Contato para informações médico-científicas sobre o produto"/>
+  </concept>
+  <concept>
+    <code value="technical-support"/>
+    <display value="Suporte Técnico"/>
+    <definition value="Contato para suporte técnico e questões de uso do produto"/>
+  </concept>
+  <concept>
+    <code value="supply-chain"/>
+    <display value="Cadeia de Suprimentos"/>
+    <definition value="Contato para questões de distribuição e disponibilidade"/>
+  </concept>
+  <concept>
+    <code value="product-complaints"/>
+    <display value="Reclamações de Produto"/>
+    <definition value="Contato para reclamações relacionadas à qualidade ou eficácia"/>
+  </concept>
+  <concept>
+    <code value="adverse-event-reporting"/>
+    <display value="Notificação de Eventos Adversos"/>
+    <definition value="Contato específico para notificação de eventos adversos"/>
+  </concept>
+  <concept>
+    <code value="quality-defect"/>
+    <display value="Defeito de Qualidade"/>
+    <definition value="Contato para notificação de defeitos ou problemas de qualidade"/>
+  </concept>
+  <concept>
+    <code value="general-inquiry"/>
+    <display value="Consulta Geral"/>
+    <definition value="Contato para consultas gerais sobre o produto"/>
+  </concept>
+</CodeSystem>

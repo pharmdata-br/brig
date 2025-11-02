@@ -1,0 +1,109 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "manufactured-item-component-location",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem manufactured-item-component-location</b></p><a name=\"manufactured-item-component-location\"> </a><a name=\"hcmanufactured-item-component-location\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">internal<a name=\"manufactured-item-component-location-internal\"> </a></td><td>Interno</td><td>Localizado internamente</td></tr><tr><td style=\"white-space:nowrap\">external<a name=\"manufactured-item-component-location-external\"> </a></td><td>Externo</td><td>Localizado externamente</td></tr><tr><td style=\"white-space:nowrap\">surface<a name=\"manufactured-item-component-location-surface\"> </a></td><td>Superfície</td><td>Na superfície do item</td></tr><tr><td style=\"white-space:nowrap\">intragranular<a name=\"manufactured-item-component-location-intragranular\"> </a></td><td>Intragranular</td><td>Dentro dos grânulos</td></tr><tr><td style=\"white-space:nowrap\">extragranular<a name=\"manufactured-item-component-location-extragranular\"> </a></td><td>Extragranular</td><td>Fora dos grânulos</td></tr><tr><td style=\"white-space:nowrap\">first-layer<a name=\"manufactured-item-component-location-first-layer\"> </a></td><td>Primeira Camada</td><td>Primeira camada (comprimidos multicamadas)</td></tr><tr><td style=\"white-space:nowrap\">second-layer<a name=\"manufactured-item-component-location-second-layer\"> </a></td><td>Segunda Camada</td><td>Segunda camada (comprimidos multicamadas)</td></tr><tr><td style=\"white-space:nowrap\">third-layer<a name=\"manufactured-item-component-location-third-layer\"> </a></td><td>Terceira Camada</td><td>Terceira camada (comprimidos multicamadas)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location",
+  "version" : "0.0.3",
+  "name" : "ManufacturedItemComponentLocation",
+  "title" : "Localização de Componente de Item Manufaturado",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Localização de componentes dentro do item manufaturado",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "internal",
+    "display" : "Interno",
+    "definition" : "Localizado internamente"
+  },
+  {
+    "code" : "external",
+    "display" : "Externo",
+    "definition" : "Localizado externamente"
+  },
+  {
+    "code" : "surface",
+    "display" : "Superfície",
+    "definition" : "Na superfície do item"
+  },
+  {
+    "code" : "intragranular",
+    "display" : "Intragranular",
+    "definition" : "Dentro dos grânulos"
+  },
+  {
+    "code" : "extragranular",
+    "display" : "Extragranular",
+    "definition" : "Fora dos grânulos"
+  },
+  {
+    "code" : "first-layer",
+    "display" : "Primeira Camada",
+    "definition" : "Primeira camada (comprimidos multicamadas)"
+  },
+  {
+    "code" : "second-layer",
+    "display" : "Segunda Camada",
+    "definition" : "Segunda camada (comprimidos multicamadas)"
+  },
+  {
+    "code" : "third-layer",
+    "display" : "Terceira Camada",
+    "definition" : "Terceira camada (comprimidos multicamadas)"
+  }]
+}

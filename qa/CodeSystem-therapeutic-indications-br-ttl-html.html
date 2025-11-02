@@ -1,0 +1,163 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>CodeSystem-therapeutic-indications-br-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;therapeutic-indications-br&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem therapeutic-indications-br&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;therapeutic-indications-br\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctherapeutic-indications-br\&quot;&gt; &lt;/a&gt;&lt;p&gt;Este  sistema de código  define o seguinte código:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;analgesic&lt;a name=\&quot;therapeutic-indications-br-analgesic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Analgésico&lt;/td&gt;&lt;td&gt;Tratamento da dor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;antipyretic&lt;a name=\&quot;therapeutic-indications-br-antipyretic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Antitérmico&lt;/td&gt;&lt;td&gt;Redução da febre&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anti-inflammatory&lt;a name=\&quot;therapeutic-indications-br-anti-inflammatory\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anti-inflamatório&lt;/td&gt;&lt;td&gt;Tratamento de processos inflamatórios&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;sedative&lt;a name=\&quot;therapeutic-indications-br-sedative\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sedativo&lt;/td&gt;&lt;td&gt;Sedação e tranquilização&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anxiolytic&lt;a name=\&quot;therapeutic-indications-br-anxiolytic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ansiolítico&lt;/td&gt;&lt;td&gt;Tratamento da ansiedade&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;antibiotic&lt;a name=\&quot;therapeutic-indications-br-antibiotic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Antibiótico&lt;/td&gt;&lt;td&gt;Tratamento de infecções bacterianas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;antiviral&lt;a name=\&quot;therapeutic-indications-br-antiviral\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Antiviral&lt;/td&gt;&lt;td&gt;Tratamento de infecções virais&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;antifungal&lt;a name=\&quot;therapeutic-indications-br-antifungal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Antifúngico&lt;/td&gt;&lt;td&gt;Tratamento de infecções fúngicas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;antihistamine&lt;a name=\&quot;therapeutic-indications-br-antihistamine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anti-histamínico&lt;/td&gt;&lt;td&gt;Tratamento de reações alérgicas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;bronchodilator&lt;a name=\&quot;therapeutic-indications-br-bronchodilator\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Broncodilatador&lt;/td&gt;&lt;td&gt;Tratamento de broncoespasmo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;antihypertensive&lt;a name=\&quot;therapeutic-indications-br-antihypertensive\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anti-hipertensivo&lt;/td&gt;&lt;td&gt;Tratamento da hipertensão arterial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;diuretic&lt;a name=\&quot;therapeutic-indications-br-diuretic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diurético&lt;/td&gt;&lt;td&gt;Aumento da diurese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cardiotonic&lt;a name=\&quot;therapeutic-indications-br-cardiotonic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiotônico&lt;/td&gt;&lt;td&gt;Fortalecimento da contração cardíaca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anticoagulant&lt;a name=\&quot;therapeutic-indications-br-anticoagulant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anticoagulante&lt;/td&gt;&lt;td&gt;Prevenção da coagulação sanguínea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hypoglycemic&lt;a name=\&quot;therapeutic-indications-br-hypoglycemic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hipoglicemiante&lt;/td&gt;&lt;td&gt;Redução da glicemia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hormone-replacement&lt;a name=\&quot;therapeutic-indications-br-hormone-replacement\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reposição Hormonal&lt;/td&gt;&lt;td&gt;Reposição de hormônios deficientes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contraceptive&lt;a name=\&quot;therapeutic-indications-br-contraceptive\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Contraceptivo&lt;/td&gt;&lt;td&gt;Prevenção da gravidez&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;antineoplastic&lt;a name=\&quot;therapeutic-indications-br-antineoplastic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Antineoplásico&lt;/td&gt;&lt;td&gt;Tratamento de neoplasias&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;immunosuppressive&lt;a name=\&quot;therapeutic-indications-br-immunosuppressive\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Imunossupressor&lt;/td&gt;&lt;td&gt;Supressão do sistema imunológico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vaccine&lt;a name=\&quot;therapeutic-indications-br-vaccine\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vacina&lt;/td&gt;&lt;td&gt;Imunização ativa&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;informative&quot; ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#code#code.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">a</a> fhir:Canonical ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&gt;         ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapeutic-indications-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapeutic-indications-br&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.0.3&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;TherapeuticIndicationsBR&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Indicações Terapêuticas - Brasil&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2025-08-02&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Sistema de códigos para indicações terapêuticas de produtos medicinais brasileiros&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;BR&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;20&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;analgesic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Analgésico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento da dor&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;antipyretic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Antitérmico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Redução da febre&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;anti-inflammatory&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Anti-inflamatório&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento de processos inflamatórios&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;sedative&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sedativo&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sedação e tranquilização&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;anxiolytic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ansiolítico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento da ansiedade&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;antibiotic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Antibiótico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento de infecções bacterianas&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;antiviral&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Antiviral&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento de infecções virais&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;antifungal&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Antifúngico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento de infecções fúngicas&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;antihistamine&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Anti-histamínico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento de reações alérgicas&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;bronchodilator&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Broncodilatador&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento de broncoespasmo&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;antihypertensive&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Anti-hipertensivo&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento da hipertensão arterial&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;diuretic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Diurético&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Aumento da diurese&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;cardiotonic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cardiotônico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fortalecimento da contração cardíaca&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;anticoagulant&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Anticoagulante&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Prevenção da coagulação sanguínea&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;hypoglycemic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Hipoglicemiante&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Redução da glicemia&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;hormone-replacement&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reposição Hormonal&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Reposição de hormônios deficientes&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;contraceptive&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Contraceptivo&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Prevenção da gravidez&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;antineoplastic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Antineoplásico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tratamento de neoplasias&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;immunosuppressive&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Imunossupressor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Supressão do sistema imunológico&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;vaccine&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Vacina&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Imunização ativa&quot; ]
+  ] ) . # 
+
+</code></pre>
+
+</body>
+</html>

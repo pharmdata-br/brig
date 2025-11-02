@@ -1,0 +1,127 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>CodeSystem-substance-classification-br-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;substance-classification-br&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem substance-classification-br&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;substance-classification-br\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsubstance-classification-br\&quot;&gt; &lt;/a&gt;&lt;p&gt;Este  sistema de código  define o seguinte código:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;active&lt;a name=\&quot;substance-classification-br-active\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substância Ativa&lt;/td&gt;&lt;td&gt;Princípio ativo farmacologicamente ativo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;excipient&lt;a name=\&quot;substance-classification-br-excipient\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Excipiente&lt;/td&gt;&lt;td&gt;Substância farmacologicamente inativa usada como veículo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;controlled&lt;a name=\&quot;substance-classification-br-controlled\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substância Controlada&lt;/td&gt;&lt;td&gt;Substância sujeita a controle especial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;narcotic&lt;a name=\&quot;substance-classification-br-narcotic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Entorpecente&lt;/td&gt;&lt;td&gt;Substância entorpecente (Lista A)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;psychotropic&lt;a name=\&quot;substance-classification-br-psychotropic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Psicotrópico&lt;/td&gt;&lt;td&gt;Substância psicotrópica (Lista B)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;precursor&lt;a name=\&quot;substance-classification-br-precursor\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Precursor&lt;/td&gt;&lt;td&gt;Substância precursora de drogas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;natural&lt;a name=\&quot;substance-classification-br-natural\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Natural&lt;/td&gt;&lt;td&gt;Substância de origem natural&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;synthetic&lt;a name=\&quot;substance-classification-br-synthetic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sintética&lt;/td&gt;&lt;td&gt;Substância de origem sintética&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;semi-synthetic&lt;a name=\&quot;substance-classification-br-semi-synthetic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Semi-sintética&lt;/td&gt;&lt;td&gt;Substância semi-sintética&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;biotechnology&lt;a name=\&quot;substance-classification-br-biotechnology\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Biotecnológica&lt;/td&gt;&lt;td&gt;Substância produzida por biotecnologia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;radiopharmaceutical&lt;a name=\&quot;substance-classification-br-radiopharmaceutical\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Radiofarmacêutica&lt;/td&gt;&lt;td&gt;Substância radiofarmacêutica&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;informative&quot; ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#code#code.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">a</a> fhir:Canonical ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&gt;         ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-classification-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-classification-br&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.0.3&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;SubstanceClassificationBR&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Classificação de Substância - Brasil&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2025-08-02&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Sistema de códigos para classificação de substâncias no Brasil&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;BR&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;11&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância Ativa&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Princípio ativo farmacologicamente ativo&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;excipient&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Excipiente&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância farmacologicamente inativa usada como veículo&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;controlled&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância Controlada&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância sujeita a controle especial&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;narcotic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Entorpecente&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância entorpecente (Lista A)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;psychotropic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Psicotrópico&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância psicotrópica (Lista B)&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;precursor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Precursor&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância precursora de drogas&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;natural&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Natural&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância de origem natural&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;synthetic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sintética&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância de origem sintética&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;semi-synthetic&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Semi-sintética&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância semi-sintética&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;biotechnology&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Biotecnológica&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância produzida por biotecnologia&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;radiopharmaceutical&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Radiofarmacêutica&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância radiofarmacêutica&quot; ]
+  ] ) . # 
+
+</code></pre>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-packaged-product-definition-br-class-table</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="box" data-fhir="generated">
+  <tr>
+    <td colspan="5" style="text-align: center">
+      <b>PackagedProductDefinition</b>
+ :       <a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">PackagedProductDefinition</a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5" style="border-bottom: 1px solid #666">Profile brasileiro para PackagedProductDefinition implementando todos os bindings terminológicos necessários do FHIR R5, adaptados ao contexto regulatório brasileiro (ANVISA). Especifica embalagens primárias, secundárias e terciárias de produtos medicinais.
+</td>
+  </tr>
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l38">​</a>
+      <img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Definição de fatia" class="hierarchy"/>
+       <a style="font-style: italic; font-style: italic" no-external="true" href="StructureDefinition-packaged-product-definition-br-definitions.html#PackagedProductDefinition.identifier" title="Identificadores únicos da configuração de embalagem (GTIN, código de barras, PCID)" data-no-external="true">Fatias para identifier</a>
+      <a name="PackagedProductDefinition.identifier"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic" title="Este elemento deve ser suportado">S</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="font-style: italic"></span>
+      <span style="opacity: 0.5; font-style: italic">0</span>
+      <span style="opacity: 0.5; font-style: italic">..</span>
+      <span style="opacity: 0.5; font-style: italic">*</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic" href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="font-style: italic">Identificadores do produto embalado</span>
+      <br style="font-style: italic"/>
+      <span style="font-weight:bold; font-style: italic">Fatia: </span>
+      <span style="font-style: italic">Não ordenado, Aberto por value:system</span>
+    </td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l92">​</a>
+      <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Elemento" class="hierarchy"/>
+       <a no-external="true" href="StructureDefinition-packaged-product-definition-br-definitions.html#PackagedProductDefinition.type" title="Tipo geral da configuração de embalagem (ex: embalagem hospitalar, blister, frasco)" data-no-external="true">type</a>
+      <a name="PackagedProductDefinition.type"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Este elemento deve ser suportado">S</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="opacity: 0.5">0</span>
+      <span style="opacity: 0.5">..</span>
+      <span style="opacity: 0.5">1</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l127">​</a>
+Tipo de produto embalado      <br class="binding"/>
+      <span style="font-weight:bold" title="null" class="binding">Vínculo: </span>
+      <a href="ValueSet-packaged-product-type-br.html" title="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/packaged-product-type-br" class="binding">Tipos de Produto Embalado - Brasil</a>
+      <span title="null" class="binding"> (</span>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a>
+      <span title="null" class="binding">)</span>
+    </td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l150">​</a>
+      <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/>
+       <a no-external="true" href="StructureDefinition-packaged-product-definition-br-definitions.html#PackagedProductDefinition.packageFor" title="Referência ao(s) MedicinalProductDefinition que esta embalagem contém" data-no-external="true">packageFor</a>
+      <a name="PackagedProductDefinition.packageFor"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Este elemento deve ser suportado">S</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+1..      <span style="opacity: 0.5">*</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a href="http://hl7.org/fhir/R5/references.html">Reference</a>
+(      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+)
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Referência ao produto medicinal</td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l188">​</a>
+      <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Elemento" class="hierarchy"/>
+       <a no-external="true" href="StructureDefinition-packaged-product-definition-br-definitions.html#PackagedProductDefinition.status" title="Status do ciclo de vida desta configuração de embalagem (draft | active | retired | unknown)" data-no-external="true">status</a>
+      <a name="PackagedProductDefinition.status"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Este elemento deve ser suportado">S</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="opacity: 0.5">0</span>
+      <span style="opacity: 0.5">..</span>
+      <span style="opacity: 0.5">1</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l223">​</a>
+Status do ciclo de vida      <br class="binding"/>
+      <span style="font-weight:bold" title="null" class="binding">Vínculo: </span>
+      <a href="ValueSet-publication-status.html" title="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/publication-status" class="binding">Status de Publicação</a>
+      <span title="null" class="binding"> (</span>
+      <a href="http://hl7.org/fhir/R5/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a>
+      <span title="null" class="binding">)</span>
+    </td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l246">​</a>
+      <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Elemento" class="hierarchy"/>
+       <a no-external="true" href="StructureDefinition-packaged-product-definition-br-definitions.html#PackagedProductDefinition.legalStatusOfSupply" title="Status legal para fornecimento desta embalagem específica" data-no-external="true">legalStatusOfSupply</a>
+      <a name="PackagedProductDefinition.legalStatusOfSupply"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Este elemento deve ser suportado">S</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="opacity: 0.5">0</span>
+      <span style="opacity: 0.5">..</span>
+      <span style="opacity: 0.5">*</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Status legal de fornecimento</td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"><a name="l287">​</a>
+      <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Elemento" class="hierarchy"/>
+       <a no-external="true" href="StructureDefinition-packaged-product-definition-br-definitions.html#PackagedProductDefinition.packaging" title="Descrição da(s) embalagem(ns) - pode ser hierárquica (primária, secundária, terciária)" data-no-external="true">packaging</a>
+      <a name="PackagedProductDefinition.packaging"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
+      <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Este elemento deve ser suportado">S</span>
+      <a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R5/conformance-rules.html#constraints" title="Este elemento tem ou é afetado por restrições ( ppd-br-1 )">C</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
+      <span style="opacity: 0.5">0</span>
+      <span style="opacity: 0.5">..</span>
+      <span style="opacity: 0.5">1</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
+Embalagem(ns)      <br class="constraint"/>
+      <span title="null" class="constraint">Constraints: </span>
+      <span style="font-weight:bold" title="Cada nível de embalagem deve ter um tipo ou conter embalagens aninhadas" class="constraint">ppd-br-1</span>
+    </td>
+  </tr>
+
+
+</table>
+<style>
+table.box { margin-bottom: 10px; border: 1px black solid;  margin-right: inherit; }
+table.box th { border: none; }
+table.box td { border: none; font-size : 11px; }
+
+</style>
+</body>
+</html>

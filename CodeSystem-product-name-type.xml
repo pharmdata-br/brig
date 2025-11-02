@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="product-name-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem product-name-type</b></p><a name="product-name-type"> </a><a name="hcproduct-name-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">commercial<a name="product-name-type-commercial"> </a></td><td>Nome Comercial</td><td>Nome de fantasia do produto registrado para comercialização</td></tr><tr><td style="white-space:nowrap">scientific<a name="product-name-type-scientific"> </a></td><td>Nome Científico</td><td>Denominação Comum Brasileira (DCB) ou nome científico do princípio ativo</td></tr><tr><td style="white-space:nowrap">brand<a name="product-name-type-brand"> </a></td><td>Marca</td><td>Nome da marca sob a qual o produto é comercializado</td></tr><tr><td style="white-space:nowrap">generic<a name="product-name-type-generic"> </a></td><td>Nome Genérico</td><td>Denominação do medicamento genérico conforme DCB</td></tr><tr><td style="white-space:nowrap">popular<a name="product-name-type-popular"> </a></td><td>Nome Popular</td><td>Nome pelo qual o produto é popularmente conhecido</td></tr><tr><td style="white-space:nowrap">international<a name="product-name-type-international"> </a></td><td>Nome Internacional</td><td>Denominação Comum Internacional (DCI) do princípio ativo</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-name-type"/>
+  <version value="0.0.3"/>
+  <name value="ProductNameType"/>
+  <title value="Tipos de Nome de Produto"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para tipos de nomes de produtos medicinais (padrão internacional)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="commercial"/>
+    <display value="Nome Comercial"/>
+    <definition value="Nome de fantasia do produto registrado para comercialização"/>
+  </concept>
+  <concept>
+    <code value="scientific"/>
+    <display value="Nome Científico"/>
+    <definition value="Denominação Comum Brasileira (DCB) ou nome científico do princípio ativo"/>
+  </concept>
+  <concept>
+    <code value="brand"/>
+    <display value="Marca"/>
+    <definition value="Nome da marca sob a qual o produto é comercializado"/>
+  </concept>
+  <concept>
+    <code value="generic"/>
+    <display value="Nome Genérico"/>
+    <definition value="Denominação do medicamento genérico conforme DCB"/>
+  </concept>
+  <concept>
+    <code value="popular"/>
+    <display value="Nome Popular"/>
+    <definition value="Nome pelo qual o produto é popularmente conhecido"/>
+  </concept>
+  <concept>
+    <code value="international"/>
+    <display value="Nome Internacional"/>
+    <definition value="Denominação Comum Internacional (DCI) do princípio ativo"/>
+  </concept>
+</CodeSystem>

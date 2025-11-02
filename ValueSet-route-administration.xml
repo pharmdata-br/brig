@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="route-administration"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet route-administration</b></p><a name="route-administration"> </a><a name="hcroute-administration"> </a><ul><li>Include estes códigos, tal como definidos em <code>http://standardterms.edqm.eu</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>20053000</td><td>Oral use</td></tr><tr><td>20054000</td><td>Sublingual use</td></tr><tr><td>20055000</td><td>Buccal use</td></tr><tr><td>20060000</td><td>Intravenous use</td></tr><tr><td>20035000</td><td>Intramuscular use</td></tr><tr><td>20066000</td><td>Subcutaneous use</td></tr><tr><td>20036500</td><td>Intraarticular use</td></tr><tr><td>20070000</td><td>Intrathecal use</td></tr><tr><td>20085000</td><td>Cutaneous use</td></tr><tr><td>20051000</td><td>Ophthalmic use</td></tr><tr><td>20049000</td><td>Auricular use</td></tr><tr><td>20050000</td><td>Nasal use</td></tr><tr><td>20061000</td><td>Rectal use</td></tr><tr><td>20067000</td><td>Vaginal use</td></tr><tr><td>20020000</td><td>Inhalation use</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/route-administration"/>
+  <version value="0.0.3"/>
+  <name value="RouteAdministration"/>
+  <title value="Vias de Administração"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Vias de administração usando códigos EDQM Standard Terms"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <compose>
+    <include>
+      <system value="http://standardterms.edqm.eu"/>
+      <concept>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </concept>
+      <concept>
+        <code value="20054000"/>
+        <display value="Sublingual use"/>
+      </concept>
+      <concept>
+        <code value="20055000"/>
+        <display value="Buccal use"/>
+      </concept>
+      <concept>
+        <code value="20060000"/>
+        <display value="Intravenous use"/>
+      </concept>
+      <concept>
+        <code value="20035000"/>
+        <display value="Intramuscular use"/>
+      </concept>
+      <concept>
+        <code value="20066000"/>
+        <display value="Subcutaneous use"/>
+      </concept>
+      <concept>
+        <code value="20036500"/>
+        <display value="Intraarticular use"/>
+      </concept>
+      <concept>
+        <code value="20070000"/>
+        <display value="Intrathecal use"/>
+      </concept>
+      <concept>
+        <code value="20085000"/>
+        <display value="Cutaneous use"/>
+      </concept>
+      <concept>
+        <code value="20051000"/>
+        <display value="Ophthalmic use"/>
+      </concept>
+      <concept>
+        <code value="20049000"/>
+        <display value="Auricular use"/>
+      </concept>
+      <concept>
+        <code value="20050000"/>
+        <display value="Nasal use"/>
+      </concept>
+      <concept>
+        <code value="20061000"/>
+        <display value="Rectal use"/>
+      </concept>
+      <concept>
+        <code value="20067000"/>
+        <display value="Vaginal use"/>
+      </concept>
+      <concept>
+        <code value="20020000"/>
+        <display value="Inhalation use"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

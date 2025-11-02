@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-incidence> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "interaction-incidence"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem interaction-incidence</b></p><a name=\"interaction-incidence\"> </a><a name=\"hcinteraction-incidence\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">high<a name=\"interaction-incidence-high\"> </a></td><td>Alta</td><td>Interação ocorre frequentemente</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"interaction-incidence-moderate\"> </a></td><td>Moderada</td><td>Interação ocorre ocasionalmente</td></tr><tr><td style=\"white-space:nowrap\">low<a name=\"interaction-incidence-low\"> </a></td><td>Baixa</td><td>Interação ocorre raramente</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"interaction-incidence-unknown\"> </a></td><td>Desconhecida</td><td>Frequência não estabelecida</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-incidence"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-incidence>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "InteractionIncidence"] ; # 
+  fhir:title [ fhir:v "Incidência de Interação"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Frequência de ocorrência de interações"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "high" ] ;
+     fhir:display [ fhir:v "Alta" ] ;
+     fhir:definition [ fhir:v "Interação ocorre frequentemente" ]
+  ] [
+     fhir:code [ fhir:v "moderate" ] ;
+     fhir:display [ fhir:v "Moderada" ] ;
+     fhir:definition [ fhir:v "Interação ocorre ocasionalmente" ]
+  ] [
+     fhir:code [ fhir:v "low" ] ;
+     fhir:display [ fhir:v "Baixa" ] ;
+     fhir:definition [ fhir:v "Interação ocorre raramente" ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Desconhecida" ] ;
+     fhir:definition [ fhir:v "Frequência não estabelecida" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

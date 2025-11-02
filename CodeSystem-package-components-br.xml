@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="package-components-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem package-components-br</b></p><a name="package-components-br"> </a><a name="hcpackage-components-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">cap<a name="package-components-br-cap"> </a></td><td>Tampa</td><td>Tampa roscada ou encaixe</td></tr><tr><td style="white-space:nowrap">lid<a name="package-components-br-lid"> </a></td><td>Lacre</td><td>Lacre de segurança</td></tr><tr><td style="white-space:nowrap">stopper<a name="package-components-br-stopper"> </a></td><td>Rolha</td><td>Rolha de borracha ou plástico</td></tr><tr><td style="white-space:nowrap">closure<a name="package-components-br-closure"> </a></td><td>Fechamento</td><td>Sistema de fechamento genérico</td></tr><tr><td style="white-space:nowrap">label<a name="package-components-br-label"> </a></td><td>Rótulo</td><td>Rótulo com informações do produto</td></tr><tr><td style="white-space:nowrap">insert<a name="package-components-br-insert"> </a></td><td>Bula</td><td>Bula ou folheto informativo</td></tr><tr><td style="white-space:nowrap">leaflet<a name="package-components-br-leaflet"> </a></td><td>Folheto</td><td>Folheto informativo adicional</td></tr><tr><td style="white-space:nowrap">barcode<a name="package-components-br-barcode"> </a></td><td>Código de barras</td><td>Etiqueta com código de barras</td></tr><tr><td style="white-space:nowrap">desiccant<a name="package-components-br-desiccant"> </a></td><td>Dessecante</td><td>Sachê ou pastilha dessecante</td></tr><tr><td style="white-space:nowrap">cotton<a name="package-components-br-cotton"> </a></td><td>Algodão</td><td>Algodão protetor</td></tr><tr><td style="white-space:nowrap">separator<a name="package-components-br-separator"> </a></td><td>Separador</td><td>Divisória ou separador interno</td></tr><tr><td style="white-space:nowrap">applicator<a name="package-components-br-applicator"> </a></td><td>Aplicador</td><td>Dispositivo aplicador</td></tr><tr><td style="white-space:nowrap">seal<a name="package-components-br-seal"> </a></td><td>Selo</td><td>Selo de proteção ou inviolabilidade</td></tr><tr><td style="white-space:nowrap">shrink-wrap<a name="package-components-br-shrink-wrap"> </a></td><td>Filme plástico</td><td>Filme plástico termocontrátil</td></tr><tr><td style="white-space:nowrap">protective-cap<a name="package-components-br-protective-cap"> </a></td><td>Tampa protetora</td><td>Tampa protetora adicional</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-components-br"/>
+  <version value="0.0.3"/>
+  <name value="PackageComponentsBR"/>
+  <title value="Componentes de Embalagem - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para componentes de embalagens brasileiras"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="cap"/>
+    <display value="Tampa"/>
+    <definition value="Tampa roscada ou encaixe"/>
+  </concept>
+  <concept>
+    <code value="lid"/>
+    <display value="Lacre"/>
+    <definition value="Lacre de segurança"/>
+  </concept>
+  <concept>
+    <code value="stopper"/>
+    <display value="Rolha"/>
+    <definition value="Rolha de borracha ou plástico"/>
+  </concept>
+  <concept>
+    <code value="closure"/>
+    <display value="Fechamento"/>
+    <definition value="Sistema de fechamento genérico"/>
+  </concept>
+  <concept>
+    <code value="label"/>
+    <display value="Rótulo"/>
+    <definition value="Rótulo com informações do produto"/>
+  </concept>
+  <concept>
+    <code value="insert"/>
+    <display value="Bula"/>
+    <definition value="Bula ou folheto informativo"/>
+  </concept>
+  <concept>
+    <code value="leaflet"/>
+    <display value="Folheto"/>
+    <definition value="Folheto informativo adicional"/>
+  </concept>
+  <concept>
+    <code value="barcode"/>
+    <display value="Código de barras"/>
+    <definition value="Etiqueta com código de barras"/>
+  </concept>
+  <concept>
+    <code value="desiccant"/>
+    <display value="Dessecante"/>
+    <definition value="Sachê ou pastilha dessecante"/>
+  </concept>
+  <concept>
+    <code value="cotton"/>
+    <display value="Algodão"/>
+    <definition value="Algodão protetor"/>
+  </concept>
+  <concept>
+    <code value="separator"/>
+    <display value="Separador"/>
+    <definition value="Divisória ou separador interno"/>
+  </concept>
+  <concept>
+    <code value="applicator"/>
+    <display value="Aplicador"/>
+    <definition value="Dispositivo aplicador"/>
+  </concept>
+  <concept>
+    <code value="seal"/>
+    <display value="Selo"/>
+    <definition value="Selo de proteção ou inviolabilidade"/>
+  </concept>
+  <concept>
+    <code value="shrink-wrap"/>
+    <display value="Filme plástico"/>
+    <definition value="Filme plástico termocontrátil"/>
+  </concept>
+  <concept>
+    <code value="protective-cap"/>
+    <display value="Tampa protetora"/>
+    <definition value="Tampa protetora adicional"/>
+  </concept>
+</CodeSystem>

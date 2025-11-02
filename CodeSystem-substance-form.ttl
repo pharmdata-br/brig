@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-form> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-form"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-form</b></p><a name=\"substance-form\"> </a><a name=\"hcsubstance-form\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">solid<a name=\"substance-form-solid\"> </a></td><td>Sólido</td><td>Estado sólido</td></tr><tr><td style=\"white-space:nowrap\">liquid<a name=\"substance-form-liquid\"> </a></td><td>Líquido</td><td>Estado líquido</td></tr><tr><td style=\"white-space:nowrap\">gas<a name=\"substance-form-gas\"> </a></td><td>Gasoso</td><td>Estado gasoso</td></tr><tr><td style=\"white-space:nowrap\">crystalline<a name=\"substance-form-crystalline\"> </a></td><td>Cristalino</td><td>Sólido cristalino</td></tr><tr><td style=\"white-space:nowrap\">amorphous<a name=\"substance-form-amorphous\"> </a></td><td>Amorfo</td><td>Sólido amorfo (não cristalino)</td></tr><tr><td style=\"white-space:nowrap\">polymorphic<a name=\"substance-form-polymorphic\"> </a></td><td>Polimórfico</td><td>Múltiplas formas cristalinas</td></tr><tr><td style=\"white-space:nowrap\">hydrate<a name=\"substance-form-hydrate\"> </a></td><td>Hidrato</td><td>Cristal contendo água de cristalização</td></tr><tr><td style=\"white-space:nowrap\">anhydrous<a name=\"substance-form-anhydrous\"> </a></td><td>Anidro</td><td>Forma sem água</td></tr><tr><td style=\"white-space:nowrap\">solvate<a name=\"substance-form-solvate\"> </a></td><td>Solvato</td><td>Cristal contendo solvente</td></tr><tr><td style=\"white-space:nowrap\">co-crystal<a name=\"substance-form-co-crystal\"> </a></td><td>Cocristal</td><td>Cristal formado por duas ou mais moléculas</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-form"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-form>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceForm"] ; # 
+  fhir:title [ fhir:v "Forma Física de Substâncias"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Estado físico e forma cristalina de substâncias farmacêuticas"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "solid" ] ;
+     fhir:display [ fhir:v "Sólido" ] ;
+     fhir:definition [ fhir:v "Estado sólido" ]
+  ] [
+     fhir:code [ fhir:v "liquid" ] ;
+     fhir:display [ fhir:v "Líquido" ] ;
+     fhir:definition [ fhir:v "Estado líquido" ]
+  ] [
+     fhir:code [ fhir:v "gas" ] ;
+     fhir:display [ fhir:v "Gasoso" ] ;
+     fhir:definition [ fhir:v "Estado gasoso" ]
+  ] [
+     fhir:code [ fhir:v "crystalline" ] ;
+     fhir:display [ fhir:v "Cristalino" ] ;
+     fhir:definition [ fhir:v "Sólido cristalino" ]
+  ] [
+     fhir:code [ fhir:v "amorphous" ] ;
+     fhir:display [ fhir:v "Amorfo" ] ;
+     fhir:definition [ fhir:v "Sólido amorfo (não cristalino)" ]
+  ] [
+     fhir:code [ fhir:v "polymorphic" ] ;
+     fhir:display [ fhir:v "Polimórfico" ] ;
+     fhir:definition [ fhir:v "Múltiplas formas cristalinas" ]
+  ] [
+     fhir:code [ fhir:v "hydrate" ] ;
+     fhir:display [ fhir:v "Hidrato" ] ;
+     fhir:definition [ fhir:v "Cristal contendo água de cristalização" ]
+  ] [
+     fhir:code [ fhir:v "anhydrous" ] ;
+     fhir:display [ fhir:v "Anidro" ] ;
+     fhir:definition [ fhir:v "Forma sem água" ]
+  ] [
+     fhir:code [ fhir:v "solvate" ] ;
+     fhir:display [ fhir:v "Solvato" ] ;
+     fhir:definition [ fhir:v "Cristal contendo solvente" ]
+  ] [
+     fhir:code [ fhir:v "co-crystal" ] ;
+     fhir:display [ fhir:v "Cocristal" ] ;
+     fhir:definition [ fhir:v "Cristal formado por duas ou mais moléculas" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

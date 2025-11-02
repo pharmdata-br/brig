@@ -1,0 +1,99 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "additional-monitoring-indicator",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem additional-monitoring-indicator</b></p><a name=\"additional-monitoring-indicator\"> </a><a name=\"hcadditional-monitoring-indicator\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">black-triangle<a name=\"additional-monitoring-indicator-black-triangle\"> </a></td><td>Triângulo Negro</td><td>Medicamento sujeito a monitorização adicional intensiva. Símbolo usado em alguns países para identificar medicamentos novos ou com perfil de segurança ainda em avaliação</td></tr><tr><td style=\"white-space:nowrap\">intensive-pharmacovigilance<a name=\"additional-monitoring-indicator-intensive-pharmacovigilance\"> </a></td><td>Farmacovigilância Intensiva</td><td>Requer relatórios frequentes e detalhados de farmacovigilância para autoridade regulatória</td></tr><tr><td style=\"white-space:nowrap\">post-marketing-study<a name=\"additional-monitoring-indicator-post-marketing-study\"> </a></td><td>Estudo Pós-Comercialização Obrigatório</td><td>Exige condução de estudos específicos após aprovação para monitorar segurança ou eficácia em condições reais de uso</td></tr><tr><td style=\"white-space:nowrap\">enhanced-reporting<a name=\"additional-monitoring-indicator-enhanced-reporting\"> </a></td><td>Notificação Reforçada</td><td>Requisitos aumentados para notificação de eventos adversos por profissionais de saúde</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-monitoring<a name=\"additional-monitoring-indicator-pregnancy-monitoring\"> </a></td><td>Monitorização em Gestantes</td><td>Requer acompanhamento especial de uso em gestantes e resultados perinatais</td></tr><tr><td style=\"white-space:nowrap\">pediatric-monitoring<a name=\"additional-monitoring-indicator-pediatric-monitoring\"> </a></td><td>Monitorização Pediátrica</td><td>Requer acompanhamento especial de uso em população pediátrica</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/additional-monitoring-indicator",
+  "version" : "0.0.3",
+  "name" : "AdditionalMonitoringIndicator",
+  "title" : "Indicador de Monitorização Adicional",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Indicadores de monitorização extra definidos para produtos medicinais que requerem acompanhamento intensivo pós-comercialização",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "black-triangle",
+    "display" : "Triângulo Negro",
+    "definition" : "Medicamento sujeito a monitorização adicional intensiva. Símbolo usado em alguns países para identificar medicamentos novos ou com perfil de segurança ainda em avaliação"
+  },
+  {
+    "code" : "intensive-pharmacovigilance",
+    "display" : "Farmacovigilância Intensiva",
+    "definition" : "Requer relatórios frequentes e detalhados de farmacovigilância para autoridade regulatória"
+  },
+  {
+    "code" : "post-marketing-study",
+    "display" : "Estudo Pós-Comercialização Obrigatório",
+    "definition" : "Exige condução de estudos específicos após aprovação para monitorar segurança ou eficácia em condições reais de uso"
+  },
+  {
+    "code" : "enhanced-reporting",
+    "display" : "Notificação Reforçada",
+    "definition" : "Requisitos aumentados para notificação de eventos adversos por profissionais de saúde"
+  },
+  {
+    "code" : "pregnancy-monitoring",
+    "display" : "Monitorização em Gestantes",
+    "definition" : "Requer acompanhamento especial de uso em gestantes e resultados perinatais"
+  },
+  {
+    "code" : "pediatric-monitoring",
+    "display" : "Monitorização Pediátrica",
+    "definition" : "Requer acompanhamento especial de uso em população pediátrica"
+  }]
+}

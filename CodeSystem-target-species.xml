@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="target-species"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem target-species</b></p><a name="target-species"> </a><a name="hctarget-species"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">canine<a name="target-species-canine"> </a></td><td>Canino</td><td>Cães (Canis lupus familiaris)</td></tr><tr><td style="white-space:nowrap">feline<a name="target-species-feline"> </a></td><td>Felino</td><td>Gatos (Felis catus)</td></tr><tr><td style="white-space:nowrap">rabbit<a name="target-species-rabbit"> </a></td><td>Coelho</td><td>Coelhos (Oryctolagus cuniculus)</td></tr><tr><td style="white-space:nowrap">ferret<a name="target-species-ferret"> </a></td><td>Furão</td><td>Furões (Mustela putorius furo)</td></tr><tr><td style="white-space:nowrap">hamster<a name="target-species-hamster"> </a></td><td>Hamster</td><td>Hamsters (diversas espécies)</td></tr><tr><td style="white-space:nowrap">guinea-pig<a name="target-species-guinea-pig"> </a></td><td>Porquinho-da-Índia</td><td>Porquinhos-da-índia (Cavia porcellus)</td></tr><tr><td style="white-space:nowrap">bovine<a name="target-species-bovine"> </a></td><td>Bovino</td><td>Gado bovino (Bos taurus, Bos indicus)</td></tr><tr><td style="white-space:nowrap">porcine<a name="target-species-porcine"> </a></td><td>Suíno</td><td>Porcos (Sus scrofa domesticus)</td></tr><tr><td style="white-space:nowrap">ovine<a name="target-species-ovine"> </a></td><td>Ovino</td><td>Ovelhas (Ovis aries)</td></tr><tr><td style="white-space:nowrap">caprine<a name="target-species-caprine"> </a></td><td>Caprino</td><td>Cabras (Capra aegagrus hircus)</td></tr><tr><td style="white-space:nowrap">equine<a name="target-species-equine"> </a></td><td>Equino</td><td>Cavalos (Equus ferus caballus)</td></tr><tr><td style="white-space:nowrap">buffalo<a name="target-species-buffalo"> </a></td><td>Bubalino</td><td>Búfalos (Bubalus bubalis)</td></tr><tr><td style="white-space:nowrap">poultry<a name="target-species-poultry"> </a></td><td>Aves Domésticas</td><td>Aves de produção (galinhas, perus, patos, gansos)</td></tr><tr><td style="white-space:nowrap">chicken<a name="target-species-chicken"> </a></td><td>Galinha</td><td>Galinhas (Gallus gallus domesticus)</td></tr><tr><td style="white-space:nowrap">turkey<a name="target-species-turkey"> </a></td><td>Peru</td><td>Perus (Meleagris gallopavo)</td></tr><tr><td style="white-space:nowrap">duck<a name="target-species-duck"> </a></td><td>Pato</td><td>Patos (Anas platyrhynchos domesticus)</td></tr><tr><td style="white-space:nowrap">goose<a name="target-species-goose"> </a></td><td>Ganso</td><td>Gansos (Anser anser domesticus)</td></tr><tr><td style="white-space:nowrap">fish<a name="target-species-fish"> </a></td><td>Peixes</td><td>Peixes de aquacultura</td></tr><tr><td style="white-space:nowrap">tilapia<a name="target-species-tilapia"> </a></td><td>Tilápia</td><td>Tilápias (Oreochromis spp)</td></tr><tr><td style="white-space:nowrap">salmon<a name="target-species-salmon"> </a></td><td>Salmão</td><td>Salmões (Salmo salar)</td></tr><tr><td style="white-space:nowrap">shrimp<a name="target-species-shrimp"> </a></td><td>Camarão</td><td>Camarões (diversas espécies)</td></tr><tr><td style="white-space:nowrap">bee<a name="target-species-bee"> </a></td><td>Abelha</td><td>Abelhas (Apis mellifera)</td></tr><tr><td style="white-space:nowrap">wildlife<a name="target-species-wildlife"> </a></td><td>Fauna Silvestre</td><td>Animais silvestres em cativeiro ou vida livre</td></tr><tr><td style="white-space:nowrap">zoo-animal<a name="target-species-zoo-animal"> </a></td><td>Animal de Zoológico</td><td>Animais mantidos em zoológicos</td></tr><tr><td style="white-space:nowrap">exotic-pet<a name="target-species-exotic-pet"> </a></td><td>Animal Exótico de Estimação</td><td>Animais exóticos mantidos como pets</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/target-species"/>
+  <version value="0.0.3"/>
+  <name value="TargetSpecies"/>
+  <title value="Espécies-Alvo para Produtos Veterinários"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Espécies animais para as quais um produto medicinal veterinário é destinado"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="25"/>
+  <concept>
+    <code value="canine"/>
+    <display value="Canino"/>
+    <definition value="Cães (Canis lupus familiaris)"/>
+  </concept>
+  <concept>
+    <code value="feline"/>
+    <display value="Felino"/>
+    <definition value="Gatos (Felis catus)"/>
+  </concept>
+  <concept>
+    <code value="rabbit"/>
+    <display value="Coelho"/>
+    <definition value="Coelhos (Oryctolagus cuniculus)"/>
+  </concept>
+  <concept>
+    <code value="ferret"/>
+    <display value="Furão"/>
+    <definition value="Furões (Mustela putorius furo)"/>
+  </concept>
+  <concept>
+    <code value="hamster"/>
+    <display value="Hamster"/>
+    <definition value="Hamsters (diversas espécies)"/>
+  </concept>
+  <concept>
+    <code value="guinea-pig"/>
+    <display value="Porquinho-da-Índia"/>
+    <definition value="Porquinhos-da-índia (Cavia porcellus)"/>
+  </concept>
+  <concept>
+    <code value="bovine"/>
+    <display value="Bovino"/>
+    <definition value="Gado bovino (Bos taurus, Bos indicus)"/>
+  </concept>
+  <concept>
+    <code value="porcine"/>
+    <display value="Suíno"/>
+    <definition value="Porcos (Sus scrofa domesticus)"/>
+  </concept>
+  <concept>
+    <code value="ovine"/>
+    <display value="Ovino"/>
+    <definition value="Ovelhas (Ovis aries)"/>
+  </concept>
+  <concept>
+    <code value="caprine"/>
+    <display value="Caprino"/>
+    <definition value="Cabras (Capra aegagrus hircus)"/>
+  </concept>
+  <concept>
+    <code value="equine"/>
+    <display value="Equino"/>
+    <definition value="Cavalos (Equus ferus caballus)"/>
+  </concept>
+  <concept>
+    <code value="buffalo"/>
+    <display value="Bubalino"/>
+    <definition value="Búfalos (Bubalus bubalis)"/>
+  </concept>
+  <concept>
+    <code value="poultry"/>
+    <display value="Aves Domésticas"/>
+    <definition value="Aves de produção (galinhas, perus, patos, gansos)"/>
+  </concept>
+  <concept>
+    <code value="chicken"/>
+    <display value="Galinha"/>
+    <definition value="Galinhas (Gallus gallus domesticus)"/>
+  </concept>
+  <concept>
+    <code value="turkey"/>
+    <display value="Peru"/>
+    <definition value="Perus (Meleagris gallopavo)"/>
+  </concept>
+  <concept>
+    <code value="duck"/>
+    <display value="Pato"/>
+    <definition value="Patos (Anas platyrhynchos domesticus)"/>
+  </concept>
+  <concept>
+    <code value="goose"/>
+    <display value="Ganso"/>
+    <definition value="Gansos (Anser anser domesticus)"/>
+  </concept>
+  <concept>
+    <code value="fish"/>
+    <display value="Peixes"/>
+    <definition value="Peixes de aquacultura"/>
+  </concept>
+  <concept>
+    <code value="tilapia"/>
+    <display value="Tilápia"/>
+    <definition value="Tilápias (Oreochromis spp)"/>
+  </concept>
+  <concept>
+    <code value="salmon"/>
+    <display value="Salmão"/>
+    <definition value="Salmões (Salmo salar)"/>
+  </concept>
+  <concept>
+    <code value="shrimp"/>
+    <display value="Camarão"/>
+    <definition value="Camarões (diversas espécies)"/>
+  </concept>
+  <concept>
+    <code value="bee"/>
+    <display value="Abelha"/>
+    <definition value="Abelhas (Apis mellifera)"/>
+  </concept>
+  <concept>
+    <code value="wildlife"/>
+    <display value="Fauna Silvestre"/>
+    <definition value="Animais silvestres em cativeiro ou vida livre"/>
+  </concept>
+  <concept>
+    <code value="zoo-animal"/>
+    <display value="Animal de Zoológico"/>
+    <definition value="Animais mantidos em zoológicos"/>
+  </concept>
+  <concept>
+    <code value="exotic-pet"/>
+    <display value="Animal Exótico de Estimação"/>
+    <definition value="Animais exóticos mantidos como pets"/>
+  </concept>
+</CodeSystem>

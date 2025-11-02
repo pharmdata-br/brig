@@ -1,0 +1,196 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/PackagedProductDefinition/midazolam-5mg-package> a fhir:PackagedProductDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "midazolam-5mg-package"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-08-02T10:00:00Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/packaged-product-definition-br"^^xsd:anyURI ;
+       fhir:l <https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/packaged-product-definition-br>
+     ] [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/PackagedProductDefinition-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Midazolam Cristália 5mg/mL - Embalagem</h2><p><strong>EAN/GTIN:</strong> 7891234567891</p><p><strong>Código ANVISA:</strong> PKG-MID-5MG-10AMP</p><p><strong>Conteúdo:</strong> 10 ampolas de 3mL (5mg/mL)</p><p><strong>Embalagem:</strong> Caixa de papelão com ampolas de vidro âmbar</p><p><strong>Armazenamento:</strong> Conservar sob refrigeração, proteger da luz</p><p><strong>Status:</strong> Medicamento controlado - Prescrição médica obrigatória</p><p><strong>Fabricante:</strong> Cristália Brasil</p><p><strong>Produto base:</strong> Midazolam 5mg/mL injetável</p><p><strong>Classificação:</strong> Medicamento hospitalar de uso controlado</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid>
+     ] ;
+     fhir:value [ fhir:v "BR-CRISTALIA-567890-P001" ]
+  ] [
+     fhir:system [
+       fhir:v "http://www.gs1.org/gtin"^^xsd:anyURI ;
+       fhir:l <http://www.gs1.org/gtin>
+     ] ;
+     fhir:value [ fhir:v "7891234567891" ]
+  ] [
+     fhir:system [
+       fhir:v "http://www.anvisa.gov.br/registro"^^xsd:anyURI ;
+       fhir:l <http://www.anvisa.gov.br/registro>
+     ] ;
+     fhir:value [ fhir:v "PKG-MID-5MG-10AMP" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Midazolam Cristália 5mg/mL - Caixa 10 ampolas 3mL"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br>
+       ] ;
+       fhir:code [ fhir:v "medicamento-hospitalar" ]
+     ] )
+  ] ; # 
+  fhir:packageFor ( [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/MedicinalProductDefinitionBR/midazolam-5mg-injection> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinitionBR/midazolam-5mg-injection" ]
+  ] ) ; # 
+  fhir:legalStatusOfSupply ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br>
+         ] ;
+         fhir:code [ fhir:v "receita-azul" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+           fhir:l <urn:iso:std:iso:3166>
+         ] ;
+         fhir:code [ fhir:v "BR" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br>
+         ] ;
+         fhir:code [ fhir:v "active" ]
+       ] )
+     ] ;
+     fhir:dateRange [
+       fhir:start [ fhir:v "2019-08-10"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:manufacturer ( [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/OrganizationANVISASimple/cristalia-brasil> ;
+     fhir:reference [ fhir:v "OrganizationANVISASimple/cristalia-brasil" ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br>
+         ] ;
+         fhir:code [ fhir:v "caixa" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v 1 ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material>
+         ] ;
+         fhir:code [ fhir:v "papel" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material>
+         ] ;
+         fhir:code [ fhir:v "vidro" ]
+       ] )
+     ] ) ;
+     fhir:containedItem ( [
+       fhir:item [
+         fhir:concept [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item"^^xsd:anyURI ;
+               fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item>
+             ] ;
+             fhir:code [ fhir:v "midazolam-amp-5mg-3ml" ] ;
+             fhir:display [ fhir:v "Midazolam 5mg/mL ampola 3mL" ]
+           ] )
+         ]
+       ] ;
+       fhir:amount [
+         fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "ampola" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "1" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:characteristic ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br>
+         ] ;
+         fhir:code [ fhir:v "armazenamento" ] ;
+         fhir:display [ fhir:v "Condições de armazenamento" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br>
+         ] ;
+         fhir:code [ fhir:v "refrigeracao" ] ;
+         fhir:display [ fhir:v "Refrigeração (2-8°C)" ]
+       ] )
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br>
+         ] ;
+         fhir:code [ fhir:v "protecao-luz" ] ;
+         fhir:display [ fhir:v "Proteção contra luz" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br>
+         ] ;
+         fhir:code [ fhir:v "proteger-luz" ] ;
+         fhir:display [ fhir:v "Proteger da luz" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

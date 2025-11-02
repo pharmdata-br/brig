@@ -1,0 +1,82 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mpid-requiring-changes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet mpid-requiring-changes</b></p><a name=\"mpid-requiring-changes\"> </a><a name=\"hcmpid-requiring-changes\"> </a><ul><li>Include estes códigos, tal como definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>mah-transfer</td><td/></tr><tr><td>legal-status-change</td><td/></tr><tr><td>indication-change</td><td/></tr><tr><td>strength-change</td><td/></tr><tr><td>form-change</td><td/></tr><tr><td>route-change</td><td/></tr><tr><td>substance-change</td><td/></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/mpid-requiring-changes",
+  "version" : "0.0.3",
+  "name" : "MPIDRequiringChanges",
+  "title" : "Mudanças que Requerem Novo MPID",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Tipos de mudanças que requerem geração de novo MPID",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason",
+      "concept" : [{
+        "code" : "mah-transfer"
+      },
+      {
+        "code" : "legal-status-change"
+      },
+      {
+        "code" : "indication-change"
+      },
+      {
+        "code" : "strength-change"
+      },
+      {
+        "code" : "form-change"
+      },
+      {
+        "code" : "route-change"
+      },
+      {
+        "code" : "substance-change"
+      }]
+    }]
+  }
+}

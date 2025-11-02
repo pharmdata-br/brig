@@ -1,0 +1,188 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/dcb-brasileiras> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dcb-brasileiras"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem dcb-brasileiras</b></p><a name=\"dcb-brasileiras\"> </a><a name=\"hcdcb-brasileiras\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">dipirona<a name=\"dcb-brasileiras-dipirona\"> </a></td><td>Dipirona</td><td>Analgésico e antitérmico</td></tr><tr><td style=\"white-space:nowrap\">paracetamol<a name=\"dcb-brasileiras-paracetamol\"> </a></td><td>Paracetamol</td><td>Analgésico e antitérmico</td></tr><tr><td style=\"white-space:nowrap\">ibuprofeno<a name=\"dcb-brasileiras-ibuprofeno\"> </a></td><td>Ibuprofeno</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style=\"white-space:nowrap\">diclofenaco<a name=\"dcb-brasileiras-diclofenaco\"> </a></td><td>Diclofenaco</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style=\"white-space:nowrap\">nimesulida<a name=\"dcb-brasileiras-nimesulida\"> </a></td><td>Nimesulida</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style=\"white-space:nowrap\">amoxicilina<a name=\"dcb-brasileiras-amoxicilina\"> </a></td><td>Amoxicilina</td><td>Antibiótico beta-lactâmico</td></tr><tr><td style=\"white-space:nowrap\">azitromicina<a name=\"dcb-brasileiras-azitromicina\"> </a></td><td>Azitromicina</td><td>Antibiótico macrolídeo</td></tr><tr><td style=\"white-space:nowrap\">ciprofloxacino<a name=\"dcb-brasileiras-ciprofloxacino\"> </a></td><td>Ciprofloxacino</td><td>Antibiótico fluoroquinolona</td></tr><tr><td style=\"white-space:nowrap\">cefalexina<a name=\"dcb-brasileiras-cefalexina\"> </a></td><td>Cefalexina</td><td>Antibiótico cefalosporina</td></tr><tr><td style=\"white-space:nowrap\">losartana<a name=\"dcb-brasileiras-losartana\"> </a></td><td>Losartana</td><td>Anti-hipertensivo antagonista da angiotensina II</td></tr><tr><td style=\"white-space:nowrap\">enalapril<a name=\"dcb-brasileiras-enalapril\"> </a></td><td>Enalapril</td><td>Inibidor da enzima conversora da angiotensina</td></tr><tr><td style=\"white-space:nowrap\">hidroclorotiazida<a name=\"dcb-brasileiras-hidroclorotiazida\"> </a></td><td>Hidroclorotiazida</td><td>Diurético tiazídico</td></tr><tr><td style=\"white-space:nowrap\">anlodipino<a name=\"dcb-brasileiras-anlodipino\"> </a></td><td>Anlodipino</td><td>Bloqueador dos canais de cálcio</td></tr><tr><td style=\"white-space:nowrap\">fluoxetina<a name=\"dcb-brasileiras-fluoxetina\"> </a></td><td>Fluoxetina</td><td>Antidepressivo inibidor seletivo da recaptação de serotonina</td></tr><tr><td style=\"white-space:nowrap\">sertralina<a name=\"dcb-brasileiras-sertralina\"> </a></td><td>Sertralina</td><td>Antidepressivo inibidor seletivo da recaptação de serotonina</td></tr><tr><td style=\"white-space:nowrap\">risperidona<a name=\"dcb-brasileiras-risperidona\"> </a></td><td>Risperidona</td><td>Antipsicótico atípico</td></tr><tr><td style=\"white-space:nowrap\">clonazepam<a name=\"dcb-brasileiras-clonazepam\"> </a></td><td>Clonazepam</td><td>Benzodiazepínico anticonvulsivante</td></tr><tr><td style=\"white-space:nowrap\">metformina<a name=\"dcb-brasileiras-metformina\"> </a></td><td>Metformina</td><td>Antidiabético oral biguanida</td></tr><tr><td style=\"white-space:nowrap\">glibenclamida<a name=\"dcb-brasileiras-glibenclamida\"> </a></td><td>Glibenclamida</td><td>Antidiabético oral sulfoniluréia</td></tr><tr><td style=\"white-space:nowrap\">levotiroxina<a name=\"dcb-brasileiras-levotiroxina\"> </a></td><td>Levotiroxina</td><td>Hormônio da tireoide</td></tr><tr><td style=\"white-space:nowrap\">salbutamol<a name=\"dcb-brasileiras-salbutamol\"> </a></td><td>Salbutamol</td><td>Broncodilatador beta-2 agonista</td></tr><tr><td style=\"white-space:nowrap\">budesonida<a name=\"dcb-brasileiras-budesonida\"> </a></td><td>Budesonida</td><td>Corticosteroide inalatório</td></tr><tr><td style=\"white-space:nowrap\">montelucaste<a name=\"dcb-brasileiras-montelucaste\"> </a></td><td>Montelucaste</td><td>Antagonista dos receptores de leucotrienos</td></tr><tr><td style=\"white-space:nowrap\">omeprazol<a name=\"dcb-brasileiras-omeprazol\"> </a></td><td>Omeprazol</td><td>Inibidor da bomba de prótons</td></tr><tr><td style=\"white-space:nowrap\">ranitidina<a name=\"dcb-brasileiras-ranitidina\"> </a></td><td>Ranitidina</td><td>Antagonista dos receptores H2</td></tr><tr><td style=\"white-space:nowrap\">domperidona<a name=\"dcb-brasileiras-domperidona\"> </a></td><td>Domperidona</td><td>Antiemético procinético</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/dcb-brasileiras"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/dcb-brasileiras>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "DCBBrasileiras"] ; # 
+  fhir:title [ fhir:v "Denominações Comuns Brasileiras (DCB)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para Denominações Comuns Brasileiras conforme ANVISA"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "26"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dipirona" ] ;
+     fhir:display [ fhir:v "Dipirona" ] ;
+     fhir:definition [ fhir:v "Analgésico e antitérmico" ]
+  ] [
+     fhir:code [ fhir:v "paracetamol" ] ;
+     fhir:display [ fhir:v "Paracetamol" ] ;
+     fhir:definition [ fhir:v "Analgésico e antitérmico" ]
+  ] [
+     fhir:code [ fhir:v "ibuprofeno" ] ;
+     fhir:display [ fhir:v "Ibuprofeno" ] ;
+     fhir:definition [ fhir:v "Anti-inflamatório não esteroidal" ]
+  ] [
+     fhir:code [ fhir:v "diclofenaco" ] ;
+     fhir:display [ fhir:v "Diclofenaco" ] ;
+     fhir:definition [ fhir:v "Anti-inflamatório não esteroidal" ]
+  ] [
+     fhir:code [ fhir:v "nimesulida" ] ;
+     fhir:display [ fhir:v "Nimesulida" ] ;
+     fhir:definition [ fhir:v "Anti-inflamatório não esteroidal" ]
+  ] [
+     fhir:code [ fhir:v "amoxicilina" ] ;
+     fhir:display [ fhir:v "Amoxicilina" ] ;
+     fhir:definition [ fhir:v "Antibiótico beta-lactâmico" ]
+  ] [
+     fhir:code [ fhir:v "azitromicina" ] ;
+     fhir:display [ fhir:v "Azitromicina" ] ;
+     fhir:definition [ fhir:v "Antibiótico macrolídeo" ]
+  ] [
+     fhir:code [ fhir:v "ciprofloxacino" ] ;
+     fhir:display [ fhir:v "Ciprofloxacino" ] ;
+     fhir:definition [ fhir:v "Antibiótico fluoroquinolona" ]
+  ] [
+     fhir:code [ fhir:v "cefalexina" ] ;
+     fhir:display [ fhir:v "Cefalexina" ] ;
+     fhir:definition [ fhir:v "Antibiótico cefalosporina" ]
+  ] [
+     fhir:code [ fhir:v "losartana" ] ;
+     fhir:display [ fhir:v "Losartana" ] ;
+     fhir:definition [ fhir:v "Anti-hipertensivo antagonista da angiotensina II" ]
+  ] [
+     fhir:code [ fhir:v "enalapril" ] ;
+     fhir:display [ fhir:v "Enalapril" ] ;
+     fhir:definition [ fhir:v "Inibidor da enzima conversora da angiotensina" ]
+  ] [
+     fhir:code [ fhir:v "hidroclorotiazida" ] ;
+     fhir:display [ fhir:v "Hidroclorotiazida" ] ;
+     fhir:definition [ fhir:v "Diurético tiazídico" ]
+  ] [
+     fhir:code [ fhir:v "anlodipino" ] ;
+     fhir:display [ fhir:v "Anlodipino" ] ;
+     fhir:definition [ fhir:v "Bloqueador dos canais de cálcio" ]
+  ] [
+     fhir:code [ fhir:v "fluoxetina" ] ;
+     fhir:display [ fhir:v "Fluoxetina" ] ;
+     fhir:definition [ fhir:v "Antidepressivo inibidor seletivo da recaptação de serotonina" ]
+  ] [
+     fhir:code [ fhir:v "sertralina" ] ;
+     fhir:display [ fhir:v "Sertralina" ] ;
+     fhir:definition [ fhir:v "Antidepressivo inibidor seletivo da recaptação de serotonina" ]
+  ] [
+     fhir:code [ fhir:v "risperidona" ] ;
+     fhir:display [ fhir:v "Risperidona" ] ;
+     fhir:definition [ fhir:v "Antipsicótico atípico" ]
+  ] [
+     fhir:code [ fhir:v "clonazepam" ] ;
+     fhir:display [ fhir:v "Clonazepam" ] ;
+     fhir:definition [ fhir:v "Benzodiazepínico anticonvulsivante" ]
+  ] [
+     fhir:code [ fhir:v "metformina" ] ;
+     fhir:display [ fhir:v "Metformina" ] ;
+     fhir:definition [ fhir:v "Antidiabético oral biguanida" ]
+  ] [
+     fhir:code [ fhir:v "glibenclamida" ] ;
+     fhir:display [ fhir:v "Glibenclamida" ] ;
+     fhir:definition [ fhir:v "Antidiabético oral sulfoniluréia" ]
+  ] [
+     fhir:code [ fhir:v "levotiroxina" ] ;
+     fhir:display [ fhir:v "Levotiroxina" ] ;
+     fhir:definition [ fhir:v "Hormônio da tireoide" ]
+  ] [
+     fhir:code [ fhir:v "salbutamol" ] ;
+     fhir:display [ fhir:v "Salbutamol" ] ;
+     fhir:definition [ fhir:v "Broncodilatador beta-2 agonista" ]
+  ] [
+     fhir:code [ fhir:v "budesonida" ] ;
+     fhir:display [ fhir:v "Budesonida" ] ;
+     fhir:definition [ fhir:v "Corticosteroide inalatório" ]
+  ] [
+     fhir:code [ fhir:v "montelucaste" ] ;
+     fhir:display [ fhir:v "Montelucaste" ] ;
+     fhir:definition [ fhir:v "Antagonista dos receptores de leucotrienos" ]
+  ] [
+     fhir:code [ fhir:v "omeprazol" ] ;
+     fhir:display [ fhir:v "Omeprazol" ] ;
+     fhir:definition [ fhir:v "Inibidor da bomba de prótons" ]
+  ] [
+     fhir:code [ fhir:v "ranitidina" ] ;
+     fhir:display [ fhir:v "Ranitidina" ] ;
+     fhir:definition [ fhir:v "Antagonista dos receptores H2" ]
+  ] [
+     fhir:code [ fhir:v "domperidona" ] ;
+     fhir:display [ fhir:v "Domperidona" ] ;
+     fhir:definition [ fhir:v "Antiemético procinético" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

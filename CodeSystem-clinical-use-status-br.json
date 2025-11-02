@@ -1,0 +1,169 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "clinical-use-status-br",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem clinical-use-status-br</b></p><a name=\"clinical-use-status-br\"> </a><a name=\"hcclinical-use-status-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>regulatory-impact</td><td>regulatory-impact</td><td>string</td><td>Impacto regulatório</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>regulatory-impact</b></td><td><b>English (English, en)</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"clinical-use-status-br-active\"> </a></td><td>Ativo</td><td>Definição de uso clínico ativa e aplicável</td><td>total</td><td>Active</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"clinical-use-status-br-suspended\"> </a></td><td>Suspenso</td><td>Definição temporariamente suspensa por decisão regulatória ou técnica</td><td>parcial</td><td>Suspended</td></tr><tr><td style=\"white-space:nowrap\">deprecated<a name=\"clinical-use-status-br-deprecated\"> </a></td><td>Depreciado</td><td>Definição depreciada mantida por compatibilidade histórica</td><td>mínimo</td><td>Deprecated</td></tr><tr><td style=\"white-space:nowrap\">under-review<a name=\"clinical-use-status-br-under-review\"> </a></td><td>Em revisão</td><td>Definição sob revisão técnica ou regulatória</td><td>parcial</td><td>Under review</td></tr><tr><td style=\"white-space:nowrap\">pending-approval<a name=\"clinical-use-status-br-pending-approval\"> </a></td><td>Pendente aprovação</td><td>Definição pendente de aprovação regulatória</td><td>nenhum</td><td>Pending approval</td></tr><tr><td style=\"white-space:nowrap\">rejected<a name=\"clinical-use-status-br-rejected\"> </a></td><td>Rejeitado</td><td>Definição rejeitada por não conformidade técnica ou regulatória</td><td>nenhum</td><td>Rejected</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-status-br",
+  "version" : "0.0.3",
+  "name" : "ClinicalUseStatusBR",
+  "title" : "Status de Uso Clínico - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Status das definições de uso clínico adaptados para o contexto regulatório brasileiro.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "compositional" : false,
+  "versionNeeded" : false,
+  "content" : "complete",
+  "count" : 6,
+  "property" : [{
+    "code" : "regulatory-impact",
+    "description" : "Impacto regulatório",
+    "type" : "string"
+  }],
+  "concept" : [{
+    "code" : "active",
+    "display" : "Ativo",
+    "definition" : "Definição de uso clínico ativa e aplicável",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Ativo"
+    },
+    {
+      "language" : "en",
+      "value" : "Active"
+    }],
+    "property" : [{
+      "code" : "regulatory-impact",
+      "valueString" : "total"
+    }]
+  },
+  {
+    "code" : "suspended",
+    "display" : "Suspenso",
+    "definition" : "Definição temporariamente suspensa por decisão regulatória ou técnica",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Suspenso"
+    },
+    {
+      "language" : "en",
+      "value" : "Suspended"
+    }],
+    "property" : [{
+      "code" : "regulatory-impact",
+      "valueString" : "parcial"
+    }]
+  },
+  {
+    "code" : "deprecated",
+    "display" : "Depreciado",
+    "definition" : "Definição depreciada mantida por compatibilidade histórica",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Depreciado"
+    },
+    {
+      "language" : "en",
+      "value" : "Deprecated"
+    }],
+    "property" : [{
+      "code" : "regulatory-impact",
+      "valueString" : "mínimo"
+    }]
+  },
+  {
+    "code" : "under-review",
+    "display" : "Em revisão",
+    "definition" : "Definição sob revisão técnica ou regulatória",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Em revisão"
+    },
+    {
+      "language" : "en",
+      "value" : "Under review"
+    }],
+    "property" : [{
+      "code" : "regulatory-impact",
+      "valueString" : "parcial"
+    }]
+  },
+  {
+    "code" : "pending-approval",
+    "display" : "Pendente aprovação",
+    "definition" : "Definição pendente de aprovação regulatória",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Pendente aprovação"
+    },
+    {
+      "language" : "en",
+      "value" : "Pending approval"
+    }],
+    "property" : [{
+      "code" : "regulatory-impact",
+      "valueString" : "nenhum"
+    }]
+  },
+  {
+    "code" : "rejected",
+    "display" : "Rejeitado",
+    "definition" : "Definição rejeitada por não conformidade técnica ou regulatória",
+    "designation" : [{
+      "language" : "pt-BR",
+      "value" : "Rejeitado"
+    },
+    {
+      "language" : "en",
+      "value" : "Rejected"
+    }],
+    "property" : [{
+      "code" : "regulatory-impact",
+      "valueString" : "nenhum"
+    }]
+  }]
+}

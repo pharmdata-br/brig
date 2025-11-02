@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/identifier-lifecycle-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "identifier-lifecycle-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem identifier-lifecycle-status</b></p><a name=\"identifier-lifecycle-status\"> </a><a name=\"hcidentifier-lifecycle-status\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"identifier-lifecycle-status-active\"> </a></td><td>Ativo</td><td>Identificador atualmente ativo</td></tr><tr><td style=\"white-space:nowrap\">superseded<a name=\"identifier-lifecycle-status-superseded\"> </a></td><td>Substituído</td><td>Identificador substituído por nova versão</td></tr><tr><td style=\"white-space:nowrap\">deprecated<a name=\"identifier-lifecycle-status-deprecated\"> </a></td><td>Depreciado</td><td>Identificador depreciado mas ainda válido</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"identifier-lifecycle-status-withdrawn\"> </a></td><td>Retirado</td><td>Identificador retirado e não mais válido</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"identifier-lifecycle-status-suspended\"> </a></td><td>Suspenso</td><td>Identificador temporariamente suspenso</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/identifier-lifecycle-status"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/identifier-lifecycle-status>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "IdentifierLifecycleStatus"] ; # 
+  fhir:title [ fhir:v "Status de Lifecycle do Identificador"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para status do ciclo de vida de identificadores"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Ativo" ] ;
+     fhir:definition [ fhir:v "Identificador atualmente ativo" ]
+  ] [
+     fhir:code [ fhir:v "superseded" ] ;
+     fhir:display [ fhir:v "Substituído" ] ;
+     fhir:definition [ fhir:v "Identificador substituído por nova versão" ]
+  ] [
+     fhir:code [ fhir:v "deprecated" ] ;
+     fhir:display [ fhir:v "Depreciado" ] ;
+     fhir:definition [ fhir:v "Identificador depreciado mas ainda válido" ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Retirado" ] ;
+     fhir:definition [ fhir:v "Identificador retirado e não mais válido" ]
+  ] [
+     fhir:code [ fhir:v "suspended" ] ;
+     fhir:display [ fhir:v "Suspenso" ] ;
+     fhir:definition [ fhir:v "Identificador temporariamente suspenso" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="substance-name-domain"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem substance-name-domain</b></p><a name="substance-name-domain"> </a><a name="hcsubstance-name-domain"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">scientific<a name="substance-name-domain-scientific"> </a></td><td>Científico</td><td>Nome usado em contexto científico/acadêmico</td></tr><tr><td style="white-space:nowrap">regulatory<a name="substance-name-domain-regulatory"> </a></td><td>Regulatório</td><td>Nome usado em contexto regulatório</td></tr><tr><td style="white-space:nowrap">commercial<a name="substance-name-domain-commercial"> </a></td><td>Comercial</td><td>Nome usado em contexto comercial</td></tr><tr><td style="white-space:nowrap">common<a name="substance-name-domain-common"> </a></td><td>Comum</td><td>Nome popular/trivial</td></tr><tr><td style="white-space:nowrap">systematic<a name="substance-name-domain-systematic"> </a></td><td>Sistemático</td><td>Nome sistemático (IUPAC)</td></tr><tr><td style="white-space:nowrap">brand<a name="substance-name-domain-brand"> </a></td><td>Marca</td><td>Nome de marca registrada</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-domain"/>
+  <version value="0.0.3"/>
+  <name value="SubstanceNameDomain"/>
+  <title value="Domínio de Nome de Substância"/>
+  <status value="active"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Domínio ou contexto de uso de nome de substância"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="scientific"/>
+    <display value="Científico"/>
+    <definition value="Nome usado em contexto científico/acadêmico"/>
+  </concept>
+  <concept>
+    <code value="regulatory"/>
+    <display value="Regulatório"/>
+    <definition value="Nome usado em contexto regulatório"/>
+  </concept>
+  <concept>
+    <code value="commercial"/>
+    <display value="Comercial"/>
+    <definition value="Nome usado em contexto comercial"/>
+  </concept>
+  <concept>
+    <code value="common"/>
+    <display value="Comum"/>
+    <definition value="Nome popular/trivial"/>
+  </concept>
+  <concept>
+    <code value="systematic"/>
+    <display value="Sistemático"/>
+    <definition value="Nome sistemático (IUPAC)"/>
+  </concept>
+  <concept>
+    <code value="brand"/>
+    <display value="Marca"/>
+    <definition value="Nome de marca registrada"/>
+  </concept>
+</CodeSystem>

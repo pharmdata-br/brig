@@ -1,0 +1,109 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "interaction-management",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem interaction-management</b></p><a name=\"interaction-management\"> </a><a name=\"hcinteraction-management\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">avoid-combination<a name=\"interaction-management-avoid-combination\"> </a></td><td>Evitar Combinação</td><td>A combinação deve ser evitada</td></tr><tr><td style=\"white-space:nowrap\">use-alternative<a name=\"interaction-management-use-alternative\"> </a></td><td>Usar Alternativa</td><td>Considerar terapia alternativa</td></tr><tr><td style=\"white-space:nowrap\">monitor-closely<a name=\"interaction-management-monitor-closely\"> </a></td><td>Monitorar Rigorosamente</td><td>Usar com monitoramento clínico rigoroso</td></tr><tr><td style=\"white-space:nowrap\">adjust-dose<a name=\"interaction-management-adjust-dose\"> </a></td><td>Ajustar Dose</td><td>Ajuste de dose pode ser necessário</td></tr><tr><td style=\"white-space:nowrap\">separate-administration<a name=\"interaction-management-separate-administration\"> </a></td><td>Separar Administração</td><td>Administrar em horários diferentes</td></tr><tr><td style=\"white-space:nowrap\">monitor-lab<a name=\"interaction-management-monitor-lab\"> </a></td><td>Monitorar Exames Laboratoriais</td><td>Monitorar parâmetros laboratoriais</td></tr><tr><td style=\"white-space:nowrap\">inform-patient<a name=\"interaction-management-inform-patient\"> </a></td><td>Informar Paciente</td><td>Orientar paciente sobre sinais de alerta</td></tr><tr><td style=\"white-space:nowrap\">no-action-needed<a name=\"interaction-management-no-action-needed\"> </a></td><td>Nenhuma Ação Necessária</td><td>Interação clinicamente não significativa</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-management",
+  "version" : "0.0.3",
+  "name" : "InteractionManagement",
+  "title" : "Manejo de Interação",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-31",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Estratégias de manejo de interações medicamentosas",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "avoid-combination",
+    "display" : "Evitar Combinação",
+    "definition" : "A combinação deve ser evitada"
+  },
+  {
+    "code" : "use-alternative",
+    "display" : "Usar Alternativa",
+    "definition" : "Considerar terapia alternativa"
+  },
+  {
+    "code" : "monitor-closely",
+    "display" : "Monitorar Rigorosamente",
+    "definition" : "Usar com monitoramento clínico rigoroso"
+  },
+  {
+    "code" : "adjust-dose",
+    "display" : "Ajustar Dose",
+    "definition" : "Ajuste de dose pode ser necessário"
+  },
+  {
+    "code" : "separate-administration",
+    "display" : "Separar Administração",
+    "definition" : "Administrar em horários diferentes"
+  },
+  {
+    "code" : "monitor-lab",
+    "display" : "Monitorar Exames Laboratoriais",
+    "definition" : "Monitorar parâmetros laboratoriais"
+  },
+  {
+    "code" : "inform-patient",
+    "display" : "Informar Paciente",
+    "definition" : "Orientar paciente sobre sinais de alerta"
+  },
+  {
+    "code" : "no-action-needed",
+    "display" : "Nenhuma Ação Necessária",
+    "definition" : "Interação clinicamente não significativa"
+  }]
+}

@@ -1,0 +1,104 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "therapy-relationship-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem therapy-relationship-type</b></p><a name=\"therapy-relationship-type\"> </a><a name=\"hctherapy-relationship-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">contraindicated-with<a name=\"therapy-relationship-type-contraindicated-with\"> </a></td><td>Contraindicado Com</td><td>Uso contraindicado em combinação com outra terapia</td></tr><tr><td style=\"white-space:nowrap\">not-recommended-with<a name=\"therapy-relationship-type-not-recommended-with\"> </a></td><td>Não Recomendado Com</td><td>Uso não recomendado em combinação com outra terapia</td></tr><tr><td style=\"white-space:nowrap\">use-caution-with<a name=\"therapy-relationship-type-use-caution-with\"> </a></td><td>Usar Com Cautela</td><td>Requer cautela ao usar em combinação</td></tr><tr><td style=\"white-space:nowrap\">replace-other-therapy<a name=\"therapy-relationship-type-replace-other-therapy\"> </a></td><td>Substitui Outra Terapia</td><td>Deve substituir outra terapia</td></tr><tr><td style=\"white-space:nowrap\">replace-other-therapy-contraindicated<a name=\"therapy-relationship-type-replace-other-therapy-contraindicated\"> </a></td><td>Substituição Contraindicada</td><td>Não deve substituir outra terapia específica</td></tr><tr><td style=\"white-space:nowrap\">replace-other-therapy-not-recommended<a name=\"therapy-relationship-type-replace-other-therapy-not-recommended\"> </a></td><td>Substituição Não Recomendada</td><td>Não é recomendado como substituto</td></tr><tr><td style=\"white-space:nowrap\">indicated-only-after<a name=\"therapy-relationship-type-indicated-only-after\"> </a></td><td>Indicado Apenas Após</td><td>Indicado apenas após falha de outra terapia</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type",
+  "version" : "0.0.3",
+  "name" : "TherapyRelationshipType",
+  "title" : "Tipo de Relacionamento Terapêutico",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-31",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Relacionamento entre terapia e contraindicação ou indicação",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "contraindicated-with",
+    "display" : "Contraindicado Com",
+    "definition" : "Uso contraindicado em combinação com outra terapia"
+  },
+  {
+    "code" : "not-recommended-with",
+    "display" : "Não Recomendado Com",
+    "definition" : "Uso não recomendado em combinação com outra terapia"
+  },
+  {
+    "code" : "use-caution-with",
+    "display" : "Usar Com Cautela",
+    "definition" : "Requer cautela ao usar em combinação"
+  },
+  {
+    "code" : "replace-other-therapy",
+    "display" : "Substitui Outra Terapia",
+    "definition" : "Deve substituir outra terapia"
+  },
+  {
+    "code" : "replace-other-therapy-contraindicated",
+    "display" : "Substituição Contraindicada",
+    "definition" : "Não deve substituir outra terapia específica"
+  },
+  {
+    "code" : "replace-other-therapy-not-recommended",
+    "display" : "Substituição Não Recomendada",
+    "definition" : "Não é recomendado como substituto"
+  },
+  {
+    "code" : "indicated-only-after",
+    "display" : "Indicado Apenas Após",
+    "definition" : "Indicado apenas após falha de outra terapia"
+  }]
+}

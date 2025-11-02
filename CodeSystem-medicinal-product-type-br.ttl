@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-type-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medicinal-product-type-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem medicinal-product-type-br</b></p><a name=\"medicinal-product-type-br\"> </a><a name=\"hcmedicinal-product-type-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">medicamento<a name=\"medicinal-product-type-br-medicamento\"> </a></td><td>Medicamento</td><td>Produto farmacêutico tecnicamente obtido ou elaborado, com finalidade profilática, curativa, paliativa ou para fins de diagnóstico</td></tr><tr><td style=\"white-space:nowrap\">vacina<a name=\"medicinal-product-type-br-vacina\"> </a></td><td>Vacina</td><td>Preparação que contém agente imunizante com a finalidade de produzir imunidade ativa específica</td></tr><tr><td style=\"white-space:nowrap\">soro<a name=\"medicinal-product-type-br-soro\"> </a></td><td>Soro</td><td>Preparação que contém imunoglobulinas específicas com finalidade profilática ou terapêutica</td></tr><tr><td style=\"white-space:nowrap\">hemoderivado<a name=\"medicinal-product-type-br-hemoderivado\"> </a></td><td>Hemoderivado</td><td>Produto obtido a partir do sangue humano para uso terapêutico</td></tr><tr><td style=\"white-space:nowrap\">radioativo<a name=\"medicinal-product-type-br-radioativo\"> </a></td><td>Radiofármaco</td><td>Preparação farmacêutica que contém um ou mais radionuclídeos</td></tr><tr><td style=\"white-space:nowrap\">biologico<a name=\"medicinal-product-type-br-biologico\"> </a></td><td>Produto Biológico</td><td>Produto obtido de fluidos ou tecidos de origem biológica</td></tr><tr><td style=\"white-space:nowrap\">fitoterápico<a name=\"medicinal-product-type-br-fitoter.225pico\"> </a></td><td>Fitoterápico</td><td>Medicamento obtido empregando-se exclusivamente matérias-primas ativas vegetais</td></tr><tr><td style=\"white-space:nowrap\">homeopatico<a name=\"medicinal-product-type-br-homeopatico\"> </a></td><td>Homeopático</td><td>Medicamento preparado segundo as normas e princípios da arte farmacêutica homeopática</td></tr><tr><td style=\"white-space:nowrap\">dinamizado<a name=\"medicinal-product-type-br-dinamizado\"> </a></td><td>Medicamento Dinamizado</td><td>Medicamento preparado a partir de insumo ativo ou inerte dinamizado segundo técnica especial</td></tr><tr><td style=\"white-space:nowrap\">antroposófico<a name=\"medicinal-product-type-br-antropos.243fico\"> </a></td><td>Medicamento Antroposófico</td><td>Medicamento obtido empregando matérias-primas de acordo com a farmacotécnica antroposófica</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-type-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-type-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "MedicinalProductTypeBR"] ; # 
+  fhir:title [ fhir:v "Tipos de Produto Medicinal - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para tipos de produtos medicinais no contexto brasileiro"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "medicamento" ] ;
+     fhir:display [ fhir:v "Medicamento" ] ;
+     fhir:definition [ fhir:v "Produto farmacêutico tecnicamente obtido ou elaborado, com finalidade profilática, curativa, paliativa ou para fins de diagnóstico" ]
+  ] [
+     fhir:code [ fhir:v "vacina" ] ;
+     fhir:display [ fhir:v "Vacina" ] ;
+     fhir:definition [ fhir:v "Preparação que contém agente imunizante com a finalidade de produzir imunidade ativa específica" ]
+  ] [
+     fhir:code [ fhir:v "soro" ] ;
+     fhir:display [ fhir:v "Soro" ] ;
+     fhir:definition [ fhir:v "Preparação que contém imunoglobulinas específicas com finalidade profilática ou terapêutica" ]
+  ] [
+     fhir:code [ fhir:v "hemoderivado" ] ;
+     fhir:display [ fhir:v "Hemoderivado" ] ;
+     fhir:definition [ fhir:v "Produto obtido a partir do sangue humano para uso terapêutico" ]
+  ] [
+     fhir:code [ fhir:v "radioativo" ] ;
+     fhir:display [ fhir:v "Radiofármaco" ] ;
+     fhir:definition [ fhir:v "Preparação farmacêutica que contém um ou mais radionuclídeos" ]
+  ] [
+     fhir:code [ fhir:v "biologico" ] ;
+     fhir:display [ fhir:v "Produto Biológico" ] ;
+     fhir:definition [ fhir:v "Produto obtido de fluidos ou tecidos de origem biológica" ]
+  ] [
+     fhir:code [ fhir:v "fitoterápico" ] ;
+     fhir:display [ fhir:v "Fitoterápico" ] ;
+     fhir:definition [ fhir:v "Medicamento obtido empregando-se exclusivamente matérias-primas ativas vegetais" ]
+  ] [
+     fhir:code [ fhir:v "homeopatico" ] ;
+     fhir:display [ fhir:v "Homeopático" ] ;
+     fhir:definition [ fhir:v "Medicamento preparado segundo as normas e princípios da arte farmacêutica homeopática" ]
+  ] [
+     fhir:code [ fhir:v "dinamizado" ] ;
+     fhir:display [ fhir:v "Medicamento Dinamizado" ] ;
+     fhir:definition [ fhir:v "Medicamento preparado a partir de insumo ativo ou inerte dinamizado segundo técnica especial" ]
+  ] [
+     fhir:code [ fhir:v "antroposófico" ] ;
+     fhir:display [ fhir:v "Medicamento Antroposófico" ] ;
+     fhir:definition [ fhir:v "Medicamento obtido empregando matérias-primas de acordo com a farmacotécnica antroposófica" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

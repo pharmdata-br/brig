@@ -1,0 +1,142 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapeutic-indication-br> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "therapeutic-indication-br"] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet therapeutic-indication-br</b></p><a name=\"therapeutic-indication-br\"> </a><a name=\"hctherapeutic-indication-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir estes códigos, tal como definidos em <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>R50.9</td><td>Febre não especificada</td></tr><tr><td>R52.9</td><td>Dor não especificada</td></tr><tr><td>G43.9</td><td>Enxaqueca não especificada</td></tr><tr><td>M25.50</td><td>Dor articular</td></tr><tr><td>K08.89</td><td>Dor odontológica</td></tr><tr><td>N94.6</td><td>Dismenorreia</td></tr><tr><td>I10</td><td>Hipertensão essencial</td></tr><tr><td>E78.5</td><td>Hiperlipidemia</td></tr><tr><td>E11.9</td><td>Diabetes mellitus tipo 2</td></tr><tr><td>J06.9</td><td>Infecção aguda das vias aéreas superiores</td></tr></table></li><li>Incluir estes códigos, tal como definidos em <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"http://snomed.info/id/386661006\">386661006</a></td><td>Fever (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/22253000\">22253000</a></td><td>Pain (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/37796009\">37796009</a></td><td>Migraine (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/57676002\">57676002</a></td><td>Arthralgia (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/27355003\">27355003</a></td><td>Toothache (finding)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapeutic-indication-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapeutic-indication-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "TherapeuticIndicationBRValueSet"] ; # 
+  fhir:title [ fhir:v "Indicações Terapêuticas - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet de indicações terapêuticas baseado em CID-10 e SNOMED-CT para o contexto brasileiro."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "R50.9" ] ;
+         fhir:display [ fhir:v "Febre não especificada" ]
+       ] [
+         fhir:code [ fhir:v "R52.9" ] ;
+         fhir:display [ fhir:v "Dor não especificada" ]
+       ] [
+         fhir:code [ fhir:v "G43.9" ] ;
+         fhir:display [ fhir:v "Enxaqueca não especificada" ]
+       ] [
+         fhir:code [ fhir:v "M25.50" ] ;
+         fhir:display [ fhir:v "Dor articular" ]
+       ] [
+         fhir:code [ fhir:v "K08.89" ] ;
+         fhir:display [ fhir:v "Dor odontológica" ]
+       ] [
+         fhir:code [ fhir:v "N94.6" ] ;
+         fhir:display [ fhir:v "Dismenorreia" ]
+       ] [
+         fhir:code [ fhir:v "I10" ] ;
+         fhir:display [ fhir:v "Hipertensão essencial" ]
+       ] [
+         fhir:code [ fhir:v "E78.5" ] ;
+         fhir:display [ fhir:v "Hiperlipidemia" ]
+       ] [
+         fhir:code [ fhir:v "E11.9" ] ;
+         fhir:display [ fhir:v "Diabetes mellitus tipo 2" ]
+       ] [
+         fhir:code [ fhir:v "J06.9" ] ;
+         fhir:display [ fhir:v "Infecção aguda das vias aéreas superiores" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "386661006" ] ;
+         fhir:display [ fhir:v "Fever (finding)" ]
+       ] [
+         fhir:code [ fhir:v "22253000" ] ;
+         fhir:display [ fhir:v "Pain (finding)" ]
+       ] [
+         fhir:code [ fhir:v "37796009" ] ;
+         fhir:display [ fhir:v "Migraine (disorder)" ]
+       ] [
+         fhir:code [ fhir:v "57676002" ] ;
+         fhir:display [ fhir:v "Arthralgia (finding)" ]
+       ] [
+         fhir:code [ fhir:v "27355003" ] ;
+         fhir:display [ fhir:v "Toothache (finding)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

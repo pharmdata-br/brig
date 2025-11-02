@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="phpid-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem phpid-br</b></p><a name="phpid-br"> </a><a name="hcphpid-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">BR-ANVISA-001234-PHP001<a name="phpid-br-BR-ANVISA-001234-PHP001"> </a></td><td>PHPID Exemplo 1</td><td>Exemplo de PHPID brasileiro para demonstração</td></tr><tr><td style="white-space:nowrap">BR-NEO-567890-PHP001<a name="phpid-br-BR-NEO-567890-PHP001"> </a></td><td>PHPID Exemplo 2</td><td>Exemplo de PHPID brasileiro para demonstração</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/phpid-br"/>
+  <version value="0.0.3"/>
+  <name value="PHPIDBrazil"/>
+  <title value="PHPID - Identificador de Produto Farmacêutico - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para identificadores de produtos farmacêuticos (administráveis) conforme ISO 11615"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Implementação brasileira do PHPID conforme ISO 11615 - Pharmaceutical product identification"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="BR-ANVISA-001234-PHP001"/>
+    <display value="PHPID Exemplo 1"/>
+    <definition value="Exemplo de PHPID brasileiro para demonstração"/>
+  </concept>
+  <concept>
+    <code value="BR-NEO-567890-PHP001"/>
+    <display value="PHPID Exemplo 2"/>
+    <definition value="Exemplo de PHPID brasileiro para demonstração"/>
+  </concept>
+</CodeSystem>

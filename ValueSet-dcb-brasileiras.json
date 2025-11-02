@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "dcb-brasileiras",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet dcb-brasileiras</b></p><a name=\"dcb-brasileiras\"> </a><a name=\"hcdcb-brasileiras\"> </a><ul><li>Include todos os códigos definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/dcb-brasileiras",
+  "version" : "0.0.3",
+  "name" : "DCBBrasileiras",
+  "title" : "Denominações Comuns Brasileiras (DCB)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "ANVISA - Agência Nacional de Vigilância Sanitária",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras"
+    }]
+  }
+}

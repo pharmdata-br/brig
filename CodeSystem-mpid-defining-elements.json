@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mpid-defining-elements",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem mpid-defining-elements</b></p><a name=\"mpid-defining-elements\"> </a><a name=\"hcmpid-defining-elements\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">therapeutic-indication<a name=\"mpid-defining-elements-therapeutic-indication\"> </a></td><td>Indicação Terapêutica</td><td>Mudança em indicação terapêutica requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">legal-status<a name=\"mpid-defining-elements-legal-status\"> </a></td><td>Status Legal</td><td>Mudança em status legal requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">associated-device<a name=\"mpid-defining-elements-associated-device\"> </a></td><td>Dispositivo Associado</td><td>Mudança em dispositivo associado pode requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">active-substance<a name=\"mpid-defining-elements-active-substance\"> </a></td><td>Substância Ativa</td><td>Mudança em substância ativa requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">strength<a name=\"mpid-defining-elements-strength\"> </a></td><td>Concentração</td><td>Mudança em concentração requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">pharmaceutical-form<a name=\"mpid-defining-elements-pharmaceutical-form\"> </a></td><td>Forma Farmacêutica</td><td>Mudança em forma farmacêutica requer novo MPID</td></tr><tr><td style=\"white-space:nowrap\">route-administration<a name=\"mpid-defining-elements-route-administration\"> </a></td><td>Via de Administração</td><td>Mudança em via de administração requer novo MPID</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/mpid-defining-elements",
+  "version" : "0.0.3",
+  "name" : "MPIDDefiningElements",
+  "title" : "Elementos Definidores de MPID",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Códigos para elementos que definem quando criar novo MPID",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "therapeutic-indication",
+    "display" : "Indicação Terapêutica",
+    "definition" : "Mudança em indicação terapêutica requer novo MPID"
+  },
+  {
+    "code" : "legal-status",
+    "display" : "Status Legal",
+    "definition" : "Mudança em status legal requer novo MPID"
+  },
+  {
+    "code" : "associated-device",
+    "display" : "Dispositivo Associado",
+    "definition" : "Mudança em dispositivo associado pode requer novo MPID"
+  },
+  {
+    "code" : "active-substance",
+    "display" : "Substância Ativa",
+    "definition" : "Mudança em substância ativa requer novo MPID"
+  },
+  {
+    "code" : "strength",
+    "display" : "Concentração",
+    "definition" : "Mudança em concentração requer novo MPID"
+  },
+  {
+    "code" : "pharmaceutical-form",
+    "display" : "Forma Farmacêutica",
+    "definition" : "Mudança em forma farmacêutica requer novo MPID"
+  },
+  {
+    "code" : "route-administration",
+    "display" : "Via de Administração",
+    "definition" : "Mudança em via de administração requer novo MPID"
+  }]
+}

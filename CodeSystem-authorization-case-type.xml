@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="authorization-case-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem authorization-case-type</b></p><a name="authorization-case-type"> </a><a name="hcauthorization-case-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">initial-authorization<a name="authorization-case-type-initial-authorization"> </a></td><td>Autorização Inicial</td><td>Primeira autorização de comercialização de um produto</td></tr><tr><td style="white-space:nowrap">renewal<a name="authorization-case-type-renewal"> </a></td><td>Renovação</td><td>Renovação de autorização existente</td></tr><tr><td style="white-space:nowrap">variation-type1<a name="authorization-case-type-variation-type1"> </a></td><td>Variação Tipo I</td><td>Variação menor sem impacto significativo</td></tr><tr><td style="white-space:nowrap">variation-type2<a name="authorization-case-type-variation-type2"> </a></td><td>Variação Tipo II</td><td>Variação maior com impacto significativo</td></tr><tr><td style="white-space:nowrap">transfer<a name="authorization-case-type-transfer"> </a></td><td>Transferência de Titularidade</td><td>Transferência da autorização para novo titular</td></tr><tr><td style="white-space:nowrap">cancellation<a name="authorization-case-type-cancellation"> </a></td><td>Cancelamento</td><td>Cancelamento voluntário da autorização</td></tr><tr><td style="white-space:nowrap">suspension<a name="authorization-case-type-suspension"> </a></td><td>Suspensão</td><td>Suspensão temporária da autorização</td></tr><tr><td style="white-space:nowrap">revocation<a name="authorization-case-type-revocation"> </a></td><td>Revogação</td><td>Revogação da autorização por decisão regulatória</td></tr><tr><td style="white-space:nowrap">extension<a name="authorization-case-type-extension"> </a></td><td>Extensão</td><td>Extensão de autorização existente para novos usos</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-case-type"/>
+  <version value="0.0.3"/>
+  <name value="AuthorizationCaseType"/>
+  <title value="Tipo de Processo de Autorização"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de processos administrativos para autorização regulatória"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="initial-authorization"/>
+    <display value="Autorização Inicial"/>
+    <definition value="Primeira autorização de comercialização de um produto"/>
+  </concept>
+  <concept>
+    <code value="renewal"/>
+    <display value="Renovação"/>
+    <definition value="Renovação de autorização existente"/>
+  </concept>
+  <concept>
+    <code value="variation-type1"/>
+    <display value="Variação Tipo I"/>
+    <definition value="Variação menor sem impacto significativo"/>
+  </concept>
+  <concept>
+    <code value="variation-type2"/>
+    <display value="Variação Tipo II"/>
+    <definition value="Variação maior com impacto significativo"/>
+  </concept>
+  <concept>
+    <code value="transfer"/>
+    <display value="Transferência de Titularidade"/>
+    <definition value="Transferência da autorização para novo titular"/>
+  </concept>
+  <concept>
+    <code value="cancellation"/>
+    <display value="Cancelamento"/>
+    <definition value="Cancelamento voluntário da autorização"/>
+  </concept>
+  <concept>
+    <code value="suspension"/>
+    <display value="Suspensão"/>
+    <definition value="Suspensão temporária da autorização"/>
+  </concept>
+  <concept>
+    <code value="revocation"/>
+    <display value="Revogação"/>
+    <definition value="Revogação da autorização por decisão regulatória"/>
+  </concept>
+  <concept>
+    <code value="extension"/>
+    <display value="Extensão"/>
+    <definition value="Extensão de autorização existente para novos usos"/>
+  </concept>
+</CodeSystem>

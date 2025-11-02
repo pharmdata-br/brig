@@ -1,0 +1,109 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "legal-status-supply-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem legal-status-supply-br</b></p><a name=\"legal-status-supply-br\"> </a><a name=\"hclegal-status-supply-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">venda-livre<a name=\"legal-status-supply-br-venda-livre\"> </a></td><td>Venda Livre</td><td>Medicamento de venda livre, sem necessidade de prescrição médica</td></tr><tr><td style=\"white-space:nowrap\">prescricao-medica<a name=\"legal-status-supply-br-prescricao-medica\"> </a></td><td>Prescrição Médica</td><td>Medicamento que requer prescrição médica para dispensação</td></tr><tr><td style=\"white-space:nowrap\">prescricao-medica-renovavel<a name=\"legal-status-supply-br-prescricao-medica-renovavel\"> </a></td><td>Prescrição Médica Renovável</td><td>Medicamento com prescrição médica que permite renovação</td></tr><tr><td style=\"white-space:nowrap\">receita-especial<a name=\"legal-status-supply-br-receita-especial\"> </a></td><td>Receita Especial</td><td>Medicamento que requer receita de controle especial</td></tr><tr><td style=\"white-space:nowrap\">receita-azul<a name=\"legal-status-supply-br-receita-azul\"> </a></td><td>Receita Azul</td><td>Medicamento controlado que requer receita azul (lista C1)</td></tr><tr><td style=\"white-space:nowrap\">receita-amarela<a name=\"legal-status-supply-br-receita-amarela\"> </a></td><td>Receita Amarela</td><td>Medicamento controlado que requer receita amarela (lista C2)</td></tr><tr><td style=\"white-space:nowrap\">notificacao-a<a name=\"legal-status-supply-br-notificacao-a\"> </a></td><td>Notificação A</td><td>Medicamento que requer notificação de receita A (entorpecentes)</td></tr><tr><td style=\"white-space:nowrap\">notificacao-b<a name=\"legal-status-supply-br-notificacao-b\"> </a></td><td>Notificação B</td><td>Medicamento que requer notificação de receita B (psicotrópicos)</td></tr><tr><td style=\"white-space:nowrap\">uso-hospitalar<a name=\"legal-status-supply-br-uso-hospitalar\"> </a></td><td>Uso Hospitalar</td><td>Medicamento de uso restrito a ambiente hospitalar</td></tr><tr><td style=\"white-space:nowrap\">uso-restrito<a name=\"legal-status-supply-br-uso-restrito\"> </a></td><td>Uso Restrito</td><td>Medicamento de uso restrito conforme regulamentação específica</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/legal-status-supply-br",
+  "version" : "0.0.3",
+  "name" : "LegalStatusSupplyBR",
+  "title" : "Status Legal de Fornecimento - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para status legal de dispensação no contexto brasileiro",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "venda-livre",
+    "display" : "Venda Livre",
+    "definition" : "Medicamento de venda livre, sem necessidade de prescrição médica"
+  },
+  {
+    "code" : "prescricao-medica",
+    "display" : "Prescrição Médica",
+    "definition" : "Medicamento que requer prescrição médica para dispensação"
+  },
+  {
+    "code" : "prescricao-medica-renovavel",
+    "display" : "Prescrição Médica Renovável",
+    "definition" : "Medicamento com prescrição médica que permite renovação"
+  },
+  {
+    "code" : "receita-especial",
+    "display" : "Receita Especial",
+    "definition" : "Medicamento que requer receita de controle especial"
+  },
+  {
+    "code" : "receita-azul",
+    "display" : "Receita Azul",
+    "definition" : "Medicamento controlado que requer receita azul (lista C1)"
+  },
+  {
+    "code" : "receita-amarela",
+    "display" : "Receita Amarela",
+    "definition" : "Medicamento controlado que requer receita amarela (lista C2)"
+  },
+  {
+    "code" : "notificacao-a",
+    "display" : "Notificação A",
+    "definition" : "Medicamento que requer notificação de receita A (entorpecentes)"
+  },
+  {
+    "code" : "notificacao-b",
+    "display" : "Notificação B",
+    "definition" : "Medicamento que requer notificação de receita B (psicotrópicos)"
+  },
+  {
+    "code" : "uso-hospitalar",
+    "display" : "Uso Hospitalar",
+    "definition" : "Medicamento de uso restrito a ambiente hospitalar"
+  },
+  {
+    "code" : "uso-restrito",
+    "display" : "Uso Restrito",
+    "definition" : "Medicamento de uso restrito conforme regulamentação específica"
+  }]
+}

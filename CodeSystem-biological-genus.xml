@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="biological-genus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem biological-genus</b></p><a name="biological-genus"> </a><a name="hcbiological-genus"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">Papaver<a name="biological-genus-Papaver"> </a></td><td>Gênero Papaver (papoula)</td></tr><tr><td style="white-space:nowrap">Cannabis<a name="biological-genus-Cannabis"> </a></td><td>Gênero Cannabis</td></tr><tr><td style="white-space:nowrap">Digitalis<a name="biological-genus-Digitalis"> </a></td><td>Gênero Digitalis (dedaleira)</td></tr><tr><td style="white-space:nowrap">Cinchona<a name="biological-genus-Cinchona"> </a></td><td>Gênero Cinchona (quineira)</td></tr><tr><td style="white-space:nowrap">Ephedra<a name="biological-genus-Ephedra"> </a></td><td>Gênero Ephedra</td></tr><tr><td style="white-space:nowrap">Penicillium<a name="biological-genus-Penicillium"> </a></td><td>Gênero Penicillium (fungo produtor de penicilina)</td></tr><tr><td style="white-space:nowrap">Streptomyces<a name="biological-genus-Streptomyces"> </a></td><td>Gênero Streptomyces (bactéria produtora de antibióticos)</td></tr><tr><td style="white-space:nowrap">Saccharomyces<a name="biological-genus-Saccharomyces"> </a></td><td>Gênero Saccharomyces (levedura)</td></tr><tr><td style="white-space:nowrap">Escherichia<a name="biological-genus-Escherichia"> </a></td><td>Gênero Escherichia (bactéria para produção recombinante)</td></tr><tr><td style="white-space:nowrap">Bos<a name="biological-genus-Bos"> </a></td><td>Gênero Bos (bovinos)</td></tr><tr><td style="white-space:nowrap">Sus<a name="biological-genus-Sus"> </a></td><td>Gênero Sus (suínos)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-genus"/>
+  <version value="0.0.3"/>
+  <name value="BiologicalGenus"/>
+  <title value="Gênero Biológico"/>
+  <status value="active"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Gêneros biológicos comuns em substâncias farmacêuticas"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="Papaver"/>
+    <display value="Papaver"/>
+    <definition value="Gênero Papaver (papoula)"/>
+  </concept>
+  <concept>
+    <code value="Cannabis"/>
+    <display value="Cannabis"/>
+    <definition value="Gênero Cannabis"/>
+  </concept>
+  <concept>
+    <code value="Digitalis"/>
+    <display value="Digitalis"/>
+    <definition value="Gênero Digitalis (dedaleira)"/>
+  </concept>
+  <concept>
+    <code value="Cinchona"/>
+    <display value="Cinchona"/>
+    <definition value="Gênero Cinchona (quineira)"/>
+  </concept>
+  <concept>
+    <code value="Ephedra"/>
+    <display value="Ephedra"/>
+    <definition value="Gênero Ephedra"/>
+  </concept>
+  <concept>
+    <code value="Penicillium"/>
+    <display value="Penicillium"/>
+    <definition value="Gênero Penicillium (fungo produtor de penicilina)"/>
+  </concept>
+  <concept>
+    <code value="Streptomyces"/>
+    <display value="Streptomyces"/>
+    <definition value="Gênero Streptomyces (bactéria produtora de antibióticos)"/>
+  </concept>
+  <concept>
+    <code value="Saccharomyces"/>
+    <display value="Saccharomyces"/>
+    <definition value="Gênero Saccharomyces (levedura)"/>
+  </concept>
+  <concept>
+    <code value="Escherichia"/>
+    <display value="Escherichia"/>
+    <definition value="Gênero Escherichia (bactéria para produção recombinante)"/>
+  </concept>
+  <concept>
+    <code value="Bos"/>
+    <display value="Bos"/>
+    <definition value="Gênero Bos (bovinos)"/>
+  </concept>
+  <concept>
+    <code value="Sus"/>
+    <display value="Sus"/>
+    <definition value="Gênero Sus (suínos)"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="administrable-property"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem administrable-property</b></p><a name="administrable-property"> </a><a name="hcadministrable-property"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">reconstitution<a name="administrable-property-reconstitution"> </a></td><td>Reconstituição</td><td>Propriedades relacionadas à reconstituição do produto</td></tr><tr><td style="white-space:nowrap">dilution<a name="administrable-property-dilution"> </a></td><td>Diluição</td><td>Propriedades relacionadas à diluição do produto</td></tr><tr><td style="white-space:nowrap">ph<a name="administrable-property-ph"> </a></td><td>pH</td><td>Valor de pH da solução final</td></tr><tr><td style="white-space:nowrap">osmolaridade<a name="administrable-property-osmolaridade"> </a></td><td>Osmolaridade</td><td>Osmolaridade da solução final</td></tr><tr><td style="white-space:nowrap">concentracao-final<a name="administrable-property-concentracao-final"> </a></td><td>Concentração Final</td><td>Concentração do produto na forma administrável final</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/administrable-property"/>
+  <version value="0.0.3"/>
+  <name value="AdministrableProperty"/>
+  <title value="Propriedades Administráveis"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para propriedades de produtos administráveis (padrão internacional)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="reconstitution"/>
+    <display value="Reconstituição"/>
+    <definition value="Propriedades relacionadas à reconstituição do produto"/>
+  </concept>
+  <concept>
+    <code value="dilution"/>
+    <display value="Diluição"/>
+    <definition value="Propriedades relacionadas à diluição do produto"/>
+  </concept>
+  <concept>
+    <code value="ph"/>
+    <display value="pH"/>
+    <definition value="Valor de pH da solução final"/>
+  </concept>
+  <concept>
+    <code value="osmolaridade"/>
+    <display value="Osmolaridade"/>
+    <definition value="Osmolaridade da solução final"/>
+  </concept>
+  <concept>
+    <code value="concentracao-final"/>
+    <display value="Concentração Final"/>
+    <definition value="Concentração do produto na forma administrável final"/>
+  </concept>
+</CodeSystem>

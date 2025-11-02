@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/ValueSet/presentation-unit> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "presentation-unit"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet presentation-unit</b></p><a name=\"presentation-unit\"> </a><a name=\"hcpresentation-unit\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>{tablet}</td><td>tablet</td></tr><tr><td>{pill}</td><td>pill</td></tr><tr><td>{capsule}</td><td>capsule</td></tr><tr><td>{suppository}</td><td>suppository</td></tr><tr><td>{patch}</td><td>patch</td></tr><tr><td>{dose}</td><td>dose</td></tr><tr><td>{application}</td><td>application</td></tr><tr><td>{vial}</td><td>vial</td></tr><tr><td>{ampoule}</td><td>ampoule</td></tr><tr><td>{syringe}</td><td>syringe</td></tr><tr><td>{bottle}</td><td>bottle</td></tr><tr><td>{tube}</td><td>tube</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/presentation-unit"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ValueSet/presentation-unit>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "PresentationUnit"] ; # 
+  fhir:title [ fhir:v "Unidades de Apresentação"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Unidades de apresentação usando códigos UCUM (Unified Code for Units of Measure)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "{tablet}" ] ;
+         fhir:display [ fhir:v "tablet" ]
+       ] [
+         fhir:code [ fhir:v "{pill}" ] ;
+         fhir:display [ fhir:v "pill" ]
+       ] [
+         fhir:code [ fhir:v "{capsule}" ] ;
+         fhir:display [ fhir:v "capsule" ]
+       ] [
+         fhir:code [ fhir:v "{suppository}" ] ;
+         fhir:display [ fhir:v "suppository" ]
+       ] [
+         fhir:code [ fhir:v "{patch}" ] ;
+         fhir:display [ fhir:v "patch" ]
+       ] [
+         fhir:code [ fhir:v "{dose}" ] ;
+         fhir:display [ fhir:v "dose" ]
+       ] [
+         fhir:code [ fhir:v "{application}" ] ;
+         fhir:display [ fhir:v "application" ]
+       ] [
+         fhir:code [ fhir:v "{vial}" ] ;
+         fhir:display [ fhir:v "vial" ]
+       ] [
+         fhir:code [ fhir:v "{ampoule}" ] ;
+         fhir:display [ fhir:v "ampoule" ]
+       ] [
+         fhir:code [ fhir:v "{syringe}" ] ;
+         fhir:display [ fhir:v "syringe" ]
+       ] [
+         fhir:code [ fhir:v "{bottle}" ] ;
+         fhir:display [ fhir:v "bottle" ]
+       ] [
+         fhir:code [ fhir:v "{tube}" ] ;
+         fhir:display [ fhir:v "tube" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

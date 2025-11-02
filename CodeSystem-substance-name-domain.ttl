@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-domain> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-name-domain"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-name-domain</b></p><a name=\"substance-name-domain\"> </a><a name=\"hcsubstance-name-domain\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">scientific<a name=\"substance-name-domain-scientific\"> </a></td><td>Científico</td><td>Nome usado em contexto científico/acadêmico</td></tr><tr><td style=\"white-space:nowrap\">regulatory<a name=\"substance-name-domain-regulatory\"> </a></td><td>Regulatório</td><td>Nome usado em contexto regulatório</td></tr><tr><td style=\"white-space:nowrap\">commercial<a name=\"substance-name-domain-commercial\"> </a></td><td>Comercial</td><td>Nome usado em contexto comercial</td></tr><tr><td style=\"white-space:nowrap\">common<a name=\"substance-name-domain-common\"> </a></td><td>Comum</td><td>Nome popular/trivial</td></tr><tr><td style=\"white-space:nowrap\">systematic<a name=\"substance-name-domain-systematic\"> </a></td><td>Sistemático</td><td>Nome sistemático (IUPAC)</td></tr><tr><td style=\"white-space:nowrap\">brand<a name=\"substance-name-domain-brand\"> </a></td><td>Marca</td><td>Nome de marca registrada</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-domain"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-domain>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceNameDomain"] ; # 
+  fhir:title [ fhir:v "Domínio de Nome de Substância"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Domínio ou contexto de uso de nome de substância"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "scientific" ] ;
+     fhir:display [ fhir:v "Científico" ] ;
+     fhir:definition [ fhir:v "Nome usado em contexto científico/acadêmico" ]
+  ] [
+     fhir:code [ fhir:v "regulatory" ] ;
+     fhir:display [ fhir:v "Regulatório" ] ;
+     fhir:definition [ fhir:v "Nome usado em contexto regulatório" ]
+  ] [
+     fhir:code [ fhir:v "commercial" ] ;
+     fhir:display [ fhir:v "Comercial" ] ;
+     fhir:definition [ fhir:v "Nome usado em contexto comercial" ]
+  ] [
+     fhir:code [ fhir:v "common" ] ;
+     fhir:display [ fhir:v "Comum" ] ;
+     fhir:definition [ fhir:v "Nome popular/trivial" ]
+  ] [
+     fhir:code [ fhir:v "systematic" ] ;
+     fhir:display [ fhir:v "Sistemático" ] ;
+     fhir:definition [ fhir:v "Nome sistemático (IUPAC)" ]
+  ] [
+     fhir:code [ fhir:v "brand" ] ;
+     fhir:display [ fhir:v "Marca" ] ;
+     fhir:definition [ fhir:v "Nome de marca registrada" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

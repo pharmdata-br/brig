@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "clinical-use-category-br",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet clinical-use-category-br</b></p><a name=\"clinical-use-category-br\"> </a><a name=\"hcclinical-use-category-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><ul><li>Include todos os códigos definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-category-br",
+  "version" : "0.0.3",
+  "name" : "ClinicalUseCategoryBRValueSet",
+  "title" : "Categorias de Uso Clínico - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "ValueSet de categorias específicas brasileiras para uso clínico incluindo programas governamentais.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "immutable" : false,
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"
+    }]
+  }
+}

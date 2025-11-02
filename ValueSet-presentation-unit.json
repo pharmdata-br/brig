@@ -1,0 +1,109 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "presentation-unit",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet presentation-unit</b></p><a name=\"presentation-unit\"> </a><a name=\"hcpresentation-unit\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>{tablet}</td><td>tablet</td></tr><tr><td>{pill}</td><td>pill</td></tr><tr><td>{capsule}</td><td>capsule</td></tr><tr><td>{suppository}</td><td>suppository</td></tr><tr><td>{patch}</td><td>patch</td></tr><tr><td>{dose}</td><td>dose</td></tr><tr><td>{application}</td><td>application</td></tr><tr><td>{vial}</td><td>vial</td></tr><tr><td>{ampoule}</td><td>ampoule</td></tr><tr><td>{syringe}</td><td>syringe</td></tr><tr><td>{bottle}</td><td>bottle</td></tr><tr><td>{tube}</td><td>tube</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/presentation-unit",
+  "version" : "0.0.3",
+  "name" : "PresentationUnit",
+  "title" : "Unidades de Apresentação",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Unidades de apresentação usando códigos UCUM (Unified Code for Units of Measure)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "{tablet}",
+        "display" : "tablet"
+      },
+      {
+        "code" : "{pill}",
+        "display" : "pill"
+      },
+      {
+        "code" : "{capsule}",
+        "display" : "capsule"
+      },
+      {
+        "code" : "{suppository}",
+        "display" : "suppository"
+      },
+      {
+        "code" : "{patch}",
+        "display" : "patch"
+      },
+      {
+        "code" : "{dose}",
+        "display" : "dose"
+      },
+      {
+        "code" : "{application}",
+        "display" : "application"
+      },
+      {
+        "code" : "{vial}",
+        "display" : "vial"
+      },
+      {
+        "code" : "{ampoule}",
+        "display" : "ampoule"
+      },
+      {
+        "code" : "{syringe}",
+        "display" : "syringe"
+      },
+      {
+        "code" : "{bottle}",
+        "display" : "bottle"
+      },
+      {
+        "code" : "{tube}",
+        "display" : "tube"
+      }]
+    }]
+  }
+}

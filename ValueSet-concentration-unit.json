@@ -1,0 +1,109 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "concentration-unit",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet concentration-unit</b></p><a name=\"concentration-unit\"> </a><a name=\"hcconcentration-unit\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>mg</td><td>milligram</td></tr><tr><td>g</td><td>gram</td></tr><tr><td>ug</td><td>microgram</td></tr><tr><td>kg</td><td>kilogram</td></tr><tr><td>mL</td><td>milliliter</td></tr><tr><td>L</td><td>liter</td></tr><tr><td>mg/mL</td><td>milligram per milliliter</td></tr><tr><td>ug/mL</td><td>microgram per milliliter</td></tr><tr><td>g/L</td><td>gram per liter</td></tr><tr><td>%</td><td>percent</td></tr><tr><td>[IU]</td><td>international unit</td></tr><tr><td>[IU]/mL</td><td>international unit per milliliter</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/concentration-unit",
+  "version" : "0.0.3",
+  "name" : "ConcentrationUnit",
+  "title" : "Unidades de Concentração",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Unidades de concentração usando códigos UCUM (Unified Code for Units of Measure)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "mg",
+        "display" : "milligram"
+      },
+      {
+        "code" : "g",
+        "display" : "gram"
+      },
+      {
+        "code" : "ug",
+        "display" : "microgram"
+      },
+      {
+        "code" : "kg",
+        "display" : "kilogram"
+      },
+      {
+        "code" : "mL",
+        "display" : "milliliter"
+      },
+      {
+        "code" : "L",
+        "display" : "liter"
+      },
+      {
+        "code" : "mg/mL",
+        "display" : "milligram per milliliter"
+      },
+      {
+        "code" : "ug/mL",
+        "display" : "microgram per milliliter"
+      },
+      {
+        "code" : "g/L",
+        "display" : "gram per liter"
+      },
+      {
+        "code" : "%",
+        "display" : "percent"
+      },
+      {
+        "code" : "[IU]",
+        "display" : "international unit"
+      },
+      {
+        "code" : "[IU]/mL",
+        "display" : "international unit per milliliter"
+      }]
+    }]
+  }
+}

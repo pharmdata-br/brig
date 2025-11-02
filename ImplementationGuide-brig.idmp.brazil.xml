@@ -1,0 +1,3576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="brig.idmp.brazil"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: ImplementationGuide brig.idmp.brazil</b></p><a name="brig.idmp.brazil"> </a><a name="hcbrig.idmp.brazil"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><h2>BRIGIDMPBrazil</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil</pre><div><p>Guia de Implementação brasileiro para Identificação de Produtos Medicinais (IDMP) usando padrões FHIR R5, desenvolvido para harmonização de dados farmacêuticos no contexto regulatório da ANVISA. Implementação completa com ClinicalUseDefinition-br. Primeira implementação mundial 100% completa dos padrões IDMP. Documentação 100% em português brasileiro.</p>
+</div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+  <version value="0.0.3"/>
+  <name value="BRIGIDMPBrazil"/>
+  <title value="BRIG - Guia de Implementação Brasileiro para IDMP"/>
+  <status value="draft"/>
+  <date value="2025-11-02T10:29:08-03:00"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Guia de Implementação brasileiro para Identificação de Produtos Medicinais (IDMP) usando padrões FHIR R5, desenvolvido para harmonização de dados farmacêuticos no contexto regulatório da ANVISA. Implementação completa com ClinicalUseDefinition-br. Primeira implementação mundial 100% completa dos padrões IDMP. Documentação 100% em português brasileiro."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <packageId value="brig.idmp.brazil"/>
+  <license value="MIT"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="6.5.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_r5_core">
+    <uri value="http://hl7.org/fhir/ImplementationGuide/fhir"/>
+    <packageId value="hl7.fhir.r5.core"/>
+    <version value="5.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r5#0.8.0"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-anvisa-example"/>
+      </reference>
+      <name value="ANVISA - Agência Nacional de Vigilância Sanitária"/>
+      <description value="Autoridade regulatória brasileira (ANVISA)"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/optical-activity-vs"/>
+      </reference>
+      <name value="Atividade Óptica"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/optical-activity"/>
+      </reference>
+      <name value="Atividade Óptica"/>
+      <description value="Atividade óptica de substâncias quirais (rotação da luz polarizada)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-specialized-activities-br"/>
+      </reference>
+      <name value="Atividades Especializadas de Organização - Brasil"/>
+      <description value="Atividades especializadas realizadas por organizações"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-specialized-activities-br"/>
+      </reference>
+      <name value="Atividades Especializadas de Organização - Brasil"/>
+      <description value="Sistema de códigos para atividades especializadas de organizações"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-name-authority-vs"/>
+      </reference>
+      <name value="Autoridade de Nomenclatura"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-name-authority"/>
+      </reference>
+      <name value="Autoridade de Nomenclatura de Substâncias"/>
+      <description value="Organizações/autoridades que atribuem nomes oficiais a substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/regulated-authorization-br"/>
+      </reference>
+      <name value="Autorização Regulatória - Brasil"/>
+      <description value="Perfil brasileiro para autorização regulatória de produtos farmacêuticos pela ANVISA, com todos os bindings FHIR R5"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/legal-basis-anvisa-br"/>
+      </reference>
+      <name value="Base Legal ANVISA"/>
+      <description value="Bases legais para autorizações regulatórias ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/legal-basis-anvisa-br"/>
+      </reference>
+      <name value="Base Legal ANVISA Brasil"/>
+      <description value="Conjunto de valores para bases legais ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/package-characteristic-br"/>
+      </reference>
+      <name value="Características de Embalagem - Brasil"/>
+      <description value="Características especiais de embalagens farmacêuticas no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/package-characteristic-br"/>
+      </reference>
+      <name value="Características de Embalagem - Brasil"/>
+      <description value="Sistema de códigos para características de embalagens no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/product-characteristic-hybrid"/>
+      </reference>
+      <name value="Características de Produto (Brasil + MedDRA)"/>
+      <description value="ValueSet híbrido que combina CodeSystem brasileiro de características de produto com terminologia MedDRA relevante"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/product-characteristic-vs"/>
+      </reference>
+      <name value="Características de Produto Medicinal"/>
+      <description value="Características observáveis de produtos medicinais. Alternativa brasileira ao SNOMED CT Observable Entity."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/product-characteristic"/>
+      </reference>
+      <name value="Características de Produto Medicinal"/>
+      <description value="Características observáveis e mensuráveis de produtos medicinais. CodeSystem brasileiro como alternativa ao SNOMED CT Observable Entity."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/anvisa-category"/>
+      </reference>
+      <name value="Categoria ANVISA"/>
+      <description value="Categoria específica da ANVISA para classificação do produto medicinal"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/clinical-use-definition-category-vs"/>
+      </reference>
+      <name value="Categoria de Definição de Uso Clínico"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/clinical-use-definition-category"/>
+      </reference>
+      <name value="Categoria de Definição de Uso Clínico"/>
+      <description value="Categorias que classificam o uso clínico (gravidez, lactação, etc.)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/controlled-substance-category"/>
+      </reference>
+      <name value="Categoria de Substância Controlada"/>
+      <description value="Categoria de controle da substância conforme legislação brasileira"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/organization-operational-category-br"/>
+      </reference>
+      <name value="Categoria Operacional da Organização - Brasil"/>
+      <description value="Categoria operacional específica da organização no contexto regulatório brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/anvisa-category-br"/>
+      </reference>
+      <name value="Categorias ANVISA - Brasil"/>
+      <description value="Categorias de produtos medicinais conforme classificação da ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/anvisa-category-br"/>
+      </reference>
+      <name value="Categorias ANVISA - Brasil"/>
+      <description value="Sistema de códigos para categorias de produtos medicinais da ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-size-category-br"/>
+      </reference>
+      <name value="Categorias de Porte de Organização - Brasil"/>
+      <description value="Categorias de porte de organizações conforme legislação brasileira"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-size-category-br"/>
+      </reference>
+      <name value="Categorias de Porte de Organização - Brasil"/>
+      <description value="Sistema de códigos para categorias de porte de organizações no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/controlled-substance-category-br"/>
+      </reference>
+      <name value="Categorias de Substâncias Controladas - Brasil"/>
+      <description value="Categorias de controle de substâncias conforme Portaria SVS/MS n° 344/1998"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/controlled-substance-category-br"/>
+      </reference>
+      <name value="Categorias de Substâncias Controladas - Brasil"/>
+      <description value="Sistema de códigos para categorias de controle de substâncias no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/clinical-use-category-br"/>
+      </reference>
+      <name value="Categorias de Uso Clínico - Brasil"/>
+      <description value="ValueSet de categorias específicas brasileiras para uso clínico incluindo programas governamentais."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/clinical-use-category-br"/>
+      </reference>
+      <name value="Categorias de Uso Clínico - Brasil"/>
+      <description value="Categorias específicas brasileiras para classificação de uso clínico."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-operational-category-br"/>
+      </reference>
+      <name value="Categorias Operacionais de Organização - Brasil"/>
+      <description value="Categorias operacionais de organizações no contexto regulatório brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-operational-category-br"/>
+      </reference>
+      <name value="Categorias Operacionais de Organização - Brasil"/>
+      <description value="Sistema de códigos para categorias operacionais de organizações"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/undesirable-effect-classification-vs"/>
+      </reference>
+      <name value="Classificação de Efeito Indesejável"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/undesirable-effect-classification"/>
+      </reference>
+      <name value="Classificação de Efeito Indesejável"/>
+      <description value="Classificação de alta hierarquia para efeitos indesejáveis"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medicinal-product-classification-atc"/>
+      </reference>
+      <name value="Classificação de Produto Medicinal (WHO ATC)"/>
+      <description value="Sistema de classificação ATC da OMS usado para categorizar produtos medicinais por classe terapêutica, farmacológica e química."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-classification-br"/>
+      </reference>
+      <name value="Classificação de Substância - Brasil"/>
+      <description value="Classificação de substâncias no contexto brasileiro/ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-classification-br"/>
+      </reference>
+      <name value="Classificação de Substância - Brasil"/>
+      <description value="Sistema de códigos para classificação de substâncias no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-classification-gsrs-br"/>
+      </reference>
+      <name value="Classificação de Substância GSRS/Brasil"/>
+      <description value="Conjunto de valores para classificação de substâncias GSRS e brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-special-classification-br"/>
+      </reference>
+      <name value="Classificações Especiais de Organização - Brasil"/>
+      <description value="Classificações especiais de organizações conforme legislação brasileira"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-special-classification-br"/>
+      </reference>
+      <name value="Classificações Especiais de Organização - Brasil"/>
+      <description value="Sistema de códigos para classificações especiais de organizações"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/comorbidity-br"/>
+      </reference>
+      <name value="Comorbidades - Brasil"/>
+      <description value="ValueSet de comorbidades relevantes para indicações e contraindicações no contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/package-components-br"/>
+      </reference>
+      <name value="Componentes de Embalagem - Brasil"/>
+      <description value="Componentes padronizados para embalagens brasileiras"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/package-components-br"/>
+      </reference>
+      <name value="Componentes de Embalagem - Brasil"/>
+      <description value="Sistema de códigos para componentes de embalagens brasileiras"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/contraindication-condition-br"/>
+      </reference>
+      <name value="Condições de Contraindicação - Brasil"/>
+      <description value="ValueSet de condições médicas que constituem contraindicações no contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/product-confidentiality-vs"/>
+      </reference>
+      <name value="Confidencialidade de Produto Medicinal"/>
+      <description value="Classificação de confidencialidade para produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/product-confidentiality"/>
+      </reference>
+      <name value="Confidencialidade de Produto Medicinal"/>
+      <description value="Classificação de confidencialidade para informações e operações relacionadas a produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/manufactured-item-criteria"/>
+      </reference>
+      <name value="Critérios do Item Manufaturado"/>
+      <description value="Critérios específicos do item manufaturado que são elementos definidores do PCID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/anvisa-substance-code"/>
+      </reference>
+      <name value="Códigos ANVISA de Substância"/>
+      <description value="Sistema de códigos específicos da ANVISA para substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medicinal-product-code-atc"/>
+      </reference>
+      <name value="Códigos de Produto Medicinal (WHO ATC)"/>
+      <description value="Códigos da Classificação Anatômica Terapêutica Química (ATC) da OMS para produtos medicinais e substâncias farmacêuticas."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-code-br"/>
+      </reference>
+      <name value="Códigos de Substância - Brasil"/>
+      <description value="Códigos padronizados para substâncias no contexto brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-code-meddra"/>
+      </reference>
+      <name value="Códigos de Substâncias (MedDRA + ATC)"/>
+      <description value="Códigos de substâncias farmacêuticas usando MedDRA (Medical Dictionary for Regulatory Activities) e WHO ATC como alternativa ao SNOMED CT (Brasil não é signatário)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/administrable-product-definition-br"/>
+      </reference>
+      <name value="Definição de Produto Administrável - Brasil"/>
+      <description value="Profile brasileiro para AdministrableProductDefinition implementando todos os bindings terminológicos necessários do FHIR R5, adaptados ao contexto regulatório brasileiro (ANVISA). Usa MedDRA, ATC e EDQM como alternativa ao SNOMED CT."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/packaged-product-definition-br"/>
+      </reference>
+      <name value="Definição de Produto Embalado - Brasil"/>
+      <description value="Profile brasileiro para PackagedProductDefinition implementando todos os bindings terminológicos necessários do FHIR R5, adaptados ao contexto regulatório brasileiro (ANVISA). Especifica embalagens primárias, secundárias e terciárias de produtos medicinais."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicinal-product-definition-br"/>
+      </reference>
+      <name value="Definição de Produto Medicinal - Brasil"/>
+      <description value="Profile brasileiro para MedicinalProductDefinition implementando todos os bindings terminológicos necessários do FHIR R5, adaptados ao contexto regulatório brasileiro (ANVISA). Usa MedDRA e ATC como alternativa ao SNOMED CT."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/substance-definition-br"/>
+      </reference>
+      <name value="Definição de Substância - Brasil"/>
+      <description value="Perfil brasileiro para definição de substâncias farmacêuticas conforme ISO 11238 e FHIR R5, com todos os 23 bindings implementados"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/clinical-use-definition-br"/>
+      </reference>
+      <name value="Definição de Uso Clínico - Brasil"/>
+      <description value="Perfil brasileiro para uso clínico de produtos medicinais: indicações terapêuticas, contraindicações, interações medicamentosas, efeitos indesejáveis e advertências, com todos os 21 bindings FHIR R5"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dcb-brasileiras"/>
+      </reference>
+      <name value="Denominações Comuns Brasileiras (DCB)"/>
+      <description value="Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dcb-brasileiras"/>
+      </reference>
+      <name value="Denominações Comuns Brasileiras (DCB)"/>
+      <description value="Sistema de códigos para Denominações Comuns Brasileiras conforme ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/package-component-details"/>
+      </reference>
+      <name value="Detalhes de Componentes da Embalagem"/>
+      <description value="Detalhes específicos dos componentes que são elementos definidores do PCID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/package-item-container-details"/>
+      </reference>
+      <name value="Detalhes de Container do Item da Embalagem"/>
+      <description value="Detalhes específicos do container que são elementos definidores do PCID - mudanças requerem novo PCID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/dipirona-clinical-contraindication-example"/>
+      </reference>
+      <name value="Dipirona - Contraindicação por Hipersensibilidade"/>
+      <description value="Exemplo de contraindicação da Dipirona 500mg em pacientes com hipersensibilidade conhecida à dipirona ou pirazolonas."/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/dipirona-clinical-indication-example"/>
+      </reference>
+      <name value="Dipirona - Indicação para Dor e Febre"/>
+      <description value="Exemplo de uso clínico da Dipirona 500mg para tratamento de dor e febre - indicação terapêutica conforme padrão brasileiro."/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/dipirona-package-example"/>
+      </reference>
+      <name value="Dipirona 500mg - Embalagem"/>
+      <description value="Embalagem exemplo de Dipirona 500mg"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/dipirona-500mg-example"/>
+      </reference>
+      <name value="Dipirona 500mg Comprimido"/>
+      <description value="Exemplo básico de produto medicinal Dipirona 500mg comprimido para referências"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/associated-devices"/>
+      </reference>
+      <name value="Dispositivos Associados"/>
+      <description value="Dispositivos associados ao produto medicinal que são elementos definidores do MPID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/disease-symptom-procedure"/>
+      </reference>
+      <name value="Doença, Sintoma ou Procedimento"/>
+      <description value="Condições médicas usando CID-10, MedDRA e opcionalmente SNOMED CT"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-name-domain-vs"/>
+      </reference>
+      <name value="Domínio de Nome de Substância"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-name-domain"/>
+      </reference>
+      <name value="Domínio de Nome de Substância"/>
+      <description value="Domínio ou contexto de uso de nome de substância"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medicinal-product-domain-vs"/>
+      </reference>
+      <name value="Domínio de Produto Medicinal"/>
+      <description value="Domínio aplicável para o produto medicinal"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/medicinal-product-domain"/>
+      </reference>
+      <name value="Domínio de Produto Medicinal"/>
+      <description value="Domínio aplicável para o produto medicinal (uso humano, veterinário ou ambos)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interaction-effect-vs"/>
+      </reference>
+      <name value="Efeito da Interação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/interaction-effect"/>
+      </reference>
+      <name value="Efeito da Interação"/>
+      <description value="Efeito clínico resultante de uma interação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/adverse-effect-br"/>
+      </reference>
+      <name value="Efeitos Adversos - Brasil"/>
+      <description value="ValueSet de efeitos adversos comuns no contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interaction-effect-br"/>
+      </reference>
+      <name value="Efeitos de Interação - Brasil"/>
+      <description value="ValueSet dos efeitos clínicos de interações medicamentosas no contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mpid-defining-elements"/>
+      </reference>
+      <name value="Elementos Definidores de MPID"/>
+      <description value="Elementos que, quando alterados, requerem geração de novo MPID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mpid-defining-elements"/>
+      </reference>
+      <name value="Elementos Definidores de MPID"/>
+      <description value="Códigos para elementos que definem quando criar novo MPID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-ems-example"/>
+      </reference>
+      <name value="EMS S/A"/>
+      <description value="Empresa farmacêutica brasileira - exemplo de detentor de registro"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-operational-scope-br"/>
+      </reference>
+      <name value="Escopo Operacional de Organização - Brasil"/>
+      <description value="Escopo geográfico de operação de organizações"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-operational-scope-br"/>
+      </reference>
+      <name value="Escopo Operacional de Organização - Brasil"/>
+      <description value="Sistema de códigos para escopo geográfico de operação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/biological-species-vs"/>
+      </reference>
+      <name value="Espécie Biológica"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/biological-species"/>
+      </reference>
+      <name value="Espécie Biológica"/>
+      <description value="Espécies biológicas comuns em substâncias farmacêuticas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/target-species-vs"/>
+      </reference>
+      <name value="Espécies-Alvo para Produtos Veterinários"/>
+      <description value="Espécies animais para produtos medicinais veterinários"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/target-species"/>
+      </reference>
+      <name value="Espécies-Alvo para Produtos Veterinários"/>
+      <description value="Espécies animais para as quais um produto medicinal veterinário é destinado"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/stereochemistry-vs"/>
+      </reference>
+      <name value="Estereoquímica de Substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stereochemistry"/>
+      </reference>
+      <name value="Estereoquímica de Substâncias"/>
+      <description value="Classificação estereoquímica de substâncias (quiralidade, configuração espacial)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SubstanceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="SubstanceDefinition/dipirona-sodica-substance"/>
+      </reference>
+      <name value="Exemplo - Dipirona Sódica (Substância)"/>
+      <description value="Exemplo de substância ativa brasileira - Dipirona Sódica"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/dipirona-500mg-comp"/>
+      </reference>
+      <name value="Exemplo - Dipirona Sódica 500mg"/>
+      <description value="Exemplo de produto medicinal brasileiro - Dipirona Sódica 500mg comprimidos"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/dipirona-500mg-package"/>
+      </reference>
+      <name value="Exemplo - Dipirona Sódica 500mg Embalagem"/>
+      <description value="Exemplo de produto embalado brasileiro - Dipirona Sódica 500mg, caixa com 20 comprimidos"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/packaged-product-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/farmaceutica-brasileira-ltda"/>
+      </reference>
+      <name value="Exemplo - Farmacêutica Brasileira Ltda"/>
+      <description value="Exemplo de organização farmacêutica brasileira simplificada"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/Organization-anvisa-simple"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SubstanceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="SubstanceDefinition/midazolam-substance"/>
+      </reference>
+      <name value="Exemplo - Midazolam (Substância Controlada)"/>
+      <description value="Exemplo de substância controlada brasileira - Midazolam (Lista B1)"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/midazolam-5mg-package"/>
+      </reference>
+      <name value="Exemplo - Midazolam 5mg/mL Embalagem"/>
+      <description value="Exemplo de produto embalado brasileiro - Midazolam 5mg/mL, caixa com 10 ampolas de 3mL"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/packaged-product-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/multinacional-pharma-brasil"/>
+      </reference>
+      <name value="Exemplo - Multinacional Pharma Brasil"/>
+      <description value="Exemplo de organização farmacêutica multinacional simplificada"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/Organization-anvisa-simple"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/org-simple-example"/>
+      </reference>
+      <name value="Exemplo - Organização Simples"/>
+      <description value="Exemplo básico de organização com identificadores mínimos"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/Organization-anvisa-simple"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/exemplo-codesystem-brasileiro"/>
+      </reference>
+      <name value="Exemplo de CodeSystem Brasileiro"/>
+      <description value="Sistema de códigos de exemplo com terminologia farmacêutica brasileira padronizada"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/exemplo-extensao-brasileira"/>
+      </reference>
+      <name value="Exemplo de Extensão Brasileira"/>
+      <description value="Extensão de exemplo demonstrando padrões de documentação BRIG com terminologia farmacêutica brasileira adequada"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/exemplo-perfil-brasileiro"/>
+      </reference>
+      <name value="Exemplo de Perfil Brasileiro"/>
+      <description value="Perfil de exemplo demonstrando padrões de documentação BRIG em português brasileiro, incluindo terminologia técnica adequada ao contexto regulatório nacional."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/exemplo-valueset-brasileiro"/>
+      </reference>
+      <name value="Exemplo de ValueSet Brasileiro"/>
+      <description value="ValueSet de exemplo com terminologia farmacêutica brasileira padronizada conforme contexto regulatório nacional"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/manufacturer-example"/>
+      </reference>
+      <name value="Fabricante Exemplo"/>
+      <description value="Organização fabricante exemplo para referências"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/manufacturer-paracetamol-example"/>
+      </reference>
+      <name value="Fabricante Paracetamol Exemplo"/>
+      <description value="Organização fabricante exemplo para paracetamol"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-contact-purpose"/>
+      </reference>
+      <name value="Finalidades de Contato Organizacional"/>
+      <description value="Finalidades específicas de contatos organizacionais (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-contact-purpose"/>
+      </reference>
+      <name value="Finalidades de Contato Organizacional"/>
+      <description value="Sistema de códigos para finalidades de contatos organizacionais (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/manufactured-dose-form"/>
+      </reference>
+      <name value="Forma Farmacêutica Manufaturada"/>
+      <description value="Formas farmacêuticas manufaturadas usando códigos EDQM Standard Terms"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-form-vs"/>
+      </reference>
+      <name value="Forma Física de Substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-form"/>
+      </reference>
+      <name value="Forma Física de Substâncias"/>
+      <description value="Estado físico e forma cristalina de substâncias farmacêuticas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/administrable-dose-form"/>
+      </reference>
+      <name value="Formas Farmacêuticas Administráveis"/>
+      <description value="Formas farmacêuticas administráveis usando códigos EDQM Standard Terms"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/combined-pharmaceutical-dose-form"/>
+      </reference>
+      <name value="Formas Farmacêuticas Combinadas"/>
+      <description value="Formas farmacêuticas para produtos como um todo, considerando todas as partes individuais, mas antes de qualquer mistura. Diferente de administrable-dose-form, este ValueSet contempla produtos complexos e combinados."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/undesirable-effect-frequency-vs"/>
+      </reference>
+      <name value="Frequência de Efeito Indesejável"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/undesirable-effect-frequency"/>
+      </reference>
+      <name value="Frequência de Efeito Indesejável"/>
+      <description value="Frequência de ocorrência de efeitos indesejáveis conforme CIOMS"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/adverse-effect-frequency-br"/>
+      </reference>
+      <name value="Frequência de Efeitos Adversos - Brasil"/>
+      <description value="ValueSet de classificação de frequência de efeitos adversos conforme padrão brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ingredient-function"/>
+      </reference>
+      <name value="Funções de Ingredientes"/>
+      <description value="Funções específicas detalhadas de ingredientes em medicamentos (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ingredient-function"/>
+      </reference>
+      <name value="Funções de Ingredientes"/>
+      <description value="Sistema de códigos para funções específicas de ingredientes (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-grade"/>
+      </reference>
+      <name value="Grau de Substância"/>
+      <description value="Graus ou qualidades de substâncias (padrão internacional - USP/EP/JP)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-grade"/>
+      </reference>
+      <name value="Grau de Substância"/>
+      <description value="Sistema de códigos para graus de qualidade de substâncias (padrão internacional - USP/EP/JP)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/gsrs-substance-classification-br"/>
+      </reference>
+      <name value="GSRS Substance Classification - Brasil"/>
+      <description value="Classificação de substâncias conforme GSRS adaptado para Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/gsrs-substance-status-br"/>
+      </reference>
+      <name value="GSRS Substance Status - Brasil"/>
+      <description value="Status de substâncias conforme padrão GSRS adaptado para Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/biological-genus-vs"/>
+      </reference>
+      <name value="Gênero Biológico"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/biological-genus"/>
+      </reference>
+      <name value="Gênero Biológico"/>
+      <description value="Gêneros biológicos comuns em substâncias farmacêuticas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/clinical-use-id-br"/>
+      </reference>
+      <name value="Identificadores de Uso Clínico - Brasil"/>
+      <description value="Sistema de identificadores únicos para definições de uso clínico no contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentation-language"/>
+      </reference>
+      <name value="Idioma de Documentação"/>
+      <description value="Define o idioma padrão para toda documentação BRIG - sempre português brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/language-valueset"/>
+      </reference>
+      <name value="Idiomas (BCP-47)"/>
+      <description value="Códigos de idiomas conforme IETF BCP-47 (RFC 5646). Inclui códigos de idiomas principais e variantes regionais."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-impurity-vs"/>
+      </reference>
+      <name value="Impurezas de Substâncias Farmacêuticas"/>
+      <description value="Tipos de impurezas em substâncias farmacêuticas. Alternativa brasileira ao SNOMED CT."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interaction-incidence-vs"/>
+      </reference>
+      <name value="Incidência de Interação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/interaction-incidence"/>
+      </reference>
+      <name value="Incidência de Interação"/>
+      <description value="Frequência de ocorrência de interações"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/additional-monitoring-indicator-vs"/>
+      </reference>
+      <name value="Indicador de Monitorização Adicional"/>
+      <description value="Indicadores de monitorização extra para produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/additional-monitoring-indicator"/>
+      </reference>
+      <name value="Indicador de Monitorização Adicional"/>
+      <description value="Indicadores de monitorização extra definidos para produtos medicinais que requerem acompanhamento intensivo pós-comercialização"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pediatric-use-indicator-vs"/>
+      </reference>
+      <name value="Indicador de Uso Pediátrico"/>
+      <description value="Indicadores de uso pediátrico para produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/pediatric-use-indicator"/>
+      </reference>
+      <name value="Indicador de Uso Pediátrico"/>
+      <description value="Indicadores relacionados a uso pediátrico de produtos medicinais, incluindo requisitos de investigação pediátrica e dispensas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/therapeutic-indications-br"/>
+      </reference>
+      <name value="Indicações Terapêuticas - Brasil"/>
+      <description value="Indicações terapêuticas padronizadas para produtos medicinais brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/therapeutic-indication-br"/>
+      </reference>
+      <name value="Indicações Terapêuticas - Brasil"/>
+      <description value="ValueSet de indicações terapêuticas baseado em CID-10 e SNOMED-CT para o contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/therapeutic-indications-br"/>
+      </reference>
+      <name value="Indicações Terapêuticas - Brasil"/>
+      <description value="Sistema de códigos para indicações terapêuticas de produtos medicinais brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/therapeutic-indications-defining"/>
+      </reference>
+      <name value="Indicações Terapêuticas Definidoras"/>
+      <description value="Indicações terapêuticas que são elementos definidores do MPID - mudanças requerem novo MPID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IngredientBR"/>
+      </reference>
+      <name value="Ingrediente - Brasil"/>
+      <description value="Perfil brasileiro para ingredientes de produtos farmacêuticos, com todos os bindings FHIR R5"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/manufactured-item-definition-br"/>
+      </reference>
+      <name value="Item Manufaturado - Brasil"/>
+      <description value="Perfil brasileiro para itens manufaturados de produtos farmacêuticos, com todos os bindings FHIR R5"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/manufactured-item"/>
+      </reference>
+      <name value="Itens Fabricados"/>
+      <description value="Códigos para itens farmacêuticos fabricados (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jurisdiction-valueset"/>
+      </reference>
+      <name value="Jurisdições (ISO 3166 + UN M49)"/>
+      <description value="Códigos para países, subdivisões de países e regiões supranacionais. Combina ISO 3166 (países) com UN M49 (regiões geográficas)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-neoquimica-example"/>
+      </reference>
+      <name value="Laboratório Neoquímica Ltda."/>
+      <description value="Empresa farmacêutica brasileira - exemplo de detentor de registro"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/manufactured-item-component-location-vs"/>
+      </reference>
+      <name value="Localização de Componente"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/manufactured-item-component-location"/>
+      </reference>
+      <name value="Localização de Componente de Item Manufaturado"/>
+      <description value="Localização de componentes dentro do item manufaturado"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interaction-management-vs"/>
+      </reference>
+      <name value="Manejo de Interação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/interaction-management"/>
+      </reference>
+      <name value="Manejo de Interação"/>
+      <description value="Estratégias de manejo de interações medicamentosas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/container-materials-br"/>
+      </reference>
+      <name value="Materiais de Container - Brasil"/>
+      <description value="Materiais padronizados para containers de embalagens brasileiras"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/container-materials-br"/>
+      </reference>
+      <name value="Materiais de Container - Brasil"/>
+      <description value="Sistema de códigos para materiais de containers brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/packaging-material"/>
+      </reference>
+      <name value="Materiais de Embalagem"/>
+      <description value="Materiais utilizados em embalagens farmacêuticas (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/packaging-material"/>
+      </reference>
+      <name value="Materiais de Embalagem"/>
+      <description value="Sistema de códigos para materiais de embalagem (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/special-measures-vs"/>
+      </reference>
+      <name value="Medidas Especiais para Produto Medicinal"/>
+      <description value="Medidas especiais aplicáveis a produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/special-measures"/>
+      </reference>
+      <name value="Medidas Especiais para Produto Medicinal"/>
+      <description value="Medidas especiais definidas para produtos medicinais, como requisitos de estudos pós-autorização, planos de gestão de risco ou restrições de prescrição"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/authorization-status-reason-vs"/>
+      </reference>
+      <name value="Motivo do Status da Autorização"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/authorization-status-reason"/>
+      </reference>
+      <name value="Motivo do Status da Autorização"/>
+      <description value="Motivos para o status atual de uma autorização regulatória"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/identifier-change-reason"/>
+      </reference>
+      <name value="Motivos de Mudança de Identificador"/>
+      <description value="Motivos padronizados para mudanças que requerem novos identificadores MPID/PCID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/identifier-change-reason"/>
+      </reference>
+      <name value="Motivos de Mudança de Identificador"/>
+      <description value="Sistema de códigos para motivos de mudança de identificadores MPID/PCID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mpid-br"/>
+      </reference>
+      <name value="MPID - Identificador de Produto Medicinal - Brasil"/>
+      <description value="Sistema de códigos para identificadores de produtos medicinais conforme ISO 11615"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mpid-requiring-changes"/>
+      </reference>
+      <name value="Mudanças que Requerem Novo MPID"/>
+      <description value="Tipos de mudanças que requerem geração de novo MPID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pcid-requiring-changes"/>
+      </reference>
+      <name value="Mudanças que Requerem Novo PCID"/>
+      <description value="Tipos de mudanças que requerem geração de novo PCID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/weight-method-vs"/>
+      </reference>
+      <name value="Método de Determinação de Peso Molecular"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/weight-method"/>
+      </reference>
+      <name value="Método de Determinação de Peso Molecular"/>
+      <description value="Métodos para determinação de peso/massa molecular"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/change-severity-level"/>
+      </reference>
+      <name value="Níveis de Severidade de Mudança"/>
+      <description value="Níveis de severidade para classificação de mudanças em identificadores"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/change-severity-level"/>
+      </reference>
+      <name value="Níveis de Severidade de Mudança"/>
+      <description value="Sistema de códigos para classificação da severidade de mudanças"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Organization-anvisa-simple"/>
+      </reference>
+      <name value="Organização ANVISA - Brasil (Simplificado)"/>
+      <description value="Profile brasileiro simplificado para Organization no contexto regulatório da ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/brazilian-terminology-standards"/>
+      </reference>
+      <name value="Padrões de Terminologia Brasileira"/>
+      <description value="Define padrões específicos de terminologia para contexto farmacêutico brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ingredient-role"/>
+      </reference>
+      <name value="Papéis de Ingredientes"/>
+      <description value="Papéis/funções de ingredientes em medicamentos (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ingredient-role"/>
+      </reference>
+      <name value="Papéis de Ingredientes"/>
+      <description value="Sistema de códigos para papéis de ingredientes em medicamentos (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SubstanceDefinition"/>
+      </extension>
+      <reference>
+        <reference value="SubstanceDefinition/paracetamol-substance-gsrs-br"/>
+      </reference>
+      <name value="Paracetamol - Exemplo GSRS/Brasil"/>
+      <description value="Exemplo de SubstanceDefinition para Paracetamol com identificadores UNII, DCB e CAS"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/paracetamol-clinical-indication-example"/>
+      </reference>
+      <name value="Paracetamol - Indicação para Febre"/>
+      <description value="Exemplo de uso clínico do Paracetamol 750mg para tratamento de febre e dor leve a moderada."/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ClinicalUseDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ClinicalUseDefinition/paracetamol-clinical-interaction-example"/>
+      </reference>
+      <name value="Paracetamol - Interação com Álcool"/>
+      <description value="Exemplo de interação medicamentosa do Paracetamol com álcool - risco de hepatotoxicidade."/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PackagedProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PackagedProductDefinition/paracetamol-package-example"/>
+      </reference>
+      <name value="Paracetamol 750mg - Embalagem"/>
+      <description value="Embalagem exemplo de Paracetamol 750mg"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicinalProductDefinition"/>
+      </extension>
+      <reference>
+        <reference value="MedicinalProductDefinition/paracetamol-750mg-example"/>
+      </reference>
+      <name value="Paracetamol 750mg Comprimido"/>
+      <description value="Exemplo básico de produto medicinal Paracetamol 750mg comprimido para referências"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organism-part-vs"/>
+      </reference>
+      <name value="Parte do Organismo"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organism-part"/>
+      </reference>
+      <name value="Parte do Organismo"/>
+      <description value="Partes de organismos usadas como fonte de substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/product-name-parts"/>
+      </reference>
+      <name value="Partes do Nome do Produto"/>
+      <description value="Partes específicas do nome do produto que são elementos definidores para MPID conforme padrões internacionais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/country-valueset"/>
+      </reference>
+      <name value="Países (ISO 3166-1)"/>
+      <description value="Códigos de países conforme padrão ISO 3166-1 alfa-2. Usado para indicar país de uso, fabricação ou jurisdição."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/pcid-br"/>
+      </reference>
+      <name value="PCID - Identificador de Produto Embalado - Brasil"/>
+      <description value="Sistema de códigos para identificadores de produtos embalados conforme ISO 11615"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/phpid-br"/>
+      </reference>
+      <name value="PHPID - Identificador de Produto Farmacêutico - Brasil"/>
+      <description value="Sistema de códigos para identificadores de produtos farmacêuticos (administráveis) conforme ISO 11615"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/organization-business-size-br"/>
+      </reference>
+      <name value="Porte da Organização - Brasil"/>
+      <description value="Classificação do porte da organização conforme critérios brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/manufacturing-process-vs"/>
+      </reference>
+      <name value="Processo de Manufatura"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/manufacturing-process"/>
+      </reference>
+      <name value="Processo de Manufatura"/>
+      <description value="Processos de manufatura de produtos farmacêuticos"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/administrable-property"/>
+      </reference>
+      <name value="Propriedades Administráveis"/>
+      <description value="Tipos de propriedades específicas para produtos administráveis (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/administrable-property"/>
+      </reference>
+      <name value="Propriedades Administráveis"/>
+      <description value="Sistema de códigos para propriedades de produtos administráveis (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/generic-reference"/>
+      </reference>
+      <name value="Referência Genérica"/>
+      <description value="Referência ao produto de referência para medicamentos genéricos ou similares"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RegulatedAuthorization"/>
+      </extension>
+      <reference>
+        <reference value="RegulatedAuthorization/regulated-authorization-dipirona-example"/>
+      </reference>
+      <name value="Registro ANVISA - Dipirona 500mg"/>
+      <description value="Exemplo de RegulatedAuthorization para registro ANVISA da dipirona 500mg"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/identifier-lifecycle-rules"/>
+      </reference>
+      <name value="Regras de Lifecycle de Identificadores"/>
+      <description value="Regras e tracking para lifecycle de identificadores MPID/PCID - define quando manter vs criar novos identificadores"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/name-validation-rules"/>
+      </reference>
+      <name value="Regras de Validação de Nome"/>
+      <description value="Regras específicas para validação de nomes de produtos brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RegulatedAuthorization"/>
+      </extension>
+      <reference>
+        <reference value="RegulatedAuthorization/regulated-authorization-renewal-example"/>
+      </reference>
+      <name value="Renovação de Registro ANVISA - Paracetamol 750mg"/>
+      <description value="Exemplo de RegulatedAuthorization para renovação de registro ANVISA do paracetamol 750mg"/>
+      <isExample value="true"/>
+      <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/undesirable-effect-symptom"/>
+      </reference>
+      <name value="Sintoma de Efeito Indesejável"/>
+      <description value="Sintomas e condições de efeitos indesejáveis usando MedDRA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/brazilian-government-systems"/>
+      </reference>
+      <name value="Sistemas Oficiais do Governo Brasileiro"/>
+      <description value="Sistemas de identificação oficiais do governo brasileiro utilizados no BRIG"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/brazilian-government-systems"/>
+      </reference>
+      <name value="Sistemas Oficiais do Governo Brasileiro"/>
+      <description value="Sistema de códigos para referenciar sistemas oficiais do governo brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-anvisa-status-br"/>
+      </reference>
+      <name value="Status ANVISA da Organização - Brasil"/>
+      <description value="Status da organização junto à ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-anvisa-status-br"/>
+      </reference>
+      <name value="Status ANVISA da Organização - Brasil"/>
+      <description value="Sistema de códigos para status da organização junto à ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/disease-status-vs"/>
+      </reference>
+      <name value="Status da Doença"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/disease-status"/>
+      </reference>
+      <name value="Status da Doença"/>
+      <description value="Status ou estágio de uma condição médica"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/regulated-authorization-status-br"/>
+      </reference>
+      <name value="Status de Autorização Regulatória ANVISA"/>
+      <description value="Status de autorizações regulatórias conforme processos ANVISA para medicamentos"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/regulated-authorization-status-br"/>
+      </reference>
+      <name value="Status de Autorização Regulatória Brasil"/>
+      <description value="Conjunto de valores para status de autorizações regulatórias ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/gmp-certification-status-br"/>
+      </reference>
+      <name value="Status de Certificação GMP - Brasil"/>
+      <description value="Status de certificação de Boas Práticas de Fabricação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/gmp-certification-status-br"/>
+      </reference>
+      <name value="Status de Certificação GMP - Brasil"/>
+      <description value="Sistema de códigos para status de certificação GMP"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/marketing-status-br"/>
+      </reference>
+      <name value="Status de Comercialização - Brasil"/>
+      <description value="Status de comercialização de produtos medicinais no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/marketing-status-br"/>
+      </reference>
+      <name value="Status de Comercialização - Brasil"/>
+      <description value="Sistema de códigos para status de comercialização no contexto brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/umc-coordination-status"/>
+      </reference>
+      <name value="Status de Coordenação UMC"/>
+      <description value="Status do processo de coordenação com Uppsala Monitoring Centre"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/umc-coordination-status"/>
+      </reference>
+      <name value="Status de Coordenação UMC"/>
+      <description value="Códigos para status de coordenação com Uppsala Monitoring Centre"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/identifier-lifecycle-status"/>
+      </reference>
+      <name value="Status de Lifecycle do Identificador"/>
+      <description value="Status atual do identificador no seu ciclo de vida"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/identifier-lifecycle-status"/>
+      </reference>
+      <name value="Status de Lifecycle do Identificador"/>
+      <description value="Status do ciclo de vida de identificadores MPID/PCID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/identifier-lifecycle-status"/>
+      </reference>
+      <name value="Status de Lifecycle do Identificador"/>
+      <description value="Sistema de códigos para status do ciclo de vida de identificadores"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/publication-status"/>
+      </reference>
+      <name value="Status de Publicação"/>
+      <description value="Status do ciclo de vida de publicação de um recurso FHIR. Este ValueSet referencia diretamente o CodeSystem oficial do FHIR R5."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-status-br"/>
+      </reference>
+      <name value="Status de Substância - Brasil"/>
+      <description value="Status regulatório de substâncias no contexto brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-status-br"/>
+      </reference>
+      <name value="Status de Substância - Brasil"/>
+      <description value="Sistema de códigos para status regulatório de substâncias no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-status-gsrs-br"/>
+      </reference>
+      <name value="Status de Substância GSRS/Brasil"/>
+      <description value="Conjunto de valores para status de substâncias GSRS e brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/clinical-use-status-br"/>
+      </reference>
+      <name value="Status de Uso Clínico - Brasil"/>
+      <description value="ValueSet dos status das definições de uso clínico para o contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/clinical-use-status-br"/>
+      </reference>
+      <name value="Status de Uso Clínico - Brasil"/>
+      <description value="Status das definições de uso clínico adaptados para o contexto regulatório brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/legal-status-supply-br"/>
+      </reference>
+      <name value="Status Legal de Fornecimento - Brasil"/>
+      <description value="Status legal para dispensação de produtos medicinais no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/legal-status-supply-br"/>
+      </reference>
+      <name value="Status Legal de Fornecimento - Brasil"/>
+      <description value="Sistema de códigos para status legal de dispensação no contexto brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/legal-status-defining"/>
+      </reference>
+      <name value="Status Legal Definidor"/>
+      <description value="Status legal que é elemento definidor do MPID - mudanças requerem novo MPID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/anvisa-regulatory-status"/>
+      </reference>
+      <name value="Status Regulatório ANVISA"/>
+      <description value="Status regulatório da substância junto à ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/anvisa-regulatory-status-br"/>
+      </reference>
+      <name value="Status Regulatório ANVISA - Brasil"/>
+      <description value="Status regulatório de substâncias junto à ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/anvisa-regulatory-status-br"/>
+      </reference>
+      <name value="Status Regulatório ANVISA - Brasil"/>
+      <description value="Sistema de códigos para status regulatório de substâncias na ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/organization-regulatory-status-br"/>
+      </reference>
+      <name value="Status Regulatório da Organização - Brasil"/>
+      <description value="Status regulatório da organização junto à ANVISA e outros órgãos brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interactant"/>
+      </reference>
+      <name value="Substância Interagente"/>
+      <description value="Substâncias que podem causar interações usando MedDRA e ATC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interaction-substance-br"/>
+      </reference>
+      <name value="Substâncias para Interação - Brasil"/>
+      <description value="ValueSet de substâncias comuns que causam interações medicamentosas no contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/therapy"/>
+      </reference>
+      <name value="Terapia"/>
+      <description value="Tipos de terapia usando MedDRA e ATC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/brazilian-pharmaceutical-terminology"/>
+      </reference>
+      <name value="Terminologia Farmacêutica Brasileira"/>
+      <description value="Terminologia padronizada para uso farmacêutico no contexto brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/brazilian-pharmaceutical-terminology"/>
+      </reference>
+      <name value="Terminologia Farmacêutica Brasileira"/>
+      <description value="Sistema de códigos para terminologia farmacêutica brasileira padronizada"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/warning-type-vs"/>
+      </reference>
+      <name value="Tipo de Advertência"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/warning-type"/>
+      </reference>
+      <name value="Tipo de Advertência"/>
+      <description value="Tipos de advertências e precauções"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/regulated-authorization-type-br"/>
+      </reference>
+      <name value="Tipo de Autorização Regulatória ANVISA"/>
+      <description value="Tipos de autorizações regulatórias conforme processos ANVISA para medicamentos"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/regulated-authorization-type-br"/>
+      </reference>
+      <name value="Tipo de Autorização Regulatória Brasil"/>
+      <description value="Conjunto de valores para tipos de autorizações regulatórias ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/manufactured-item-component-type-vs"/>
+      </reference>
+      <name value="Tipo de Componente"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/manufactured-item-component-type"/>
+      </reference>
+      <name value="Tipo de Componente de Item Manufaturado"/>
+      <description value="Tipos de componentes estruturais de itens manufaturados"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/clinical-use-definition-type-vs"/>
+      </reference>
+      <name value="Tipo de Definição de Uso Clínico"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/clinical-use-definition-type"/>
+      </reference>
+      <name value="Tipo de Definição de Uso Clínico"/>
+      <description value="Tipos de definição de uso clínico de produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interaction-type-vs"/>
+      </reference>
+      <name value="Tipo de Interação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/interaction-type"/>
+      </reference>
+      <name value="Tipo de Interação"/>
+      <description value="Tipos de interação medicamentosa e com alimentos"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/source-material-type-vs"/>
+      </reference>
+      <name value="Tipo de Material de Origem"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/source-material-type"/>
+      </reference>
+      <name value="Tipo de Material de Origem"/>
+      <description value="Tipos de material de origem para substâncias biológicas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-amount-type"/>
+      </reference>
+      <name value="Tipo de Medida de Quantidade de Substância"/>
+      <description value="Tipos de medidas para quantificar substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/weight-type-vs"/>
+      </reference>
+      <name value="Tipo de Peso Molecular"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/weight-type"/>
+      </reference>
+      <name value="Tipo de Peso Molecular"/>
+      <description value="Tipos de peso molecular para substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/regulatory-procedure-type-br"/>
+      </reference>
+      <name value="Tipo de Procedimento Regulatório Brasil"/>
+      <description value="Conjunto de valores para tipos de procedimentos regulatórios"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/regulatory-procedure-type-br"/>
+      </reference>
+      <name value="Tipo de Procedimento Regulatório Brasil"/>
+      <description value="Tipos de procedimentos regulatórios ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/authorization-case-type-vs"/>
+      </reference>
+      <name value="Tipo de Processo de Autorização"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/authorization-case-type"/>
+      </reference>
+      <name value="Tipo de Processo de Autorização"/>
+      <description value="Tipos de processos administrativos para autorização regulatória"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-amount-type-vs"/>
+      </reference>
+      <name value="Tipo de Quantidade de Substância"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-relationship-type-vs"/>
+      </reference>
+      <name value="Tipo de Relacionamento entre Substâncias"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-relationship-type"/>
+      </reference>
+      <name value="Tipo de Relacionamento entre Substâncias"/>
+      <description value="Tipos de relacionamentos entre substâncias químicas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/therapy-relationship-type-vs"/>
+      </reference>
+      <name value="Tipo de Relacionamento Terapêutico"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/therapy-relationship-type"/>
+      </reference>
+      <name value="Tipo de Relacionamento Terapêutico"/>
+      <description value="Relacionamento entre terapia e contraindicação ou indicação"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/structure-representation-type-vs"/>
+      </reference>
+      <name value="Tipo de Representação Estrutural"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/structure-representation-type"/>
+      </reference>
+      <name value="Tipo de Representação Estrutural"/>
+      <description value="Formatos de representação de estruturas químicas"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/container-type-br"/>
+      </reference>
+      <name value="Tipos de Container - Brasil"/>
+      <description value="Tipos de containers padronizados para embalagens brasileiras"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/container-type-br"/>
+      </reference>
+      <name value="Tipos de Container - Brasil"/>
+      <description value="Sistema de códigos para tipos de containers de embalagens brasileiras"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/product-contact-type-vs"/>
+      </reference>
+      <name value="Tipos de Contato para Produto Medicinal"/>
+      <description value="Tipos de contato organizacional para produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/product-contact-type"/>
+      </reference>
+      <name value="Tipos de Contato para Produto Medicinal"/>
+      <description value="Tipos de contato organizacional relacionados a produtos medicinais (ex: farmacovigilância, assuntos regulatórios)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/packaging-type-br"/>
+      </reference>
+      <name value="Tipos de Embalagem - Brasil"/>
+      <description value="Tipos de embalagem utilizados para produtos farmacêuticos no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/packaging-type-br"/>
+      </reference>
+      <name value="Tipos de Embalagem - Brasil"/>
+      <description value="Sistema de códigos para tipos de embalagem no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-impurity"/>
+      </reference>
+      <name value="Tipos de Impurezas em Substâncias Farmacêuticas"/>
+      <description value="Classificação de tipos de impurezas encontradas em substâncias farmacêuticas ativas e excipientes"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/interaction-type-br"/>
+      </reference>
+      <name value="Tipos de Interação - Brasil"/>
+      <description value="ValueSet dos tipos de interação medicamentosa para o contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/product-name-type"/>
+      </reference>
+      <name value="Tipos de Nome de Produto"/>
+      <description value="Tipos de nomes para produtos medicinais (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/product-name-type"/>
+      </reference>
+      <name value="Tipos de Nome de Produto"/>
+      <description value="Sistema de códigos para tipos de nomes de produtos medicinais (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/substance-name-type"/>
+      </reference>
+      <name value="Tipos de Nome de Substância"/>
+      <description value="Tipos de nomes para substâncias (padrão internacional - INN/IUPAC)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/substance-name-type"/>
+      </reference>
+      <name value="Tipos de Nome de Substância"/>
+      <description value="Sistema de códigos para tipos de nomes de substâncias (padrão internacional - INN/IUPAC)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/structured-name-types"/>
+      </reference>
+      <name value="Tipos de Nome Estruturado"/>
+      <description value="Tipos de elementos estruturados que podem compor um nome de produto"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/structured-name-types"/>
+      </reference>
+      <name value="Tipos de Nome Estruturado"/>
+      <description value="Sistema de códigos para elementos estruturados de nomes de produtos"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organization-type-anvisa-br"/>
+      </reference>
+      <name value="Tipos de Organização ANVISA - Brasil"/>
+      <description value="Tipos de organizações no contexto regulatório da ANVISA baseado em classificações oficiais brasileiras"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/organization-type-anvisa-br"/>
+      </reference>
+      <name value="Tipos de Organização ANVISA - Brasil"/>
+      <description value="Sistema de códigos para tipos de organizações no contexto regulatório da ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/packaged-product-type-br"/>
+      </reference>
+      <name value="Tipos de Produto Embalado - Brasil"/>
+      <description value="Tipos de produtos embalados utilizados no contexto regulatório brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/packaged-product-type-br"/>
+      </reference>
+      <name value="Tipos de Produto Embalado - Brasil"/>
+      <description value="Sistema de códigos para tipos de produtos embalados no Brasil"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medicinal-product-type-br"/>
+      </reference>
+      <name value="Tipos de Produto Medicinal - Brasil"/>
+      <description value="Tipos de produtos medicinais conforme classificação brasileira/ANVISA"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/medicinal-product-type-br"/>
+      </reference>
+      <name value="Tipos de Produto Medicinal - Brasil"/>
+      <description value="Sistema de códigos para tipos de produtos medicinais no contexto brasileiro"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/reference-type-br"/>
+      </reference>
+      <name value="Tipos de Referência - Brasil"/>
+      <description value="Tipos de relação de referência entre produtos medicinais"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/reference-type-br"/>
+      </reference>
+      <name value="Tipos de Referência - Brasil"/>
+      <description value="Sistema de códigos para tipos de relação de referência"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/animal-tissue-type-vs"/>
+      </reference>
+      <name value="Tipos de Tecido Animal"/>
+      <description value="Tipos de tecidos animais para especificação de períodos de carência"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/animal-tissue-type"/>
+      </reference>
+      <name value="Tipos de Tecido Animal"/>
+      <description value="Tipos de tecidos animais para os quais períodos de carência (withdrawal periods) são especificados em produtos veterinários"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/clinical-use-type-br"/>
+      </reference>
+      <name value="Tipos de Uso Clínico - Brasil"/>
+      <description value="ValueSet dos tipos de definição de uso clínico para o contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/clinical-use-type-br"/>
+      </reference>
+      <name value="Tipos de Uso Clínico - Brasil"/>
+      <description value="Tipos de definição de uso clínico adaptados para o contexto brasileiro incluindo indicações terapêuticas, contraindicações, interações medicamentosas e critérios DCE-SUS."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/structure-technique-vs"/>
+      </reference>
+      <name value="Técnicas de Caracterização Estrutural"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/structure-technique"/>
+      </reference>
+      <name value="Técnicas de Caracterização Estrutural"/>
+      <description value="Técnicas analíticas para determinação de estrutura molecular"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/umc-integration-mapping"/>
+      </reference>
+      <name value="UMC Integration Mapping"/>
+      <description value="Extension para mapping futuro com Uppsala Monitoring Centre para coordenação internacional de identificadores PHPID"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/unit-of-presentation"/>
+      </reference>
+      <name value="Unidade de Apresentação"/>
+      <description value="Unidades de apresentação usando códigos EDQM Standard Terms"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/administrable-unit"/>
+      </reference>
+      <name value="Unidades Administráveis"/>
+      <description value="Unidades que descrevem a apresentação final administrável (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/administrable-unit"/>
+      </reference>
+      <name value="Unidades Administráveis"/>
+      <description value="Sistema de códigos para unidades de apresentação administrável (padrão internacional)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/presentation-unit"/>
+      </reference>
+      <name value="Unidades de Apresentação"/>
+      <description value="Unidades de apresentação usando códigos UCUM (Unified Code for Units of Measure)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/concentration-unit"/>
+      </reference>
+      <name value="Unidades de Concentração"/>
+      <description value="Unidades de concentração usando códigos UCUM (Unified Code for Units of Measure)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/product-intended-use-vs"/>
+      </reference>
+      <name value="Uso Pretendido do Produto"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/product-intended-use"/>
+      </reference>
+      <name value="Uso Pretendido do Produto"/>
+      <description value="Classificação do uso pretendido de produtos farmacêuticos"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mpid-values-br"/>
+      </reference>
+      <name value="Valores MPID - Brasil"/>
+      <description value="Valores válidos para identificadores MPID brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pcid-values-br"/>
+      </reference>
+      <name value="Valores PCID - Brasil"/>
+      <description value="Valores válidos para identificadores PCID brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/phpid-values-br"/>
+      </reference>
+      <name value="Valores PHPID - Brasil"/>
+      <description value="Valores válidos para identificadores PHPID brasileiros"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/route-administration"/>
+      </reference>
+      <name value="Vias de Administração"/>
+      <description value="Vias de administração usando códigos EDQM Standard Terms"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/route-administration-hybrid"/>
+      </reference>
+      <name value="Vias de Administração (EDQM + MedDRA)"/>
+      <description value="ValueSet híbrido para vias de administração que combina códigos EDQM Standard Terms (padrão internacional IDMP) com códigos MedDRA. Fornece alternativa ao SNOMED CT Route Codes para contexto brasileiro."/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="informative"/>
+      </extension>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="BRIG - Início"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="implementation-guide.html"/>
+        <name value="implementation-guide.html"/>
+        <title value="Guia de Implementação"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="profiles.html"/>
+        <name value="profiles.html"/>
+        <title value="Profiles Brasileiros"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="terminology.html"/>
+        <name value="terminology.html"/>
+        <title value="Terminologias"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="examples.html"/>
+        <name value="examples.html"/>
+        <title value="Exemplos"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2025"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="Protótipo"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/includes"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="http://farmaco.maxapex.net/brig/fhir/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="show-inherited-invariants"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="usage-stats-opt-out"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludexml"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludejson"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludettl"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludemap"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludeexample"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

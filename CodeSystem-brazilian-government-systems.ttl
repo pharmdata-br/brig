@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/brazilian-government-systems> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "brazilian-government-systems"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem brazilian-government-systems</b></p><a name=\"brazilian-government-systems\"> </a><a name=\"hcbrazilian-government-systems\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">cnpj-ms<a name=\"brazilian-government-systems-cnpj-ms\"> </a></td><td>CNPJ - Ministério da Saúde</td><td>Sistema oficial de CNPJ conforme padrão do Ministério da Saúde: https://saude.gov.br/fhir/sid/cnpj</td></tr><tr><td style=\"white-space:nowrap\">cnes<a name=\"brazilian-government-systems-cnes\"> </a></td><td>CNES</td><td>Cadastro Nacional de Estabelecimentos de Saúde: http://cnes.datasus.gov.br</td></tr><tr><td style=\"white-space:nowrap\">anvisa-medicamento-registro<a name=\"brazilian-government-systems-anvisa-medicamento-registro\"> </a></td><td>Registro de Medicamentos ANVISA</td><td>Sistema de registro de medicamentos da ANVISA: http://anvisa.gov.br/medicamentos/registro</td></tr><tr><td style=\"white-space:nowrap\">anvisa-dcb<a name=\"brazilian-government-systems-anvisa-dcb\"> </a></td><td>DCB - Denominação Comum Brasileira</td><td>Denominação Comum Brasileira da ANVISA: https://anvisa.gov.br/dcb</td></tr><tr><td style=\"white-space:nowrap\">anvisa-substancia-codigo<a name=\"brazilian-government-systems-anvisa-substancia-codigo\"> </a></td><td>Código de Substância ANVISA</td><td>Código de substâncias da ANVISA: https://anvisa.gov.br/substancias/codigo</td></tr><tr><td style=\"white-space:nowrap\">anvisa-afe<a name=\"brazilian-government-systems-anvisa-afe\"> </a></td><td>AFE - Autorização de Funcionamento de Empresa</td><td>Autorização de Funcionamento de Empresa da ANVISA: http://anvisa.gov.br/afe</td></tr><tr><td style=\"white-space:nowrap\">anvisa-autorizacao-especial<a name=\"brazilian-government-systems-anvisa-autorizacao-especial\"> </a></td><td>Autorização Especial ANVISA</td><td>Autorização especial da ANVISA: http://anvisa.gov.br/autorizacao-especial</td></tr><tr><td style=\"white-space:nowrap\">anvisa-produto-embalagem<a name=\"brazilian-government-systems-anvisa-produto-embalagem\"> </a></td><td>Código de Produto Embalado ANVISA</td><td>Código de identificação de produto embalado da ANVISA: http://anvisa.gov.br/produtos/embalagem</td></tr><tr><td style=\"white-space:nowrap\">gs1-gtin<a name=\"brazilian-government-systems-gs1-gtin\"> </a></td><td>GS1 GTIN</td><td>Global Trade Item Number: http://hl7.org/fhir/sid/gs1</td></tr><tr><td style=\"white-space:nowrap\">cas-number<a name=\"brazilian-government-systems-cas-number\"> </a></td><td>CAS Number</td><td>Chemical Abstracts Service Registry Number: urn:oid:2.16.840.1.113883.6.61</td></tr><tr><td style=\"white-space:nowrap\">fda-unii<a name=\"brazilian-government-systems-fda-unii\"> </a></td><td>FDA UNII</td><td>FDA Unique Ingredient Identifier: http://fdasis.nlm.nih.gov</td></tr><tr><td style=\"white-space:nowrap\">ema-sub-id<a name=\"brazilian-government-systems-ema-sub-id\"> </a></td><td>EMA SUB-ID</td><td>European Medicines Agency Substance ID: http://ema.europa.eu/identifier</td></tr><tr><td style=\"white-space:nowrap\">ema-spor-org<a name=\"brazilian-government-systems-ema-spor-org\"> </a></td><td>EMA SPOR Organization</td><td>EMA SPOR Organization ID: http://spor.ema.europa.eu/v1/organisations</td></tr><tr><td style=\"white-space:nowrap\">fda-establishment<a name=\"brazilian-government-systems-fda-establishment\"> </a></td><td>FDA Establishment ID</td><td>FDA Establishment Identifier: http://www.fda.gov/establishment-identifier</td></tr><tr><td style=\"white-space:nowrap\">duns<a name=\"brazilian-government-systems-duns\"> </a></td><td>DUNS Number</td><td>Data Universal Numbering System: http://www.duns.com/</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/brazilian-government-systems"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/brazilian-government-systems>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "BrazilianGovernmentSystems"] ; # 
+  fhir:title [ fhir:v "Sistemas Oficiais do Governo Brasileiro"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para referenciar sistemas oficiais do governo brasileiro"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cnpj-ms" ] ;
+     fhir:display [ fhir:v "CNPJ - Ministério da Saúde" ] ;
+     fhir:definition [ fhir:v "Sistema oficial de CNPJ conforme padrão do Ministério da Saúde: https://saude.gov.br/fhir/sid/cnpj" ]
+  ] [
+     fhir:code [ fhir:v "cnes" ] ;
+     fhir:display [ fhir:v "CNES" ] ;
+     fhir:definition [ fhir:v "Cadastro Nacional de Estabelecimentos de Saúde: http://cnes.datasus.gov.br" ]
+  ] [
+     fhir:code [ fhir:v "anvisa-medicamento-registro" ] ;
+     fhir:display [ fhir:v "Registro de Medicamentos ANVISA" ] ;
+     fhir:definition [ fhir:v "Sistema de registro de medicamentos da ANVISA: http://anvisa.gov.br/medicamentos/registro" ]
+  ] [
+     fhir:code [ fhir:v "anvisa-dcb" ] ;
+     fhir:display [ fhir:v "DCB - Denominação Comum Brasileira" ] ;
+     fhir:definition [ fhir:v "Denominação Comum Brasileira da ANVISA: https://anvisa.gov.br/dcb" ]
+  ] [
+     fhir:code [ fhir:v "anvisa-substancia-codigo" ] ;
+     fhir:display [ fhir:v "Código de Substância ANVISA" ] ;
+     fhir:definition [ fhir:v "Código de substâncias da ANVISA: https://anvisa.gov.br/substancias/codigo" ]
+  ] [
+     fhir:code [ fhir:v "anvisa-afe" ] ;
+     fhir:display [ fhir:v "AFE - Autorização de Funcionamento de Empresa" ] ;
+     fhir:definition [ fhir:v "Autorização de Funcionamento de Empresa da ANVISA: http://anvisa.gov.br/afe" ]
+  ] [
+     fhir:code [ fhir:v "anvisa-autorizacao-especial" ] ;
+     fhir:display [ fhir:v "Autorização Especial ANVISA" ] ;
+     fhir:definition [ fhir:v "Autorização especial da ANVISA: http://anvisa.gov.br/autorizacao-especial" ]
+  ] [
+     fhir:code [ fhir:v "anvisa-produto-embalagem" ] ;
+     fhir:display [ fhir:v "Código de Produto Embalado ANVISA" ] ;
+     fhir:definition [ fhir:v "Código de identificação de produto embalado da ANVISA: http://anvisa.gov.br/produtos/embalagem" ]
+  ] [
+     fhir:code [ fhir:v "gs1-gtin" ] ;
+     fhir:display [ fhir:v "GS1 GTIN" ] ;
+     fhir:definition [ fhir:v "Global Trade Item Number: http://hl7.org/fhir/sid/gs1" ]
+  ] [
+     fhir:code [ fhir:v "cas-number" ] ;
+     fhir:display [ fhir:v "CAS Number" ] ;
+     fhir:definition [ fhir:v "Chemical Abstracts Service Registry Number: urn:oid:2.16.840.1.113883.6.61" ]
+  ] [
+     fhir:code [ fhir:v "fda-unii" ] ;
+     fhir:display [ fhir:v "FDA UNII" ] ;
+     fhir:definition [ fhir:v "FDA Unique Ingredient Identifier: http://fdasis.nlm.nih.gov" ]
+  ] [
+     fhir:code [ fhir:v "ema-sub-id" ] ;
+     fhir:display [ fhir:v "EMA SUB-ID" ] ;
+     fhir:definition [ fhir:v "European Medicines Agency Substance ID: http://ema.europa.eu/identifier" ]
+  ] [
+     fhir:code [ fhir:v "ema-spor-org" ] ;
+     fhir:display [ fhir:v "EMA SPOR Organization" ] ;
+     fhir:definition [ fhir:v "EMA SPOR Organization ID: http://spor.ema.europa.eu/v1/organisations" ]
+  ] [
+     fhir:code [ fhir:v "fda-establishment" ] ;
+     fhir:display [ fhir:v "FDA Establishment ID" ] ;
+     fhir:definition [ fhir:v "FDA Establishment Identifier: http://www.fda.gov/establishment-identifier" ]
+  ] [
+     fhir:code [ fhir:v "duns" ] ;
+     fhir:display [ fhir:v "DUNS Number" ] ;
+     fhir:definition [ fhir:v "Data Universal Numbering System: http://www.duns.com/" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="manufactured-item-component-location"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem manufactured-item-component-location</b></p><a name="manufactured-item-component-location"> </a><a name="hcmanufactured-item-component-location"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">internal<a name="manufactured-item-component-location-internal"> </a></td><td>Interno</td><td>Localizado internamente</td></tr><tr><td style="white-space:nowrap">external<a name="manufactured-item-component-location-external"> </a></td><td>Externo</td><td>Localizado externamente</td></tr><tr><td style="white-space:nowrap">surface<a name="manufactured-item-component-location-surface"> </a></td><td>Superfície</td><td>Na superfície do item</td></tr><tr><td style="white-space:nowrap">intragranular<a name="manufactured-item-component-location-intragranular"> </a></td><td>Intragranular</td><td>Dentro dos grânulos</td></tr><tr><td style="white-space:nowrap">extragranular<a name="manufactured-item-component-location-extragranular"> </a></td><td>Extragranular</td><td>Fora dos grânulos</td></tr><tr><td style="white-space:nowrap">first-layer<a name="manufactured-item-component-location-first-layer"> </a></td><td>Primeira Camada</td><td>Primeira camada (comprimidos multicamadas)</td></tr><tr><td style="white-space:nowrap">second-layer<a name="manufactured-item-component-location-second-layer"> </a></td><td>Segunda Camada</td><td>Segunda camada (comprimidos multicamadas)</td></tr><tr><td style="white-space:nowrap">third-layer<a name="manufactured-item-component-location-third-layer"> </a></td><td>Terceira Camada</td><td>Terceira camada (comprimidos multicamadas)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location"/>
+  <version value="0.0.3"/>
+  <name value="ManufacturedItemComponentLocation"/>
+  <title value="Localização de Componente de Item Manufaturado"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Localização de componentes dentro do item manufaturado"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="internal"/>
+    <display value="Interno"/>
+    <definition value="Localizado internamente"/>
+  </concept>
+  <concept>
+    <code value="external"/>
+    <display value="Externo"/>
+    <definition value="Localizado externamente"/>
+  </concept>
+  <concept>
+    <code value="surface"/>
+    <display value="Superfície"/>
+    <definition value="Na superfície do item"/>
+  </concept>
+  <concept>
+    <code value="intragranular"/>
+    <display value="Intragranular"/>
+    <definition value="Dentro dos grânulos"/>
+  </concept>
+  <concept>
+    <code value="extragranular"/>
+    <display value="Extragranular"/>
+    <definition value="Fora dos grânulos"/>
+  </concept>
+  <concept>
+    <code value="first-layer"/>
+    <display value="Primeira Camada"/>
+    <definition value="Primeira camada (comprimidos multicamadas)"/>
+  </concept>
+  <concept>
+    <code value="second-layer"/>
+    <display value="Segunda Camada"/>
+    <definition value="Segunda camada (comprimidos multicamadas)"/>
+  </concept>
+  <concept>
+    <code value="third-layer"/>
+    <display value="Terceira Camada"/>
+    <definition value="Terceira camada (comprimidos multicamadas)"/>
+  </concept>
+</CodeSystem>

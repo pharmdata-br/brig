@@ -1,0 +1,142 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/ValueSet/unit-of-presentation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "unit-of-presentation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet unit-of-presentation</b></p><a name=\"unit-of-presentation\"> </a><a name=\"hcunit-of-presentation\"> </a><ul><li>Include estes códigos, tal como definidos em <code>http://standardterms.edqm.eu</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>15054000</td><td>Tablet</td></tr><tr><td>15009000</td><td>Capsule</td></tr><tr><td>15037000</td><td>Suppository</td></tr><tr><td>15018000</td><td>Dose</td></tr><tr><td>15058000</td><td>Vial</td></tr><tr><td>15003000</td><td>Ampoule</td></tr><tr><td>15051000</td><td>Syringe</td></tr><tr><td>15013000</td><td>Bottle</td></tr><tr><td>15056000</td><td>Tube</td></tr><tr><td>15046000</td><td>Sachet</td></tr><tr><td>15048000</td><td>Patch</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/unit-of-presentation"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ValueSet/unit-of-presentation>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "UnitOfPresentation"] ; # 
+  fhir:title [ fhir:v "Unidade de Apresentação"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Unidades de apresentação usando códigos EDQM Standard Terms"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ;
+         fhir:l <http://standardterms.edqm.eu>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "15054000" ] ;
+         fhir:display [ fhir:v "Tablet" ]
+       ] [
+         fhir:code [ fhir:v "15009000" ] ;
+         fhir:display [ fhir:v "Capsule" ]
+       ] [
+         fhir:code [ fhir:v "15037000" ] ;
+         fhir:display [ fhir:v "Suppository" ]
+       ] [
+         fhir:code [ fhir:v "15018000" ] ;
+         fhir:display [ fhir:v "Dose" ]
+       ] [
+         fhir:code [ fhir:v "15058000" ] ;
+         fhir:display [ fhir:v "Vial" ]
+       ] [
+         fhir:code [ fhir:v "15003000" ] ;
+         fhir:display [ fhir:v "Ampoule" ]
+       ] [
+         fhir:code [ fhir:v "15051000" ] ;
+         fhir:display [ fhir:v "Syringe" ]
+       ] [
+         fhir:code [ fhir:v "15013000" ] ;
+         fhir:display [ fhir:v "Bottle" ]
+       ] [
+         fhir:code [ fhir:v "15056000" ] ;
+         fhir:display [ fhir:v "Tube" ]
+       ] [
+         fhir:code [ fhir:v "15046000" ] ;
+         fhir:display [ fhir:v "Sachet" ]
+       ] [
+         fhir:code [ fhir:v "15048000" ] ;
+         fhir:display [ fhir:v "Patch" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

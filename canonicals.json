@@ -1,0 +1,1822 @@
+[
+  {
+    "id" : "gsrs-substance-classification-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br",
+    "version" : "0.0.3",
+    "name" : "GSRSSubstanceClassificationBR"
+  },
+  {
+    "id" : "gsrs-substance-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br",
+    "version" : "0.0.3",
+    "name" : "GSRSSubstanceStatusBR"
+  },
+  {
+    "id" : "legal-basis-anvisa-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br",
+    "version" : "0.0.3",
+    "name" : "LegalBasisANVISABR"
+  },
+  {
+    "id" : "regulated-authorization-status-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br",
+    "version" : "0.0.3",
+    "name" : "RegulatedAuthorizationStatusBR"
+  },
+  {
+    "id" : "regulated-authorization-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br",
+    "version" : "0.0.3",
+    "name" : "RegulatedAuthorizationTypeBR"
+  },
+  {
+    "id" : "regulatory-procedure-type-br",
+    "type" : "CodeSystem",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br",
+    "version" : "0.0.3",
+    "name" : "RegulatoryProcedureTypeBR"
+  },
+  {
+    "id" : "legal-basis-anvisa-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-basis-anvisa-br",
+    "version" : "0.0.3",
+    "name" : "LegalBasisANVISABR"
+  },
+  {
+    "id" : "regulated-authorization-status-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-status-br",
+    "version" : "0.0.3",
+    "name" : "RegulatedAuthorizationStatusBR"
+  },
+  {
+    "id" : "regulated-authorization-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-type-br",
+    "version" : "0.0.3",
+    "name" : "RegulatedAuthorizationTypeBR"
+  },
+  {
+    "id" : "regulatory-procedure-type-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulatory-procedure-type-br",
+    "version" : "0.0.3",
+    "name" : "RegulatoryProcedureTypeBR"
+  },
+  {
+    "id" : "substance-classification-gsrs-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-gsrs-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceClassificationGSRSBR"
+  },
+  {
+    "id" : "substance-status-gsrs-br",
+    "type" : "ValueSet",
+    "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-gsrs-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceStatusGSRSBR"
+  },
+  {
+    "id" : "additional-monitoring-indicator",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/additional-monitoring-indicator",
+    "version" : "0.0.3",
+    "name" : "AdditionalMonitoringIndicator"
+  },
+  {
+    "id" : "administrable-property",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/administrable-property",
+    "version" : "0.0.3",
+    "name" : "AdministrableProperty"
+  },
+  {
+    "id" : "administrable-unit",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/administrable-unit",
+    "version" : "0.0.3",
+    "name" : "AdministrableUnit"
+  },
+  {
+    "id" : "animal-tissue-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/animal-tissue-type",
+    "version" : "0.0.3",
+    "name" : "AnimalTissueType"
+  },
+  {
+    "id" : "anvisa-category-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-category-br",
+    "version" : "0.0.3",
+    "name" : "ANVISACategoryBR"
+  },
+  {
+    "id" : "anvisa-regulatory-status-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-regulatory-status-br",
+    "version" : "0.0.3",
+    "name" : "ANVISARegulatoryStatusBR"
+  },
+  {
+    "id" : "anvisa-substance-code",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-substance-code",
+    "version" : "0.0.3",
+    "name" : "ANVISASubstanceCode"
+  },
+  {
+    "id" : "authorization-case-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-case-type",
+    "version" : "0.0.3",
+    "name" : "AuthorizationCaseType"
+  },
+  {
+    "id" : "authorization-status-reason",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-status-reason",
+    "version" : "0.0.3",
+    "name" : "AuthorizationStatusReason"
+  },
+  {
+    "id" : "biological-genus",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-genus",
+    "version" : "0.0.3",
+    "name" : "BiologicalGenus"
+  },
+  {
+    "id" : "biological-species",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-species",
+    "version" : "0.0.3",
+    "name" : "BiologicalSpecies"
+  },
+  {
+    "id" : "brazilian-government-systems",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/brazilian-government-systems",
+    "version" : "0.0.3",
+    "name" : "BrazilianGovernmentSystems"
+  },
+  {
+    "id" : "brazilian-pharmaceutical-terminology",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/brazilian-pharmaceutical-terminology",
+    "version" : "0.0.3",
+    "name" : "BrazilianPharmaceuticalTerminology"
+  },
+  {
+    "id" : "change-severity-level",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/change-severity-level",
+    "version" : "0.0.3",
+    "name" : "ChangeSeverityLevel"
+  },
+  {
+    "id" : "clinical-use-category-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-category-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseCategoryBR"
+  },
+  {
+    "id" : "clinical-use-definition-category",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-category",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseDefinitionCategory"
+  },
+  {
+    "id" : "clinical-use-definition-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-type",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseDefinitionType"
+  },
+  {
+    "id" : "clinical-use-id-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-id-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseIdBR"
+  },
+  {
+    "id" : "clinical-use-status-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-status-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseStatusBR"
+  },
+  {
+    "id" : "clinical-use-type-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-type-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseTypeBR"
+  },
+  {
+    "id" : "container-materials-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/container-materials-br",
+    "version" : "0.0.3",
+    "name" : "ContainerMaterialsBR"
+  },
+  {
+    "id" : "container-type-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/container-type-br",
+    "version" : "0.0.3",
+    "name" : "ContainerTypeBR"
+  },
+  {
+    "id" : "controlled-substance-category-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/controlled-substance-category-br",
+    "version" : "0.0.3",
+    "name" : "ControlledSubstanceCategoryBR"
+  },
+  {
+    "id" : "dcb-brasileiras",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/dcb-brasileiras",
+    "version" : "0.0.3",
+    "name" : "DCBBrasileiras"
+  },
+  {
+    "id" : "disease-status",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/disease-status",
+    "version" : "0.0.3",
+    "name" : "DiseaseStatus"
+  },
+  {
+    "id" : "exemplo-codesystem-brasileiro",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/exemplo-codesystem-brasileiro",
+    "version" : "0.0.3",
+    "name" : "ExemploCodeSystemBrasileiro"
+  },
+  {
+    "id" : "gmp-certification-status-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/gmp-certification-status-br",
+    "version" : "0.0.3",
+    "name" : "GMPCertificationStatusBR"
+  },
+  {
+    "id" : "identifier-change-reason",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/identifier-change-reason",
+    "version" : "0.0.3",
+    "name" : "IdentifierChangeReason"
+  },
+  {
+    "id" : "identifier-lifecycle-status",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/identifier-lifecycle-status",
+    "version" : "0.0.3",
+    "name" : "IdentifierLifecycleStatus"
+  },
+  {
+    "id" : "ingredient-function",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/ingredient-function",
+    "version" : "0.0.3",
+    "name" : "IngredientFunction"
+  },
+  {
+    "id" : "ingredient-role",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/ingredient-role",
+    "version" : "0.0.3",
+    "name" : "IngredientRole"
+  },
+  {
+    "id" : "interaction-effect",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-effect",
+    "version" : "0.0.3",
+    "name" : "InteractionEffect"
+  },
+  {
+    "id" : "interaction-incidence",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-incidence",
+    "version" : "0.0.3",
+    "name" : "InteractionIncidence"
+  },
+  {
+    "id" : "interaction-management",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-management",
+    "version" : "0.0.3",
+    "name" : "InteractionManagement"
+  },
+  {
+    "id" : "interaction-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-type",
+    "version" : "0.0.3",
+    "name" : "InteractionType"
+  },
+  {
+    "id" : "legal-status-supply-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/legal-status-supply-br",
+    "version" : "0.0.3",
+    "name" : "LegalStatusSupplyBR"
+  },
+  {
+    "id" : "manufactured-item",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item",
+    "version" : "0.0.3",
+    "name" : "ManufacturedItem"
+  },
+  {
+    "id" : "manufactured-item-component-location",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location",
+    "version" : "0.0.3",
+    "name" : "ManufacturedItemComponentLocation"
+  },
+  {
+    "id" : "manufactured-item-component-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-type",
+    "version" : "0.0.3",
+    "name" : "ManufacturedItemComponentType"
+  },
+  {
+    "id" : "manufacturing-process",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufacturing-process",
+    "version" : "0.0.3",
+    "name" : "ManufacturingProcess"
+  },
+  {
+    "id" : "marketing-status-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/marketing-status-br",
+    "version" : "0.0.3",
+    "name" : "MarketingStatusBR"
+  },
+  {
+    "id" : "medicinal-product-domain",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-domain",
+    "version" : "0.0.3",
+    "name" : "MedicinalProductDomain"
+  },
+  {
+    "id" : "medicinal-product-type-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-type-br",
+    "version" : "0.0.3",
+    "name" : "MedicinalProductTypeBR"
+  },
+  {
+    "id" : "mpid-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/mpid-br",
+    "version" : "0.0.3",
+    "name" : "MPIDBrazil"
+  },
+  {
+    "id" : "mpid-defining-elements",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/mpid-defining-elements",
+    "version" : "0.0.3",
+    "name" : "MPIDDefiningElements"
+  },
+  {
+    "id" : "optical-activity",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity",
+    "version" : "0.0.3",
+    "name" : "OpticalActivity"
+  },
+  {
+    "id" : "organism-part",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organism-part",
+    "version" : "0.0.3",
+    "name" : "OrganismPart"
+  },
+  {
+    "id" : "organization-anvisa-status-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-anvisa-status-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationANVISAStatusBR"
+  },
+  {
+    "id" : "organization-contact-purpose",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-contact-purpose",
+    "version" : "0.0.3",
+    "name" : "OrganizationContactPurpose"
+  },
+  {
+    "id" : "organization-operational-category-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-category-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationOperationalCategoryBR"
+  },
+  {
+    "id" : "organization-operational-scope-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-scope-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationOperationalScopeBR"
+  },
+  {
+    "id" : "organization-size-category-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-size-category-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationSizeCategoryBR"
+  },
+  {
+    "id" : "organization-special-classification-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-special-classification-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationSpecialClassificationBR"
+  },
+  {
+    "id" : "organization-specialized-activities-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-specialized-activities-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationSpecializedActivitiesBR"
+  },
+  {
+    "id" : "organization-type-anvisa-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-type-anvisa-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationTypeANVISABR"
+  },
+  {
+    "id" : "package-characteristic-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-characteristic-br",
+    "version" : "0.0.3",
+    "name" : "PackageCharacteristicBR"
+  },
+  {
+    "id" : "package-components-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-components-br",
+    "version" : "0.0.3",
+    "name" : "PackageComponentsBR"
+  },
+  {
+    "id" : "packaged-product-type-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaged-product-type-br",
+    "version" : "0.0.3",
+    "name" : "PackagedProductTypeBR"
+  },
+  {
+    "id" : "packaging-material",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaging-material",
+    "version" : "0.0.3",
+    "name" : "PackagingMaterial"
+  },
+  {
+    "id" : "packaging-type-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaging-type-br",
+    "version" : "0.0.3",
+    "name" : "PackagingTypeBR"
+  },
+  {
+    "id" : "pcid-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/pcid-br",
+    "version" : "0.0.3",
+    "name" : "PCIDBrazil"
+  },
+  {
+    "id" : "pediatric-use-indicator",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/pediatric-use-indicator",
+    "version" : "0.0.3",
+    "name" : "PediatricUseIndicator"
+  },
+  {
+    "id" : "phpid-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/phpid-br",
+    "version" : "0.0.3",
+    "name" : "PHPIDBrazil"
+  },
+  {
+    "id" : "product-characteristic",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic",
+    "version" : "0.0.3",
+    "name" : "ProductCharacteristic"
+  },
+  {
+    "id" : "product-confidentiality",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-confidentiality",
+    "version" : "0.0.3",
+    "name" : "ProductConfidentiality"
+  },
+  {
+    "id" : "product-contact-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-contact-type",
+    "version" : "0.0.3",
+    "name" : "ProductContactType"
+  },
+  {
+    "id" : "product-intended-use",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-intended-use",
+    "version" : "0.0.3",
+    "name" : "ProductIntendedUse"
+  },
+  {
+    "id" : "product-name-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-name-type",
+    "version" : "0.0.3",
+    "name" : "ProductNameType"
+  },
+  {
+    "id" : "reference-type-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/reference-type-br",
+    "version" : "0.0.3",
+    "name" : "ReferenceTypeBR"
+  },
+  {
+    "id" : "source-material-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/source-material-type",
+    "version" : "0.0.3",
+    "name" : "SourceMaterialType"
+  },
+  {
+    "id" : "special-measures",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/special-measures",
+    "version" : "0.0.3",
+    "name" : "SpecialMeasures"
+  },
+  {
+    "id" : "stereochemistry",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/stereochemistry",
+    "version" : "0.0.3",
+    "name" : "Stereochemistry"
+  },
+  {
+    "id" : "structure-representation-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-representation-type",
+    "version" : "0.0.3",
+    "name" : "StructureRepresentationType"
+  },
+  {
+    "id" : "structure-technique",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-technique",
+    "version" : "0.0.3",
+    "name" : "StructureTechnique"
+  },
+  {
+    "id" : "structured-name-types",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structured-name-types",
+    "version" : "0.0.3",
+    "name" : "StructuredNameTypes"
+  },
+  {
+    "id" : "substance-amount-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type",
+    "version" : "0.0.3",
+    "name" : "SubstanceAmountType"
+  },
+  {
+    "id" : "substance-classification-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-classification-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceClassificationBR"
+  },
+  {
+    "id" : "substance-form",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-form",
+    "version" : "0.0.3",
+    "name" : "SubstanceForm"
+  },
+  {
+    "id" : "substance-grade",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-grade",
+    "version" : "0.0.3",
+    "name" : "SubstanceGrade"
+  },
+  {
+    "id" : "substance-impurity",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity",
+    "version" : "0.0.3",
+    "name" : "SubstanceImpurity"
+  },
+  {
+    "id" : "substance-name-authority",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-authority",
+    "version" : "0.0.3",
+    "name" : "SubstanceNameAuthority"
+  },
+  {
+    "id" : "substance-name-domain",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-domain",
+    "version" : "0.0.3",
+    "name" : "SubstanceNameDomain"
+  },
+  {
+    "id" : "substance-name-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-type",
+    "version" : "0.0.3",
+    "name" : "SubstanceNameType"
+  },
+  {
+    "id" : "substance-relationship-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-relationship-type",
+    "version" : "0.0.3",
+    "name" : "SubstanceRelationshipType"
+  },
+  {
+    "id" : "substance-status-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-status-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceStatusBR"
+  },
+  {
+    "id" : "target-species",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/target-species",
+    "version" : "0.0.3",
+    "name" : "TargetSpecies"
+  },
+  {
+    "id" : "therapeutic-indications-br",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapeutic-indications-br",
+    "version" : "0.0.3",
+    "name" : "TherapeuticIndicationsBR"
+  },
+  {
+    "id" : "therapy-relationship-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type",
+    "version" : "0.0.3",
+    "name" : "TherapyRelationshipType"
+  },
+  {
+    "id" : "umc-coordination-status",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/umc-coordination-status",
+    "version" : "0.0.3",
+    "name" : "UMCCoordinationStatus"
+  },
+  {
+    "id" : "undesirable-effect-classification",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-classification",
+    "version" : "0.0.3",
+    "name" : "UndesirableEffectClassification"
+  },
+  {
+    "id" : "undesirable-effect-frequency",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-frequency",
+    "version" : "0.0.3",
+    "name" : "UndesirableEffectFrequency"
+  },
+  {
+    "id" : "warning-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/warning-type",
+    "version" : "0.0.3",
+    "name" : "WarningType"
+  },
+  {
+    "id" : "weight-method",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method",
+    "version" : "0.0.3",
+    "name" : "WeightMethod"
+  },
+  {
+    "id" : "weight-type",
+    "type" : "CodeSystem",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-type",
+    "version" : "0.0.3",
+    "name" : "WeightType"
+  },
+  {
+    "id" : "brig.idmp.brazil",
+    "type" : "ImplementationGuide",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil",
+    "version" : "0.0.3",
+    "name" : "BRIGIDMPBrazil"
+  },
+  {
+    "id" : "IngredientBR",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/IngredientBR",
+    "version" : "0.0.3",
+    "name" : "IngredientBR"
+  },
+  {
+    "id" : "Organization-anvisa-simple",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/Organization-anvisa-simple",
+    "version" : "0.0.3",
+    "name" : "OrganizationANVISASimple"
+  },
+  {
+    "id" : "administrable-product-definition-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/administrable-product-definition-br",
+    "version" : "0.0.3",
+    "name" : "AdministrableProductDefinitionBR"
+  },
+  {
+    "id" : "anvisa-category",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/anvisa-category",
+    "version" : "0.0.3",
+    "name" : "ANVISACategory"
+  },
+  {
+    "id" : "anvisa-regulatory-status",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/anvisa-regulatory-status",
+    "version" : "0.0.3",
+    "name" : "ANVISARegulatoryStatus"
+  },
+  {
+    "id" : "associated-devices",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/associated-devices",
+    "version" : "0.0.3",
+    "name" : "AssociatedDevices"
+  },
+  {
+    "id" : "brazilian-terminology-standards",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/brazilian-terminology-standards",
+    "version" : "0.0.3",
+    "name" : "BrazilianTerminologyStandards"
+  },
+  {
+    "id" : "clinical-use-definition-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseDefinitionBR"
+  },
+  {
+    "id" : "controlled-substance-category",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/controlled-substance-category",
+    "version" : "0.0.3",
+    "name" : "ControlledSubstanceCategory"
+  },
+  {
+    "id" : "documentation-language",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/documentation-language",
+    "version" : "0.0.3",
+    "name" : "DocumentationLanguage"
+  },
+  {
+    "id" : "exemplo-extensao-brasileira",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/exemplo-extensao-brasileira",
+    "version" : "0.0.3",
+    "name" : "ExemploExtensaoBrasileira"
+  },
+  {
+    "id" : "exemplo-perfil-brasileiro",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/exemplo-perfil-brasileiro",
+    "version" : "0.0.3",
+    "name" : "ExemploPerfilBrasileiro"
+  },
+  {
+    "id" : "generic-reference",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/generic-reference",
+    "version" : "0.0.3",
+    "name" : "GenericReference"
+  },
+  {
+    "id" : "identifier-lifecycle-rules",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/identifier-lifecycle-rules",
+    "version" : "0.0.3",
+    "name" : "IdentifierLifecycleRules"
+  },
+  {
+    "id" : "identifier-lifecycle-status",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/identifier-lifecycle-status",
+    "version" : "0.0.3",
+    "name" : "IdentifierLifecycleStatus"
+  },
+  {
+    "id" : "legal-status-defining",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/legal-status-defining",
+    "version" : "0.0.3",
+    "name" : "LegalStatusDefining"
+  },
+  {
+    "id" : "manufactured-item-criteria",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/manufactured-item-criteria",
+    "version" : "0.0.3",
+    "name" : "ManufacturedItemCriteria"
+  },
+  {
+    "id" : "manufactured-item-definition-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/manufactured-item-definition-br",
+    "version" : "0.0.3",
+    "name" : "ManufacturedItemDefinitionBR"
+  },
+  {
+    "id" : "medicinal-product-definition-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br",
+    "version" : "0.0.3",
+    "name" : "MedicinalProductDefinitionBR"
+  },
+  {
+    "id" : "name-validation-rules",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/name-validation-rules",
+    "version" : "0.0.3",
+    "name" : "NameValidationRules"
+  },
+  {
+    "id" : "organization-business-size-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/organization-business-size-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationBusinessSizeBR"
+  },
+  {
+    "id" : "organization-operational-category-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/organization-operational-category-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationOperationalCategoryBR"
+  },
+  {
+    "id" : "organization-regulatory-status-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/organization-regulatory-status-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationRegulatoryStatusBR"
+  },
+  {
+    "id" : "package-component-details",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/package-component-details",
+    "version" : "0.0.3",
+    "name" : "PackageComponentDetails"
+  },
+  {
+    "id" : "package-item-container-details",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/package-item-container-details",
+    "version" : "0.0.3",
+    "name" : "PackageItemContainerDetails"
+  },
+  {
+    "id" : "packaged-product-definition-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/packaged-product-definition-br",
+    "version" : "0.0.3",
+    "name" : "PackagedProductDefinitionBR"
+  },
+  {
+    "id" : "product-name-parts",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/product-name-parts",
+    "version" : "0.0.3",
+    "name" : "ProductNameParts"
+  },
+  {
+    "id" : "regulated-authorization-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br",
+    "version" : "0.0.3",
+    "name" : "RegulatedAuthorizationBR"
+  },
+  {
+    "id" : "substance-definition-br",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceDefinitionBR"
+  },
+  {
+    "id" : "therapeutic-indications-defining",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/therapeutic-indications-defining",
+    "version" : "0.0.3",
+    "name" : "TherapeuticIndicationsDefining"
+  },
+  {
+    "id" : "umc-integration-mapping",
+    "type" : "StructureDefinition",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/umc-integration-mapping",
+    "version" : "0.0.3",
+    "name" : "UMCIntegrationMapping"
+  },
+  {
+    "id" : "additional-monitoring-indicator-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/additional-monitoring-indicator-vs",
+    "version" : "0.0.3",
+    "name" : "AdditionalMonitoringIndicator"
+  },
+  {
+    "id" : "administrable-dose-form",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/administrable-dose-form",
+    "version" : "0.0.3",
+    "name" : "AdministrableDoseForm"
+  },
+  {
+    "id" : "administrable-property",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/administrable-property",
+    "version" : "0.0.3",
+    "name" : "AdministrableProperty"
+  },
+  {
+    "id" : "administrable-unit",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/administrable-unit",
+    "version" : "0.0.3",
+    "name" : "AdministrableUnit"
+  },
+  {
+    "id" : "adverse-effect-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/adverse-effect-br",
+    "version" : "0.0.3",
+    "name" : "AdverseEffectBRValueSet"
+  },
+  {
+    "id" : "adverse-effect-frequency-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/adverse-effect-frequency-br",
+    "version" : "0.0.3",
+    "name" : "AdverseEffectFrequencyBRValueSet"
+  },
+  {
+    "id" : "animal-tissue-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/animal-tissue-type-vs",
+    "version" : "0.0.3",
+    "name" : "AnimalTissueType"
+  },
+  {
+    "id" : "anvisa-category-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/anvisa-category-br",
+    "version" : "0.0.3",
+    "name" : "ANVISACategoryBR"
+  },
+  {
+    "id" : "anvisa-regulatory-status-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/anvisa-regulatory-status-br",
+    "version" : "0.0.3",
+    "name" : "ANVISARegulatoryStatusBR"
+  },
+  {
+    "id" : "authorization-case-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/authorization-case-type-vs",
+    "version" : "0.0.3",
+    "name" : "AuthorizationCaseType"
+  },
+  {
+    "id" : "authorization-status-reason-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/authorization-status-reason-vs",
+    "version" : "0.0.3",
+    "name" : "AuthorizationStatusReason"
+  },
+  {
+    "id" : "biological-genus-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/biological-genus-vs",
+    "version" : "0.0.3",
+    "name" : "BiologicalGenus"
+  },
+  {
+    "id" : "biological-species-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/biological-species-vs",
+    "version" : "0.0.3",
+    "name" : "BiologicalSpecies"
+  },
+  {
+    "id" : "brazilian-government-systems",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/brazilian-government-systems",
+    "version" : "0.0.3",
+    "name" : "BrazilianGovernmentSystems"
+  },
+  {
+    "id" : "brazilian-pharmaceutical-terminology",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/brazilian-pharmaceutical-terminology",
+    "version" : "0.0.3",
+    "name" : "BrazilianPharmaceuticalTerminology"
+  },
+  {
+    "id" : "change-severity-level",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/change-severity-level",
+    "version" : "0.0.3",
+    "name" : "ChangeSeverityLevel"
+  },
+  {
+    "id" : "clinical-use-category-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-category-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseCategoryBRValueSet"
+  },
+  {
+    "id" : "clinical-use-definition-category-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-definition-category-vs",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseDefinitionCategory"
+  },
+  {
+    "id" : "clinical-use-definition-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-definition-type-vs",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseDefinitionType"
+  },
+  {
+    "id" : "clinical-use-status-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-status-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseStatusBRValueSet"
+  },
+  {
+    "id" : "clinical-use-type-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-type-br",
+    "version" : "0.0.3",
+    "name" : "ClinicalUseTypeBRValueSet"
+  },
+  {
+    "id" : "combined-pharmaceutical-dose-form",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/combined-pharmaceutical-dose-form",
+    "version" : "0.0.3",
+    "name" : "CombinedPharmaceuticalDoseForm"
+  },
+  {
+    "id" : "comorbidity-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/comorbidity-br",
+    "version" : "0.0.3",
+    "name" : "ComorbidityBRValueSet"
+  },
+  {
+    "id" : "concentration-unit",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/concentration-unit",
+    "version" : "0.0.3",
+    "name" : "ConcentrationUnit"
+  },
+  {
+    "id" : "container-materials-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/container-materials-br",
+    "version" : "0.0.3",
+    "name" : "ContainerMaterialsBR"
+  },
+  {
+    "id" : "container-type-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/container-type-br",
+    "version" : "0.0.3",
+    "name" : "ContainerTypeBR"
+  },
+  {
+    "id" : "contraindication-condition-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/contraindication-condition-br",
+    "version" : "0.0.3",
+    "name" : "ContraindicationConditionBRValueSet"
+  },
+  {
+    "id" : "controlled-substance-category-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/controlled-substance-category-br",
+    "version" : "0.0.3",
+    "name" : "ControlledSubstanceCategoryBR"
+  },
+  {
+    "id" : "country-valueset",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/country-valueset",
+    "version" : "0.0.3",
+    "name" : "CountryValueSet"
+  },
+  {
+    "id" : "dcb-brasileiras",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/dcb-brasileiras",
+    "version" : "0.0.3",
+    "name" : "DCBBrasileiras"
+  },
+  {
+    "id" : "disease-status-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/disease-status-vs",
+    "version" : "0.0.3",
+    "name" : "DiseaseStatus"
+  },
+  {
+    "id" : "disease-symptom-procedure",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/disease-symptom-procedure",
+    "version" : "0.0.3",
+    "name" : "DiseaseSymptomProcedure"
+  },
+  {
+    "id" : "exemplo-valueset-brasileiro",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/exemplo-valueset-brasileiro",
+    "version" : "0.0.3",
+    "name" : "ExemploValueSetBrasileiro"
+  },
+  {
+    "id" : "gmp-certification-status-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/gmp-certification-status-br",
+    "version" : "0.0.3",
+    "name" : "GMPCertificationStatusBR"
+  },
+  {
+    "id" : "identifier-change-reason",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/identifier-change-reason",
+    "version" : "0.0.3",
+    "name" : "IdentifierChangeReason"
+  },
+  {
+    "id" : "identifier-lifecycle-status",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/identifier-lifecycle-status",
+    "version" : "0.0.3",
+    "name" : "IdentifierLifecycleStatus"
+  },
+  {
+    "id" : "ingredient-function",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/ingredient-function",
+    "version" : "0.0.3",
+    "name" : "IngredientFunction"
+  },
+  {
+    "id" : "ingredient-role",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/ingredient-role",
+    "version" : "0.0.3",
+    "name" : "IngredientRole"
+  },
+  {
+    "id" : "interactant",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interactant",
+    "version" : "0.0.3",
+    "name" : "Interactant"
+  },
+  {
+    "id" : "interaction-effect-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-effect-br",
+    "version" : "0.0.3",
+    "name" : "InteractionEffectBRValueSet"
+  },
+  {
+    "id" : "interaction-effect-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-effect-vs",
+    "version" : "0.0.3",
+    "name" : "InteractionEffect"
+  },
+  {
+    "id" : "interaction-incidence-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-incidence-vs",
+    "version" : "0.0.3",
+    "name" : "InteractionIncidence"
+  },
+  {
+    "id" : "interaction-management-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-management-vs",
+    "version" : "0.0.3",
+    "name" : "InteractionManagement"
+  },
+  {
+    "id" : "interaction-substance-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-substance-br",
+    "version" : "0.0.3",
+    "name" : "InteractionSubstanceBRValueSet"
+  },
+  {
+    "id" : "interaction-type-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-type-br",
+    "version" : "0.0.3",
+    "name" : "InteractionTypeBRValueSet"
+  },
+  {
+    "id" : "interaction-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-type-vs",
+    "version" : "0.0.3",
+    "name" : "InteractionType"
+  },
+  {
+    "id" : "jurisdiction-valueset",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/jurisdiction-valueset",
+    "version" : "0.0.3",
+    "name" : "JurisdictionValueSet"
+  },
+  {
+    "id" : "language-valueset",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/language-valueset",
+    "version" : "0.0.3",
+    "name" : "LanguageValueSet"
+  },
+  {
+    "id" : "legal-status-supply-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/legal-status-supply-br",
+    "version" : "0.0.3",
+    "name" : "LegalStatusSupplyBR"
+  },
+  {
+    "id" : "manufactured-dose-form",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufactured-dose-form",
+    "version" : "0.0.3",
+    "name" : "ManufacturedDoseForm"
+  },
+  {
+    "id" : "manufactured-item-component-location-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufactured-item-component-location-vs",
+    "version" : "0.0.3",
+    "name" : "ManufacturedItemComponentLocation"
+  },
+  {
+    "id" : "manufactured-item-component-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufactured-item-component-type-vs",
+    "version" : "0.0.3",
+    "name" : "ManufacturedItemComponentType"
+  },
+  {
+    "id" : "manufacturing-process-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufacturing-process-vs",
+    "version" : "0.0.3",
+    "name" : "ManufacturingProcess"
+  },
+  {
+    "id" : "marketing-status-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/marketing-status-br",
+    "version" : "0.0.3",
+    "name" : "MarketingStatusBR"
+  },
+  {
+    "id" : "medicinal-product-classification-atc",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-classification-atc",
+    "version" : "0.0.3",
+    "name" : "MedicinalProductClassificationATC"
+  },
+  {
+    "id" : "medicinal-product-code-atc",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-code-atc",
+    "version" : "0.0.3",
+    "name" : "MedicinalProductCodeATC"
+  },
+  {
+    "id" : "medicinal-product-domain-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-domain-vs",
+    "version" : "0.0.3",
+    "name" : "MedicinalProductDomain"
+  },
+  {
+    "id" : "medicinal-product-type-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-type-br",
+    "version" : "0.0.3",
+    "name" : "MedicinalProductTypeBR"
+  },
+  {
+    "id" : "mpid-defining-elements",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/mpid-defining-elements",
+    "version" : "0.0.3",
+    "name" : "MPIDDefiningElements"
+  },
+  {
+    "id" : "mpid-requiring-changes",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/mpid-requiring-changes",
+    "version" : "0.0.3",
+    "name" : "MPIDRequiringChanges"
+  },
+  {
+    "id" : "mpid-values-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/mpid-values-br",
+    "version" : "0.0.3",
+    "name" : "MPIDValues"
+  },
+  {
+    "id" : "optical-activity-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/optical-activity-vs",
+    "version" : "0.0.3",
+    "name" : "OpticalActivity"
+  },
+  {
+    "id" : "organism-part-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organism-part-vs",
+    "version" : "0.0.3",
+    "name" : "OrganismPart"
+  },
+  {
+    "id" : "organization-anvisa-status-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-anvisa-status-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationANVISAStatusBR"
+  },
+  {
+    "id" : "organization-contact-purpose",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-contact-purpose",
+    "version" : "0.0.3",
+    "name" : "OrganizationContactPurpose"
+  },
+  {
+    "id" : "organization-operational-category-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-operational-category-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationOperationalCategoryBR"
+  },
+  {
+    "id" : "organization-operational-scope-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-operational-scope-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationOperationalScopeBR"
+  },
+  {
+    "id" : "organization-size-category-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-size-category-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationSizeCategoryBR"
+  },
+  {
+    "id" : "organization-special-classification-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-special-classification-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationSpecialClassificationBR"
+  },
+  {
+    "id" : "organization-specialized-activities-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-specialized-activities-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationSpecializedActivitiesBR"
+  },
+  {
+    "id" : "organization-type-anvisa-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-type-anvisa-br",
+    "version" : "0.0.3",
+    "name" : "OrganizationTypeANVISABR"
+  },
+  {
+    "id" : "package-characteristic-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/package-characteristic-br",
+    "version" : "0.0.3",
+    "name" : "PackageCharacteristicBR"
+  },
+  {
+    "id" : "package-components-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/package-components-br",
+    "version" : "0.0.3",
+    "name" : "PackageComponentsBR"
+  },
+  {
+    "id" : "packaged-product-type-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/packaged-product-type-br",
+    "version" : "0.0.3",
+    "name" : "PackagedProductTypeBR"
+  },
+  {
+    "id" : "packaging-material",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/packaging-material",
+    "version" : "0.0.3",
+    "name" : "PackagingMaterial"
+  },
+  {
+    "id" : "packaging-type-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/packaging-type-br",
+    "version" : "0.0.3",
+    "name" : "PackagingTypeBR"
+  },
+  {
+    "id" : "pcid-requiring-changes",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/pcid-requiring-changes",
+    "version" : "0.0.3",
+    "name" : "PCIDRequiringChanges"
+  },
+  {
+    "id" : "pcid-values-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/pcid-values-br",
+    "version" : "0.0.3",
+    "name" : "PCIDValues"
+  },
+  {
+    "id" : "pediatric-use-indicator-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/pediatric-use-indicator-vs",
+    "version" : "0.0.3",
+    "name" : "PediatricUseIndicator"
+  },
+  {
+    "id" : "phpid-values-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/phpid-values-br",
+    "version" : "0.0.3",
+    "name" : "PHPIDValues"
+  },
+  {
+    "id" : "presentation-unit",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/presentation-unit",
+    "version" : "0.0.3",
+    "name" : "PresentationUnit"
+  },
+  {
+    "id" : "product-characteristic-hybrid",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-characteristic-hybrid",
+    "version" : "0.0.3",
+    "name" : "ProductCharacteristicHybrid"
+  },
+  {
+    "id" : "product-characteristic-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-characteristic-vs",
+    "version" : "0.0.3",
+    "name" : "ProductCharacteristic"
+  },
+  {
+    "id" : "product-confidentiality-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-confidentiality-vs",
+    "version" : "0.0.3",
+    "name" : "ProductConfidentiality"
+  },
+  {
+    "id" : "product-contact-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-contact-type-vs",
+    "version" : "0.0.3",
+    "name" : "ProductContactType"
+  },
+  {
+    "id" : "product-intended-use-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-intended-use-vs",
+    "version" : "0.0.3",
+    "name" : "ProductIntendedUse"
+  },
+  {
+    "id" : "product-name-type",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-name-type",
+    "version" : "0.0.3",
+    "name" : "ProductNameType"
+  },
+  {
+    "id" : "publication-status",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/publication-status",
+    "version" : "0.0.3",
+    "name" : "PublicationStatus"
+  },
+  {
+    "id" : "reference-type-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/reference-type-br",
+    "version" : "0.0.3",
+    "name" : "ReferenceTypeBR"
+  },
+  {
+    "id" : "route-administration",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/route-administration",
+    "version" : "0.0.3",
+    "name" : "RouteAdministration"
+  },
+  {
+    "id" : "route-administration-hybrid",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/route-administration-hybrid",
+    "version" : "0.0.3",
+    "name" : "RouteAdministrationHybrid"
+  },
+  {
+    "id" : "source-material-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/source-material-type-vs",
+    "version" : "0.0.3",
+    "name" : "SourceMaterialType"
+  },
+  {
+    "id" : "special-measures-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/special-measures-vs",
+    "version" : "0.0.3",
+    "name" : "SpecialMeasures"
+  },
+  {
+    "id" : "stereochemistry-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/stereochemistry-vs",
+    "version" : "0.0.3",
+    "name" : "Stereochemistry"
+  },
+  {
+    "id" : "structure-representation-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/structure-representation-type-vs",
+    "version" : "0.0.3",
+    "name" : "StructureRepresentationType"
+  },
+  {
+    "id" : "structure-technique-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/structure-technique-vs",
+    "version" : "0.0.3",
+    "name" : "StructureTechnique"
+  },
+  {
+    "id" : "structured-name-types",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/structured-name-types",
+    "version" : "0.0.3",
+    "name" : "StructuredNameTypes"
+  },
+  {
+    "id" : "substance-amount-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-amount-type-vs",
+    "version" : "0.0.3",
+    "name" : "SubstanceAmountType"
+  },
+  {
+    "id" : "substance-classification-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-classification-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceClassificationBR"
+  },
+  {
+    "id" : "substance-code-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-code-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceCodeBR"
+  },
+  {
+    "id" : "substance-code-meddra",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-code-meddra",
+    "version" : "0.0.3",
+    "name" : "SubstanceCodeMedDRA"
+  },
+  {
+    "id" : "substance-form-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-form-vs",
+    "version" : "0.0.3",
+    "name" : "SubstanceForm"
+  },
+  {
+    "id" : "substance-grade",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-grade",
+    "version" : "0.0.3",
+    "name" : "SubstanceGrade"
+  },
+  {
+    "id" : "substance-impurity-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-impurity-vs",
+    "version" : "0.0.3",
+    "name" : "SubstanceImpurity"
+  },
+  {
+    "id" : "substance-name-authority-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-name-authority-vs",
+    "version" : "0.0.3",
+    "name" : "SubstanceNameAuthority"
+  },
+  {
+    "id" : "substance-name-domain-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-name-domain-vs",
+    "version" : "0.0.3",
+    "name" : "SubstanceNameDomain"
+  },
+  {
+    "id" : "substance-name-type",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-name-type",
+    "version" : "0.0.3",
+    "name" : "SubstanceNameType"
+  },
+  {
+    "id" : "substance-relationship-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-relationship-type-vs",
+    "version" : "0.0.3",
+    "name" : "SubstanceRelationshipType"
+  },
+  {
+    "id" : "substance-status-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-status-br",
+    "version" : "0.0.3",
+    "name" : "SubstanceStatusBR"
+  },
+  {
+    "id" : "target-species-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/target-species-vs",
+    "version" : "0.0.3",
+    "name" : "TargetSpecies"
+  },
+  {
+    "id" : "therapeutic-indication-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapeutic-indication-br",
+    "version" : "0.0.3",
+    "name" : "TherapeuticIndicationBRValueSet"
+  },
+  {
+    "id" : "therapeutic-indications-br",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapeutic-indications-br",
+    "version" : "0.0.3",
+    "name" : "TherapeuticIndicationsBR"
+  },
+  {
+    "id" : "therapy",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapy",
+    "version" : "0.0.3",
+    "name" : "Therapy"
+  },
+  {
+    "id" : "therapy-relationship-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapy-relationship-type-vs",
+    "version" : "0.0.3",
+    "name" : "TherapyRelationshipType"
+  },
+  {
+    "id" : "umc-coordination-status",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/umc-coordination-status",
+    "version" : "0.0.3",
+    "name" : "UMCCoordinationStatus"
+  },
+  {
+    "id" : "undesirable-effect-classification-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/undesirable-effect-classification-vs",
+    "version" : "0.0.3",
+    "name" : "UndesirableEffectClassification"
+  },
+  {
+    "id" : "undesirable-effect-frequency-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/undesirable-effect-frequency-vs",
+    "version" : "0.0.3",
+    "name" : "UndesirableEffectFrequency"
+  },
+  {
+    "id" : "undesirable-effect-symptom",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/undesirable-effect-symptom",
+    "version" : "0.0.3",
+    "name" : "UndesirableEffectSymptom"
+  },
+  {
+    "id" : "unit-of-presentation",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/unit-of-presentation",
+    "version" : "0.0.3",
+    "name" : "UnitOfPresentation"
+  },
+  {
+    "id" : "warning-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/warning-type-vs",
+    "version" : "0.0.3",
+    "name" : "WarningType"
+  },
+  {
+    "id" : "weight-method-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/weight-method-vs",
+    "version" : "0.0.3",
+    "name" : "WeightMethod"
+  },
+  {
+    "id" : "weight-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/weight-type-vs",
+    "version" : "0.0.3",
+    "name" : "WeightType"
+  }
+]

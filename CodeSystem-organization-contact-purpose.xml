@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organization-contact-purpose"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem organization-contact-purpose</b></p><a name="organization-contact-purpose"> </a><a name="hcorganization-contact-purpose"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">regulatory-affairs<a name="organization-contact-purpose-regulatory-affairs"> </a></td><td>Assuntos Regulatórios</td><td>Responsável por questões regulatórias e relacionamento com ANVISA</td></tr><tr><td style="white-space:nowrap">technical-responsible<a name="organization-contact-purpose-technical-responsible"> </a></td><td>Responsável Técnico</td><td>Responsável técnico conforme exigência legal</td></tr><tr><td style="white-space:nowrap">pharmacovigilance<a name="organization-contact-purpose-pharmacovigilance"> </a></td><td>Farmacovigilância</td><td>Responsável por farmacovigilância e monitoramento pós-comercialização</td></tr><tr><td style="white-space:nowrap">quality-assurance<a name="organization-contact-purpose-quality-assurance"> </a></td><td>Garantia de Qualidade</td><td>Responsável pela garantia de qualidade</td></tr><tr><td style="white-space:nowrap">operations<a name="organization-contact-purpose-operations"> </a></td><td>Operações</td><td>Responsável por operações e produção</td></tr><tr><td style="white-space:nowrap">logistics<a name="organization-contact-purpose-logistics"> </a></td><td>Logística</td><td>Responsável por logística e distribuição</td></tr><tr><td style="white-space:nowrap">procurement<a name="organization-contact-purpose-procurement"> </a></td><td>Compras</td><td>Responsável por aquisições e suprimentos</td></tr><tr><td style="white-space:nowrap">sales<a name="organization-contact-purpose-sales"> </a></td><td>Vendas</td><td>Responsável por vendas e comercialização</td></tr><tr><td style="white-space:nowrap">legal<a name="organization-contact-purpose-legal"> </a></td><td>Jurídico</td><td>Responsável por questões jurídicas</td></tr><tr><td style="white-space:nowrap">finance<a name="organization-contact-purpose-finance"> </a></td><td>Financeiro</td><td>Responsável por questões financeiras</td></tr><tr><td style="white-space:nowrap">hr<a name="organization-contact-purpose-hr"> </a></td><td>Recursos Humanos</td><td>Responsável por recursos humanos</td></tr><tr><td style="white-space:nowrap">administration<a name="organization-contact-purpose-administration"> </a></td><td>Administração</td><td>Contato administrativo geral</td></tr><tr><td style="white-space:nowrap">clinical-research<a name="organization-contact-purpose-clinical-research"> </a></td><td>Pesquisa Clínica</td><td>Responsável por pesquisa clínica</td></tr><tr><td style="white-space:nowrap">medical-affairs<a name="organization-contact-purpose-medical-affairs"> </a></td><td>Assuntos Médicos</td><td>Responsável por assuntos médicos e científicos</td></tr><tr><td style="white-space:nowrap">biostatistics<a name="organization-contact-purpose-biostatistics"> </a></td><td>Bioestatística</td><td>Responsável por análises bioestatísticas</td></tr><tr><td style="white-space:nowrap">data-management<a name="organization-contact-purpose-data-management"> </a></td><td>Gestão de Dados</td><td>Responsável por gestão de dados clínicos</td></tr><tr><td style="white-space:nowrap">emergency<a name="organization-contact-purpose-emergency"> </a></td><td>Emergência</td><td>Contato de emergência 24h</td></tr><tr><td style="white-space:nowrap">safety<a name="organization-contact-purpose-safety"> </a></td><td>Segurança</td><td>Responsável por segurança e eventos adversos</td></tr><tr><td style="white-space:nowrap">recall<a name="organization-contact-purpose-recall"> </a></td><td>Recolhimento</td><td>Responsável por recall e recolhimento de produtos</td></tr><tr><td style="white-space:nowrap">media<a name="organization-contact-purpose-media"> </a></td><td>Mídia</td><td>Responsável por comunicação com mídia</td></tr><tr><td style="white-space:nowrap">public-relations<a name="organization-contact-purpose-public-relations"> </a></td><td>Relações Públicas</td><td>Responsável por relações públicas</td></tr><tr><td style="white-space:nowrap">customer-service<a name="organization-contact-purpose-customer-service"> </a></td><td>Atendimento ao Cliente</td><td>Atendimento ao cliente/consumidor</td></tr><tr><td style="white-space:nowrap">it-support<a name="organization-contact-purpose-it-support"> </a></td><td>Suporte de TI</td><td>Suporte técnico de sistemas de informação</td></tr><tr><td style="white-space:nowrap">edi<a name="organization-contact-purpose-edi"> </a></td><td>EDI</td><td>Responsável por intercâmbio eletrônico de dados</td></tr><tr><td style="white-space:nowrap">api-integration<a name="organization-contact-purpose-api-integration"> </a></td><td>Integração API</td><td>Responsável por integrações de API</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-contact-purpose"/>
+  <version value="0.0.3"/>
+  <name value="OrganizationContactPurpose"/>
+  <title value="Finalidades de Contato Organizacional"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para finalidades de contatos organizacionais (padrão internacional)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="25"/>
+  <concept>
+    <code value="regulatory-affairs"/>
+    <display value="Assuntos Regulatórios"/>
+    <definition value="Responsável por questões regulatórias e relacionamento com ANVISA"/>
+  </concept>
+  <concept>
+    <code value="technical-responsible"/>
+    <display value="Responsável Técnico"/>
+    <definition value="Responsável técnico conforme exigência legal"/>
+  </concept>
+  <concept>
+    <code value="pharmacovigilance"/>
+    <display value="Farmacovigilância"/>
+    <definition value="Responsável por farmacovigilância e monitoramento pós-comercialização"/>
+  </concept>
+  <concept>
+    <code value="quality-assurance"/>
+    <display value="Garantia de Qualidade"/>
+    <definition value="Responsável pela garantia de qualidade"/>
+  </concept>
+  <concept>
+    <code value="operations"/>
+    <display value="Operações"/>
+    <definition value="Responsável por operações e produção"/>
+  </concept>
+  <concept>
+    <code value="logistics"/>
+    <display value="Logística"/>
+    <definition value="Responsável por logística e distribuição"/>
+  </concept>
+  <concept>
+    <code value="procurement"/>
+    <display value="Compras"/>
+    <definition value="Responsável por aquisições e suprimentos"/>
+  </concept>
+  <concept>
+    <code value="sales"/>
+    <display value="Vendas"/>
+    <definition value="Responsável por vendas e comercialização"/>
+  </concept>
+  <concept>
+    <code value="legal"/>
+    <display value="Jurídico"/>
+    <definition value="Responsável por questões jurídicas"/>
+  </concept>
+  <concept>
+    <code value="finance"/>
+    <display value="Financeiro"/>
+    <definition value="Responsável por questões financeiras"/>
+  </concept>
+  <concept>
+    <code value="hr"/>
+    <display value="Recursos Humanos"/>
+    <definition value="Responsável por recursos humanos"/>
+  </concept>
+  <concept>
+    <code value="administration"/>
+    <display value="Administração"/>
+    <definition value="Contato administrativo geral"/>
+  </concept>
+  <concept>
+    <code value="clinical-research"/>
+    <display value="Pesquisa Clínica"/>
+    <definition value="Responsável por pesquisa clínica"/>
+  </concept>
+  <concept>
+    <code value="medical-affairs"/>
+    <display value="Assuntos Médicos"/>
+    <definition value="Responsável por assuntos médicos e científicos"/>
+  </concept>
+  <concept>
+    <code value="biostatistics"/>
+    <display value="Bioestatística"/>
+    <definition value="Responsável por análises bioestatísticas"/>
+  </concept>
+  <concept>
+    <code value="data-management"/>
+    <display value="Gestão de Dados"/>
+    <definition value="Responsável por gestão de dados clínicos"/>
+  </concept>
+  <concept>
+    <code value="emergency"/>
+    <display value="Emergência"/>
+    <definition value="Contato de emergência 24h"/>
+  </concept>
+  <concept>
+    <code value="safety"/>
+    <display value="Segurança"/>
+    <definition value="Responsável por segurança e eventos adversos"/>
+  </concept>
+  <concept>
+    <code value="recall"/>
+    <display value="Recolhimento"/>
+    <definition value="Responsável por recall e recolhimento de produtos"/>
+  </concept>
+  <concept>
+    <code value="media"/>
+    <display value="Mídia"/>
+    <definition value="Responsável por comunicação com mídia"/>
+  </concept>
+  <concept>
+    <code value="public-relations"/>
+    <display value="Relações Públicas"/>
+    <definition value="Responsável por relações públicas"/>
+  </concept>
+  <concept>
+    <code value="customer-service"/>
+    <display value="Atendimento ao Cliente"/>
+    <definition value="Atendimento ao cliente/consumidor"/>
+  </concept>
+  <concept>
+    <code value="it-support"/>
+    <display value="Suporte de TI"/>
+    <definition value="Suporte técnico de sistemas de informação"/>
+  </concept>
+  <concept>
+    <code value="edi"/>
+    <display value="EDI"/>
+    <definition value="Responsável por intercâmbio eletrônico de dados"/>
+  </concept>
+  <concept>
+    <code value="api-integration"/>
+    <display value="Integração API"/>
+    <definition value="Responsável por integrações de API"/>
+  </concept>
+</CodeSystem>

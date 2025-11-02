@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="clinical-use-type-br"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: ValueSet clinical-use-type-br</b></p><a name="clinical-use-type-br"> </a><a name="hcclinical-use-type-br"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><ul><li>Include estes códigos, tal como definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>indication</td><td>Indicação terapêutica</td></tr><tr><td>contraindication</td><td>Contraindicação</td></tr><tr><td>interaction</td><td>Interação medicamentosa</td></tr><tr><td>undesirable-effect</td><td>Efeito indesejável</td></tr><tr><td>warning</td><td>Advertência especial</td></tr><tr><td>dosage</td><td>Posologia</td></tr><tr><td>dce-sus</td><td>Critério DCE-SUS</td></tr><tr><td>rename</td><td>Critério RENAME</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-type-br"/>
+  <version value="0.0.3"/>
+  <name value="ClinicalUseTypeBRValueSet"/>
+  <title value="Tipos de Uso Clínico - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet dos tipos de definição de uso clínico para o contexto brasileiro."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <compose>
+    <include>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br"/>
+      <concept>
+        <code value="indication"/>
+        <display value="Indicação terapêutica"/>
+      </concept>
+      <concept>
+        <code value="contraindication"/>
+        <display value="Contraindicação"/>
+      </concept>
+      <concept>
+        <code value="interaction"/>
+        <display value="Interação medicamentosa"/>
+      </concept>
+      <concept>
+        <code value="undesirable-effect"/>
+        <display value="Efeito indesejável"/>
+      </concept>
+      <concept>
+        <code value="warning"/>
+        <display value="Advertência especial"/>
+      </concept>
+      <concept>
+        <code value="dosage"/>
+        <display value="Posologia"/>
+      </concept>
+      <concept>
+        <code value="dce-sus"/>
+        <display value="Critério DCE-SUS"/>
+      </concept>
+      <concept>
+        <code value="rename"/>
+        <display value="Critério RENAME"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

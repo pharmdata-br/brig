@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "manufactured-item-component-location"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem manufactured-item-component-location</b></p><a name=\"manufactured-item-component-location\"> </a><a name=\"hcmanufactured-item-component-location\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">internal<a name=\"manufactured-item-component-location-internal\"> </a></td><td>Interno</td><td>Localizado internamente</td></tr><tr><td style=\"white-space:nowrap\">external<a name=\"manufactured-item-component-location-external\"> </a></td><td>Externo</td><td>Localizado externamente</td></tr><tr><td style=\"white-space:nowrap\">surface<a name=\"manufactured-item-component-location-surface\"> </a></td><td>Superfície</td><td>Na superfície do item</td></tr><tr><td style=\"white-space:nowrap\">intragranular<a name=\"manufactured-item-component-location-intragranular\"> </a></td><td>Intragranular</td><td>Dentro dos grânulos</td></tr><tr><td style=\"white-space:nowrap\">extragranular<a name=\"manufactured-item-component-location-extragranular\"> </a></td><td>Extragranular</td><td>Fora dos grânulos</td></tr><tr><td style=\"white-space:nowrap\">first-layer<a name=\"manufactured-item-component-location-first-layer\"> </a></td><td>Primeira Camada</td><td>Primeira camada (comprimidos multicamadas)</td></tr><tr><td style=\"white-space:nowrap\">second-layer<a name=\"manufactured-item-component-location-second-layer\"> </a></td><td>Segunda Camada</td><td>Segunda camada (comprimidos multicamadas)</td></tr><tr><td style=\"white-space:nowrap\">third-layer<a name=\"manufactured-item-component-location-third-layer\"> </a></td><td>Terceira Camada</td><td>Terceira camada (comprimidos multicamadas)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ManufacturedItemComponentLocation"] ; # 
+  fhir:title [ fhir:v "Localização de Componente de Item Manufaturado"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Localização de componentes dentro do item manufaturado"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "internal" ] ;
+     fhir:display [ fhir:v "Interno" ] ;
+     fhir:definition [ fhir:v "Localizado internamente" ]
+  ] [
+     fhir:code [ fhir:v "external" ] ;
+     fhir:display [ fhir:v "Externo" ] ;
+     fhir:definition [ fhir:v "Localizado externamente" ]
+  ] [
+     fhir:code [ fhir:v "surface" ] ;
+     fhir:display [ fhir:v "Superfície" ] ;
+     fhir:definition [ fhir:v "Na superfície do item" ]
+  ] [
+     fhir:code [ fhir:v "intragranular" ] ;
+     fhir:display [ fhir:v "Intragranular" ] ;
+     fhir:definition [ fhir:v "Dentro dos grânulos" ]
+  ] [
+     fhir:code [ fhir:v "extragranular" ] ;
+     fhir:display [ fhir:v "Extragranular" ] ;
+     fhir:definition [ fhir:v "Fora dos grânulos" ]
+  ] [
+     fhir:code [ fhir:v "first-layer" ] ;
+     fhir:display [ fhir:v "Primeira Camada" ] ;
+     fhir:definition [ fhir:v "Primeira camada (comprimidos multicamadas)" ]
+  ] [
+     fhir:code [ fhir:v "second-layer" ] ;
+     fhir:display [ fhir:v "Segunda Camada" ] ;
+     fhir:definition [ fhir:v "Segunda camada (comprimidos multicamadas)" ]
+  ] [
+     fhir:code [ fhir:v "third-layer" ] ;
+     fhir:display [ fhir:v "Terceira Camada" ] ;
+     fhir:definition [ fhir:v "Terceira camada (comprimidos multicamadas)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

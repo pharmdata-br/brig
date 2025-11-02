@@ -1,0 +1,217 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-clinical-use-definition-br-search-params</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="list">
+  <tr>
+    <td>
+      <b>Nome</b>
+    </td>
+    <td>
+      <b>Tipo</b>
+    </td>
+    <td>
+      <b>Descrição</b>
+    </td>
+    <td>
+      <b>Expressão</b>
+    </td>
+  </tr>
+  <tr>
+    <td>contraindication</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The situation that is being documented as contraindicating against this item, as a code</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.concept</code>
+    </td>
+  </tr>
+  <tr>
+    <td>contraindication-reference</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The situation that is being documented as contraindicating against this item, as a reference</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.contraindication.diseaseSymptomProcedure.reference</code>
+    </td>
+  </tr>
+  <tr>
+    <td>effect</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The situation in which the undesirable effect may manifest, as a code</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.undesirableEffect.symptomConditionEffect.concept</code>
+    </td>
+  </tr>
+  <tr>
+    <td>effect-reference</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The situation in which the undesirable effect may manifest, as a reference</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.undesirableEffect.symptomConditionEffect.reference</code>
+    </td>
+  </tr>
+  <tr>
+    <td>identifier</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Business identifier for this issue</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.identifier</code>
+    </td>
+  </tr>
+  <tr>
+    <td>indication</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The situation that is being documented as an indicaton for this item, as a code</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept</code>
+    </td>
+  </tr>
+  <tr>
+    <td>indication-reference</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The situation that is being documented as an indicaton for this item, as a reference</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.indication.diseaseSymptomProcedure.reference</code>
+    </td>
+  </tr>
+  <tr>
+    <td>interaction</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.interaction.type</code>
+    </td>
+  </tr>
+  <tr>
+    <td>product</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The medicinal product for which this is a clinical usage issue</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.subject.where(resolve() is MedicinalProductDefinition)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Whether this is a current issue or one that has been retired etc.</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.status</code>
+    </td>
+  </tr>
+  <tr>
+    <td>subject</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The resource for which this is a clinical usage issue</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.subject</code>
+    </td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>indication | contraindication | interaction | undesirable-effect | warning</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>ClinicalUseDefinition.type</code>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

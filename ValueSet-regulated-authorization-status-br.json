@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "regulated-authorization-status-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet regulated-authorization-status-br</b></p><a name=\"regulated-authorization-status-br\"> </a><a name=\"hcregulated-authorization-status-br\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-regulated-authorization-status-br.html\"><code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.0.3</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-status-br",
+  "version" : "0.0.3",
+  "name" : "RegulatedAuthorizationStatusBR",
+  "title" : "Status de Autorização Regulatória Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Conjunto de valores para status de autorizações regulatórias ANVISA",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"
+    }]
+  }
+}

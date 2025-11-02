@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Tipos de Impurezas em Substâncias Farmacêuticas - BRIG - Guia de Implementação Brasileiro para IDMP v0.0.3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"7.247"}
+    h3,h4,h5,h6{--heading-prefix:"7.247"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">BRIG - Guia de Implementação Brasileiro para IDMP</span>
+            <br/>
+            <span style="display:inline-block;">0.0.3 - Protótipo
+
+
+
+  <img src="assets/images/bra.svg" alt="Brazil flag" title="Brazil" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guia de Implementação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="implementation-guide.html">Visão Geral</a>
+      </li>
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="examples.html">Exemplos</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Recursos FHIR
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#2">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Code Systems</a>
+      </li>
+      <li><a name="l213">​</a>
+        <a href="artifacts.html#6">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Tipos de Impurezas em Substâncias Farmacêuticas</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box"><a name="l294">​</a>BRIG - Guia de Implementação Brasileiro para IDMP - Compilação de desenvolvimento local (v0.0.3) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href="https://idmp-br.github.io/brig-idmp-brasil/history.html">Diretório de versões publicadas</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-substance-impurity.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-substance-impurity.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Tipos de Impurezas em Substâncias Farmacêuticas
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity<button data-clipboard-text="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.0.3<button data-clipboard-text="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity|0.0.3" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          <i>
+            
+            Standards status:
+          </i> <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Standard Status">Draft</a>
+          
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 0
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SubstanceImpurity</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Copyright &copy; 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR&reg; é marca registrada da HL7 International, usada com permissão.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Classificação de tipos de impurezas encontradas em substâncias farmacêuticas ativas e excipientes</p>
+
+</p>
+
+<p>
+<p>Alternativa brasileira para SNOMED CT Substance Impurity, adequada ao contexto regulatório nacional</p>
+
+</p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-substance-impurity-vs.html">SubstanceImpurity</a></li>
+</ul>
+
+
+  <div><p class="res-header-id"></p><a name="substance-impurity"> </a><a name="hcsubstance-impurity"> </a><p>Este  sistema de código  define o seguinte código:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr>
+<tr><td style="white-space:nowrap">residual-solvent<a name="substance-impurity-residual-solvent"> </a></td>
+<td>Solvente Residual</td>
+<td>Solvente orgânico volátil usado ou produzido durante fabricação que permanece na substância final</td></tr>
+<tr><td style="white-space:nowrap">heavy-metal<a name="substance-impurity-heavy-metal"> </a></td>
+<td>Metal Pesado</td>
+<td>Contaminante metálico (ex: chumbo, mercúrio, arsênio, cádmio)</td></tr>
+<tr><td style="white-space:nowrap">degradation-product<a name="substance-impurity-degradation-product"> </a></td>
+<td>Produto de Degradação</td>
+<td>Composto resultante de degradação química da substância ativa</td></tr>
+<tr><td style="white-space:nowrap">process-impurity<a name="substance-impurity-process-impurity"> </a></td>
+<td>Impureza de Processo</td>
+<td>Impureza originada do processo de síntese ou fabricação</td></tr>
+<tr><td style="white-space:nowrap">starting-material<a name="substance-impurity-starting-material"> </a></td>
+<td>Material de Partida Residual</td>
+<td>Resíduo de material de partida usado na síntese</td></tr>
+<tr><td style="white-space:nowrap">reagent<a name="substance-impurity-reagent"> </a></td>
+<td>Reagente Residual</td>
+<td>Reagente químico usado na síntese que permanece como impureza</td></tr>
+<tr><td style="white-space:nowrap">catalyst<a name="substance-impurity-catalyst"> </a></td>
+<td>Catalisador Residual</td>
+<td>Catalisador usado no processo de síntese</td></tr>
+<tr><td style="white-space:nowrap">ligand<a name="substance-impurity-ligand"> </a></td>
+<td>Ligante Residual</td>
+<td>Ligante ou agente complexante residual</td></tr>
+<tr><td style="white-space:nowrap">intermediate<a name="substance-impurity-intermediate"> </a></td>
+<td>Intermediário de Síntese</td>
+<td>Composto intermediário do processo de síntese</td></tr>
+<tr><td style="white-space:nowrap">isomer<a name="substance-impurity-isomer"> </a></td>
+<td>Isômero Indesejado</td>
+<td>Isômero não desejado da substância ativa (ex: enantiômero incorreto)</td></tr>
+<tr><td style="white-space:nowrap">related-substance<a name="substance-impurity-related-substance"> </a></td>
+<td>Substância Relacionada</td>
+<td>Composto estruturalmente relacionado à substância ativa</td></tr>
+<tr><td style="white-space:nowrap">elemental-impurity<a name="substance-impurity-elemental-impurity"> </a></td>
+<td>Impureza Elementar</td>
+<td>Elemento químico presente como impureza (conforme ICH Q3D)</td></tr></table></div>
+
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://idmp-br.github.io">IDMP Brasil</a>.  Package brig.idmp.brazil#0.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sun, Nov 2, 2025 10:29-0300">2025-11-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

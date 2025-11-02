@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dcb-brasileiras"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet dcb-brasileiras</b></p><a name="dcb-brasileiras"> </a><a name="hcdcb-brasileiras"> </a><ul><li>Include todos os códigos definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/dcb-brasileiras"/>
+  <version value="0.0.3"/>
+  <name value="DCBBrasileiras"/>
+  <title value="Denominações Comuns Brasileiras (DCB)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="ANVISA - Agência Nacional de Vigilância Sanitária"/>
+  <compose>
+    <include>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras"/>
+    </include>
+  </compose>
+</ValueSet>

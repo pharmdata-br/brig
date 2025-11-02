@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Tipo de Autorização Regulatória ANVISA - TTL Representation - BRIG - Guia de Implementação Brasileiro para IDMP v0.0.3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"7.232"}
+    h3,h4,h5,h6{--heading-prefix:"7.232"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">BRIG - Guia de Implementação Brasileiro para IDMP</span>
+            <br/>
+            <span style="display:inline-block;">0.0.3 - Protótipo
+
+
+
+  <img src="assets/images/bra.svg" alt="Brazil flag" title="Brazil" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guia de Implementação
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="implementation-guide.html">Visão Geral</a>
+      </li>
+      <li>
+        <a href="profiles.html">Profiles</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminologias</a>
+      </li>
+      <li>
+        <a href="examples.html">Exemplos</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Recursos FHIR
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#2">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Code Systems</a>
+      </li>
+      <li><a name="l213">​</a>
+        <a href="artifacts.html#6">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Tipo de Autorização Regulatória ANVISA</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box"><a name="l294">​</a>BRIG - Guia de Implementação Brasileiro para IDMP - Compilação de desenvolvimento local (v0.0.3) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href="https://idmp-br.github.io/brig-idmp-brasil/history.html">Diretório de versões publicadas</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-regulated-authorization-type-br.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-regulated-authorization-type-br.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-regulated-authorization-type-br.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Tipo de Autorização Regulatória ANVISA - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Standard Status">Informative</a>
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-regulated-authorization-type-br.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CodeSystem-regulated-authorization-type-br.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; overflow: hidden" class="rdf" data-fhir="generated"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> "regulated-authorization-type-br"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "generated" ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Narrativa gerada: CodeSystem regulated-authorization-type-br&lt;/b&gt;&lt;/p&gt;&lt;a name=\"regulated-authorization-type-br\"&gt; &lt;/a&gt;&lt;a name=\"hcregulated-authorization-type-br\"&gt; &lt;/a&gt;&lt;p&gt;Este  sistema de código  define o seguinte código:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;registration&lt;a name=\"regulated-authorization-type-br-registration\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Registro Inicial&lt;/td&gt;&lt;td&gt;Registro inicial de medicamento na ANVISA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;renewal&lt;a name=\"regulated-authorization-type-br-renewal\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Renovação&lt;/td&gt;&lt;td&gt;Renovação de registro de medicamento (validade 10 anos)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;variation&lt;a name=\"regulated-authorization-type-br-variation\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variação&lt;/td&gt;&lt;td&gt;Variação pós-registro (alterações no medicamento registrado)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;cancellation&lt;a name=\"regulated-authorization-type-br-cancellation\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cancelamento&lt;/td&gt;&lt;td&gt;Cancelamento de registro por solicitação do detentor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;new-drug&lt;a name=\"regulated-authorization-type-br-new-drug\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicamento Novo&lt;/td&gt;&lt;td&gt;Registro de medicamento novo (nova molécula)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;innovative-drug&lt;a name=\"regulated-authorization-type-br-innovative-drug\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicamento Inovador&lt;/td&gt;&lt;td&gt;Registro de medicamento inovador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;generic-drug&lt;a name=\"regulated-authorization-type-br-generic-drug\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicamento Genérico&lt;/td&gt;&lt;td&gt;Registro de medicamento genérico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;similar-drug&lt;a name=\"regulated-authorization-type-br-similar-drug\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicamento Similar&lt;/td&gt;&lt;td&gt;Registro de medicamento similar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;biological-product&lt;a name=\"regulated-authorization-type-br-biological-product\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Produto Biológico&lt;/td&gt;&lt;td&gt;Registro de produto biológico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;biosimilar-product&lt;a name=\"regulated-authorization-type-br-biosimilar-product\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Produto Biosimilar&lt;/td&gt;&lt;td&gt;Registro de produto biosimilar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;major-variation&lt;a name=\"regulated-authorization-type-br-major-variation\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variação Maior&lt;/td&gt;&lt;td&gt;Variação que requer aprovação prévia da ANVISA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;minor-variation&lt;a name=\"regulated-authorization-type-br-minor-variation\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variação Menor&lt;/td&gt;&lt;td&gt;Variação de implementação imediata com comunicação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;administrative-variation&lt;a name=\"regulated-authorization-type-br-administrative-variation\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Variação Administrativa&lt;/td&gt;&lt;td&gt;Variação puramente administrativa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;special-authorization&lt;a name=\"regulated-authorization-type-br-special-authorization\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Autorização Especial&lt;/td&gt;&lt;td&gt;Autorização especial para casos específicos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;emergency-authorization&lt;a name=\"regulated-authorization-type-br-emergency-authorization\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Autorização de Emergência&lt;/td&gt;&lt;td&gt;Autorização emergencial temporária&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;compassionate-use&lt;a name=\"regulated-authorization-type-br-compassionate-use\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uso Compassivo&lt;/td&gt;&lt;td&gt;Autorização para uso compassivo&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "informative" ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#code#code.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">a</a> fhir:Canonical ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&gt;         ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "0.0.3"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "RegulatedAuthorizationTypeBR"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Tipo de Autorização Regulatória ANVISA"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "draft"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> "2025-09-07"^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "IDMP Brasil"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "IDMP Brasil" ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "url" ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "https://idmp-br.github.io" ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "email" ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "eugenio@farmaco.io" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "IDMP Brasil" ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "email" ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "eugenio@farmaco.io" ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "url" ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "https://idmp-br.github.io/brig-idmp-brasil" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> "Tipos de autorizações regulatórias conforme processos ANVISA para medicamentos"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "urn:iso:std:iso:3166"^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "BR" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> "Copyright &copy; 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR&reg; é marca registrada da HL7 International, usada com permissão."] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "complete"] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> "16"^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "registration" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro Inicial" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro inicial de medicamento na ANVISA" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "renewal" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Renovação" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Renovação de registro de medicamento (validade 10 anos)" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "variation" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação pós-registro (alterações no medicamento registrado)" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "cancellation" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Cancelamento" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Cancelamento de registro por solicitação do detentor" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "new-drug" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Medicamento Novo" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro de medicamento novo (nova molécula)" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "innovative-drug" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Medicamento Inovador" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro de medicamento inovador" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "generic-drug" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Medicamento Genérico" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro de medicamento genérico" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "similar-drug" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Medicamento Similar" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro de medicamento similar" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "biological-product" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Produto Biológico" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro de produto biológico" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "biosimilar-product" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Produto Biosimilar" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Registro de produto biosimilar" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "major-variation" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação Maior" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação que requer aprovação prévia da ANVISA" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "minor-variation" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação Menor" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação de implementação imediata com comunicação" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "administrative-variation" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação Administrativa" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Variação puramente administrativa" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "special-authorization" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Autorização Especial" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Autorização especial para casos específicos" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "emergency-authorization" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Autorização de Emergência" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Autorização emergencial temporária" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "compassionate-use" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Uso Compassivo" ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "Autorização para uso compassivo" ]
+  ] ) . # 
+
+</code></pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2025 <a style="color:var(--footer-hyperlink-text-color)" href="https://idmp-br.github.io">IDMP Brasil</a>.  Package brig.idmp.brazil#0.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sun, Nov 2, 2025 10:29-0300">2025-11-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

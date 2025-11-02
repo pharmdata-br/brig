@@ -1,0 +1,134 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "organization-operational-category-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-operational-category-br</b></p><a name=\"organization-operational-category-br\"> </a><a name=\"hcorganization-operational-category-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">pharmaceutical-manufacturing<a name=\"organization-operational-category-br-pharmaceutical-manufacturing\"> </a></td><td>Fabricação Farmacêutica</td><td>Fabricação de medicamentos e produtos farmacêuticos</td></tr><tr><td style=\"white-space:nowrap\">api-manufacturing<a name=\"organization-operational-category-br-api-manufacturing\"> </a></td><td>Fabricação de IFA</td><td>Fabricação de Insumos Farmacêuticos Ativos</td></tr><tr><td style=\"white-space:nowrap\">device-manufacturing<a name=\"organization-operational-category-br-device-manufacturing\"> </a></td><td>Fabricação de Dispositivos</td><td>Fabricação de dispositivos médicos e correlatos</td></tr><tr><td style=\"white-space:nowrap\">cosmetic-manufacturing<a name=\"organization-operational-category-br-cosmetic-manufacturing\"> </a></td><td>Fabricação de Cosméticos</td><td>Fabricação de produtos cosméticos</td></tr><tr><td style=\"white-space:nowrap\">wholesale-distribution<a name=\"organization-operational-category-br-wholesale-distribution\"> </a></td><td>Distribuição Atacadista</td><td>Distribuição atacadista de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">retail-pharmacy<a name=\"organization-operational-category-br-retail-pharmacy\"> </a></td><td>Farmácia de Varejo</td><td>Farmácia ou drogaria de varejo</td></tr><tr><td style=\"white-space:nowrap\">hospital-pharmacy<a name=\"organization-operational-category-br-hospital-pharmacy\"> </a></td><td>Farmácia Hospitalar</td><td>Farmácia de estabelecimento hospitalar</td></tr><tr><td style=\"white-space:nowrap\">import-operations<a name=\"organization-operational-category-br-import-operations\"> </a></td><td>Operações de Importação</td><td>Importação de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">export-operations<a name=\"organization-operational-category-br-export-operations\"> </a></td><td>Operações de Exportação</td><td>Exportação de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">clinical-research<a name=\"organization-operational-category-br-clinical-research\"> </a></td><td>Pesquisa Clínica</td><td>Condução de pesquisas clínicas</td></tr><tr><td style=\"white-space:nowrap\">preclinical-research<a name=\"organization-operational-category-br-preclinical-research\"> </a></td><td>Pesquisa Pré-clínica</td><td>Pesquisa pré-clínica e desenvolvimento</td></tr><tr><td style=\"white-space:nowrap\">analytical-laboratory<a name=\"organization-operational-category-br-analytical-laboratory\"> </a></td><td>Laboratório Analítico</td><td>Laboratório de análises e controle de qualidade</td></tr><tr><td style=\"white-space:nowrap\">regulatory-consulting<a name=\"organization-operational-category-br-regulatory-consulting\"> </a></td><td>Consultoria Regulatória</td><td>Serviços de consultoria regulatória</td></tr><tr><td style=\"white-space:nowrap\">quality-assurance<a name=\"organization-operational-category-br-quality-assurance\"> </a></td><td>Garantia de Qualidade</td><td>Serviços de garantia e controle de qualidade</td></tr><tr><td style=\"white-space:nowrap\">logistics-services<a name=\"organization-operational-category-br-logistics-services\"> </a></td><td>Serviços Logísticos</td><td>Serviços de logística e transporte especializado</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-category-br",
+  "version" : "0.0.3",
+  "name" : "OrganizationOperationalCategoryBR",
+  "title" : "Categorias Operacionais de Organização - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para categorias operacionais de organizações",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 15,
+  "concept" : [{
+    "code" : "pharmaceutical-manufacturing",
+    "display" : "Fabricação Farmacêutica",
+    "definition" : "Fabricação de medicamentos e produtos farmacêuticos"
+  },
+  {
+    "code" : "api-manufacturing",
+    "display" : "Fabricação de IFA",
+    "definition" : "Fabricação de Insumos Farmacêuticos Ativos"
+  },
+  {
+    "code" : "device-manufacturing",
+    "display" : "Fabricação de Dispositivos",
+    "definition" : "Fabricação de dispositivos médicos e correlatos"
+  },
+  {
+    "code" : "cosmetic-manufacturing",
+    "display" : "Fabricação de Cosméticos",
+    "definition" : "Fabricação de produtos cosméticos"
+  },
+  {
+    "code" : "wholesale-distribution",
+    "display" : "Distribuição Atacadista",
+    "definition" : "Distribuição atacadista de produtos regulados"
+  },
+  {
+    "code" : "retail-pharmacy",
+    "display" : "Farmácia de Varejo",
+    "definition" : "Farmácia ou drogaria de varejo"
+  },
+  {
+    "code" : "hospital-pharmacy",
+    "display" : "Farmácia Hospitalar",
+    "definition" : "Farmácia de estabelecimento hospitalar"
+  },
+  {
+    "code" : "import-operations",
+    "display" : "Operações de Importação",
+    "definition" : "Importação de produtos regulados"
+  },
+  {
+    "code" : "export-operations",
+    "display" : "Operações de Exportação",
+    "definition" : "Exportação de produtos regulados"
+  },
+  {
+    "code" : "clinical-research",
+    "display" : "Pesquisa Clínica",
+    "definition" : "Condução de pesquisas clínicas"
+  },
+  {
+    "code" : "preclinical-research",
+    "display" : "Pesquisa Pré-clínica",
+    "definition" : "Pesquisa pré-clínica e desenvolvimento"
+  },
+  {
+    "code" : "analytical-laboratory",
+    "display" : "Laboratório Analítico",
+    "definition" : "Laboratório de análises e controle de qualidade"
+  },
+  {
+    "code" : "regulatory-consulting",
+    "display" : "Consultoria Regulatória",
+    "definition" : "Serviços de consultoria regulatória"
+  },
+  {
+    "code" : "quality-assurance",
+    "display" : "Garantia de Qualidade",
+    "definition" : "Serviços de garantia e controle de qualidade"
+  },
+  {
+    "code" : "logistics-services",
+    "display" : "Serviços Logísticos",
+    "definition" : "Serviços de logística e transporte especializado"
+  }]
+}

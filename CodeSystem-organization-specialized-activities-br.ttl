@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-specialized-activities-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-specialized-activities-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-specialized-activities-br</b></p><a name=\"organization-specialized-activities-br\"> </a><a name=\"hcorganization-specialized-activities-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">controlled-substances<a name=\"organization-specialized-activities-br-controlled-substances\"> </a></td><td>Substâncias Controladas</td><td>Manipulação de substâncias sujeitas a controle especial</td></tr><tr><td style=\"white-space:nowrap\">sterile-production<a name=\"organization-specialized-activities-br-sterile-production\"> </a></td><td>Produção Estéril</td><td>Produção de medicamentos estéreis</td></tr><tr><td style=\"white-space:nowrap\">biotechnology<a name=\"organization-specialized-activities-br-biotechnology\"> </a></td><td>Biotecnologia</td><td>Produção de medicamentos biotecnológicos</td></tr><tr><td style=\"white-space:nowrap\">radiopharmaceuticals<a name=\"organization-specialized-activities-br-radiopharmaceuticals\"> </a></td><td>Radiofármacos</td><td>Produção e manipulação de radiofármacos</td></tr><tr><td style=\"white-space:nowrap\">blood-products<a name=\"organization-specialized-activities-br-blood-products\"> </a></td><td>Hemoderivados</td><td>Produção de produtos derivados do sangue</td></tr><tr><td style=\"white-space:nowrap\">vaccines<a name=\"organization-specialized-activities-br-vaccines\"> </a></td><td>Vacinas</td><td>Produção de vacinas e imunobiológicos</td></tr><tr><td style=\"white-space:nowrap\">clinical-trials<a name=\"organization-specialized-activities-br-clinical-trials\"> </a></td><td>Ensaios Clínicos</td><td>Condução de ensaios clínicos</td></tr><tr><td style=\"white-space:nowrap\">pharmacovigilance<a name=\"organization-specialized-activities-br-pharmacovigilance\"> </a></td><td>Farmacovigilância</td><td>Atividades de farmacovigilância</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-specialized-activities-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-specialized-activities-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "OrganizationSpecializedActivitiesBR"] ; # 
+  fhir:title [ fhir:v "Atividades Especializadas de Organização - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para atividades especializadas de organizações"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "controlled-substances" ] ;
+     fhir:display [ fhir:v "Substâncias Controladas" ] ;
+     fhir:definition [ fhir:v "Manipulação de substâncias sujeitas a controle especial" ]
+  ] [
+     fhir:code [ fhir:v "sterile-production" ] ;
+     fhir:display [ fhir:v "Produção Estéril" ] ;
+     fhir:definition [ fhir:v "Produção de medicamentos estéreis" ]
+  ] [
+     fhir:code [ fhir:v "biotechnology" ] ;
+     fhir:display [ fhir:v "Biotecnologia" ] ;
+     fhir:definition [ fhir:v "Produção de medicamentos biotecnológicos" ]
+  ] [
+     fhir:code [ fhir:v "radiopharmaceuticals" ] ;
+     fhir:display [ fhir:v "Radiofármacos" ] ;
+     fhir:definition [ fhir:v "Produção e manipulação de radiofármacos" ]
+  ] [
+     fhir:code [ fhir:v "blood-products" ] ;
+     fhir:display [ fhir:v "Hemoderivados" ] ;
+     fhir:definition [ fhir:v "Produção de produtos derivados do sangue" ]
+  ] [
+     fhir:code [ fhir:v "vaccines" ] ;
+     fhir:display [ fhir:v "Vacinas" ] ;
+     fhir:definition [ fhir:v "Produção de vacinas e imunobiológicos" ]
+  ] [
+     fhir:code [ fhir:v "clinical-trials" ] ;
+     fhir:display [ fhir:v "Ensaios Clínicos" ] ;
+     fhir:definition [ fhir:v "Condução de ensaios clínicos" ]
+  ] [
+     fhir:code [ fhir:v "pharmacovigilance" ] ;
+     fhir:display [ fhir:v "Farmacovigilância" ] ;
+     fhir:definition [ fhir:v "Atividades de farmacovigilância" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

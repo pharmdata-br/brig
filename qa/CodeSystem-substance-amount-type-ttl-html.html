@@ -1,0 +1,137 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>CodeSystem-substance-amount-type-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;substance-amount-type&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: CodeSystem substance-amount-type&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;substance-amount-type\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsubstance-amount-type\&quot;&gt; &lt;/a&gt;&lt;p&gt;Este  sistema de código  define o seguinte código:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mass&lt;a name=\&quot;substance-amount-type-mass\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Massa&lt;/td&gt;&lt;td&gt;Quantidade expressa em unidade de massa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;molar&lt;a name=\&quot;substance-amount-type-molar\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Molar&lt;/td&gt;&lt;td&gt;Quantidade expressa em mols&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;volume&lt;a name=\&quot;substance-amount-type-volume\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume&lt;/td&gt;&lt;td&gt;Quantidade expressa em unidade de volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;concentration-mass&lt;a name=\&quot;substance-amount-type-concentration-mass\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concentração em Massa&lt;/td&gt;&lt;td&gt;Massa por unidade de volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;concentration-molar&lt;a name=\&quot;substance-amount-type-concentration-molar\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concentração Molar&lt;/td&gt;&lt;td&gt;Mols por unidade de volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;percentage-mass&lt;a name=\&quot;substance-amount-type-percentage-mass\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Percentual em Massa&lt;/td&gt;&lt;td&gt;Percentual massa/massa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;percentage-volume&lt;a name=\&quot;substance-amount-type-percentage-volume\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Percentual em Volume&lt;/td&gt;&lt;td&gt;Percentual volume/volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;percentage-mass-volume&lt;a name=\&quot;substance-amount-type-percentage-mass-volume\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Percentual Massa/Volume&lt;/td&gt;&lt;td&gt;Percentual massa/volume&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ratio&lt;a name=\&quot;substance-amount-type-ratio\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Razão&lt;/td&gt;&lt;td&gt;Razão entre componentes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;activity&lt;a name=\&quot;substance-amount-type-activity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atividade&lt;/td&gt;&lt;td&gt;Unidades internacionais de atividade biológica&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#integer">a</a> fhir:Integer ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#integer">fhir:v</a> 0 ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#integer#integer.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">a</a> fhir:Canonical ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&gt;         ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot; ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#code#code.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">a</a> fhir:Canonical ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil&gt;         ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.0.3&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;SubstanceAmountType&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tipo de Medida de Quantidade de Substância&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2025-10-30&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;IDMP Brasil&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;eugenio@farmaco.io&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Tipos de medidas para quantificar substâncias&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;BR&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;10&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;mass&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Massa&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Quantidade expressa em unidade de massa&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;molar&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Molar&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Quantidade expressa em mols&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;volume&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Volume&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Quantidade expressa em unidade de volume&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;concentration-mass&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Concentração em Massa&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Massa por unidade de volume&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;concentration-molar&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Concentração Molar&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Mols por unidade de volume&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;percentage-mass&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Percentual em Massa&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Percentual massa/massa&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;percentage-volume&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Percentual em Volume&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Percentual volume/volume&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;percentage-mass-volume&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Percentual Massa/Volume&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Percentual massa/volume&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;ratio&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Razão&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Razão entre componentes&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;activity&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Atividade&quot; ] ;
+<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Unidades internacionais de atividade biológica&quot; ]
+  ] ) . # 
+
+</code></pre>
+
+</body>
+</html>

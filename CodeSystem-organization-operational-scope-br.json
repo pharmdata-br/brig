@@ -1,0 +1,99 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "organization-operational-scope-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-operational-scope-br</b></p><a name=\"organization-operational-scope-br\"> </a><a name=\"hcorganization-operational-scope-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">local<a name=\"organization-operational-scope-br-local\"> </a></td><td>Local</td><td>Operação local (municipal)</td></tr><tr><td style=\"white-space:nowrap\">state<a name=\"organization-operational-scope-br-state\"> </a></td><td>Estadual</td><td>Operação estadual</td></tr><tr><td style=\"white-space:nowrap\">regional<a name=\"organization-operational-scope-br-regional\"> </a></td><td>Regional</td><td>Operação em região específica do país</td></tr><tr><td style=\"white-space:nowrap\">national<a name=\"organization-operational-scope-br-national\"> </a></td><td>Nacional</td><td>Operação em todo território nacional</td></tr><tr><td style=\"white-space:nowrap\">international<a name=\"organization-operational-scope-br-international\"> </a></td><td>Internacional</td><td>Operação internacional com atividades no Brasil</td></tr><tr><td style=\"white-space:nowrap\">mercosul<a name=\"organization-operational-scope-br-mercosul\"> </a></td><td>MERCOSUL</td><td>Operação nos países do MERCOSUL</td></tr><tr><td style=\"white-space:nowrap\">latin-america<a name=\"organization-operational-scope-br-latin-america\"> </a></td><td>América Latina</td><td>Operação na América Latina</td></tr><tr><td style=\"white-space:nowrap\">global<a name=\"organization-operational-scope-br-global\"> </a></td><td>Global</td><td>Operação global</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-scope-br",
+  "version" : "0.0.3",
+  "name" : "OrganizationOperationalScopeBR",
+  "title" : "Escopo Operacional de Organização - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para escopo geográfico de operação",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "local",
+    "display" : "Local",
+    "definition" : "Operação local (municipal)"
+  },
+  {
+    "code" : "state",
+    "display" : "Estadual",
+    "definition" : "Operação estadual"
+  },
+  {
+    "code" : "regional",
+    "display" : "Regional",
+    "definition" : "Operação em região específica do país"
+  },
+  {
+    "code" : "national",
+    "display" : "Nacional",
+    "definition" : "Operação em todo território nacional"
+  },
+  {
+    "code" : "international",
+    "display" : "Internacional",
+    "definition" : "Operação internacional com atividades no Brasil"
+  },
+  {
+    "code" : "mercosul",
+    "display" : "MERCOSUL",
+    "definition" : "Operação nos países do MERCOSUL"
+  },
+  {
+    "code" : "latin-america",
+    "display" : "América Latina",
+    "definition" : "Operação na América Latina"
+  },
+  {
+    "code" : "global",
+    "display" : "Global",
+    "definition" : "Operação global"
+  }]
+}

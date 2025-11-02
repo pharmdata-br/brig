@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>RegulatedAuthorization-regulated-authorization-dipirona-example-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:RegulatedAuthorization ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;regulated-authorization-dipirona-example&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: RegulatedAuthorization regulated-authorization-dipirona-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;regulated-authorization-dipirona-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcregulated-authorization-dipirona-example\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Perfil: &lt;a href=\&quot;StructureDefinition-regulated-authorization-br.html\&quot;&gt;Autorização Regulatória - Brasil&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro&lt;/code&gt;/1.0123.4567.001-8, &lt;code&gt;http://anvisa.gov.br/processos&lt;/code&gt;/25351.123456/2023-15 (utilização: secondary, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;MedicinalProductDefinition-dipirona-500mg-example.html\&quot;&gt;Dipirona Sódica 500mg Comprimidos&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br similar-drug}\&quot;&gt;Medicamento Similar&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: &lt;span title=\&quot;Códigos:{urn:iso:std:iso:3166 BR}\&quot;&gt;Brazil&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br active}\&quot;&gt;Ativo&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2023-08-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;validityPeriod&lt;/b&gt;: 2023-08-15 --&amp;gt; 2033-08-15&lt;/p&gt;&lt;p&gt;&lt;b&gt;basis&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br rdc-753-2022}\&quot;&gt;RDC 753/2022&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\&quot;Organization-organization-neoquimica-example.html\&quot;&gt;Laboratório Neoqúimica Ltda.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;regulator&lt;/b&gt;: &lt;a href=\&quot;Organization-organization-anvisa-example.html\&quot;&gt;Agência Nacional de Vigilância Sanitária - ANVISA&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1.0123.4567.001-8&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;secondary&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://anvisa.gov.br/processos&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://anvisa.gov.br/processos&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;25351.123456/2023-15&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.subject">fhir:subject</a> ( [
+<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:l</a> fhir:MedicinalProductDefinition/dipirona-500mg-example ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicinalProductDefinition/dipirona-500mg-example&quot; ] ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dipirona Sódica 500mg Comprimidos&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.type">fhir:type</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;similar-drug&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Medicamento Similar&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.region">fhir:region</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;BR&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.status">fhir:status</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ativo&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.statusDate">fhir:statusDate</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2023-08-15&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.validityPeriod">fhir:validityPeriod</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2023-08-15&quot;^^xsd:date ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.end">fhir:end</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2033-08-15&quot;^^xsd:date ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.basis">fhir:basis</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;rdc-753-2022&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;RDC 753/2022&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.holder">fhir:holder</a> [
+<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:l</a> fhir:Organization/organization-neoquimica-example ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organization/organization-neoquimica-example&quot; ] ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Laboratório Neoqúimica Ltda.&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.regulator">fhir:regulator</a> [
+<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:l</a> fhir:Organization/organization-anvisa-example ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organization/organization-anvisa-example&quot; ] ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Agência Nacional de Vigilância Sanitária - ANVISA&quot; ]
+  ] . # 
+
+</code></pre>
+
+</body>
+</html>

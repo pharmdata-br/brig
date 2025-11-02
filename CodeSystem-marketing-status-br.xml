@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="marketing-status-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem marketing-status-br</b></p><a name="marketing-status-br"> </a><a name="hcmarketing-status-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">active<a name="marketing-status-br-active"> </a></td><td>Ativo</td><td>Produto com registro válido e comercialização autorizada</td></tr><tr><td style="white-space:nowrap">suspended<a name="marketing-status-br-suspended"> </a></td><td>Suspenso</td><td>Produto com comercialização temporariamente suspensa</td></tr><tr><td style="white-space:nowrap">cancelled<a name="marketing-status-br-cancelled"> </a></td><td>Cancelado</td><td>Produto com registro cancelado pela ANVISA</td></tr><tr><td style="white-space:nowrap">expired<a name="marketing-status-br-expired"> </a></td><td>Vencido</td><td>Produto com registro vencido e não renovado</td></tr><tr><td style="white-space:nowrap">withdrawn<a name="marketing-status-br-withdrawn"> </a></td><td>Retirado</td><td>Produto voluntariamente retirado do mercado pelo titular</td></tr><tr><td style="white-space:nowrap">pending<a name="marketing-status-br-pending"> </a></td><td>Pendente</td><td>Produto com processo de registro em análise</td></tr><tr><td style="white-space:nowrap">denied<a name="marketing-status-br-denied"> </a></td><td>Negado</td><td>Produto com registro negado pela ANVISA</td></tr><tr><td style="white-space:nowrap">revoked<a name="marketing-status-br-revoked"> </a></td><td>Revogado</td><td>Produto com registro revogado por determinação legal</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/marketing-status-br"/>
+  <version value="0.0.3"/>
+  <name value="MarketingStatusBR"/>
+  <title value="Status de Comercialização - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para status de comercialização no contexto brasileiro"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="active"/>
+    <display value="Ativo"/>
+    <definition value="Produto com registro válido e comercialização autorizada"/>
+  </concept>
+  <concept>
+    <code value="suspended"/>
+    <display value="Suspenso"/>
+    <definition value="Produto com comercialização temporariamente suspensa"/>
+  </concept>
+  <concept>
+    <code value="cancelled"/>
+    <display value="Cancelado"/>
+    <definition value="Produto com registro cancelado pela ANVISA"/>
+  </concept>
+  <concept>
+    <code value="expired"/>
+    <display value="Vencido"/>
+    <definition value="Produto com registro vencido e não renovado"/>
+  </concept>
+  <concept>
+    <code value="withdrawn"/>
+    <display value="Retirado"/>
+    <definition value="Produto voluntariamente retirado do mercado pelo titular"/>
+  </concept>
+  <concept>
+    <code value="pending"/>
+    <display value="Pendente"/>
+    <definition value="Produto com processo de registro em análise"/>
+  </concept>
+  <concept>
+    <code value="denied"/>
+    <display value="Negado"/>
+    <definition value="Produto com registro negado pela ANVISA"/>
+  </concept>
+  <concept>
+    <code value="revoked"/>
+    <display value="Revogado"/>
+    <definition value="Produto com registro revogado por determinação legal"/>
+  </concept>
+</CodeSystem>

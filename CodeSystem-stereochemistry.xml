@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="stereochemistry"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem stereochemistry</b></p><a name="stereochemistry"> </a><a name="hcstereochemistry"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">achiral<a name="stereochemistry-achiral"> </a></td><td>Aquiral</td><td>Molécula sem centros quirais, não possui enantiômeros</td></tr><tr><td style="white-space:nowrap">racemic<a name="stereochemistry-racemic"> </a></td><td>Racêmico</td><td>Mistura equimolar de enantiômeros (50:50)</td></tr><tr><td style="white-space:nowrap">single-enantiomer<a name="stereochemistry-single-enantiomer"> </a></td><td>Enantiômero Único</td><td>Enantiômero purificado (&gt;99% ee)</td></tr><tr><td style="white-space:nowrap">enantiomeric-excess<a name="stereochemistry-enantiomeric-excess"> </a></td><td>Excesso Enantiomérico</td><td>Mistura com predominância de um enantiômero</td></tr><tr><td style="white-space:nowrap">R-configuration<a name="stereochemistry-R-configuration"> </a></td><td>Configuração R</td><td>Configuração absoluta R (Rectus)</td></tr><tr><td style="white-space:nowrap">S-configuration<a name="stereochemistry-S-configuration"> </a></td><td>Configuração S</td><td>Configuração absoluta S (Sinister)</td></tr><tr><td style="white-space:nowrap">E-configuration<a name="stereochemistry-E-configuration"> </a></td><td>Configuração E</td><td>Configuração geométrica E (Entgegen)</td></tr><tr><td style="white-space:nowrap">Z-configuration<a name="stereochemistry-Z-configuration"> </a></td><td>Configuração Z</td><td>Configuração geométrica Z (Zusammen)</td></tr><tr><td style="white-space:nowrap">cis<a name="stereochemistry-cis"> </a></td><td>Cis</td><td>Isômero geométrico cis</td></tr><tr><td style="white-space:nowrap">trans<a name="stereochemistry-trans"> </a></td><td>Trans</td><td>Isômero geométrico trans</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/stereochemistry"/>
+  <version value="0.0.3"/>
+  <name value="Stereochemistry"/>
+  <title value="Estereoquímica de Substâncias"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Classificação estereoquímica de substâncias (quiralidade, configuração espacial)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="achiral"/>
+    <display value="Aquiral"/>
+    <definition value="Molécula sem centros quirais, não possui enantiômeros"/>
+  </concept>
+  <concept>
+    <code value="racemic"/>
+    <display value="Racêmico"/>
+    <definition value="Mistura equimolar de enantiômeros (50:50)"/>
+  </concept>
+  <concept>
+    <code value="single-enantiomer"/>
+    <display value="Enantiômero Único"/>
+    <definition value="Enantiômero purificado (&gt;99% ee)"/>
+  </concept>
+  <concept>
+    <code value="enantiomeric-excess"/>
+    <display value="Excesso Enantiomérico"/>
+    <definition value="Mistura com predominância de um enantiômero"/>
+  </concept>
+  <concept>
+    <code value="R-configuration"/>
+    <display value="Configuração R"/>
+    <definition value="Configuração absoluta R (Rectus)"/>
+  </concept>
+  <concept>
+    <code value="S-configuration"/>
+    <display value="Configuração S"/>
+    <definition value="Configuração absoluta S (Sinister)"/>
+  </concept>
+  <concept>
+    <code value="E-configuration"/>
+    <display value="Configuração E"/>
+    <definition value="Configuração geométrica E (Entgegen)"/>
+  </concept>
+  <concept>
+    <code value="Z-configuration"/>
+    <display value="Configuração Z"/>
+    <definition value="Configuração geométrica Z (Zusammen)"/>
+  </concept>
+  <concept>
+    <code value="cis"/>
+    <display value="Cis"/>
+    <definition value="Isômero geométrico cis"/>
+  </concept>
+  <concept>
+    <code value="trans"/>
+    <display value="Trans"/>
+    <definition value="Isômero geométrico trans"/>
+  </concept>
+</CodeSystem>

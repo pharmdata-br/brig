@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="interaction-incidence"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem interaction-incidence</b></p><a name="interaction-incidence"> </a><a name="hcinteraction-incidence"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">high<a name="interaction-incidence-high"> </a></td><td>Alta</td><td>Interação ocorre frequentemente</td></tr><tr><td style="white-space:nowrap">moderate<a name="interaction-incidence-moderate"> </a></td><td>Moderada</td><td>Interação ocorre ocasionalmente</td></tr><tr><td style="white-space:nowrap">low<a name="interaction-incidence-low"> </a></td><td>Baixa</td><td>Interação ocorre raramente</td></tr><tr><td style="white-space:nowrap">unknown<a name="interaction-incidence-unknown"> </a></td><td>Desconhecida</td><td>Frequência não estabelecida</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-incidence"/>
+  <version value="0.0.3"/>
+  <name value="InteractionIncidence"/>
+  <title value="Incidência de Interação"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-31"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Frequência de ocorrência de interações"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="high"/>
+    <display value="Alta"/>
+    <definition value="Interação ocorre frequentemente"/>
+  </concept>
+  <concept>
+    <code value="moderate"/>
+    <display value="Moderada"/>
+    <definition value="Interação ocorre ocasionalmente"/>
+  </concept>
+  <concept>
+    <code value="low"/>
+    <display value="Baixa"/>
+    <definition value="Interação ocorre raramente"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Desconhecida"/>
+    <definition value="Frequência não estabelecida"/>
+  </concept>
+</CodeSystem>

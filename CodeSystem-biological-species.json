@@ -1,0 +1,118 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "biological-species",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem biological-species</b></p><a name=\"biological-species\"> </a><a name=\"hcbiological-species\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">Papaver-somniferum<a name=\"biological-species-Papaver-somniferum\"> </a></td><td>Papaver somniferum</td><td>Papoula do ópio</td></tr><tr><td style=\"white-space:nowrap\">Cannabis-sativa<a name=\"biological-species-Cannabis-sativa\"> </a></td><td>Cannabis sativa</td><td>Cannabis sativa</td></tr><tr><td style=\"white-space:nowrap\">Digitalis-purpurea<a name=\"biological-species-Digitalis-purpurea\"> </a></td><td>Digitalis purpurea</td><td>Dedaleira roxa</td></tr><tr><td style=\"white-space:nowrap\">Cinchona-officinalis<a name=\"biological-species-Cinchona-officinalis\"> </a></td><td>Cinchona officinalis</td><td>Quineira</td></tr><tr><td style=\"white-space:nowrap\">Penicillium-chrysogenum<a name=\"biological-species-Penicillium-chrysogenum\"> </a></td><td>Penicillium chrysogenum</td><td>Fungo produtor de penicilina</td></tr><tr><td style=\"white-space:nowrap\">Streptomyces-griseus<a name=\"biological-species-Streptomyces-griseus\"> </a></td><td>Streptomyces griseus</td><td>Bactéria produtora de estreptomicina</td></tr><tr><td style=\"white-space:nowrap\">Saccharomyces-cerevisiae<a name=\"biological-species-Saccharomyces-cerevisiae\"> </a></td><td>Saccharomyces cerevisiae</td><td>Levedura de cerveja</td></tr><tr><td style=\"white-space:nowrap\">Escherichia-coli<a name=\"biological-species-Escherichia-coli\"> </a></td><td>Escherichia coli</td><td>E. coli (produção recombinante)</td></tr><tr><td style=\"white-space:nowrap\">Bos-taurus<a name=\"biological-species-Bos-taurus\"> </a></td><td>Bos taurus</td><td>Bovino doméstico</td></tr><tr><td style=\"white-space:nowrap\">Sus-scrofa<a name=\"biological-species-Sus-scrofa\"> </a></td><td>Sus scrofa</td><td>Suíno doméstico</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-species",
+  "version" : "0.0.3",
+  "name" : "BiologicalSpecies",
+  "title" : "Espécie Biológica",
+  "status" : "active",
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Espécies biológicas comuns em substâncias farmacêuticas",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "Papaver-somniferum",
+    "display" : "Papaver somniferum",
+    "definition" : "Papoula do ópio"
+  },
+  {
+    "code" : "Cannabis-sativa",
+    "display" : "Cannabis sativa",
+    "definition" : "Cannabis sativa"
+  },
+  {
+    "code" : "Digitalis-purpurea",
+    "display" : "Digitalis purpurea",
+    "definition" : "Dedaleira roxa"
+  },
+  {
+    "code" : "Cinchona-officinalis",
+    "display" : "Cinchona officinalis",
+    "definition" : "Quineira"
+  },
+  {
+    "code" : "Penicillium-chrysogenum",
+    "display" : "Penicillium chrysogenum",
+    "definition" : "Fungo produtor de penicilina"
+  },
+  {
+    "code" : "Streptomyces-griseus",
+    "display" : "Streptomyces griseus",
+    "definition" : "Bactéria produtora de estreptomicina"
+  },
+  {
+    "code" : "Saccharomyces-cerevisiae",
+    "display" : "Saccharomyces cerevisiae",
+    "definition" : "Levedura de cerveja"
+  },
+  {
+    "code" : "Escherichia-coli",
+    "display" : "Escherichia coli",
+    "definition" : "E. coli (produção recombinante)"
+  },
+  {
+    "code" : "Bos-taurus",
+    "display" : "Bos taurus",
+    "definition" : "Bovino doméstico"
+  },
+  {
+    "code" : "Sus-scrofa",
+    "display" : "Sus scrofa",
+    "definition" : "Suíno doméstico"
+  }]
+}

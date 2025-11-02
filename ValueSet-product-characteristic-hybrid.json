@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "product-characteristic-hybrid",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet product-characteristic-hybrid</b></p><a name=\"product-characteristic-hybrid\"> </a><a name=\"hcproduct-characteristic-hybrid\"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir todos os códigos definidos em <a href=\"CodeSystem-product-characteristic.html\"><code>https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.0.3</span></li><li>Incluir códigos de<code>http://www.meddra.org</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span> onde concept  descende de 10055458</li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-characteristic-hybrid",
+  "version" : "0.0.3",
+  "name" : "ProductCharacteristicHybrid",
+  "title" : "Características de Produto (Brasil + MedDRA)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "ValueSet híbrido que combina CodeSystem brasileiro de características de produto com terminologia MedDRA relevante",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "purpose" : "Fornecer vocabulário expandido para características de produto, combinando terminologia brasileira com MedDRA",
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic"
+    },
+    {
+      "system" : "http://www.meddra.org",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "10055458"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,169 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-administrable-product-definition-br-search-params</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="list">
+  <tr>
+    <td>
+      <b>Nome</b>
+    </td>
+    <td>
+      <b>Tipo</b>
+    </td>
+    <td>
+      <b>Descrição</b>
+    </td>
+    <td>
+      <b>Expressão</b>
+    </td>
+  </tr>
+  <tr>
+    <td>device</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>A device that is integral to the medicinal product, in effect being considered as an "ingredient" of the medicinal product. This is not intended for devices that are just co-packaged</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.device</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dose-form</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The administrable dose form, i.e. the dose form of the final product after necessary reconstitution or processing</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.administrableDoseForm</code>
+    </td>
+  </tr>
+  <tr>
+    <td>form-of</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The medicinal product that this is an administrable form of. This is not a reference to the item(s) that make up this administrable form - it is the whole product</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.formOf</code>
+    </td>
+  </tr>
+  <tr>
+    <td>identifier</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>An identifier for the administrable product</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.identifier</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ingredient</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The ingredients of this administrable medicinal product</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.ingredient</code>
+    </td>
+  </tr>
+  <tr>
+    <td>manufactured-item</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The manufactured item(s) that this administrable product is produced from. Either a single item, or several that are mixed before administration (e.g. a power item and a solution item). Note that these are not raw ingredients</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.producedFrom</code>
+    </td>
+  </tr>
+  <tr>
+    <td>route</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Coded expression for the route</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.routeOfAdministration.code</code>
+    </td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The status of this administrable product. Enables tracking the life-cycle of the content.</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.status</code>
+    </td>
+  </tr>
+  <tr>
+    <td>target-species</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Coded expression for the species</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>AdministrableProductDefinition.routeOfAdministration.targetSpecies.code</code>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,153 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "organism-part",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organism-part</b></p><a name=\"organism-part\"> </a><a name=\"hcorganism-part\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">root<a name=\"organism-part-root\"> </a></td><td>Raiz</td><td>Raiz da planta</td></tr><tr><td style=\"white-space:nowrap\">stem<a name=\"organism-part-stem\"> </a></td><td>Caule</td><td>Caule da planta</td></tr><tr><td style=\"white-space:nowrap\">leaf<a name=\"organism-part-leaf\"> </a></td><td>Folha</td><td>Folha da planta</td></tr><tr><td style=\"white-space:nowrap\">flower<a name=\"organism-part-flower\"> </a></td><td>Flor</td><td>Flor da planta</td></tr><tr><td style=\"white-space:nowrap\">fruit<a name=\"organism-part-fruit\"> </a></td><td>Fruto</td><td>Fruto da planta</td></tr><tr><td style=\"white-space:nowrap\">seed<a name=\"organism-part-seed\"> </a></td><td>Semente</td><td>Semente da planta</td></tr><tr><td style=\"white-space:nowrap\">bark<a name=\"organism-part-bark\"> </a></td><td>Casca</td><td>Casca da planta</td></tr><tr><td style=\"white-space:nowrap\">resin<a name=\"organism-part-resin\"> </a></td><td>Resina</td><td>Resina ou exsudato</td></tr><tr><td style=\"white-space:nowrap\">whole-organism<a name=\"organism-part-whole-organism\"> </a></td><td>Organismo Inteiro</td><td>Organismo completo</td></tr><tr><td style=\"white-space:nowrap\">blood<a name=\"organism-part-blood\"> </a></td><td>Sangue</td><td>Sangue ou plasma</td></tr><tr><td style=\"white-space:nowrap\">tissue<a name=\"organism-part-tissue\"> </a></td><td>Tecido</td><td>Tecido específico</td></tr><tr><td style=\"white-space:nowrap\">organ<a name=\"organism-part-organ\"> </a></td><td>Órgão</td><td>Órgão específico</td></tr><tr><td style=\"white-space:nowrap\">gland<a name=\"organism-part-gland\"> </a></td><td>Glândula</td><td>Secreção glandular</td></tr><tr><td style=\"white-space:nowrap\">whole-cell<a name=\"organism-part-whole-cell\"> </a></td><td>Célula Inteira</td><td>Célula microbiana inteira</td></tr><tr><td style=\"white-space:nowrap\">cell-wall<a name=\"organism-part-cell-wall\"> </a></td><td>Parede Celular</td><td>Parede celular</td></tr><tr><td style=\"white-space:nowrap\">cell-culture<a name=\"organism-part-cell-culture\"> </a></td><td>Cultura Celular</td><td>Produto de cultura celular</td></tr><tr><td style=\"white-space:nowrap\">fermentation-broth<a name=\"organism-part-fermentation-broth\"> </a></td><td>Caldo de Fermentação</td><td>Caldo de fermentação microbiana</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organism-part",
+  "version" : "0.0.3",
+  "name" : "OrganismPart",
+  "title" : "Parte do Organismo",
+  "status" : "active",
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Partes de organismos usadas como fonte de substâncias",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 17,
+  "concept" : [{
+    "code" : "root",
+    "display" : "Raiz",
+    "definition" : "Raiz da planta"
+  },
+  {
+    "code" : "stem",
+    "display" : "Caule",
+    "definition" : "Caule da planta"
+  },
+  {
+    "code" : "leaf",
+    "display" : "Folha",
+    "definition" : "Folha da planta"
+  },
+  {
+    "code" : "flower",
+    "display" : "Flor",
+    "definition" : "Flor da planta"
+  },
+  {
+    "code" : "fruit",
+    "display" : "Fruto",
+    "definition" : "Fruto da planta"
+  },
+  {
+    "code" : "seed",
+    "display" : "Semente",
+    "definition" : "Semente da planta"
+  },
+  {
+    "code" : "bark",
+    "display" : "Casca",
+    "definition" : "Casca da planta"
+  },
+  {
+    "code" : "resin",
+    "display" : "Resina",
+    "definition" : "Resina ou exsudato"
+  },
+  {
+    "code" : "whole-organism",
+    "display" : "Organismo Inteiro",
+    "definition" : "Organismo completo"
+  },
+  {
+    "code" : "blood",
+    "display" : "Sangue",
+    "definition" : "Sangue ou plasma"
+  },
+  {
+    "code" : "tissue",
+    "display" : "Tecido",
+    "definition" : "Tecido específico"
+  },
+  {
+    "code" : "organ",
+    "display" : "Órgão",
+    "definition" : "Órgão específico"
+  },
+  {
+    "code" : "gland",
+    "display" : "Glândula",
+    "definition" : "Secreção glandular"
+  },
+  {
+    "code" : "whole-cell",
+    "display" : "Célula Inteira",
+    "definition" : "Célula microbiana inteira"
+  },
+  {
+    "code" : "cell-wall",
+    "display" : "Parede Celular",
+    "definition" : "Parede celular"
+  },
+  {
+    "code" : "cell-culture",
+    "display" : "Cultura Celular",
+    "definition" : "Produto de cultura celular"
+  },
+  {
+    "code" : "fermentation-broth",
+    "display" : "Caldo de Fermentação",
+    "definition" : "Caldo de fermentação microbiana"
+  }]
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medicinal-product-domain"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem medicinal-product-domain</b></p><a name="medicinal-product-domain"> </a><a name="hcmedicinal-product-domain"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">Human<a name="medicinal-product-domain-Human"> </a></td><td>Uso Humano</td><td>Produto medicinal destinado exclusivamente para uso em seres humanos</td></tr><tr><td style="white-space:nowrap">Veterinary<a name="medicinal-product-domain-Veterinary"> </a></td><td>Uso Veterinário</td><td>Produto medicinal destinado exclusivamente para uso em animais</td></tr><tr><td style="white-space:nowrap">HumanAndVeterinary<a name="medicinal-product-domain-HumanAndVeterinary"> </a></td><td>Uso Humano e Veterinário</td><td>Produto medicinal aprovado tanto para uso humano quanto veterinário</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-domain"/>
+  <version value="0.0.3"/>
+  <name value="MedicinalProductDomain"/>
+  <title value="Domínio de Produto Medicinal"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Domínio aplicável para o produto medicinal (uso humano, veterinário ou ambos)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Human"/>
+    <display value="Uso Humano"/>
+    <definition value="Produto medicinal destinado exclusivamente para uso em seres humanos"/>
+  </concept>
+  <concept>
+    <code value="Veterinary"/>
+    <display value="Uso Veterinário"/>
+    <definition value="Produto medicinal destinado exclusivamente para uso em animais"/>
+  </concept>
+  <concept>
+    <code value="HumanAndVeterinary"/>
+    <display value="Uso Humano e Veterinário"/>
+    <definition value="Produto medicinal aprovado tanto para uso humano quanto veterinário"/>
+  </concept>
+</CodeSystem>

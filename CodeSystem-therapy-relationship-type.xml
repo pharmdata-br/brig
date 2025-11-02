@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="therapy-relationship-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem therapy-relationship-type</b></p><a name="therapy-relationship-type"> </a><a name="hctherapy-relationship-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">contraindicated-with<a name="therapy-relationship-type-contraindicated-with"> </a></td><td>Contraindicado Com</td><td>Uso contraindicado em combinação com outra terapia</td></tr><tr><td style="white-space:nowrap">not-recommended-with<a name="therapy-relationship-type-not-recommended-with"> </a></td><td>Não Recomendado Com</td><td>Uso não recomendado em combinação com outra terapia</td></tr><tr><td style="white-space:nowrap">use-caution-with<a name="therapy-relationship-type-use-caution-with"> </a></td><td>Usar Com Cautela</td><td>Requer cautela ao usar em combinação</td></tr><tr><td style="white-space:nowrap">replace-other-therapy<a name="therapy-relationship-type-replace-other-therapy"> </a></td><td>Substitui Outra Terapia</td><td>Deve substituir outra terapia</td></tr><tr><td style="white-space:nowrap">replace-other-therapy-contraindicated<a name="therapy-relationship-type-replace-other-therapy-contraindicated"> </a></td><td>Substituição Contraindicada</td><td>Não deve substituir outra terapia específica</td></tr><tr><td style="white-space:nowrap">replace-other-therapy-not-recommended<a name="therapy-relationship-type-replace-other-therapy-not-recommended"> </a></td><td>Substituição Não Recomendada</td><td>Não é recomendado como substituto</td></tr><tr><td style="white-space:nowrap">indicated-only-after<a name="therapy-relationship-type-indicated-only-after"> </a></td><td>Indicado Apenas Após</td><td>Indicado apenas após falha de outra terapia</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type"/>
+  <version value="0.0.3"/>
+  <name value="TherapyRelationshipType"/>
+  <title value="Tipo de Relacionamento Terapêutico"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-31"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Relacionamento entre terapia e contraindicação ou indicação"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="contraindicated-with"/>
+    <display value="Contraindicado Com"/>
+    <definition value="Uso contraindicado em combinação com outra terapia"/>
+  </concept>
+  <concept>
+    <code value="not-recommended-with"/>
+    <display value="Não Recomendado Com"/>
+    <definition value="Uso não recomendado em combinação com outra terapia"/>
+  </concept>
+  <concept>
+    <code value="use-caution-with"/>
+    <display value="Usar Com Cautela"/>
+    <definition value="Requer cautela ao usar em combinação"/>
+  </concept>
+  <concept>
+    <code value="replace-other-therapy"/>
+    <display value="Substitui Outra Terapia"/>
+    <definition value="Deve substituir outra terapia"/>
+  </concept>
+  <concept>
+    <code value="replace-other-therapy-contraindicated"/>
+    <display value="Substituição Contraindicada"/>
+    <definition value="Não deve substituir outra terapia específica"/>
+  </concept>
+  <concept>
+    <code value="replace-other-therapy-not-recommended"/>
+    <display value="Substituição Não Recomendada"/>
+    <definition value="Não é recomendado como substituto"/>
+  </concept>
+  <concept>
+    <code value="indicated-only-after"/>
+    <display value="Indicado Apenas Após"/>
+    <definition value="Indicado apenas após falha de outra terapia"/>
+  </concept>
+</CodeSystem>

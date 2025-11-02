@@ -1,0 +1,164 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapeutic-indications-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "therapeutic-indications-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem therapeutic-indications-br</b></p><a name=\"therapeutic-indications-br\"> </a><a name=\"hctherapeutic-indications-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">analgesic<a name=\"therapeutic-indications-br-analgesic\"> </a></td><td>Analgésico</td><td>Tratamento da dor</td></tr><tr><td style=\"white-space:nowrap\">antipyretic<a name=\"therapeutic-indications-br-antipyretic\"> </a></td><td>Antitérmico</td><td>Redução da febre</td></tr><tr><td style=\"white-space:nowrap\">anti-inflammatory<a name=\"therapeutic-indications-br-anti-inflammatory\"> </a></td><td>Anti-inflamatório</td><td>Tratamento de processos inflamatórios</td></tr><tr><td style=\"white-space:nowrap\">sedative<a name=\"therapeutic-indications-br-sedative\"> </a></td><td>Sedativo</td><td>Sedação e tranquilização</td></tr><tr><td style=\"white-space:nowrap\">anxiolytic<a name=\"therapeutic-indications-br-anxiolytic\"> </a></td><td>Ansiolítico</td><td>Tratamento da ansiedade</td></tr><tr><td style=\"white-space:nowrap\">antibiotic<a name=\"therapeutic-indications-br-antibiotic\"> </a></td><td>Antibiótico</td><td>Tratamento de infecções bacterianas</td></tr><tr><td style=\"white-space:nowrap\">antiviral<a name=\"therapeutic-indications-br-antiviral\"> </a></td><td>Antiviral</td><td>Tratamento de infecções virais</td></tr><tr><td style=\"white-space:nowrap\">antifungal<a name=\"therapeutic-indications-br-antifungal\"> </a></td><td>Antifúngico</td><td>Tratamento de infecções fúngicas</td></tr><tr><td style=\"white-space:nowrap\">antihistamine<a name=\"therapeutic-indications-br-antihistamine\"> </a></td><td>Anti-histamínico</td><td>Tratamento de reações alérgicas</td></tr><tr><td style=\"white-space:nowrap\">bronchodilator<a name=\"therapeutic-indications-br-bronchodilator\"> </a></td><td>Broncodilatador</td><td>Tratamento de broncoespasmo</td></tr><tr><td style=\"white-space:nowrap\">antihypertensive<a name=\"therapeutic-indications-br-antihypertensive\"> </a></td><td>Anti-hipertensivo</td><td>Tratamento da hipertensão arterial</td></tr><tr><td style=\"white-space:nowrap\">diuretic<a name=\"therapeutic-indications-br-diuretic\"> </a></td><td>Diurético</td><td>Aumento da diurese</td></tr><tr><td style=\"white-space:nowrap\">cardiotonic<a name=\"therapeutic-indications-br-cardiotonic\"> </a></td><td>Cardiotônico</td><td>Fortalecimento da contração cardíaca</td></tr><tr><td style=\"white-space:nowrap\">anticoagulant<a name=\"therapeutic-indications-br-anticoagulant\"> </a></td><td>Anticoagulante</td><td>Prevenção da coagulação sanguínea</td></tr><tr><td style=\"white-space:nowrap\">hypoglycemic<a name=\"therapeutic-indications-br-hypoglycemic\"> </a></td><td>Hipoglicemiante</td><td>Redução da glicemia</td></tr><tr><td style=\"white-space:nowrap\">hormone-replacement<a name=\"therapeutic-indications-br-hormone-replacement\"> </a></td><td>Reposição Hormonal</td><td>Reposição de hormônios deficientes</td></tr><tr><td style=\"white-space:nowrap\">contraceptive<a name=\"therapeutic-indications-br-contraceptive\"> </a></td><td>Contraceptivo</td><td>Prevenção da gravidez</td></tr><tr><td style=\"white-space:nowrap\">antineoplastic<a name=\"therapeutic-indications-br-antineoplastic\"> </a></td><td>Antineoplásico</td><td>Tratamento de neoplasias</td></tr><tr><td style=\"white-space:nowrap\">immunosuppressive<a name=\"therapeutic-indications-br-immunosuppressive\"> </a></td><td>Imunossupressor</td><td>Supressão do sistema imunológico</td></tr><tr><td style=\"white-space:nowrap\">vaccine<a name=\"therapeutic-indications-br-vaccine\"> </a></td><td>Vacina</td><td>Imunização ativa</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapeutic-indications-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapeutic-indications-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "TherapeuticIndicationsBR"] ; # 
+  fhir:title [ fhir:v "Indicações Terapêuticas - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para indicações terapêuticas de produtos medicinais brasileiros"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "20"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "analgesic" ] ;
+     fhir:display [ fhir:v "Analgésico" ] ;
+     fhir:definition [ fhir:v "Tratamento da dor" ]
+  ] [
+     fhir:code [ fhir:v "antipyretic" ] ;
+     fhir:display [ fhir:v "Antitérmico" ] ;
+     fhir:definition [ fhir:v "Redução da febre" ]
+  ] [
+     fhir:code [ fhir:v "anti-inflammatory" ] ;
+     fhir:display [ fhir:v "Anti-inflamatório" ] ;
+     fhir:definition [ fhir:v "Tratamento de processos inflamatórios" ]
+  ] [
+     fhir:code [ fhir:v "sedative" ] ;
+     fhir:display [ fhir:v "Sedativo" ] ;
+     fhir:definition [ fhir:v "Sedação e tranquilização" ]
+  ] [
+     fhir:code [ fhir:v "anxiolytic" ] ;
+     fhir:display [ fhir:v "Ansiolítico" ] ;
+     fhir:definition [ fhir:v "Tratamento da ansiedade" ]
+  ] [
+     fhir:code [ fhir:v "antibiotic" ] ;
+     fhir:display [ fhir:v "Antibiótico" ] ;
+     fhir:definition [ fhir:v "Tratamento de infecções bacterianas" ]
+  ] [
+     fhir:code [ fhir:v "antiviral" ] ;
+     fhir:display [ fhir:v "Antiviral" ] ;
+     fhir:definition [ fhir:v "Tratamento de infecções virais" ]
+  ] [
+     fhir:code [ fhir:v "antifungal" ] ;
+     fhir:display [ fhir:v "Antifúngico" ] ;
+     fhir:definition [ fhir:v "Tratamento de infecções fúngicas" ]
+  ] [
+     fhir:code [ fhir:v "antihistamine" ] ;
+     fhir:display [ fhir:v "Anti-histamínico" ] ;
+     fhir:definition [ fhir:v "Tratamento de reações alérgicas" ]
+  ] [
+     fhir:code [ fhir:v "bronchodilator" ] ;
+     fhir:display [ fhir:v "Broncodilatador" ] ;
+     fhir:definition [ fhir:v "Tratamento de broncoespasmo" ]
+  ] [
+     fhir:code [ fhir:v "antihypertensive" ] ;
+     fhir:display [ fhir:v "Anti-hipertensivo" ] ;
+     fhir:definition [ fhir:v "Tratamento da hipertensão arterial" ]
+  ] [
+     fhir:code [ fhir:v "diuretic" ] ;
+     fhir:display [ fhir:v "Diurético" ] ;
+     fhir:definition [ fhir:v "Aumento da diurese" ]
+  ] [
+     fhir:code [ fhir:v "cardiotonic" ] ;
+     fhir:display [ fhir:v "Cardiotônico" ] ;
+     fhir:definition [ fhir:v "Fortalecimento da contração cardíaca" ]
+  ] [
+     fhir:code [ fhir:v "anticoagulant" ] ;
+     fhir:display [ fhir:v "Anticoagulante" ] ;
+     fhir:definition [ fhir:v "Prevenção da coagulação sanguínea" ]
+  ] [
+     fhir:code [ fhir:v "hypoglycemic" ] ;
+     fhir:display [ fhir:v "Hipoglicemiante" ] ;
+     fhir:definition [ fhir:v "Redução da glicemia" ]
+  ] [
+     fhir:code [ fhir:v "hormone-replacement" ] ;
+     fhir:display [ fhir:v "Reposição Hormonal" ] ;
+     fhir:definition [ fhir:v "Reposição de hormônios deficientes" ]
+  ] [
+     fhir:code [ fhir:v "contraceptive" ] ;
+     fhir:display [ fhir:v "Contraceptivo" ] ;
+     fhir:definition [ fhir:v "Prevenção da gravidez" ]
+  ] [
+     fhir:code [ fhir:v "antineoplastic" ] ;
+     fhir:display [ fhir:v "Antineoplásico" ] ;
+     fhir:definition [ fhir:v "Tratamento de neoplasias" ]
+  ] [
+     fhir:code [ fhir:v "immunosuppressive" ] ;
+     fhir:display [ fhir:v "Imunossupressor" ] ;
+     fhir:definition [ fhir:v "Supressão do sistema imunológico" ]
+  ] [
+     fhir:code [ fhir:v "vaccine" ] ;
+     fhir:display [ fhir:v "Vacina" ] ;
+     fhir:definition [ fhir:v "Imunização ativa" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaging-type-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "packaging-type-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem packaging-type-br</b></p><a name=\"packaging-type-br\"> </a><a name=\"hcpackaging-type-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">blister<a name=\"packaging-type-br-blister\"> </a></td><td>Blister</td><td>Embalagem blister para comprimidos/cápsulas</td></tr><tr><td style=\"white-space:nowrap\">frasco<a name=\"packaging-type-br-frasco\"> </a></td><td>Frasco</td><td>Frasco para líquidos ou sólidos</td></tr><tr><td style=\"white-space:nowrap\">ampola<a name=\"packaging-type-br-ampola\"> </a></td><td>Ampola</td><td>Ampola para injetáveis</td></tr><tr><td style=\"white-space:nowrap\">seringa<a name=\"packaging-type-br-seringa\"> </a></td><td>Seringa Preenchida</td><td>Seringa pré-preenchida</td></tr><tr><td style=\"white-space:nowrap\">vial<a name=\"packaging-type-br-vial\"> </a></td><td>Frasco-ampola (Vial)</td><td>Frasco-ampola para injetáveis</td></tr><tr><td style=\"white-space:nowrap\">sachê<a name=\"packaging-type-br-sach.234\"> </a></td><td>Sachê</td><td>Sachê para pós ou granulados</td></tr><tr><td style=\"white-space:nowrap\">tubo<a name=\"packaging-type-br-tubo\"> </a></td><td>Tubo</td><td>Tubo para cremes/pomadas</td></tr><tr><td style=\"white-space:nowrap\">envelope<a name=\"packaging-type-br-envelope\"> </a></td><td>Envelope</td><td>Envelope para produtos em pó</td></tr><tr><td style=\"white-space:nowrap\">caixa<a name=\"packaging-type-br-caixa\"> </a></td><td>Caixa</td><td>Caixa de papelão</td></tr><tr><td style=\"white-space:nowrap\">estojo<a name=\"packaging-type-br-estojo\"> </a></td><td>Estojo</td><td>Estojo para múltiplas unidades</td></tr><tr><td style=\"white-space:nowrap\">cartucho<a name=\"packaging-type-br-cartucho\"> </a></td><td>Cartucho</td><td>Cartucho para produtos específicos</td></tr><tr><td style=\"white-space:nowrap\">frasco-gotejador<a name=\"packaging-type-br-frasco-gotejador\"> </a></td><td>Frasco Gotejador</td><td>Frasco com sistema gotejador</td></tr><tr><td style=\"white-space:nowrap\">spray<a name=\"packaging-type-br-spray\"> </a></td><td>Frasco Spray</td><td>Frasco com sistema de spray</td></tr><tr><td style=\"white-space:nowrap\">inalador<a name=\"packaging-type-br-inalador\"> </a></td><td>Inalador</td><td>Dispositivo inalador</td></tr><tr><td style=\"white-space:nowrap\">dispositivo-aplicacao<a name=\"packaging-type-br-dispositivo-aplicacao\"> </a></td><td>Dispositivo de Aplicação</td><td>Dispositivo especial para aplicação</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaging-type-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaging-type-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "PackagingTypeBR"] ; # 
+  fhir:title [ fhir:v "Tipos de Embalagem - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para tipos de embalagem no Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "blister" ] ;
+     fhir:display [ fhir:v "Blister" ] ;
+     fhir:definition [ fhir:v "Embalagem blister para comprimidos/cápsulas" ]
+  ] [
+     fhir:code [ fhir:v "frasco" ] ;
+     fhir:display [ fhir:v "Frasco" ] ;
+     fhir:definition [ fhir:v "Frasco para líquidos ou sólidos" ]
+  ] [
+     fhir:code [ fhir:v "ampola" ] ;
+     fhir:display [ fhir:v "Ampola" ] ;
+     fhir:definition [ fhir:v "Ampola para injetáveis" ]
+  ] [
+     fhir:code [ fhir:v "seringa" ] ;
+     fhir:display [ fhir:v "Seringa Preenchida" ] ;
+     fhir:definition [ fhir:v "Seringa pré-preenchida" ]
+  ] [
+     fhir:code [ fhir:v "vial" ] ;
+     fhir:display [ fhir:v "Frasco-ampola (Vial)" ] ;
+     fhir:definition [ fhir:v "Frasco-ampola para injetáveis" ]
+  ] [
+     fhir:code [ fhir:v "sachê" ] ;
+     fhir:display [ fhir:v "Sachê" ] ;
+     fhir:definition [ fhir:v "Sachê para pós ou granulados" ]
+  ] [
+     fhir:code [ fhir:v "tubo" ] ;
+     fhir:display [ fhir:v "Tubo" ] ;
+     fhir:definition [ fhir:v "Tubo para cremes/pomadas" ]
+  ] [
+     fhir:code [ fhir:v "envelope" ] ;
+     fhir:display [ fhir:v "Envelope" ] ;
+     fhir:definition [ fhir:v "Envelope para produtos em pó" ]
+  ] [
+     fhir:code [ fhir:v "caixa" ] ;
+     fhir:display [ fhir:v "Caixa" ] ;
+     fhir:definition [ fhir:v "Caixa de papelão" ]
+  ] [
+     fhir:code [ fhir:v "estojo" ] ;
+     fhir:display [ fhir:v "Estojo" ] ;
+     fhir:definition [ fhir:v "Estojo para múltiplas unidades" ]
+  ] [
+     fhir:code [ fhir:v "cartucho" ] ;
+     fhir:display [ fhir:v "Cartucho" ] ;
+     fhir:definition [ fhir:v "Cartucho para produtos específicos" ]
+  ] [
+     fhir:code [ fhir:v "frasco-gotejador" ] ;
+     fhir:display [ fhir:v "Frasco Gotejador" ] ;
+     fhir:definition [ fhir:v "Frasco com sistema gotejador" ]
+  ] [
+     fhir:code [ fhir:v "spray" ] ;
+     fhir:display [ fhir:v "Frasco Spray" ] ;
+     fhir:definition [ fhir:v "Frasco com sistema de spray" ]
+  ] [
+     fhir:code [ fhir:v "inalador" ] ;
+     fhir:display [ fhir:v "Inalador" ] ;
+     fhir:definition [ fhir:v "Dispositivo inalador" ]
+  ] [
+     fhir:code [ fhir:v "dispositivo-aplicacao" ] ;
+     fhir:display [ fhir:v "Dispositivo de Aplicação" ] ;
+     fhir:definition [ fhir:v "Dispositivo especial para aplicação" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

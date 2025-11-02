@@ -1,0 +1,89 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "substance-status-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-status-br</b></p><a name=\"substance-status-br\"> </a><a name=\"hcsubstance-status-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"substance-status-br-active\"> </a></td><td>Ativa</td><td>Substância com status ativo para uso em medicamentos</td></tr><tr><td style=\"white-space:nowrap\">inactive<a name=\"substance-status-br-inactive\"> </a></td><td>Inativa</td><td>Substância com status inativo</td></tr><tr><td style=\"white-space:nowrap\">superseded<a name=\"substance-status-br-superseded\"> </a></td><td>Substituída</td><td>Substância substituída por outra</td></tr><tr><td style=\"white-space:nowrap\">provisional<a name=\"substance-status-br-provisional\"> </a></td><td>Provisória</td><td>Substância com aprovação provisória</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"substance-status-br-withdrawn\"> </a></td><td>Retirada</td><td>Substância retirada do mercado</td></tr><tr><td style=\"white-space:nowrap\">under-review<a name=\"substance-status-br-under-review\"> </a></td><td>Em Análise</td><td>Substância em processo de análise regulatória</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-status-br",
+  "version" : "0.0.3",
+  "name" : "SubstanceStatusBR",
+  "title" : "Status de Substância - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para status regulatório de substâncias no Brasil",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "active",
+    "display" : "Ativa",
+    "definition" : "Substância com status ativo para uso em medicamentos"
+  },
+  {
+    "code" : "inactive",
+    "display" : "Inativa",
+    "definition" : "Substância com status inativo"
+  },
+  {
+    "code" : "superseded",
+    "display" : "Substituída",
+    "definition" : "Substância substituída por outra"
+  },
+  {
+    "code" : "provisional",
+    "display" : "Provisória",
+    "definition" : "Substância com aprovação provisória"
+  },
+  {
+    "code" : "withdrawn",
+    "display" : "Retirada",
+    "definition" : "Substância retirada do mercado"
+  },
+  {
+    "code" : "under-review",
+    "display" : "Em Análise",
+    "definition" : "Substância em processo de análise regulatória"
+  }]
+}

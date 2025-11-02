@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "medicinal-product-code-atc",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet medicinal-product-code-atc</b></p><a name=\"medicinal-product-code-atc\"> </a><a name=\"hcmedicinal-product-code-atc\"> </a><ul><li>Include todos os códigos definidos em <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-code-atc",
+  "version" : "0.0.3",
+  "name" : "MedicinalProductCodeATC",
+  "title" : "Códigos de Produto Medicinal (WHO ATC)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Códigos da Classificação Anatômica Terapêutica Química (ATC) da OMS para produtos medicinais e substâncias farmacêuticas.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "purpose" : "Classificar produtos medicinais conforme sistema ATC da OMS para interoperabilidade internacional",
+  "copyright" : "WHO ATC é mantido pela Organização Mundial da Saúde. Uso permitido para fins de interoperabilidade em saúde.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}

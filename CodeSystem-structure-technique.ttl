@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-technique> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "structure-technique"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem structure-technique</b></p><a name=\"structure-technique\"> </a><a name=\"hcstructure-technique\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">NMR<a name=\"structure-technique-NMR\"> </a></td><td>Ressonância Magnética Nuclear</td><td>NMR - Nuclear Magnetic Resonance</td></tr><tr><td style=\"white-space:nowrap\">H-NMR<a name=\"structure-technique-H-NMR\"> </a></td><td>RMN de Hidrogênio</td><td>Ressonância Magnética Nuclear de ¹H</td></tr><tr><td style=\"white-space:nowrap\">C-NMR<a name=\"structure-technique-C-NMR\"> </a></td><td>RMN de Carbono</td><td>Ressonância Magnética Nuclear de ¹³C</td></tr><tr><td style=\"white-space:nowrap\">MS<a name=\"structure-technique-MS\"> </a></td><td>Espectrometria de Massas</td><td>Mass Spectrometry</td></tr><tr><td style=\"white-space:nowrap\">IR<a name=\"structure-technique-IR\"> </a></td><td>Infravermelho</td><td>Espectroscopia no Infravermelho</td></tr><tr><td style=\"white-space:nowrap\">UV<a name=\"structure-technique-UV\"> </a></td><td>Ultravioleta</td><td>Espectroscopia UV-Vis</td></tr><tr><td style=\"white-space:nowrap\">X-ray-crystallography<a name=\"structure-technique-X-ray-crystallography\"> </a></td><td>Cristalografia de Raios-X</td><td>Difração de raios-X em monocristal</td></tr><tr><td style=\"white-space:nowrap\">HPLC<a name=\"structure-technique-HPLC\"> </a></td><td>Cromatografia Líquida de Alta Eficiência</td><td>High Performance Liquid Chromatography</td></tr><tr><td style=\"white-space:nowrap\">GC<a name=\"structure-technique-GC\"> </a></td><td>Cromatografia Gasosa</td><td>Gas Chromatography</td></tr><tr><td style=\"white-space:nowrap\">elemental-analysis<a name=\"structure-technique-elemental-analysis\"> </a></td><td>Análise Elementar</td><td>Determinação quantitativa de elementos (C, H, N, O)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-technique"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-technique>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "StructureTechnique"] ; # 
+  fhir:title [ fhir:v "Técnicas de Caracterização Estrutural"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Técnicas analíticas para determinação de estrutura molecular"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NMR" ] ;
+     fhir:display [ fhir:v "Ressonância Magnética Nuclear" ] ;
+     fhir:definition [ fhir:v "NMR - Nuclear Magnetic Resonance" ]
+  ] [
+     fhir:code [ fhir:v "H-NMR" ] ;
+     fhir:display [ fhir:v "RMN de Hidrogênio" ] ;
+     fhir:definition [ fhir:v "Ressonância Magnética Nuclear de ¹H" ]
+  ] [
+     fhir:code [ fhir:v "C-NMR" ] ;
+     fhir:display [ fhir:v "RMN de Carbono" ] ;
+     fhir:definition [ fhir:v "Ressonância Magnética Nuclear de ¹³C" ]
+  ] [
+     fhir:code [ fhir:v "MS" ] ;
+     fhir:display [ fhir:v "Espectrometria de Massas" ] ;
+     fhir:definition [ fhir:v "Mass Spectrometry" ]
+  ] [
+     fhir:code [ fhir:v "IR" ] ;
+     fhir:display [ fhir:v "Infravermelho" ] ;
+     fhir:definition [ fhir:v "Espectroscopia no Infravermelho" ]
+  ] [
+     fhir:code [ fhir:v "UV" ] ;
+     fhir:display [ fhir:v "Ultravioleta" ] ;
+     fhir:definition [ fhir:v "Espectroscopia UV-Vis" ]
+  ] [
+     fhir:code [ fhir:v "X-ray-crystallography" ] ;
+     fhir:display [ fhir:v "Cristalografia de Raios-X" ] ;
+     fhir:definition [ fhir:v "Difração de raios-X em monocristal" ]
+  ] [
+     fhir:code [ fhir:v "HPLC" ] ;
+     fhir:display [ fhir:v "Cromatografia Líquida de Alta Eficiência" ] ;
+     fhir:definition [ fhir:v "High Performance Liquid Chromatography" ]
+  ] [
+     fhir:code [ fhir:v "GC" ] ;
+     fhir:display [ fhir:v "Cromatografia Gasosa" ] ;
+     fhir:definition [ fhir:v "Gas Chromatography" ]
+  ] [
+     fhir:code [ fhir:v "elemental-analysis" ] ;
+     fhir:display [ fhir:v "Análise Elementar" ] ;
+     fhir:definition [ fhir:v "Determinação quantitativa de elementos (C, H, N, O)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

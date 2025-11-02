@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="structure-representation-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem structure-representation-type</b></p><a name="structure-representation-type"> </a><a name="hcstructure-representation-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">SMILES<a name="structure-representation-type-SMILES"> </a></td><td>SMILES</td><td>Simplified Molecular Input Line Entry System</td></tr><tr><td style="white-space:nowrap">InChI<a name="structure-representation-type-InChI"> </a></td><td>InChI</td><td>IUPAC International Chemical Identifier</td></tr><tr><td style="white-space:nowrap">InChIKey<a name="structure-representation-type-InChIKey"> </a></td><td>InChI Key</td><td>InChI Hash Key</td></tr><tr><td style="white-space:nowrap">MOL<a name="structure-representation-type-MOL"> </a></td><td>MOL File</td><td>MDL Molfile format</td></tr><tr><td style="white-space:nowrap">SDF<a name="structure-representation-type-SDF"> </a></td><td>SDF</td><td>Structure Data File</td></tr><tr><td style="white-space:nowrap">PDB<a name="structure-representation-type-PDB"> </a></td><td>PDB</td><td>Protein Data Bank format</td></tr><tr><td style="white-space:nowrap">CML<a name="structure-representation-type-CML"> </a></td><td>CML</td><td>Chemical Markup Language</td></tr><tr><td style="white-space:nowrap">CDX<a name="structure-representation-type-CDX"> </a></td><td>ChemDraw</td><td>ChemDraw format</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-representation-type"/>
+  <version value="0.0.3"/>
+  <name value="StructureRepresentationType"/>
+  <title value="Tipo de Representação Estrutural"/>
+  <status value="active"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Formatos de representação de estruturas químicas"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="SMILES"/>
+    <display value="SMILES"/>
+    <definition value="Simplified Molecular Input Line Entry System"/>
+  </concept>
+  <concept>
+    <code value="InChI"/>
+    <display value="InChI"/>
+    <definition value="IUPAC International Chemical Identifier"/>
+  </concept>
+  <concept>
+    <code value="InChIKey"/>
+    <display value="InChI Key"/>
+    <definition value="InChI Hash Key"/>
+  </concept>
+  <concept>
+    <code value="MOL"/>
+    <display value="MOL File"/>
+    <definition value="MDL Molfile format"/>
+  </concept>
+  <concept>
+    <code value="SDF"/>
+    <display value="SDF"/>
+    <definition value="Structure Data File"/>
+  </concept>
+  <concept>
+    <code value="PDB"/>
+    <display value="PDB"/>
+    <definition value="Protein Data Bank format"/>
+  </concept>
+  <concept>
+    <code value="CML"/>
+    <display value="CML"/>
+    <definition value="Chemical Markup Language"/>
+  </concept>
+  <concept>
+    <code value="CDX"/>
+    <display value="ChemDraw"/>
+    <definition value="ChemDraw format"/>
+  </concept>
+</CodeSystem>

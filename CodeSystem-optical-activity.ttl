@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "optical-activity"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem optical-activity</b></p><a name=\"optical-activity\"> </a><a name=\"hcoptical-activity\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">dextrorotatory<a name=\"optical-activity-dextrorotatory\"> </a></td><td>Dextrorrotatório (+)</td><td>Desvia luz polarizada para direita (rotação positiva)</td></tr><tr><td style=\"white-space:nowrap\">levorotatory<a name=\"optical-activity-levorotatory\"> </a></td><td>Levorrotatório (-)</td><td>Desvia luz polarizada para esquerda (rotação negativa)</td></tr><tr><td style=\"white-space:nowrap\">optically-inactive<a name=\"optical-activity-optically-inactive\"> </a></td><td>Opticamente Inativo</td><td>Não desvia luz polarizada (racêmico ou aquiral)</td></tr><tr><td style=\"white-space:nowrap\">d-form<a name=\"optical-activity-d-form\"> </a></td><td>Forma D</td><td>Nomenclatura D/L (configuração)</td></tr><tr><td style=\"white-space:nowrap\">l-form<a name=\"optical-activity-l-form\"> </a></td><td>Forma L</td><td>Nomenclatura D/L (configuração)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "OpticalActivity"] ; # 
+  fhir:title [ fhir:v "Atividade Óptica"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Atividade óptica de substâncias quirais (rotação da luz polarizada)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dextrorotatory" ] ;
+     fhir:display [ fhir:v "Dextrorrotatório (+)" ] ;
+     fhir:definition [ fhir:v "Desvia luz polarizada para direita (rotação positiva)" ]
+  ] [
+     fhir:code [ fhir:v "levorotatory" ] ;
+     fhir:display [ fhir:v "Levorrotatório (-)" ] ;
+     fhir:definition [ fhir:v "Desvia luz polarizada para esquerda (rotação negativa)" ]
+  ] [
+     fhir:code [ fhir:v "optically-inactive" ] ;
+     fhir:display [ fhir:v "Opticamente Inativo" ] ;
+     fhir:definition [ fhir:v "Não desvia luz polarizada (racêmico ou aquiral)" ]
+  ] [
+     fhir:code [ fhir:v "d-form" ] ;
+     fhir:display [ fhir:v "Forma D" ] ;
+     fhir:definition [ fhir:v "Nomenclatura D/L (configuração)" ]
+  ] [
+     fhir:code [ fhir:v "l-form" ] ;
+     fhir:display [ fhir:v "Forma L" ] ;
+     fhir:definition [ fhir:v "Nomenclatura D/L (configuração)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

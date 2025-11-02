@@ -1,0 +1,1400 @@
+<hr/><a name="l1"> </a>
+<p>#1</p>
+<pre>
+GET https://tx.fhir.org/r5/metadata HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+User-Agent: fhir/publisher
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:4221
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:36 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155452
+
+{&quot;resourceType&quot; : &quot;CapabilityStatement&quot;,&quot;id&quot; : &quot;FhirServer&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Local User Conformance Statement&lt;/h2&gt;&lt;p&gt;FHIR v5.0.0 released 20251009165645.000Z. Server version 4.0.1 built 20251009165645.000Z&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;Read&lt;/th&gt;&lt;th&gt;V-Read&lt;/th&gt;&lt;th&gt;Search&lt;/th&gt;&lt;th&gt;Update&lt;/th&gt;&lt;th&gt;Updates&lt;/th&gt;&lt;th&gt;Create&lt;/th&gt;&lt;th&gt;Delete&lt;/th&gt;&lt;th&gt;History&lt;/th&gt;&lt;/tr&gt;\n&lt;/table&gt;\n&lt;p&gt;Operations&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;expand: see OperationDefinition/fso-expand&lt;/li&gt;\n &lt;li&gt;lookup: see OperationDefinition/fso-lookup&lt;/li&gt;\n &lt;li&gt;validate-code: see OperationDefinition/fso-validate-code&lt;/li&gt;\n &lt;li&gt;batch-validate-code: see OperationDefinition/fso-batch-validate-code&lt;/li&gt;\n &lt;li&gt;translate: see OperationDefinition/fso-translate&lt;/li&gt;\n &lt;li&gt;closure: see OperationDefinition/fso-closure&lt;/li&gt;\n &lt;li&gt;versions: see OperationDefinition/fso-versions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;},&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;1.8.0&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;name&quot;,&quot;valueCode&quot; : &quot;mode&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;tx.fhir.org&quot;}],&quot;url&quot; : &quot;qualifier&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueBoolean&quot; : true}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot; : &quot;http://tx.fhir.org/r5/CapabilityStatement/tx&quot;,&quot;version&quot; : &quot;5.0.0-4.0.1&quot;,&quot;name&quot; : &quot;FHIRReferenceServer&quot;,&quot;title&quot; : &quot;FHIR Reference Server Conformance Statement&quot;,&quot;status&quot; : &quot;active&quot;,&quot;date&quot; : &quot;2025-11-02T13:29:36.395Z&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;other&quot;,&quot;value&quot; : &quot;http://healthintersections.com.au/&quot;}]}],&quot;description&quot; : &quot;Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections&quot;,&quot;kind&quot; : &quot;instance&quot;,&quot;instantiates&quot; : [&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;,&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot; : {&quot;name&quot; : &quot;HealthIntersections Server&quot;,&quot;version&quot; : &quot;4.0.1&quot;,&quot;releaseDate&quot; : &quot;2025-10-09T16:56:45.000Z&quot;},&quot;implementation&quot; : {&quot;description&quot; : &quot;FHIR Server running at http://tx.fhir.org/r5&quot;,&quot;url&quot; : &quot;http://tx.fhir.org/r5&quot;},&quot;fhirVersion&quot; : &quot;5.0.0&quot;,&quot;format&quot; : [&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot; : [{&quot;mode&quot; : &quot;server&quot;,&quot;security&quot; : {&quot;cors&quot; : true},&quot;resource&quot; : [{&quot;type&quot; : &quot;CodeSystem&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a code system&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;}]},{&quot;type&quot; : &quot;ValueSet&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a ValueSet&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the value sets&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;}]}],&quot;interaction&quot; : [{&quot;code&quot; : &quot;transaction&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-lookup&quot;},{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot; : &quot;batch-validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-batch-validate-code&quot;},{&quot;name&quot; : &quot;translate&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot; : &quot;closure&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot; : &quot;versions&quot;,&quot;definition&quot; : &quot;http://tx.fhir.org/r5/OperationDefinition/fso-versions&quot;}]}]}
+</pre>
+<hr/><a name="l2"> </a>
+<p>#2</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"cbaf"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1822
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:53 GMT
+last-modified:Sun, 02 Nov 2025 13:29:53 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155466
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;cbaf&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l3"> </a>
+<p>#3</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1814
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:54 GMT
+last-modified:Sun, 02 Nov 2025 13:29:54 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155468
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"cbaf"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1822
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:55 GMT
+last-modified:Sun, 02 Nov 2025 13:29:55 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155471
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;cbaf&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"otc"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1819
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:56 GMT
+last-modified:Sun, 02 Nov 2025 13:29:56 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155474
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;otc&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#otc (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#otc\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1814
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:57 GMT
+last-modified:Sun, 02 Nov 2025 13:29:57 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155477
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"cbaf"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1822
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:58 GMT
+last-modified:Sun, 02 Nov 2025 13:29:58 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155479
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;cbaf&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"otc"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1819
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:58 GMT
+last-modified:Sun, 02 Nov 2025 13:29:58 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155481
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;otc&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#otc (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#otc\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l9"> </a>
+<p>#9</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"pediatric"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1837
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:29:59 GMT
+last-modified:Sun, 02 Nov 2025 13:29:59 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155483
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;pediatric&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#pediatric (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#pediatric\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l10"> </a>
+<p>#10</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1814
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:00 GMT
+last-modified:Sun, 02 Nov 2025 13:30:00 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155486
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l11"> </a>
+<p>#11</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"cbaf"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1822
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:01 GMT
+last-modified:Sun, 02 Nov 2025 13:30:01 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155488
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;cbaf&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l12"> </a>
+<p>#12</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1814
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:02 GMT
+last-modified:Sun, 02 Nov 2025 13:30:02 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155491
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l13"> </a>
+<p>#13</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type","code":"commercial"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1791
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:04 GMT
+last-modified:Sun, 02 Nov 2025 13:30:04 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155496
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;commercial&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type#commercial (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type#commercial\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l14"> </a>
+<p>#14</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/product-operation","code":"manufacture"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1598
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:05 GMT
+last-modified:Sun, 02 Nov 2025 13:30:05 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155499
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/product-operation&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/product-operation&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;manufacture&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/product-operation' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/product-operation' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://hl7.org/fhir/product-operation#manufacture (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://hl7.org/fhir/product-operation#manufacture\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://hl7.org/fhir/product-operation\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l15"> </a>
+<p>#15</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type","code":"commercial"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1791
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:05 GMT
+last-modified:Sun, 02 Nov 2025 13:30:05 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155501
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;commercial&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type#commercial (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type#commercial\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l16"> </a>
+<p>#16</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/product-operation","code":"manufacture"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1598
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:06 GMT
+last-modified:Sun, 02 Nov 2025 13:30:06 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155504
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/product-operation&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/product-operation&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;manufacture&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/product-operation' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/product-operation' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://hl7.org/fhir/product-operation#manufacture (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://hl7.org/fhir/product-operation#manufacture\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://hl7.org/fhir/product-operation\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l17"> </a>
+<p>#17</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type","code":"official"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1799
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:09 GMT
+last-modified:Sun, 02 Nov 2025 13:30:09 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155510
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;official&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#official (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#official\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l18"> </a>
+<p>#18</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br","code":"current"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1831
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:10 GMT
+last-modified:Sun, 02 Nov 2025 13:30:10 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155512
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;current&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l19"> </a>
+<p>#19</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type","code":"common"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1793
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:10 GMT
+last-modified:Sun, 02 Nov 2025 13:30:10 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155515
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;common&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#common (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#common\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l20"> </a>
+<p>#20</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br","code":"current"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1831
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:11 GMT
+last-modified:Sun, 02 Nov 2025 13:30:11 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155517
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;current&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l21"> </a>
+<p>#21</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type","code":"common"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1793
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:12 GMT
+last-modified:Sun, 02 Nov 2025 13:30:12 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155520
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;common&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#common (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#common\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l22"> </a>
+<p>#22</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br","code":"current"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1831
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:13 GMT
+last-modified:Sun, 02 Nov 2025 13:30:13 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155522
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;current&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l23"> </a>
+<p>#23</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.meddra.org","code":"10055458"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1481
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:14 GMT
+last-modified:Sun, 02 Nov 2025 13:30:14 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155525
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;10055458&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://www.meddra.org#10055458 (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://www.meddra.org#10055458\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://www.meddra.org\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l24"> </a>
+<p>#24</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.meddra.org","code":"10201100"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1481
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:15 GMT
+last-modified:Sun, 02 Nov 2025 13:30:15 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155528
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;10201100&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://www.meddra.org#10201100 (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://www.meddra.org#10201100\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://www.meddra.org\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l25"> </a>
+<p>#25</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.meddra.org","code":"10055458"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"displayLanguage","valueCode":"pt-BR"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1477
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:29 GMT
+last-modified:Sun, 02 Nov 2025 13:30:29 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155562
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;10055458&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://www.meddra.org#10055458 (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://www.meddra.org#10055458\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://www.meddra.org\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l26"> </a>
+<p>#26</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.meddra.org","code":"10201100"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"displayLanguage","valueCode":"pt-BR"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1477
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:30:30 GMT
+last-modified:Sun, 02 Nov 2025 13:30:30 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155565
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;10201100&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://www.meddra.org#10201100 (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://www.meddra.org#10201100\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://www.meddra.org\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l27"> </a>
+<p>#27</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br","code":"cbaf"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1822
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:06 GMT
+last-modified:Sun, 02 Nov 2025 13:31:06 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155637
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;cbaf&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br#cbaf\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l28"> </a>
+<p>#28</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1814
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:07 GMT
+last-modified:Sun, 02 Nov 2025 13:31:07 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155638
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l29"> </a>
+<p>#29</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br","code":"medicamento"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1850
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:08 GMT
+last-modified:Sun, 02 Nov 2025 13:31:08 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155644
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;medicamento&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br#medicamento (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br#medicamento\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l30"> </a>
+<p>#30</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br","code":"venda-livre"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1829
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:08 GMT
+last-modified:Sun, 02 Nov 2025 13:31:08 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155645
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;venda-livre&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br#venda-livre (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br#venda-livre\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l31"> </a>
+<p>#31</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1793
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:09 GMT
+last-modified:Sun, 02 Nov 2025 13:31:09 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155647
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l32"> </a>
+<p>#32</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose","code":"regulatory-affairs"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1892
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:10 GMT
+last-modified:Sun, 02 Nov 2025 13:31:10 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155648
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;regulatory-affairs&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose#regulatory-affairs (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose#regulatory-affairs\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l33"> </a>
+<p>#33</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type","code":"commercial"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1791
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:11 GMT
+last-modified:Sun, 02 Nov 2025 13:31:11 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155649
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;commercial&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type#commercial (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type#commercial\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l34"> </a>
+<p>#34</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/route-codes","code":"PO","display":"Oral"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1533
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:12 GMT
+last-modified:Sun, 02 Nov 2025 13:31:12 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155650
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/route-codes&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/route-codes&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;PO&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/route-codes' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/route-codes' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://hl7.org/fhir/route-codes#PO (\&quot;Oral\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://hl7.org/fhir/route-codes#PO\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://hl7.org/fhir/route-codes\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l35"> </a>
+<p>#35</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/product-operation","code":"manufacture"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1598
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:13 GMT
+last-modified:Sun, 02 Nov 2025 13:31:13 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155651
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/product-operation&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/product-operation&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;manufacture&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/product-operation' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/product-operation' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://hl7.org/fhir/product-operation#manufacture (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://hl7.org/fhir/product-operation#manufacture\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://hl7.org/fhir/product-operation\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l36"> </a>
+<p>#36</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br","code":"medicamento"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1843
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:14 GMT
+last-modified:Sun, 02 Nov 2025 13:31:14 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155654
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;medicamento&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br#medicamento (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br#medicamento\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l37"> </a>
+<p>#37</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br","code":"caixa"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1776
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:15 GMT
+last-modified:Sun, 02 Nov 2025 13:31:15 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155657
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;caixa&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br#caixa (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br#caixa\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l38"> </a>
+<p>#38</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material","code":"papel"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1783
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:15 GMT
+last-modified:Sun, 02 Nov 2025 13:31:15 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155660
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;papel&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material#papel (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material#papel\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l39"> </a>
+<p>#39</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item","code":"dipirona-comp-500mg","display":"Dipirona Sódica 500mg comprimido"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1851
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:16 GMT
+last-modified:Sun, 02 Nov 2025 13:31:16 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155664
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;dipirona-comp-500mg&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item#dipirona-comp-500mg (\&quot;Dipirona Sódica 500mg comprimido\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item#dipirona-comp-500mg\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/manufactured-item\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l40"> </a>
+<p>#40</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br","code":"armazenamento","display":"Condições de armazenamento"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1884
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:17 GMT
+last-modified:Sun, 02 Nov 2025 13:31:17 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155666
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;armazenamento&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br#armazenamento (\&quot;Condições de armazenamento\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br#armazenamento\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l41"> </a>
+<p>#41</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br","code":"temperatura-ambiente","display":"Temperatura ambiente"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1862
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:18 GMT
+last-modified:Sun, 02 Nov 2025 13:31:18 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155667
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;temperatura-ambiente&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br#temperatura-ambiente (\&quot;Temperatura ambiente\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br#temperatura-ambiente\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/storage-condition-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l42"> </a>
+<p>#42</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br","code":"proteger-luz","display":"Proteger da luz"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1784
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:19 GMT
+last-modified:Sun, 02 Nov 2025 13:31:19 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155669
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;proteger-luz&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br#proteger-luz (\&quot;Proteger da luz\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br#proteger-luz\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/protection-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l43"> </a>
+<p>#43</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1793
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:20 GMT
+last-modified:Sun, 02 Nov 2025 13:31:20 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155670
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l44"> </a>
+<p>#44</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br","code":"active"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1849
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:20 GMT
+last-modified:Sun, 02 Nov 2025 13:31:20 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155672
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;active&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br#active (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br#active\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l45"> </a>
+<p>#45</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://terminology.hl7.org/CodeSystem/medicinalproduct-domain","code":"Human"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1748
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:21 GMT
+last-modified:Sun, 02 Nov 2025 13:31:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155673
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://terminology.hl7.org/CodeSystem/medicinalproduct-domain&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://terminology.hl7.org/CodeSystem/medicinalproduct-domain&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;Human&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/medicinalproduct-domain' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/medicinalproduct-domain' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://terminology.hl7.org/CodeSystem/medicinalproduct-domain#Human (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://terminology.hl7.org/CodeSystem/medicinalproduct-domain#Human\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://terminology.hl7.org/CodeSystem/medicinalproduct-domain\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l46"> </a>
+<p>#46</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade","code":"pharmaceutical"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1789
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:22 GMT
+last-modified:Sun, 02 Nov 2025 13:31:22 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155676
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;pharmaceutical&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade#pharmaceutical (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade#pharmaceutical\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l47"> </a>
+<p>#47</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/substance-property-type","code":"MolecularWeight"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1652
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:23 GMT
+last-modified:Sun, 02 Nov 2025 13:31:23 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155679
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/substance-property-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/substance-property-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;MolecularWeight&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/substance-property-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/substance-property-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://hl7.org/fhir/substance-property-type#MolecularWeight (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://hl7.org/fhir/substance-property-type#MolecularWeight\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://hl7.org/fhir/substance-property-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l48"> </a>
+<p>#48</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type","code":"official"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1799
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:24 GMT
+last-modified:Sun, 02 Nov 2025 13:31:24 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155681
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;official&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#official (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type#official\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l49"> </a>
+<p>#49</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br","code":"solubility"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1854
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:25 GMT
+last-modified:Sun, 02 Nov 2025 13:31:25 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155683
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;solubility&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br#solubility (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br#solubility\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l50"> </a>
+<p>#50</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br","code":"current"}},{"name":"displayLanguage","valueString":"pt-BR"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1831
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:31:26 GMT
+last-modified:Sun, 02 Nov 2025 13:31:26 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155687
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;current&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=pt-BR, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br#current\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l51"> </a>
+<p>#51</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.meddra.org","code":"10055458"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1481
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:33:01 GMT
+last-modified:Sun, 02 Nov 2025 13:33:01 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155777
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;10055458&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://www.meddra.org#10055458 (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://www.meddra.org#10055458\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://www.meddra.org\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l52"> </a>
+<p>#52</p>
+<pre>
+POST https://tx.fhir.org/r5/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=5.0
+Content-Type: application/fhir+json; fhirVersion=5.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://www.meddra.org","code":"10201100"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"1bd00e13-4637-4574-9f3b-25c2f4655165"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1481
+content-type:application/fhir+json
+date:Sun, 02 Nov 2025 13:33:04 GMT
+last-modified:Sun, 02 Nov 2025 13:33:04 GMT
+pragma:no-cache
+server:nginx
+x-request-id:243-155779
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://www.meddra.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;10201100&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://www.meddra.org' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \&quot;[http://www.meddra.org#10201100 (\&quot;\&quot;)]\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \&quot;http://www.meddra.org#10201100\&quot;\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \&quot;http://www.meddra.org\&quot;\r\n&quot;}]}
+</pre>

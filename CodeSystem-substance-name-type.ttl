@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-name-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-name-type</b></p><a name=\"substance-name-type\"> </a><a name=\"hcsubstance-name-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">official<a name=\"substance-name-type-official\"> </a></td><td>Nome Oficial</td><td>Nome oficial ou sistemático da substância</td></tr><tr><td style=\"white-space:nowrap\">common<a name=\"substance-name-type-common\"> </a></td><td>Nome Comum</td><td>Nome comum ou trivial da substância</td></tr><tr><td style=\"white-space:nowrap\">dcb<a name=\"substance-name-type-dcb\"> </a></td><td>DCB</td><td>Denominação Comum Brasileira</td></tr><tr><td style=\"white-space:nowrap\">dci<a name=\"substance-name-type-dci\"> </a></td><td>DCI</td><td>Denominação Comum Internacional</td></tr><tr><td style=\"white-space:nowrap\">chemical<a name=\"substance-name-type-chemical\"> </a></td><td>Nome Químico</td><td>Nome químico sistemático (IUPAC)</td></tr><tr><td style=\"white-space:nowrap\">trade<a name=\"substance-name-type-trade\"> </a></td><td>Nome Comercial</td><td>Nome comercial ou de marca</td></tr><tr><td style=\"white-space:nowrap\">synonym<a name=\"substance-name-type-synonym\"> </a></td><td>Sinônimo</td><td>Nome sinônimo ou alternativo</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceNameType"] ; # 
+  fhir:title [ fhir:v "Tipos de Nome de Substância"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para tipos de nomes de substâncias (padrão internacional - INN/IUPAC)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "official" ] ;
+     fhir:display [ fhir:v "Nome Oficial" ] ;
+     fhir:definition [ fhir:v "Nome oficial ou sistemático da substância" ]
+  ] [
+     fhir:code [ fhir:v "common" ] ;
+     fhir:display [ fhir:v "Nome Comum" ] ;
+     fhir:definition [ fhir:v "Nome comum ou trivial da substância" ]
+  ] [
+     fhir:code [ fhir:v "dcb" ] ;
+     fhir:display [ fhir:v "DCB" ] ;
+     fhir:definition [ fhir:v "Denominação Comum Brasileira" ]
+  ] [
+     fhir:code [ fhir:v "dci" ] ;
+     fhir:display [ fhir:v "DCI" ] ;
+     fhir:definition [ fhir:v "Denominação Comum Internacional" ]
+  ] [
+     fhir:code [ fhir:v "chemical" ] ;
+     fhir:display [ fhir:v "Nome Químico" ] ;
+     fhir:definition [ fhir:v "Nome químico sistemático (IUPAC)" ]
+  ] [
+     fhir:code [ fhir:v "trade" ] ;
+     fhir:display [ fhir:v "Nome Comercial" ] ;
+     fhir:definition [ fhir:v "Nome comercial ou de marca" ]
+  ] [
+     fhir:code [ fhir:v "synonym" ] ;
+     fhir:display [ fhir:v "Sinônimo" ] ;
+     fhir:definition [ fhir:v "Nome sinônimo ou alternativo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

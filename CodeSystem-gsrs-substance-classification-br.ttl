@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/gsrs-substance-classification-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gsrs-substance-classification-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem gsrs-substance-classification-br</b></p><a name=\"gsrs-substance-classification-br\"> </a><a name=\"hcgsrs-substance-classification-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">chemical<a name=\"gsrs-substance-classification-br-chemical\"> </a></td><td>Chemical Substance</td><td>Substância química definida</td></tr><tr><td style=\"white-space:nowrap\">protein<a name=\"gsrs-substance-classification-br-protein\"> </a></td><td>Protein</td><td>Substância proteica</td></tr><tr><td style=\"white-space:nowrap\">nucleicAcid<a name=\"gsrs-substance-classification-br-nucleicAcid\"> </a></td><td>Nucleic Acid</td><td>Ácido nucleico</td></tr><tr><td style=\"white-space:nowrap\">polymer<a name=\"gsrs-substance-classification-br-polymer\"> </a></td><td>Polymer</td><td>Substância polimérica</td></tr><tr><td style=\"white-space:nowrap\">structurallyDiverse<a name=\"gsrs-substance-classification-br-structurallyDiverse\"> </a></td><td>Structurally Diverse</td><td>Substância estruturalmente diversa</td></tr><tr><td style=\"white-space:nowrap\">mixture<a name=\"gsrs-substance-classification-br-mixture\"> </a></td><td>Mixture</td><td>Mistura de substâncias</td></tr><tr><td style=\"white-space:nowrap\">specifiedSubstanceGroup1<a name=\"gsrs-substance-classification-br-specifiedSubstanceGroup1\"> </a></td><td>Specified Substance Group 1</td><td>Grupo de substâncias especificadas tipo 1</td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"gsrs-substance-classification-br-active\"> </a></td><td>Substância Ativa</td><td>Substância ativa farmacêutica</td></tr><tr><td style=\"white-space:nowrap\">excipient<a name=\"gsrs-substance-classification-br-excipient\"> </a></td><td>Excipiente</td><td>Substância excipiente</td></tr><tr><td style=\"white-space:nowrap\">controlled<a name=\"gsrs-substance-classification-br-controlled\"> </a></td><td>Controlada</td><td>Substância controlada pela ANVISA</td></tr><tr><td style=\"white-space:nowrap\">precursor<a name=\"gsrs-substance-classification-br-precursor\"> </a></td><td>Precursor</td><td>Precursor químico</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br"^^xsd:anyURI ;
+     fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "GSRSSubstanceClassificationBR"] ; # 
+  fhir:title [ fhir:v "GSRS Substance Classification - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Classificação de substâncias conforme GSRS adaptado para Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "chemical" ] ;
+     fhir:display [ fhir:v "Chemical Substance" ] ;
+     fhir:definition [ fhir:v "Substância química definida" ]
+  ] [
+     fhir:code [ fhir:v "protein" ] ;
+     fhir:display [ fhir:v "Protein" ] ;
+     fhir:definition [ fhir:v "Substância proteica" ]
+  ] [
+     fhir:code [ fhir:v "nucleicAcid" ] ;
+     fhir:display [ fhir:v "Nucleic Acid" ] ;
+     fhir:definition [ fhir:v "Ácido nucleico" ]
+  ] [
+     fhir:code [ fhir:v "polymer" ] ;
+     fhir:display [ fhir:v "Polymer" ] ;
+     fhir:definition [ fhir:v "Substância polimérica" ]
+  ] [
+     fhir:code [ fhir:v "structurallyDiverse" ] ;
+     fhir:display [ fhir:v "Structurally Diverse" ] ;
+     fhir:definition [ fhir:v "Substância estruturalmente diversa" ]
+  ] [
+     fhir:code [ fhir:v "mixture" ] ;
+     fhir:display [ fhir:v "Mixture" ] ;
+     fhir:definition [ fhir:v "Mistura de substâncias" ]
+  ] [
+     fhir:code [ fhir:v "specifiedSubstanceGroup1" ] ;
+     fhir:display [ fhir:v "Specified Substance Group 1" ] ;
+     fhir:definition [ fhir:v "Grupo de substâncias especificadas tipo 1" ]
+  ] [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Substância Ativa" ] ;
+     fhir:definition [ fhir:v "Substância ativa farmacêutica" ]
+  ] [
+     fhir:code [ fhir:v "excipient" ] ;
+     fhir:display [ fhir:v "Excipiente" ] ;
+     fhir:definition [ fhir:v "Substância excipiente" ]
+  ] [
+     fhir:code [ fhir:v "controlled" ] ;
+     fhir:display [ fhir:v "Controlada" ] ;
+     fhir:definition [ fhir:v "Substância controlada pela ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "precursor" ] ;
+     fhir:display [ fhir:v "Precursor" ] ;
+     fhir:definition [ fhir:v "Precursor químico" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

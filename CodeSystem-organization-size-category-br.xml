@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organization-size-category-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem organization-size-category-br</b></p><a name="organization-size-category-br"> </a><a name="hcorganization-size-category-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">microempresa<a name="organization-size-category-br-microempresa"> </a></td><td>Microempresa</td><td>Microempresa - receita bruta anual igual ou inferior a R$ 360.000,00</td></tr><tr><td style="white-space:nowrap">pequena-empresa<a name="organization-size-category-br-pequena-empresa"> </a></td><td>Empresa de Pequeno Porte</td><td>Empresa de Pequeno Porte - receita bruta anual superior a R$ 360.000,00 e igual ou inferior a R$ 4.800.000,00</td></tr><tr><td style="white-space:nowrap">media-empresa<a name="organization-size-category-br-media-empresa"> </a></td><td>Empresa de Médio Porte</td><td>Empresa de Médio Porte - receita bruta anual entre R$ 4.800.000,00 e R$ 300.000.000,00</td></tr><tr><td style="white-space:nowrap">grande-empresa<a name="organization-size-category-br-grande-empresa"> </a></td><td>Empresa de Grande Porte</td><td>Empresa de Grande Porte - receita bruta anual superior a R$ 300.000.000,00</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-size-category-br"/>
+  <version value="0.0.3"/>
+  <name value="OrganizationSizeCategoryBR"/>
+  <title value="Categorias de Porte de Organização - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para categorias de porte de organizações no Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="microempresa"/>
+    <display value="Microempresa"/>
+    <definition value="Microempresa - receita bruta anual igual ou inferior a R$ 360.000,00"/>
+  </concept>
+  <concept>
+    <code value="pequena-empresa"/>
+    <display value="Empresa de Pequeno Porte"/>
+    <definition value="Empresa de Pequeno Porte - receita bruta anual superior a R$ 360.000,00 e igual ou inferior a R$ 4.800.000,00"/>
+  </concept>
+  <concept>
+    <code value="media-empresa"/>
+    <display value="Empresa de Médio Porte"/>
+    <definition value="Empresa de Médio Porte - receita bruta anual entre R$ 4.800.000,00 e R$ 300.000.000,00"/>
+  </concept>
+  <concept>
+    <code value="grande-empresa"/>
+    <display value="Empresa de Grande Porte"/>
+    <definition value="Empresa de Grande Porte - receita bruta anual superior a R$ 300.000.000,00"/>
+  </concept>
+</CodeSystem>

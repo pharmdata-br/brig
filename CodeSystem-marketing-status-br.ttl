@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/marketing-status-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "marketing-status-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem marketing-status-br</b></p><a name=\"marketing-status-br\"> </a><a name=\"hcmarketing-status-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"marketing-status-br-active\"> </a></td><td>Ativo</td><td>Produto com registro válido e comercialização autorizada</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"marketing-status-br-suspended\"> </a></td><td>Suspenso</td><td>Produto com comercialização temporariamente suspensa</td></tr><tr><td style=\"white-space:nowrap\">cancelled<a name=\"marketing-status-br-cancelled\"> </a></td><td>Cancelado</td><td>Produto com registro cancelado pela ANVISA</td></tr><tr><td style=\"white-space:nowrap\">expired<a name=\"marketing-status-br-expired\"> </a></td><td>Vencido</td><td>Produto com registro vencido e não renovado</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"marketing-status-br-withdrawn\"> </a></td><td>Retirado</td><td>Produto voluntariamente retirado do mercado pelo titular</td></tr><tr><td style=\"white-space:nowrap\">pending<a name=\"marketing-status-br-pending\"> </a></td><td>Pendente</td><td>Produto com processo de registro em análise</td></tr><tr><td style=\"white-space:nowrap\">denied<a name=\"marketing-status-br-denied\"> </a></td><td>Negado</td><td>Produto com registro negado pela ANVISA</td></tr><tr><td style=\"white-space:nowrap\">revoked<a name=\"marketing-status-br-revoked\"> </a></td><td>Revogado</td><td>Produto com registro revogado por determinação legal</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/marketing-status-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/marketing-status-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "MarketingStatusBR"] ; # 
+  fhir:title [ fhir:v "Status de Comercialização - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para status de comercialização no contexto brasileiro"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Ativo" ] ;
+     fhir:definition [ fhir:v "Produto com registro válido e comercialização autorizada" ]
+  ] [
+     fhir:code [ fhir:v "suspended" ] ;
+     fhir:display [ fhir:v "Suspenso" ] ;
+     fhir:definition [ fhir:v "Produto com comercialização temporariamente suspensa" ]
+  ] [
+     fhir:code [ fhir:v "cancelled" ] ;
+     fhir:display [ fhir:v "Cancelado" ] ;
+     fhir:definition [ fhir:v "Produto com registro cancelado pela ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "expired" ] ;
+     fhir:display [ fhir:v "Vencido" ] ;
+     fhir:definition [ fhir:v "Produto com registro vencido e não renovado" ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Retirado" ] ;
+     fhir:definition [ fhir:v "Produto voluntariamente retirado do mercado pelo titular" ]
+  ] [
+     fhir:code [ fhir:v "pending" ] ;
+     fhir:display [ fhir:v "Pendente" ] ;
+     fhir:definition [ fhir:v "Produto com processo de registro em análise" ]
+  ] [
+     fhir:code [ fhir:v "denied" ] ;
+     fhir:display [ fhir:v "Negado" ] ;
+     fhir:definition [ fhir:v "Produto com registro negado pela ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "revoked" ] ;
+     fhir:display [ fhir:v "Revogado" ] ;
+     fhir:definition [ fhir:v "Produto com registro revogado por determinação legal" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

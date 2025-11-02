@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="anvisa-regulatory-status-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem anvisa-regulatory-status-br</b></p><a name="anvisa-regulatory-status-br"> </a><a name="hcanvisa-regulatory-status-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">approved<a name="anvisa-regulatory-status-br-approved"> </a></td><td>Aprovada</td><td>Substância aprovada para uso em medicamentos</td></tr><tr><td style="white-space:nowrap">approved-restricted<a name="anvisa-regulatory-status-br-approved-restricted"> </a></td><td>Aprovada com Restrições</td><td>Substância aprovada com restrições específicas de uso</td></tr><tr><td style="white-space:nowrap">suspended<a name="anvisa-regulatory-status-br-suspended"> </a></td><td>Suspensa</td><td>Substância com uso temporariamente suspenso</td></tr><tr><td style="white-space:nowrap">prohibited<a name="anvisa-regulatory-status-br-prohibited"> </a></td><td>Proibida</td><td>Substância proibida para uso em medicamentos</td></tr><tr><td style="white-space:nowrap">under-review<a name="anvisa-regulatory-status-br-under-review"> </a></td><td>Em Análise</td><td>Substância em processo de análise regulatória</td></tr><tr><td style="white-space:nowrap">provisional<a name="anvisa-regulatory-status-br-provisional"> </a></td><td>Aprovação Provisória</td><td>Substância com aprovação provisória ou condicional</td></tr><tr><td style="white-space:nowrap">withdrawn<a name="anvisa-regulatory-status-br-withdrawn"> </a></td><td>Retirada</td><td>Substância com aprovação retirada</td></tr><tr><td style="white-space:nowrap">not-applicable<a name="anvisa-regulatory-status-br-not-applicable"> </a></td><td>Não Aplicável</td><td>Status regulatório não aplicável (ex: excipientes não controlados)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-regulatory-status-br"/>
+  <version value="0.0.3"/>
+  <name value="ANVISARegulatoryStatusBR"/>
+  <title value="Status Regulatório ANVISA - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para status regulatório de substâncias na ANVISA"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="approved"/>
+    <display value="Aprovada"/>
+    <definition value="Substância aprovada para uso em medicamentos"/>
+  </concept>
+  <concept>
+    <code value="approved-restricted"/>
+    <display value="Aprovada com Restrições"/>
+    <definition value="Substância aprovada com restrições específicas de uso"/>
+  </concept>
+  <concept>
+    <code value="suspended"/>
+    <display value="Suspensa"/>
+    <definition value="Substância com uso temporariamente suspenso"/>
+  </concept>
+  <concept>
+    <code value="prohibited"/>
+    <display value="Proibida"/>
+    <definition value="Substância proibida para uso em medicamentos"/>
+  </concept>
+  <concept>
+    <code value="under-review"/>
+    <display value="Em Análise"/>
+    <definition value="Substância em processo de análise regulatória"/>
+  </concept>
+  <concept>
+    <code value="provisional"/>
+    <display value="Aprovação Provisória"/>
+    <definition value="Substância com aprovação provisória ou condicional"/>
+  </concept>
+  <concept>
+    <code value="withdrawn"/>
+    <display value="Retirada"/>
+    <definition value="Substância com aprovação retirada"/>
+  </concept>
+  <concept>
+    <code value="not-applicable"/>
+    <display value="Não Aplicável"/>
+    <definition value="Status regulatório não aplicável (ex: excipientes não controlados)"/>
+  </concept>
+</CodeSystem>

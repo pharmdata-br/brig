@@ -1,0 +1,119 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "interaction-effect",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem interaction-effect</b></p><a name=\"interaction-effect\"> </a><a name=\"hcinteraction-effect\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">increased-effect<a name=\"interaction-effect-increased-effect\"> </a></td><td>Aumento de Efeito</td><td>Aumento do efeito terapêutico ou tóxico</td></tr><tr><td style=\"white-space:nowrap\">decreased-effect<a name=\"interaction-effect-decreased-effect\"> </a></td><td>Diminuição de Efeito</td><td>Diminuição do efeito terapêutico</td></tr><tr><td style=\"white-space:nowrap\">increased-toxicity<a name=\"interaction-effect-increased-toxicity\"> </a></td><td>Aumento de Toxicidade</td><td>Aumento do risco de toxicidade</td></tr><tr><td style=\"white-space:nowrap\">increased-adverse-effects<a name=\"interaction-effect-increased-adverse-effects\"> </a></td><td>Aumento de Efeitos Adversos</td><td>Aumento da frequência ou gravidade de efeitos adversos</td></tr><tr><td style=\"white-space:nowrap\">altered-bioavailability<a name=\"interaction-effect-altered-bioavailability\"> </a></td><td>Alteração de Biodisponibilidade</td><td>Alteração na absorção ou biodisponibilidade</td></tr><tr><td style=\"white-space:nowrap\">altered-metabolism<a name=\"interaction-effect-altered-metabolism\"> </a></td><td>Alteração de Metabolismo</td><td>Alteração no metabolismo da substância</td></tr><tr><td style=\"white-space:nowrap\">altered-excretion<a name=\"interaction-effect-altered-excretion\"> </a></td><td>Alteração de Excreção</td><td>Alteração na excreção da substância</td></tr><tr><td style=\"white-space:nowrap\">additive-effect<a name=\"interaction-effect-additive-effect\"> </a></td><td>Efeito Aditivo</td><td>Soma dos efeitos</td></tr><tr><td style=\"white-space:nowrap\">synergistic-effect<a name=\"interaction-effect-synergistic-effect\"> </a></td><td>Efeito Sinérgico</td><td>Efeito maior que a soma</td></tr><tr><td style=\"white-space:nowrap\">antagonistic-effect<a name=\"interaction-effect-antagonistic-effect\"> </a></td><td>Efeito Antagônico</td><td>Efeitos opostos que se anulam</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-effect",
+  "version" : "0.0.3",
+  "name" : "InteractionEffect",
+  "title" : "Efeito da Interação",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-31",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Efeito clínico resultante de uma interação",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "increased-effect",
+    "display" : "Aumento de Efeito",
+    "definition" : "Aumento do efeito terapêutico ou tóxico"
+  },
+  {
+    "code" : "decreased-effect",
+    "display" : "Diminuição de Efeito",
+    "definition" : "Diminuição do efeito terapêutico"
+  },
+  {
+    "code" : "increased-toxicity",
+    "display" : "Aumento de Toxicidade",
+    "definition" : "Aumento do risco de toxicidade"
+  },
+  {
+    "code" : "increased-adverse-effects",
+    "display" : "Aumento de Efeitos Adversos",
+    "definition" : "Aumento da frequência ou gravidade de efeitos adversos"
+  },
+  {
+    "code" : "altered-bioavailability",
+    "display" : "Alteração de Biodisponibilidade",
+    "definition" : "Alteração na absorção ou biodisponibilidade"
+  },
+  {
+    "code" : "altered-metabolism",
+    "display" : "Alteração de Metabolismo",
+    "definition" : "Alteração no metabolismo da substância"
+  },
+  {
+    "code" : "altered-excretion",
+    "display" : "Alteração de Excreção",
+    "definition" : "Alteração na excreção da substância"
+  },
+  {
+    "code" : "additive-effect",
+    "display" : "Efeito Aditivo",
+    "definition" : "Soma dos efeitos"
+  },
+  {
+    "code" : "synergistic-effect",
+    "display" : "Efeito Sinérgico",
+    "definition" : "Efeito maior que a soma"
+  },
+  {
+    "code" : "antagonistic-effect",
+    "display" : "Efeito Antagônico",
+    "definition" : "Efeitos opostos que se anulam"
+  }]
+}

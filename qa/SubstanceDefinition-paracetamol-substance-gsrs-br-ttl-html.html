@@ -1,0 +1,229 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>SubstanceDefinition-paracetamol-substance-gsrs-br-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:SubstanceDefinition ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;paracetamol-substance-gsrs-br&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narrativa gerada: SubstanceDefinition paracetamol-substance-gsrs-br&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;paracetamol-substance-gsrs-br\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcparacetamol-substance-gsrs-br\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Perfil: &lt;a href=\&quot;StructureDefinition-substance-definition-br.html\&quot;&gt;Definição de Substância - Brasil&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: UNII/362O9ITL9D (utilização: official, ), &lt;code&gt;https://anvisa.gov.br/dcb&lt;/code&gt;/06783, &lt;code&gt;urn:oid:2.16.840.1.113883.6.61&lt;/code&gt;/103-90-2, &lt;code&gt;https://anvisa.gov.br/substancias/codigo&lt;/code&gt;/ANVISA-PARA-001&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br validated}\&quot;&gt;Validated&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classification&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br chemical}\&quot;&gt;Chemical Substance&lt;/span&gt;, &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br active}\&quot;&gt;Substância Ativa&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://hl7.org/fhir/medicinal-product-domain Human}\&quot;&gt;Human use&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;grade&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade pharmaceutical}\&quot;&gt;Grau Farmacêutico&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;O paracetamol (acetaminofeno) é um analgésico e antipirético amplamente utilizado. É um inibidor fraco da síntese de prostaglandinas com ação predominantemente central.&lt;/p&gt;\n&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br solubility}\&quot;&gt;Solubility&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Códigos:\&quot;&gt;14 mg/mL em água a 25°C&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br meltingPoint}\&quot;&gt;Melting Point&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 169 °C&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Detalhes: UCUM códigoCel = 'Cel')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br logP}\&quot;&gt;LogP&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.46 {LogP}&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Detalhes: UCUM código{LogP} = '{LogP}')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;structure&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;molecularFormula&lt;/b&gt;: C8H9NO2&lt;/p&gt;&lt;h3&gt;MolecularWeights&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Amount&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;151.163 g/mol&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Detalhes: UCUM códigog/mol = 'g/mol')&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;representation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://hl7.org/fhir/substance-representation-type SMILES}\&quot;&gt;SMILES&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;representation&lt;/b&gt;: CC(=O)NC1=CC=C(C=C1)O&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;representation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://hl7.org/fhir/substance-representation-type InChI}\&quot;&gt;InChI&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;representation&lt;/b&gt;: InChI=1S/C8H9NO2/c1-6(10)9-7-2-4-8(11)5-3-7/h2-5,11H,1H3,(H,9,10)&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;Codes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Códigos:{http://www.whocc.no/atc N02BE01}\&quot;&gt;paracetamol&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: N-(4-hidroxifenil)acetamida&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type official}\&quot;&gt;official&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br current}\&quot;&gt;current&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;preferred&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Paracetamol&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type common}\&quot;&gt;common&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br current}\&quot;&gt;current&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: &lt;span title=\&quot;Códigos:{urn:ietf:bcp:47 pt-BR}\&quot;&gt;Portuguese (Region=Brazil)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Acetaminophen&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type common}\&quot;&gt;common&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\&quot;Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br current}\&quot;&gt;current&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;language&lt;/b&gt;: &lt;span title=\&quot;Códigos:{urn:ietf:bcp:47 en}\&quot;&gt;English&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://fdasis.nlm.nih.gov&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://fdasis.nlm.nih.gov&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;362O9ITL9D&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://anvisa.gov.br/dcb&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;https://anvisa.gov.br/dcb&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;06783&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:oid:2.16.840.1.113883.6.61&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:oid:2.16.840.1.113883.6.61&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;103-90-2&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://anvisa.gov.br/substancias/codigo&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;https://anvisa.gov.br/substancias/codigo&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;ANVISA-PARA-001&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.status">fhir:status</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;validated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Validated&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.classification">fhir:classification</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;chemical&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Chemical Substance&quot; ]     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Substância Ativa&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.domain">fhir:domain</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/medicinal-product-domain&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/medicinal-product-domain&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Human&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Human use&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.grade">fhir:grade</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pharmaceutical&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Grau Farmacêutico&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;O paracetamol (acetaminofeno) é um analgésico e antipirético amplamente utilizado. É um inibidor fraco da síntese de prostaglandinas com ação predominantemente central.&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property">fhir:property</a> ( [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;solubility&quot; ]       ] ) ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Solubility&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;14 mg/mL em água a 25°C&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;meltingPoint&quot; ]       ] ) ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Melting Point&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">a</a> fhir:Quantity ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> &quot;169&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;°C&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Cel&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-property-type-br&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;logP&quot; ]       ] ) ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;LogP&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">a</a> fhir:Quantity ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 0.46 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;{LogP}&quot; ]     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure">fhir:structure</a> [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.molecularFormula">fhir:molecularFormula</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;C8H9NO2&quot; ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.molecularWeight">fhir:molecularWeight</a> [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.molecularWeight.amount">fhir:amount</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">fhir:v</a> 151.163 ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;g/mol&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unitsofmeasure.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://unitsofmeasure.org&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;g/mol&quot; ]       ]     ] ;
+    ( <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation">fhir:representation</a> [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation.type">fhir:type</a> [
+        ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/substance-representation-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/substance-representation-type&gt;           ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;SMILES&quot; ]         ] )       ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation.representation">fhir:representation</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;CC(=O)NC1=CC=C(C=C1)O&quot; ]     ] [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation.type">fhir:type</a> [
+        ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/substance-representation-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/substance-representation-type&gt;           ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;InChI&quot; ]         ] )       ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation.representation">fhir:representation</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;InChI=1S/C8H9NO2/c1-6(10)9-7-2-4-8(11)5-3-7/h2-5,11H,1H3,(H,9,10)&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.code">fhir:code</a> ( [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.code.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://www.whocc.no/atc&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://www.whocc.no/atc&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;N02BE01&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;paracetamol&quot; ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;N-(4-hidroxifenil)acetamida&quot; ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;official&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.status">fhir:status</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;current&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.preferred">fhir:preferred</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true ]
+  ] [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Paracetamol&quot; ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;common&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.status">fhir:status</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;current&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.language">fhir:language</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:bcp:47&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:ietf:bcp:47&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt-BR&quot; ]       ] )     ] )
+  ] [
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Acetaminophen&quot; ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;common&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.status">fhir:status</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-status-br&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;current&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.language">fhir:language</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:bcp:47&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:ietf:bcp:47&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ]       ] )     ] )
+  ] ) . # 
+
+</code></pre>
+
+</body>
+</html>

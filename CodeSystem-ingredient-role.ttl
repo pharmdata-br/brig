@@ -1,0 +1,164 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/ingredient-role> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ingredient-role"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem ingredient-role</b></p><a name=\"ingredient-role\"> </a><a name=\"hcingredient-role\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">ativo<a name=\"ingredient-role-ativo\"> </a></td><td>Ingrediente Ativo</td><td>Substância responsável pelo efeito terapêutico principal</td></tr><tr><td style=\"white-space:nowrap\">co-ativo<a name=\"ingredient-role-co-ativo\"> </a></td><td>Co-ativo</td><td>Substância ativa secundária que contribui para o efeito terapêutico</td></tr><tr><td style=\"white-space:nowrap\">excipiente<a name=\"ingredient-role-excipiente\"> </a></td><td>Excipiente</td><td>Substância inativa que compõe a formulação</td></tr><tr><td style=\"white-space:nowrap\">diluente<a name=\"ingredient-role-diluente\"> </a></td><td>Diluente</td><td>Substância utilizada para diluir o ingrediente ativo</td></tr><tr><td style=\"white-space:nowrap\">aglutinante<a name=\"ingredient-role-aglutinante\"> </a></td><td>Aglutinante</td><td>Substância que promove a coesão dos componentes</td></tr><tr><td style=\"white-space:nowrap\">desintegrante<a name=\"ingredient-role-desintegrante\"> </a></td><td>Desintegrante</td><td>Substância que facilita a desintegração da forma farmacêutica</td></tr><tr><td style=\"white-space:nowrap\">lubrificante<a name=\"ingredient-role-lubrificante\"> </a></td><td>Lubrificante</td><td>Substância que reduz o atrito durante a fabricação</td></tr><tr><td style=\"white-space:nowrap\">deslizante<a name=\"ingredient-role-deslizante\"> </a></td><td>Deslizante</td><td>Substância que melhora o fluxo dos pós</td></tr><tr><td style=\"white-space:nowrap\">conservante<a name=\"ingredient-role-conservante\"> </a></td><td>Conservante</td><td>Substância que previne deterioração microbiana</td></tr><tr><td style=\"white-space:nowrap\">antioxidante<a name=\"ingredient-role-antioxidante\"> </a></td><td>Antioxidante</td><td>Substância que previne oxidação</td></tr><tr><td style=\"white-space:nowrap\">estabilizante<a name=\"ingredient-role-estabilizante\"> </a></td><td>Estabilizante</td><td>Substância que mantém a estabilidade da formulação</td></tr><tr><td style=\"white-space:nowrap\">tampao<a name=\"ingredient-role-tampao\"> </a></td><td>Sistema Tampão</td><td>Substância que mantém o pH estável</td></tr><tr><td style=\"white-space:nowrap\">edulcorante<a name=\"ingredient-role-edulcorante\"> </a></td><td>Edulcorante</td><td>Substância que confere sabor doce</td></tr><tr><td style=\"white-space:nowrap\">aromatizante<a name=\"ingredient-role-aromatizante\"> </a></td><td>Aromatizante</td><td>Substância que confere aroma ou sabor</td></tr><tr><td style=\"white-space:nowrap\">corante<a name=\"ingredient-role-corante\"> </a></td><td>Corante</td><td>Substância que confere cor</td></tr><tr><td style=\"white-space:nowrap\">opacificante<a name=\"ingredient-role-opacificante\"> </a></td><td>Opacificante</td><td>Substância que confere opacidade</td></tr><tr><td style=\"white-space:nowrap\">emulsificante<a name=\"ingredient-role-emulsificante\"> </a></td><td>Emulsificante</td><td>Substância que promove a formação de emulsões</td></tr><tr><td style=\"white-space:nowrap\">solubilizante<a name=\"ingredient-role-solubilizante\"> </a></td><td>Solubilizante</td><td>Substância que aumenta a solubilidade</td></tr><tr><td style=\"white-space:nowrap\">isotonizante<a name=\"ingredient-role-isotonizante\"> </a></td><td>Isotonizante</td><td>Substância que ajusta a tonicidade</td></tr><tr><td style=\"white-space:nowrap\">umectante<a name=\"ingredient-role-umectante\"> </a></td><td>Umectante</td><td>Substância que retém umidade</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/ingredient-role"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/ingredient-role>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "IngredientRole"] ; # 
+  fhir:title [ fhir:v "Papéis de Ingredientes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para papéis de ingredientes em medicamentos (padrão internacional)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "20"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ativo" ] ;
+     fhir:display [ fhir:v "Ingrediente Ativo" ] ;
+     fhir:definition [ fhir:v "Substância responsável pelo efeito terapêutico principal" ]
+  ] [
+     fhir:code [ fhir:v "co-ativo" ] ;
+     fhir:display [ fhir:v "Co-ativo" ] ;
+     fhir:definition [ fhir:v "Substância ativa secundária que contribui para o efeito terapêutico" ]
+  ] [
+     fhir:code [ fhir:v "excipiente" ] ;
+     fhir:display [ fhir:v "Excipiente" ] ;
+     fhir:definition [ fhir:v "Substância inativa que compõe a formulação" ]
+  ] [
+     fhir:code [ fhir:v "diluente" ] ;
+     fhir:display [ fhir:v "Diluente" ] ;
+     fhir:definition [ fhir:v "Substância utilizada para diluir o ingrediente ativo" ]
+  ] [
+     fhir:code [ fhir:v "aglutinante" ] ;
+     fhir:display [ fhir:v "Aglutinante" ] ;
+     fhir:definition [ fhir:v "Substância que promove a coesão dos componentes" ]
+  ] [
+     fhir:code [ fhir:v "desintegrante" ] ;
+     fhir:display [ fhir:v "Desintegrante" ] ;
+     fhir:definition [ fhir:v "Substância que facilita a desintegração da forma farmacêutica" ]
+  ] [
+     fhir:code [ fhir:v "lubrificante" ] ;
+     fhir:display [ fhir:v "Lubrificante" ] ;
+     fhir:definition [ fhir:v "Substância que reduz o atrito durante a fabricação" ]
+  ] [
+     fhir:code [ fhir:v "deslizante" ] ;
+     fhir:display [ fhir:v "Deslizante" ] ;
+     fhir:definition [ fhir:v "Substância que melhora o fluxo dos pós" ]
+  ] [
+     fhir:code [ fhir:v "conservante" ] ;
+     fhir:display [ fhir:v "Conservante" ] ;
+     fhir:definition [ fhir:v "Substância que previne deterioração microbiana" ]
+  ] [
+     fhir:code [ fhir:v "antioxidante" ] ;
+     fhir:display [ fhir:v "Antioxidante" ] ;
+     fhir:definition [ fhir:v "Substância que previne oxidação" ]
+  ] [
+     fhir:code [ fhir:v "estabilizante" ] ;
+     fhir:display [ fhir:v "Estabilizante" ] ;
+     fhir:definition [ fhir:v "Substância que mantém a estabilidade da formulação" ]
+  ] [
+     fhir:code [ fhir:v "tampao" ] ;
+     fhir:display [ fhir:v "Sistema Tampão" ] ;
+     fhir:definition [ fhir:v "Substância que mantém o pH estável" ]
+  ] [
+     fhir:code [ fhir:v "edulcorante" ] ;
+     fhir:display [ fhir:v "Edulcorante" ] ;
+     fhir:definition [ fhir:v "Substância que confere sabor doce" ]
+  ] [
+     fhir:code [ fhir:v "aromatizante" ] ;
+     fhir:display [ fhir:v "Aromatizante" ] ;
+     fhir:definition [ fhir:v "Substância que confere aroma ou sabor" ]
+  ] [
+     fhir:code [ fhir:v "corante" ] ;
+     fhir:display [ fhir:v "Corante" ] ;
+     fhir:definition [ fhir:v "Substância que confere cor" ]
+  ] [
+     fhir:code [ fhir:v "opacificante" ] ;
+     fhir:display [ fhir:v "Opacificante" ] ;
+     fhir:definition [ fhir:v "Substância que confere opacidade" ]
+  ] [
+     fhir:code [ fhir:v "emulsificante" ] ;
+     fhir:display [ fhir:v "Emulsificante" ] ;
+     fhir:definition [ fhir:v "Substância que promove a formação de emulsões" ]
+  ] [
+     fhir:code [ fhir:v "solubilizante" ] ;
+     fhir:display [ fhir:v "Solubilizante" ] ;
+     fhir:definition [ fhir:v "Substância que aumenta a solubilidade" ]
+  ] [
+     fhir:code [ fhir:v "isotonizante" ] ;
+     fhir:display [ fhir:v "Isotonizante" ] ;
+     fhir:definition [ fhir:v "Substância que ajusta a tonicidade" ]
+  ] [
+     fhir:code [ fhir:v "umectante" ] ;
+     fhir:display [ fhir:v "Umectante" ] ;
+     fhir:definition [ fhir:v "Substância que retém umidade" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

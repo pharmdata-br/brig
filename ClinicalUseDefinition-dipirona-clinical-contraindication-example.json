@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "dipirona-clinical-contraindication-example",
+  "meta" : {
+    "profile" : ["https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ClinicalUseDefinition dipirona-clinical-contraindication-example</b></p><a name=\"dipirona-clinical-contraindication-example\"> </a><a name=\"hcdipirona-clinical-contraindication-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-clinical-use-definition-br.html\">Definição de Uso Clínico - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/NamingSystem/clinical-use-id</code>/BRIG-CU-DIP-002</p><p><b>type</b>: Contraindication</p><p><b>category</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br cbaf}\">cbaf</span></p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-dipirona-500mg-example.html\">MedicinalProductDefinition: identifier = http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid#BRIG-MPID-DIP-500,http://www.anvisa.gov.br/registro#100000000001; type = Medicamento; domain = Human use; status = Active; combinedPharmaceuticalDoseForm = Tablet; route = Oral; legalStatusOfSupply = Prescrição Médica; classification = metamizole sodium</a></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br active}\">active</span></p><blockquote><p><b>contraindication</b></p><h3>DiseaseSymptomProcedures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://snomed.info/sct 419511003}\">Propensity to adverse reactions to drug (finding)</span></td></tr></table><h3>Comorbidities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://snomed.info/sct 418038007}\">Propensity to adverse reactions to substance (finding)</span></td></tr></table></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/NamingSystem/clinical-use-id",
+    "value" : "BRIG-CU-DIP-002"
+  }],
+  "type" : "contraindication",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br",
+      "code" : "cbaf"
+    }]
+  }],
+  "subject" : [{
+    "reference" : "MedicinalProductDefinition/dipirona-500mg-example"
+  }],
+  "status" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br",
+      "code" : "active"
+    }]
+  },
+  "contraindication" : {
+    "diseaseSymptomProcedure" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419511003",
+          "display" : "Propensity to adverse reactions to drug (finding)"
+        }]
+      }
+    },
+    "comorbidity" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "418038007",
+          "display" : "Propensity to adverse reactions to substance (finding)"
+        }]
+      }
+    }]
+  }
+}

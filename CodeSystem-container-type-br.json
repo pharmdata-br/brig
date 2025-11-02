@@ -1,0 +1,124 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "container-type-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem container-type-br</b></p><a name=\"container-type-br\"> </a><a name=\"hccontainer-type-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">blister<a name=\"container-type-br-blister\"> </a></td><td>Blister</td><td>Embalagem blister para comprimidos/cápsulas</td></tr><tr><td style=\"white-space:nowrap\">bottle<a name=\"container-type-br-bottle\"> </a></td><td>Frasco</td><td>Frasco para líquidos ou sólidos</td></tr><tr><td style=\"white-space:nowrap\">vial<a name=\"container-type-br-vial\"> </a></td><td>Ampola/Frasco-ampola</td><td>Ampola de vidro ou frasco-ampola</td></tr><tr><td style=\"white-space:nowrap\">ampoule<a name=\"container-type-br-ampoule\"> </a></td><td>Ampola</td><td>Ampola de vidro selada</td></tr><tr><td style=\"white-space:nowrap\">syringe<a name=\"container-type-br-syringe\"> </a></td><td>Seringa</td><td>Seringa pré-carregada</td></tr><tr><td style=\"white-space:nowrap\">cartridge<a name=\"container-type-br-cartridge\"> </a></td><td>Refil/Cartucho</td><td>Cartucho ou refil para dispositivos</td></tr><tr><td style=\"white-space:nowrap\">sachet<a name=\"container-type-br-sachet\"> </a></td><td>Sachê</td><td>Envelope/sachê para pós ou líquidos</td></tr><tr><td style=\"white-space:nowrap\">tube<a name=\"container-type-br-tube\"> </a></td><td>Bisnaga</td><td>Bisnaga para cremes/pomadas</td></tr><tr><td style=\"white-space:nowrap\">inhaler<a name=\"container-type-br-inhaler\"> </a></td><td>Inalador</td><td>Dispositivo inalador</td></tr><tr><td style=\"white-space:nowrap\">patch<a name=\"container-type-br-patch\"> </a></td><td>Adesivo</td><td>Adesivo transdérmico</td></tr><tr><td style=\"white-space:nowrap\">box<a name=\"container-type-br-box\"> </a></td><td>Caixa</td><td>Caixa de papelão</td></tr><tr><td style=\"white-space:nowrap\">pouch<a name=\"container-type-br-pouch\"> </a></td><td>Bolsa</td><td>Bolsa plástica</td></tr><tr><td style=\"white-space:nowrap\">strip<a name=\"container-type-br-strip\"> </a></td><td>Tira</td><td>Tira de embalagem unitária</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/container-type-br",
+  "version" : "0.0.3",
+  "name" : "ContainerTypeBR",
+  "title" : "Tipos de Container - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para tipos de containers de embalagens brasileiras",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 13,
+  "concept" : [{
+    "code" : "blister",
+    "display" : "Blister",
+    "definition" : "Embalagem blister para comprimidos/cápsulas"
+  },
+  {
+    "code" : "bottle",
+    "display" : "Frasco",
+    "definition" : "Frasco para líquidos ou sólidos"
+  },
+  {
+    "code" : "vial",
+    "display" : "Ampola/Frasco-ampola",
+    "definition" : "Ampola de vidro ou frasco-ampola"
+  },
+  {
+    "code" : "ampoule",
+    "display" : "Ampola",
+    "definition" : "Ampola de vidro selada"
+  },
+  {
+    "code" : "syringe",
+    "display" : "Seringa",
+    "definition" : "Seringa pré-carregada"
+  },
+  {
+    "code" : "cartridge",
+    "display" : "Refil/Cartucho",
+    "definition" : "Cartucho ou refil para dispositivos"
+  },
+  {
+    "code" : "sachet",
+    "display" : "Sachê",
+    "definition" : "Envelope/sachê para pós ou líquidos"
+  },
+  {
+    "code" : "tube",
+    "display" : "Bisnaga",
+    "definition" : "Bisnaga para cremes/pomadas"
+  },
+  {
+    "code" : "inhaler",
+    "display" : "Inalador",
+    "definition" : "Dispositivo inalador"
+  },
+  {
+    "code" : "patch",
+    "display" : "Adesivo",
+    "definition" : "Adesivo transdérmico"
+  },
+  {
+    "code" : "box",
+    "display" : "Caixa",
+    "definition" : "Caixa de papelão"
+  },
+  {
+    "code" : "pouch",
+    "display" : "Bolsa",
+    "definition" : "Bolsa plástica"
+  },
+  {
+    "code" : "strip",
+    "display" : "Tira",
+    "definition" : "Tira de embalagem unitária"
+  }]
+}

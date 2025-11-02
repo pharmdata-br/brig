@@ -1,0 +1,288 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-type-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "clinical-use-type-br"] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem clinical-use-type-br</b></p><a name=\"clinical-use-type-br\"> </a><a name=\"hcclinical-use-type-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class=\"grid\"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>status</td><td>status</td><td>code</td><td>Status do conceito</td></tr><tr><td>priority</td><td>priority</td><td>string</td><td>Prioridade clínica</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>status</b></td><td><b>priority</b></td><td><b>English (English, en)</b></td></tr><tr><td style=\"white-space:nowrap\">indication<a name=\"clinical-use-type-br-indication\"> </a></td><td>Indicação terapêutica</td><td>Condição médica ou situação clínica para a qual o medicamento é indicado</td><td>active</td><td>crítica</td><td>Therapeutic indication</td></tr><tr><td style=\"white-space:nowrap\">contraindication<a name=\"clinical-use-type-br-contraindication\"> </a></td><td>Contraindicação</td><td>Condição ou situação que desaconselha ou proíbe o uso do medicamento</td><td>active</td><td>crítica</td><td>Contraindication</td></tr><tr><td style=\"white-space:nowrap\">interaction<a name=\"clinical-use-type-br-interaction\"> </a></td><td>Interação medicamentosa</td><td>Interação entre medicamentos, alimentos ou outros produtos que pode alterar eficácia ou segurança</td><td>active</td><td>alta</td><td>Drug interaction</td></tr><tr><td style=\"white-space:nowrap\">undesirable-effect<a name=\"clinical-use-type-br-undesirable-effect\"> </a></td><td>Efeito indesejável</td><td>Reação adversa ou efeito colateral associado ao uso do medicamento</td><td>active</td><td>alta</td><td>Undesirable effect</td></tr><tr><td style=\"white-space:nowrap\">warning<a name=\"clinical-use-type-br-warning\"> </a></td><td>Advertência especial</td><td>Precaução ou advertência especial para uso seguro do medicamento</td><td>active</td><td>alta</td><td>Special warning</td></tr><tr><td style=\"white-space:nowrap\">dosage<a name=\"clinical-use-type-br-dosage\"> </a></td><td>Posologia</td><td>Esquema posológico recomendado incluindo dose, frequência e duração</td><td>active</td><td>média</td><td>Dosage regimen</td></tr><tr><td style=\"white-space:nowrap\">dce-sus<a name=\"clinical-use-type-br-dce-sus\"> </a></td><td>Critério DCE-SUS</td><td>Critério de elegibilidade para Componente Especializado da Assistência Farmacêutica</td><td>active</td><td>crítica</td><td>DCE-SUS criteria</td></tr><tr><td style=\"white-space:nowrap\">rename<a name=\"clinical-use-type-br-rename\"> </a></td><td>Critério RENAME</td><td>Critério de inclusão na Relação Nacional de Medicamentos Essenciais</td><td>active</td><td>média</td><td>RENAME criteria</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-type-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-type-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ClinicalUseTypeBR"] ; # 
+  fhir:title [ fhir:v "Tipos de Uso Clínico - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de definição de uso clínico adaptados para o contexto brasileiro incluindo indicações terapêuticas, contraindicações, interações medicamentosas e critérios DCE-SUS."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:compositional [ fhir:v false] ; # 
+  fhir:versionNeeded [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:description [ fhir:v "Status do conceito" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "priority" ] ;
+     fhir:description [ fhir:v "Prioridade clínica" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "indication" ] ;
+     fhir:display [ fhir:v "Indicação terapêutica" ] ;
+     fhir:definition [ fhir:v "Condição médica ou situação clínica para a qual o medicamento é indicado" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Indicação terapêutica" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Therapeutic indication" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "crítica"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "contraindication" ] ;
+     fhir:display [ fhir:v "Contraindicação" ] ;
+     fhir:definition [ fhir:v "Condição ou situação que desaconselha ou proíbe o uso do medicamento" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Contraindicação" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Contraindication" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "crítica"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "interaction" ] ;
+     fhir:display [ fhir:v "Interação medicamentosa" ] ;
+     fhir:definition [ fhir:v "Interação entre medicamentos, alimentos ou outros produtos que pode alterar eficácia ou segurança" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Interação medicamentosa" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Drug interaction" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "alta"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "undesirable-effect" ] ;
+     fhir:display [ fhir:v "Efeito indesejável" ] ;
+     fhir:definition [ fhir:v "Reação adversa ou efeito colateral associado ao uso do medicamento" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Efeito indesejável" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Undesirable effect" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "alta"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "warning" ] ;
+     fhir:display [ fhir:v "Advertência especial" ] ;
+     fhir:definition [ fhir:v "Precaução ou advertência especial para uso seguro do medicamento" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Advertência especial" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Special warning" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "alta"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "dosage" ] ;
+     fhir:display [ fhir:v "Posologia" ] ;
+     fhir:definition [ fhir:v "Esquema posológico recomendado incluindo dose, frequência e duração" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Posologia" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "Dosage regimen" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "média"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "dce-sus" ] ;
+     fhir:display [ fhir:v "Critério DCE-SUS" ] ;
+     fhir:definition [ fhir:v "Critério de elegibilidade para Componente Especializado da Assistência Farmacêutica" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Critério DCE-SUS" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "DCE-SUS criteria" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "crítica"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "rename" ] ;
+     fhir:display [ fhir:v "Critério RENAME" ] ;
+     fhir:definition [ fhir:v "Critério de inclusão na Relação Nacional de Medicamentos Essenciais" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "pt-BR" ] ;
+       fhir:value [ fhir:v "Critério RENAME" ]
+     ] [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:value [ fhir:v "RENAME criteria" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "active"
+       ]
+     ] [
+       fhir:code [ fhir:v "priority" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "média"
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

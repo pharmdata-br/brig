@@ -1,0 +1,115 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "unit-of-presentation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet unit-of-presentation</b></p><a name=\"unit-of-presentation\"> </a><a name=\"hcunit-of-presentation\"> </a><ul><li>Include estes códigos, tal como definidos em <code>http://standardterms.edqm.eu</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>15054000</td><td>Tablet</td></tr><tr><td>15009000</td><td>Capsule</td></tr><tr><td>15037000</td><td>Suppository</td></tr><tr><td>15018000</td><td>Dose</td></tr><tr><td>15058000</td><td>Vial</td></tr><tr><td>15003000</td><td>Ampoule</td></tr><tr><td>15051000</td><td>Syringe</td></tr><tr><td>15013000</td><td>Bottle</td></tr><tr><td>15056000</td><td>Tube</td></tr><tr><td>15046000</td><td>Sachet</td></tr><tr><td>15048000</td><td>Patch</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/unit-of-presentation",
+  "version" : "0.0.3",
+  "name" : "UnitOfPresentation",
+  "title" : "Unidade de Apresentação",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Unidades de apresentação usando códigos EDQM Standard Terms",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "concept" : [{
+        "code" : "15054000",
+        "display" : "Tablet"
+      },
+      {
+        "code" : "15009000",
+        "display" : "Capsule"
+      },
+      {
+        "code" : "15037000",
+        "display" : "Suppository"
+      },
+      {
+        "code" : "15018000",
+        "display" : "Dose"
+      },
+      {
+        "code" : "15058000",
+        "display" : "Vial"
+      },
+      {
+        "code" : "15003000",
+        "display" : "Ampoule"
+      },
+      {
+        "code" : "15051000",
+        "display" : "Syringe"
+      },
+      {
+        "code" : "15013000",
+        "display" : "Bottle"
+      },
+      {
+        "code" : "15056000",
+        "display" : "Tube"
+      },
+      {
+        "code" : "15046000",
+        "display" : "Sachet"
+      },
+      {
+        "code" : "15048000",
+        "display" : "Patch"
+      }]
+    }]
+  }
+}

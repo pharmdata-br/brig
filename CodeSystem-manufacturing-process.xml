@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="manufacturing-process"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem manufacturing-process</b></p><a name="manufacturing-process"> </a><a name="hcmanufacturing-process"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">granulation<a name="manufacturing-process-granulation"> </a></td><td>Granulação</td><td>Processo de formação de grânulos</td></tr><tr><td style="white-space:nowrap">wet-granulation<a name="manufacturing-process-wet-granulation"> </a></td><td>Granulação Úmida</td><td>Granulação utilizando líquido aglutinante</td></tr><tr><td style="white-space:nowrap">dry-granulation<a name="manufacturing-process-dry-granulation"> </a></td><td>Granulação Seca</td><td>Granulação por compactação sem líquido</td></tr><tr><td style="white-space:nowrap">compression<a name="manufacturing-process-compression"> </a></td><td>Compressão</td><td>Processo de compressão de pós em comprimidos</td></tr><tr><td style="white-space:nowrap">coating<a name="manufacturing-process-coating"> </a></td><td>Revestimento</td><td>Aplicação de revestimento</td></tr><tr><td style="white-space:nowrap">film-coating<a name="manufacturing-process-film-coating"> </a></td><td>Revestimento Pelicular</td><td>Revestimento com filme polimérico</td></tr><tr><td style="white-space:nowrap">sugar-coating<a name="manufacturing-process-sugar-coating"> </a></td><td>Drageamento</td><td>Revestimento com açúcar</td></tr><tr><td style="white-space:nowrap">enteric-coating<a name="manufacturing-process-enteric-coating"> </a></td><td>Revestimento Entérico</td><td>Revestimento gastrorresistente</td></tr><tr><td style="white-space:nowrap">encapsulation<a name="manufacturing-process-encapsulation"> </a></td><td>Encapsulação</td><td>Processo de enchimento de cápsulas</td></tr><tr><td style="white-space:nowrap">lyophilization<a name="manufacturing-process-lyophilization"> </a></td><td>Liofilização</td><td>Secagem por congelamento</td></tr><tr><td style="white-space:nowrap">sterilization<a name="manufacturing-process-sterilization"> </a></td><td>Esterilização</td><td>Processo de esterilização</td></tr><tr><td style="white-space:nowrap">autoclaving<a name="manufacturing-process-autoclaving"> </a></td><td>Autoclavagem</td><td>Esterilização por calor úmido</td></tr><tr><td style="white-space:nowrap">filtration-sterilization<a name="manufacturing-process-filtration-sterilization"> </a></td><td>Esterilização por Filtração</td><td>Esterilização por filtração estéril</td></tr><tr><td style="white-space:nowrap">aseptic-processing<a name="manufacturing-process-aseptic-processing"> </a></td><td>Processamento Asséptico</td><td>Fabricação em ambiente estéril</td></tr><tr><td style="white-space:nowrap">blending<a name="manufacturing-process-blending"> </a></td><td>Mistura</td><td>Homogeneização de componentes</td></tr><tr><td style="white-space:nowrap">milling<a name="manufacturing-process-milling"> </a></td><td>Moagem</td><td>Redução de tamanho de partícula</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufacturing-process"/>
+  <version value="0.0.3"/>
+  <name value="ManufacturingProcess"/>
+  <title value="Processo de Manufatura"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Processos de manufatura de produtos farmacêuticos"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="granulation"/>
+    <display value="Granulação"/>
+    <definition value="Processo de formação de grânulos"/>
+  </concept>
+  <concept>
+    <code value="wet-granulation"/>
+    <display value="Granulação Úmida"/>
+    <definition value="Granulação utilizando líquido aglutinante"/>
+  </concept>
+  <concept>
+    <code value="dry-granulation"/>
+    <display value="Granulação Seca"/>
+    <definition value="Granulação por compactação sem líquido"/>
+  </concept>
+  <concept>
+    <code value="compression"/>
+    <display value="Compressão"/>
+    <definition value="Processo de compressão de pós em comprimidos"/>
+  </concept>
+  <concept>
+    <code value="coating"/>
+    <display value="Revestimento"/>
+    <definition value="Aplicação de revestimento"/>
+  </concept>
+  <concept>
+    <code value="film-coating"/>
+    <display value="Revestimento Pelicular"/>
+    <definition value="Revestimento com filme polimérico"/>
+  </concept>
+  <concept>
+    <code value="sugar-coating"/>
+    <display value="Drageamento"/>
+    <definition value="Revestimento com açúcar"/>
+  </concept>
+  <concept>
+    <code value="enteric-coating"/>
+    <display value="Revestimento Entérico"/>
+    <definition value="Revestimento gastrorresistente"/>
+  </concept>
+  <concept>
+    <code value="encapsulation"/>
+    <display value="Encapsulação"/>
+    <definition value="Processo de enchimento de cápsulas"/>
+  </concept>
+  <concept>
+    <code value="lyophilization"/>
+    <display value="Liofilização"/>
+    <definition value="Secagem por congelamento"/>
+  </concept>
+  <concept>
+    <code value="sterilization"/>
+    <display value="Esterilização"/>
+    <definition value="Processo de esterilização"/>
+  </concept>
+  <concept>
+    <code value="autoclaving"/>
+    <display value="Autoclavagem"/>
+    <definition value="Esterilização por calor úmido"/>
+  </concept>
+  <concept>
+    <code value="filtration-sterilization"/>
+    <display value="Esterilização por Filtração"/>
+    <definition value="Esterilização por filtração estéril"/>
+  </concept>
+  <concept>
+    <code value="aseptic-processing"/>
+    <display value="Processamento Asséptico"/>
+    <definition value="Fabricação em ambiente estéril"/>
+  </concept>
+  <concept>
+    <code value="blending"/>
+    <display value="Mistura"/>
+    <definition value="Homogeneização de componentes"/>
+  </concept>
+  <concept>
+    <code value="milling"/>
+    <display value="Moagem"/>
+    <definition value="Redução de tamanho de partícula"/>
+  </concept>
+</CodeSystem>

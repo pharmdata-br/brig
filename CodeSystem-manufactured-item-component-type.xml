@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="manufactured-item-component-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem manufactured-item-component-type</b></p><a name="manufactured-item-component-type"> </a><a name="hcmanufactured-item-component-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">core<a name="manufactured-item-component-type-core"> </a></td><td>Núcleo</td><td>Núcleo central do item</td></tr><tr><td style="white-space:nowrap">coating<a name="manufactured-item-component-type-coating"> </a></td><td>Revestimento</td><td>Camada de revestimento externo</td></tr><tr><td style="white-space:nowrap">film-coating<a name="manufactured-item-component-type-film-coating"> </a></td><td>Revestimento Pelicular</td><td>Filme polimérico de revestimento</td></tr><tr><td style="white-space:nowrap">sugar-coating<a name="manufactured-item-component-type-sugar-coating"> </a></td><td>Drageamento</td><td>Revestimento com açúcar</td></tr><tr><td style="white-space:nowrap">enteric-coating<a name="manufactured-item-component-type-enteric-coating"> </a></td><td>Revestimento Entérico</td><td>Revestimento gastrorresistente</td></tr><tr><td style="white-space:nowrap">layer<a name="manufactured-item-component-type-layer"> </a></td><td>Camada</td><td>Camada de comprimido multicamadas</td></tr><tr><td style="white-space:nowrap">shell<a name="manufactured-item-component-type-shell"> </a></td><td>Invólucro</td><td>Invólucro de cápsula</td></tr><tr><td style="white-space:nowrap">fill<a name="manufactured-item-component-type-fill"> </a></td><td>Conteúdo</td><td>Conteúdo interno de cápsula</td></tr><tr><td style="white-space:nowrap">seal<a name="manufactured-item-component-type-seal"> </a></td><td>Selo</td><td>Selo de fechamento</td></tr><tr><td style="white-space:nowrap">band<a name="manufactured-item-component-type-band"> </a></td><td>Banda</td><td>Banda de identificação</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-type"/>
+  <version value="0.0.3"/>
+  <name value="ManufacturedItemComponentType"/>
+  <title value="Tipo de Componente de Item Manufaturado"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de componentes estruturais de itens manufaturados"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="core"/>
+    <display value="Núcleo"/>
+    <definition value="Núcleo central do item"/>
+  </concept>
+  <concept>
+    <code value="coating"/>
+    <display value="Revestimento"/>
+    <definition value="Camada de revestimento externo"/>
+  </concept>
+  <concept>
+    <code value="film-coating"/>
+    <display value="Revestimento Pelicular"/>
+    <definition value="Filme polimérico de revestimento"/>
+  </concept>
+  <concept>
+    <code value="sugar-coating"/>
+    <display value="Drageamento"/>
+    <definition value="Revestimento com açúcar"/>
+  </concept>
+  <concept>
+    <code value="enteric-coating"/>
+    <display value="Revestimento Entérico"/>
+    <definition value="Revestimento gastrorresistente"/>
+  </concept>
+  <concept>
+    <code value="layer"/>
+    <display value="Camada"/>
+    <definition value="Camada de comprimido multicamadas"/>
+  </concept>
+  <concept>
+    <code value="shell"/>
+    <display value="Invólucro"/>
+    <definition value="Invólucro de cápsula"/>
+  </concept>
+  <concept>
+    <code value="fill"/>
+    <display value="Conteúdo"/>
+    <definition value="Conteúdo interno de cápsula"/>
+  </concept>
+  <concept>
+    <code value="seal"/>
+    <display value="Selo"/>
+    <definition value="Selo de fechamento"/>
+  </concept>
+  <concept>
+    <code value="band"/>
+    <display value="Banda"/>
+    <definition value="Banda de identificação"/>
+  </concept>
+</CodeSystem>

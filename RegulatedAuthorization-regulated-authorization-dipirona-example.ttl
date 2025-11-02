@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/RegulatedAuthorization/regulated-authorization-dipirona-example> a fhir:RegulatedAuthorization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "regulated-authorization-dipirona-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br"^^xsd:anyURI ;
+       fhir:l <https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: RegulatedAuthorization regulated-authorization-dipirona-example</b></p><a name=\"regulated-authorization-dipirona-example\"> </a><a name=\"hcregulated-authorization-dipirona-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-regulated-authorization-br.html\">Autorização Regulatória - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro</code>/1.0123.4567.001-8, <code>http://anvisa.gov.br/processos</code>/25351.123456/2023-15 (utilização: secondary, )</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-dipirona-500mg-example.html\">Dipirona Sódica 500mg Comprimidos</a></p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br similar-drug}\">Medicamento Similar</span></p><p><b>region</b>: <span title=\"Códigos:{urn:iso:std:iso:3166 BR}\">Brazil</span></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br active}\">Ativo</span></p><p><b>statusDate</b>: 2023-08-15</p><p><b>validityPeriod</b>: 2023-08-15 --&gt; 2033-08-15</p><p><b>basis</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br rdc-753-2022}\">RDC 753/2022</span></p><p><b>holder</b>: <a href=\"Organization-organization-neoquimica-example.html\">Laboratório Neoqúimica Ltda.</a></p><p><b>regulator</b>: <a href=\"Organization-organization-anvisa-example.html\">Agência Nacional de Vigilância Sanitária - ANVISA</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro>
+     ] ;
+     fhir:value [ fhir:v "1.0123.4567.001-8" ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:system [
+       fhir:v "http://anvisa.gov.br/processos"^^xsd:anyURI ;
+       fhir:l <http://anvisa.gov.br/processos>
+     ] ;
+     fhir:value [ fhir:v "25351.123456/2023-15" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/MedicinalProductDefinition/dipirona-500mg-example> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/dipirona-500mg-example" ] ;
+     fhir:display [ fhir:v "Dipirona Sódica 500mg Comprimidos" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br>
+       ] ;
+       fhir:code [ fhir:v "similar-drug" ] ;
+       fhir:display [ fhir:v "Medicamento Similar" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br>
+       ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Ativo" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2023-08-15"^^xsd:date] ; # 
+  fhir:validityPeriod [
+     fhir:start [ fhir:v "2023-08-15"^^xsd:date ] ;
+     fhir:end [ fhir:v "2033-08-15"^^xsd:date ]
+  ] ; # 
+  fhir:basis ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br>
+       ] ;
+       fhir:code [ fhir:v "rdc-753-2022" ] ;
+       fhir:display [ fhir:v "RDC 753/2022" ]
+     ] )
+  ] ) ; # 
+  fhir:holder [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/Organization/organization-neoquimica-example> ;
+     fhir:reference [ fhir:v "Organization/organization-neoquimica-example" ] ;
+     fhir:display [ fhir:v "Laboratório Neoqúimica Ltda." ]
+  ] ; # 
+  fhir:regulator [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/Organization/organization-anvisa-example> ;
+     fhir:reference [ fhir:v "Organization/organization-anvisa-example" ] ;
+     fhir:display [ fhir:v "Agência Nacional de Vigilância Sanitária - ANVISA" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

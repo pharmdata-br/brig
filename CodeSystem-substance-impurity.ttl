@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-impurity"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-impurity</b></p><a name=\"substance-impurity\"> </a><a name=\"hcsubstance-impurity\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">residual-solvent<a name=\"substance-impurity-residual-solvent\"> </a></td><td>Solvente Residual</td><td>Solvente orgânico volátil usado ou produzido durante fabricação que permanece na substância final</td></tr><tr><td style=\"white-space:nowrap\">heavy-metal<a name=\"substance-impurity-heavy-metal\"> </a></td><td>Metal Pesado</td><td>Contaminante metálico (ex: chumbo, mercúrio, arsênio, cádmio)</td></tr><tr><td style=\"white-space:nowrap\">degradation-product<a name=\"substance-impurity-degradation-product\"> </a></td><td>Produto de Degradação</td><td>Composto resultante de degradação química da substância ativa</td></tr><tr><td style=\"white-space:nowrap\">process-impurity<a name=\"substance-impurity-process-impurity\"> </a></td><td>Impureza de Processo</td><td>Impureza originada do processo de síntese ou fabricação</td></tr><tr><td style=\"white-space:nowrap\">starting-material<a name=\"substance-impurity-starting-material\"> </a></td><td>Material de Partida Residual</td><td>Resíduo de material de partida usado na síntese</td></tr><tr><td style=\"white-space:nowrap\">reagent<a name=\"substance-impurity-reagent\"> </a></td><td>Reagente Residual</td><td>Reagente químico usado na síntese que permanece como impureza</td></tr><tr><td style=\"white-space:nowrap\">catalyst<a name=\"substance-impurity-catalyst\"> </a></td><td>Catalisador Residual</td><td>Catalisador usado no processo de síntese</td></tr><tr><td style=\"white-space:nowrap\">ligand<a name=\"substance-impurity-ligand\"> </a></td><td>Ligante Residual</td><td>Ligante ou agente complexante residual</td></tr><tr><td style=\"white-space:nowrap\">intermediate<a name=\"substance-impurity-intermediate\"> </a></td><td>Intermediário de Síntese</td><td>Composto intermediário do processo de síntese</td></tr><tr><td style=\"white-space:nowrap\">isomer<a name=\"substance-impurity-isomer\"> </a></td><td>Isômero Indesejado</td><td>Isômero não desejado da substância ativa (ex: enantiômero incorreto)</td></tr><tr><td style=\"white-space:nowrap\">related-substance<a name=\"substance-impurity-related-substance\"> </a></td><td>Substância Relacionada</td><td>Composto estruturalmente relacionado à substância ativa</td></tr><tr><td style=\"white-space:nowrap\">elemental-impurity<a name=\"substance-impurity-elemental-impurity\"> </a></td><td>Impureza Elementar</td><td>Elemento químico presente como impureza (conforme ICH Q3D)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceImpurity"] ; # 
+  fhir:title [ fhir:v "Tipos de Impurezas em Substâncias Farmacêuticas"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Classificação de tipos de impurezas encontradas em substâncias farmacêuticas ativas e excipientes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:purpose [ fhir:v "Alternativa brasileira para SNOMED CT Substance Impurity, adequada ao contexto regulatório nacional"] ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "residual-solvent" ] ;
+     fhir:display [ fhir:v "Solvente Residual" ] ;
+     fhir:definition [ fhir:v "Solvente orgânico volátil usado ou produzido durante fabricação que permanece na substância final" ]
+  ] [
+     fhir:code [ fhir:v "heavy-metal" ] ;
+     fhir:display [ fhir:v "Metal Pesado" ] ;
+     fhir:definition [ fhir:v "Contaminante metálico (ex: chumbo, mercúrio, arsênio, cádmio)" ]
+  ] [
+     fhir:code [ fhir:v "degradation-product" ] ;
+     fhir:display [ fhir:v "Produto de Degradação" ] ;
+     fhir:definition [ fhir:v "Composto resultante de degradação química da substância ativa" ]
+  ] [
+     fhir:code [ fhir:v "process-impurity" ] ;
+     fhir:display [ fhir:v "Impureza de Processo" ] ;
+     fhir:definition [ fhir:v "Impureza originada do processo de síntese ou fabricação" ]
+  ] [
+     fhir:code [ fhir:v "starting-material" ] ;
+     fhir:display [ fhir:v "Material de Partida Residual" ] ;
+     fhir:definition [ fhir:v "Resíduo de material de partida usado na síntese" ]
+  ] [
+     fhir:code [ fhir:v "reagent" ] ;
+     fhir:display [ fhir:v "Reagente Residual" ] ;
+     fhir:definition [ fhir:v "Reagente químico usado na síntese que permanece como impureza" ]
+  ] [
+     fhir:code [ fhir:v "catalyst" ] ;
+     fhir:display [ fhir:v "Catalisador Residual" ] ;
+     fhir:definition [ fhir:v "Catalisador usado no processo de síntese" ]
+  ] [
+     fhir:code [ fhir:v "ligand" ] ;
+     fhir:display [ fhir:v "Ligante Residual" ] ;
+     fhir:definition [ fhir:v "Ligante ou agente complexante residual" ]
+  ] [
+     fhir:code [ fhir:v "intermediate" ] ;
+     fhir:display [ fhir:v "Intermediário de Síntese" ] ;
+     fhir:definition [ fhir:v "Composto intermediário do processo de síntese" ]
+  ] [
+     fhir:code [ fhir:v "isomer" ] ;
+     fhir:display [ fhir:v "Isômero Indesejado" ] ;
+     fhir:definition [ fhir:v "Isômero não desejado da substância ativa (ex: enantiômero incorreto)" ]
+  ] [
+     fhir:code [ fhir:v "related-substance" ] ;
+     fhir:display [ fhir:v "Substância Relacionada" ] ;
+     fhir:definition [ fhir:v "Composto estruturalmente relacionado à substância ativa" ]
+  ] [
+     fhir:code [ fhir:v "elemental-impurity" ] ;
+     fhir:display [ fhir:v "Impureza Elementar" ] ;
+     fhir:definition [ fhir:v "Elemento químico presente como impureza (conforme ICH Q3D)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

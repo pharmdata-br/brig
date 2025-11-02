@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Organization",
+  "id" : "organization-neoquimica-example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization organization-neoquimica-example</b></p><a name=\"organization-neoquimica-example\"> </a><a name=\"hcorganization-neoquimica-example\"> </a><p><b>identifier</b>: <code>https://anvisa.gov.br/cnpj</code>/17.155.502/0001-67</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/organization-type bus}\">Non-Healthcare Business or Corporation</span></p><p><b>name</b>: Laboratório Neoquímica Ltda.</p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://anvisa.gov.br/cnpj",
+    "value" : "17.155.502/0001-67"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "bus",
+      "display" : "Non-Healthcare Business or Corporation"
+    }]
+  }],
+  "name" : "Laboratório Neoquímica Ltda."
+}

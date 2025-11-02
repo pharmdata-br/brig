@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "manufactured-item-component-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem manufactured-item-component-type</b></p><a name=\"manufactured-item-component-type\"> </a><a name=\"hcmanufactured-item-component-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">core<a name=\"manufactured-item-component-type-core\"> </a></td><td>Núcleo</td><td>Núcleo central do item</td></tr><tr><td style=\"white-space:nowrap\">coating<a name=\"manufactured-item-component-type-coating\"> </a></td><td>Revestimento</td><td>Camada de revestimento externo</td></tr><tr><td style=\"white-space:nowrap\">film-coating<a name=\"manufactured-item-component-type-film-coating\"> </a></td><td>Revestimento Pelicular</td><td>Filme polimérico de revestimento</td></tr><tr><td style=\"white-space:nowrap\">sugar-coating<a name=\"manufactured-item-component-type-sugar-coating\"> </a></td><td>Drageamento</td><td>Revestimento com açúcar</td></tr><tr><td style=\"white-space:nowrap\">enteric-coating<a name=\"manufactured-item-component-type-enteric-coating\"> </a></td><td>Revestimento Entérico</td><td>Revestimento gastrorresistente</td></tr><tr><td style=\"white-space:nowrap\">layer<a name=\"manufactured-item-component-type-layer\"> </a></td><td>Camada</td><td>Camada de comprimido multicamadas</td></tr><tr><td style=\"white-space:nowrap\">shell<a name=\"manufactured-item-component-type-shell\"> </a></td><td>Invólucro</td><td>Invólucro de cápsula</td></tr><tr><td style=\"white-space:nowrap\">fill<a name=\"manufactured-item-component-type-fill\"> </a></td><td>Conteúdo</td><td>Conteúdo interno de cápsula</td></tr><tr><td style=\"white-space:nowrap\">seal<a name=\"manufactured-item-component-type-seal\"> </a></td><td>Selo</td><td>Selo de fechamento</td></tr><tr><td style=\"white-space:nowrap\">band<a name=\"manufactured-item-component-type-band\"> </a></td><td>Banda</td><td>Banda de identificação</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ManufacturedItemComponentType"] ; # 
+  fhir:title [ fhir:v "Tipo de Componente de Item Manufaturado"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de componentes estruturais de itens manufaturados"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "core" ] ;
+     fhir:display [ fhir:v "Núcleo" ] ;
+     fhir:definition [ fhir:v "Núcleo central do item" ]
+  ] [
+     fhir:code [ fhir:v "coating" ] ;
+     fhir:display [ fhir:v "Revestimento" ] ;
+     fhir:definition [ fhir:v "Camada de revestimento externo" ]
+  ] [
+     fhir:code [ fhir:v "film-coating" ] ;
+     fhir:display [ fhir:v "Revestimento Pelicular" ] ;
+     fhir:definition [ fhir:v "Filme polimérico de revestimento" ]
+  ] [
+     fhir:code [ fhir:v "sugar-coating" ] ;
+     fhir:display [ fhir:v "Drageamento" ] ;
+     fhir:definition [ fhir:v "Revestimento com açúcar" ]
+  ] [
+     fhir:code [ fhir:v "enteric-coating" ] ;
+     fhir:display [ fhir:v "Revestimento Entérico" ] ;
+     fhir:definition [ fhir:v "Revestimento gastrorresistente" ]
+  ] [
+     fhir:code [ fhir:v "layer" ] ;
+     fhir:display [ fhir:v "Camada" ] ;
+     fhir:definition [ fhir:v "Camada de comprimido multicamadas" ]
+  ] [
+     fhir:code [ fhir:v "shell" ] ;
+     fhir:display [ fhir:v "Invólucro" ] ;
+     fhir:definition [ fhir:v "Invólucro de cápsula" ]
+  ] [
+     fhir:code [ fhir:v "fill" ] ;
+     fhir:display [ fhir:v "Conteúdo" ] ;
+     fhir:definition [ fhir:v "Conteúdo interno de cápsula" ]
+  ] [
+     fhir:code [ fhir:v "seal" ] ;
+     fhir:display [ fhir:v "Selo" ] ;
+     fhir:definition [ fhir:v "Selo de fechamento" ]
+  ] [
+     fhir:code [ fhir:v "band" ] ;
+     fhir:display [ fhir:v "Banda" ] ;
+     fhir:definition [ fhir:v "Banda de identificação" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

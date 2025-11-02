@@ -1,0 +1,89 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "gmp-certification-status-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem gmp-certification-status-br</b></p><a name=\"gmp-certification-status-br\"> </a><a name=\"hcgmp-certification-status-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">certified<a name=\"gmp-certification-status-br-certified\"> </a></td><td>Certificada</td><td>Certificação GMP válida e ativa</td></tr><tr><td style=\"white-space:nowrap\">expired<a name=\"gmp-certification-status-br-expired\"> </a></td><td>Vencida</td><td>Certificação GMP vencida</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"gmp-certification-status-br-suspended\"> </a></td><td>Suspensa</td><td>Certificação GMP temporariamente suspensa</td></tr><tr><td style=\"white-space:nowrap\">pending<a name=\"gmp-certification-status-br-pending\"> </a></td><td>Pendente</td><td>Processo de certificação em andamento</td></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"gmp-certification-status-br-not-applicable\"> </a></td><td>Não Aplicável</td><td>Certificação GMP não aplicável para este tipo de organização</td></tr><tr><td style=\"white-space:nowrap\">denied<a name=\"gmp-certification-status-br-denied\"> </a></td><td>Negada</td><td>Certificação GMP negada</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/gmp-certification-status-br",
+  "version" : "0.0.3",
+  "name" : "GMPCertificationStatusBR",
+  "title" : "Status de Certificação GMP - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para status de certificação GMP",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "certified",
+    "display" : "Certificada",
+    "definition" : "Certificação GMP válida e ativa"
+  },
+  {
+    "code" : "expired",
+    "display" : "Vencida",
+    "definition" : "Certificação GMP vencida"
+  },
+  {
+    "code" : "suspended",
+    "display" : "Suspensa",
+    "definition" : "Certificação GMP temporariamente suspensa"
+  },
+  {
+    "code" : "pending",
+    "display" : "Pendente",
+    "definition" : "Processo de certificação em andamento"
+  },
+  {
+    "code" : "not-applicable",
+    "display" : "Não Aplicável",
+    "definition" : "Certificação GMP não aplicável para este tipo de organização"
+  },
+  {
+    "code" : "denied",
+    "display" : "Negada",
+    "definition" : "Certificação GMP negada"
+  }]
+}

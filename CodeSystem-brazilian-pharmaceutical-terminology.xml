@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="brazilian-pharmaceutical-terminology"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem brazilian-pharmaceutical-terminology</b></p><a name="brazilian-pharmaceutical-terminology"> </a><a name="hcbrazilian-pharmaceutical-terminology"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">marketing-authorization-holder<a name="brazilian-pharmaceutical-terminology-marketing-authorization-holder"> </a></td><td>Detentor do Registro</td><td>Empresa responsável pelo registro do medicamento junto à ANVISA</td></tr><tr><td style="white-space:nowrap">pharmaceutical-form<a name="brazilian-pharmaceutical-terminology-pharmaceutical-form"> </a></td><td>Forma Farmacêutica</td><td>Forma física final do medicamento (comprimido, cápsula, solução, etc.)</td></tr><tr><td style="white-space:nowrap">legal-status<a name="brazilian-pharmaceutical-terminology-legal-status"> </a></td><td>Status Legal de Dispensação</td><td>Classificação legal para dispensação (prescrição médica, venda livre, controlado)</td></tr><tr><td style="white-space:nowrap">package<a name="brazilian-pharmaceutical-terminology-package"> </a></td><td>Embalagem</td><td>Sistema de acondicionamento do produto farmacêutico</td></tr><tr><td style="white-space:nowrap">container<a name="brazilian-pharmaceutical-terminology-container"> </a></td><td>Recipiente</td><td>Recipiente primário que contém diretamente o medicamento</td></tr><tr><td style="white-space:nowrap">strength<a name="brazilian-pharmaceutical-terminology-strength"> </a></td><td>Concentração</td><td>Quantidade de substância ativa por unidade de dosagem</td></tr><tr><td style="white-space:nowrap">dosage<a name="brazilian-pharmaceutical-terminology-dosage"> </a></td><td>Dosagem</td><td>Quantidade específica de medicamento a ser administrada</td></tr><tr><td style="white-space:nowrap">active-substance<a name="brazilian-pharmaceutical-terminology-active-substance"> </a></td><td>Substância Ativa</td><td>Componente farmacologicamente ativo do medicamento</td></tr><tr><td style="white-space:nowrap">excipient<a name="brazilian-pharmaceutical-terminology-excipient"> </a></td><td>Excipiente</td><td>Componente inativo do medicamento</td></tr><tr><td style="white-space:nowrap">route-administration<a name="brazilian-pharmaceutical-terminology-route-administration"> </a></td><td>Via de Administração</td><td>Método pelo qual o medicamento é introduzido no organismo</td></tr><tr><td style="white-space:nowrap">therapeutic-indication<a name="brazilian-pharmaceutical-terminology-therapeutic-indication"> </a></td><td>Indicação Terapêutica</td><td>Condição médica para a qual o medicamento é indicado</td></tr><tr><td style="white-space:nowrap">contraindication<a name="brazilian-pharmaceutical-terminology-contraindication"> </a></td><td>Contraindicação</td><td>Situação em que o medicamento não deve ser usado</td></tr><tr><td style="white-space:nowrap">adverse-reaction<a name="brazilian-pharmaceutical-terminology-adverse-reaction"> </a></td><td>Reação Adversa</td><td>Efeito indesejado relacionado ao uso do medicamento</td></tr><tr><td style="white-space:nowrap">presentation-unit<a name="brazilian-pharmaceutical-terminology-presentation-unit"> </a></td><td>Unidade de Apresentação</td><td>Unidade individual do medicamento (comprimido, cápsula, ampola, etc.)</td></tr><tr><td style="white-space:nowrap">commercial-package<a name="brazilian-pharmaceutical-terminology-commercial-package"> </a></td><td>Embalagem Comercial</td><td>Embalagem final para comercialização do produto</td></tr><tr><td style="white-space:nowrap">primary-package<a name="brazilian-pharmaceutical-terminology-primary-package"> </a></td><td>Embalagem Primária</td><td>Embalagem em contato direto com o medicamento</td></tr><tr><td style="white-space:nowrap">secondary-package<a name="brazilian-pharmaceutical-terminology-secondary-package"> </a></td><td>Embalagem Secundária</td><td>Embalagem que contém a embalagem primária</td></tr><tr><td style="white-space:nowrap">batch-lot<a name="brazilian-pharmaceutical-terminology-batch-lot"> </a></td><td>Lote</td><td>Quantidade de produto fabricada em condições uniformes</td></tr><tr><td style="white-space:nowrap">expiry-date<a name="brazilian-pharmaceutical-terminology-expiry-date"> </a></td><td>Data de Validade</td><td>Data limite para uso seguro do medicamento</td></tr><tr><td style="white-space:nowrap">storage-conditions<a name="brazilian-pharmaceutical-terminology-storage-conditions"> </a></td><td>Condições de Armazenamento</td><td>Requisitos específicos para conservação do medicamento</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/brazilian-pharmaceutical-terminology"/>
+  <version value="0.0.3"/>
+  <name value="BrazilianPharmaceuticalTerminology"/>
+  <title value="Terminologia Farmacêutica Brasileira"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-08-04"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para terminologia farmacêutica brasileira padronizada"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="20"/>
+  <concept>
+    <code value="marketing-authorization-holder"/>
+    <display value="Detentor do Registro"/>
+    <definition value="Empresa responsável pelo registro do medicamento junto à ANVISA"/>
+  </concept>
+  <concept>
+    <code value="pharmaceutical-form"/>
+    <display value="Forma Farmacêutica"/>
+    <definition value="Forma física final do medicamento (comprimido, cápsula, solução, etc.)"/>
+  </concept>
+  <concept>
+    <code value="legal-status"/>
+    <display value="Status Legal de Dispensação"/>
+    <definition value="Classificação legal para dispensação (prescrição médica, venda livre, controlado)"/>
+  </concept>
+  <concept>
+    <code value="package"/>
+    <display value="Embalagem"/>
+    <definition value="Sistema de acondicionamento do produto farmacêutico"/>
+  </concept>
+  <concept>
+    <code value="container"/>
+    <display value="Recipiente"/>
+    <definition value="Recipiente primário que contém diretamente o medicamento"/>
+  </concept>
+  <concept>
+    <code value="strength"/>
+    <display value="Concentração"/>
+    <definition value="Quantidade de substância ativa por unidade de dosagem"/>
+  </concept>
+  <concept>
+    <code value="dosage"/>
+    <display value="Dosagem"/>
+    <definition value="Quantidade específica de medicamento a ser administrada"/>
+  </concept>
+  <concept>
+    <code value="active-substance"/>
+    <display value="Substância Ativa"/>
+    <definition value="Componente farmacologicamente ativo do medicamento"/>
+  </concept>
+  <concept>
+    <code value="excipient"/>
+    <display value="Excipiente"/>
+    <definition value="Componente inativo do medicamento"/>
+  </concept>
+  <concept>
+    <code value="route-administration"/>
+    <display value="Via de Administração"/>
+    <definition value="Método pelo qual o medicamento é introduzido no organismo"/>
+  </concept>
+  <concept>
+    <code value="therapeutic-indication"/>
+    <display value="Indicação Terapêutica"/>
+    <definition value="Condição médica para a qual o medicamento é indicado"/>
+  </concept>
+  <concept>
+    <code value="contraindication"/>
+    <display value="Contraindicação"/>
+    <definition value="Situação em que o medicamento não deve ser usado"/>
+  </concept>
+  <concept>
+    <code value="adverse-reaction"/>
+    <display value="Reação Adversa"/>
+    <definition value="Efeito indesejado relacionado ao uso do medicamento"/>
+  </concept>
+  <concept>
+    <code value="presentation-unit"/>
+    <display value="Unidade de Apresentação"/>
+    <definition value="Unidade individual do medicamento (comprimido, cápsula, ampola, etc.)"/>
+  </concept>
+  <concept>
+    <code value="commercial-package"/>
+    <display value="Embalagem Comercial"/>
+    <definition value="Embalagem final para comercialização do produto"/>
+  </concept>
+  <concept>
+    <code value="primary-package"/>
+    <display value="Embalagem Primária"/>
+    <definition value="Embalagem em contato direto com o medicamento"/>
+  </concept>
+  <concept>
+    <code value="secondary-package"/>
+    <display value="Embalagem Secundária"/>
+    <definition value="Embalagem que contém a embalagem primária"/>
+  </concept>
+  <concept>
+    <code value="batch-lot"/>
+    <display value="Lote"/>
+    <definition value="Quantidade de produto fabricada em condições uniformes"/>
+  </concept>
+  <concept>
+    <code value="expiry-date"/>
+    <display value="Data de Validade"/>
+    <definition value="Data limite para uso seguro do medicamento"/>
+  </concept>
+  <concept>
+    <code value="storage-conditions"/>
+    <display value="Condições de Armazenamento"/>
+    <definition value="Requisitos específicos para conservação do medicamento"/>
+  </concept>
+</CodeSystem>

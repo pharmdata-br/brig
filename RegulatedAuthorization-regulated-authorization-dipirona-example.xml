@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RegulatedAuthorization xmlns="http://hl7.org/fhir">
+  <id value="regulated-authorization-dipirona-example"/>
+  <meta>
+    <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: RegulatedAuthorization regulated-authorization-dipirona-example</b></p><a name="regulated-authorization-dipirona-example"> </a><a name="hcregulated-authorization-dipirona-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-regulated-authorization-br.html">Autorização Regulatória - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro</code>/1.0123.4567.001-8, <code>http://anvisa.gov.br/processos</code>/25351.123456/2023-15 (utilização: secondary, )</p><p><b>subject</b>: <a href="MedicinalProductDefinition-dipirona-500mg-example.html">Dipirona Sódica 500mg Comprimidos</a></p><p><b>type</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br similar-drug}">Medicamento Similar</span></p><p><b>region</b>: <span title="Códigos:{urn:iso:std:iso:3166 BR}">Brazil</span></p><p><b>status</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br active}">Ativo</span></p><p><b>statusDate</b>: 2023-08-15</p><p><b>validityPeriod</b>: 2023-08-15 --&gt; 2033-08-15</p><p><b>basis</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br rdc-753-2022}">RDC 753/2022</span></p><p><b>holder</b>: <a href="Organization-organization-neoquimica-example.html">Laboratório Neoqúimica Ltda.</a></p><p><b>regulator</b>: <a href="Organization-organization-anvisa-example.html">Agência Nacional de Vigilância Sanitária - ANVISA</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro"/>
+    <value value="1.0123.4567.001-8"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <system value="http://anvisa.gov.br/processos"/>
+    <value value="25351.123456/2023-15"/>
+  </identifier>
+  <subject>
+    <reference value="MedicinalProductDefinition/dipirona-500mg-example"/>
+    <display value="Dipirona Sódica 500mg Comprimidos"/>
+  </subject>
+  <type>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"/>
+      <code value="similar-drug"/>
+      <display value="Medicamento Similar"/>
+    </coding>
+  </type>
+  <region>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </region>
+  <status>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"/>
+      <code value="active"/>
+      <display value="Ativo"/>
+    </coding>
+  </status>
+  <statusDate value="2023-08-15"/>
+  <validityPeriod>
+    <start value="2023-08-15"/>
+    <end value="2033-08-15"/>
+  </validityPeriod>
+  <basis>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br"/>
+      <code value="rdc-753-2022"/>
+      <display value="RDC 753/2022"/>
+    </coding>
+  </basis>
+  <holder>
+    <reference value="Organization/organization-neoquimica-example"/>
+    <display value="Laboratório Neoqúimica Ltda."/>
+  </holder>
+  <regulator>
+    <reference value="Organization/organization-anvisa-example"/>
+    <display value="Agência Nacional de Vigilância Sanitária - ANVISA"/>
+  </regulator>
+</RegulatedAuthorization>

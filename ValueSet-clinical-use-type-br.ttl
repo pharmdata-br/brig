@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-type-br> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "clinical-use-type-br"] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet clinical-use-type-br</b></p><a name=\"clinical-use-type-br\"> </a><a name=\"hcclinical-use-type-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><ul><li>Include estes códigos, tal como definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>indication</td><td>Indicação terapêutica</td></tr><tr><td>contraindication</td><td>Contraindicação</td></tr><tr><td>interaction</td><td>Interação medicamentosa</td></tr><tr><td>undesirable-effect</td><td>Efeito indesejável</td></tr><tr><td>warning</td><td>Advertência especial</td></tr><tr><td>dosage</td><td>Posologia</td></tr><tr><td>dce-sus</td><td>Critério DCE-SUS</td></tr><tr><td>rename</td><td>Critério RENAME</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-type-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-type-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ClinicalUseTypeBRValueSet"] ; # 
+  fhir:title [ fhir:v "Tipos de Uso Clínico - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet dos tipos de definição de uso clínico para o contexto brasileiro."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v false] ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "indication" ] ;
+         fhir:display [ fhir:v "Indicação terapêutica" ]
+       ] [
+         fhir:code [ fhir:v "contraindication" ] ;
+         fhir:display [ fhir:v "Contraindicação" ]
+       ] [
+         fhir:code [ fhir:v "interaction" ] ;
+         fhir:display [ fhir:v "Interação medicamentosa" ]
+       ] [
+         fhir:code [ fhir:v "undesirable-effect" ] ;
+         fhir:display [ fhir:v "Efeito indesejável" ]
+       ] [
+         fhir:code [ fhir:v "warning" ] ;
+         fhir:display [ fhir:v "Advertência especial" ]
+       ] [
+         fhir:code [ fhir:v "dosage" ] ;
+         fhir:display [ fhir:v "Posologia" ]
+       ] [
+         fhir:code [ fhir:v "dce-sus" ] ;
+         fhir:display [ fhir:v "Critério DCE-SUS" ]
+       ] [
+         fhir:code [ fhir:v "rename" ] ;
+         fhir:display [ fhir:v "Critério RENAME" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SubstanceDefinition xmlns="http://hl7.org/fhir">
+  <id value="midazolam-substance"/>
+  <meta>
+    <lastUpdated value="2025-08-02T10:00:00Z"/>
+    <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br"/>
+    <profile value="http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Midazolam (Substância Controlada)</h2><p><strong>DCB:</strong> 05969</p><p><strong>CAS:</strong> 59467-70-8</p><p><strong>UNII:</strong> R60L0SM5BC</p><p><strong>Classificação:</strong> Substância Ativa, Controlada, Psicotrópica</p><p><strong>Status:</strong> Aprovada com Restrições pela ANVISA</p><p><strong>Categoria de Controle:</strong> Lista B1 (Psicotrópicos)</p><p><strong>Grau:</strong> Farmacêutico</p><p><strong>Fórmula Molecular:</strong> C18H13ClFN3</p><p><strong>Peso Molecular:</strong> 325.77 g/mol</p><p><strong>Restrições:</strong> Uso restrito a ambiente hospitalar, requer receita de controle especial</p><p><strong>Código ATC:</strong> N05CD08</p><p><strong>Descrição:</strong> Benzodiazepínico para sedação, ansiolise e amnésia</p></div>
+  </text>
+  <identifier>
+    <system value="http://farmaco.maxapex.net/brig/fhir/NamingSystem/dcb"/>
+    <value value="05969"/>
+  </identifier>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.6.61"/>
+    <value value="59467-70-8"/>
+  </identifier>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/inn"/>
+    <value value="midazolam"/>
+  </identifier>
+  <status>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"/>
+      <code value="active"/>
+    </coding>
+  </status>
+  <classification>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"/>
+      <code value="active"/>
+    </coding>
+  </classification>
+  <classification>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"/>
+      <code value="controlled"/>
+    </coding>
+  </classification>
+  <classification>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"/>
+      <code value="psychotropic"/>
+    </coding>
+  </classification>
+  <domain>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicinalproduct-domain"/>
+      <code value="Human"/>
+    </coding>
+  </domain>
+  <grade>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade"/>
+      <code value="pharmaceutical"/>
+    </coding>
+  </grade>
+  <description value="O midazolam é um medicamento benzodiazepínico de ação rápida usado para sedação, ansiolise e amnésia. É uma substância controlada no Brasil, classificada na Lista B1."/>
+  <property>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/substance-property-type"/>
+        <code value="MolecularWeight"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="325.77"/>
+      <unit value="grams per mole"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="g/mol"/>
+    </valueQuantity>
+  </property>
+  <structure>
+    <representation>
+      <representation value="C18H13ClFN3"/>
+      <format>
+        <coding>
+          <system value="http://hl7.org/fhir/substance-representation-format"/>
+          <code value="SMILES"/>
+        </coding>
+      </format>
+    </representation>
+  </structure>
+  <name>
+    <name value="Midazolam"/>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type"/>
+        <code value="official"/>
+      </coding>
+    </type>
+  </name>
+  <name>
+    <name value="Midazolam"/>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type"/>
+        <code value="common"/>
+      </coding>
+    </type>
+  </name>
+</SubstanceDefinition>

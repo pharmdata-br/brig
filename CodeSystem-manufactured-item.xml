@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="manufactured-item"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem manufactured-item</b></p><a name="manufactured-item"> </a><a name="hcmanufactured-item"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">dipirona-comp-500mg<a name="manufactured-item-dipirona-comp-500mg"> </a></td><td>Dipirona Sódica 500mg comprimido</td><td>Comprimido de dipirona sódica 500mg</td></tr><tr><td style="white-space:nowrap">midazolam-amp-5mg-3ml<a name="manufactured-item-midazolam-amp-5mg-3ml"> </a></td><td>Midazolam 5mg/mL ampola 3mL</td><td>Ampola de midazolam 5mg/mL com 3mL</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item"/>
+  <version value="0.0.3"/>
+  <name value="ManufacturedItem"/>
+  <title value="Itens Fabricados"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Códigos para itens farmacêuticos fabricados (padrão internacional)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="dipirona-comp-500mg"/>
+    <display value="Dipirona Sódica 500mg comprimido"/>
+    <definition value="Comprimido de dipirona sódica 500mg"/>
+  </concept>
+  <concept>
+    <code value="midazolam-amp-5mg-3ml"/>
+    <display value="Midazolam 5mg/mL ampola 3mL"/>
+    <definition value="Ampola de midazolam 5mg/mL com 3mL"/>
+  </concept>
+</CodeSystem>

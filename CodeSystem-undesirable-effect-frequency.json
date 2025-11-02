@@ -1,0 +1,99 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "undesirable-effect-frequency",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem undesirable-effect-frequency</b></p><a name=\"undesirable-effect-frequency\"> </a><a name=\"hcundesirable-effect-frequency\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">very-common<a name=\"undesirable-effect-frequency-very-common\"> </a></td><td>Muito Comum</td><td>≥ 1/10 (≥ 10%) - Afeta mais de 1 usuário em 10</td></tr><tr><td style=\"white-space:nowrap\">common<a name=\"undesirable-effect-frequency-common\"> </a></td><td>Comum</td><td>≥ 1/100 e &lt; 1/10 (≥ 1% e &lt; 10%) - Afeta 1 a 10 usuários em 100</td></tr><tr><td style=\"white-space:nowrap\">uncommon<a name=\"undesirable-effect-frequency-uncommon\"> </a></td><td>Incomum</td><td>≥ 1/1.000 e &lt; 1/100 (≥ 0,1% e &lt; 1%) - Afeta 1 a 10 usuários em 1.000</td></tr><tr><td style=\"white-space:nowrap\">rare<a name=\"undesirable-effect-frequency-rare\"> </a></td><td>Raro</td><td>≥ 1/10.000 e &lt; 1/1.000 (≥ 0,01% e &lt; 0,1%) - Afeta 1 a 10 usuários em 10.000</td></tr><tr><td style=\"white-space:nowrap\">very-rare<a name=\"undesirable-effect-frequency-very-rare\"> </a></td><td>Muito Raro</td><td>&lt; 1/10.000 (&lt; 0,01%) - Afeta menos de 1 usuário em 10.000</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"undesirable-effect-frequency-unknown\"> </a></td><td>Frequência Desconhecida</td><td>Não pode ser estimada a partir dos dados disponíveis</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-frequency",
+  "version" : "0.0.3",
+  "name" : "UndesirableEffectFrequency",
+  "title" : "Frequência de Efeito Indesejável",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-31",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Frequência de ocorrência de efeitos indesejáveis conforme CIOMS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "very-common",
+    "display" : "Muito Comum",
+    "definition" : "≥ 1/10 (≥ 10%) - Afeta mais de 1 usuário em 10"
+  },
+  {
+    "code" : "common",
+    "display" : "Comum",
+    "definition" : "≥ 1/100 e < 1/10 (≥ 1% e < 10%) - Afeta 1 a 10 usuários em 100"
+  },
+  {
+    "code" : "uncommon",
+    "display" : "Incomum",
+    "definition" : "≥ 1/1.000 e < 1/100 (≥ 0,1% e < 1%) - Afeta 1 a 10 usuários em 1.000"
+  },
+  {
+    "code" : "rare",
+    "display" : "Raro",
+    "definition" : "≥ 1/10.000 e < 1/1.000 (≥ 0,01% e < 0,1%) - Afeta 1 a 10 usuários em 10.000"
+  },
+  {
+    "code" : "very-rare",
+    "display" : "Muito Raro",
+    "definition" : "< 1/10.000 (< 0,01%) - Afeta menos de 1 usuário em 10.000"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Frequência Desconhecida",
+    "definition" : "Não pode ser estimada a partir dos dados disponíveis"
+  }]
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="substance-impurity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem substance-impurity</b></p><a name="substance-impurity"> </a><a name="hcsubstance-impurity"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">residual-solvent<a name="substance-impurity-residual-solvent"> </a></td><td>Solvente Residual</td><td>Solvente orgânico volátil usado ou produzido durante fabricação que permanece na substância final</td></tr><tr><td style="white-space:nowrap">heavy-metal<a name="substance-impurity-heavy-metal"> </a></td><td>Metal Pesado</td><td>Contaminante metálico (ex: chumbo, mercúrio, arsênio, cádmio)</td></tr><tr><td style="white-space:nowrap">degradation-product<a name="substance-impurity-degradation-product"> </a></td><td>Produto de Degradação</td><td>Composto resultante de degradação química da substância ativa</td></tr><tr><td style="white-space:nowrap">process-impurity<a name="substance-impurity-process-impurity"> </a></td><td>Impureza de Processo</td><td>Impureza originada do processo de síntese ou fabricação</td></tr><tr><td style="white-space:nowrap">starting-material<a name="substance-impurity-starting-material"> </a></td><td>Material de Partida Residual</td><td>Resíduo de material de partida usado na síntese</td></tr><tr><td style="white-space:nowrap">reagent<a name="substance-impurity-reagent"> </a></td><td>Reagente Residual</td><td>Reagente químico usado na síntese que permanece como impureza</td></tr><tr><td style="white-space:nowrap">catalyst<a name="substance-impurity-catalyst"> </a></td><td>Catalisador Residual</td><td>Catalisador usado no processo de síntese</td></tr><tr><td style="white-space:nowrap">ligand<a name="substance-impurity-ligand"> </a></td><td>Ligante Residual</td><td>Ligante ou agente complexante residual</td></tr><tr><td style="white-space:nowrap">intermediate<a name="substance-impurity-intermediate"> </a></td><td>Intermediário de Síntese</td><td>Composto intermediário do processo de síntese</td></tr><tr><td style="white-space:nowrap">isomer<a name="substance-impurity-isomer"> </a></td><td>Isômero Indesejado</td><td>Isômero não desejado da substância ativa (ex: enantiômero incorreto)</td></tr><tr><td style="white-space:nowrap">related-substance<a name="substance-impurity-related-substance"> </a></td><td>Substância Relacionada</td><td>Composto estruturalmente relacionado à substância ativa</td></tr><tr><td style="white-space:nowrap">elemental-impurity<a name="substance-impurity-elemental-impurity"> </a></td><td>Impureza Elementar</td><td>Elemento químico presente como impureza (conforme ICH Q3D)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity"/>
+  <version value="0.0.3"/>
+  <name value="SubstanceImpurity"/>
+  <title value="Tipos de Impurezas em Substâncias Farmacêuticas"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Classificação de tipos de impurezas encontradas em substâncias farmacêuticas ativas e excipientes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Alternativa brasileira para SNOMED CT Substance Impurity, adequada ao contexto regulatório nacional"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="residual-solvent"/>
+    <display value="Solvente Residual"/>
+    <definition value="Solvente orgânico volátil usado ou produzido durante fabricação que permanece na substância final"/>
+  </concept>
+  <concept>
+    <code value="heavy-metal"/>
+    <display value="Metal Pesado"/>
+    <definition value="Contaminante metálico (ex: chumbo, mercúrio, arsênio, cádmio)"/>
+  </concept>
+  <concept>
+    <code value="degradation-product"/>
+    <display value="Produto de Degradação"/>
+    <definition value="Composto resultante de degradação química da substância ativa"/>
+  </concept>
+  <concept>
+    <code value="process-impurity"/>
+    <display value="Impureza de Processo"/>
+    <definition value="Impureza originada do processo de síntese ou fabricação"/>
+  </concept>
+  <concept>
+    <code value="starting-material"/>
+    <display value="Material de Partida Residual"/>
+    <definition value="Resíduo de material de partida usado na síntese"/>
+  </concept>
+  <concept>
+    <code value="reagent"/>
+    <display value="Reagente Residual"/>
+    <definition value="Reagente químico usado na síntese que permanece como impureza"/>
+  </concept>
+  <concept>
+    <code value="catalyst"/>
+    <display value="Catalisador Residual"/>
+    <definition value="Catalisador usado no processo de síntese"/>
+  </concept>
+  <concept>
+    <code value="ligand"/>
+    <display value="Ligante Residual"/>
+    <definition value="Ligante ou agente complexante residual"/>
+  </concept>
+  <concept>
+    <code value="intermediate"/>
+    <display value="Intermediário de Síntese"/>
+    <definition value="Composto intermediário do processo de síntese"/>
+  </concept>
+  <concept>
+    <code value="isomer"/>
+    <display value="Isômero Indesejado"/>
+    <definition value="Isômero não desejado da substância ativa (ex: enantiômero incorreto)"/>
+  </concept>
+  <concept>
+    <code value="related-substance"/>
+    <display value="Substância Relacionada"/>
+    <definition value="Composto estruturalmente relacionado à substância ativa"/>
+  </concept>
+  <concept>
+    <code value="elemental-impurity"/>
+    <display value="Impureza Elementar"/>
+    <definition value="Elemento químico presente como impureza (conforme ICH Q3D)"/>
+  </concept>
+</CodeSystem>

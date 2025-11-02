@@ -1,0 +1,225 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "product-characteristic"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem product-characteristic</b></p><a name=\"product-characteristic\"> </a><a name=\"hcproduct-characteristic\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">color<a name=\"product-characteristic-color\"> </a></td><td>Cor</td><td>Cor ou coloração do produto medicinal ou componente</td></tr><tr><td style=\"white-space:nowrap\">shape<a name=\"product-characteristic-shape\"> </a></td><td>Forma</td><td>Forma geométrica do produto (ex: redondo, oval, oblongo, triangular)</td></tr><tr><td style=\"white-space:nowrap\">size<a name=\"product-characteristic-size\"> </a></td><td>Tamanho</td><td>Dimensões físicas do produto (comprimento, largura, altura, diâmetro)</td></tr><tr><td style=\"white-space:nowrap\">weight<a name=\"product-characteristic-weight\"> </a></td><td>Peso</td><td>Massa ou peso do produto ou componente</td></tr><tr><td style=\"white-space:nowrap\">thickness<a name=\"product-characteristic-thickness\"> </a></td><td>Espessura</td><td>Espessura medida do produto sólido</td></tr><tr><td style=\"white-space:nowrap\">imprint<a name=\"product-characteristic-imprint\"> </a></td><td>Gravação</td><td>Texto, código ou símbolo gravado ou impresso no produto</td></tr><tr><td style=\"white-space:nowrap\">score<a name=\"product-characteristic-score\"> </a></td><td>Sulco</td><td>Presença, número e tipo de sulcos para divisão do produto</td></tr><tr><td style=\"white-space:nowrap\">coating<a name=\"product-characteristic-coating\"> </a></td><td>Revestimento</td><td>Tipo e características do revestimento (entérico, film-coated, sugar-coated)</td></tr><tr><td style=\"white-space:nowrap\">appearance<a name=\"product-characteristic-appearance\"> </a></td><td>Aparência</td><td>Aparência visual geral do produto (brilhante, fosco, translúcido, opaco)</td></tr><tr><td style=\"white-space:nowrap\">pack-type<a name=\"product-characteristic-pack-type\"> </a></td><td>Tipo de Embalagem</td><td>Tipo de embalagem primária (blister, frasco, ampola, seringa pré-preenchida)</td></tr><tr><td style=\"white-space:nowrap\">pack-material<a name=\"product-characteristic-pack-material\"> </a></td><td>Material de Embalagem</td><td>Material da embalagem primária (PVC, vidro, HDPE, alumínio)</td></tr><tr><td style=\"white-space:nowrap\">pack-size<a name=\"product-characteristic-pack-size\"> </a></td><td>Tamanho de Embalagem</td><td>Quantidade de unidades na embalagem</td></tr><tr><td style=\"white-space:nowrap\">release-profile<a name=\"product-characteristic-release-profile\"> </a></td><td>Perfil de Liberação</td><td>Perfil de liberação do princípio ativo (liberação imediata, prolongada, modificada)</td></tr><tr><td style=\"white-space:nowrap\">dissolution-rate<a name=\"product-characteristic-dissolution-rate\"> </a></td><td>Taxa de Dissolução</td><td>Taxa de dissolução do produto conforme especificação farmacopeica</td></tr><tr><td style=\"white-space:nowrap\">disintegration-time<a name=\"product-characteristic-disintegration-time\"> </a></td><td>Tempo de Desintegração</td><td>Tempo de desintegração conforme especificação farmacopeica</td></tr><tr><td style=\"white-space:nowrap\">ph<a name=\"product-characteristic-ph\"> </a></td><td>pH</td><td>Valor de pH do produto ou solução</td></tr><tr><td style=\"white-space:nowrap\">osmolarity<a name=\"product-characteristic-osmolarity\"> </a></td><td>Osmolaridade</td><td>Osmolaridade de soluções injetáveis ou oftálmicas</td></tr><tr><td style=\"white-space:nowrap\">viscosity<a name=\"product-characteristic-viscosity\"> </a></td><td>Viscosidade</td><td>Viscosidade de líquidos, géis ou semissólidos</td></tr><tr><td style=\"white-space:nowrap\">specific-gravity<a name=\"product-characteristic-specific-gravity\"> </a></td><td>Densidade</td><td>Densidade ou peso específico do produto líquido</td></tr><tr><td style=\"white-space:nowrap\">taste<a name=\"product-characteristic-taste\"> </a></td><td>Sabor</td><td>Sabor característico do produto (para formas orais)</td></tr><tr><td style=\"white-space:nowrap\">odor<a name=\"product-characteristic-odor\"> </a></td><td>Odor</td><td>Odor característico do produto</td></tr><tr><td style=\"white-space:nowrap\">flavor<a name=\"product-characteristic-flavor\"> </a></td><td>Aroma</td><td>Aroma adicionado ao produto (ex: morango, laranja, menta)</td></tr><tr><td style=\"white-space:nowrap\">shelf-life<a name=\"product-characteristic-shelf-life\"> </a></td><td>Prazo de Validade</td><td>Prazo de validade em meses a partir da fabricação</td></tr><tr><td style=\"white-space:nowrap\">storage-temperature<a name=\"product-characteristic-storage-temperature\"> </a></td><td>Temperatura de Armazenamento</td><td>Faixa de temperatura para armazenamento</td></tr><tr><td style=\"white-space:nowrap\">light-sensitivity<a name=\"product-characteristic-light-sensitivity\"> </a></td><td>Sensibilidade à Luz</td><td>Grau de sensibilidade à luz (proteger da luz, opaco, etc.)</td></tr><tr><td style=\"white-space:nowrap\">dose-strength<a name=\"product-characteristic-dose-strength\"> </a></td><td>Potência</td><td>Concentração ou potência do princípio ativo</td></tr><tr><td style=\"white-space:nowrap\">dose-volume<a name=\"product-characteristic-dose-volume\"> </a></td><td>Volume de Dose</td><td>Volume administrado por dose (para líquidos)</td></tr><tr><td style=\"white-space:nowrap\">dose-unit<a name=\"product-characteristic-dose-unit\"> </a></td><td>Unidade de Dose</td><td>Unidade posológica (comprimido, cápsula, ml, aplicação)</td></tr><tr><td style=\"white-space:nowrap\">bioequivalence<a name=\"product-characteristic-bioequivalence\"> </a></td><td>Bioequivalência</td><td>Indicação de estudo de bioequivalência realizado</td></tr><tr><td style=\"white-space:nowrap\">excipient<a name=\"product-characteristic-excipient\"> </a></td><td>Excipiente</td><td>Excipientes funcionais relevantes (ex: contém lactose, glúten, corantes azóicos)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ProductCharacteristic"] ; # 
+  fhir:title [ fhir:v "Características de Produto Medicinal"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Características observáveis e mensuráveis de produtos medicinais. CodeSystem brasileiro como alternativa ao SNOMED CT Observable Entity."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:purpose [ fhir:v "Descrever características físicas, químicas e farmacêuticas de produtos medicinais para fins de identificação, controle de qualidade e rastreabilidade"] ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "30"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "color" ] ;
+     fhir:display [ fhir:v "Cor" ] ;
+     fhir:definition [ fhir:v "Cor ou coloração do produto medicinal ou componente" ]
+  ] [
+     fhir:code [ fhir:v "shape" ] ;
+     fhir:display [ fhir:v "Forma" ] ;
+     fhir:definition [ fhir:v "Forma geométrica do produto (ex: redondo, oval, oblongo, triangular)" ]
+  ] [
+     fhir:code [ fhir:v "size" ] ;
+     fhir:display [ fhir:v "Tamanho" ] ;
+     fhir:definition [ fhir:v "Dimensões físicas do produto (comprimento, largura, altura, diâmetro)" ]
+  ] [
+     fhir:code [ fhir:v "weight" ] ;
+     fhir:display [ fhir:v "Peso" ] ;
+     fhir:definition [ fhir:v "Massa ou peso do produto ou componente" ]
+  ] [
+     fhir:code [ fhir:v "thickness" ] ;
+     fhir:display [ fhir:v "Espessura" ] ;
+     fhir:definition [ fhir:v "Espessura medida do produto sólido" ]
+  ] [
+     fhir:code [ fhir:v "imprint" ] ;
+     fhir:display [ fhir:v "Gravação" ] ;
+     fhir:definition [ fhir:v "Texto, código ou símbolo gravado ou impresso no produto" ]
+  ] [
+     fhir:code [ fhir:v "score" ] ;
+     fhir:display [ fhir:v "Sulco" ] ;
+     fhir:definition [ fhir:v "Presença, número e tipo de sulcos para divisão do produto" ]
+  ] [
+     fhir:code [ fhir:v "coating" ] ;
+     fhir:display [ fhir:v "Revestimento" ] ;
+     fhir:definition [ fhir:v "Tipo e características do revestimento (entérico, film-coated, sugar-coated)" ]
+  ] [
+     fhir:code [ fhir:v "appearance" ] ;
+     fhir:display [ fhir:v "Aparência" ] ;
+     fhir:definition [ fhir:v "Aparência visual geral do produto (brilhante, fosco, translúcido, opaco)" ]
+  ] [
+     fhir:code [ fhir:v "pack-type" ] ;
+     fhir:display [ fhir:v "Tipo de Embalagem" ] ;
+     fhir:definition [ fhir:v "Tipo de embalagem primária (blister, frasco, ampola, seringa pré-preenchida)" ]
+  ] [
+     fhir:code [ fhir:v "pack-material" ] ;
+     fhir:display [ fhir:v "Material de Embalagem" ] ;
+     fhir:definition [ fhir:v "Material da embalagem primária (PVC, vidro, HDPE, alumínio)" ]
+  ] [
+     fhir:code [ fhir:v "pack-size" ] ;
+     fhir:display [ fhir:v "Tamanho de Embalagem" ] ;
+     fhir:definition [ fhir:v "Quantidade de unidades na embalagem" ]
+  ] [
+     fhir:code [ fhir:v "release-profile" ] ;
+     fhir:display [ fhir:v "Perfil de Liberação" ] ;
+     fhir:definition [ fhir:v "Perfil de liberação do princípio ativo (liberação imediata, prolongada, modificada)" ]
+  ] [
+     fhir:code [ fhir:v "dissolution-rate" ] ;
+     fhir:display [ fhir:v "Taxa de Dissolução" ] ;
+     fhir:definition [ fhir:v "Taxa de dissolução do produto conforme especificação farmacopeica" ]
+  ] [
+     fhir:code [ fhir:v "disintegration-time" ] ;
+     fhir:display [ fhir:v "Tempo de Desintegração" ] ;
+     fhir:definition [ fhir:v "Tempo de desintegração conforme especificação farmacopeica" ]
+  ] [
+     fhir:code [ fhir:v "ph" ] ;
+     fhir:display [ fhir:v "pH" ] ;
+     fhir:definition [ fhir:v "Valor de pH do produto ou solução" ]
+  ] [
+     fhir:code [ fhir:v "osmolarity" ] ;
+     fhir:display [ fhir:v "Osmolaridade" ] ;
+     fhir:definition [ fhir:v "Osmolaridade de soluções injetáveis ou oftálmicas" ]
+  ] [
+     fhir:code [ fhir:v "viscosity" ] ;
+     fhir:display [ fhir:v "Viscosidade" ] ;
+     fhir:definition [ fhir:v "Viscosidade de líquidos, géis ou semissólidos" ]
+  ] [
+     fhir:code [ fhir:v "specific-gravity" ] ;
+     fhir:display [ fhir:v "Densidade" ] ;
+     fhir:definition [ fhir:v "Densidade ou peso específico do produto líquido" ]
+  ] [
+     fhir:code [ fhir:v "taste" ] ;
+     fhir:display [ fhir:v "Sabor" ] ;
+     fhir:definition [ fhir:v "Sabor característico do produto (para formas orais)" ]
+  ] [
+     fhir:code [ fhir:v "odor" ] ;
+     fhir:display [ fhir:v "Odor" ] ;
+     fhir:definition [ fhir:v "Odor característico do produto" ]
+  ] [
+     fhir:code [ fhir:v "flavor" ] ;
+     fhir:display [ fhir:v "Aroma" ] ;
+     fhir:definition [ fhir:v "Aroma adicionado ao produto (ex: morango, laranja, menta)" ]
+  ] [
+     fhir:code [ fhir:v "shelf-life" ] ;
+     fhir:display [ fhir:v "Prazo de Validade" ] ;
+     fhir:definition [ fhir:v "Prazo de validade em meses a partir da fabricação" ]
+  ] [
+     fhir:code [ fhir:v "storage-temperature" ] ;
+     fhir:display [ fhir:v "Temperatura de Armazenamento" ] ;
+     fhir:definition [ fhir:v "Faixa de temperatura para armazenamento" ]
+  ] [
+     fhir:code [ fhir:v "light-sensitivity" ] ;
+     fhir:display [ fhir:v "Sensibilidade à Luz" ] ;
+     fhir:definition [ fhir:v "Grau de sensibilidade à luz (proteger da luz, opaco, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "dose-strength" ] ;
+     fhir:display [ fhir:v "Potência" ] ;
+     fhir:definition [ fhir:v "Concentração ou potência do princípio ativo" ]
+  ] [
+     fhir:code [ fhir:v "dose-volume" ] ;
+     fhir:display [ fhir:v "Volume de Dose" ] ;
+     fhir:definition [ fhir:v "Volume administrado por dose (para líquidos)" ]
+  ] [
+     fhir:code [ fhir:v "dose-unit" ] ;
+     fhir:display [ fhir:v "Unidade de Dose" ] ;
+     fhir:definition [ fhir:v "Unidade posológica (comprimido, cápsula, ml, aplicação)" ]
+  ] [
+     fhir:code [ fhir:v "bioequivalence" ] ;
+     fhir:display [ fhir:v "Bioequivalência" ] ;
+     fhir:definition [ fhir:v "Indicação de estudo de bioequivalência realizado" ]
+  ] [
+     fhir:code [ fhir:v "excipient" ] ;
+     fhir:display [ fhir:v "Excipiente" ] ;
+     fhir:definition [ fhir:v "Excipientes funcionais relevantes (ex: contém lactose, glúten, corantes azóicos)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

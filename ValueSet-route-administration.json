@@ -1,0 +1,121 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "route-administration",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet route-administration</b></p><a name=\"route-administration\"> </a><a name=\"hcroute-administration\"> </a><ul><li>Include estes códigos, tal como definidos em <code>http://standardterms.edqm.eu</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>20053000</td><td>Oral use</td></tr><tr><td>20054000</td><td>Sublingual use</td></tr><tr><td>20055000</td><td>Buccal use</td></tr><tr><td>20060000</td><td>Intravenous use</td></tr><tr><td>20035000</td><td>Intramuscular use</td></tr><tr><td>20066000</td><td>Subcutaneous use</td></tr><tr><td>20036500</td><td>Intraarticular use</td></tr><tr><td>20070000</td><td>Intrathecal use</td></tr><tr><td>20085000</td><td>Cutaneous use</td></tr><tr><td>20051000</td><td>Ophthalmic use</td></tr><tr><td>20049000</td><td>Auricular use</td></tr><tr><td>20050000</td><td>Nasal use</td></tr><tr><td>20061000</td><td>Rectal use</td></tr><tr><td>20067000</td><td>Vaginal use</td></tr><tr><td>20020000</td><td>Inhalation use</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/route-administration",
+  "version" : "0.0.3",
+  "name" : "RouteAdministration",
+  "title" : "Vias de Administração",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Vias de administração usando códigos EDQM Standard Terms",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "concept" : [{
+        "code" : "20053000",
+        "display" : "Oral use"
+      },
+      {
+        "code" : "20054000",
+        "display" : "Sublingual use"
+      },
+      {
+        "code" : "20055000",
+        "display" : "Buccal use"
+      },
+      {
+        "code" : "20060000",
+        "display" : "Intravenous use"
+      },
+      {
+        "code" : "20035000",
+        "display" : "Intramuscular use"
+      },
+      {
+        "code" : "20066000",
+        "display" : "Subcutaneous use"
+      },
+      {
+        "code" : "20036500",
+        "display" : "Intraarticular use"
+      },
+      {
+        "code" : "20070000",
+        "display" : "Intrathecal use"
+      },
+      {
+        "code" : "20085000",
+        "display" : "Cutaneous use"
+      },
+      {
+        "code" : "20051000",
+        "display" : "Ophthalmic use"
+      },
+      {
+        "code" : "20049000",
+        "display" : "Auricular use"
+      },
+      {
+        "code" : "20050000",
+        "display" : "Nasal use"
+      },
+      {
+        "code" : "20061000",
+        "display" : "Rectal use"
+      },
+      {
+        "code" : "20067000",
+        "display" : "Vaginal use"
+      },
+      {
+        "code" : "20020000",
+        "display" : "Inhalation use"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="structure-technique"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem structure-technique</b></p><a name="structure-technique"> </a><a name="hcstructure-technique"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">NMR<a name="structure-technique-NMR"> </a></td><td>Ressonância Magnética Nuclear</td><td>NMR - Nuclear Magnetic Resonance</td></tr><tr><td style="white-space:nowrap">H-NMR<a name="structure-technique-H-NMR"> </a></td><td>RMN de Hidrogênio</td><td>Ressonância Magnética Nuclear de ¹H</td></tr><tr><td style="white-space:nowrap">C-NMR<a name="structure-technique-C-NMR"> </a></td><td>RMN de Carbono</td><td>Ressonância Magnética Nuclear de ¹³C</td></tr><tr><td style="white-space:nowrap">MS<a name="structure-technique-MS"> </a></td><td>Espectrometria de Massas</td><td>Mass Spectrometry</td></tr><tr><td style="white-space:nowrap">IR<a name="structure-technique-IR"> </a></td><td>Infravermelho</td><td>Espectroscopia no Infravermelho</td></tr><tr><td style="white-space:nowrap">UV<a name="structure-technique-UV"> </a></td><td>Ultravioleta</td><td>Espectroscopia UV-Vis</td></tr><tr><td style="white-space:nowrap">X-ray-crystallography<a name="structure-technique-X-ray-crystallography"> </a></td><td>Cristalografia de Raios-X</td><td>Difração de raios-X em monocristal</td></tr><tr><td style="white-space:nowrap">HPLC<a name="structure-technique-HPLC"> </a></td><td>Cromatografia Líquida de Alta Eficiência</td><td>High Performance Liquid Chromatography</td></tr><tr><td style="white-space:nowrap">GC<a name="structure-technique-GC"> </a></td><td>Cromatografia Gasosa</td><td>Gas Chromatography</td></tr><tr><td style="white-space:nowrap">elemental-analysis<a name="structure-technique-elemental-analysis"> </a></td><td>Análise Elementar</td><td>Determinação quantitativa de elementos (C, H, N, O)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-technique"/>
+  <version value="0.0.3"/>
+  <name value="StructureTechnique"/>
+  <title value="Técnicas de Caracterização Estrutural"/>
+  <status value="active"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Técnicas analíticas para determinação de estrutura molecular"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="NMR"/>
+    <display value="Ressonância Magnética Nuclear"/>
+    <definition value="NMR - Nuclear Magnetic Resonance"/>
+  </concept>
+  <concept>
+    <code value="H-NMR"/>
+    <display value="RMN de Hidrogênio"/>
+    <definition value="Ressonância Magnética Nuclear de ¹H"/>
+  </concept>
+  <concept>
+    <code value="C-NMR"/>
+    <display value="RMN de Carbono"/>
+    <definition value="Ressonância Magnética Nuclear de ¹³C"/>
+  </concept>
+  <concept>
+    <code value="MS"/>
+    <display value="Espectrometria de Massas"/>
+    <definition value="Mass Spectrometry"/>
+  </concept>
+  <concept>
+    <code value="IR"/>
+    <display value="Infravermelho"/>
+    <definition value="Espectroscopia no Infravermelho"/>
+  </concept>
+  <concept>
+    <code value="UV"/>
+    <display value="Ultravioleta"/>
+    <definition value="Espectroscopia UV-Vis"/>
+  </concept>
+  <concept>
+    <code value="X-ray-crystallography"/>
+    <display value="Cristalografia de Raios-X"/>
+    <definition value="Difração de raios-X em monocristal"/>
+  </concept>
+  <concept>
+    <code value="HPLC"/>
+    <display value="Cromatografia Líquida de Alta Eficiência"/>
+    <definition value="High Performance Liquid Chromatography"/>
+  </concept>
+  <concept>
+    <code value="GC"/>
+    <display value="Cromatografia Gasosa"/>
+    <definition value="Gas Chromatography"/>
+  </concept>
+  <concept>
+    <code value="elemental-analysis"/>
+    <display value="Análise Elementar"/>
+    <definition value="Determinação quantitativa de elementos (C, H, N, O)"/>
+  </concept>
+</CodeSystem>

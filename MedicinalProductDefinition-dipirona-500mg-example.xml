@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicinalProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="dipirona-500mg-example"/>
+  <meta>
+    <profile value="https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: MedicinalProductDefinition dipirona-500mg-example</b></p><a name="dipirona-500mg-example"> </a><a name="hcdipirona-500mg-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-medicinal-product-definition-br.html">Definição de Produto Medicinal - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid</code>/BRIG-MPID-DIP-500, <code>http://www.anvisa.gov.br/registro</code>/100000000001</p><p><b>type</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br medicamento}">Medicamento</span></p><p><b>domain</b>: <span title="Códigos:{http://hl7.org/fhir/medicinal-product-domain Human}">Human use</span></p><p><b>status</b>: <span title="Códigos:{http://hl7.org/fhir/publication-status active}">Active</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title="Códigos:{http://hl7.org/fhir/administrable-dose-form 100000073664}">Tablet</span></p><p><b>route</b>: <span title="Códigos:{http://hl7.org/fhir/route-codes PO}">Oral</span></p><p><b>legalStatusOfSupply</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br prescricao-medica}">Prescrição Médica</span></p><p><b>classification</b>: <span title="Códigos:{http://www.whocc.no/atc N02BB02}">metamizole sodium</span></p><h3>MarketingStatuses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Country</b></td><td><b>Status</b></td><td><b>DateRange</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{urn:iso:std:iso:3166 BR}">Brazil</span></td><td><span title="Códigos:{http://hl7.org/fhir/publication-status active}">Active</span></td><td>2024-01-01 --&gt; (em curso)</td></tr></table><blockquote><p><b>name</b></p><p><b>productName</b>: Dipirona 500mg</p><p><b>type</b>: <span title="Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type commercial}, {http://hl7.org/fhir/medicinal-product-name-type BrandName}">commercial</span></p><h3>Usages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{urn:iso:std:iso:3166 BR}">Brazil</span></td><td><span title="Códigos:{urn:ietf:bcp:47 pt-BR}">Portuguese (Region=Brazil)</span></td></tr></table></blockquote><blockquote><p><b>operation</b></p><h3>Types</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Códigos:{http://hl7.org/fhir/product-operation manufacture}">manufacture</span></td></tr></table><p><b>effectiveDate</b>: 2024-01-01 --&gt; (em curso)</p><p><b>organization</b>: <a href="Organization-manufacturer-example.html">Organization Laboratório Exemplo S.A.</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid"/>
+    <value value="BRIG-MPID-DIP-500"/>
+  </identifier>
+  <identifier>
+    <system value="http://www.anvisa.gov.br/registro"/>
+    <value value="100000000001"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br"/>
+      <code value="medicamento"/>
+      <display value="Medicamento"/>
+    </coding>
+  </type>
+  <domain>
+    <coding>
+      <system value="http://hl7.org/fhir/medicinal-product-domain"/>
+      <code value="Human"/>
+    </coding>
+  </domain>
+  <status>
+    <coding>
+      <system value="http://hl7.org/fhir/publication-status"/>
+      <code value="active"/>
+    </coding>
+  </status>
+  <combinedPharmaceuticalDoseForm>
+    <coding>
+      <system value="http://hl7.org/fhir/administrable-dose-form"/>
+      <code value="100000073664"/>
+      <display value="Tablet"/>
+    </coding>
+  </combinedPharmaceuticalDoseForm>
+  <route>
+    <coding>
+      <system value="http://hl7.org/fhir/route-codes"/>
+      <code value="PO"/>
+      <display value="Oral"/>
+    </coding>
+  </route>
+  <legalStatusOfSupply>
+    <coding>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"/>
+      <code value="prescricao-medica"/>
+      <display value="Prescrição Médica"/>
+    </coding>
+  </legalStatusOfSupply>
+  <classification>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="N02BB02"/>
+      <display value="metamizole sodium"/>
+    </coding>
+  </classification>
+  <marketingStatus>
+    <country>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="BR"/>
+      </coding>
+    </country>
+    <status>
+      <coding>
+        <system value="http://hl7.org/fhir/publication-status"/>
+        <code value="active"/>
+      </coding>
+    </status>
+    <dateRange>
+      <start value="2024-01-01"/>
+    </dateRange>
+  </marketingStatus>
+  <name>
+    <productName value="Dipirona 500mg"/>
+    <type>
+      <coding>
+        <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type"/>
+        <code value="commercial"/>
+      </coding>
+      <coding>
+        <system value="http://hl7.org/fhir/medicinal-product-name-type"/>
+        <code value="BrandName"/>
+      </coding>
+    </type>
+    <usage>
+      <country>
+        <coding>
+          <system value="urn:iso:std:iso:3166"/>
+          <code value="BR"/>
+        </coding>
+      </country>
+      <language>
+        <coding>
+          <system value="urn:ietf:bcp:47"/>
+          <code value="pt-BR"/>
+        </coding>
+      </language>
+    </usage>
+  </name>
+  <operation>
+    <type>
+      <concept>
+        <coding>
+          <system value="http://hl7.org/fhir/product-operation"/>
+          <code value="manufacture"/>
+        </coding>
+      </concept>
+    </type>
+    <effectiveDate>
+      <start value="2024-01-01"/>
+    </effectiveDate>
+    <organization>
+      <reference value="Organization/manufacturer-example"/>
+    </organization>
+  </operation>
+</MedicinalProductDefinition>

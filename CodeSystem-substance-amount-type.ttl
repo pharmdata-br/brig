@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-amount-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-amount-type</b></p><a name=\"substance-amount-type\"> </a><a name=\"hcsubstance-amount-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">mass<a name=\"substance-amount-type-mass\"> </a></td><td>Massa</td><td>Quantidade expressa em unidade de massa</td></tr><tr><td style=\"white-space:nowrap\">molar<a name=\"substance-amount-type-molar\"> </a></td><td>Molar</td><td>Quantidade expressa em mols</td></tr><tr><td style=\"white-space:nowrap\">volume<a name=\"substance-amount-type-volume\"> </a></td><td>Volume</td><td>Quantidade expressa em unidade de volume</td></tr><tr><td style=\"white-space:nowrap\">concentration-mass<a name=\"substance-amount-type-concentration-mass\"> </a></td><td>Concentração em Massa</td><td>Massa por unidade de volume</td></tr><tr><td style=\"white-space:nowrap\">concentration-molar<a name=\"substance-amount-type-concentration-molar\"> </a></td><td>Concentração Molar</td><td>Mols por unidade de volume</td></tr><tr><td style=\"white-space:nowrap\">percentage-mass<a name=\"substance-amount-type-percentage-mass\"> </a></td><td>Percentual em Massa</td><td>Percentual massa/massa</td></tr><tr><td style=\"white-space:nowrap\">percentage-volume<a name=\"substance-amount-type-percentage-volume\"> </a></td><td>Percentual em Volume</td><td>Percentual volume/volume</td></tr><tr><td style=\"white-space:nowrap\">percentage-mass-volume<a name=\"substance-amount-type-percentage-mass-volume\"> </a></td><td>Percentual Massa/Volume</td><td>Percentual massa/volume</td></tr><tr><td style=\"white-space:nowrap\">ratio<a name=\"substance-amount-type-ratio\"> </a></td><td>Razão</td><td>Razão entre componentes</td></tr><tr><td style=\"white-space:nowrap\">activity<a name=\"substance-amount-type-activity\"> </a></td><td>Atividade</td><td>Unidades internacionais de atividade biológica</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceAmountType"] ; # 
+  fhir:title [ fhir:v "Tipo de Medida de Quantidade de Substância"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de medidas para quantificar substâncias"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mass" ] ;
+     fhir:display [ fhir:v "Massa" ] ;
+     fhir:definition [ fhir:v "Quantidade expressa em unidade de massa" ]
+  ] [
+     fhir:code [ fhir:v "molar" ] ;
+     fhir:display [ fhir:v "Molar" ] ;
+     fhir:definition [ fhir:v "Quantidade expressa em mols" ]
+  ] [
+     fhir:code [ fhir:v "volume" ] ;
+     fhir:display [ fhir:v "Volume" ] ;
+     fhir:definition [ fhir:v "Quantidade expressa em unidade de volume" ]
+  ] [
+     fhir:code [ fhir:v "concentration-mass" ] ;
+     fhir:display [ fhir:v "Concentração em Massa" ] ;
+     fhir:definition [ fhir:v "Massa por unidade de volume" ]
+  ] [
+     fhir:code [ fhir:v "concentration-molar" ] ;
+     fhir:display [ fhir:v "Concentração Molar" ] ;
+     fhir:definition [ fhir:v "Mols por unidade de volume" ]
+  ] [
+     fhir:code [ fhir:v "percentage-mass" ] ;
+     fhir:display [ fhir:v "Percentual em Massa" ] ;
+     fhir:definition [ fhir:v "Percentual massa/massa" ]
+  ] [
+     fhir:code [ fhir:v "percentage-volume" ] ;
+     fhir:display [ fhir:v "Percentual em Volume" ] ;
+     fhir:definition [ fhir:v "Percentual volume/volume" ]
+  ] [
+     fhir:code [ fhir:v "percentage-mass-volume" ] ;
+     fhir:display [ fhir:v "Percentual Massa/Volume" ] ;
+     fhir:definition [ fhir:v "Percentual massa/volume" ]
+  ] [
+     fhir:code [ fhir:v "ratio" ] ;
+     fhir:display [ fhir:v "Razão" ] ;
+     fhir:definition [ fhir:v "Razão entre componentes" ]
+  ] [
+     fhir:code [ fhir:v "activity" ] ;
+     fhir:display [ fhir:v "Atividade" ] ;
+     fhir:definition [ fhir:v "Unidades internacionais de atividade biológica" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

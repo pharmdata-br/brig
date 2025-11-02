@@ -1,0 +1,192 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-type-anvisa-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-type-anvisa-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-type-anvisa-br</b></p><a name=\"organization-type-anvisa-br\"> </a><a name=\"hcorganization-type-anvisa-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">manufacturer<a name=\"organization-type-anvisa-br-manufacturer\"> </a></td><td>Fabricante</td><td>Empresa que produz medicamentos, dispositivos médicos ou outros produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">manufacturer-api<a name=\"organization-type-anvisa-br-manufacturer-api\"> </a></td><td>Fabricante de IFA</td><td>Fabricante de Insumo Farmacêutico Ativo (API)</td></tr><tr><td style=\"white-space:nowrap\">manufacturer-finished<a name=\"organization-type-anvisa-br-manufacturer-finished\"> </a></td><td>Fabricante de Produto Acabado</td><td>Fabricante de produtos farmacêuticos acabados</td></tr><tr><td style=\"white-space:nowrap\">manufacturer-device<a name=\"organization-type-anvisa-br-manufacturer-device\"> </a></td><td>Fabricante de Dispositivo Médico</td><td>Fabricante de dispositivos médicos, equipamentos e correlatos</td></tr><tr><td style=\"white-space:nowrap\">importer<a name=\"organization-type-anvisa-br-importer\"> </a></td><td>Importador</td><td>Empresa responsável pela importação de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">importer-api<a name=\"organization-type-anvisa-br-importer-api\"> </a></td><td>Importador de IFA</td><td>Importador de Insumos Farmacêuticos Ativos</td></tr><tr><td style=\"white-space:nowrap\">importer-finished<a name=\"organization-type-anvisa-br-importer-finished\"> </a></td><td>Importador de Produto Acabado</td><td>Importador de produtos farmacêuticos acabados</td></tr><tr><td style=\"white-space:nowrap\">importer-device<a name=\"organization-type-anvisa-br-importer-device\"> </a></td><td>Importador de Dispositivo Médico</td><td>Importador de dispositivos médicos</td></tr><tr><td style=\"white-space:nowrap\">distributor<a name=\"organization-type-anvisa-br-distributor\"> </a></td><td>Distribuidor</td><td>Empresa de distribuição de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">distributor-pharma<a name=\"organization-type-anvisa-br-distributor-pharma\"> </a></td><td>Distribuidor Farmacêutico</td><td>Empresa de distribuição de medicamentos</td></tr><tr><td style=\"white-space:nowrap\">distributor-device<a name=\"organization-type-anvisa-br-distributor-device\"> </a></td><td>Distribuidor de Dispositivo Médico</td><td>Distribuidor de dispositivos médicos</td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"organization-type-anvisa-br-hospital\"> </a></td><td>Hospital</td><td>Estabelecimento hospitalar</td></tr><tr><td style=\"white-space:nowrap\">clinic<a name=\"organization-type-anvisa-br-clinic\"> </a></td><td>Clínica</td><td>Clínica ou ambulatório</td></tr><tr><td style=\"white-space:nowrap\">pharmacy<a name=\"organization-type-anvisa-br-pharmacy\"> </a></td><td>Farmácia</td><td>Farmácia ou drogaria</td></tr><tr><td style=\"white-space:nowrap\">laboratory<a name=\"organization-type-anvisa-br-laboratory\"> </a></td><td>Laboratório</td><td>Laboratório de análises clínicas ou patologia</td></tr><tr><td style=\"white-space:nowrap\">research-org<a name=\"organization-type-anvisa-br-research-org\"> </a></td><td>Organização de Pesquisa</td><td>Instituição de pesquisa clínica ou pré-clínica</td></tr><tr><td style=\"white-space:nowrap\">cro<a name=\"organization-type-anvisa-br-cro\"> </a></td><td>CRO</td><td>Contract Research Organization - Organização de Pesquisa por Contrato</td></tr><tr><td style=\"white-space:nowrap\">university<a name=\"organization-type-anvisa-br-university\"> </a></td><td>Universidade</td><td>Instituição de ensino superior com atividades de pesquisa</td></tr><tr><td style=\"white-space:nowrap\">regulatory-authority<a name=\"organization-type-anvisa-br-regulatory-authority\"> </a></td><td>Autoridade Regulatória</td><td>Órgão governamental de regulação sanitária</td></tr><tr><td style=\"white-space:nowrap\">government-agency<a name=\"organization-type-anvisa-br-government-agency\"> </a></td><td>Órgão Governamental</td><td>Agência ou órgão da administração pública</td></tr><tr><td style=\"white-space:nowrap\">consultant<a name=\"organization-type-anvisa-br-consultant\"> </a></td><td>Consultoria</td><td>Empresa de consultoria regulatória</td></tr><tr><td style=\"white-space:nowrap\">testing-lab<a name=\"organization-type-anvisa-br-testing-lab\"> </a></td><td>Laboratório de Ensaios</td><td>Laboratório de controle de qualidade e ensaios</td></tr><tr><td style=\"white-space:nowrap\">transport<a name=\"organization-type-anvisa-br-transport\"> </a></td><td>Transportadora</td><td>Empresa de transporte de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">marketing-authorization-holder<a name=\"organization-type-anvisa-br-marketing-authorization-holder\"> </a></td><td>Titular de Registro</td><td>Empresa titular da autorização de comercialização</td></tr><tr><td style=\"white-space:nowrap\">license-holder<a name=\"organization-type-anvisa-br-license-holder\"> </a></td><td>Titular de Licença</td><td>Titular de licença ou autorização específica</td></tr><tr><td style=\"white-space:nowrap\">foreign-manufacturer<a name=\"organization-type-anvisa-br-foreign-manufacturer\"> </a></td><td>Fabricante Estrangeiro</td><td>Fabricante localizado fora do Brasil</td></tr><tr><td style=\"white-space:nowrap\">international-org<a name=\"organization-type-anvisa-br-international-org\"> </a></td><td>Organização Internacional</td><td>Organização internacional com operações no Brasil</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-type-anvisa-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-type-anvisa-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "OrganizationTypeANVISABR"] ; # 
+  fhir:title [ fhir:v "Tipos de Organização ANVISA - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para tipos de organizações no contexto regulatório da ANVISA"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "27"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "manufacturer" ] ;
+     fhir:display [ fhir:v "Fabricante" ] ;
+     fhir:definition [ fhir:v "Empresa que produz medicamentos, dispositivos médicos ou outros produtos regulados" ]
+  ] [
+     fhir:code [ fhir:v "manufacturer-api" ] ;
+     fhir:display [ fhir:v "Fabricante de IFA" ] ;
+     fhir:definition [ fhir:v "Fabricante de Insumo Farmacêutico Ativo (API)" ]
+  ] [
+     fhir:code [ fhir:v "manufacturer-finished" ] ;
+     fhir:display [ fhir:v "Fabricante de Produto Acabado" ] ;
+     fhir:definition [ fhir:v "Fabricante de produtos farmacêuticos acabados" ]
+  ] [
+     fhir:code [ fhir:v "manufacturer-device" ] ;
+     fhir:display [ fhir:v "Fabricante de Dispositivo Médico" ] ;
+     fhir:definition [ fhir:v "Fabricante de dispositivos médicos, equipamentos e correlatos" ]
+  ] [
+     fhir:code [ fhir:v "importer" ] ;
+     fhir:display [ fhir:v "Importador" ] ;
+     fhir:definition [ fhir:v "Empresa responsável pela importação de produtos regulados" ]
+  ] [
+     fhir:code [ fhir:v "importer-api" ] ;
+     fhir:display [ fhir:v "Importador de IFA" ] ;
+     fhir:definition [ fhir:v "Importador de Insumos Farmacêuticos Ativos" ]
+  ] [
+     fhir:code [ fhir:v "importer-finished" ] ;
+     fhir:display [ fhir:v "Importador de Produto Acabado" ] ;
+     fhir:definition [ fhir:v "Importador de produtos farmacêuticos acabados" ]
+  ] [
+     fhir:code [ fhir:v "importer-device" ] ;
+     fhir:display [ fhir:v "Importador de Dispositivo Médico" ] ;
+     fhir:definition [ fhir:v "Importador de dispositivos médicos" ]
+  ] [
+     fhir:code [ fhir:v "distributor" ] ;
+     fhir:display [ fhir:v "Distribuidor" ] ;
+     fhir:definition [ fhir:v "Empresa de distribuição de produtos regulados" ]
+  ] [
+     fhir:code [ fhir:v "distributor-pharma" ] ;
+     fhir:display [ fhir:v "Distribuidor Farmacêutico" ] ;
+     fhir:definition [ fhir:v "Empresa de distribuição de medicamentos" ]
+  ] [
+     fhir:code [ fhir:v "distributor-device" ] ;
+     fhir:display [ fhir:v "Distribuidor de Dispositivo Médico" ] ;
+     fhir:definition [ fhir:v "Distribuidor de dispositivos médicos" ]
+  ] [
+     fhir:code [ fhir:v "hospital" ] ;
+     fhir:display [ fhir:v "Hospital" ] ;
+     fhir:definition [ fhir:v "Estabelecimento hospitalar" ]
+  ] [
+     fhir:code [ fhir:v "clinic" ] ;
+     fhir:display [ fhir:v "Clínica" ] ;
+     fhir:definition [ fhir:v "Clínica ou ambulatório" ]
+  ] [
+     fhir:code [ fhir:v "pharmacy" ] ;
+     fhir:display [ fhir:v "Farmácia" ] ;
+     fhir:definition [ fhir:v "Farmácia ou drogaria" ]
+  ] [
+     fhir:code [ fhir:v "laboratory" ] ;
+     fhir:display [ fhir:v "Laboratório" ] ;
+     fhir:definition [ fhir:v "Laboratório de análises clínicas ou patologia" ]
+  ] [
+     fhir:code [ fhir:v "research-org" ] ;
+     fhir:display [ fhir:v "Organização de Pesquisa" ] ;
+     fhir:definition [ fhir:v "Instituição de pesquisa clínica ou pré-clínica" ]
+  ] [
+     fhir:code [ fhir:v "cro" ] ;
+     fhir:display [ fhir:v "CRO" ] ;
+     fhir:definition [ fhir:v "Contract Research Organization - Organização de Pesquisa por Contrato" ]
+  ] [
+     fhir:code [ fhir:v "university" ] ;
+     fhir:display [ fhir:v "Universidade" ] ;
+     fhir:definition [ fhir:v "Instituição de ensino superior com atividades de pesquisa" ]
+  ] [
+     fhir:code [ fhir:v "regulatory-authority" ] ;
+     fhir:display [ fhir:v "Autoridade Regulatória" ] ;
+     fhir:definition [ fhir:v "Órgão governamental de regulação sanitária" ]
+  ] [
+     fhir:code [ fhir:v "government-agency" ] ;
+     fhir:display [ fhir:v "Órgão Governamental" ] ;
+     fhir:definition [ fhir:v "Agência ou órgão da administração pública" ]
+  ] [
+     fhir:code [ fhir:v "consultant" ] ;
+     fhir:display [ fhir:v "Consultoria" ] ;
+     fhir:definition [ fhir:v "Empresa de consultoria regulatória" ]
+  ] [
+     fhir:code [ fhir:v "testing-lab" ] ;
+     fhir:display [ fhir:v "Laboratório de Ensaios" ] ;
+     fhir:definition [ fhir:v "Laboratório de controle de qualidade e ensaios" ]
+  ] [
+     fhir:code [ fhir:v "transport" ] ;
+     fhir:display [ fhir:v "Transportadora" ] ;
+     fhir:definition [ fhir:v "Empresa de transporte de produtos regulados" ]
+  ] [
+     fhir:code [ fhir:v "marketing-authorization-holder" ] ;
+     fhir:display [ fhir:v "Titular de Registro" ] ;
+     fhir:definition [ fhir:v "Empresa titular da autorização de comercialização" ]
+  ] [
+     fhir:code [ fhir:v "license-holder" ] ;
+     fhir:display [ fhir:v "Titular de Licença" ] ;
+     fhir:definition [ fhir:v "Titular de licença ou autorização específica" ]
+  ] [
+     fhir:code [ fhir:v "foreign-manufacturer" ] ;
+     fhir:display [ fhir:v "Fabricante Estrangeiro" ] ;
+     fhir:definition [ fhir:v "Fabricante localizado fora do Brasil" ]
+  ] [
+     fhir:code [ fhir:v "international-org" ] ;
+     fhir:display [ fhir:v "Organização Internacional" ] ;
+     fhir:definition [ fhir:v "Organização internacional com operações no Brasil" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-regulatory-status-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "anvisa-regulatory-status-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem anvisa-regulatory-status-br</b></p><a name=\"anvisa-regulatory-status-br\"> </a><a name=\"hcanvisa-regulatory-status-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">approved<a name=\"anvisa-regulatory-status-br-approved\"> </a></td><td>Aprovada</td><td>Substância aprovada para uso em medicamentos</td></tr><tr><td style=\"white-space:nowrap\">approved-restricted<a name=\"anvisa-regulatory-status-br-approved-restricted\"> </a></td><td>Aprovada com Restrições</td><td>Substância aprovada com restrições específicas de uso</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"anvisa-regulatory-status-br-suspended\"> </a></td><td>Suspensa</td><td>Substância com uso temporariamente suspenso</td></tr><tr><td style=\"white-space:nowrap\">prohibited<a name=\"anvisa-regulatory-status-br-prohibited\"> </a></td><td>Proibida</td><td>Substância proibida para uso em medicamentos</td></tr><tr><td style=\"white-space:nowrap\">under-review<a name=\"anvisa-regulatory-status-br-under-review\"> </a></td><td>Em Análise</td><td>Substância em processo de análise regulatória</td></tr><tr><td style=\"white-space:nowrap\">provisional<a name=\"anvisa-regulatory-status-br-provisional\"> </a></td><td>Aprovação Provisória</td><td>Substância com aprovação provisória ou condicional</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"anvisa-regulatory-status-br-withdrawn\"> </a></td><td>Retirada</td><td>Substância com aprovação retirada</td></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"anvisa-regulatory-status-br-not-applicable\"> </a></td><td>Não Aplicável</td><td>Status regulatório não aplicável (ex: excipientes não controlados)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-regulatory-status-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-regulatory-status-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ANVISARegulatoryStatusBR"] ; # 
+  fhir:title [ fhir:v "Status Regulatório ANVISA - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para status regulatório de substâncias na ANVISA"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "approved" ] ;
+     fhir:display [ fhir:v "Aprovada" ] ;
+     fhir:definition [ fhir:v "Substância aprovada para uso em medicamentos" ]
+  ] [
+     fhir:code [ fhir:v "approved-restricted" ] ;
+     fhir:display [ fhir:v "Aprovada com Restrições" ] ;
+     fhir:definition [ fhir:v "Substância aprovada com restrições específicas de uso" ]
+  ] [
+     fhir:code [ fhir:v "suspended" ] ;
+     fhir:display [ fhir:v "Suspensa" ] ;
+     fhir:definition [ fhir:v "Substância com uso temporariamente suspenso" ]
+  ] [
+     fhir:code [ fhir:v "prohibited" ] ;
+     fhir:display [ fhir:v "Proibida" ] ;
+     fhir:definition [ fhir:v "Substância proibida para uso em medicamentos" ]
+  ] [
+     fhir:code [ fhir:v "under-review" ] ;
+     fhir:display [ fhir:v "Em Análise" ] ;
+     fhir:definition [ fhir:v "Substância em processo de análise regulatória" ]
+  ] [
+     fhir:code [ fhir:v "provisional" ] ;
+     fhir:display [ fhir:v "Aprovação Provisória" ] ;
+     fhir:definition [ fhir:v "Substância com aprovação provisória ou condicional" ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Retirada" ] ;
+     fhir:definition [ fhir:v "Substância com aprovação retirada" ]
+  ] [
+     fhir:code [ fhir:v "not-applicable" ] ;
+     fhir:display [ fhir:v "Não Aplicável" ] ;
+     fhir:definition [ fhir:v "Status regulatório não aplicável (ex: excipientes não controlados)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

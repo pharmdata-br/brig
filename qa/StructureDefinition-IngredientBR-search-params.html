@@ -1,0 +1,233 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-IngredientBR-search-params</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="list">
+  <tr>
+    <td>
+      <b>Nome</b>
+    </td>
+    <td>
+      <b>Tipo</b>
+    </td>
+    <td>
+      <b>Descrição</b>
+    </td>
+    <td>
+      <b>Expressão</b>
+    </td>
+  </tr>
+  <tr>
+    <td>for</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The product which this ingredient is a constituent part of</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.for</code>
+    </td>
+  </tr>
+  <tr>
+    <td>function</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: Antioxidant, Alkalizing Agent</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.function</code>
+    </td>
+  </tr>
+  <tr>
+    <td>identifier</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>An identifier or code by which the ingredient can be referenced</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.identifier</code>
+    </td>
+  </tr>
+  <tr>
+    <td>manufacturer</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>The organization that manufactures this ingredient</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.manufacturer.manufacturer</code>
+    </td>
+  </tr>
+  <tr>
+    <td>role</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>A classification of the ingredient identifying its purpose within the product, e.g. active, inactive</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.role</code>
+    </td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The status of this ingredient. Enables tracking the life-cycle of the content</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.status</code>
+    </td>
+  </tr>
+  <tr>
+    <td>strength-concentration-quantity</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#quantity">quantity</a>
+    </td>
+    <td>
+      <div>
+        <p>Ingredient concentration strength as quantity</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.substance.strength.concentration.ofType(Quantity)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>strength-concentration-ratio</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#composite">composite</a>
+    </td>
+    <td>
+      <div>
+        <p>Ingredient concentration strength as ratio, numerator and denominator parameter pair</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.substance.strength.concentration.ofType(Ratio)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>strength-presentation-quantity</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#quantity">quantity</a>
+    </td>
+    <td>
+      <div>
+        <p>Ingredient presentation strength as quantity</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.substance.strength.presentation.ofType(Quantity)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>strength-presentation-ratio</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#composite">composite</a>
+    </td>
+    <td>
+      <div>
+        <p>Ingredient presentation strength as ratio, numerator and denominator parameter pair</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.substance.strength.presentation.ofType(Ratio)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>substance</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>Reference to a resource (by instance)</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.substance.code.reference</code>
+    </td>
+  </tr>
+  <tr>
+    <td>substance-code</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Reference to a concept (by class)</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.substance.code.concept</code>
+    </td>
+  </tr>
+  <tr>
+    <td>substance-definition</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>Reference to a resource (by instance)</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Ingredient.substance.code.reference</code>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="dcb-brasileiras"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem dcb-brasileiras</b></p><a name="dcb-brasileiras"> </a><a name="hcdcb-brasileiras"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">dipirona<a name="dcb-brasileiras-dipirona"> </a></td><td>Dipirona</td><td>Analgésico e antitérmico</td></tr><tr><td style="white-space:nowrap">paracetamol<a name="dcb-brasileiras-paracetamol"> </a></td><td>Paracetamol</td><td>Analgésico e antitérmico</td></tr><tr><td style="white-space:nowrap">ibuprofeno<a name="dcb-brasileiras-ibuprofeno"> </a></td><td>Ibuprofeno</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style="white-space:nowrap">diclofenaco<a name="dcb-brasileiras-diclofenaco"> </a></td><td>Diclofenaco</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style="white-space:nowrap">nimesulida<a name="dcb-brasileiras-nimesulida"> </a></td><td>Nimesulida</td><td>Anti-inflamatório não esteroidal</td></tr><tr><td style="white-space:nowrap">amoxicilina<a name="dcb-brasileiras-amoxicilina"> </a></td><td>Amoxicilina</td><td>Antibiótico beta-lactâmico</td></tr><tr><td style="white-space:nowrap">azitromicina<a name="dcb-brasileiras-azitromicina"> </a></td><td>Azitromicina</td><td>Antibiótico macrolídeo</td></tr><tr><td style="white-space:nowrap">ciprofloxacino<a name="dcb-brasileiras-ciprofloxacino"> </a></td><td>Ciprofloxacino</td><td>Antibiótico fluoroquinolona</td></tr><tr><td style="white-space:nowrap">cefalexina<a name="dcb-brasileiras-cefalexina"> </a></td><td>Cefalexina</td><td>Antibiótico cefalosporina</td></tr><tr><td style="white-space:nowrap">losartana<a name="dcb-brasileiras-losartana"> </a></td><td>Losartana</td><td>Anti-hipertensivo antagonista da angiotensina II</td></tr><tr><td style="white-space:nowrap">enalapril<a name="dcb-brasileiras-enalapril"> </a></td><td>Enalapril</td><td>Inibidor da enzima conversora da angiotensina</td></tr><tr><td style="white-space:nowrap">hidroclorotiazida<a name="dcb-brasileiras-hidroclorotiazida"> </a></td><td>Hidroclorotiazida</td><td>Diurético tiazídico</td></tr><tr><td style="white-space:nowrap">anlodipino<a name="dcb-brasileiras-anlodipino"> </a></td><td>Anlodipino</td><td>Bloqueador dos canais de cálcio</td></tr><tr><td style="white-space:nowrap">fluoxetina<a name="dcb-brasileiras-fluoxetina"> </a></td><td>Fluoxetina</td><td>Antidepressivo inibidor seletivo da recaptação de serotonina</td></tr><tr><td style="white-space:nowrap">sertralina<a name="dcb-brasileiras-sertralina"> </a></td><td>Sertralina</td><td>Antidepressivo inibidor seletivo da recaptação de serotonina</td></tr><tr><td style="white-space:nowrap">risperidona<a name="dcb-brasileiras-risperidona"> </a></td><td>Risperidona</td><td>Antipsicótico atípico</td></tr><tr><td style="white-space:nowrap">clonazepam<a name="dcb-brasileiras-clonazepam"> </a></td><td>Clonazepam</td><td>Benzodiazepínico anticonvulsivante</td></tr><tr><td style="white-space:nowrap">metformina<a name="dcb-brasileiras-metformina"> </a></td><td>Metformina</td><td>Antidiabético oral biguanida</td></tr><tr><td style="white-space:nowrap">glibenclamida<a name="dcb-brasileiras-glibenclamida"> </a></td><td>Glibenclamida</td><td>Antidiabético oral sulfoniluréia</td></tr><tr><td style="white-space:nowrap">levotiroxina<a name="dcb-brasileiras-levotiroxina"> </a></td><td>Levotiroxina</td><td>Hormônio da tireoide</td></tr><tr><td style="white-space:nowrap">salbutamol<a name="dcb-brasileiras-salbutamol"> </a></td><td>Salbutamol</td><td>Broncodilatador beta-2 agonista</td></tr><tr><td style="white-space:nowrap">budesonida<a name="dcb-brasileiras-budesonida"> </a></td><td>Budesonida</td><td>Corticosteroide inalatório</td></tr><tr><td style="white-space:nowrap">montelucaste<a name="dcb-brasileiras-montelucaste"> </a></td><td>Montelucaste</td><td>Antagonista dos receptores de leucotrienos</td></tr><tr><td style="white-space:nowrap">omeprazol<a name="dcb-brasileiras-omeprazol"> </a></td><td>Omeprazol</td><td>Inibidor da bomba de prótons</td></tr><tr><td style="white-space:nowrap">ranitidina<a name="dcb-brasileiras-ranitidina"> </a></td><td>Ranitidina</td><td>Antagonista dos receptores H2</td></tr><tr><td style="white-space:nowrap">domperidona<a name="dcb-brasileiras-domperidona"> </a></td><td>Domperidona</td><td>Antiemético procinético</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/dcb-brasileiras"/>
+  <version value="0.0.3"/>
+  <name value="DCBBrasileiras"/>
+  <title value="Denominações Comuns Brasileiras (DCB)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para Denominações Comuns Brasileiras conforme ANVISA"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="26"/>
+  <concept>
+    <code value="dipirona"/>
+    <display value="Dipirona"/>
+    <definition value="Analgésico e antitérmico"/>
+  </concept>
+  <concept>
+    <code value="paracetamol"/>
+    <display value="Paracetamol"/>
+    <definition value="Analgésico e antitérmico"/>
+  </concept>
+  <concept>
+    <code value="ibuprofeno"/>
+    <display value="Ibuprofeno"/>
+    <definition value="Anti-inflamatório não esteroidal"/>
+  </concept>
+  <concept>
+    <code value="diclofenaco"/>
+    <display value="Diclofenaco"/>
+    <definition value="Anti-inflamatório não esteroidal"/>
+  </concept>
+  <concept>
+    <code value="nimesulida"/>
+    <display value="Nimesulida"/>
+    <definition value="Anti-inflamatório não esteroidal"/>
+  </concept>
+  <concept>
+    <code value="amoxicilina"/>
+    <display value="Amoxicilina"/>
+    <definition value="Antibiótico beta-lactâmico"/>
+  </concept>
+  <concept>
+    <code value="azitromicina"/>
+    <display value="Azitromicina"/>
+    <definition value="Antibiótico macrolídeo"/>
+  </concept>
+  <concept>
+    <code value="ciprofloxacino"/>
+    <display value="Ciprofloxacino"/>
+    <definition value="Antibiótico fluoroquinolona"/>
+  </concept>
+  <concept>
+    <code value="cefalexina"/>
+    <display value="Cefalexina"/>
+    <definition value="Antibiótico cefalosporina"/>
+  </concept>
+  <concept>
+    <code value="losartana"/>
+    <display value="Losartana"/>
+    <definition value="Anti-hipertensivo antagonista da angiotensina II"/>
+  </concept>
+  <concept>
+    <code value="enalapril"/>
+    <display value="Enalapril"/>
+    <definition value="Inibidor da enzima conversora da angiotensina"/>
+  </concept>
+  <concept>
+    <code value="hidroclorotiazida"/>
+    <display value="Hidroclorotiazida"/>
+    <definition value="Diurético tiazídico"/>
+  </concept>
+  <concept>
+    <code value="anlodipino"/>
+    <display value="Anlodipino"/>
+    <definition value="Bloqueador dos canais de cálcio"/>
+  </concept>
+  <concept>
+    <code value="fluoxetina"/>
+    <display value="Fluoxetina"/>
+    <definition value="Antidepressivo inibidor seletivo da recaptação de serotonina"/>
+  </concept>
+  <concept>
+    <code value="sertralina"/>
+    <display value="Sertralina"/>
+    <definition value="Antidepressivo inibidor seletivo da recaptação de serotonina"/>
+  </concept>
+  <concept>
+    <code value="risperidona"/>
+    <display value="Risperidona"/>
+    <definition value="Antipsicótico atípico"/>
+  </concept>
+  <concept>
+    <code value="clonazepam"/>
+    <display value="Clonazepam"/>
+    <definition value="Benzodiazepínico anticonvulsivante"/>
+  </concept>
+  <concept>
+    <code value="metformina"/>
+    <display value="Metformina"/>
+    <definition value="Antidiabético oral biguanida"/>
+  </concept>
+  <concept>
+    <code value="glibenclamida"/>
+    <display value="Glibenclamida"/>
+    <definition value="Antidiabético oral sulfoniluréia"/>
+  </concept>
+  <concept>
+    <code value="levotiroxina"/>
+    <display value="Levotiroxina"/>
+    <definition value="Hormônio da tireoide"/>
+  </concept>
+  <concept>
+    <code value="salbutamol"/>
+    <display value="Salbutamol"/>
+    <definition value="Broncodilatador beta-2 agonista"/>
+  </concept>
+  <concept>
+    <code value="budesonida"/>
+    <display value="Budesonida"/>
+    <definition value="Corticosteroide inalatório"/>
+  </concept>
+  <concept>
+    <code value="montelucaste"/>
+    <display value="Montelucaste"/>
+    <definition value="Antagonista dos receptores de leucotrienos"/>
+  </concept>
+  <concept>
+    <code value="omeprazol"/>
+    <display value="Omeprazol"/>
+    <definition value="Inibidor da bomba de prótons"/>
+  </concept>
+  <concept>
+    <code value="ranitidina"/>
+    <display value="Ranitidina"/>
+    <definition value="Antagonista dos receptores H2"/>
+  </concept>
+  <concept>
+    <code value="domperidona"/>
+    <display value="Domperidona"/>
+    <definition value="Antiemético procinético"/>
+  </concept>
+</CodeSystem>

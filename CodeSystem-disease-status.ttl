@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/disease-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "disease-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem disease-status</b></p><a name=\"disease-status\"> </a><a name=\"hcdisease-status\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">acute<a name=\"disease-status-acute\"> </a></td><td>Agudo</td><td>Condição aguda de início recente</td></tr><tr><td style=\"white-space:nowrap\">chronic<a name=\"disease-status-chronic\"> </a></td><td>Crônico</td><td>Condição crônica de longa duração</td></tr><tr><td style=\"white-space:nowrap\">recurrent<a name=\"disease-status-recurrent\"> </a></td><td>Recorrente</td><td>Condição com episódios recorrentes</td></tr><tr><td style=\"white-space:nowrap\">remission<a name=\"disease-status-remission\"> </a></td><td>Remissão</td><td>Condição em remissão</td></tr><tr><td style=\"white-space:nowrap\">relapse<a name=\"disease-status-relapse\"> </a></td><td>Recidiva</td><td>Recidiva de condição previamente tratada</td></tr><tr><td style=\"white-space:nowrap\">resolved<a name=\"disease-status-resolved\"> </a></td><td>Resolvido</td><td>Condição resolvida</td></tr><tr><td style=\"white-space:nowrap\">mild<a name=\"disease-status-mild\"> </a></td><td>Leve</td><td>Forma leve da condição</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"disease-status-moderate\"> </a></td><td>Moderado</td><td>Forma moderada da condição</td></tr><tr><td style=\"white-space:nowrap\">severe<a name=\"disease-status-severe\"> </a></td><td>Grave</td><td>Forma grave da condição</td></tr><tr><td style=\"white-space:nowrap\">life-threatening<a name=\"disease-status-life-threatening\"> </a></td><td>Risco de Vida</td><td>Condição com risco de vida</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/disease-status"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/disease-status>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "DiseaseStatus"] ; # 
+  fhir:title [ fhir:v "Status da Doença"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Status ou estágio de uma condição médica"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "acute" ] ;
+     fhir:display [ fhir:v "Agudo" ] ;
+     fhir:definition [ fhir:v "Condição aguda de início recente" ]
+  ] [
+     fhir:code [ fhir:v "chronic" ] ;
+     fhir:display [ fhir:v "Crônico" ] ;
+     fhir:definition [ fhir:v "Condição crônica de longa duração" ]
+  ] [
+     fhir:code [ fhir:v "recurrent" ] ;
+     fhir:display [ fhir:v "Recorrente" ] ;
+     fhir:definition [ fhir:v "Condição com episódios recorrentes" ]
+  ] [
+     fhir:code [ fhir:v "remission" ] ;
+     fhir:display [ fhir:v "Remissão" ] ;
+     fhir:definition [ fhir:v "Condição em remissão" ]
+  ] [
+     fhir:code [ fhir:v "relapse" ] ;
+     fhir:display [ fhir:v "Recidiva" ] ;
+     fhir:definition [ fhir:v "Recidiva de condição previamente tratada" ]
+  ] [
+     fhir:code [ fhir:v "resolved" ] ;
+     fhir:display [ fhir:v "Resolvido" ] ;
+     fhir:definition [ fhir:v "Condição resolvida" ]
+  ] [
+     fhir:code [ fhir:v "mild" ] ;
+     fhir:display [ fhir:v "Leve" ] ;
+     fhir:definition [ fhir:v "Forma leve da condição" ]
+  ] [
+     fhir:code [ fhir:v "moderate" ] ;
+     fhir:display [ fhir:v "Moderado" ] ;
+     fhir:definition [ fhir:v "Forma moderada da condição" ]
+  ] [
+     fhir:code [ fhir:v "severe" ] ;
+     fhir:display [ fhir:v "Grave" ] ;
+     fhir:definition [ fhir:v "Forma grave da condição" ]
+  ] [
+     fhir:code [ fhir:v "life-threatening" ] ;
+     fhir:display [ fhir:v "Risco de Vida" ] ;
+     fhir:definition [ fhir:v "Condição com risco de vida" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

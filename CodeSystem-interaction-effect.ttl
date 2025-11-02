@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-effect> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "interaction-effect"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem interaction-effect</b></p><a name=\"interaction-effect\"> </a><a name=\"hcinteraction-effect\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">increased-effect<a name=\"interaction-effect-increased-effect\"> </a></td><td>Aumento de Efeito</td><td>Aumento do efeito terapêutico ou tóxico</td></tr><tr><td style=\"white-space:nowrap\">decreased-effect<a name=\"interaction-effect-decreased-effect\"> </a></td><td>Diminuição de Efeito</td><td>Diminuição do efeito terapêutico</td></tr><tr><td style=\"white-space:nowrap\">increased-toxicity<a name=\"interaction-effect-increased-toxicity\"> </a></td><td>Aumento de Toxicidade</td><td>Aumento do risco de toxicidade</td></tr><tr><td style=\"white-space:nowrap\">increased-adverse-effects<a name=\"interaction-effect-increased-adverse-effects\"> </a></td><td>Aumento de Efeitos Adversos</td><td>Aumento da frequência ou gravidade de efeitos adversos</td></tr><tr><td style=\"white-space:nowrap\">altered-bioavailability<a name=\"interaction-effect-altered-bioavailability\"> </a></td><td>Alteração de Biodisponibilidade</td><td>Alteração na absorção ou biodisponibilidade</td></tr><tr><td style=\"white-space:nowrap\">altered-metabolism<a name=\"interaction-effect-altered-metabolism\"> </a></td><td>Alteração de Metabolismo</td><td>Alteração no metabolismo da substância</td></tr><tr><td style=\"white-space:nowrap\">altered-excretion<a name=\"interaction-effect-altered-excretion\"> </a></td><td>Alteração de Excreção</td><td>Alteração na excreção da substância</td></tr><tr><td style=\"white-space:nowrap\">additive-effect<a name=\"interaction-effect-additive-effect\"> </a></td><td>Efeito Aditivo</td><td>Soma dos efeitos</td></tr><tr><td style=\"white-space:nowrap\">synergistic-effect<a name=\"interaction-effect-synergistic-effect\"> </a></td><td>Efeito Sinérgico</td><td>Efeito maior que a soma</td></tr><tr><td style=\"white-space:nowrap\">antagonistic-effect<a name=\"interaction-effect-antagonistic-effect\"> </a></td><td>Efeito Antagônico</td><td>Efeitos opostos que se anulam</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-effect"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-effect>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "InteractionEffect"] ; # 
+  fhir:title [ fhir:v "Efeito da Interação"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Efeito clínico resultante de uma interação"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "increased-effect" ] ;
+     fhir:display [ fhir:v "Aumento de Efeito" ] ;
+     fhir:definition [ fhir:v "Aumento do efeito terapêutico ou tóxico" ]
+  ] [
+     fhir:code [ fhir:v "decreased-effect" ] ;
+     fhir:display [ fhir:v "Diminuição de Efeito" ] ;
+     fhir:definition [ fhir:v "Diminuição do efeito terapêutico" ]
+  ] [
+     fhir:code [ fhir:v "increased-toxicity" ] ;
+     fhir:display [ fhir:v "Aumento de Toxicidade" ] ;
+     fhir:definition [ fhir:v "Aumento do risco de toxicidade" ]
+  ] [
+     fhir:code [ fhir:v "increased-adverse-effects" ] ;
+     fhir:display [ fhir:v "Aumento de Efeitos Adversos" ] ;
+     fhir:definition [ fhir:v "Aumento da frequência ou gravidade de efeitos adversos" ]
+  ] [
+     fhir:code [ fhir:v "altered-bioavailability" ] ;
+     fhir:display [ fhir:v "Alteração de Biodisponibilidade" ] ;
+     fhir:definition [ fhir:v "Alteração na absorção ou biodisponibilidade" ]
+  ] [
+     fhir:code [ fhir:v "altered-metabolism" ] ;
+     fhir:display [ fhir:v "Alteração de Metabolismo" ] ;
+     fhir:definition [ fhir:v "Alteração no metabolismo da substância" ]
+  ] [
+     fhir:code [ fhir:v "altered-excretion" ] ;
+     fhir:display [ fhir:v "Alteração de Excreção" ] ;
+     fhir:definition [ fhir:v "Alteração na excreção da substância" ]
+  ] [
+     fhir:code [ fhir:v "additive-effect" ] ;
+     fhir:display [ fhir:v "Efeito Aditivo" ] ;
+     fhir:definition [ fhir:v "Soma dos efeitos" ]
+  ] [
+     fhir:code [ fhir:v "synergistic-effect" ] ;
+     fhir:display [ fhir:v "Efeito Sinérgico" ] ;
+     fhir:definition [ fhir:v "Efeito maior que a soma" ]
+  ] [
+     fhir:code [ fhir:v "antagonistic-effect" ] ;
+     fhir:display [ fhir:v "Efeito Antagônico" ] ;
+     fhir:definition [ fhir:v "Efeitos opostos que se anulam" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,143 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-relationship-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-relationship-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-relationship-type</b></p><a name=\"substance-relationship-type\"> </a><a name=\"hcsubstance-relationship-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">salt-parent<a name=\"substance-relationship-type-salt-parent\"> </a></td><td>Sal-Base</td><td>Relação entre sal e base livre</td></tr><tr><td style=\"white-space:nowrap\">parent-salt<a name=\"substance-relationship-type-parent-salt\"> </a></td><td>Base-Sal</td><td>Relação entre base livre e sal</td></tr><tr><td style=\"white-space:nowrap\">active-moiety<a name=\"substance-relationship-type-active-moiety\"> </a></td><td>Moiety Ativa</td><td>Parte farmacologicamente ativa da molécula</td></tr><tr><td style=\"white-space:nowrap\">prodrug-drug<a name=\"substance-relationship-type-prodrug-drug\"> </a></td><td>Pró-fármaco-Fármaco</td><td>Relação pró-fármaco e fármaco ativo</td></tr><tr><td style=\"white-space:nowrap\">metabolite<a name=\"substance-relationship-type-metabolite\"> </a></td><td>Metabólito</td><td>Produto de metabolismo</td></tr><tr><td style=\"white-space:nowrap\">isomer<a name=\"substance-relationship-type-isomer\"> </a></td><td>Isômero</td><td>Isômero estrutural ou estereoisômero</td></tr><tr><td style=\"white-space:nowrap\">enantiomer<a name=\"substance-relationship-type-enantiomer\"> </a></td><td>Enantiômero</td><td>Par enantiomérico</td></tr><tr><td style=\"white-space:nowrap\">polymorph<a name=\"substance-relationship-type-polymorph\"> </a></td><td>Polimorfo</td><td>Forma polimórfica</td></tr><tr><td style=\"white-space:nowrap\">solvate-parent<a name=\"substance-relationship-type-solvate-parent\"> </a></td><td>Solvato-Base</td><td>Solvato/hidrato e forma anidra</td></tr><tr><td style=\"white-space:nowrap\">impurity<a name=\"substance-relationship-type-impurity\"> </a></td><td>Impureza</td><td>Impureza relacionada</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-relationship-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-relationship-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceRelationshipType"] ; # 
+  fhir:title [ fhir:v "Tipo de Relacionamento entre Substâncias"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de relacionamentos entre substâncias químicas"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "salt-parent" ] ;
+     fhir:display [ fhir:v "Sal-Base" ] ;
+     fhir:definition [ fhir:v "Relação entre sal e base livre" ]
+  ] [
+     fhir:code [ fhir:v "parent-salt" ] ;
+     fhir:display [ fhir:v "Base-Sal" ] ;
+     fhir:definition [ fhir:v "Relação entre base livre e sal" ]
+  ] [
+     fhir:code [ fhir:v "active-moiety" ] ;
+     fhir:display [ fhir:v "Moiety Ativa" ] ;
+     fhir:definition [ fhir:v "Parte farmacologicamente ativa da molécula" ]
+  ] [
+     fhir:code [ fhir:v "prodrug-drug" ] ;
+     fhir:display [ fhir:v "Pró-fármaco-Fármaco" ] ;
+     fhir:definition [ fhir:v "Relação pró-fármaco e fármaco ativo" ]
+  ] [
+     fhir:code [ fhir:v "metabolite" ] ;
+     fhir:display [ fhir:v "Metabólito" ] ;
+     fhir:definition [ fhir:v "Produto de metabolismo" ]
+  ] [
+     fhir:code [ fhir:v "isomer" ] ;
+     fhir:display [ fhir:v "Isômero" ] ;
+     fhir:definition [ fhir:v "Isômero estrutural ou estereoisômero" ]
+  ] [
+     fhir:code [ fhir:v "enantiomer" ] ;
+     fhir:display [ fhir:v "Enantiômero" ] ;
+     fhir:definition [ fhir:v "Par enantiomérico" ]
+  ] [
+     fhir:code [ fhir:v "polymorph" ] ;
+     fhir:display [ fhir:v "Polimorfo" ] ;
+     fhir:definition [ fhir:v "Forma polimórfica" ]
+  ] [
+     fhir:code [ fhir:v "solvate-parent" ] ;
+     fhir:display [ fhir:v "Solvato-Base" ] ;
+     fhir:definition [ fhir:v "Solvato/hidrato e forma anidra" ]
+  ] [
+     fhir:code [ fhir:v "impurity" ] ;
+     fhir:display [ fhir:v "Impureza" ] ;
+     fhir:definition [ fhir:v "Impureza relacionada" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

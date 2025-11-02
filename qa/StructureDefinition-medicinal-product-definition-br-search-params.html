@@ -1,0 +1,217 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-medicinal-product-definition-br-search-params</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="list">
+  <tr>
+    <td>
+      <b>Nome</b>
+    </td>
+    <td>
+      <b>Tipo</b>
+    </td>
+    <td>
+      <b>Descrição</b>
+    </td>
+    <td>
+      <b>Expressão</b>
+    </td>
+  </tr>
+  <tr>
+    <td>characteristic</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Allows the key product features to be recorded, such as "sugar free", "modified release", "parallel import"</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.characteristic.value.ofType(Quantity) | MedicinalProductDefinition.characteristic.value.ofType(CodeableConcept)</code>
+    </td>
+  </tr>
+  <tr>
+    <td>characteristic-type</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>A category for the characteristic</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.characteristic.type</code>
+    </td>
+  </tr>
+  <tr>
+    <td>contact</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>A product specific contact, person (in a role), or an organization</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.contact.contact</code>
+    </td>
+  </tr>
+  <tr>
+    <td>domain</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>If this medicine applies to human or veterinary uses</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.domain</code>
+    </td>
+  </tr>
+  <tr>
+    <td>identifier</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Business identifier for this product. Could be an MPID</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.identifier</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ingredient</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>An ingredient of this product</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.ingredient</code>
+    </td>
+  </tr>
+  <tr>
+    <td>master-file</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>A master file for to the medicinal product (e.g. Pharmacovigilance System Master File)</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.masterFile</code>
+    </td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>The full product name</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.name.productName</code>
+    </td>
+  </tr>
+  <tr>
+    <td>name-language</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Language code for this name</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.name.usage.language</code>
+    </td>
+  </tr>
+  <tr>
+    <td>product-classification</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Allows the product to be classified by various systems</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.classification</code>
+    </td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>The status within the lifecycle of this product record. A high-level status, this is not intended to duplicate details carried elsewhere such as legal status, or authorization status</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.status</code>
+    </td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Regulatory type, e.g. Investigational or Authorized</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>MedicinalProductDefinition.type</code>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "reference-type-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem reference-type-br</b></p><a name=\"reference-type-br\"> </a><a name=\"hcreference-type-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">generic<a name=\"reference-type-br-generic\"> </a></td><td>Genérico</td><td>Medicamento genérico com referência ao produto inovador</td></tr><tr><td style=\"white-space:nowrap\">similar<a name=\"reference-type-br-similar\"> </a></td><td>Similar</td><td>Medicamento similar com referência ao produto comparador</td></tr><tr><td style=\"white-space:nowrap\">biosimilar<a name=\"reference-type-br-biosimilar\"> </a></td><td>Biosimilar</td><td>Produto biológico similar com referência ao produto biológico de referência</td></tr><tr><td style=\"white-space:nowrap\">copy<a name=\"reference-type-br-copy\"> </a></td><td>Cópia</td><td>Produto que reproduz medicamento de referência</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/reference-type-br",
+  "version" : "0.0.3",
+  "name" : "ReferenceTypeBR",
+  "title" : "Tipos de Referência - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para tipos de relação de referência",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "generic",
+    "display" : "Genérico",
+    "definition" : "Medicamento genérico com referência ao produto inovador"
+  },
+  {
+    "code" : "similar",
+    "display" : "Similar",
+    "definition" : "Medicamento similar com referência ao produto comparador"
+  },
+  {
+    "code" : "biosimilar",
+    "display" : "Biosimilar",
+    "definition" : "Produto biológico similar com referência ao produto biológico de referência"
+  },
+  {
+    "code" : "copy",
+    "display" : "Cópia",
+    "definition" : "Produto que reproduz medicamento de referência"
+  }]
+}

@@ -1,0 +1,233 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-Organization-anvisa-simple-search-params</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="list">
+  <tr>
+    <td>
+      <b>Nome</b>
+    </td>
+    <td>
+      <b>Tipo</b>
+    </td>
+    <td>
+      <b>Descrição</b>
+    </td>
+    <td>
+      <b>Expressão</b>
+    </td>
+  </tr>
+  <tr>
+    <td>active</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Is the Organization record active</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.active</code>
+    </td>
+  </tr>
+  <tr>
+    <td>address</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.contact.address</code>
+    </td>
+  </tr>
+  <tr>
+    <td>address-city</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>A city specified in an address</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.contact.address.city</code>
+    </td>
+  </tr>
+  <tr>
+    <td>address-country</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>A country specified in an address</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.contact.address.country</code>
+    </td>
+  </tr>
+  <tr>
+    <td>address-postalcode</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>A postal code specified in an address</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.contact.address.postalCode</code>
+    </td>
+  </tr>
+  <tr>
+    <td>address-state</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>A state specified in an address</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.contact.address.state</code>
+    </td>
+  </tr>
+  <tr>
+    <td>address-use</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>A use code specified in an address</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.contact.address.use</code>
+    </td>
+  </tr>
+  <tr>
+    <td>endpoint</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>Technical endpoints providing access to services operated for the organization</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.endpoint</code>
+    </td>
+  </tr>
+  <tr>
+    <td>identifier</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>Any identifier for the organization (not the accreditation issuer's identifier)</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.identifier | Organization.qualification.identifier</code>
+    </td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>A portion of the organization's name or alias</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.name | Organization.alias</code>
+    </td>
+  </tr>
+  <tr>
+    <td>partof</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#reference">reference</a>
+    </td>
+    <td>
+      <div>
+        <p>An organization of which this organization forms a part</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.partOf</code>
+    </td>
+  </tr>
+  <tr>
+    <td>phonetic</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#string">string</a>
+    </td>
+    <td>
+      <div>
+        <p>A portion of the organization's name using some kind of phonetic matching algorithm</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.name</code>
+    </td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>
+      <a href="https://hl7.org/fhir/R5/search.html#token">token</a>
+    </td>
+    <td>
+      <div>
+        <p>A code for the type of organization</p>
+
+
+      </div>
+    </td>
+    <td>
+      <code>Organization.type</code>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

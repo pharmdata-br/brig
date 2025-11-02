@@ -1,0 +1,176 @@
+# Categorias Operacionais de Organização - Brasil - BRIG - Guia de Implementação Brasileiro para IDMP v0.0.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Categorias Operacionais de Organização - Brasil**
+
+## CodeSystem: Categorias Operacionais de Organização - Brasil (Experimental) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-category-br | *Version*:0.0.3 |
+| *Standards status:*[Informative](http://hl7.org/fhir/R5/versions.html#std-process) | *Computable Name*:OrganizationOperationalCategoryBR |
+| **Copyright/Legal**: Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão. | |
+
+ 
+Sistema de códigos para categorias operacionais de organizações 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* Este CodeSystem não é utilizado aqui; pode ser utilizado noutro local (por exemplo, em especificações e/ou implementações que utilizem este conteúdo)
+
+Este sistema de código define o seguinte código:
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "organization-operational-category-br",
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "informative",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+          }
+        ]
+      }
+    }
+  ],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-category-br",
+  "version" : "0.0.3",
+  "name" : "OrganizationOperationalCategoryBR",
+  "title" : "Categorias Operacionais de Organização - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-02",
+  "publisher" : "IDMP Brasil",
+  "contact" : [
+    {
+      "name" : "IDMP Brasil",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://idmp-br.github.io"
+        },
+        {
+          "system" : "email",
+          "value" : "eugenio@farmaco.io"
+        }
+      ]
+    },
+    {
+      "name" : "IDMP Brasil",
+      "telecom" : [
+        {
+          "system" : "email",
+          "value" : "eugenio@farmaco.io"
+        },
+        {
+          "system" : "url",
+          "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+        }
+      ]
+    }
+  ],
+  "description" : "Sistema de códigos para categorias operacionais de organizações",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BR"
+        }
+      ]
+    }
+  ],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 15,
+  "concept" : [
+    {
+      "code" : "pharmaceutical-manufacturing",
+      "display" : "Fabricação Farmacêutica",
+      "definition" : "Fabricação de medicamentos e produtos farmacêuticos"
+    },
+    {
+      "code" : "api-manufacturing",
+      "display" : "Fabricação de IFA",
+      "definition" : "Fabricação de Insumos Farmacêuticos Ativos"
+    },
+    {
+      "code" : "device-manufacturing",
+      "display" : "Fabricação de Dispositivos",
+      "definition" : "Fabricação de dispositivos médicos e correlatos"
+    },
+    {
+      "code" : "cosmetic-manufacturing",
+      "display" : "Fabricação de Cosméticos",
+      "definition" : "Fabricação de produtos cosméticos"
+    },
+    {
+      "code" : "wholesale-distribution",
+      "display" : "Distribuição Atacadista",
+      "definition" : "Distribuição atacadista de produtos regulados"
+    },
+    {
+      "code" : "retail-pharmacy",
+      "display" : "Farmácia de Varejo",
+      "definition" : "Farmácia ou drogaria de varejo"
+    },
+    {
+      "code" : "hospital-pharmacy",
+      "display" : "Farmácia Hospitalar",
+      "definition" : "Farmácia de estabelecimento hospitalar"
+    },
+    {
+      "code" : "import-operations",
+      "display" : "Operações de Importação",
+      "definition" : "Importação de produtos regulados"
+    },
+    {
+      "code" : "export-operations",
+      "display" : "Operações de Exportação",
+      "definition" : "Exportação de produtos regulados"
+    },
+    {
+      "code" : "clinical-research",
+      "display" : "Pesquisa Clínica",
+      "definition" : "Condução de pesquisas clínicas"
+    },
+    {
+      "code" : "preclinical-research",
+      "display" : "Pesquisa Pré-clínica",
+      "definition" : "Pesquisa pré-clínica e desenvolvimento"
+    },
+    {
+      "code" : "analytical-laboratory",
+      "display" : "Laboratório Analítico",
+      "definition" : "Laboratório de análises e controle de qualidade"
+    },
+    {
+      "code" : "regulatory-consulting",
+      "display" : "Consultoria Regulatória",
+      "definition" : "Serviços de consultoria regulatória"
+    },
+    {
+      "code" : "quality-assurance",
+      "display" : "Garantia de Qualidade",
+      "definition" : "Serviços de garantia e controle de qualidade"
+    },
+    {
+      "code" : "logistics-services",
+      "display" : "Serviços Logísticos",
+      "definition" : "Serviços de logística e transporte especializado"
+    }
+  ]
+}
+
+```

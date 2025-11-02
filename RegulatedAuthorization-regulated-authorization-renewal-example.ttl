@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/RegulatedAuthorization/regulated-authorization-renewal-example> a fhir:RegulatedAuthorization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "regulated-authorization-renewal-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br"^^xsd:anyURI ;
+       fhir:l <https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/regulated-authorization-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: RegulatedAuthorization regulated-authorization-renewal-example</b></p><a name=\"regulated-authorization-renewal-example\"> </a><a name=\"hcregulated-authorization-renewal-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-regulated-authorization-br.html\">Autorização Regulatória - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro</code>/1.5678.9012.345-6, <code>http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-processo</code>/25351.987654/2024-82</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-paracetamol-750mg-example.html\">Paracetamol 750mg Comprimidos</a></p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br renewal}\">Renovação</span></p><p><b>region</b>: <span title=\"Códigos:{urn:iso:std:iso:3166 BR}\">Brazil</span></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br active}\">Ativo</span></p><p><b>statusDate</b>: 2024-09-01</p><p><b>validityPeriod</b>: 2024-09-01 --&gt; 2034-09-01</p><p><b>basis</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br rdc-317-2019}\">RDC 317/2019</span></p><p><b>holder</b>: <a href=\"Organization-organization-ems-example.html\">EMS S/A</a></p><p><b>regulator</b>: <a href=\"Organization-organization-anvisa-example.html\">Agência Nacional de Vigilância Sanitária - ANVISA</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-registro>
+     ] ;
+     fhir:value [ fhir:v "1.5678.9012.345-6" ]
+  ] [
+     fhir:system [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-processo"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/NamingSystem/anvisa-processo>
+     ] ;
+     fhir:value [ fhir:v "25351.987654/2024-82" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/MedicinalProductDefinition/paracetamol-750mg-example> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/paracetamol-750mg-example" ] ;
+     fhir:display [ fhir:v "Paracetamol 750mg Comprimidos" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br>
+       ] ;
+       fhir:code [ fhir:v "renewal" ] ;
+       fhir:display [ fhir:v "Renovação" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br>
+       ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Ativo" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2024-09-01"^^xsd:date] ; # 
+  fhir:validityPeriod [
+     fhir:start [ fhir:v "2024-09-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2034-09-01"^^xsd:date ]
+  ] ; # 
+  fhir:basis ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br>
+       ] ;
+       fhir:code [ fhir:v "rdc-317-2019" ] ;
+       fhir:display [ fhir:v "RDC 317/2019" ]
+     ] )
+  ] ) ; # 
+  fhir:holder [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/Organization/organization-ems-example> ;
+     fhir:reference [ fhir:v "Organization/organization-ems-example" ] ;
+     fhir:display [ fhir:v "EMS S/A" ]
+  ] ; # 
+  fhir:regulator [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/Organization/organization-anvisa-example> ;
+     fhir:reference [ fhir:v "Organization/organization-anvisa-example" ] ;
+     fhir:display [ fhir:v "Agência Nacional de Vigilância Sanitária - ANVISA" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

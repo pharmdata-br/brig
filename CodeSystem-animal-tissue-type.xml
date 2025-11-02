@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="animal-tissue-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem animal-tissue-type</b></p><a name="animal-tissue-type"> </a><a name="hcanimal-tissue-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">meat<a name="animal-tissue-type-meat"> </a></td><td>Carne</td><td>Tecido muscular para consumo humano</td></tr><tr><td style="white-space:nowrap">liver<a name="animal-tissue-type-liver"> </a></td><td>Fígado</td><td>Fígado para consumo humano</td></tr><tr><td style="white-space:nowrap">kidney<a name="animal-tissue-type-kidney"> </a></td><td>Rim</td><td>Rins para consumo humano</td></tr><tr><td style="white-space:nowrap">fat<a name="animal-tissue-type-fat"> </a></td><td>Gordura</td><td>Tecido adiposo para consumo humano</td></tr><tr><td style="white-space:nowrap">skin<a name="animal-tissue-type-skin"> </a></td><td>Pele</td><td>Pele e couro</td></tr><tr><td style="white-space:nowrap">milk<a name="animal-tissue-type-milk"> </a></td><td>Leite</td><td>Leite e produtos lácteos</td></tr><tr><td style="white-space:nowrap">egg<a name="animal-tissue-type-egg"> </a></td><td>Ovo</td><td>Ovos e produtos de ovos</td></tr><tr><td style="white-space:nowrap">honey<a name="animal-tissue-type-honey"> </a></td><td>Mel</td><td>Mel e produtos apícolas</td></tr><tr><td style="white-space:nowrap">muscle<a name="animal-tissue-type-muscle"> </a></td><td>Músculo</td><td>Tecido muscular (incluindo coração)</td></tr><tr><td style="white-space:nowrap">offal<a name="animal-tissue-type-offal"> </a></td><td>Vísceras</td><td>Vísceras em geral (miúdos)</td></tr><tr><td style="white-space:nowrap">blood<a name="animal-tissue-type-blood"> </a></td><td>Sangue</td><td>Sangue e produtos sanguíneos</td></tr><tr><td style="white-space:nowrap">fish-tissue<a name="animal-tissue-type-fish-tissue"> </a></td><td>Tecido de Peixe</td><td>Músculos e tecidos comestíveis de peixes</td></tr><tr><td style="white-space:nowrap">fish-skin<a name="animal-tissue-type-fish-skin"> </a></td><td>Pele de Peixe</td><td>Pele de peixes</td></tr><tr><td style="white-space:nowrap">plasma<a name="animal-tissue-type-plasma"> </a></td><td>Plasma</td><td>Plasma sanguíneo</td></tr><tr><td style="white-space:nowrap">all-tissues<a name="animal-tissue-type-all-tissues"> </a></td><td>Todos os Tecidos</td><td>Período de carência aplicável a todos os tecidos comestíveis</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/animal-tissue-type"/>
+  <version value="0.0.3"/>
+  <name value="AnimalTissueType"/>
+  <title value="Tipos de Tecido Animal"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de tecidos animais para os quais períodos de carência (withdrawal periods) são especificados em produtos veterinários"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Definir tipos de tecidos para os quais são estabelecidos períodos de carência em produtos veterinários destinados a animais de produção"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="meat"/>
+    <display value="Carne"/>
+    <definition value="Tecido muscular para consumo humano"/>
+  </concept>
+  <concept>
+    <code value="liver"/>
+    <display value="Fígado"/>
+    <definition value="Fígado para consumo humano"/>
+  </concept>
+  <concept>
+    <code value="kidney"/>
+    <display value="Rim"/>
+    <definition value="Rins para consumo humano"/>
+  </concept>
+  <concept>
+    <code value="fat"/>
+    <display value="Gordura"/>
+    <definition value="Tecido adiposo para consumo humano"/>
+  </concept>
+  <concept>
+    <code value="skin"/>
+    <display value="Pele"/>
+    <definition value="Pele e couro"/>
+  </concept>
+  <concept>
+    <code value="milk"/>
+    <display value="Leite"/>
+    <definition value="Leite e produtos lácteos"/>
+  </concept>
+  <concept>
+    <code value="egg"/>
+    <display value="Ovo"/>
+    <definition value="Ovos e produtos de ovos"/>
+  </concept>
+  <concept>
+    <code value="honey"/>
+    <display value="Mel"/>
+    <definition value="Mel e produtos apícolas"/>
+  </concept>
+  <concept>
+    <code value="muscle"/>
+    <display value="Músculo"/>
+    <definition value="Tecido muscular (incluindo coração)"/>
+  </concept>
+  <concept>
+    <code value="offal"/>
+    <display value="Vísceras"/>
+    <definition value="Vísceras em geral (miúdos)"/>
+  </concept>
+  <concept>
+    <code value="blood"/>
+    <display value="Sangue"/>
+    <definition value="Sangue e produtos sanguíneos"/>
+  </concept>
+  <concept>
+    <code value="fish-tissue"/>
+    <display value="Tecido de Peixe"/>
+    <definition value="Músculos e tecidos comestíveis de peixes"/>
+  </concept>
+  <concept>
+    <code value="fish-skin"/>
+    <display value="Pele de Peixe"/>
+    <definition value="Pele de peixes"/>
+  </concept>
+  <concept>
+    <code value="plasma"/>
+    <display value="Plasma"/>
+    <definition value="Plasma sanguíneo"/>
+  </concept>
+  <concept>
+    <code value="all-tissues"/>
+    <display value="Todos os Tecidos"/>
+    <definition value="Período de carência aplicável a todos os tecidos comestíveis"/>
+  </concept>
+</CodeSystem>

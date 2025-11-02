@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="clinical-use-category-br"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: ValueSet clinical-use-category-br</b></p><a name="clinical-use-category-br"> </a><a name="hcclinical-use-category-br"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><ul><li>Include todos os códigos definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-category-br"/>
+  <version value="0.0.3"/>
+  <name value="ClinicalUseCategoryBRValueSet"/>
+  <title value="Categorias de Uso Clínico - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet de categorias específicas brasileiras para uso clínico incluindo programas governamentais."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <compose>
+    <include>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"/>
+    </include>
+  </compose>
+</ValueSet>

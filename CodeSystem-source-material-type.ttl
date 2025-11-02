@@ -1,0 +1,135 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/source-material-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "source-material-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem source-material-type</b></p><a name=\"source-material-type\"> </a><a name=\"hcsource-material-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">animal<a name=\"source-material-type-animal\"> </a></td><td>Animal</td><td>Origem animal</td></tr><tr><td style=\"white-space:nowrap\">plant<a name=\"source-material-type-plant\"> </a></td><td>Vegetal</td><td>Origem vegetal</td></tr><tr><td style=\"white-space:nowrap\">microbial<a name=\"source-material-type-microbial\"> </a></td><td>Microbiano</td><td>Origem microbiana (bactérias, fungos, leveduras)</td></tr><tr><td style=\"white-space:nowrap\">mineral<a name=\"source-material-type-mineral\"> </a></td><td>Mineral</td><td>Origem mineral</td></tr><tr><td style=\"white-space:nowrap\">synthetic<a name=\"source-material-type-synthetic\"> </a></td><td>Sintético</td><td>Origem sintética</td></tr><tr><td style=\"white-space:nowrap\">semi-synthetic<a name=\"source-material-type-semi-synthetic\"> </a></td><td>Semi-sintético</td><td>Origem semi-sintética (modificação de produto natural)</td></tr><tr><td style=\"white-space:nowrap\">human<a name=\"source-material-type-human\"> </a></td><td>Humano</td><td>Origem humana</td></tr><tr><td style=\"white-space:nowrap\">biotechnology<a name=\"source-material-type-biotechnology\"> </a></td><td>Biotecnologia</td><td>Produzido por biotecnologia (recombinante)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/source-material-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/source-material-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SourceMaterialType"] ; # 
+  fhir:title [ fhir:v "Tipo de Material de Origem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de material de origem para substâncias biológicas"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "animal" ] ;
+     fhir:display [ fhir:v "Animal" ] ;
+     fhir:definition [ fhir:v "Origem animal" ]
+  ] [
+     fhir:code [ fhir:v "plant" ] ;
+     fhir:display [ fhir:v "Vegetal" ] ;
+     fhir:definition [ fhir:v "Origem vegetal" ]
+  ] [
+     fhir:code [ fhir:v "microbial" ] ;
+     fhir:display [ fhir:v "Microbiano" ] ;
+     fhir:definition [ fhir:v "Origem microbiana (bactérias, fungos, leveduras)" ]
+  ] [
+     fhir:code [ fhir:v "mineral" ] ;
+     fhir:display [ fhir:v "Mineral" ] ;
+     fhir:definition [ fhir:v "Origem mineral" ]
+  ] [
+     fhir:code [ fhir:v "synthetic" ] ;
+     fhir:display [ fhir:v "Sintético" ] ;
+     fhir:definition [ fhir:v "Origem sintética" ]
+  ] [
+     fhir:code [ fhir:v "semi-synthetic" ] ;
+     fhir:display [ fhir:v "Semi-sintético" ] ;
+     fhir:definition [ fhir:v "Origem semi-sintética (modificação de produto natural)" ]
+  ] [
+     fhir:code [ fhir:v "human" ] ;
+     fhir:display [ fhir:v "Humano" ] ;
+     fhir:definition [ fhir:v "Origem humana" ]
+  ] [
+     fhir:code [ fhir:v "biotechnology" ] ;
+     fhir:display [ fhir:v "Biotecnologia" ] ;
+     fhir:definition [ fhir:v "Produzido por biotecnologia (recombinante)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

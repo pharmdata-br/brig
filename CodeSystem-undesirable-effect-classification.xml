@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="undesirable-effect-classification"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem undesirable-effect-classification</b></p><a name="undesirable-effect-classification"> </a><a name="hcundesirable-effect-classification"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">very-common<a name="undesirable-effect-classification-very-common"> </a></td><td>Muito Comum</td><td>≥ 1/10 (≥ 10%)</td></tr><tr><td style="white-space:nowrap">common<a name="undesirable-effect-classification-common"> </a></td><td>Comum</td><td>≥ 1/100 e &lt; 1/10 (≥ 1% e &lt; 10%)</td></tr><tr><td style="white-space:nowrap">uncommon<a name="undesirable-effect-classification-uncommon"> </a></td><td>Incomum</td><td>≥ 1/1.000 e &lt; 1/100 (≥ 0,1% e &lt; 1%)</td></tr><tr><td style="white-space:nowrap">rare<a name="undesirable-effect-classification-rare"> </a></td><td>Raro</td><td>≥ 1/10.000 e &lt; 1/1.000 (≥ 0,01% e &lt; 0,1%)</td></tr><tr><td style="white-space:nowrap">very-rare<a name="undesirable-effect-classification-very-rare"> </a></td><td>Muito Raro</td><td>&lt; 1/10.000 (&lt; 0,01%)</td></tr><tr><td style="white-space:nowrap">unknown<a name="undesirable-effect-classification-unknown"> </a></td><td>Frequência Desconhecida</td><td>Não pode ser estimada a partir dos dados disponíveis</td></tr><tr><td style="white-space:nowrap">mild<a name="undesirable-effect-classification-mild"> </a></td><td>Leve</td><td>Efeito leve que não interfere nas atividades normais</td></tr><tr><td style="white-space:nowrap">moderate<a name="undesirable-effect-classification-moderate"> </a></td><td>Moderado</td><td>Efeito que interfere parcialmente nas atividades</td></tr><tr><td style="white-space:nowrap">severe<a name="undesirable-effect-classification-severe"> </a></td><td>Grave</td><td>Efeito que impede atividades normais</td></tr><tr><td style="white-space:nowrap">life-threatening<a name="undesirable-effect-classification-life-threatening"> </a></td><td>Risco de Vida</td><td>Efeito que coloca a vida em risco</td></tr><tr><td style="white-space:nowrap">fatal<a name="undesirable-effect-classification-fatal"> </a></td><td>Fatal</td><td>Efeito que resulta em morte</td></tr><tr><td style="white-space:nowrap">cardiac<a name="undesirable-effect-classification-cardiac"> </a></td><td>Cardíaco</td><td>Efeitos cardíacos</td></tr><tr><td style="white-space:nowrap">gastrointestinal<a name="undesirable-effect-classification-gastrointestinal"> </a></td><td>Gastrointestinal</td><td>Efeitos gastrointestinais</td></tr><tr><td style="white-space:nowrap">hepatic<a name="undesirable-effect-classification-hepatic"> </a></td><td>Hepático</td><td>Efeitos hepáticos</td></tr><tr><td style="white-space:nowrap">renal<a name="undesirable-effect-classification-renal"> </a></td><td>Renal</td><td>Efeitos renais</td></tr><tr><td style="white-space:nowrap">neurological<a name="undesirable-effect-classification-neurological"> </a></td><td>Neurológico</td><td>Efeitos neurológicos</td></tr><tr><td style="white-space:nowrap">psychiatric<a name="undesirable-effect-classification-psychiatric"> </a></td><td>Psiquiátrico</td><td>Efeitos psiquiátricos</td></tr><tr><td style="white-space:nowrap">dermatological<a name="undesirable-effect-classification-dermatological"> </a></td><td>Dermatológico</td><td>Efeitos dermatológicos</td></tr><tr><td style="white-space:nowrap">hematological<a name="undesirable-effect-classification-hematological"> </a></td><td>Hematológico</td><td>Efeitos hematológicos</td></tr><tr><td style="white-space:nowrap">immunological<a name="undesirable-effect-classification-immunological"> </a></td><td>Imunológico</td><td>Efeitos imunológicos</td></tr><tr><td style="white-space:nowrap">endocrine<a name="undesirable-effect-classification-endocrine"> </a></td><td>Endócrino</td><td>Efeitos endócrinos</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-classification"/>
+  <version value="0.0.3"/>
+  <name value="UndesirableEffectClassification"/>
+  <title value="Classificação de Efeito Indesejável"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-31"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Classificação de alta hierarquia para efeitos indesejáveis"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="21"/>
+  <concept>
+    <code value="very-common"/>
+    <display value="Muito Comum"/>
+    <definition value="≥ 1/10 (≥ 10%)"/>
+  </concept>
+  <concept>
+    <code value="common"/>
+    <display value="Comum"/>
+    <definition value="≥ 1/100 e &lt; 1/10 (≥ 1% e &lt; 10%)"/>
+  </concept>
+  <concept>
+    <code value="uncommon"/>
+    <display value="Incomum"/>
+    <definition value="≥ 1/1.000 e &lt; 1/100 (≥ 0,1% e &lt; 1%)"/>
+  </concept>
+  <concept>
+    <code value="rare"/>
+    <display value="Raro"/>
+    <definition value="≥ 1/10.000 e &lt; 1/1.000 (≥ 0,01% e &lt; 0,1%)"/>
+  </concept>
+  <concept>
+    <code value="very-rare"/>
+    <display value="Muito Raro"/>
+    <definition value="&lt; 1/10.000 (&lt; 0,01%)"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Frequência Desconhecida"/>
+    <definition value="Não pode ser estimada a partir dos dados disponíveis"/>
+  </concept>
+  <concept>
+    <code value="mild"/>
+    <display value="Leve"/>
+    <definition value="Efeito leve que não interfere nas atividades normais"/>
+  </concept>
+  <concept>
+    <code value="moderate"/>
+    <display value="Moderado"/>
+    <definition value="Efeito que interfere parcialmente nas atividades"/>
+  </concept>
+  <concept>
+    <code value="severe"/>
+    <display value="Grave"/>
+    <definition value="Efeito que impede atividades normais"/>
+  </concept>
+  <concept>
+    <code value="life-threatening"/>
+    <display value="Risco de Vida"/>
+    <definition value="Efeito que coloca a vida em risco"/>
+  </concept>
+  <concept>
+    <code value="fatal"/>
+    <display value="Fatal"/>
+    <definition value="Efeito que resulta em morte"/>
+  </concept>
+  <concept>
+    <code value="cardiac"/>
+    <display value="Cardíaco"/>
+    <definition value="Efeitos cardíacos"/>
+  </concept>
+  <concept>
+    <code value="gastrointestinal"/>
+    <display value="Gastrointestinal"/>
+    <definition value="Efeitos gastrointestinais"/>
+  </concept>
+  <concept>
+    <code value="hepatic"/>
+    <display value="Hepático"/>
+    <definition value="Efeitos hepáticos"/>
+  </concept>
+  <concept>
+    <code value="renal"/>
+    <display value="Renal"/>
+    <definition value="Efeitos renais"/>
+  </concept>
+  <concept>
+    <code value="neurological"/>
+    <display value="Neurológico"/>
+    <definition value="Efeitos neurológicos"/>
+  </concept>
+  <concept>
+    <code value="psychiatric"/>
+    <display value="Psiquiátrico"/>
+    <definition value="Efeitos psiquiátricos"/>
+  </concept>
+  <concept>
+    <code value="dermatological"/>
+    <display value="Dermatológico"/>
+    <definition value="Efeitos dermatológicos"/>
+  </concept>
+  <concept>
+    <code value="hematological"/>
+    <display value="Hematológico"/>
+    <definition value="Efeitos hematológicos"/>
+  </concept>
+  <concept>
+    <code value="immunological"/>
+    <display value="Imunológico"/>
+    <definition value="Efeitos imunológicos"/>
+  </concept>
+  <concept>
+    <code value="endocrine"/>
+    <display value="Endócrino"/>
+    <definition value="Efeitos endócrinos"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="change-severity-level"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem change-severity-level</b></p><a name="change-severity-level"> </a><a name="hcchange-severity-level"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">minor<a name="change-severity-level-minor"> </a></td><td>Menor</td><td>Mudança menor que não afeta segurança ou eficácia</td></tr><tr><td style="white-space:nowrap">moderate<a name="change-severity-level-moderate"> </a></td><td>Moderada</td><td>Mudança moderada com impacto limitado</td></tr><tr><td style="white-space:nowrap">major<a name="change-severity-level-major"> </a></td><td>Maior</td><td>Mudança significativa que afeta características do produto</td></tr><tr><td style="white-space:nowrap">critical<a name="change-severity-level-critical"> </a></td><td>Crítica</td><td>Mudança crítica que afeta segurança ou eficácia do produto</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/change-severity-level"/>
+  <version value="0.0.3"/>
+  <name value="ChangeSeverityLevel"/>
+  <title value="Níveis de Severidade de Mudança"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para classificação da severidade de mudanças"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="minor"/>
+    <display value="Menor"/>
+    <definition value="Mudança menor que não afeta segurança ou eficácia"/>
+  </concept>
+  <concept>
+    <code value="moderate"/>
+    <display value="Moderada"/>
+    <definition value="Mudança moderada com impacto limitado"/>
+  </concept>
+  <concept>
+    <code value="major"/>
+    <display value="Maior"/>
+    <definition value="Mudança significativa que afeta características do produto"/>
+  </concept>
+  <concept>
+    <code value="critical"/>
+    <display value="Crítica"/>
+    <definition value="Mudança crítica que afeta segurança ou eficácia do produto"/>
+  </concept>
+</CodeSystem>

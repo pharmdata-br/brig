@@ -1,0 +1,109 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "regulated-authorization-status-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem regulated-authorization-status-br</b></p><a name=\"regulated-authorization-status-br\"> </a><a name=\"hcregulated-authorization-status-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"regulated-authorization-status-br-active\"> </a></td><td>Ativo</td><td>Autorização regulatória ativa e válida</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"regulated-authorization-status-br-suspended\"> </a></td><td>Suspenso</td><td>Autorização temporariamente suspensa pela ANVISA</td></tr><tr><td style=\"white-space:nowrap\">cancelled<a name=\"regulated-authorization-status-br-cancelled\"> </a></td><td>Cancelado</td><td>Autorização cancelada definitivamente</td></tr><tr><td style=\"white-space:nowrap\">discontinued<a name=\"regulated-authorization-status-br-discontinued\"> </a></td><td>Descontinuado</td><td>Produto descontinuado pelo detentor</td></tr><tr><td style=\"white-space:nowrap\">expired<a name=\"regulated-authorization-status-br-expired\"> </a></td><td>Expirado</td><td>Autorização expirada por fim de validade</td></tr><tr><td style=\"white-space:nowrap\">pending<a name=\"regulated-authorization-status-br-pending\"> </a></td><td>Pendente</td><td>Processo de autorização em análise</td></tr><tr><td style=\"white-space:nowrap\">under-review<a name=\"regulated-authorization-status-br-under-review\"> </a></td><td>Em Revisão</td><td>Autorização sob revisão regulatória</td></tr><tr><td style=\"white-space:nowrap\">renewal-required<a name=\"regulated-authorization-status-br-renewal-required\"> </a></td><td>Renovação Necessária</td><td>Autorização próxima do vencimento, renovação necessária</td></tr><tr><td style=\"white-space:nowrap\">revoked<a name=\"regulated-authorization-status-br-revoked\"> </a></td><td>Revogado</td><td>Autorização revogada por decisão regulatória</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"regulated-authorization-status-br-withdrawn\"> </a></td><td>Retirado</td><td>Produto retirado do mercado por solicitação do detentor</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br",
+  "version" : "0.0.3",
+  "name" : "RegulatedAuthorizationStatusBR",
+  "title" : "Status de Autorização Regulatória ANVISA",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Status de autorizações regulatórias conforme processos ANVISA para medicamentos",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "active",
+    "display" : "Ativo",
+    "definition" : "Autorização regulatória ativa e válida"
+  },
+  {
+    "code" : "suspended",
+    "display" : "Suspenso",
+    "definition" : "Autorização temporariamente suspensa pela ANVISA"
+  },
+  {
+    "code" : "cancelled",
+    "display" : "Cancelado",
+    "definition" : "Autorização cancelada definitivamente"
+  },
+  {
+    "code" : "discontinued",
+    "display" : "Descontinuado",
+    "definition" : "Produto descontinuado pelo detentor"
+  },
+  {
+    "code" : "expired",
+    "display" : "Expirado",
+    "definition" : "Autorização expirada por fim de validade"
+  },
+  {
+    "code" : "pending",
+    "display" : "Pendente",
+    "definition" : "Processo de autorização em análise"
+  },
+  {
+    "code" : "under-review",
+    "display" : "Em Revisão",
+    "definition" : "Autorização sob revisão regulatória"
+  },
+  {
+    "code" : "renewal-required",
+    "display" : "Renovação Necessária",
+    "definition" : "Autorização próxima do vencimento, renovação necessária"
+  },
+  {
+    "code" : "revoked",
+    "display" : "Revogado",
+    "definition" : "Autorização revogada por decisão regulatória"
+  },
+  {
+    "code" : "withdrawn",
+    "display" : "Retirado",
+    "definition" : "Produto retirado do mercado por solicitação do detentor"
+  }]
+}

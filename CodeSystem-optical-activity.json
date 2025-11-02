@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "optical-activity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem optical-activity</b></p><a name=\"optical-activity\"> </a><a name=\"hcoptical-activity\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">dextrorotatory<a name=\"optical-activity-dextrorotatory\"> </a></td><td>Dextrorrotatório (+)</td><td>Desvia luz polarizada para direita (rotação positiva)</td></tr><tr><td style=\"white-space:nowrap\">levorotatory<a name=\"optical-activity-levorotatory\"> </a></td><td>Levorrotatório (-)</td><td>Desvia luz polarizada para esquerda (rotação negativa)</td></tr><tr><td style=\"white-space:nowrap\">optically-inactive<a name=\"optical-activity-optically-inactive\"> </a></td><td>Opticamente Inativo</td><td>Não desvia luz polarizada (racêmico ou aquiral)</td></tr><tr><td style=\"white-space:nowrap\">d-form<a name=\"optical-activity-d-form\"> </a></td><td>Forma D</td><td>Nomenclatura D/L (configuração)</td></tr><tr><td style=\"white-space:nowrap\">l-form<a name=\"optical-activity-l-form\"> </a></td><td>Forma L</td><td>Nomenclatura D/L (configuração)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity",
+  "version" : "0.0.3",
+  "name" : "OpticalActivity",
+  "title" : "Atividade Óptica",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Atividade óptica de substâncias quirais (rotação da luz polarizada)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "dextrorotatory",
+    "display" : "Dextrorrotatório (+)",
+    "definition" : "Desvia luz polarizada para direita (rotação positiva)"
+  },
+  {
+    "code" : "levorotatory",
+    "display" : "Levorrotatório (-)",
+    "definition" : "Desvia luz polarizada para esquerda (rotação negativa)"
+  },
+  {
+    "code" : "optically-inactive",
+    "display" : "Opticamente Inativo",
+    "definition" : "Não desvia luz polarizada (racêmico ou aquiral)"
+  },
+  {
+    "code" : "d-form",
+    "display" : "Forma D",
+    "definition" : "Nomenclatura D/L (configuração)"
+  },
+  {
+    "code" : "l-form",
+    "display" : "Forma L",
+    "definition" : "Nomenclatura D/L (configuração)"
+  }]
+}

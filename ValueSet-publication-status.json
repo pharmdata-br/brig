@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "publication-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet publication-status</b></p><a name=\"publication-status\"> </a><a name=\"hcpublication-status\"> </a><ul><li>Include todos os códigos definidos em <a href=\"http://hl7.org/fhir/R5/codesystem-publication-status.html\"><code>http://hl7.org/fhir/publication-status</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 5.0.0, the version found through the package references\"> versão &#x1F4E6;5.0.0</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/publication-status",
+  "version" : "0.0.3",
+  "name" : "PublicationStatus",
+  "title" : "Status de Publicação",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Status do ciclo de vida de publicação de um recurso FHIR. Este ValueSet referencia diretamente o CodeSystem oficial do FHIR R5.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "purpose" : "Definir status de publicação conforme especificação FHIR R5 para garantir interoperabilidade internacional",
+  "copyright" : "Este ValueSet referencia o CodeSystem PublicationStatus do FHIR, que é de domínio público conforme licença HL7.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/publication-status"
+    }]
+  }
+}

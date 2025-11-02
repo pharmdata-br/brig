@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="packaging-material"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem packaging-material</b></p><a name="packaging-material"> </a><a name="hcpackaging-material"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">vidro<a name="packaging-material-vidro"> </a></td><td>Vidro</td><td>Embalagem de vidro</td></tr><tr><td style="white-space:nowrap">plastico<a name="packaging-material-plastico"> </a></td><td>Plástico</td><td>Embalagem plástica</td></tr><tr><td style="white-space:nowrap">aluminio<a name="packaging-material-aluminio"> </a></td><td>Alumínio</td><td>Embalagem de alumínio</td></tr><tr><td style="white-space:nowrap">papel<a name="packaging-material-papel"> </a></td><td>Papel</td><td>Embalagem de papel/papelão</td></tr><tr><td style="white-space:nowrap">pvc<a name="packaging-material-pvc"> </a></td><td>PVC</td><td>Cloreto de polivinila</td></tr><tr><td style="white-space:nowrap">pe<a name="packaging-material-pe"> </a></td><td>Polietileno</td><td>Polietileno</td></tr><tr><td style="white-space:nowrap">pp<a name="packaging-material-pp"> </a></td><td>Polipropileno</td><td>Polipropileno</td></tr><tr><td style="white-space:nowrap">pet<a name="packaging-material-pet"> </a></td><td>PET</td><td>Politereftalato de etileno</td></tr><tr><td style="white-space:nowrap">pvdc<a name="packaging-material-pvdc"> </a></td><td>PVDC</td><td>Cloreto de polivinilideno</td></tr><tr><td style="white-space:nowrap">borracha<a name="packaging-material-borracha"> </a></td><td>Borracha</td><td>Material de borracha/elastômero</td></tr><tr><td style="white-space:nowrap">metal<a name="packaging-material-metal"> </a></td><td>Metal</td><td>Material metálico geral</td></tr><tr><td style="white-space:nowrap">lamina-aluminio<a name="packaging-material-lamina-aluminio"> </a></td><td>Lâmina de Alumínio</td><td>Lâmina/folha de alumínio</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaging-material"/>
+  <version value="0.0.3"/>
+  <name value="PackagingMaterial"/>
+  <title value="Materiais de Embalagem"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para materiais de embalagem (padrão internacional)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="vidro"/>
+    <display value="Vidro"/>
+    <definition value="Embalagem de vidro"/>
+  </concept>
+  <concept>
+    <code value="plastico"/>
+    <display value="Plástico"/>
+    <definition value="Embalagem plástica"/>
+  </concept>
+  <concept>
+    <code value="aluminio"/>
+    <display value="Alumínio"/>
+    <definition value="Embalagem de alumínio"/>
+  </concept>
+  <concept>
+    <code value="papel"/>
+    <display value="Papel"/>
+    <definition value="Embalagem de papel/papelão"/>
+  </concept>
+  <concept>
+    <code value="pvc"/>
+    <display value="PVC"/>
+    <definition value="Cloreto de polivinila"/>
+  </concept>
+  <concept>
+    <code value="pe"/>
+    <display value="Polietileno"/>
+    <definition value="Polietileno"/>
+  </concept>
+  <concept>
+    <code value="pp"/>
+    <display value="Polipropileno"/>
+    <definition value="Polipropileno"/>
+  </concept>
+  <concept>
+    <code value="pet"/>
+    <display value="PET"/>
+    <definition value="Politereftalato de etileno"/>
+  </concept>
+  <concept>
+    <code value="pvdc"/>
+    <display value="PVDC"/>
+    <definition value="Cloreto de polivinilideno"/>
+  </concept>
+  <concept>
+    <code value="borracha"/>
+    <display value="Borracha"/>
+    <definition value="Material de borracha/elastômero"/>
+  </concept>
+  <concept>
+    <code value="metal"/>
+    <display value="Metal"/>
+    <definition value="Material metálico geral"/>
+  </concept>
+  <concept>
+    <code value="lamina-aluminio"/>
+    <display value="Lâmina de Alumínio"/>
+    <definition value="Lâmina/folha de alumínio"/>
+  </concept>
+</CodeSystem>

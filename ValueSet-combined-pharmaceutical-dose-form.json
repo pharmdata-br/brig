@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "combined-pharmaceutical-dose-form",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet combined-pharmaceutical-dose-form</b></p><a name=\"combined-pharmaceutical-dose-form\"> </a><a name=\"hccombined-pharmaceutical-dose-form\"> </a><ul><li>Include todos os códigos definidos em <code>http://standardterms.edqm.eu</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/combined-pharmaceutical-dose-form",
+  "version" : "0.0.3",
+  "name" : "CombinedPharmaceuticalDoseForm",
+  "title" : "Formas Farmacêuticas Combinadas",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Formas farmacêuticas para produtos como um todo, considerando todas as partes individuais, mas antes de qualquer mistura. Diferente de administrable-dose-form, este ValueSet contempla produtos complexos e combinados.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "purpose" : "Descrever a forma farmacêutica combinada de produtos medicinais complexos (ex: comprimidos multicamadas, cápsulas com pellets de liberação modificada, produtos de múltiplos componentes)",
+  "copyright" : "Este ValueSet referencia códigos EDQM Standard Terms",
+  "compose" : {
+    "include" : [{
+      "system" : "http://standardterms.edqm.eu"
+    }]
+  }
+}

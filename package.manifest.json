@@ -1,0 +1,7 @@
+{
+  "version" : "0.0.3",
+  "fhirVersion" : ["5.0.0"],
+  "date" : "20251102102908",
+  "name" : "brig.idmp.brazil",
+  "jurisdiction" : "urn:iso:std:iso:3166#BR"
+}

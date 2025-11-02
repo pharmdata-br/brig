@@ -1,0 +1,126 @@
+{
+  "resourceType" : "MedicinalProductDefinition",
+  "id" : "paracetamol-750mg-example",
+  "meta" : {
+    "profile" : ["https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: MedicinalProductDefinition paracetamol-750mg-example</b></p><a name=\"paracetamol-750mg-example\"> </a><a name=\"hcparacetamol-750mg-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-medicinal-product-definition-br.html\">Definição de Produto Medicinal - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid</code>/BRIG-MPID-PAR-750, <code>http://www.anvisa.gov.br/registro</code>/100000000002</p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br medicamento}\">Medicamento</span></p><p><b>domain</b>: <span title=\"Códigos:{http://hl7.org/fhir/medicinal-product-domain Human}\">Human use</span></p><p><b>status</b>: <span title=\"Códigos:{http://hl7.org/fhir/publication-status active}\">Active</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Códigos:{http://hl7.org/fhir/administrable-dose-form 100000073664}\">Tablet</span></p><p><b>route</b>: <span title=\"Códigos:{http://hl7.org/fhir/route-codes PO}\">Oral</span></p><p><b>legalStatusOfSupply</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br venda-livre}\">Venda Livre</span></p><p><b>classification</b>: <span title=\"Códigos:{http://www.whocc.no/atc N02BE01}\">paracetamol</span></p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td><td><b>DateRange</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{urn:iso:std:iso:3166 BR}\">Brazil</span></td><td><span title=\"Códigos:{http://hl7.org/fhir/publication-status active}\">Active</span></td><td>2024-01-01 --&gt; (em curso)</td></tr></table><blockquote><p><b>name</b></p><p><b>productName</b>: Paracetamol 750mg</p><p><b>type</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type commercial}, {http://hl7.org/fhir/medicinal-product-name-type BrandName}\">commercial</span></p><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{urn:iso:std:iso:3166 BR}\">Brazil</span></td><td><span title=\"Códigos:{urn:ietf:bcp:47 pt-BR}\">Portuguese (Region=Brazil)</span></td></tr></table></blockquote><blockquote><p><b>operation</b></p><h3>Types</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://hl7.org/fhir/product-operation manufacture}\">manufacture</span></td></tr></table><p><b>effectiveDate</b>: 2024-01-01 --&gt; (em curso)</p><p><b>organization</b>: <a href=\"Organization-manufacturer-paracetamol-example.html\">Organization Indústria Farmacêutica Exemplo Ltda.</a></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid",
+    "value" : "BRIG-MPID-PAR-750"
+  },
+  {
+    "system" : "http://www.anvisa.gov.br/registro",
+    "value" : "100000000002"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br",
+      "code" : "medicamento",
+      "display" : "Medicamento"
+    }]
+  },
+  "domain" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/medicinal-product-domain",
+      "code" : "Human"
+    }]
+  },
+  "status" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/publication-status",
+      "code" : "active"
+    }]
+  },
+  "combinedPharmaceuticalDoseForm" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/administrable-dose-form",
+      "code" : "100000073664",
+      "display" : "Tablet"
+    }]
+  },
+  "route" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/route-codes",
+      "code" : "PO",
+      "display" : "Oral"
+    }]
+  }],
+  "legalStatusOfSupply" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br",
+      "code" : "venda-livre",
+      "display" : "Venda Livre"
+    }]
+  },
+  "classification" : [{
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "N02BE01",
+      "display" : "paracetamol"
+    }]
+  }],
+  "marketingStatus" : [{
+    "country" : {
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "BR"
+      }]
+    },
+    "status" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/publication-status",
+        "code" : "active"
+      }]
+    },
+    "dateRange" : {
+      "start" : "2024-01-01"
+    }
+  }],
+  "name" : [{
+    "productName" : "Paracetamol 750mg",
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type",
+        "code" : "commercial"
+      },
+      {
+        "system" : "http://hl7.org/fhir/medicinal-product-name-type",
+        "code" : "BrandName"
+      }]
+    },
+    "usage" : [{
+      "country" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BR"
+        }]
+      },
+      "language" : {
+        "coding" : [{
+          "system" : "urn:ietf:bcp:47",
+          "code" : "pt-BR"
+        }]
+      }
+    }]
+  }],
+  "operation" : [{
+    "type" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/product-operation",
+          "code" : "manufacture"
+        }]
+      }
+    },
+    "effectiveDate" : {
+      "start" : "2024-01-01"
+    },
+    "organization" : [{
+      "reference" : "Organization/manufacturer-paracetamol-example"
+    }]
+  }]
+}

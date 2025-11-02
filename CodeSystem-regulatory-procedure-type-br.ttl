@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/regulatory-procedure-type-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "regulatory-procedure-type-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem regulatory-procedure-type-br</b></p><a name=\"regulatory-procedure-type-br\"> </a><a name=\"hcregulatory-procedure-type-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">standard-procedure<a name=\"regulatory-procedure-type-br-standard-procedure\"> </a></td><td>Procedimento Padrão</td><td>Procedimento regulatório padrão ANVISA</td></tr><tr><td style=\"white-space:nowrap\">priority-procedure<a name=\"regulatory-procedure-type-br-priority-procedure\"> </a></td><td>Procedimento Prioritário</td><td>Procedimento com análise prioritária</td></tr><tr><td style=\"white-space:nowrap\">fast-track<a name=\"regulatory-procedure-type-br-fast-track\"> </a></td><td>Via Rápida</td><td>Procedimento via rápida para medicamentos inovadores</td></tr><tr><td style=\"white-space:nowrap\">simplified-procedure<a name=\"regulatory-procedure-type-br-simplified-procedure\"> </a></td><td>Procedimento Simplificado</td><td>Procedimento simplificado para casos específicos</td></tr><tr><td style=\"white-space:nowrap\">appeal-procedure<a name=\"regulatory-procedure-type-br-appeal-procedure\"> </a></td><td>Procedimento de Recurso</td><td>Procedimento de recurso contra decisão ANVISA</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br"^^xsd:anyURI ;
+     fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "RegulatoryProcedureTypeBR"] ; # 
+  fhir:title [ fhir:v "Tipo de Procedimento Regulatório Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-07"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de procedimentos regulatórios ANVISA"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "standard-procedure" ] ;
+     fhir:display [ fhir:v "Procedimento Padrão" ] ;
+     fhir:definition [ fhir:v "Procedimento regulatório padrão ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "priority-procedure" ] ;
+     fhir:display [ fhir:v "Procedimento Prioritário" ] ;
+     fhir:definition [ fhir:v "Procedimento com análise prioritária" ]
+  ] [
+     fhir:code [ fhir:v "fast-track" ] ;
+     fhir:display [ fhir:v "Via Rápida" ] ;
+     fhir:definition [ fhir:v "Procedimento via rápida para medicamentos inovadores" ]
+  ] [
+     fhir:code [ fhir:v "simplified-procedure" ] ;
+     fhir:display [ fhir:v "Procedimento Simplificado" ] ;
+     fhir:definition [ fhir:v "Procedimento simplificado para casos específicos" ]
+  ] [
+     fhir:code [ fhir:v "appeal-procedure" ] ;
+     fhir:display [ fhir:v "Procedimento de Recurso" ] ;
+     fhir:definition [ fhir:v "Procedimento de recurso contra decisão ANVISA" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

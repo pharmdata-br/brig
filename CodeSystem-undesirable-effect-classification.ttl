@@ -1,0 +1,188 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-classification> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "undesirable-effect-classification"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem undesirable-effect-classification</b></p><a name=\"undesirable-effect-classification\"> </a><a name=\"hcundesirable-effect-classification\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">very-common<a name=\"undesirable-effect-classification-very-common\"> </a></td><td>Muito Comum</td><td>≥ 1/10 (≥ 10%)</td></tr><tr><td style=\"white-space:nowrap\">common<a name=\"undesirable-effect-classification-common\"> </a></td><td>Comum</td><td>≥ 1/100 e &lt; 1/10 (≥ 1% e &lt; 10%)</td></tr><tr><td style=\"white-space:nowrap\">uncommon<a name=\"undesirable-effect-classification-uncommon\"> </a></td><td>Incomum</td><td>≥ 1/1.000 e &lt; 1/100 (≥ 0,1% e &lt; 1%)</td></tr><tr><td style=\"white-space:nowrap\">rare<a name=\"undesirable-effect-classification-rare\"> </a></td><td>Raro</td><td>≥ 1/10.000 e &lt; 1/1.000 (≥ 0,01% e &lt; 0,1%)</td></tr><tr><td style=\"white-space:nowrap\">very-rare<a name=\"undesirable-effect-classification-very-rare\"> </a></td><td>Muito Raro</td><td>&lt; 1/10.000 (&lt; 0,01%)</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"undesirable-effect-classification-unknown\"> </a></td><td>Frequência Desconhecida</td><td>Não pode ser estimada a partir dos dados disponíveis</td></tr><tr><td style=\"white-space:nowrap\">mild<a name=\"undesirable-effect-classification-mild\"> </a></td><td>Leve</td><td>Efeito leve que não interfere nas atividades normais</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"undesirable-effect-classification-moderate\"> </a></td><td>Moderado</td><td>Efeito que interfere parcialmente nas atividades</td></tr><tr><td style=\"white-space:nowrap\">severe<a name=\"undesirable-effect-classification-severe\"> </a></td><td>Grave</td><td>Efeito que impede atividades normais</td></tr><tr><td style=\"white-space:nowrap\">life-threatening<a name=\"undesirable-effect-classification-life-threatening\"> </a></td><td>Risco de Vida</td><td>Efeito que coloca a vida em risco</td></tr><tr><td style=\"white-space:nowrap\">fatal<a name=\"undesirable-effect-classification-fatal\"> </a></td><td>Fatal</td><td>Efeito que resulta em morte</td></tr><tr><td style=\"white-space:nowrap\">cardiac<a name=\"undesirable-effect-classification-cardiac\"> </a></td><td>Cardíaco</td><td>Efeitos cardíacos</td></tr><tr><td style=\"white-space:nowrap\">gastrointestinal<a name=\"undesirable-effect-classification-gastrointestinal\"> </a></td><td>Gastrointestinal</td><td>Efeitos gastrointestinais</td></tr><tr><td style=\"white-space:nowrap\">hepatic<a name=\"undesirable-effect-classification-hepatic\"> </a></td><td>Hepático</td><td>Efeitos hepáticos</td></tr><tr><td style=\"white-space:nowrap\">renal<a name=\"undesirable-effect-classification-renal\"> </a></td><td>Renal</td><td>Efeitos renais</td></tr><tr><td style=\"white-space:nowrap\">neurological<a name=\"undesirable-effect-classification-neurological\"> </a></td><td>Neurológico</td><td>Efeitos neurológicos</td></tr><tr><td style=\"white-space:nowrap\">psychiatric<a name=\"undesirable-effect-classification-psychiatric\"> </a></td><td>Psiquiátrico</td><td>Efeitos psiquiátricos</td></tr><tr><td style=\"white-space:nowrap\">dermatological<a name=\"undesirable-effect-classification-dermatological\"> </a></td><td>Dermatológico</td><td>Efeitos dermatológicos</td></tr><tr><td style=\"white-space:nowrap\">hematological<a name=\"undesirable-effect-classification-hematological\"> </a></td><td>Hematológico</td><td>Efeitos hematológicos</td></tr><tr><td style=\"white-space:nowrap\">immunological<a name=\"undesirable-effect-classification-immunological\"> </a></td><td>Imunológico</td><td>Efeitos imunológicos</td></tr><tr><td style=\"white-space:nowrap\">endocrine<a name=\"undesirable-effect-classification-endocrine\"> </a></td><td>Endócrino</td><td>Efeitos endócrinos</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-classification"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-classification>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "UndesirableEffectClassification"] ; # 
+  fhir:title [ fhir:v "Classificação de Efeito Indesejável"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Classificação de alta hierarquia para efeitos indesejáveis"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "very-common" ] ;
+     fhir:display [ fhir:v "Muito Comum" ] ;
+     fhir:definition [ fhir:v "≥ 1/10 (≥ 10%)" ]
+  ] [
+     fhir:code [ fhir:v "common" ] ;
+     fhir:display [ fhir:v "Comum" ] ;
+     fhir:definition [ fhir:v "≥ 1/100 e < 1/10 (≥ 1% e < 10%)" ]
+  ] [
+     fhir:code [ fhir:v "uncommon" ] ;
+     fhir:display [ fhir:v "Incomum" ] ;
+     fhir:definition [ fhir:v "≥ 1/1.000 e < 1/100 (≥ 0,1% e < 1%)" ]
+  ] [
+     fhir:code [ fhir:v "rare" ] ;
+     fhir:display [ fhir:v "Raro" ] ;
+     fhir:definition [ fhir:v "≥ 1/10.000 e < 1/1.000 (≥ 0,01% e < 0,1%)" ]
+  ] [
+     fhir:code [ fhir:v "very-rare" ] ;
+     fhir:display [ fhir:v "Muito Raro" ] ;
+     fhir:definition [ fhir:v "< 1/10.000 (< 0,01%)" ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Frequência Desconhecida" ] ;
+     fhir:definition [ fhir:v "Não pode ser estimada a partir dos dados disponíveis" ]
+  ] [
+     fhir:code [ fhir:v "mild" ] ;
+     fhir:display [ fhir:v "Leve" ] ;
+     fhir:definition [ fhir:v "Efeito leve que não interfere nas atividades normais" ]
+  ] [
+     fhir:code [ fhir:v "moderate" ] ;
+     fhir:display [ fhir:v "Moderado" ] ;
+     fhir:definition [ fhir:v "Efeito que interfere parcialmente nas atividades" ]
+  ] [
+     fhir:code [ fhir:v "severe" ] ;
+     fhir:display [ fhir:v "Grave" ] ;
+     fhir:definition [ fhir:v "Efeito que impede atividades normais" ]
+  ] [
+     fhir:code [ fhir:v "life-threatening" ] ;
+     fhir:display [ fhir:v "Risco de Vida" ] ;
+     fhir:definition [ fhir:v "Efeito que coloca a vida em risco" ]
+  ] [
+     fhir:code [ fhir:v "fatal" ] ;
+     fhir:display [ fhir:v "Fatal" ] ;
+     fhir:definition [ fhir:v "Efeito que resulta em morte" ]
+  ] [
+     fhir:code [ fhir:v "cardiac" ] ;
+     fhir:display [ fhir:v "Cardíaco" ] ;
+     fhir:definition [ fhir:v "Efeitos cardíacos" ]
+  ] [
+     fhir:code [ fhir:v "gastrointestinal" ] ;
+     fhir:display [ fhir:v "Gastrointestinal" ] ;
+     fhir:definition [ fhir:v "Efeitos gastrointestinais" ]
+  ] [
+     fhir:code [ fhir:v "hepatic" ] ;
+     fhir:display [ fhir:v "Hepático" ] ;
+     fhir:definition [ fhir:v "Efeitos hepáticos" ]
+  ] [
+     fhir:code [ fhir:v "renal" ] ;
+     fhir:display [ fhir:v "Renal" ] ;
+     fhir:definition [ fhir:v "Efeitos renais" ]
+  ] [
+     fhir:code [ fhir:v "neurological" ] ;
+     fhir:display [ fhir:v "Neurológico" ] ;
+     fhir:definition [ fhir:v "Efeitos neurológicos" ]
+  ] [
+     fhir:code [ fhir:v "psychiatric" ] ;
+     fhir:display [ fhir:v "Psiquiátrico" ] ;
+     fhir:definition [ fhir:v "Efeitos psiquiátricos" ]
+  ] [
+     fhir:code [ fhir:v "dermatological" ] ;
+     fhir:display [ fhir:v "Dermatológico" ] ;
+     fhir:definition [ fhir:v "Efeitos dermatológicos" ]
+  ] [
+     fhir:code [ fhir:v "hematological" ] ;
+     fhir:display [ fhir:v "Hematológico" ] ;
+     fhir:definition [ fhir:v "Efeitos hematológicos" ]
+  ] [
+     fhir:code [ fhir:v "immunological" ] ;
+     fhir:display [ fhir:v "Imunológico" ] ;
+     fhir:definition [ fhir:v "Efeitos imunológicos" ]
+  ] [
+     fhir:code [ fhir:v "endocrine" ] ;
+     fhir:display [ fhir:v "Endócrino" ] ;
+     fhir:definition [ fhir:v "Efeitos endócrinos" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

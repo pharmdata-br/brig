@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "substance-status-gsrs-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet substance-status-gsrs-br</b></p><a name=\"substance-status-gsrs-br\"> </a><a name=\"hcsubstance-status-gsrs-br\"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir todos os códigos definidos em <a href=\"CodeSystem-gsrs-substance-status-br.html\"><code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.0.3</span></li><li>Incluir todos os códigos definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-gsrs-br",
+  "version" : "0.0.3",
+  "name" : "SubstanceStatusGSRSBR",
+  "title" : "Status de Substância GSRS/Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Conjunto de valores para status de substâncias GSRS e brasileiro",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br"
+    },
+    {
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"
+    }]
+  }
+}

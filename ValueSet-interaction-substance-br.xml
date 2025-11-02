@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="interaction-substance-br"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: ValueSet interaction-substance-br</b></p><a name="interaction-substance-br"> </a><a name="hcinteraction-substance-br"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><ul><li>Include estes códigos, tal como definidos em <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="http://snomed.info/id/419442005">419442005</a></td><td>Ethyl alcohol (substance)</td></tr><tr><td><a href="http://snomed.info/id/387517004">387517004</a></td><td>Paracetamol (substance)</td></tr><tr><td><a href="http://snomed.info/id/387207008">387207008</a></td><td>Dipyrone (substance)</td></tr><tr><td><a href="http://snomed.info/id/387458008">387458008</a></td><td>Aspirin (substance)</td></tr><tr><td><a href="http://snomed.info/id/387467008">387467008</a></td><td>Caffeine (substance)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-substance-br"/>
+  <version value="0.0.3"/>
+  <name value="InteractionSubstanceBRValueSet"/>
+  <title value="Substâncias para Interação - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet de substâncias comuns que causam interações medicamentosas no contexto brasileiro."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="419442005"/>
+        <display value="Ethyl alcohol (substance)"/>
+      </concept>
+      <concept>
+        <code value="387517004"/>
+        <display value="Paracetamol (substance)"/>
+      </concept>
+      <concept>
+        <code value="387207008"/>
+        <display value="Dipyrone (substance)"/>
+      </concept>
+      <concept>
+        <code value="387458008"/>
+        <display value="Aspirin (substance)"/>
+      </concept>
+      <concept>
+        <code value="387467008"/>
+        <display value="Caffeine (substance)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

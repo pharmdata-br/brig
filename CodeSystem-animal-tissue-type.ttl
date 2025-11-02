@@ -1,0 +1,165 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/animal-tissue-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "animal-tissue-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem animal-tissue-type</b></p><a name=\"animal-tissue-type\"> </a><a name=\"hcanimal-tissue-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">meat<a name=\"animal-tissue-type-meat\"> </a></td><td>Carne</td><td>Tecido muscular para consumo humano</td></tr><tr><td style=\"white-space:nowrap\">liver<a name=\"animal-tissue-type-liver\"> </a></td><td>Fígado</td><td>Fígado para consumo humano</td></tr><tr><td style=\"white-space:nowrap\">kidney<a name=\"animal-tissue-type-kidney\"> </a></td><td>Rim</td><td>Rins para consumo humano</td></tr><tr><td style=\"white-space:nowrap\">fat<a name=\"animal-tissue-type-fat\"> </a></td><td>Gordura</td><td>Tecido adiposo para consumo humano</td></tr><tr><td style=\"white-space:nowrap\">skin<a name=\"animal-tissue-type-skin\"> </a></td><td>Pele</td><td>Pele e couro</td></tr><tr><td style=\"white-space:nowrap\">milk<a name=\"animal-tissue-type-milk\"> </a></td><td>Leite</td><td>Leite e produtos lácteos</td></tr><tr><td style=\"white-space:nowrap\">egg<a name=\"animal-tissue-type-egg\"> </a></td><td>Ovo</td><td>Ovos e produtos de ovos</td></tr><tr><td style=\"white-space:nowrap\">honey<a name=\"animal-tissue-type-honey\"> </a></td><td>Mel</td><td>Mel e produtos apícolas</td></tr><tr><td style=\"white-space:nowrap\">muscle<a name=\"animal-tissue-type-muscle\"> </a></td><td>Músculo</td><td>Tecido muscular (incluindo coração)</td></tr><tr><td style=\"white-space:nowrap\">offal<a name=\"animal-tissue-type-offal\"> </a></td><td>Vísceras</td><td>Vísceras em geral (miúdos)</td></tr><tr><td style=\"white-space:nowrap\">blood<a name=\"animal-tissue-type-blood\"> </a></td><td>Sangue</td><td>Sangue e produtos sanguíneos</td></tr><tr><td style=\"white-space:nowrap\">fish-tissue<a name=\"animal-tissue-type-fish-tissue\"> </a></td><td>Tecido de Peixe</td><td>Músculos e tecidos comestíveis de peixes</td></tr><tr><td style=\"white-space:nowrap\">fish-skin<a name=\"animal-tissue-type-fish-skin\"> </a></td><td>Pele de Peixe</td><td>Pele de peixes</td></tr><tr><td style=\"white-space:nowrap\">plasma<a name=\"animal-tissue-type-plasma\"> </a></td><td>Plasma</td><td>Plasma sanguíneo</td></tr><tr><td style=\"white-space:nowrap\">all-tissues<a name=\"animal-tissue-type-all-tissues\"> </a></td><td>Todos os Tecidos</td><td>Período de carência aplicável a todos os tecidos comestíveis</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/animal-tissue-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/animal-tissue-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "AnimalTissueType"] ; # 
+  fhir:title [ fhir:v "Tipos de Tecido Animal"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de tecidos animais para os quais períodos de carência (withdrawal periods) são especificados em produtos veterinários"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:purpose [ fhir:v "Definir tipos de tecidos para os quais são estabelecidos períodos de carência em produtos veterinários destinados a animais de produção"] ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "meat" ] ;
+     fhir:display [ fhir:v "Carne" ] ;
+     fhir:definition [ fhir:v "Tecido muscular para consumo humano" ]
+  ] [
+     fhir:code [ fhir:v "liver" ] ;
+     fhir:display [ fhir:v "Fígado" ] ;
+     fhir:definition [ fhir:v "Fígado para consumo humano" ]
+  ] [
+     fhir:code [ fhir:v "kidney" ] ;
+     fhir:display [ fhir:v "Rim" ] ;
+     fhir:definition [ fhir:v "Rins para consumo humano" ]
+  ] [
+     fhir:code [ fhir:v "fat" ] ;
+     fhir:display [ fhir:v "Gordura" ] ;
+     fhir:definition [ fhir:v "Tecido adiposo para consumo humano" ]
+  ] [
+     fhir:code [ fhir:v "skin" ] ;
+     fhir:display [ fhir:v "Pele" ] ;
+     fhir:definition [ fhir:v "Pele e couro" ]
+  ] [
+     fhir:code [ fhir:v "milk" ] ;
+     fhir:display [ fhir:v "Leite" ] ;
+     fhir:definition [ fhir:v "Leite e produtos lácteos" ]
+  ] [
+     fhir:code [ fhir:v "egg" ] ;
+     fhir:display [ fhir:v "Ovo" ] ;
+     fhir:definition [ fhir:v "Ovos e produtos de ovos" ]
+  ] [
+     fhir:code [ fhir:v "honey" ] ;
+     fhir:display [ fhir:v "Mel" ] ;
+     fhir:definition [ fhir:v "Mel e produtos apícolas" ]
+  ] [
+     fhir:code [ fhir:v "muscle" ] ;
+     fhir:display [ fhir:v "Músculo" ] ;
+     fhir:definition [ fhir:v "Tecido muscular (incluindo coração)" ]
+  ] [
+     fhir:code [ fhir:v "offal" ] ;
+     fhir:display [ fhir:v "Vísceras" ] ;
+     fhir:definition [ fhir:v "Vísceras em geral (miúdos)" ]
+  ] [
+     fhir:code [ fhir:v "blood" ] ;
+     fhir:display [ fhir:v "Sangue" ] ;
+     fhir:definition [ fhir:v "Sangue e produtos sanguíneos" ]
+  ] [
+     fhir:code [ fhir:v "fish-tissue" ] ;
+     fhir:display [ fhir:v "Tecido de Peixe" ] ;
+     fhir:definition [ fhir:v "Músculos e tecidos comestíveis de peixes" ]
+  ] [
+     fhir:code [ fhir:v "fish-skin" ] ;
+     fhir:display [ fhir:v "Pele de Peixe" ] ;
+     fhir:definition [ fhir:v "Pele de peixes" ]
+  ] [
+     fhir:code [ fhir:v "plasma" ] ;
+     fhir:display [ fhir:v "Plasma" ] ;
+     fhir:definition [ fhir:v "Plasma sanguíneo" ]
+  ] [
+     fhir:code [ fhir:v "all-tissues" ] ;
+     fhir:display [ fhir:v "Todos os Tecidos" ] ;
+     fhir:definition [ fhir:v "Período de carência aplicável a todos os tecidos comestíveis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

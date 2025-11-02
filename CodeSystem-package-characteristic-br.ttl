@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-characteristic-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "package-characteristic-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem package-characteristic-br</b></p><a name=\"package-characteristic-br\"> </a><a name=\"hcpackage-characteristic-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">protecao-luz<a name=\"package-characteristic-br-protecao-luz\"> </a></td><td>Proteção à Luz</td><td>Embalagem com proteção contra luz</td></tr><tr><td style=\"white-space:nowrap\">protecao-umidade<a name=\"package-characteristic-br-protecao-umidade\"> </a></td><td>Proteção à Umidade</td><td>Embalagem com proteção contra umidade</td></tr><tr><td style=\"white-space:nowrap\">protecao-temperatura<a name=\"package-characteristic-br-protecao-temperatura\"> </a></td><td>Proteção à Temperatura</td><td>Embalagem com proteção térmica</td></tr><tr><td style=\"white-space:nowrap\">protecao-oxidacao<a name=\"package-characteristic-br-protecao-oxidacao\"> </a></td><td>Proteção à Oxidação</td><td>Embalagem com proteção contra oxidação</td></tr><tr><td style=\"white-space:nowrap\">inviolavel<a name=\"package-characteristic-br-inviolavel\"> </a></td><td>Inviolável</td><td>Embalagem com sistema de inviolabilidade</td></tr><tr><td style=\"white-space:nowrap\">crianca-resistente<a name=\"package-characteristic-br-crianca-resistente\"> </a></td><td>Resistente a Crianças</td><td>Embalagem com abertura resistente a crianças</td></tr><tr><td style=\"white-space:nowrap\">esteril<a name=\"package-characteristic-br-esteril\"> </a></td><td>Estéril</td><td>Embalagem estéril</td></tr><tr><td style=\"white-space:nowrap\">unidose<a name=\"package-characteristic-br-unidose\"> </a></td><td>Unidose</td><td>Embalagem de dose única</td></tr><tr><td style=\"white-space:nowrap\">multidose<a name=\"package-characteristic-br-multidose\"> </a></td><td>Multidose</td><td>Embalagem de múltiplas doses</td></tr><tr><td style=\"white-space:nowrap\">descartavel<a name=\"package-characteristic-br-descartavel\"> </a></td><td>Descartável</td><td>Embalagem descartável</td></tr><tr><td style=\"white-space:nowrap\">reutilizavel<a name=\"package-characteristic-br-reutilizavel\"> </a></td><td>Reutilizável</td><td>Embalagem reutilizável</td></tr><tr><td style=\"white-space:nowrap\">controlado<a name=\"package-characteristic-br-controlado\"> </a></td><td>Produto Controlado</td><td>Embalagem para produto controlado</td></tr><tr><td style=\"white-space:nowrap\">hospitalar<a name=\"package-characteristic-br-hospitalar\"> </a></td><td>Uso Hospitalar</td><td>Embalagem para uso exclusivo hospitalar</td></tr><tr><td style=\"white-space:nowrap\">refrigerado<a name=\"package-characteristic-br-refrigerado\"> </a></td><td>Refrigerado</td><td>Produto que requer refrigeração</td></tr><tr><td style=\"white-space:nowrap\">congelado<a name=\"package-characteristic-br-congelado\"> </a></td><td>Congelado</td><td>Produto que requer congelamento</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-characteristic-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-characteristic-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "PackageCharacteristicBR"] ; # 
+  fhir:title [ fhir:v "Características de Embalagem - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para características de embalagens no Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "protecao-luz" ] ;
+     fhir:display [ fhir:v "Proteção à Luz" ] ;
+     fhir:definition [ fhir:v "Embalagem com proteção contra luz" ]
+  ] [
+     fhir:code [ fhir:v "protecao-umidade" ] ;
+     fhir:display [ fhir:v "Proteção à Umidade" ] ;
+     fhir:definition [ fhir:v "Embalagem com proteção contra umidade" ]
+  ] [
+     fhir:code [ fhir:v "protecao-temperatura" ] ;
+     fhir:display [ fhir:v "Proteção à Temperatura" ] ;
+     fhir:definition [ fhir:v "Embalagem com proteção térmica" ]
+  ] [
+     fhir:code [ fhir:v "protecao-oxidacao" ] ;
+     fhir:display [ fhir:v "Proteção à Oxidação" ] ;
+     fhir:definition [ fhir:v "Embalagem com proteção contra oxidação" ]
+  ] [
+     fhir:code [ fhir:v "inviolavel" ] ;
+     fhir:display [ fhir:v "Inviolável" ] ;
+     fhir:definition [ fhir:v "Embalagem com sistema de inviolabilidade" ]
+  ] [
+     fhir:code [ fhir:v "crianca-resistente" ] ;
+     fhir:display [ fhir:v "Resistente a Crianças" ] ;
+     fhir:definition [ fhir:v "Embalagem com abertura resistente a crianças" ]
+  ] [
+     fhir:code [ fhir:v "esteril" ] ;
+     fhir:display [ fhir:v "Estéril" ] ;
+     fhir:definition [ fhir:v "Embalagem estéril" ]
+  ] [
+     fhir:code [ fhir:v "unidose" ] ;
+     fhir:display [ fhir:v "Unidose" ] ;
+     fhir:definition [ fhir:v "Embalagem de dose única" ]
+  ] [
+     fhir:code [ fhir:v "multidose" ] ;
+     fhir:display [ fhir:v "Multidose" ] ;
+     fhir:definition [ fhir:v "Embalagem de múltiplas doses" ]
+  ] [
+     fhir:code [ fhir:v "descartavel" ] ;
+     fhir:display [ fhir:v "Descartável" ] ;
+     fhir:definition [ fhir:v "Embalagem descartável" ]
+  ] [
+     fhir:code [ fhir:v "reutilizavel" ] ;
+     fhir:display [ fhir:v "Reutilizável" ] ;
+     fhir:definition [ fhir:v "Embalagem reutilizável" ]
+  ] [
+     fhir:code [ fhir:v "controlado" ] ;
+     fhir:display [ fhir:v "Produto Controlado" ] ;
+     fhir:definition [ fhir:v "Embalagem para produto controlado" ]
+  ] [
+     fhir:code [ fhir:v "hospitalar" ] ;
+     fhir:display [ fhir:v "Uso Hospitalar" ] ;
+     fhir:definition [ fhir:v "Embalagem para uso exclusivo hospitalar" ]
+  ] [
+     fhir:code [ fhir:v "refrigerado" ] ;
+     fhir:display [ fhir:v "Refrigerado" ] ;
+     fhir:definition [ fhir:v "Produto que requer refrigeração" ]
+  ] [
+     fhir:code [ fhir:v "congelado" ] ;
+     fhir:display [ fhir:v "Congelado" ] ;
+     fhir:definition [ fhir:v "Produto que requer congelamento" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

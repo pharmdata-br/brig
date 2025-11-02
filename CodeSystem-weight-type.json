@@ -1,0 +1,98 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "weight-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem weight-type</b></p><a name=\"weight-type\"> </a><a name=\"hcweight-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">molecular-weight<a name=\"weight-type-molecular-weight\"> </a></td><td>Peso Molecular</td><td>Peso molecular médio</td></tr><tr><td style=\"white-space:nowrap\">exact-mass<a name=\"weight-type-exact-mass\"> </a></td><td>Massa Exata</td><td>Massa molecular exata (isótopo mais abundante)</td></tr><tr><td style=\"white-space:nowrap\">monoisotopic<a name=\"weight-type-monoisotopic\"> </a></td><td>Monoisotópico</td><td>Massa do isótopo mais leve</td></tr><tr><td style=\"white-space:nowrap\">average<a name=\"weight-type-average\"> </a></td><td>Média</td><td>Peso molecular médio</td></tr><tr><td style=\"white-space:nowrap\">number-average<a name=\"weight-type-number-average\"> </a></td><td>Média Numérica</td><td>Mn - Number average molecular weight (polímeros)</td></tr><tr><td style=\"white-space:nowrap\">weight-average<a name=\"weight-type-weight-average\"> </a></td><td>Média Ponderada</td><td>Mw - Weight average molecular weight (polímeros)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-type",
+  "version" : "0.0.3",
+  "name" : "WeightType",
+  "title" : "Tipo de Peso Molecular",
+  "status" : "active",
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Tipos de peso molecular para substâncias",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "molecular-weight",
+    "display" : "Peso Molecular",
+    "definition" : "Peso molecular médio"
+  },
+  {
+    "code" : "exact-mass",
+    "display" : "Massa Exata",
+    "definition" : "Massa molecular exata (isótopo mais abundante)"
+  },
+  {
+    "code" : "monoisotopic",
+    "display" : "Monoisotópico",
+    "definition" : "Massa do isótopo mais leve"
+  },
+  {
+    "code" : "average",
+    "display" : "Média",
+    "definition" : "Peso molecular médio"
+  },
+  {
+    "code" : "number-average",
+    "display" : "Média Numérica",
+    "definition" : "Mn - Number average molecular weight (polímeros)"
+  },
+  {
+    "code" : "weight-average",
+    "display" : "Média Ponderada",
+    "definition" : "Mw - Weight average molecular weight (polímeros)"
+  }]
+}

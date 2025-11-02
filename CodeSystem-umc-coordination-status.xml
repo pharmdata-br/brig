@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="umc-coordination-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem umc-coordination-status</b></p><a name="umc-coordination-status"> </a><a name="hcumc-coordination-status"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">pending<a name="umc-coordination-status-pending"> </a></td><td>Pendente</td><td>Coordenação com UMC pendente</td></tr><tr><td style="white-space:nowrap">requested<a name="umc-coordination-status-requested"> </a></td><td>Solicitado</td><td>Solicitação enviada ao UMC</td></tr><tr><td style="white-space:nowrap">in-review<a name="umc-coordination-status-in-review"> </a></td><td>Em Revisão</td><td>Solicitação em revisão pelo UMC</td></tr><tr><td style="white-space:nowrap">approved<a name="umc-coordination-status-approved"> </a></td><td>Aprovado</td><td>PHPID aprovado pelo UMC</td></tr><tr><td style="white-space:nowrap">assigned<a name="umc-coordination-status-assigned"> </a></td><td>Atribuído</td><td>PHPID oficial atribuído pelo UMC</td></tr><tr><td style="white-space:nowrap">rejected<a name="umc-coordination-status-rejected"> </a></td><td>Rejeitado</td><td>Solicitação rejeitada pelo UMC</td></tr><tr><td style="white-space:nowrap">on-hold<a name="umc-coordination-status-on-hold"> </a></td><td>Em Espera</td><td>Processo em espera aguardando informações adicionais</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/umc-coordination-status"/>
+  <version value="0.0.3"/>
+  <name value="UMCCoordinationStatus"/>
+  <title value="Status de Coordenação UMC"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Códigos para status de coordenação com Uppsala Monitoring Centre"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="pending"/>
+    <display value="Pendente"/>
+    <definition value="Coordenação com UMC pendente"/>
+  </concept>
+  <concept>
+    <code value="requested"/>
+    <display value="Solicitado"/>
+    <definition value="Solicitação enviada ao UMC"/>
+  </concept>
+  <concept>
+    <code value="in-review"/>
+    <display value="Em Revisão"/>
+    <definition value="Solicitação em revisão pelo UMC"/>
+  </concept>
+  <concept>
+    <code value="approved"/>
+    <display value="Aprovado"/>
+    <definition value="PHPID aprovado pelo UMC"/>
+  </concept>
+  <concept>
+    <code value="assigned"/>
+    <display value="Atribuído"/>
+    <definition value="PHPID oficial atribuído pelo UMC"/>
+  </concept>
+  <concept>
+    <code value="rejected"/>
+    <display value="Rejeitado"/>
+    <definition value="Solicitação rejeitada pelo UMC"/>
+  </concept>
+  <concept>
+    <code value="on-hold"/>
+    <display value="Em Espera"/>
+    <definition value="Processo em espera aguardando informações adicionais"/>
+  </concept>
+</CodeSystem>

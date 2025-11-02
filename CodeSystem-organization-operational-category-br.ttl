@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-category-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-operational-category-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem organization-operational-category-br</b></p><a name=\"organization-operational-category-br\"> </a><a name=\"hcorganization-operational-category-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">pharmaceutical-manufacturing<a name=\"organization-operational-category-br-pharmaceutical-manufacturing\"> </a></td><td>Fabricação Farmacêutica</td><td>Fabricação de medicamentos e produtos farmacêuticos</td></tr><tr><td style=\"white-space:nowrap\">api-manufacturing<a name=\"organization-operational-category-br-api-manufacturing\"> </a></td><td>Fabricação de IFA</td><td>Fabricação de Insumos Farmacêuticos Ativos</td></tr><tr><td style=\"white-space:nowrap\">device-manufacturing<a name=\"organization-operational-category-br-device-manufacturing\"> </a></td><td>Fabricação de Dispositivos</td><td>Fabricação de dispositivos médicos e correlatos</td></tr><tr><td style=\"white-space:nowrap\">cosmetic-manufacturing<a name=\"organization-operational-category-br-cosmetic-manufacturing\"> </a></td><td>Fabricação de Cosméticos</td><td>Fabricação de produtos cosméticos</td></tr><tr><td style=\"white-space:nowrap\">wholesale-distribution<a name=\"organization-operational-category-br-wholesale-distribution\"> </a></td><td>Distribuição Atacadista</td><td>Distribuição atacadista de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">retail-pharmacy<a name=\"organization-operational-category-br-retail-pharmacy\"> </a></td><td>Farmácia de Varejo</td><td>Farmácia ou drogaria de varejo</td></tr><tr><td style=\"white-space:nowrap\">hospital-pharmacy<a name=\"organization-operational-category-br-hospital-pharmacy\"> </a></td><td>Farmácia Hospitalar</td><td>Farmácia de estabelecimento hospitalar</td></tr><tr><td style=\"white-space:nowrap\">import-operations<a name=\"organization-operational-category-br-import-operations\"> </a></td><td>Operações de Importação</td><td>Importação de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">export-operations<a name=\"organization-operational-category-br-export-operations\"> </a></td><td>Operações de Exportação</td><td>Exportação de produtos regulados</td></tr><tr><td style=\"white-space:nowrap\">clinical-research<a name=\"organization-operational-category-br-clinical-research\"> </a></td><td>Pesquisa Clínica</td><td>Condução de pesquisas clínicas</td></tr><tr><td style=\"white-space:nowrap\">preclinical-research<a name=\"organization-operational-category-br-preclinical-research\"> </a></td><td>Pesquisa Pré-clínica</td><td>Pesquisa pré-clínica e desenvolvimento</td></tr><tr><td style=\"white-space:nowrap\">analytical-laboratory<a name=\"organization-operational-category-br-analytical-laboratory\"> </a></td><td>Laboratório Analítico</td><td>Laboratório de análises e controle de qualidade</td></tr><tr><td style=\"white-space:nowrap\">regulatory-consulting<a name=\"organization-operational-category-br-regulatory-consulting\"> </a></td><td>Consultoria Regulatória</td><td>Serviços de consultoria regulatória</td></tr><tr><td style=\"white-space:nowrap\">quality-assurance<a name=\"organization-operational-category-br-quality-assurance\"> </a></td><td>Garantia de Qualidade</td><td>Serviços de garantia e controle de qualidade</td></tr><tr><td style=\"white-space:nowrap\">logistics-services<a name=\"organization-operational-category-br-logistics-services\"> </a></td><td>Serviços Logísticos</td><td>Serviços de logística e transporte especializado</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-category-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-category-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "OrganizationOperationalCategoryBR"] ; # 
+  fhir:title [ fhir:v "Categorias Operacionais de Organização - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para categorias operacionais de organizações"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pharmaceutical-manufacturing" ] ;
+     fhir:display [ fhir:v "Fabricação Farmacêutica" ] ;
+     fhir:definition [ fhir:v "Fabricação de medicamentos e produtos farmacêuticos" ]
+  ] [
+     fhir:code [ fhir:v "api-manufacturing" ] ;
+     fhir:display [ fhir:v "Fabricação de IFA" ] ;
+     fhir:definition [ fhir:v "Fabricação de Insumos Farmacêuticos Ativos" ]
+  ] [
+     fhir:code [ fhir:v "device-manufacturing" ] ;
+     fhir:display [ fhir:v "Fabricação de Dispositivos" ] ;
+     fhir:definition [ fhir:v "Fabricação de dispositivos médicos e correlatos" ]
+  ] [
+     fhir:code [ fhir:v "cosmetic-manufacturing" ] ;
+     fhir:display [ fhir:v "Fabricação de Cosméticos" ] ;
+     fhir:definition [ fhir:v "Fabricação de produtos cosméticos" ]
+  ] [
+     fhir:code [ fhir:v "wholesale-distribution" ] ;
+     fhir:display [ fhir:v "Distribuição Atacadista" ] ;
+     fhir:definition [ fhir:v "Distribuição atacadista de produtos regulados" ]
+  ] [
+     fhir:code [ fhir:v "retail-pharmacy" ] ;
+     fhir:display [ fhir:v "Farmácia de Varejo" ] ;
+     fhir:definition [ fhir:v "Farmácia ou drogaria de varejo" ]
+  ] [
+     fhir:code [ fhir:v "hospital-pharmacy" ] ;
+     fhir:display [ fhir:v "Farmácia Hospitalar" ] ;
+     fhir:definition [ fhir:v "Farmácia de estabelecimento hospitalar" ]
+  ] [
+     fhir:code [ fhir:v "import-operations" ] ;
+     fhir:display [ fhir:v "Operações de Importação" ] ;
+     fhir:definition [ fhir:v "Importação de produtos regulados" ]
+  ] [
+     fhir:code [ fhir:v "export-operations" ] ;
+     fhir:display [ fhir:v "Operações de Exportação" ] ;
+     fhir:definition [ fhir:v "Exportação de produtos regulados" ]
+  ] [
+     fhir:code [ fhir:v "clinical-research" ] ;
+     fhir:display [ fhir:v "Pesquisa Clínica" ] ;
+     fhir:definition [ fhir:v "Condução de pesquisas clínicas" ]
+  ] [
+     fhir:code [ fhir:v "preclinical-research" ] ;
+     fhir:display [ fhir:v "Pesquisa Pré-clínica" ] ;
+     fhir:definition [ fhir:v "Pesquisa pré-clínica e desenvolvimento" ]
+  ] [
+     fhir:code [ fhir:v "analytical-laboratory" ] ;
+     fhir:display [ fhir:v "Laboratório Analítico" ] ;
+     fhir:definition [ fhir:v "Laboratório de análises e controle de qualidade" ]
+  ] [
+     fhir:code [ fhir:v "regulatory-consulting" ] ;
+     fhir:display [ fhir:v "Consultoria Regulatória" ] ;
+     fhir:definition [ fhir:v "Serviços de consultoria regulatória" ]
+  ] [
+     fhir:code [ fhir:v "quality-assurance" ] ;
+     fhir:display [ fhir:v "Garantia de Qualidade" ] ;
+     fhir:definition [ fhir:v "Serviços de garantia e controle de qualidade" ]
+  ] [
+     fhir:code [ fhir:v "logistics-services" ] ;
+     fhir:display [ fhir:v "Serviços Logísticos" ] ;
+     fhir:definition [ fhir:v "Serviços de logística e transporte especializado" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

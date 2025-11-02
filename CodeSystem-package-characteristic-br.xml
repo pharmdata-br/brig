@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="package-characteristic-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem package-characteristic-br</b></p><a name="package-characteristic-br"> </a><a name="hcpackage-characteristic-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">protecao-luz<a name="package-characteristic-br-protecao-luz"> </a></td><td>Proteção à Luz</td><td>Embalagem com proteção contra luz</td></tr><tr><td style="white-space:nowrap">protecao-umidade<a name="package-characteristic-br-protecao-umidade"> </a></td><td>Proteção à Umidade</td><td>Embalagem com proteção contra umidade</td></tr><tr><td style="white-space:nowrap">protecao-temperatura<a name="package-characteristic-br-protecao-temperatura"> </a></td><td>Proteção à Temperatura</td><td>Embalagem com proteção térmica</td></tr><tr><td style="white-space:nowrap">protecao-oxidacao<a name="package-characteristic-br-protecao-oxidacao"> </a></td><td>Proteção à Oxidação</td><td>Embalagem com proteção contra oxidação</td></tr><tr><td style="white-space:nowrap">inviolavel<a name="package-characteristic-br-inviolavel"> </a></td><td>Inviolável</td><td>Embalagem com sistema de inviolabilidade</td></tr><tr><td style="white-space:nowrap">crianca-resistente<a name="package-characteristic-br-crianca-resistente"> </a></td><td>Resistente a Crianças</td><td>Embalagem com abertura resistente a crianças</td></tr><tr><td style="white-space:nowrap">esteril<a name="package-characteristic-br-esteril"> </a></td><td>Estéril</td><td>Embalagem estéril</td></tr><tr><td style="white-space:nowrap">unidose<a name="package-characteristic-br-unidose"> </a></td><td>Unidose</td><td>Embalagem de dose única</td></tr><tr><td style="white-space:nowrap">multidose<a name="package-characteristic-br-multidose"> </a></td><td>Multidose</td><td>Embalagem de múltiplas doses</td></tr><tr><td style="white-space:nowrap">descartavel<a name="package-characteristic-br-descartavel"> </a></td><td>Descartável</td><td>Embalagem descartável</td></tr><tr><td style="white-space:nowrap">reutilizavel<a name="package-characteristic-br-reutilizavel"> </a></td><td>Reutilizável</td><td>Embalagem reutilizável</td></tr><tr><td style="white-space:nowrap">controlado<a name="package-characteristic-br-controlado"> </a></td><td>Produto Controlado</td><td>Embalagem para produto controlado</td></tr><tr><td style="white-space:nowrap">hospitalar<a name="package-characteristic-br-hospitalar"> </a></td><td>Uso Hospitalar</td><td>Embalagem para uso exclusivo hospitalar</td></tr><tr><td style="white-space:nowrap">refrigerado<a name="package-characteristic-br-refrigerado"> </a></td><td>Refrigerado</td><td>Produto que requer refrigeração</td></tr><tr><td style="white-space:nowrap">congelado<a name="package-characteristic-br-congelado"> </a></td><td>Congelado</td><td>Produto que requer congelamento</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-characteristic-br"/>
+  <version value="0.0.3"/>
+  <name value="PackageCharacteristicBR"/>
+  <title value="Características de Embalagem - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para características de embalagens no Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="15"/>
+  <concept>
+    <code value="protecao-luz"/>
+    <display value="Proteção à Luz"/>
+    <definition value="Embalagem com proteção contra luz"/>
+  </concept>
+  <concept>
+    <code value="protecao-umidade"/>
+    <display value="Proteção à Umidade"/>
+    <definition value="Embalagem com proteção contra umidade"/>
+  </concept>
+  <concept>
+    <code value="protecao-temperatura"/>
+    <display value="Proteção à Temperatura"/>
+    <definition value="Embalagem com proteção térmica"/>
+  </concept>
+  <concept>
+    <code value="protecao-oxidacao"/>
+    <display value="Proteção à Oxidação"/>
+    <definition value="Embalagem com proteção contra oxidação"/>
+  </concept>
+  <concept>
+    <code value="inviolavel"/>
+    <display value="Inviolável"/>
+    <definition value="Embalagem com sistema de inviolabilidade"/>
+  </concept>
+  <concept>
+    <code value="crianca-resistente"/>
+    <display value="Resistente a Crianças"/>
+    <definition value="Embalagem com abertura resistente a crianças"/>
+  </concept>
+  <concept>
+    <code value="esteril"/>
+    <display value="Estéril"/>
+    <definition value="Embalagem estéril"/>
+  </concept>
+  <concept>
+    <code value="unidose"/>
+    <display value="Unidose"/>
+    <definition value="Embalagem de dose única"/>
+  </concept>
+  <concept>
+    <code value="multidose"/>
+    <display value="Multidose"/>
+    <definition value="Embalagem de múltiplas doses"/>
+  </concept>
+  <concept>
+    <code value="descartavel"/>
+    <display value="Descartável"/>
+    <definition value="Embalagem descartável"/>
+  </concept>
+  <concept>
+    <code value="reutilizavel"/>
+    <display value="Reutilizável"/>
+    <definition value="Embalagem reutilizável"/>
+  </concept>
+  <concept>
+    <code value="controlado"/>
+    <display value="Produto Controlado"/>
+    <definition value="Embalagem para produto controlado"/>
+  </concept>
+  <concept>
+    <code value="hospitalar"/>
+    <display value="Uso Hospitalar"/>
+    <definition value="Embalagem para uso exclusivo hospitalar"/>
+  </concept>
+  <concept>
+    <code value="refrigerado"/>
+    <display value="Refrigerado"/>
+    <definition value="Produto que requer refrigeração"/>
+  </concept>
+  <concept>
+    <code value="congelado"/>
+    <display value="Congelado"/>
+    <definition value="Produto que requer congelamento"/>
+  </concept>
+</CodeSystem>

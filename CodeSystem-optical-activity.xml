@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="optical-activity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem optical-activity</b></p><a name="optical-activity"> </a><a name="hcoptical-activity"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">dextrorotatory<a name="optical-activity-dextrorotatory"> </a></td><td>Dextrorrotatório (+)</td><td>Desvia luz polarizada para direita (rotação positiva)</td></tr><tr><td style="white-space:nowrap">levorotatory<a name="optical-activity-levorotatory"> </a></td><td>Levorrotatório (-)</td><td>Desvia luz polarizada para esquerda (rotação negativa)</td></tr><tr><td style="white-space:nowrap">optically-inactive<a name="optical-activity-optically-inactive"> </a></td><td>Opticamente Inativo</td><td>Não desvia luz polarizada (racêmico ou aquiral)</td></tr><tr><td style="white-space:nowrap">d-form<a name="optical-activity-d-form"> </a></td><td>Forma D</td><td>Nomenclatura D/L (configuração)</td></tr><tr><td style="white-space:nowrap">l-form<a name="optical-activity-l-form"> </a></td><td>Forma L</td><td>Nomenclatura D/L (configuração)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity"/>
+  <version value="0.0.3"/>
+  <name value="OpticalActivity"/>
+  <title value="Atividade Óptica"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Atividade óptica de substâncias quirais (rotação da luz polarizada)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="dextrorotatory"/>
+    <display value="Dextrorrotatório (+)"/>
+    <definition value="Desvia luz polarizada para direita (rotação positiva)"/>
+  </concept>
+  <concept>
+    <code value="levorotatory"/>
+    <display value="Levorrotatório (-)"/>
+    <definition value="Desvia luz polarizada para esquerda (rotação negativa)"/>
+  </concept>
+  <concept>
+    <code value="optically-inactive"/>
+    <display value="Opticamente Inativo"/>
+    <definition value="Não desvia luz polarizada (racêmico ou aquiral)"/>
+  </concept>
+  <concept>
+    <code value="d-form"/>
+    <display value="Forma D"/>
+    <definition value="Nomenclatura D/L (configuração)"/>
+  </concept>
+  <concept>
+    <code value="l-form"/>
+    <display value="Forma L"/>
+    <definition value="Nomenclatura D/L (configuração)"/>
+  </concept>
+</CodeSystem>

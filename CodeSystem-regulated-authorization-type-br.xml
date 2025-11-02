@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="regulated-authorization-type-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem regulated-authorization-type-br</b></p><a name="regulated-authorization-type-br"> </a><a name="hcregulated-authorization-type-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">registration<a name="regulated-authorization-type-br-registration"> </a></td><td>Registro Inicial</td><td>Registro inicial de medicamento na ANVISA</td></tr><tr><td style="white-space:nowrap">renewal<a name="regulated-authorization-type-br-renewal"> </a></td><td>Renovação</td><td>Renovação de registro de medicamento (validade 10 anos)</td></tr><tr><td style="white-space:nowrap">variation<a name="regulated-authorization-type-br-variation"> </a></td><td>Variação</td><td>Variação pós-registro (alterações no medicamento registrado)</td></tr><tr><td style="white-space:nowrap">cancellation<a name="regulated-authorization-type-br-cancellation"> </a></td><td>Cancelamento</td><td>Cancelamento de registro por solicitação do detentor</td></tr><tr><td style="white-space:nowrap">new-drug<a name="regulated-authorization-type-br-new-drug"> </a></td><td>Medicamento Novo</td><td>Registro de medicamento novo (nova molécula)</td></tr><tr><td style="white-space:nowrap">innovative-drug<a name="regulated-authorization-type-br-innovative-drug"> </a></td><td>Medicamento Inovador</td><td>Registro de medicamento inovador</td></tr><tr><td style="white-space:nowrap">generic-drug<a name="regulated-authorization-type-br-generic-drug"> </a></td><td>Medicamento Genérico</td><td>Registro de medicamento genérico</td></tr><tr><td style="white-space:nowrap">similar-drug<a name="regulated-authorization-type-br-similar-drug"> </a></td><td>Medicamento Similar</td><td>Registro de medicamento similar</td></tr><tr><td style="white-space:nowrap">biological-product<a name="regulated-authorization-type-br-biological-product"> </a></td><td>Produto Biológico</td><td>Registro de produto biológico</td></tr><tr><td style="white-space:nowrap">biosimilar-product<a name="regulated-authorization-type-br-biosimilar-product"> </a></td><td>Produto Biosimilar</td><td>Registro de produto biosimilar</td></tr><tr><td style="white-space:nowrap">major-variation<a name="regulated-authorization-type-br-major-variation"> </a></td><td>Variação Maior</td><td>Variação que requer aprovação prévia da ANVISA</td></tr><tr><td style="white-space:nowrap">minor-variation<a name="regulated-authorization-type-br-minor-variation"> </a></td><td>Variação Menor</td><td>Variação de implementação imediata com comunicação</td></tr><tr><td style="white-space:nowrap">administrative-variation<a name="regulated-authorization-type-br-administrative-variation"> </a></td><td>Variação Administrativa</td><td>Variação puramente administrativa</td></tr><tr><td style="white-space:nowrap">special-authorization<a name="regulated-authorization-type-br-special-authorization"> </a></td><td>Autorização Especial</td><td>Autorização especial para casos específicos</td></tr><tr><td style="white-space:nowrap">emergency-authorization<a name="regulated-authorization-type-br-emergency-authorization"> </a></td><td>Autorização de Emergência</td><td>Autorização emergencial temporária</td></tr><tr><td style="white-space:nowrap">compassionate-use<a name="regulated-authorization-type-br-compassionate-use"> </a></td><td>Uso Compassivo</td><td>Autorização para uso compassivo</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"/>
+  <version value="0.0.3"/>
+  <name value="RegulatedAuthorizationTypeBR"/>
+  <title value="Tipo de Autorização Regulatória ANVISA"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de autorizações regulatórias conforme processos ANVISA para medicamentos"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="registration"/>
+    <display value="Registro Inicial"/>
+    <definition value="Registro inicial de medicamento na ANVISA"/>
+  </concept>
+  <concept>
+    <code value="renewal"/>
+    <display value="Renovação"/>
+    <definition value="Renovação de registro de medicamento (validade 10 anos)"/>
+  </concept>
+  <concept>
+    <code value="variation"/>
+    <display value="Variação"/>
+    <definition value="Variação pós-registro (alterações no medicamento registrado)"/>
+  </concept>
+  <concept>
+    <code value="cancellation"/>
+    <display value="Cancelamento"/>
+    <definition value="Cancelamento de registro por solicitação do detentor"/>
+  </concept>
+  <concept>
+    <code value="new-drug"/>
+    <display value="Medicamento Novo"/>
+    <definition value="Registro de medicamento novo (nova molécula)"/>
+  </concept>
+  <concept>
+    <code value="innovative-drug"/>
+    <display value="Medicamento Inovador"/>
+    <definition value="Registro de medicamento inovador"/>
+  </concept>
+  <concept>
+    <code value="generic-drug"/>
+    <display value="Medicamento Genérico"/>
+    <definition value="Registro de medicamento genérico"/>
+  </concept>
+  <concept>
+    <code value="similar-drug"/>
+    <display value="Medicamento Similar"/>
+    <definition value="Registro de medicamento similar"/>
+  </concept>
+  <concept>
+    <code value="biological-product"/>
+    <display value="Produto Biológico"/>
+    <definition value="Registro de produto biológico"/>
+  </concept>
+  <concept>
+    <code value="biosimilar-product"/>
+    <display value="Produto Biosimilar"/>
+    <definition value="Registro de produto biosimilar"/>
+  </concept>
+  <concept>
+    <code value="major-variation"/>
+    <display value="Variação Maior"/>
+    <definition value="Variação que requer aprovação prévia da ANVISA"/>
+  </concept>
+  <concept>
+    <code value="minor-variation"/>
+    <display value="Variação Menor"/>
+    <definition value="Variação de implementação imediata com comunicação"/>
+  </concept>
+  <concept>
+    <code value="administrative-variation"/>
+    <display value="Variação Administrativa"/>
+    <definition value="Variação puramente administrativa"/>
+  </concept>
+  <concept>
+    <code value="special-authorization"/>
+    <display value="Autorização Especial"/>
+    <definition value="Autorização especial para casos específicos"/>
+  </concept>
+  <concept>
+    <code value="emergency-authorization"/>
+    <display value="Autorização de Emergência"/>
+    <definition value="Autorização emergencial temporária"/>
+  </concept>
+  <concept>
+    <code value="compassionate-use"/>
+    <display value="Uso Compassivo"/>
+    <definition value="Autorização para uso compassivo"/>
+  </concept>
+</CodeSystem>

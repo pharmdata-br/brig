@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="anvisa-substance-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem anvisa-substance-code</b></p><a name="anvisa-substance-code"> </a><a name="hcanvisa-substance-code"> </a><p>Este  sistema de código  fornece alguns códigos <b>que são apenas exemplos</b>:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">SUB001<a name="anvisa-substance-code-SUB001"> </a></td><td>Paracetamol</td><td>Paracetamol - código ANVISA</td></tr><tr><td style="white-space:nowrap">SUB002<a name="anvisa-substance-code-SUB002"> </a></td><td>Dipirona Sódica</td><td>Dipirona Sódica - código ANVISA</td></tr><tr><td style="white-space:nowrap">SUB003<a name="anvisa-substance-code-SUB003"> </a></td><td>Ácido Acetilsalicílico</td><td>Ácido Acetilsalicílico - código ANVISA</td></tr><tr><td style="white-space:nowrap">SUB004<a name="anvisa-substance-code-SUB004"> </a></td><td>Ibuprofeno</td><td>Ibuprofeno - código ANVISA</td></tr><tr><td style="white-space:nowrap">SUB005<a name="anvisa-substance-code-SUB005"> </a></td><td>Diclofenaco Sódico</td><td>Diclofenaco Sódico - código ANVISA</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/anvisa-substance-code"/>
+  <version value="0.0.3"/>
+  <name value="ANVISASubstanceCode"/>
+  <title value="Códigos ANVISA de Substância"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos específicos da ANVISA para substâncias"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="example"/>
+  <concept>
+    <code value="SUB001"/>
+    <display value="Paracetamol"/>
+    <definition value="Paracetamol - código ANVISA"/>
+  </concept>
+  <concept>
+    <code value="SUB002"/>
+    <display value="Dipirona Sódica"/>
+    <definition value="Dipirona Sódica - código ANVISA"/>
+  </concept>
+  <concept>
+    <code value="SUB003"/>
+    <display value="Ácido Acetilsalicílico"/>
+    <definition value="Ácido Acetilsalicílico - código ANVISA"/>
+  </concept>
+  <concept>
+    <code value="SUB004"/>
+    <display value="Ibuprofeno"/>
+    <definition value="Ibuprofeno - código ANVISA"/>
+  </concept>
+  <concept>
+    <code value="SUB005"/>
+    <display value="Diclofenaco Sódico"/>
+    <definition value="Diclofenaco Sódico - código ANVISA"/>
+  </concept>
+</CodeSystem>

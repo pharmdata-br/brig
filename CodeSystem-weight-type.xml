@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="weight-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem weight-type</b></p><a name="weight-type"> </a><a name="hcweight-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">molecular-weight<a name="weight-type-molecular-weight"> </a></td><td>Peso Molecular</td><td>Peso molecular médio</td></tr><tr><td style="white-space:nowrap">exact-mass<a name="weight-type-exact-mass"> </a></td><td>Massa Exata</td><td>Massa molecular exata (isótopo mais abundante)</td></tr><tr><td style="white-space:nowrap">monoisotopic<a name="weight-type-monoisotopic"> </a></td><td>Monoisotópico</td><td>Massa do isótopo mais leve</td></tr><tr><td style="white-space:nowrap">average<a name="weight-type-average"> </a></td><td>Média</td><td>Peso molecular médio</td></tr><tr><td style="white-space:nowrap">number-average<a name="weight-type-number-average"> </a></td><td>Média Numérica</td><td>Mn - Number average molecular weight (polímeros)</td></tr><tr><td style="white-space:nowrap">weight-average<a name="weight-type-weight-average"> </a></td><td>Média Ponderada</td><td>Mw - Weight average molecular weight (polímeros)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-type"/>
+  <version value="0.0.3"/>
+  <name value="WeightType"/>
+  <title value="Tipo de Peso Molecular"/>
+  <status value="active"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de peso molecular para substâncias"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="molecular-weight"/>
+    <display value="Peso Molecular"/>
+    <definition value="Peso molecular médio"/>
+  </concept>
+  <concept>
+    <code value="exact-mass"/>
+    <display value="Massa Exata"/>
+    <definition value="Massa molecular exata (isótopo mais abundante)"/>
+  </concept>
+  <concept>
+    <code value="monoisotopic"/>
+    <display value="Monoisotópico"/>
+    <definition value="Massa do isótopo mais leve"/>
+  </concept>
+  <concept>
+    <code value="average"/>
+    <display value="Média"/>
+    <definition value="Peso molecular médio"/>
+  </concept>
+  <concept>
+    <code value="number-average"/>
+    <display value="Média Numérica"/>
+    <definition value="Mn - Number average molecular weight (polímeros)"/>
+  </concept>
+  <concept>
+    <code value="weight-average"/>
+    <display value="Média Ponderada"/>
+    <definition value="Mw - Weight average molecular weight (polímeros)"/>
+  </concept>
+</CodeSystem>

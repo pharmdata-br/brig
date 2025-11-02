@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="authorization-status-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem authorization-status-reason</b></p><a name="authorization-status-reason"> </a><a name="hcauthorization-status-reason"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">approved<a name="authorization-status-reason-approved"> </a></td><td>Aprovado</td><td>Autorização aprovada após análise técnica</td></tr><tr><td style="white-space:nowrap">pending-documentation<a name="authorization-status-reason-pending-documentation"> </a></td><td>Documentação Pendente</td><td>Aguardando documentação complementar</td></tr><tr><td style="white-space:nowrap">under-review<a name="authorization-status-reason-under-review"> </a></td><td>Em Análise</td><td>Processo em análise técnica</td></tr><tr><td style="white-space:nowrap">safety-concerns<a name="authorization-status-reason-safety-concerns"> </a></td><td>Questões de Segurança</td><td>Suspensão ou negação por questões de segurança</td></tr><tr><td style="white-space:nowrap">efficacy-concerns<a name="authorization-status-reason-efficacy-concerns"> </a></td><td>Questões de Eficácia</td><td>Suspensão ou negação por questões de eficácia</td></tr><tr><td style="white-space:nowrap">quality-concerns<a name="authorization-status-reason-quality-concerns"> </a></td><td>Questões de Qualidade</td><td>Suspensão ou negação por questões de qualidade</td></tr><tr><td style="white-space:nowrap">expired<a name="authorization-status-reason-expired"> </a></td><td>Vencida</td><td>Autorização expirada por fim de vigência</td></tr><tr><td style="white-space:nowrap">withdrawn<a name="authorization-status-reason-withdrawn"> </a></td><td>Retirada pelo Titular</td><td>Retirada voluntária pelo titular</td></tr><tr><td style="white-space:nowrap">revoked-safety<a name="authorization-status-reason-revoked-safety"> </a></td><td>Revogada por Segurança</td><td>Revogação por questões de segurança pós-comercialização</td></tr><tr><td style="white-space:nowrap">non-compliance<a name="authorization-status-reason-non-compliance"> </a></td><td>Não Conformidade</td><td>Suspensão ou revogação por não conformidade regulatória</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-status-reason"/>
+  <version value="0.0.3"/>
+  <name value="AuthorizationStatusReason"/>
+  <title value="Motivo do Status da Autorização"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Motivos para o status atual de uma autorização regulatória"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="approved"/>
+    <display value="Aprovado"/>
+    <definition value="Autorização aprovada após análise técnica"/>
+  </concept>
+  <concept>
+    <code value="pending-documentation"/>
+    <display value="Documentação Pendente"/>
+    <definition value="Aguardando documentação complementar"/>
+  </concept>
+  <concept>
+    <code value="under-review"/>
+    <display value="Em Análise"/>
+    <definition value="Processo em análise técnica"/>
+  </concept>
+  <concept>
+    <code value="safety-concerns"/>
+    <display value="Questões de Segurança"/>
+    <definition value="Suspensão ou negação por questões de segurança"/>
+  </concept>
+  <concept>
+    <code value="efficacy-concerns"/>
+    <display value="Questões de Eficácia"/>
+    <definition value="Suspensão ou negação por questões de eficácia"/>
+  </concept>
+  <concept>
+    <code value="quality-concerns"/>
+    <display value="Questões de Qualidade"/>
+    <definition value="Suspensão ou negação por questões de qualidade"/>
+  </concept>
+  <concept>
+    <code value="expired"/>
+    <display value="Vencida"/>
+    <definition value="Autorização expirada por fim de vigência"/>
+  </concept>
+  <concept>
+    <code value="withdrawn"/>
+    <display value="Retirada pelo Titular"/>
+    <definition value="Retirada voluntária pelo titular"/>
+  </concept>
+  <concept>
+    <code value="revoked-safety"/>
+    <display value="Revogada por Segurança"/>
+    <definition value="Revogação por questões de segurança pós-comercialização"/>
+  </concept>
+  <concept>
+    <code value="non-compliance"/>
+    <display value="Não Conformidade"/>
+    <definition value="Suspensão ou revogação por não conformidade regulatória"/>
+  </concept>
+</CodeSystem>

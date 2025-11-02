@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-genus> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "biological-genus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem biological-genus</b></p><a name=\"biological-genus\"> </a><a name=\"hcbiological-genus\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">Papaver<a name=\"biological-genus-Papaver\"> </a></td><td>Gênero Papaver (papoula)</td></tr><tr><td style=\"white-space:nowrap\">Cannabis<a name=\"biological-genus-Cannabis\"> </a></td><td>Gênero Cannabis</td></tr><tr><td style=\"white-space:nowrap\">Digitalis<a name=\"biological-genus-Digitalis\"> </a></td><td>Gênero Digitalis (dedaleira)</td></tr><tr><td style=\"white-space:nowrap\">Cinchona<a name=\"biological-genus-Cinchona\"> </a></td><td>Gênero Cinchona (quineira)</td></tr><tr><td style=\"white-space:nowrap\">Ephedra<a name=\"biological-genus-Ephedra\"> </a></td><td>Gênero Ephedra</td></tr><tr><td style=\"white-space:nowrap\">Penicillium<a name=\"biological-genus-Penicillium\"> </a></td><td>Gênero Penicillium (fungo produtor de penicilina)</td></tr><tr><td style=\"white-space:nowrap\">Streptomyces<a name=\"biological-genus-Streptomyces\"> </a></td><td>Gênero Streptomyces (bactéria produtora de antibióticos)</td></tr><tr><td style=\"white-space:nowrap\">Saccharomyces<a name=\"biological-genus-Saccharomyces\"> </a></td><td>Gênero Saccharomyces (levedura)</td></tr><tr><td style=\"white-space:nowrap\">Escherichia<a name=\"biological-genus-Escherichia\"> </a></td><td>Gênero Escherichia (bactéria para produção recombinante)</td></tr><tr><td style=\"white-space:nowrap\">Bos<a name=\"biological-genus-Bos\"> </a></td><td>Gênero Bos (bovinos)</td></tr><tr><td style=\"white-space:nowrap\">Sus<a name=\"biological-genus-Sus\"> </a></td><td>Gênero Sus (suínos)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-genus"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-genus>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "BiologicalGenus"] ; # 
+  fhir:title [ fhir:v "Gênero Biológico"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Gêneros biológicos comuns em substâncias farmacêuticas"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Papaver" ] ;
+     fhir:display [ fhir:v "Papaver" ] ;
+     fhir:definition [ fhir:v "Gênero Papaver (papoula)" ]
+  ] [
+     fhir:code [ fhir:v "Cannabis" ] ;
+     fhir:display [ fhir:v "Cannabis" ] ;
+     fhir:definition [ fhir:v "Gênero Cannabis" ]
+  ] [
+     fhir:code [ fhir:v "Digitalis" ] ;
+     fhir:display [ fhir:v "Digitalis" ] ;
+     fhir:definition [ fhir:v "Gênero Digitalis (dedaleira)" ]
+  ] [
+     fhir:code [ fhir:v "Cinchona" ] ;
+     fhir:display [ fhir:v "Cinchona" ] ;
+     fhir:definition [ fhir:v "Gênero Cinchona (quineira)" ]
+  ] [
+     fhir:code [ fhir:v "Ephedra" ] ;
+     fhir:display [ fhir:v "Ephedra" ] ;
+     fhir:definition [ fhir:v "Gênero Ephedra" ]
+  ] [
+     fhir:code [ fhir:v "Penicillium" ] ;
+     fhir:display [ fhir:v "Penicillium" ] ;
+     fhir:definition [ fhir:v "Gênero Penicillium (fungo produtor de penicilina)" ]
+  ] [
+     fhir:code [ fhir:v "Streptomyces" ] ;
+     fhir:display [ fhir:v "Streptomyces" ] ;
+     fhir:definition [ fhir:v "Gênero Streptomyces (bactéria produtora de antibióticos)" ]
+  ] [
+     fhir:code [ fhir:v "Saccharomyces" ] ;
+     fhir:display [ fhir:v "Saccharomyces" ] ;
+     fhir:definition [ fhir:v "Gênero Saccharomyces (levedura)" ]
+  ] [
+     fhir:code [ fhir:v "Escherichia" ] ;
+     fhir:display [ fhir:v "Escherichia" ] ;
+     fhir:definition [ fhir:v "Gênero Escherichia (bactéria para produção recombinante)" ]
+  ] [
+     fhir:code [ fhir:v "Bos" ] ;
+     fhir:display [ fhir:v "Bos" ] ;
+     fhir:definition [ fhir:v "Gênero Bos (bovinos)" ]
+  ] [
+     fhir:code [ fhir:v "Sus" ] ;
+     fhir:display [ fhir:v "Sus" ] ;
+     fhir:definition [ fhir:v "Gênero Sus (suínos)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

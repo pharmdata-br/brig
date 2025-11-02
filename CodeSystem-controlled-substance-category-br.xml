@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="controlled-substance-category-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem controlled-substance-category-br</b></p><a name="controlled-substance-category-br"> </a><a name="hccontrolled-substance-category-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">A1<a name="controlled-substance-category-br-A1"> </a></td><td>Lista A1 - Entorpecentes</td><td>Substâncias entorpecentes - Lista A1 (Portaria SVS/MS n° 344/1998)</td></tr><tr><td style="white-space:nowrap">A2<a name="controlled-substance-category-br-A2"> </a></td><td>Lista A2 - Entorpecentes de uso permitido somente em concentrações especiais</td><td>Entorpecentes de uso permitido somente em concentrações especiais - Lista A2</td></tr><tr><td style="white-space:nowrap">A3<a name="controlled-substance-category-br-A3"> </a></td><td>Lista A3 - Psicotrópicos</td><td>Substâncias psicotrópicas - Lista A3</td></tr><tr><td style="white-space:nowrap">B1<a name="controlled-substance-category-br-B1"> </a></td><td>Lista B1 - Psicotrópicos</td><td>Substâncias psicotrópicas - Lista B1</td></tr><tr><td style="white-space:nowrap">B2<a name="controlled-substance-category-br-B2"> </a></td><td>Lista B2 - Psicotrópicos anorexígenos</td><td>Substâncias psicotrópicas anorexígenas - Lista B2</td></tr><tr><td style="white-space:nowrap">C1<a name="controlled-substance-category-br-C1"> </a></td><td>Lista C1 - Outras substâncias sujeitas a controle especial</td><td>Outras substâncias sujeitas a controle especial - Lista C1</td></tr><tr><td style="white-space:nowrap">C2<a name="controlled-substance-category-br-C2"> </a></td><td>Lista C2 - Retinóides de uso sistêmico</td><td>Retinóides de uso sistêmico - Lista C2</td></tr><tr><td style="white-space:nowrap">C3<a name="controlled-substance-category-br-C3"> </a></td><td>Lista C3 - Imunossupressores</td><td>Substâncias imunossupressoras - Lista C3</td></tr><tr><td style="white-space:nowrap">C4<a name="controlled-substance-category-br-C4"> </a></td><td>Lista C4 - Anti-retrovirais</td><td>Substâncias anti-retrovirais - Lista C4</td></tr><tr><td style="white-space:nowrap">C5<a name="controlled-substance-category-br-C5"> </a></td><td>Lista C5 - Anabolizantes</td><td>Substâncias anabolizantes - Lista C5</td></tr><tr><td style="white-space:nowrap">D1<a name="controlled-substance-category-br-D1"> </a></td><td>Lista D1 - Precursores de entorpecentes e psicotrópicos</td><td>Insumos químicos utilizados como precursores para fabricação de entorpecentes e psicotrópicos - Lista D1</td></tr><tr><td style="white-space:nowrap">D2<a name="controlled-substance-category-br-D2"> </a></td><td>Lista D2 - Insumos químicos utilizados para outros fins</td><td>Insumos químicos que podem ser utilizados para fabricação de entorpecentes, psicotrópicos ou outras substâncias - Lista D2</td></tr><tr><td style="white-space:nowrap">E<a name="controlled-substance-category-br-E"> </a></td><td>Lista E - Plantas proscritas</td><td>Plantas e suas partes que podem originar substâncias entorpecentes e psicotrópicas - Lista E</td></tr><tr><td style="white-space:nowrap">F<a name="controlled-substance-category-br-F"> </a></td><td>Lista F - Substâncias de uso proscrito no Brasil</td><td>Substâncias de uso proscrito no Brasil - Lista F</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/controlled-substance-category-br"/>
+  <version value="0.0.3"/>
+  <name value="ControlledSubstanceCategoryBR"/>
+  <title value="Categorias de Substâncias Controladas - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para categorias de controle de substâncias no Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="A1"/>
+    <display value="Lista A1 - Entorpecentes"/>
+    <definition value="Substâncias entorpecentes - Lista A1 (Portaria SVS/MS n° 344/1998)"/>
+  </concept>
+  <concept>
+    <code value="A2"/>
+    <display value="Lista A2 - Entorpecentes de uso permitido somente em concentrações especiais"/>
+    <definition value="Entorpecentes de uso permitido somente em concentrações especiais - Lista A2"/>
+  </concept>
+  <concept>
+    <code value="A3"/>
+    <display value="Lista A3 - Psicotrópicos"/>
+    <definition value="Substâncias psicotrópicas - Lista A3"/>
+  </concept>
+  <concept>
+    <code value="B1"/>
+    <display value="Lista B1 - Psicotrópicos"/>
+    <definition value="Substâncias psicotrópicas - Lista B1"/>
+  </concept>
+  <concept>
+    <code value="B2"/>
+    <display value="Lista B2 - Psicotrópicos anorexígenos"/>
+    <definition value="Substâncias psicotrópicas anorexígenas - Lista B2"/>
+  </concept>
+  <concept>
+    <code value="C1"/>
+    <display value="Lista C1 - Outras substâncias sujeitas a controle especial"/>
+    <definition value="Outras substâncias sujeitas a controle especial - Lista C1"/>
+  </concept>
+  <concept>
+    <code value="C2"/>
+    <display value="Lista C2 - Retinóides de uso sistêmico"/>
+    <definition value="Retinóides de uso sistêmico - Lista C2"/>
+  </concept>
+  <concept>
+    <code value="C3"/>
+    <display value="Lista C3 - Imunossupressores"/>
+    <definition value="Substâncias imunossupressoras - Lista C3"/>
+  </concept>
+  <concept>
+    <code value="C4"/>
+    <display value="Lista C4 - Anti-retrovirais"/>
+    <definition value="Substâncias anti-retrovirais - Lista C4"/>
+  </concept>
+  <concept>
+    <code value="C5"/>
+    <display value="Lista C5 - Anabolizantes"/>
+    <definition value="Substâncias anabolizantes - Lista C5"/>
+  </concept>
+  <concept>
+    <code value="D1"/>
+    <display value="Lista D1 - Precursores de entorpecentes e psicotrópicos"/>
+    <definition value="Insumos químicos utilizados como precursores para fabricação de entorpecentes e psicotrópicos - Lista D1"/>
+  </concept>
+  <concept>
+    <code value="D2"/>
+    <display value="Lista D2 - Insumos químicos utilizados para outros fins"/>
+    <definition value="Insumos químicos que podem ser utilizados para fabricação de entorpecentes, psicotrópicos ou outras substâncias - Lista D2"/>
+  </concept>
+  <concept>
+    <code value="E"/>
+    <display value="Lista E - Plantas proscritas"/>
+    <definition value="Plantas e suas partes que podem originar substâncias entorpecentes e psicotrópicas - Lista E"/>
+  </concept>
+  <concept>
+    <code value="F"/>
+    <display value="Lista F - Substâncias de uso proscrito no Brasil"/>
+    <definition value="Substâncias de uso proscrito no Brasil - Lista F"/>
+  </concept>
+</CodeSystem>

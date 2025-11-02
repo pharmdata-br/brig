@@ -1,0 +1,98 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "weight-method",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem weight-method</b></p><a name=\"weight-method\"> </a><a name=\"hcweight-method\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">calculated<a name=\"weight-method-calculated\"> </a></td><td>Calculado</td><td>Peso molecular calculado a partir da fórmula química</td></tr><tr><td style=\"white-space:nowrap\">mass-spectrometry<a name=\"weight-method-mass-spectrometry\"> </a></td><td>Espectrometria de Massas</td><td>Determinado por espectrometria de massas</td></tr><tr><td style=\"white-space:nowrap\">gel-permeation<a name=\"weight-method-gel-permeation\"> </a></td><td>Cromatografia de Permeação em Gel</td><td>GPC - Gel Permeation Chromatography</td></tr><tr><td style=\"white-space:nowrap\">light-scattering<a name=\"weight-method-light-scattering\"> </a></td><td>Espalhamento de Luz</td><td>Light scattering techniques</td></tr><tr><td style=\"white-space:nowrap\">ultracentrifugation<a name=\"weight-method-ultracentrifugation\"> </a></td><td>Ultracentrifugação</td><td>Analytical ultracentrifugation</td></tr><tr><td style=\"white-space:nowrap\">osmometry<a name=\"weight-method-osmometry\"> </a></td><td>Osmometria</td><td>Medição de pressão osmótica</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method",
+  "version" : "0.0.3",
+  "name" : "WeightMethod",
+  "title" : "Método de Determinação de Peso Molecular",
+  "status" : "active",
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Métodos para determinação de peso/massa molecular",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "calculated",
+    "display" : "Calculado",
+    "definition" : "Peso molecular calculado a partir da fórmula química"
+  },
+  {
+    "code" : "mass-spectrometry",
+    "display" : "Espectrometria de Massas",
+    "definition" : "Determinado por espectrometria de massas"
+  },
+  {
+    "code" : "gel-permeation",
+    "display" : "Cromatografia de Permeação em Gel",
+    "definition" : "GPC - Gel Permeation Chromatography"
+  },
+  {
+    "code" : "light-scattering",
+    "display" : "Espalhamento de Luz",
+    "definition" : "Light scattering techniques"
+  },
+  {
+    "code" : "ultracentrifugation",
+    "display" : "Ultracentrifugação",
+    "definition" : "Analytical ultracentrifugation"
+  },
+  {
+    "code" : "osmometry",
+    "display" : "Osmometria",
+    "definition" : "Medição de pressão osmótica"
+  }]
+}

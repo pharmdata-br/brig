@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/additional-monitoring-indicator> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "additional-monitoring-indicator"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem additional-monitoring-indicator</b></p><a name=\"additional-monitoring-indicator\"> </a><a name=\"hcadditional-monitoring-indicator\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">black-triangle<a name=\"additional-monitoring-indicator-black-triangle\"> </a></td><td>Triângulo Negro</td><td>Medicamento sujeito a monitorização adicional intensiva. Símbolo usado em alguns países para identificar medicamentos novos ou com perfil de segurança ainda em avaliação</td></tr><tr><td style=\"white-space:nowrap\">intensive-pharmacovigilance<a name=\"additional-monitoring-indicator-intensive-pharmacovigilance\"> </a></td><td>Farmacovigilância Intensiva</td><td>Requer relatórios frequentes e detalhados de farmacovigilância para autoridade regulatória</td></tr><tr><td style=\"white-space:nowrap\">post-marketing-study<a name=\"additional-monitoring-indicator-post-marketing-study\"> </a></td><td>Estudo Pós-Comercialização Obrigatório</td><td>Exige condução de estudos específicos após aprovação para monitorar segurança ou eficácia em condições reais de uso</td></tr><tr><td style=\"white-space:nowrap\">enhanced-reporting<a name=\"additional-monitoring-indicator-enhanced-reporting\"> </a></td><td>Notificação Reforçada</td><td>Requisitos aumentados para notificação de eventos adversos por profissionais de saúde</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-monitoring<a name=\"additional-monitoring-indicator-pregnancy-monitoring\"> </a></td><td>Monitorização em Gestantes</td><td>Requer acompanhamento especial de uso em gestantes e resultados perinatais</td></tr><tr><td style=\"white-space:nowrap\">pediatric-monitoring<a name=\"additional-monitoring-indicator-pediatric-monitoring\"> </a></td><td>Monitorização Pediátrica</td><td>Requer acompanhamento especial de uso em população pediátrica</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/additional-monitoring-indicator"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/additional-monitoring-indicator>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "AdditionalMonitoringIndicator"] ; # 
+  fhir:title [ fhir:v "Indicador de Monitorização Adicional"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Indicadores de monitorização extra definidos para produtos medicinais que requerem acompanhamento intensivo pós-comercialização"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "black-triangle" ] ;
+     fhir:display [ fhir:v "Triângulo Negro" ] ;
+     fhir:definition [ fhir:v "Medicamento sujeito a monitorização adicional intensiva. Símbolo usado em alguns países para identificar medicamentos novos ou com perfil de segurança ainda em avaliação" ]
+  ] [
+     fhir:code [ fhir:v "intensive-pharmacovigilance" ] ;
+     fhir:display [ fhir:v "Farmacovigilância Intensiva" ] ;
+     fhir:definition [ fhir:v "Requer relatórios frequentes e detalhados de farmacovigilância para autoridade regulatória" ]
+  ] [
+     fhir:code [ fhir:v "post-marketing-study" ] ;
+     fhir:display [ fhir:v "Estudo Pós-Comercialização Obrigatório" ] ;
+     fhir:definition [ fhir:v "Exige condução de estudos específicos após aprovação para monitorar segurança ou eficácia em condições reais de uso" ]
+  ] [
+     fhir:code [ fhir:v "enhanced-reporting" ] ;
+     fhir:display [ fhir:v "Notificação Reforçada" ] ;
+     fhir:definition [ fhir:v "Requisitos aumentados para notificação de eventos adversos por profissionais de saúde" ]
+  ] [
+     fhir:code [ fhir:v "pregnancy-monitoring" ] ;
+     fhir:display [ fhir:v "Monitorização em Gestantes" ] ;
+     fhir:definition [ fhir:v "Requer acompanhamento especial de uso em gestantes e resultados perinatais" ]
+  ] [
+     fhir:code [ fhir:v "pediatric-monitoring" ] ;
+     fhir:display [ fhir:v "Monitorização Pediátrica" ] ;
+     fhir:definition [ fhir:v "Requer acompanhamento especial de uso em população pediátrica" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

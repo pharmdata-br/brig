@@ -1,0 +1,148 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>SubstanceDefinition-midazolam-substance-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json" data-fhir="generated"><code style="white-space: pre; text-wrap: nowrap;" class="language-json"><a name="l17">​</a>{
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition">resourceType</a>" : "SubstanceDefinition",
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.id">id</a>" : "midazolam-substance",
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2025-08-02T10:00:00Z",
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+      <a style="color: Maroon" href="StructureDefinition-substance-definition-br.html">&#x1F517;</a> "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br",
+      "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;Midazolam (Substância Controlada)&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;DCB:&lt;/strong&gt; 05969&lt;/p&gt;&lt;p&gt;&lt;strong&gt;CAS:&lt;/strong&gt; 59467-70-8&lt;/p&gt;&lt;p&gt;&lt;strong&gt;UNII:&lt;/strong&gt; R60L0SM5BC&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Classificação:&lt;/strong&gt; Substância Ativa, Controlada, Psicotrópica&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Aprovada com Restrições pela ANVISA&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Categoria de Controle:&lt;/strong&gt; Lista B1 (Psicotrópicos)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Grau:&lt;/strong&gt; Farmacêutico&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fórmula Molecular:&lt;/strong&gt; C18H13ClFN3&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Peso Molecular:&lt;/strong&gt; 325.77 g/mol&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Restrições:&lt;/strong&gt; Uso restrito a ambiente hospitalar, requer receita de controle especial&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Código ATC:&lt;/strong&gt; N05CD08&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Descrição:&lt;/strong&gt; Benzodiazepínico para sedação, ansiolise e amnésia&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/NamingSystem/dcb",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "05969"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:2.16.840.1.113883.6.61",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "59467-70-8"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://hl7.org/fhir/sid/inn",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "midazolam"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.status">status</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "active"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.classification">classification</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "active"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "controlled"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "psychotropic"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.domain">domain</a>" : {
+    "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/medicinalproduct-domain",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "Human"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.grade">grade</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "pharmaceutical"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.description">description</a>" : "O midazolam é um medicamento benzodiazepínico de ação rápida usado para sedação, ansiolise e amnésia. É uma substância controlada no Brasil, classificada na Lista B1.",
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/substance-property-type",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "MolecularWeight"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.property.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 325.77,
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a>" : "grams per mole",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a>" : "g/mol"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure">structure</a>" : {
+    "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation">representation</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation.representation">representation</a>" : "C18H13ClFN3",
+        "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.structure.representation.format">format</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/substance-representation-format",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "SMILES"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name">name</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.name">name</a>" : "Midazolam",
+      "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "official"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.name">name</a>" : "Midazolam",
+      "<a href="http://hl7.org/fhir/R5/substancedefinition.html#SubstanceDefinition.name.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "common"
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>StructureDefinition-identifier-lifecycle-rules-summary-all</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<a name="a-summary"> </a>
+<p><b>
+Resumo
+</b></p>
+<p>Extensão complexa: Regras e tracking para lifecycle de identificadores MPID/PCID - define quando manter vs criar novos identificadores</p><ul data-fhir="generated-heirarchy"><li>previousMPID: string: MPID anterior quando houve mudança que requer novo MPID</li>
+<li>previousPCID: string: PCID anterior quando houve mudança que requer novo PCID</li>
+<li>changeReason: CodeableConcept: Motivo específico que causou a necessidade de novo identificador</li>
+<li>changeDate: date: Data em que a mudança foi implementada e novo identificador gerado</li>
+<li>changeSeverity: code: Nível de severidade da mudança para rastreabilidade regulatória</li>
+<li>impactedProducts: Reference: Referências a outros produtos que foram impactados pela mudança</li>
+</ul></body>
+</html>

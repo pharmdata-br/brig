@@ -1,0 +1,1641 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/legal-basis-anvisa-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "LegalBasisANVISABR",
+      "title" : "Base Legal ANVISA Brasil",
+      "description" : "Conjunto de valores para bases legais ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-regulated-authorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationStatusBR",
+      "title" : "Status de Autorização Regulatória Brasil",
+      "description" : "Conjunto de valores para status de autorizações regulatórias ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulated-authorization-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationTypeBR",
+      "title" : "Tipo de Autorização Regulatória Brasil",
+      "description" : "Conjunto de valores para tipos de autorizações regulatórias ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-regulated-authorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/regulatory-procedure-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "RegulatoryProcedureTypeBR",
+      "title" : "Tipo de Procedimento Regulatório Brasil",
+      "description" : "Conjunto de valores para tipos de procedimentos regulatórios",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-classification-gsrs-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "SubstanceClassificationGSRSBR",
+      "title" : "Classificação de Substância GSRS/Brasil",
+      "description" : "Conjunto de valores para classificação de substâncias GSRS e brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br"
+      ]
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/ValueSet/substance-status-gsrs-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "SubstanceStatusGSRSBR",
+      "title" : "Status de Substância GSRS/Brasil",
+      "description" : "Conjunto de valores para status de substâncias GSRS e brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br",
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-3",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "Iso316613",
+      "title" : "Iso 3166 Part 1: 3 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 3-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-generic-reference.html" : "Referência Genérica"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/additional-monitoring-indicator-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AdditionalMonitoringIndicator",
+      "title" : "Indicador de Monitorização Adicional",
+      "description" : "Indicadores de monitorização extra para produtos medicinais",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/additional-monitoring-indicator"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/administrable-dose-form",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "AdministrableDoseForm",
+      "title" : "Formas Farmacêuticas Administráveis",
+      "description" : "Formas farmacêuticas administráveis usando códigos EDQM Standard Terms",
+      "systems" : ["http://standardterms.edqm.eu"],
+      "uses" : {
+      },
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/administrable-property",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "AdministrableProperty",
+      "title" : "Propriedades Administráveis",
+      "description" : "Tipos de propriedades específicas para produtos administráveis (padrão internacional)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-property"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/administrable-unit",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "AdministrableUnit",
+      "title" : "Unidades Administráveis",
+      "description" : "Unidades que descrevem a apresentação final administrável (padrão internacional)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/administrable-unit"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/adverse-effect-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "AdverseEffectBRValueSet",
+      "title" : "Efeitos Adversos - Brasil",
+      "description" : "ValueSet de efeitos adversos comuns no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/adverse-effect-frequency-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "AdverseEffectFrequencyBRValueSet",
+      "title" : "Frequência de Efeitos Adversos - Brasil",
+      "description" : "ValueSet de classificação de frequência de efeitos adversos conforme padrão brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/animal-tissue-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AnimalTissueType",
+      "title" : "Tipos de Tecido Animal",
+      "description" : "Tipos de tecidos animais para especificação de períodos de carência",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/animal-tissue-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/anvisa-category-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ANVISACategoryBR",
+      "title" : "Categorias ANVISA - Brasil",
+      "description" : "Categorias de produtos medicinais conforme classificação da ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-category-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/anvisa-regulatory-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ANVISARegulatoryStatusBR",
+      "title" : "Status Regulatório ANVISA - Brasil",
+      "description" : "Status regulatório de substâncias junto à ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-regulatory-status-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/authorization-case-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AuthorizationCaseType",
+      "title" : "Tipo de Processo de Autorização",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-case-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-regulated-authorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/authorization-status-reason-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AuthorizationStatusReason",
+      "title" : "Motivo do Status da Autorização",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-status-reason"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/biological-genus-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "BiologicalGenus",
+      "title" : "Gênero Biológico",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-genus"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/biological-species-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "BiologicalSpecies",
+      "title" : "Espécie Biológica",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-species"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/brazilian-government-systems",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "BrazilianGovernmentSystems",
+      "title" : "Sistemas Oficiais do Governo Brasileiro",
+      "description" : "Sistemas de identificação oficiais do governo brasileiro utilizados no BRIG",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-government-systems"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/brazilian-pharmaceutical-terminology",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "BrazilianPharmaceuticalTerminology",
+      "title" : "Terminologia Farmacêutica Brasileira",
+      "description" : "Terminologia padronizada para uso farmacêutico no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/brazilian-pharmaceutical-terminology"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-brazilian-terminology-standards.html" : "Padrões de Terminologia Brasileira"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/change-severity-level",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ChangeSeverityLevel",
+      "title" : "Níveis de Severidade de Mudança",
+      "description" : "Níveis de severidade para classificação de mudanças em identificadores",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/change-severity-level"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-identifier-lifecycle-rules.html" : "Regras de Lifecycle de Identificadores"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-category-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ClinicalUseCategoryBRValueSet",
+      "title" : "Categorias de Uso Clínico - Brasil",
+      "description" : "ValueSet de categorias específicas brasileiras para uso clínico incluindo programas governamentais.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-definition-category-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ClinicalUseDefinitionCategory",
+      "title" : "Categoria de Definição de Uso Clínico",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-definition-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ClinicalUseDefinitionType",
+      "title" : "Tipo de Definição de Uso Clínico",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ClinicalUseStatusBRValueSet",
+      "title" : "Status de Uso Clínico - Brasil",
+      "description" : "ValueSet dos status das definições de uso clínico para o contexto brasileiro.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ClinicalUseTypeBRValueSet",
+      "title" : "Tipos de Uso Clínico - Brasil",
+      "description" : "ValueSet dos tipos de definição de uso clínico para o contexto brasileiro.",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/combined-pharmaceutical-dose-form",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "CombinedPharmaceuticalDoseForm",
+      "title" : "Formas Farmacêuticas Combinadas",
+      "description" : "Formas farmacêuticas para produtos como um todo, considerando todas as partes individuais, mas antes de qualquer mistura. Diferente de administrable-dose-form, este ValueSet contempla produtos complexos e combinados.",
+      "systems" : ["http://standardterms.edqm.eu"],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/comorbidity-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ComorbidityBRValueSet",
+      "title" : "Comorbidades - Brasil",
+      "description" : "ValueSet de comorbidades relevantes para indicações e contraindicações no contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/concentration-unit",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ConcentrationUnit",
+      "title" : "Unidades de Concentração",
+      "description" : "Unidades de concentração usando códigos UCUM (Unified Code for Units of Measure)",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-IngredientBR.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/container-materials-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ContainerMaterialsBR",
+      "title" : "Materiais de Container - Brasil",
+      "description" : "Materiais padronizados para containers de embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-materials-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-package-component-details.html" : "Detalhes de Componentes da Embalagem",
+      "StructureDefinition-package-item-container-details.html" : "Detalhes de Container do Item da Embalagem"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/container-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ContainerTypeBR",
+      "title" : "Tipos de Container - Brasil",
+      "description" : "Tipos de containers padronizados para embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/container-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-package-item-container-details.html" : "Detalhes de Container do Item da Embalagem"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/contraindication-condition-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ContraindicationConditionBRValueSet",
+      "title" : "Condições de Contraindicação - Brasil",
+      "description" : "ValueSet de condições médicas que constituem contraindicações no contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/controlled-substance-category-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ControlledSubstanceCategoryBR",
+      "title" : "Categorias de Substâncias Controladas - Brasil",
+      "description" : "Categorias de controle de substâncias conforme Portaria SVS/MS n° 344/1998",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/controlled-substance-category-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/country-valueset",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "CountryValueSet",
+      "title" : "Países (ISO 3166-1)",
+      "description" : "Códigos de países conforme padrão ISO 3166-1 alfa-2. Usado para indicar país de uso, fabricação ou jurisdição.",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/dcb-brasileiras",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "DCBBrasileiras",
+      "title" : "Denominações Comuns Brasileiras (DCB)",
+      "description" : "Denominações Comuns Brasileiras padronizadas pela ANVISA para substâncias ativas",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/dcb-brasileiras"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/disease-status-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "DiseaseStatus",
+      "title" : "Status da Doença",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/disease-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/disease-symptom-procedure",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "DiseaseSymptomProcedure",
+      "title" : "Doença, Sintoma ou Procedimento",
+      "description" : "Condições médicas usando CID-10, MedDRA e opcionalmente SNOMED CT",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icd-10",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2",
+        "http://www.meddra.org",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/exemplo-valueset-brasileiro",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ExemploValueSetBrasileiro",
+      "title" : "Exemplo de ValueSet Brasileiro",
+      "description" : "ValueSet de exemplo com terminologia farmacêutica brasileira padronizada conforme contexto regulatório nacional",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/exemplo-brasileiro"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/gmp-certification-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "GMPCertificationStatusBR",
+      "title" : "Status de Certificação GMP - Brasil",
+      "description" : "Status de certificação de Boas Práticas de Fabricação",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gmp-certification-status-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/identifier-change-reason",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "IdentifierChangeReason",
+      "title" : "Motivos de Mudança de Identificador",
+      "description" : "Motivos padronizados para mudanças que requerem novos identificadores MPID/PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-identifier-lifecycle-rules.html" : "Regras de Lifecycle de Identificadores"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/identifier-lifecycle-status",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "IdentifierLifecycleStatus",
+      "title" : "Status de Lifecycle do Identificador",
+      "description" : "Status do ciclo de vida de identificadores MPID/PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-lifecycle-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-identifier-lifecycle-status.html" : "Status de Lifecycle do Identificador"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/ingredient-function",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "IngredientFunction",
+      "title" : "Funções de Ingredientes",
+      "description" : "Funções específicas detalhadas de ingredientes em medicamentos (padrão internacional)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-function"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-manufactured-item-definition-br.html" : "Item Manufaturado - Brasil",
+      "StructureDefinition-IngredientBR.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/ingredient-role",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "IngredientRole",
+      "title" : "Papéis de Ingredientes",
+      "description" : "Papéis/funções de ingredientes em medicamentos (padrão internacional)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/ingredient-role"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil",
+      "StructureDefinition-IngredientBR.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interactant",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "Interactant",
+      "title" : "Substância Interagente",
+      "description" : "Substâncias que podem causar interações usando MedDRA e ATC",
+      "systems" : ["http://www.meddra.org", "http://www.whocc.no/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-effect-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "InteractionEffectBRValueSet",
+      "title" : "Efeitos de Interação - Brasil",
+      "description" : "ValueSet dos efeitos clínicos de interações medicamentosas no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-effect-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionEffect",
+      "title" : "Efeito da Interação",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-effect"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-incidence-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionIncidence",
+      "title" : "Incidência de Interação",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-incidence"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-management-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionManagement",
+      "title" : "Manejo de Interação",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-management"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-substance-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "InteractionSubstanceBRValueSet",
+      "title" : "Substâncias para Interação - Brasil",
+      "description" : "ValueSet de substâncias comuns que causam interações medicamentosas no contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "InteractionTypeBRValueSet",
+      "title" : "Tipos de Interação - Brasil",
+      "description" : "ValueSet dos tipos de interação medicamentosa para o contexto brasileiro.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/interaction-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionType",
+      "title" : "Tipo de Interação",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/jurisdiction-valueset",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "JurisdictionValueSet",
+      "title" : "Jurisdições (ISO 3166 + UN M49)",
+      "description" : "Códigos para países, subdivisões de países e regiões supranacionais. Combina ISO 3166 (países) com UN M49 (regiões geográficas).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-regulated-authorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-packaged-product-definition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/language-valueset",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "LanguageValueSet",
+      "title" : "Idiomas (BCP-47)",
+      "description" : "Códigos de idiomas conforme IETF BCP-47 (RFC 5646). Inclui códigos de idiomas principais e variantes regionais.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/legal-status-supply-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "LegalStatusSupplyBR",
+      "title" : "Status Legal de Fornecimento - Brasil",
+      "description" : "Status legal para dispensação de produtos medicinais no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-packaged-product-definition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufactured-dose-form",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ManufacturedDoseForm",
+      "title" : "Forma Farmacêutica Manufaturada",
+      "description" : "Formas farmacêuticas manufaturadas usando códigos EDQM Standard Terms",
+      "systems" : ["http://standardterms.edqm.eu"],
+      "uses" : {
+      },
+      "StructureDefinition-manufactured-item-definition-br.html" : "Item Manufaturado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufactured-item-component-location-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ManufacturedItemComponentLocation",
+      "title" : "Localização de Componente",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-manufactured-item-definition-br.html" : "Item Manufaturado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufactured-item-component-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ManufacturedItemComponentType",
+      "title" : "Tipo de Componente",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-manufactured-item-definition-br.html" : "Item Manufaturado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/manufacturing-process-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ManufacturingProcess",
+      "title" : "Processo de Manufatura",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufacturing-process"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/marketing-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "MarketingStatusBR",
+      "title" : "Status de Comercialização - Brasil",
+      "description" : "Status de comercialização de produtos medicinais no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-classification-atc",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "MedicinalProductClassificationATC",
+      "title" : "Classificação de Produto Medicinal (WHO ATC)",
+      "description" : "Sistema de classificação ATC da OMS usado para categorizar produtos medicinais por classe terapêutica, farmacológica e química.",
+      "systems" : ["http://www.whocc.no/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil",
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-code-atc",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "MedicinalProductCodeATC",
+      "title" : "Códigos de Produto Medicinal (WHO ATC)",
+      "description" : "Códigos da Classificação Anatômica Terapêutica Química (ATC) da OMS para produtos medicinais e substâncias farmacêuticas.",
+      "systems" : ["http://www.whocc.no/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-domain-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "MedicinalProductDomain",
+      "title" : "Domínio de Produto Medicinal",
+      "description" : "Domínio aplicável para o produto medicinal",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-domain"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil",
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/medicinal-product-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "MedicinalProductTypeBR",
+      "title" : "Tipos de Produto Medicinal - Brasil",
+      "description" : "Tipos de produtos medicinais conforme classificação brasileira/ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/mpid-defining-elements",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "MPIDDefiningElements",
+      "title" : "Elementos Definidores de MPID",
+      "description" : "Elementos que, quando alterados, requerem geração de novo MPID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-defining-elements"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/mpid-requiring-changes",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "MPIDRequiringChanges",
+      "title" : "Mudanças que Requerem Novo MPID",
+      "description" : "Tipos de mudanças que requerem geração de novo MPID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/mpid-values-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "MPIDValues",
+      "title" : "Valores MPID - Brasil",
+      "description" : "Valores válidos para identificadores MPID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid-br"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/optical-activity-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "OpticalActivity",
+      "title" : "Atividade Óptica",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organism-part-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "OrganismPart",
+      "title" : "Parte do Organismo",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organism-part"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-anvisa-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationANVISAStatusBR",
+      "title" : "Status ANVISA da Organização - Brasil",
+      "description" : "Status da organização junto à ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-anvisa-status-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-contact-purpose",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationContactPurpose",
+      "title" : "Finalidades de Contato Organizacional",
+      "description" : "Finalidades específicas de contatos organizacionais (padrão internacional)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-operational-category-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationOperationalCategoryBR",
+      "title" : "Categorias Operacionais de Organização - Brasil",
+      "description" : "Categorias operacionais de organizações no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-category-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-operational-scope-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationOperationalScopeBR",
+      "title" : "Escopo Operacional de Organização - Brasil",
+      "description" : "Escopo geográfico de operação de organizações",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-operational-scope-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-size-category-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationSizeCategoryBR",
+      "title" : "Categorias de Porte de Organização - Brasil",
+      "description" : "Categorias de porte de organizações conforme legislação brasileira",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-size-category-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-special-classification-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationSpecialClassificationBR",
+      "title" : "Classificações Especiais de Organização - Brasil",
+      "description" : "Classificações especiais de organizações conforme legislação brasileira",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-special-classification-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-specialized-activities-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationSpecializedActivitiesBR",
+      "title" : "Atividades Especializadas de Organização - Brasil",
+      "description" : "Atividades especializadas realizadas por organizações",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-specialized-activities-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/organization-type-anvisa-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "OrganizationTypeANVISABR",
+      "title" : "Tipos de Organização ANVISA - Brasil",
+      "description" : "Tipos de organizações no contexto regulatório da ANVISA baseado em classificações oficiais brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-type-anvisa-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/package-characteristic-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PackageCharacteristicBR",
+      "title" : "Características de Embalagem - Brasil",
+      "description" : "Características especiais de embalagens farmacêuticas no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-characteristic-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-packaged-product-definition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/package-components-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PackageComponentsBR",
+      "title" : "Componentes de Embalagem - Brasil",
+      "description" : "Componentes padronizados para embalagens brasileiras",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-components-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-package-component-details.html" : "Detalhes de Componentes da Embalagem"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/packaged-product-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PackagedProductTypeBR",
+      "title" : "Tipos de Produto Embalado - Brasil",
+      "description" : "Tipos de produtos embalados utilizados no contexto regulatório brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaged-product-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-packaged-product-definition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/packaging-material",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PackagingMaterial",
+      "title" : "Materiais de Embalagem",
+      "description" : "Materiais utilizados em embalagens farmacêuticas (padrão internacional)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-material"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-packaged-product-definition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/packaging-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PackagingTypeBR",
+      "title" : "Tipos de Embalagem - Brasil",
+      "description" : "Tipos de embalagem utilizados para produtos farmacêuticos no Brasil",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/packaging-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-packaged-product-definition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/pcid-requiring-changes",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PCIDRequiringChanges",
+      "title" : "Mudanças que Requerem Novo PCID",
+      "description" : "Tipos de mudanças que requerem geração de novo PCID",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/identifier-change-reason"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/pcid-values-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PCIDValues",
+      "title" : "Valores PCID - Brasil",
+      "description" : "Valores válidos para identificadores PCID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/pcid-br"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/pediatric-use-indicator-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "PediatricUseIndicator",
+      "title" : "Indicador de Uso Pediátrico",
+      "description" : "Indicadores de uso pediátrico para produtos medicinais",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/pediatric-use-indicator"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/phpid-values-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PHPIDValues",
+      "title" : "Valores PHPID - Brasil",
+      "description" : "Valores válidos para identificadores PHPID brasileiros",
+      "systems" : ["http://farmaco.maxapex.net/brig/fhir/CodeSystem/phpid-br"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/presentation-unit",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "PresentationUnit",
+      "title" : "Unidades de Apresentação",
+      "description" : "Unidades de apresentação usando códigos UCUM (Unified Code for Units of Measure)",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-IngredientBR.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-characteristic-hybrid",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductCharacteristicHybrid",
+      "title" : "Características de Produto (Brasil + MedDRA)",
+      "description" : "ValueSet híbrido que combina CodeSystem brasileiro de características de produto com terminologia MedDRA relevante",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic",
+        "http://www.meddra.org"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-characteristic-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductCharacteristic",
+      "title" : "Características de Produto Medicinal",
+      "description" : "Características observáveis de produtos medicinais. Alternativa brasileira ao SNOMED CT Observable Entity.",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-manufactured-item-definition-br.html" : "Item Manufaturado - Brasil",
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil",
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-confidentiality-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductConfidentiality",
+      "title" : "Confidencialidade de Produto Medicinal",
+      "description" : "Classificação de confidencialidade para produtos medicinais",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-confidentiality"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-contact-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductContactType",
+      "title" : "Tipos de Contato para Produto Medicinal",
+      "description" : "Tipos de contato organizacional para produtos medicinais",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-contact-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-intended-use-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductIntendedUse",
+      "title" : "Uso Pretendido do Produto",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-intended-use"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/product-name-type",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ProductNameType",
+      "title" : "Tipos de Nome de Produto",
+      "description" : "Tipos de nomes para produtos medicinais (padrão internacional)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/publication-status",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "Status de Publicação",
+      "description" : "Status do ciclo de vida de publicação de um recurso FHIR. Este ValueSet referencia diretamente o CodeSystem oficial do FHIR R5.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "uses" : {
+      },
+      "StructureDefinition-manufactured-item-definition-br.html" : "Item Manufaturado - Brasil",
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil",
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil",
+      "StructureDefinition-regulated-authorization-br.html" : "Autorização Regulatória - Brasil",
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-IngredientBR.html" : "Ingrediente - Brasil",
+      "StructureDefinition-packaged-product-definition-br.html" : "Definição de Produto Embalado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/reference-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "ReferenceTypeBR",
+      "title" : "Tipos de Referência - Brasil",
+      "description" : "Tipos de relação de referência entre produtos medicinais",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/reference-type-br"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/route-administration",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "RouteAdministration",
+      "title" : "Vias de Administração",
+      "description" : "Vias de administração usando códigos EDQM Standard Terms",
+      "systems" : ["http://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/route-administration-hybrid",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "RouteAdministrationHybrid",
+      "title" : "Vias de Administração (EDQM + MedDRA)",
+      "description" : "ValueSet híbrido para vias de administração que combina códigos EDQM Standard Terms (padrão internacional IDMP) com códigos MedDRA. Fornece alternativa ao SNOMED CT Route Codes para contexto brasileiro.",
+      "systems" : ["http://standardterms.edqm.eu", "http://www.meddra.org"],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/source-material-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SourceMaterialType",
+      "title" : "Tipo de Material de Origem",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/source-material-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/special-measures-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SpecialMeasures",
+      "title" : "Medidas Especiais para Produto Medicinal",
+      "description" : "Medidas especiais aplicáveis a produtos medicinais",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/special-measures"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/stereochemistry-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "Stereochemistry",
+      "title" : "Estereoquímica de Substâncias",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/stereochemistry"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/structure-representation-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "StructureRepresentationType",
+      "title" : "Tipo de Representação Estrutural",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-representation-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/structure-technique-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "StructureTechnique",
+      "title" : "Técnicas de Caracterização Estrutural",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-technique"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/structured-name-types",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "StructuredNameTypes",
+      "title" : "Tipos de Nome Estruturado",
+      "description" : "Tipos de elementos estruturados que podem compor um nome de produto",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/structured-name-types"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-amount-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceAmountType",
+      "title" : "Tipo de Quantidade de Substância",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-classification-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "SubstanceClassificationBR",
+      "title" : "Classificação de Substância - Brasil",
+      "description" : "Classificação de substâncias no contexto brasileiro/ANVISA",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-code-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "SubstanceCodeBR",
+      "title" : "Códigos de Substância - Brasil",
+      "description" : "Códigos padronizados para substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code",
+        "http://www.whocc.no/atc",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-code-meddra",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceCodeMedDRA",
+      "title" : "Códigos de Substâncias (MedDRA + ATC)",
+      "description" : "Códigos de substâncias farmacêuticas usando MedDRA (Medical Dictionary for Regulatory Activities) e WHO ATC como alternativa ao SNOMED CT (Brasil não é signatário).",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code",
+        "http://www.meddra.org",
+        "http://www.whocc.no/atc"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil",
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil",
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil",
+      "StructureDefinition-IngredientBR.html" : "Ingrediente - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-form-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceForm",
+      "title" : "Forma Física de Substâncias",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-form"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-grade",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "SubstanceGrade",
+      "title" : "Grau de Substância",
+      "description" : "Graus ou qualidades de substâncias (padrão internacional - USP/EP/JP)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-impurity-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceImpurity",
+      "title" : "Impurezas de Substâncias Farmacêuticas",
+      "description" : "Tipos de impurezas em substâncias farmacêuticas. Alternativa brasileira ao SNOMED CT.",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-medicinal-product-definition-br.html" : "Definição de Produto Medicinal - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-name-authority-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceNameAuthority",
+      "title" : "Autoridade de Nomenclatura",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-authority"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-name-domain-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceNameDomain",
+      "title" : "Domínio de Nome de Substância",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-domain"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-name-type",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "SubstanceNameType",
+      "title" : "Tipos de Nome de Substância",
+      "description" : "Tipos de nomes para substâncias (padrão internacional - INN/IUPAC)",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-relationship-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceRelationshipType",
+      "title" : "Tipo de Relacionamento entre Substâncias",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-relationship-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "SubstanceStatusBR",
+      "title" : "Status de Substância - Brasil",
+      "description" : "Status regulatório de substâncias no contexto brasileiro",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/target-species-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "TargetSpecies",
+      "title" : "Espécies-Alvo para Produtos Veterinários",
+      "description" : "Espécies animais para produtos medicinais veterinários",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/target-species"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-administrable-product-definition-br.html" : "Definição de Produto Administrável - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapeutic-indication-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "TherapeuticIndicationBRValueSet",
+      "title" : "Indicações Terapêuticas - Brasil",
+      "description" : "ValueSet de indicações terapêuticas baseado em CID-10 e SNOMED-CT para o contexto brasileiro.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-regulated-authorization-br.html" : "Autorização Regulatória - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapeutic-indications-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "TherapeuticIndicationsBR",
+      "title" : "Indicações Terapêuticas - Brasil",
+      "description" : "Indicações terapêuticas padronizadas para produtos medicinais brasileiros",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/therapeutic-indications-br"
+      ]
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapy",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "Therapy",
+      "title" : "Terapia",
+      "description" : "Tipos de terapia usando MedDRA e ATC",
+      "systems" : ["http://www.meddra.org", "http://www.whocc.no/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/therapy-relationship-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "TherapyRelationshipType",
+      "title" : "Tipo de Relacionamento Terapêutico",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/umc-coordination-status",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "UMCCoordinationStatus",
+      "title" : "Status de Coordenação UMC",
+      "description" : "Status do processo de coordenação com Uppsala Monitoring Centre",
+      "systems" : [
+        "http://farmaco.maxapex.net/brig/fhir/CodeSystem/umc-coordination-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-umc-integration-mapping.html" : "UMC Integration Mapping"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/undesirable-effect-classification-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "UndesirableEffectClassification",
+      "title" : "Classificação de Efeito Indesejável",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-classification"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/undesirable-effect-frequency-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "UndesirableEffectFrequency",
+      "title" : "Frequência de Efeito Indesejável",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-frequency"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/undesirable-effect-symptom",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "UndesirableEffectSymptom",
+      "title" : "Sintoma de Efeito Indesejável",
+      "description" : "Sintomas e condições de efeitos indesejáveis usando MedDRA",
+      "systems" : ["http://www.meddra.org"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/unit-of-presentation",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "UnitOfPresentation",
+      "title" : "Unidade de Apresentação",
+      "description" : "Unidades de apresentação usando códigos EDQM Standard Terms",
+      "systems" : ["http://standardterms.edqm.eu"],
+      "uses" : {
+      },
+      "StructureDefinition-manufactured-item-definition-br.html" : "Item Manufaturado - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/warning-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "WarningType",
+      "title" : "Tipo de Advertência",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/warning-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-use-definition-br.html" : "Definição de Uso Clínico - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/weight-method-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "WeightMethod",
+      "title" : "Método de Determinação de Peso Molecular",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/weight-type-vs",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "WeightType",
+      "title" : "Tipo de Peso Molecular",
+      "description" : "",
+      "systems" : [
+        "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-substance-definition-br.html" : "Definição de Substância - Brasil"
+    }
+  ]
+}

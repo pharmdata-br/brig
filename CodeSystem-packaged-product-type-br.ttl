@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaged-product-type-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "packaged-product-type-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem packaged-product-type-br</b></p><a name=\"packaged-product-type-br\"> </a><a name=\"hcpackaged-product-type-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">medicamento<a name=\"packaged-product-type-br-medicamento\"> </a></td><td>Medicamento Embalado</td><td>Produto medicinal em embalagem comercial para dispensação</td></tr><tr><td style=\"white-space:nowrap\">medicamento-hospitalar<a name=\"packaged-product-type-br-medicamento-hospitalar\"> </a></td><td>Medicamento Hospitalar</td><td>Produto medicinal em embalagem para uso hospitalar</td></tr><tr><td style=\"white-space:nowrap\">medicamento-controlado<a name=\"packaged-product-type-br-medicamento-controlado\"> </a></td><td>Medicamento Controlado</td><td>Produto medicinal controlado em embalagem específica com requisitos especiais</td></tr><tr><td style=\"white-space:nowrap\">medicamento-generico<a name=\"packaged-product-type-br-medicamento-generico\"> </a></td><td>Medicamento Genérico</td><td>Medicamento genérico em embalagem comercial</td></tr><tr><td style=\"white-space:nowrap\">medicamento-similar<a name=\"packaged-product-type-br-medicamento-similar\"> </a></td><td>Medicamento Similar</td><td>Medicamento similar em embalagem comercial</td></tr><tr><td style=\"white-space:nowrap\">medicamento-referencia<a name=\"packaged-product-type-br-medicamento-referencia\"> </a></td><td>Medicamento de Referência</td><td>Medicamento de referência (inovador) em embalagem comercial</td></tr><tr><td style=\"white-space:nowrap\">fitoterapico<a name=\"packaged-product-type-br-fitoterapico\"> </a></td><td>Fitoterápico</td><td>Produto fitoterápico em embalagem comercial</td></tr><tr><td style=\"white-space:nowrap\">homeopatico<a name=\"packaged-product-type-br-homeopatico\"> </a></td><td>Homeopático</td><td>Produto homeopático em embalagem comercial</td></tr><tr><td style=\"white-space:nowrap\">cosmetico<a name=\"packaged-product-type-br-cosmetico\"> </a></td><td>Cosmético</td><td>Produto cosmético em embalagem comercial</td></tr><tr><td style=\"white-space:nowrap\">saneante<a name=\"packaged-product-type-br-saneante\"> </a></td><td>Saneante</td><td>Produto saneante em embalagem comercial</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaged-product-type-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/packaged-product-type-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "PackagedProductTypeBR"] ; # 
+  fhir:title [ fhir:v "Tipos de Produto Embalado - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para tipos de produtos embalados no Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "medicamento" ] ;
+     fhir:display [ fhir:v "Medicamento Embalado" ] ;
+     fhir:definition [ fhir:v "Produto medicinal em embalagem comercial para dispensação" ]
+  ] [
+     fhir:code [ fhir:v "medicamento-hospitalar" ] ;
+     fhir:display [ fhir:v "Medicamento Hospitalar" ] ;
+     fhir:definition [ fhir:v "Produto medicinal em embalagem para uso hospitalar" ]
+  ] [
+     fhir:code [ fhir:v "medicamento-controlado" ] ;
+     fhir:display [ fhir:v "Medicamento Controlado" ] ;
+     fhir:definition [ fhir:v "Produto medicinal controlado em embalagem específica com requisitos especiais" ]
+  ] [
+     fhir:code [ fhir:v "medicamento-generico" ] ;
+     fhir:display [ fhir:v "Medicamento Genérico" ] ;
+     fhir:definition [ fhir:v "Medicamento genérico em embalagem comercial" ]
+  ] [
+     fhir:code [ fhir:v "medicamento-similar" ] ;
+     fhir:display [ fhir:v "Medicamento Similar" ] ;
+     fhir:definition [ fhir:v "Medicamento similar em embalagem comercial" ]
+  ] [
+     fhir:code [ fhir:v "medicamento-referencia" ] ;
+     fhir:display [ fhir:v "Medicamento de Referência" ] ;
+     fhir:definition [ fhir:v "Medicamento de referência (inovador) em embalagem comercial" ]
+  ] [
+     fhir:code [ fhir:v "fitoterapico" ] ;
+     fhir:display [ fhir:v "Fitoterápico" ] ;
+     fhir:definition [ fhir:v "Produto fitoterápico em embalagem comercial" ]
+  ] [
+     fhir:code [ fhir:v "homeopatico" ] ;
+     fhir:display [ fhir:v "Homeopático" ] ;
+     fhir:definition [ fhir:v "Produto homeopático em embalagem comercial" ]
+  ] [
+     fhir:code [ fhir:v "cosmetico" ] ;
+     fhir:display [ fhir:v "Cosmético" ] ;
+     fhir:definition [ fhir:v "Produto cosmético em embalagem comercial" ]
+  ] [
+     fhir:code [ fhir:v "saneante" ] ;
+     fhir:display [ fhir:v "Saneante" ] ;
+     fhir:definition [ fhir:v "Produto saneante em embalagem comercial" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

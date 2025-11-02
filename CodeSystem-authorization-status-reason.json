@@ -1,0 +1,119 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "authorization-status-reason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem authorization-status-reason</b></p><a name=\"authorization-status-reason\"> </a><a name=\"hcauthorization-status-reason\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">approved<a name=\"authorization-status-reason-approved\"> </a></td><td>Aprovado</td><td>Autorização aprovada após análise técnica</td></tr><tr><td style=\"white-space:nowrap\">pending-documentation<a name=\"authorization-status-reason-pending-documentation\"> </a></td><td>Documentação Pendente</td><td>Aguardando documentação complementar</td></tr><tr><td style=\"white-space:nowrap\">under-review<a name=\"authorization-status-reason-under-review\"> </a></td><td>Em Análise</td><td>Processo em análise técnica</td></tr><tr><td style=\"white-space:nowrap\">safety-concerns<a name=\"authorization-status-reason-safety-concerns\"> </a></td><td>Questões de Segurança</td><td>Suspensão ou negação por questões de segurança</td></tr><tr><td style=\"white-space:nowrap\">efficacy-concerns<a name=\"authorization-status-reason-efficacy-concerns\"> </a></td><td>Questões de Eficácia</td><td>Suspensão ou negação por questões de eficácia</td></tr><tr><td style=\"white-space:nowrap\">quality-concerns<a name=\"authorization-status-reason-quality-concerns\"> </a></td><td>Questões de Qualidade</td><td>Suspensão ou negação por questões de qualidade</td></tr><tr><td style=\"white-space:nowrap\">expired<a name=\"authorization-status-reason-expired\"> </a></td><td>Vencida</td><td>Autorização expirada por fim de vigência</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"authorization-status-reason-withdrawn\"> </a></td><td>Retirada pelo Titular</td><td>Retirada voluntária pelo titular</td></tr><tr><td style=\"white-space:nowrap\">revoked-safety<a name=\"authorization-status-reason-revoked-safety\"> </a></td><td>Revogada por Segurança</td><td>Revogação por questões de segurança pós-comercialização</td></tr><tr><td style=\"white-space:nowrap\">non-compliance<a name=\"authorization-status-reason-non-compliance\"> </a></td><td>Não Conformidade</td><td>Suspensão ou revogação por não conformidade regulatória</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-status-reason",
+  "version" : "0.0.3",
+  "name" : "AuthorizationStatusReason",
+  "title" : "Motivo do Status da Autorização",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-30",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Motivos para o status atual de uma autorização regulatória",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "approved",
+    "display" : "Aprovado",
+    "definition" : "Autorização aprovada após análise técnica"
+  },
+  {
+    "code" : "pending-documentation",
+    "display" : "Documentação Pendente",
+    "definition" : "Aguardando documentação complementar"
+  },
+  {
+    "code" : "under-review",
+    "display" : "Em Análise",
+    "definition" : "Processo em análise técnica"
+  },
+  {
+    "code" : "safety-concerns",
+    "display" : "Questões de Segurança",
+    "definition" : "Suspensão ou negação por questões de segurança"
+  },
+  {
+    "code" : "efficacy-concerns",
+    "display" : "Questões de Eficácia",
+    "definition" : "Suspensão ou negação por questões de eficácia"
+  },
+  {
+    "code" : "quality-concerns",
+    "display" : "Questões de Qualidade",
+    "definition" : "Suspensão ou negação por questões de qualidade"
+  },
+  {
+    "code" : "expired",
+    "display" : "Vencida",
+    "definition" : "Autorização expirada por fim de vigência"
+  },
+  {
+    "code" : "withdrawn",
+    "display" : "Retirada pelo Titular",
+    "definition" : "Retirada voluntária pelo titular"
+  },
+  {
+    "code" : "revoked-safety",
+    "display" : "Revogada por Segurança",
+    "definition" : "Revogação por questões de segurança pós-comercialização"
+  },
+  {
+    "code" : "non-compliance",
+    "display" : "Não Conformidade",
+    "definition" : "Suspensão ou revogação por não conformidade regulatória"
+  }]
+}

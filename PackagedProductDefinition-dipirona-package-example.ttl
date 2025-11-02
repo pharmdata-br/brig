@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/PackagedProductDefinition/dipirona-package-example> a fhir:PackagedProductDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dipirona-package-example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: PackagedProductDefinition dipirona-package-example</b></p><a name=\"dipirona-package-example\"> </a><a name=\"hcdipirona-package-example\"> </a><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-id-br</code>/BRIG-PKG-DIP-500</p><p><b>name</b>: Dipirona 500mg - Caixa com 20 comprimidos</p><p><b>type</b>: <span title=\"Códigos:{http://hl7.org/fhir/packaging-type Box}\">Box</span></p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-dipirona-500mg-example.html\">MedicinalProductDefinition: identifier = http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid#BRIG-MPID-DIP-500,http://www.anvisa.gov.br/registro#100000000001; type = Medicamento; domain = Human use; status = Active; combinedPharmaceuticalDoseForm = Tablet; route = Oral; legalStatusOfSupply = Prescrição Médica; classification = metamizole sodium</a></p><p><b>status</b>: <span title=\"Códigos:{http://hl7.org/fhir/publication-status active}\">Active</span></p><h3>Packagings</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://hl7.org/fhir/packaging-type Blister}\">Blister</span></td><td>20</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-id-br"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/package-id-br>
+     ] ;
+     fhir:value [ fhir:v "BRIG-PKG-DIP-500" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Dipirona 500mg - Caixa com 20 comprimidos"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/packaging-type"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/packaging-type>
+       ] ;
+       fhir:code [ fhir:v "Box" ]
+     ] )
+  ] ; # 
+  fhir:packageFor ( [
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/MedicinalProductDefinition/dipirona-500mg-example> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/dipirona-500mg-example" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/publication-status"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/publication-status>
+       ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/packaging-type"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/packaging-type>
+         ] ;
+         fhir:code [ fhir:v "Blister" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v 20 ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

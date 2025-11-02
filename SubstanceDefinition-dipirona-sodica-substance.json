@@ -1,0 +1,109 @@
+{
+  "resourceType" : "SubstanceDefinition",
+  "id" : "dipirona-sodica-substance",
+  "meta" : {
+    "lastUpdated" : "2025-08-02T10:00:00Z",
+    "profile" : ["https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br",
+    "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Dipirona Sódica</h2><p><strong>DCB:</strong> 02532</p><p><strong>CAS:</strong> 68-89-3</p><p><strong>Código ANVISA:</strong> SUB002</p><p><strong>Classificação:</strong> Substância Ativa</p><p><strong>Status:</strong> Aprovada pela ANVISA</p><p><strong>Grau:</strong> Farmacêutico</p><p><strong>Fórmula Molecular:</strong> C13H16N3NaO4S</p><p><strong>Peso Molecular:</strong> 351.34 g/mol</p><p><strong>Ponto de Fusão:</strong> 215°C</p><p><strong>Descrição:</strong> Analgésico e antipirético derivado da pirazolona</p><p><strong>Código ATC:</strong> N02BB02</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/NamingSystem/dcb",
+    "value" : "02532"
+  },
+  {
+    "system" : "urn:oid:2.16.840.1.113883.6.61",
+    "value" : "68-89-3"
+  }],
+  "status" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br",
+      "code" : "active"
+    }]
+  },
+  "classification" : [{
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br",
+      "code" : "active"
+    }]
+  }],
+  "domain" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medicinalproduct-domain",
+      "code" : "Human"
+    }]
+  },
+  "grade" : [{
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade",
+      "code" : "pharmaceutical"
+    }]
+  }],
+  "description" : "A dipirona sódica é um fármaco analgésico e antipirético, derivado da pirazolona, amplamente utilizado no Brasil para o tratamento da dor e febre.",
+  "manufacturer" : [{
+    "reference" : "OrganizationANVISASimple/neo-quimica-brasil"
+  }],
+  "supplier" : [{
+    "reference" : "OrganizationANVISASimple/distribuidora-farmaceutica-br"
+  }],
+  "property" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/substance-property-type",
+        "code" : "MolecularWeight"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 351.34,
+      "unit" : "grams per mole",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "g/mol"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/substance-property-type",
+        "code" : "MeltingPoint"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 215,
+      "unit" : "degree Celsius",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "Cel"
+    }
+  }],
+  "structure" : {
+    "representation" : [{
+      "representation" : "C13H16N3NaO4S",
+      "format" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/substance-representation-format",
+          "code" : "SMILES"
+        }]
+      }
+    }]
+  },
+  "name" : [{
+    "name" : "Dipirona Sódica",
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type",
+        "code" : "official"
+      }]
+    }
+  },
+  {
+    "name" : "Metamizol Sódico",
+    "type" : {
+      "coding" : [{
+        "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type",
+        "code" : "common"
+      }]
+    }
+  }]
+}

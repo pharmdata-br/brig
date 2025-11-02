@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="therapeutic-indications-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem therapeutic-indications-br</b></p><a name="therapeutic-indications-br"> </a><a name="hctherapeutic-indications-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">analgesic<a name="therapeutic-indications-br-analgesic"> </a></td><td>Analgésico</td><td>Tratamento da dor</td></tr><tr><td style="white-space:nowrap">antipyretic<a name="therapeutic-indications-br-antipyretic"> </a></td><td>Antitérmico</td><td>Redução da febre</td></tr><tr><td style="white-space:nowrap">anti-inflammatory<a name="therapeutic-indications-br-anti-inflammatory"> </a></td><td>Anti-inflamatório</td><td>Tratamento de processos inflamatórios</td></tr><tr><td style="white-space:nowrap">sedative<a name="therapeutic-indications-br-sedative"> </a></td><td>Sedativo</td><td>Sedação e tranquilização</td></tr><tr><td style="white-space:nowrap">anxiolytic<a name="therapeutic-indications-br-anxiolytic"> </a></td><td>Ansiolítico</td><td>Tratamento da ansiedade</td></tr><tr><td style="white-space:nowrap">antibiotic<a name="therapeutic-indications-br-antibiotic"> </a></td><td>Antibiótico</td><td>Tratamento de infecções bacterianas</td></tr><tr><td style="white-space:nowrap">antiviral<a name="therapeutic-indications-br-antiviral"> </a></td><td>Antiviral</td><td>Tratamento de infecções virais</td></tr><tr><td style="white-space:nowrap">antifungal<a name="therapeutic-indications-br-antifungal"> </a></td><td>Antifúngico</td><td>Tratamento de infecções fúngicas</td></tr><tr><td style="white-space:nowrap">antihistamine<a name="therapeutic-indications-br-antihistamine"> </a></td><td>Anti-histamínico</td><td>Tratamento de reações alérgicas</td></tr><tr><td style="white-space:nowrap">bronchodilator<a name="therapeutic-indications-br-bronchodilator"> </a></td><td>Broncodilatador</td><td>Tratamento de broncoespasmo</td></tr><tr><td style="white-space:nowrap">antihypertensive<a name="therapeutic-indications-br-antihypertensive"> </a></td><td>Anti-hipertensivo</td><td>Tratamento da hipertensão arterial</td></tr><tr><td style="white-space:nowrap">diuretic<a name="therapeutic-indications-br-diuretic"> </a></td><td>Diurético</td><td>Aumento da diurese</td></tr><tr><td style="white-space:nowrap">cardiotonic<a name="therapeutic-indications-br-cardiotonic"> </a></td><td>Cardiotônico</td><td>Fortalecimento da contração cardíaca</td></tr><tr><td style="white-space:nowrap">anticoagulant<a name="therapeutic-indications-br-anticoagulant"> </a></td><td>Anticoagulante</td><td>Prevenção da coagulação sanguínea</td></tr><tr><td style="white-space:nowrap">hypoglycemic<a name="therapeutic-indications-br-hypoglycemic"> </a></td><td>Hipoglicemiante</td><td>Redução da glicemia</td></tr><tr><td style="white-space:nowrap">hormone-replacement<a name="therapeutic-indications-br-hormone-replacement"> </a></td><td>Reposição Hormonal</td><td>Reposição de hormônios deficientes</td></tr><tr><td style="white-space:nowrap">contraceptive<a name="therapeutic-indications-br-contraceptive"> </a></td><td>Contraceptivo</td><td>Prevenção da gravidez</td></tr><tr><td style="white-space:nowrap">antineoplastic<a name="therapeutic-indications-br-antineoplastic"> </a></td><td>Antineoplásico</td><td>Tratamento de neoplasias</td></tr><tr><td style="white-space:nowrap">immunosuppressive<a name="therapeutic-indications-br-immunosuppressive"> </a></td><td>Imunossupressor</td><td>Supressão do sistema imunológico</td></tr><tr><td style="white-space:nowrap">vaccine<a name="therapeutic-indications-br-vaccine"> </a></td><td>Vacina</td><td>Imunização ativa</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapeutic-indications-br"/>
+  <version value="0.0.3"/>
+  <name value="TherapeuticIndicationsBR"/>
+  <title value="Indicações Terapêuticas - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para indicações terapêuticas de produtos medicinais brasileiros"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="20"/>
+  <concept>
+    <code value="analgesic"/>
+    <display value="Analgésico"/>
+    <definition value="Tratamento da dor"/>
+  </concept>
+  <concept>
+    <code value="antipyretic"/>
+    <display value="Antitérmico"/>
+    <definition value="Redução da febre"/>
+  </concept>
+  <concept>
+    <code value="anti-inflammatory"/>
+    <display value="Anti-inflamatório"/>
+    <definition value="Tratamento de processos inflamatórios"/>
+  </concept>
+  <concept>
+    <code value="sedative"/>
+    <display value="Sedativo"/>
+    <definition value="Sedação e tranquilização"/>
+  </concept>
+  <concept>
+    <code value="anxiolytic"/>
+    <display value="Ansiolítico"/>
+    <definition value="Tratamento da ansiedade"/>
+  </concept>
+  <concept>
+    <code value="antibiotic"/>
+    <display value="Antibiótico"/>
+    <definition value="Tratamento de infecções bacterianas"/>
+  </concept>
+  <concept>
+    <code value="antiviral"/>
+    <display value="Antiviral"/>
+    <definition value="Tratamento de infecções virais"/>
+  </concept>
+  <concept>
+    <code value="antifungal"/>
+    <display value="Antifúngico"/>
+    <definition value="Tratamento de infecções fúngicas"/>
+  </concept>
+  <concept>
+    <code value="antihistamine"/>
+    <display value="Anti-histamínico"/>
+    <definition value="Tratamento de reações alérgicas"/>
+  </concept>
+  <concept>
+    <code value="bronchodilator"/>
+    <display value="Broncodilatador"/>
+    <definition value="Tratamento de broncoespasmo"/>
+  </concept>
+  <concept>
+    <code value="antihypertensive"/>
+    <display value="Anti-hipertensivo"/>
+    <definition value="Tratamento da hipertensão arterial"/>
+  </concept>
+  <concept>
+    <code value="diuretic"/>
+    <display value="Diurético"/>
+    <definition value="Aumento da diurese"/>
+  </concept>
+  <concept>
+    <code value="cardiotonic"/>
+    <display value="Cardiotônico"/>
+    <definition value="Fortalecimento da contração cardíaca"/>
+  </concept>
+  <concept>
+    <code value="anticoagulant"/>
+    <display value="Anticoagulante"/>
+    <definition value="Prevenção da coagulação sanguínea"/>
+  </concept>
+  <concept>
+    <code value="hypoglycemic"/>
+    <display value="Hipoglicemiante"/>
+    <definition value="Redução da glicemia"/>
+  </concept>
+  <concept>
+    <code value="hormone-replacement"/>
+    <display value="Reposição Hormonal"/>
+    <definition value="Reposição de hormônios deficientes"/>
+  </concept>
+  <concept>
+    <code value="contraceptive"/>
+    <display value="Contraceptivo"/>
+    <definition value="Prevenção da gravidez"/>
+  </concept>
+  <concept>
+    <code value="antineoplastic"/>
+    <display value="Antineoplásico"/>
+    <definition value="Tratamento de neoplasias"/>
+  </concept>
+  <concept>
+    <code value="immunosuppressive"/>
+    <display value="Imunossupressor"/>
+    <definition value="Supressão do sistema imunológico"/>
+  </concept>
+  <concept>
+    <code value="vaccine"/>
+    <display value="Vacina"/>
+    <definition value="Imunização ativa"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>extension-list-multiple</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="list" data-fhir="generated">
+  <tr>
+    <td>Identity</td>
+    <td>Card.</td>
+    <td>Type</td>
+    <td>Context</td>
+    <td>WG</td>
+    <td>Status</td>
+  </tr>
+  <tr>
+    <td>
+      <input size="15" id="filter-identity" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="3" id="filter-card" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="8" id="filter-type" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="20" id="filter-context" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="3" id="filter-wg" type="text" class="filter-input"/>
+    </td>
+    <td>
+      <input size="6" id="filter-status" type="text" class="filter-input"/>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5">
+      <b>Extensions defined for the multiple data type</b>
+    </td>
+  </tr>
+  <tr class="data-row" data-change="false">
+    <td><a name="l83">​</a>
+      <a href="StructureDefinition-documentation-language.html" title="Define o idioma padrão para toda documentação BRIG - sempre português brasileiro">documentation-language</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a>
+,       <a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a>
+,       <a href="http://hl7.org/fhir/R5/codesystem.html">CodeSystem</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Draft" class="draft-flag">Draft</a>
+: FMM0
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l121">​</a>
+      <a href="StructureDefinition-identifier-lifecycle-rules.html" title="Regras e tracking para lifecycle de identificadores MPID/PCID - define quando manter vs criar novos identificadores">identifier-lifecycle-rules</a>
+    </td>
+    <td>0..*</td>
+    <td>(complex)</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">MedicinalProductDefinition</a>
+,       <a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">PackagedProductDefinition</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+  <tr style="background-color: #fffff6" class="data-row" data-change="false">
+    <td><a name="l153">​</a>
+      <a href="StructureDefinition-identifier-lifecycle-status.html" title="Status atual do identificador no seu ciclo de vida">identifier-lifecycle-status</a>
+    </td>
+    <td>0..*</td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a>
+    </td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a>
+    </td>
+    <td></td>
+    <td>
+      <a href="http://hl7.org/fhir/R5/versions.html#std-process" title="Informative" class="informative-flag">Informative</a>
+
+    </td>
+  </tr>
+</table>
+<p>5 Extensions</p>
+<script src="assets/js/table.js"> </script>
+<button onclick="clearAllFilters()" style="padding: 8px 16px; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer;">Clear All Filters</button>
+</body>
+</html>

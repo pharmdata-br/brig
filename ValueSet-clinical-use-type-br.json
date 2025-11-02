@@ -1,0 +1,95 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "clinical-use-type-br",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet clinical-use-type-br</b></p><a name=\"clinical-use-type-br\"> </a><a name=\"hcclinical-use-type-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><ul><li>Include estes códigos, tal como definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>indication</td><td>Indicação terapêutica</td></tr><tr><td>contraindication</td><td>Contraindicação</td></tr><tr><td>interaction</td><td>Interação medicamentosa</td></tr><tr><td>undesirable-effect</td><td>Efeito indesejável</td></tr><tr><td>warning</td><td>Advertência especial</td></tr><tr><td>dosage</td><td>Posologia</td></tr><tr><td>dce-sus</td><td>Critério DCE-SUS</td></tr><tr><td>rename</td><td>Critério RENAME</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-type-br",
+  "version" : "0.0.3",
+  "name" : "ClinicalUseTypeBRValueSet",
+  "title" : "Tipos de Uso Clínico - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "ValueSet dos tipos de definição de uso clínico para o contexto brasileiro.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "immutable" : false,
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-type-br",
+      "concept" : [{
+        "code" : "indication",
+        "display" : "Indicação terapêutica"
+      },
+      {
+        "code" : "contraindication",
+        "display" : "Contraindicação"
+      },
+      {
+        "code" : "interaction",
+        "display" : "Interação medicamentosa"
+      },
+      {
+        "code" : "undesirable-effect",
+        "display" : "Efeito indesejável"
+      },
+      {
+        "code" : "warning",
+        "display" : "Advertência especial"
+      },
+      {
+        "code" : "dosage",
+        "display" : "Posologia"
+      },
+      {
+        "code" : "dce-sus",
+        "display" : "Critério DCE-SUS"
+      },
+      {
+        "code" : "rename",
+        "display" : "Critério RENAME"
+      }]
+    }]
+  }
+}

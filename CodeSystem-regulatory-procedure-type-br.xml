@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="regulatory-procedure-type-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem regulatory-procedure-type-br</b></p><a name="regulatory-procedure-type-br"> </a><a name="hcregulatory-procedure-type-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">standard-procedure<a name="regulatory-procedure-type-br-standard-procedure"> </a></td><td>Procedimento Padrão</td><td>Procedimento regulatório padrão ANVISA</td></tr><tr><td style="white-space:nowrap">priority-procedure<a name="regulatory-procedure-type-br-priority-procedure"> </a></td><td>Procedimento Prioritário</td><td>Procedimento com análise prioritária</td></tr><tr><td style="white-space:nowrap">fast-track<a name="regulatory-procedure-type-br-fast-track"> </a></td><td>Via Rápida</td><td>Procedimento via rápida para medicamentos inovadores</td></tr><tr><td style="white-space:nowrap">simplified-procedure<a name="regulatory-procedure-type-br-simplified-procedure"> </a></td><td>Procedimento Simplificado</td><td>Procedimento simplificado para casos específicos</td></tr><tr><td style="white-space:nowrap">appeal-procedure<a name="regulatory-procedure-type-br-appeal-procedure"> </a></td><td>Procedimento de Recurso</td><td>Procedimento de recurso contra decisão ANVISA</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br"/>
+  <version value="0.0.3"/>
+  <name value="RegulatoryProcedureTypeBR"/>
+  <title value="Tipo de Procedimento Regulatório Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de procedimentos regulatórios ANVISA"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="standard-procedure"/>
+    <display value="Procedimento Padrão"/>
+    <definition value="Procedimento regulatório padrão ANVISA"/>
+  </concept>
+  <concept>
+    <code value="priority-procedure"/>
+    <display value="Procedimento Prioritário"/>
+    <definition value="Procedimento com análise prioritária"/>
+  </concept>
+  <concept>
+    <code value="fast-track"/>
+    <display value="Via Rápida"/>
+    <definition value="Procedimento via rápida para medicamentos inovadores"/>
+  </concept>
+  <concept>
+    <code value="simplified-procedure"/>
+    <display value="Procedimento Simplificado"/>
+    <definition value="Procedimento simplificado para casos específicos"/>
+  </concept>
+  <concept>
+    <code value="appeal-procedure"/>
+    <display value="Procedimento de Recurso"/>
+    <definition value="Procedimento de recurso contra decisão ANVISA"/>
+  </concept>
+</CodeSystem>

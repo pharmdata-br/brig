@@ -1,0 +1,19 @@
+{
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil",
+  "name" : "BRIGIDMPBrazil",
+  "title" : "BRIG - Guia de Implementação Brasileiro para IDMP",
+  "description" : "Guia de Implementação brasileiro para Identificação de Produtos Medicinais (IDMP) usando padrões FHIR R5, desenvolvido para harmonização de dados farmacêuticos no contexto regulatório da ANVISA. Implementação completa com ClinicalUseDefinition-br. Primeira implementação mundial 100% completa dos padrões IDMP. Documentação 100% em português brasileiro.",
+  "status" : "draft",
+  "package-id" : "brig.idmp.brazil",
+  "ig-ver" : "0.0.3",
+  "date" : "Sun, 02 Nov, 2025 10:29:08 -0300",
+  "dateISO8601" : "2025-11-02T10:29:08-03:00",
+  "errs" : 148,
+  "warnings" : 547,
+  "hints" : 663,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1949633936
+}

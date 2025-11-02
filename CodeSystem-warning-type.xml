@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="warning-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem warning-type</b></p><a name="warning-type"> </a><a name="hcwarning-type"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">boxed-warning<a name="warning-type-boxed-warning"> </a></td><td>Tarja Preta</td><td>Advertência em tarja preta (boxed warning) - mais grave</td></tr><tr><td style="white-space:nowrap">special-warning<a name="warning-type-special-warning"> </a></td><td>Advertência Especial</td><td>Advertência especial sobre riscos importantes</td></tr><tr><td style="white-space:nowrap">pregnancy-warning<a name="warning-type-pregnancy-warning"> </a></td><td>Advertência de Gravidez</td><td>Advertência sobre uso na gravidez</td></tr><tr><td style="white-space:nowrap">lactation-warning<a name="warning-type-lactation-warning"> </a></td><td>Advertência de Lactação</td><td>Advertência sobre uso na lactação</td></tr><tr><td style="white-space:nowrap">pediatric-warning<a name="warning-type-pediatric-warning"> </a></td><td>Advertência Pediátrica</td><td>Advertência sobre uso pediátrico</td></tr><tr><td style="white-space:nowrap">geriatric-warning<a name="warning-type-geriatric-warning"> </a></td><td>Advertência Geriátrica</td><td>Advertência sobre uso em idosos</td></tr><tr><td style="white-space:nowrap">renal-warning<a name="warning-type-renal-warning"> </a></td><td>Advertência Renal</td><td>Advertência para insuficiência renal</td></tr><tr><td style="white-space:nowrap">hepatic-warning<a name="warning-type-hepatic-warning"> </a></td><td>Advertência Hepática</td><td>Advertência para insuficiência hepática</td></tr><tr><td style="white-space:nowrap">cardiac-warning<a name="warning-type-cardiac-warning"> </a></td><td>Advertência Cardíaca</td><td>Advertência para condições cardíacas</td></tr><tr><td style="white-space:nowrap">monitoring-warning<a name="warning-type-monitoring-warning"> </a></td><td>Advertência de Monitoramento</td><td>Necessidade de monitoramento especial</td></tr><tr><td style="white-space:nowrap">abuse-potential<a name="warning-type-abuse-potential"> </a></td><td>Potencial de Abuso</td><td>Advertência sobre potencial de abuso ou dependência</td></tr><tr><td style="white-space:nowrap">driving-warning<a name="warning-type-driving-warning"> </a></td><td>Advertência para Condução</td><td>Efeitos sobre capacidade de dirigir veículos</td></tr><tr><td style="white-space:nowrap">photosensitivity<a name="warning-type-photosensitivity"> </a></td><td>Fotossensibilidade</td><td>Advertência sobre fotossensibilidade</td></tr><tr><td style="white-space:nowrap">allergic-reaction<a name="warning-type-allergic-reaction"> </a></td><td>Reação Alérgica</td><td>Risco de reações alérgicas graves</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/warning-type"/>
+  <version value="0.0.3"/>
+  <name value="WarningType"/>
+  <title value="Tipo de Advertência"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-31"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Tipos de advertências e precauções"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="boxed-warning"/>
+    <display value="Tarja Preta"/>
+    <definition value="Advertência em tarja preta (boxed warning) - mais grave"/>
+  </concept>
+  <concept>
+    <code value="special-warning"/>
+    <display value="Advertência Especial"/>
+    <definition value="Advertência especial sobre riscos importantes"/>
+  </concept>
+  <concept>
+    <code value="pregnancy-warning"/>
+    <display value="Advertência de Gravidez"/>
+    <definition value="Advertência sobre uso na gravidez"/>
+  </concept>
+  <concept>
+    <code value="lactation-warning"/>
+    <display value="Advertência de Lactação"/>
+    <definition value="Advertência sobre uso na lactação"/>
+  </concept>
+  <concept>
+    <code value="pediatric-warning"/>
+    <display value="Advertência Pediátrica"/>
+    <definition value="Advertência sobre uso pediátrico"/>
+  </concept>
+  <concept>
+    <code value="geriatric-warning"/>
+    <display value="Advertência Geriátrica"/>
+    <definition value="Advertência sobre uso em idosos"/>
+  </concept>
+  <concept>
+    <code value="renal-warning"/>
+    <display value="Advertência Renal"/>
+    <definition value="Advertência para insuficiência renal"/>
+  </concept>
+  <concept>
+    <code value="hepatic-warning"/>
+    <display value="Advertência Hepática"/>
+    <definition value="Advertência para insuficiência hepática"/>
+  </concept>
+  <concept>
+    <code value="cardiac-warning"/>
+    <display value="Advertência Cardíaca"/>
+    <definition value="Advertência para condições cardíacas"/>
+  </concept>
+  <concept>
+    <code value="monitoring-warning"/>
+    <display value="Advertência de Monitoramento"/>
+    <definition value="Necessidade de monitoramento especial"/>
+  </concept>
+  <concept>
+    <code value="abuse-potential"/>
+    <display value="Potencial de Abuso"/>
+    <definition value="Advertência sobre potencial de abuso ou dependência"/>
+  </concept>
+  <concept>
+    <code value="driving-warning"/>
+    <display value="Advertência para Condução"/>
+    <definition value="Efeitos sobre capacidade de dirigir veículos"/>
+  </concept>
+  <concept>
+    <code value="photosensitivity"/>
+    <display value="Fotossensibilidade"/>
+    <definition value="Advertência sobre fotossensibilidade"/>
+  </concept>
+  <concept>
+    <code value="allergic-reaction"/>
+    <display value="Reação Alérgica"/>
+    <definition value="Risco de reações alérgicas graves"/>
+  </concept>
+</CodeSystem>

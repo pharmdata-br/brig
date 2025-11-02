@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="product-confidentiality"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem product-confidentiality</b></p><a name="product-confidentiality"> </a><a name="hcproduct-confidentiality"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">public<a name="product-confidentiality-public"> </a></td><td>Público</td><td>Informação pública sem restrições de acesso. Pode ser divulgada livremente</td></tr><tr><td style="white-space:nowrap">confidential<a name="product-confidentiality-confidential"> </a></td><td>Confidencial</td><td>Informação confidencial com acesso restrito a pessoal autorizado</td></tr><tr><td style="white-space:nowrap">commercial-secret<a name="product-confidentiality-commercial-secret"> </a></td><td>Segredo Comercial</td><td>Segredo comercial protegido por lei. Divulgação não autorizada sujeita a penalidades legais</td></tr><tr><td style="white-space:nowrap">restricted<a name="product-confidentiality-restricted"> </a></td><td>Restrito</td><td>Acesso restrito a pessoal específico com necessidade justificada</td></tr><tr><td style="white-space:nowrap">internal-only<a name="product-confidentiality-internal-only"> </a></td><td>Uso Interno Exclusivo</td><td>Informação apenas para uso interno da organização titular</td></tr><tr><td style="white-space:nowrap">regulatory-access<a name="product-confidentiality-regulatory-access"> </a></td><td>Acesso Regulatório</td><td>Informação acessível apenas para autoridades regulatórias competentes</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-confidentiality"/>
+  <version value="0.0.3"/>
+  <name value="ProductConfidentiality"/>
+  <title value="Confidencialidade de Produto Medicinal"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Classificação de confidencialidade para informações e operações relacionadas a produtos medicinais"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="public"/>
+    <display value="Público"/>
+    <definition value="Informação pública sem restrições de acesso. Pode ser divulgada livremente"/>
+  </concept>
+  <concept>
+    <code value="confidential"/>
+    <display value="Confidencial"/>
+    <definition value="Informação confidencial com acesso restrito a pessoal autorizado"/>
+  </concept>
+  <concept>
+    <code value="commercial-secret"/>
+    <display value="Segredo Comercial"/>
+    <definition value="Segredo comercial protegido por lei. Divulgação não autorizada sujeita a penalidades legais"/>
+  </concept>
+  <concept>
+    <code value="restricted"/>
+    <display value="Restrito"/>
+    <definition value="Acesso restrito a pessoal específico com necessidade justificada"/>
+  </concept>
+  <concept>
+    <code value="internal-only"/>
+    <display value="Uso Interno Exclusivo"/>
+    <definition value="Informação apenas para uso interno da organização titular"/>
+  </concept>
+  <concept>
+    <code value="regulatory-access"/>
+    <display value="Acesso Regulatório"/>
+    <definition value="Informação acessível apenas para autoridades regulatórias competentes"/>
+  </concept>
+</CodeSystem>

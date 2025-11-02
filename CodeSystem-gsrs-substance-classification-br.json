@@ -1,0 +1,114 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "gsrs-substance-classification-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem gsrs-substance-classification-br</b></p><a name=\"gsrs-substance-classification-br\"> </a><a name=\"hcgsrs-substance-classification-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">chemical<a name=\"gsrs-substance-classification-br-chemical\"> </a></td><td>Chemical Substance</td><td>Substância química definida</td></tr><tr><td style=\"white-space:nowrap\">protein<a name=\"gsrs-substance-classification-br-protein\"> </a></td><td>Protein</td><td>Substância proteica</td></tr><tr><td style=\"white-space:nowrap\">nucleicAcid<a name=\"gsrs-substance-classification-br-nucleicAcid\"> </a></td><td>Nucleic Acid</td><td>Ácido nucleico</td></tr><tr><td style=\"white-space:nowrap\">polymer<a name=\"gsrs-substance-classification-br-polymer\"> </a></td><td>Polymer</td><td>Substância polimérica</td></tr><tr><td style=\"white-space:nowrap\">structurallyDiverse<a name=\"gsrs-substance-classification-br-structurallyDiverse\"> </a></td><td>Structurally Diverse</td><td>Substância estruturalmente diversa</td></tr><tr><td style=\"white-space:nowrap\">mixture<a name=\"gsrs-substance-classification-br-mixture\"> </a></td><td>Mixture</td><td>Mistura de substâncias</td></tr><tr><td style=\"white-space:nowrap\">specifiedSubstanceGroup1<a name=\"gsrs-substance-classification-br-specifiedSubstanceGroup1\"> </a></td><td>Specified Substance Group 1</td><td>Grupo de substâncias especificadas tipo 1</td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"gsrs-substance-classification-br-active\"> </a></td><td>Substância Ativa</td><td>Substância ativa farmacêutica</td></tr><tr><td style=\"white-space:nowrap\">excipient<a name=\"gsrs-substance-classification-br-excipient\"> </a></td><td>Excipiente</td><td>Substância excipiente</td></tr><tr><td style=\"white-space:nowrap\">controlled<a name=\"gsrs-substance-classification-br-controlled\"> </a></td><td>Controlada</td><td>Substância controlada pela ANVISA</td></tr><tr><td style=\"white-space:nowrap\">precursor<a name=\"gsrs-substance-classification-br-precursor\"> </a></td><td>Precursor</td><td>Precursor químico</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br",
+  "version" : "0.0.3",
+  "name" : "GSRSSubstanceClassificationBR",
+  "title" : "GSRS Substance Classification - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Classificação de substâncias conforme GSRS adaptado para Brasil",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 11,
+  "concept" : [{
+    "code" : "chemical",
+    "display" : "Chemical Substance",
+    "definition" : "Substância química definida"
+  },
+  {
+    "code" : "protein",
+    "display" : "Protein",
+    "definition" : "Substância proteica"
+  },
+  {
+    "code" : "nucleicAcid",
+    "display" : "Nucleic Acid",
+    "definition" : "Ácido nucleico"
+  },
+  {
+    "code" : "polymer",
+    "display" : "Polymer",
+    "definition" : "Substância polimérica"
+  },
+  {
+    "code" : "structurallyDiverse",
+    "display" : "Structurally Diverse",
+    "definition" : "Substância estruturalmente diversa"
+  },
+  {
+    "code" : "mixture",
+    "display" : "Mixture",
+    "definition" : "Mistura de substâncias"
+  },
+  {
+    "code" : "specifiedSubstanceGroup1",
+    "display" : "Specified Substance Group 1",
+    "definition" : "Grupo de substâncias especificadas tipo 1"
+  },
+  {
+    "code" : "active",
+    "display" : "Substância Ativa",
+    "definition" : "Substância ativa farmacêutica"
+  },
+  {
+    "code" : "excipient",
+    "display" : "Excipiente",
+    "definition" : "Substância excipiente"
+  },
+  {
+    "code" : "controlled",
+    "display" : "Controlada",
+    "definition" : "Substância controlada pela ANVISA"
+  },
+  {
+    "code" : "precursor",
+    "display" : "Precursor",
+    "definition" : "Precursor químico"
+  }]
+}

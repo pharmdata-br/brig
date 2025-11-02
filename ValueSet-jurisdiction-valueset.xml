@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jurisdiction-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet jurisdiction-valueset</b></p><a name="jurisdiction-valueset"> </a><a name="hcjurisdiction-valueset"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir todos os códigos definidos em <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html"><code>urn:iso:std:iso:3166</code></a><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span></li><li>Incluir todos os códigos definidos em <code>http://unstats.un.org/unsd/methods/m49/m49.htm</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/jurisdiction-valueset"/>
+  <version value="0.0.3"/>
+  <name value="JurisdictionValueSet"/>
+  <title value="Jurisdições (ISO 3166 + UN M49)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Códigos para países, subdivisões de países e regiões supranacionais. Combina ISO 3166 (países) com UN M49 (regiões geográficas)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Identificar jurisdições regulatórias em níveis nacional, subnacional e supranacional"/>
+  <copyright value="ISO 3166 e UN M49 são padrões internacionais de uso livre para interoperabilidade."/>
+  <compose>
+    <include>
+      <system value="urn:iso:std:iso:3166"/>
+    </include>
+    <include>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+    </include>
+  </compose>
+</ValueSet>

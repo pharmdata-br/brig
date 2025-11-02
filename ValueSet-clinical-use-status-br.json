@@ -1,0 +1,87 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "clinical-use-status-br",
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet clinical-use-status-br</b></p><a name=\"clinical-use-status-br\"> </a><a name=\"hcclinical-use-status-br\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><ul><li>Include estes códigos, tal como definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br</code><span title=\"Version is not explicity stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>active</td><td>Ativo</td></tr><tr><td>suspended</td><td>Suspenso</td></tr><tr><td>deprecated</td><td>Depreciado</td></tr><tr><td>under-review</td><td>Em revisão</td></tr><tr><td>pending-approval</td><td>Pendente aprovação</td></tr><tr><td>rejected</td><td>Rejeitado</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/ValueSet/clinical-use-status-br",
+  "version" : "0.0.3",
+  "name" : "ClinicalUseStatusBRValueSet",
+  "title" : "Status de Uso Clínico - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-09-07",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "ValueSet dos status das definições de uso clínico para o contexto brasileiro.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "immutable" : false,
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br",
+      "concept" : [{
+        "code" : "active",
+        "display" : "Ativo"
+      },
+      {
+        "code" : "suspended",
+        "display" : "Suspenso"
+      },
+      {
+        "code" : "deprecated",
+        "display" : "Depreciado"
+      },
+      {
+        "code" : "under-review",
+        "display" : "Em revisão"
+      },
+      {
+        "code" : "pending-approval",
+        "display" : "Pendente aprovação"
+      },
+      {
+        "code" : "rejected",
+        "display" : "Rejeitado"
+      }]
+    }]
+  }
+}

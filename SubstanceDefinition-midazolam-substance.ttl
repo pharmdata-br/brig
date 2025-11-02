@@ -1,0 +1,158 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/SubstanceDefinition/midazolam-substance> a fhir:SubstanceDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "midazolam-substance"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-08-02T10:00:00Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br"^^xsd:anyURI ;
+       fhir:l <https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/substance-definition-br>
+     ] [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/StructureDefinition/SubstanceDefinition-br>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Midazolam (Substância Controlada)</h2><p><strong>DCB:</strong> 05969</p><p><strong>CAS:</strong> 59467-70-8</p><p><strong>UNII:</strong> R60L0SM5BC</p><p><strong>Classificação:</strong> Substância Ativa, Controlada, Psicotrópica</p><p><strong>Status:</strong> Aprovada com Restrições pela ANVISA</p><p><strong>Categoria de Controle:</strong> Lista B1 (Psicotrópicos)</p><p><strong>Grau:</strong> Farmacêutico</p><p><strong>Fórmula Molecular:</strong> C18H13ClFN3</p><p><strong>Peso Molecular:</strong> 325.77 g/mol</p><p><strong>Restrições:</strong> Uso restrito a ambiente hospitalar, requer receita de controle especial</p><p><strong>Código ATC:</strong> N05CD08</p><p><strong>Descrição:</strong> Benzodiazepínico para sedação, ansiolise e amnésia</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://farmaco.maxapex.net/brig/fhir/NamingSystem/dcb"^^xsd:anyURI ;
+       fhir:l <http://farmaco.maxapex.net/brig/fhir/NamingSystem/dcb>
+     ] ;
+     fhir:value [ fhir:v "05969" ]
+  ] [
+     fhir:system [
+       fhir:v "urn:oid:2.16.840.1.113883.6.61"^^xsd:anyURI ;
+       fhir:l <urn:oid:2.16.840.1.113883.6.61>
+     ] ;
+     fhir:value [ fhir:v "59467-70-8" ]
+  ] [
+     fhir:system [
+       fhir:v "http://hl7.org/fhir/sid/inn"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/sid/inn>
+     ] ;
+     fhir:value [ fhir:v "midazolam" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-status-br>
+       ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br>
+       ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br>
+       ] ;
+       fhir:code [ fhir:v "controlled" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-classification-br>
+       ] ;
+       fhir:code [ fhir:v "psychotropic" ]
+     ] )
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/medicinalproduct-domain"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/medicinalproduct-domain>
+       ] ;
+       fhir:code [ fhir:v "Human" ]
+     ] )
+  ] ; # 
+  fhir:grade ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade"^^xsd:anyURI ;
+         fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-grade>
+       ] ;
+       fhir:code [ fhir:v "pharmaceutical" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "O midazolam é um medicamento benzodiazepínico de ação rápida usado para sedação, ansiolise e amnésia. É uma substância controlada no Brasil, classificada na Lista B1."] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/substance-property-type"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/substance-property-type>
+         ] ;
+         fhir:code [ fhir:v "MolecularWeight" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 325.77 ] ;
+       fhir:unit [ fhir:v "grams per mole" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "g/mol" ]
+     ]
+  ] ) ; # 
+  fhir:structure [
+     fhir:representation ( [
+       fhir:representation [ fhir:v "C18H13ClFN3" ] ;
+       fhir:format [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/substance-representation-format"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/substance-representation-format>
+           ] ;
+           fhir:code [ fhir:v "SMILES" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:name ( [
+     fhir:name [ fhir:v "Midazolam" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type>
+         ] ;
+         fhir:code [ fhir:v "official" ]
+       ] )
+     ]
+  ] [
+     fhir:name [ fhir:v "Midazolam" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type"^^xsd:anyURI ;
+           fhir:l <http://farmaco.maxapex.net/brig/fhir/CodeSystem/substance-name-type>
+         ] ;
+         fhir:code [ fhir:v "common" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

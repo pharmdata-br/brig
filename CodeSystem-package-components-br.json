@@ -1,0 +1,134 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "package-components-br",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem package-components-br</b></p><a name=\"package-components-br\"> </a><a name=\"hcpackage-components-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">cap<a name=\"package-components-br-cap\"> </a></td><td>Tampa</td><td>Tampa roscada ou encaixe</td></tr><tr><td style=\"white-space:nowrap\">lid<a name=\"package-components-br-lid\"> </a></td><td>Lacre</td><td>Lacre de segurança</td></tr><tr><td style=\"white-space:nowrap\">stopper<a name=\"package-components-br-stopper\"> </a></td><td>Rolha</td><td>Rolha de borracha ou plástico</td></tr><tr><td style=\"white-space:nowrap\">closure<a name=\"package-components-br-closure\"> </a></td><td>Fechamento</td><td>Sistema de fechamento genérico</td></tr><tr><td style=\"white-space:nowrap\">label<a name=\"package-components-br-label\"> </a></td><td>Rótulo</td><td>Rótulo com informações do produto</td></tr><tr><td style=\"white-space:nowrap\">insert<a name=\"package-components-br-insert\"> </a></td><td>Bula</td><td>Bula ou folheto informativo</td></tr><tr><td style=\"white-space:nowrap\">leaflet<a name=\"package-components-br-leaflet\"> </a></td><td>Folheto</td><td>Folheto informativo adicional</td></tr><tr><td style=\"white-space:nowrap\">barcode<a name=\"package-components-br-barcode\"> </a></td><td>Código de barras</td><td>Etiqueta com código de barras</td></tr><tr><td style=\"white-space:nowrap\">desiccant<a name=\"package-components-br-desiccant\"> </a></td><td>Dessecante</td><td>Sachê ou pastilha dessecante</td></tr><tr><td style=\"white-space:nowrap\">cotton<a name=\"package-components-br-cotton\"> </a></td><td>Algodão</td><td>Algodão protetor</td></tr><tr><td style=\"white-space:nowrap\">separator<a name=\"package-components-br-separator\"> </a></td><td>Separador</td><td>Divisória ou separador interno</td></tr><tr><td style=\"white-space:nowrap\">applicator<a name=\"package-components-br-applicator\"> </a></td><td>Aplicador</td><td>Dispositivo aplicador</td></tr><tr><td style=\"white-space:nowrap\">seal<a name=\"package-components-br-seal\"> </a></td><td>Selo</td><td>Selo de proteção ou inviolabilidade</td></tr><tr><td style=\"white-space:nowrap\">shrink-wrap<a name=\"package-components-br-shrink-wrap\"> </a></td><td>Filme plástico</td><td>Filme plástico termocontrátil</td></tr><tr><td style=\"white-space:nowrap\">protective-cap<a name=\"package-components-br-protective-cap\"> </a></td><td>Tampa protetora</td><td>Tampa protetora adicional</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/package-components-br",
+  "version" : "0.0.3",
+  "name" : "PackageComponentsBR",
+  "title" : "Componentes de Embalagem - Brasil",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-08-04",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Sistema de códigos para componentes de embalagens brasileiras",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 15,
+  "concept" : [{
+    "code" : "cap",
+    "display" : "Tampa",
+    "definition" : "Tampa roscada ou encaixe"
+  },
+  {
+    "code" : "lid",
+    "display" : "Lacre",
+    "definition" : "Lacre de segurança"
+  },
+  {
+    "code" : "stopper",
+    "display" : "Rolha",
+    "definition" : "Rolha de borracha ou plástico"
+  },
+  {
+    "code" : "closure",
+    "display" : "Fechamento",
+    "definition" : "Sistema de fechamento genérico"
+  },
+  {
+    "code" : "label",
+    "display" : "Rótulo",
+    "definition" : "Rótulo com informações do produto"
+  },
+  {
+    "code" : "insert",
+    "display" : "Bula",
+    "definition" : "Bula ou folheto informativo"
+  },
+  {
+    "code" : "leaflet",
+    "display" : "Folheto",
+    "definition" : "Folheto informativo adicional"
+  },
+  {
+    "code" : "barcode",
+    "display" : "Código de barras",
+    "definition" : "Etiqueta com código de barras"
+  },
+  {
+    "code" : "desiccant",
+    "display" : "Dessecante",
+    "definition" : "Sachê ou pastilha dessecante"
+  },
+  {
+    "code" : "cotton",
+    "display" : "Algodão",
+    "definition" : "Algodão protetor"
+  },
+  {
+    "code" : "separator",
+    "display" : "Separador",
+    "definition" : "Divisória ou separador interno"
+  },
+  {
+    "code" : "applicator",
+    "display" : "Aplicador",
+    "definition" : "Dispositivo aplicador"
+  },
+  {
+    "code" : "seal",
+    "display" : "Selo",
+    "definition" : "Selo de proteção ou inviolabilidade"
+  },
+  {
+    "code" : "shrink-wrap",
+    "display" : "Filme plástico",
+    "definition" : "Filme plástico termocontrátil"
+  },
+  {
+    "code" : "protective-cap",
+    "display" : "Tampa protetora",
+    "definition" : "Tampa protetora adicional"
+  }]
+}

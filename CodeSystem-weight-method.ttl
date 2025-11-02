@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "weight-method"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem weight-method</b></p><a name=\"weight-method\"> </a><a name=\"hcweight-method\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">calculated<a name=\"weight-method-calculated\"> </a></td><td>Calculado</td><td>Peso molecular calculado a partir da fórmula química</td></tr><tr><td style=\"white-space:nowrap\">mass-spectrometry<a name=\"weight-method-mass-spectrometry\"> </a></td><td>Espectrometria de Massas</td><td>Determinado por espectrometria de massas</td></tr><tr><td style=\"white-space:nowrap\">gel-permeation<a name=\"weight-method-gel-permeation\"> </a></td><td>Cromatografia de Permeação em Gel</td><td>GPC - Gel Permeation Chromatography</td></tr><tr><td style=\"white-space:nowrap\">light-scattering<a name=\"weight-method-light-scattering\"> </a></td><td>Espalhamento de Luz</td><td>Light scattering techniques</td></tr><tr><td style=\"white-space:nowrap\">ultracentrifugation<a name=\"weight-method-ultracentrifugation\"> </a></td><td>Ultracentrifugação</td><td>Analytical ultracentrifugation</td></tr><tr><td style=\"white-space:nowrap\">osmometry<a name=\"weight-method-osmometry\"> </a></td><td>Osmometria</td><td>Medição de pressão osmótica</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "WeightMethod"] ; # 
+  fhir:title [ fhir:v "Método de Determinação de Peso Molecular"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Métodos para determinação de peso/massa molecular"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "calculated" ] ;
+     fhir:display [ fhir:v "Calculado" ] ;
+     fhir:definition [ fhir:v "Peso molecular calculado a partir da fórmula química" ]
+  ] [
+     fhir:code [ fhir:v "mass-spectrometry" ] ;
+     fhir:display [ fhir:v "Espectrometria de Massas" ] ;
+     fhir:definition [ fhir:v "Determinado por espectrometria de massas" ]
+  ] [
+     fhir:code [ fhir:v "gel-permeation" ] ;
+     fhir:display [ fhir:v "Cromatografia de Permeação em Gel" ] ;
+     fhir:definition [ fhir:v "GPC - Gel Permeation Chromatography" ]
+  ] [
+     fhir:code [ fhir:v "light-scattering" ] ;
+     fhir:display [ fhir:v "Espalhamento de Luz" ] ;
+     fhir:definition [ fhir:v "Light scattering techniques" ]
+  ] [
+     fhir:code [ fhir:v "ultracentrifugation" ] ;
+     fhir:display [ fhir:v "Ultracentrifugação" ] ;
+     fhir:definition [ fhir:v "Analytical ultracentrifugation" ]
+  ] [
+     fhir:code [ fhir:v "osmometry" ] ;
+     fhir:display [ fhir:v "Osmometria" ] ;
+     fhir:definition [ fhir:v "Medição de pressão osmótica" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

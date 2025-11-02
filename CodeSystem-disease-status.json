@@ -1,0 +1,119 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "disease-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem disease-status</b></p><a name=\"disease-status\"> </a><a name=\"hcdisease-status\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">acute<a name=\"disease-status-acute\"> </a></td><td>Agudo</td><td>Condição aguda de início recente</td></tr><tr><td style=\"white-space:nowrap\">chronic<a name=\"disease-status-chronic\"> </a></td><td>Crônico</td><td>Condição crônica de longa duração</td></tr><tr><td style=\"white-space:nowrap\">recurrent<a name=\"disease-status-recurrent\"> </a></td><td>Recorrente</td><td>Condição com episódios recorrentes</td></tr><tr><td style=\"white-space:nowrap\">remission<a name=\"disease-status-remission\"> </a></td><td>Remissão</td><td>Condição em remissão</td></tr><tr><td style=\"white-space:nowrap\">relapse<a name=\"disease-status-relapse\"> </a></td><td>Recidiva</td><td>Recidiva de condição previamente tratada</td></tr><tr><td style=\"white-space:nowrap\">resolved<a name=\"disease-status-resolved\"> </a></td><td>Resolvido</td><td>Condição resolvida</td></tr><tr><td style=\"white-space:nowrap\">mild<a name=\"disease-status-mild\"> </a></td><td>Leve</td><td>Forma leve da condição</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"disease-status-moderate\"> </a></td><td>Moderado</td><td>Forma moderada da condição</td></tr><tr><td style=\"white-space:nowrap\">severe<a name=\"disease-status-severe\"> </a></td><td>Grave</td><td>Forma grave da condição</td></tr><tr><td style=\"white-space:nowrap\">life-threatening<a name=\"disease-status-life-threatening\"> </a></td><td>Risco de Vida</td><td>Condição com risco de vida</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"
+      }]
+    }
+  }],
+  "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/disease-status",
+  "version" : "0.0.3",
+  "name" : "DiseaseStatus",
+  "title" : "Status da Doença",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-31",
+  "publisher" : "IDMP Brasil",
+  "contact" : [{
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://idmp-br.github.io"
+    },
+    {
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    }]
+  },
+  {
+    "name" : "IDMP Brasil",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "eugenio@farmaco.io"
+    },
+    {
+      "system" : "url",
+      "value" : "https://idmp-br.github.io/brig-idmp-brasil"
+    }]
+  }],
+  "description" : "Status ou estágio de uma condição médica",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "copyright" : "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "acute",
+    "display" : "Agudo",
+    "definition" : "Condição aguda de início recente"
+  },
+  {
+    "code" : "chronic",
+    "display" : "Crônico",
+    "definition" : "Condição crônica de longa duração"
+  },
+  {
+    "code" : "recurrent",
+    "display" : "Recorrente",
+    "definition" : "Condição com episódios recorrentes"
+  },
+  {
+    "code" : "remission",
+    "display" : "Remissão",
+    "definition" : "Condição em remissão"
+  },
+  {
+    "code" : "relapse",
+    "display" : "Recidiva",
+    "definition" : "Recidiva de condição previamente tratada"
+  },
+  {
+    "code" : "resolved",
+    "display" : "Resolvido",
+    "definition" : "Condição resolvida"
+  },
+  {
+    "code" : "mild",
+    "display" : "Leve",
+    "definition" : "Forma leve da condição"
+  },
+  {
+    "code" : "moderate",
+    "display" : "Moderado",
+    "definition" : "Forma moderada da condição"
+  },
+  {
+    "code" : "severe",
+    "display" : "Grave",
+    "definition" : "Forma grave da condição"
+  },
+  {
+    "code" : "life-threatening",
+    "display" : "Risco de Vida",
+    "definition" : "Condição com risco de vida"
+  }]
+}

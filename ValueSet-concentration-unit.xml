@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="concentration-unit"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet concentration-unit</b></p><a name="concentration-unit"> </a><a name="hcconcentration-unit"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>mg</td><td>milligram</td></tr><tr><td>g</td><td>gram</td></tr><tr><td>ug</td><td>microgram</td></tr><tr><td>kg</td><td>kilogram</td></tr><tr><td>mL</td><td>milliliter</td></tr><tr><td>L</td><td>liter</td></tr><tr><td>mg/mL</td><td>milligram per milliliter</td></tr><tr><td>ug/mL</td><td>microgram per milliliter</td></tr><tr><td>g/L</td><td>gram per liter</td></tr><tr><td>%</td><td>percent</td></tr><tr><td>[IU]</td><td>international unit</td></tr><tr><td>[IU]/mL</td><td>international unit per milliliter</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/concentration-unit"/>
+  <version value="0.0.3"/>
+  <name value="ConcentrationUnit"/>
+  <title value="Unidades de Concentração"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Unidades de concentração usando códigos UCUM (Unified Code for Units of Measure)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+      <concept>
+        <code value="mg"/>
+        <display value="milligram"/>
+      </concept>
+      <concept>
+        <code value="g"/>
+        <display value="gram"/>
+      </concept>
+      <concept>
+        <code value="ug"/>
+        <display value="microgram"/>
+      </concept>
+      <concept>
+        <code value="kg"/>
+        <display value="kilogram"/>
+      </concept>
+      <concept>
+        <code value="mL"/>
+        <display value="milliliter"/>
+      </concept>
+      <concept>
+        <code value="L"/>
+        <display value="liter"/>
+      </concept>
+      <concept>
+        <code value="mg/mL"/>
+        <display value="milligram per milliliter"/>
+      </concept>
+      <concept>
+        <code value="ug/mL"/>
+        <display value="microgram per milliliter"/>
+      </concept>
+      <concept>
+        <code value="g/L"/>
+        <display value="gram per liter"/>
+      </concept>
+      <concept>
+        <code value="%"/>
+        <display value="percent"/>
+      </concept>
+      <concept>
+        <code value="[IU]"/>
+        <display value="international unit"/>
+      </concept>
+      <concept>
+        <code value="[IU]/mL"/>
+        <display value="international unit per milliliter"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

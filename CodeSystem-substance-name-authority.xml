@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="substance-name-authority"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem substance-name-authority</b></p><a name="substance-name-authority"> </a><a name="hcsubstance-name-authority"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">IUPAC<a name="substance-name-authority-IUPAC"> </a></td><td>IUPAC</td><td>International Union of Pure and Applied Chemistry</td></tr><tr><td style="white-space:nowrap">WHO-INN<a name="substance-name-authority-WHO-INN"> </a></td><td>WHO INN</td><td>World Health Organization - International Nonproprietary Names</td></tr><tr><td style="white-space:nowrap">USP<a name="substance-name-authority-USP"> </a></td><td>USP</td><td>United States Pharmacopeia</td></tr><tr><td style="white-space:nowrap">EP<a name="substance-name-authority-EP"> </a></td><td>EP</td><td>European Pharmacopoeia</td></tr><tr><td style="white-space:nowrap">JP<a name="substance-name-authority-JP"> </a></td><td>JP</td><td>Japanese Pharmacopoeia</td></tr><tr><td style="white-space:nowrap">BP<a name="substance-name-authority-BP"> </a></td><td>BP</td><td>British Pharmacopoeia</td></tr><tr><td style="white-space:nowrap">FB<a name="substance-name-authority-FB"> </a></td><td>Farmacopeia Brasileira</td><td>Farmacopeia Brasileira - ANVISA</td></tr><tr><td style="white-space:nowrap">ANVISA<a name="substance-name-authority-ANVISA"> </a></td><td>ANVISA</td><td>Agência Nacional de Vigilância Sanitária</td></tr><tr><td style="white-space:nowrap">DCB<a name="substance-name-authority-DCB"> </a></td><td>DCB</td><td>Denominação Comum Brasileira</td></tr><tr><td style="white-space:nowrap">CAS<a name="substance-name-authority-CAS"> </a></td><td>CAS</td><td>Chemical Abstracts Service</td></tr><tr><td style="white-space:nowrap">USAN<a name="substance-name-authority-USAN"> </a></td><td>USAN</td><td>United States Adopted Names</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-authority"/>
+  <version value="0.0.3"/>
+  <name value="SubstanceNameAuthority"/>
+  <title value="Autoridade de Nomenclatura de Substâncias"/>
+  <status value="active"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Organizações/autoridades que atribuem nomes oficiais a substâncias"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="IUPAC"/>
+    <display value="IUPAC"/>
+    <definition value="International Union of Pure and Applied Chemistry"/>
+  </concept>
+  <concept>
+    <code value="WHO-INN"/>
+    <display value="WHO INN"/>
+    <definition value="World Health Organization - International Nonproprietary Names"/>
+  </concept>
+  <concept>
+    <code value="USP"/>
+    <display value="USP"/>
+    <definition value="United States Pharmacopeia"/>
+  </concept>
+  <concept>
+    <code value="EP"/>
+    <display value="EP"/>
+    <definition value="European Pharmacopoeia"/>
+  </concept>
+  <concept>
+    <code value="JP"/>
+    <display value="JP"/>
+    <definition value="Japanese Pharmacopoeia"/>
+  </concept>
+  <concept>
+    <code value="BP"/>
+    <display value="BP"/>
+    <definition value="British Pharmacopoeia"/>
+  </concept>
+  <concept>
+    <code value="FB"/>
+    <display value="Farmacopeia Brasileira"/>
+    <definition value="Farmacopeia Brasileira - ANVISA"/>
+  </concept>
+  <concept>
+    <code value="ANVISA"/>
+    <display value="ANVISA"/>
+    <definition value="Agência Nacional de Vigilância Sanitária"/>
+  </concept>
+  <concept>
+    <code value="DCB"/>
+    <display value="DCB"/>
+    <definition value="Denominação Comum Brasileira"/>
+  </concept>
+  <concept>
+    <code value="CAS"/>
+    <display value="CAS"/>
+    <definition value="Chemical Abstracts Service"/>
+  </concept>
+  <concept>
+    <code value="USAN"/>
+    <display value="USAN"/>
+    <definition value="United States Adopted Names"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>MedicinalProductDefinition-paracetamol-750mg-example-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid" data-fhir="generated-heirarchy">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>invalid</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.route[0].coding[0].system</td><td>Não foi possível encontrar uma definição para o valor URL 'http://hl7.org/fhir/route-codes'</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.name[0].type.coding[1].code</td><td>Código desconhecido 'BrandName' no CodeSystem 'http://hl7.org/fhir/medicinal-product-name-type' versão '5.0.0'</td><td></td></tr>
+<tr><td>error</td><td>value</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.name[0].type.coding[1].system</td><td>O valor é 'http://hl7.org/fhir/medicinal-product-name-type' mas é fixado em 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type' no perfil https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br|0.0.3#MedicinalProductDefinition.name:commercialName.type.coding.system</td><td></td></tr>
+<tr><td>error</td><td>value</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.name[0].type.coding[1].code</td><td>O valor é 'BrandName' mas é fixado em 'commercial' no perfil https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br|0.0.3#MedicinalProductDefinition.name:commercialName.type.coding.code</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.operation[0].type.concept.coding[0].system</td><td>Não foi possível encontrar uma definição para o valor URL 'http://hl7.org/fhir/product-operation'</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.identifier[0].system</td><td>Não foi possível encontrar uma definição para o valor URL 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid'</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.identifier[1].system</td><td>Não foi possível encontrar uma definição para o valor URL 'http://www.anvisa.gov.br/registro'</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.type.coding[0]</td><td>Não foi possível encontrar uma definição para o CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.route[0].coding[0].system</td><td>A definition for CodeSystem 'http://hl7.org/fhir/route-codes' could not be found, so the code cannot be validated</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.legalStatusOfSupply.coding[0]</td><td>Não foi possível encontrar uma definição para o CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.name[0].type.coding[0]</td><td>Não foi possível encontrar uma definição para o CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition.operation[0].type.concept.coding[0].system</td><td>A definition for CodeSystem 'http://hl7.org/fhir/product-operation' could not be found, so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>MedicinalProductDefinition/paracetamol-750mg-example: MedicinalProductDefinition</td><td>Validar recurso em relação ao perfil https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br|0.0.3</td><td></td></tr>
+</table>
+</body>
+</html>

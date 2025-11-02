@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/stereochemistry> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "stereochemistry"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem stereochemistry</b></p><a name=\"stereochemistry\"> </a><a name=\"hcstereochemistry\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">achiral<a name=\"stereochemistry-achiral\"> </a></td><td>Aquiral</td><td>Molécula sem centros quirais, não possui enantiômeros</td></tr><tr><td style=\"white-space:nowrap\">racemic<a name=\"stereochemistry-racemic\"> </a></td><td>Racêmico</td><td>Mistura equimolar de enantiômeros (50:50)</td></tr><tr><td style=\"white-space:nowrap\">single-enantiomer<a name=\"stereochemistry-single-enantiomer\"> </a></td><td>Enantiômero Único</td><td>Enantiômero purificado (&gt;99% ee)</td></tr><tr><td style=\"white-space:nowrap\">enantiomeric-excess<a name=\"stereochemistry-enantiomeric-excess\"> </a></td><td>Excesso Enantiomérico</td><td>Mistura com predominância de um enantiômero</td></tr><tr><td style=\"white-space:nowrap\">R-configuration<a name=\"stereochemistry-R-configuration\"> </a></td><td>Configuração R</td><td>Configuração absoluta R (Rectus)</td></tr><tr><td style=\"white-space:nowrap\">S-configuration<a name=\"stereochemistry-S-configuration\"> </a></td><td>Configuração S</td><td>Configuração absoluta S (Sinister)</td></tr><tr><td style=\"white-space:nowrap\">E-configuration<a name=\"stereochemistry-E-configuration\"> </a></td><td>Configuração E</td><td>Configuração geométrica E (Entgegen)</td></tr><tr><td style=\"white-space:nowrap\">Z-configuration<a name=\"stereochemistry-Z-configuration\"> </a></td><td>Configuração Z</td><td>Configuração geométrica Z (Zusammen)</td></tr><tr><td style=\"white-space:nowrap\">cis<a name=\"stereochemistry-cis\"> </a></td><td>Cis</td><td>Isômero geométrico cis</td></tr><tr><td style=\"white-space:nowrap\">trans<a name=\"stereochemistry-trans\"> </a></td><td>Trans</td><td>Isômero geométrico trans</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/stereochemistry"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/stereochemistry>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "Stereochemistry"] ; # 
+  fhir:title [ fhir:v "Estereoquímica de Substâncias"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Classificação estereoquímica de substâncias (quiralidade, configuração espacial)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "achiral" ] ;
+     fhir:display [ fhir:v "Aquiral" ] ;
+     fhir:definition [ fhir:v "Molécula sem centros quirais, não possui enantiômeros" ]
+  ] [
+     fhir:code [ fhir:v "racemic" ] ;
+     fhir:display [ fhir:v "Racêmico" ] ;
+     fhir:definition [ fhir:v "Mistura equimolar de enantiômeros (50:50)" ]
+  ] [
+     fhir:code [ fhir:v "single-enantiomer" ] ;
+     fhir:display [ fhir:v "Enantiômero Único" ] ;
+     fhir:definition [ fhir:v "Enantiômero purificado (>99% ee)" ]
+  ] [
+     fhir:code [ fhir:v "enantiomeric-excess" ] ;
+     fhir:display [ fhir:v "Excesso Enantiomérico" ] ;
+     fhir:definition [ fhir:v "Mistura com predominância de um enantiômero" ]
+  ] [
+     fhir:code [ fhir:v "R-configuration" ] ;
+     fhir:display [ fhir:v "Configuração R" ] ;
+     fhir:definition [ fhir:v "Configuração absoluta R (Rectus)" ]
+  ] [
+     fhir:code [ fhir:v "S-configuration" ] ;
+     fhir:display [ fhir:v "Configuração S" ] ;
+     fhir:definition [ fhir:v "Configuração absoluta S (Sinister)" ]
+  ] [
+     fhir:code [ fhir:v "E-configuration" ] ;
+     fhir:display [ fhir:v "Configuração E" ] ;
+     fhir:definition [ fhir:v "Configuração geométrica E (Entgegen)" ]
+  ] [
+     fhir:code [ fhir:v "Z-configuration" ] ;
+     fhir:display [ fhir:v "Configuração Z" ] ;
+     fhir:definition [ fhir:v "Configuração geométrica Z (Zusammen)" ]
+  ] [
+     fhir:code [ fhir:v "cis" ] ;
+     fhir:display [ fhir:v "Cis" ] ;
+     fhir:definition [ fhir:v "Isômero geométrico cis" ]
+  ] [
+     fhir:code [ fhir:v "trans" ] ;
+     fhir:display [ fhir:v "Trans" ] ;
+     fhir:definition [ fhir:v "Isômero geométrico trans" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

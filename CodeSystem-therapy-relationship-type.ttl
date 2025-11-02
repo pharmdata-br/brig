@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "therapy-relationship-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem therapy-relationship-type</b></p><a name=\"therapy-relationship-type\"> </a><a name=\"hctherapy-relationship-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">contraindicated-with<a name=\"therapy-relationship-type-contraindicated-with\"> </a></td><td>Contraindicado Com</td><td>Uso contraindicado em combinação com outra terapia</td></tr><tr><td style=\"white-space:nowrap\">not-recommended-with<a name=\"therapy-relationship-type-not-recommended-with\"> </a></td><td>Não Recomendado Com</td><td>Uso não recomendado em combinação com outra terapia</td></tr><tr><td style=\"white-space:nowrap\">use-caution-with<a name=\"therapy-relationship-type-use-caution-with\"> </a></td><td>Usar Com Cautela</td><td>Requer cautela ao usar em combinação</td></tr><tr><td style=\"white-space:nowrap\">replace-other-therapy<a name=\"therapy-relationship-type-replace-other-therapy\"> </a></td><td>Substitui Outra Terapia</td><td>Deve substituir outra terapia</td></tr><tr><td style=\"white-space:nowrap\">replace-other-therapy-contraindicated<a name=\"therapy-relationship-type-replace-other-therapy-contraindicated\"> </a></td><td>Substituição Contraindicada</td><td>Não deve substituir outra terapia específica</td></tr><tr><td style=\"white-space:nowrap\">replace-other-therapy-not-recommended<a name=\"therapy-relationship-type-replace-other-therapy-not-recommended\"> </a></td><td>Substituição Não Recomendada</td><td>Não é recomendado como substituto</td></tr><tr><td style=\"white-space:nowrap\">indicated-only-after<a name=\"therapy-relationship-type-indicated-only-after\"> </a></td><td>Indicado Apenas Após</td><td>Indicado apenas após falha de outra terapia</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "TherapyRelationshipType"] ; # 
+  fhir:title [ fhir:v "Tipo de Relacionamento Terapêutico"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Relacionamento entre terapia e contraindicação ou indicação"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "contraindicated-with" ] ;
+     fhir:display [ fhir:v "Contraindicado Com" ] ;
+     fhir:definition [ fhir:v "Uso contraindicado em combinação com outra terapia" ]
+  ] [
+     fhir:code [ fhir:v "not-recommended-with" ] ;
+     fhir:display [ fhir:v "Não Recomendado Com" ] ;
+     fhir:definition [ fhir:v "Uso não recomendado em combinação com outra terapia" ]
+  ] [
+     fhir:code [ fhir:v "use-caution-with" ] ;
+     fhir:display [ fhir:v "Usar Com Cautela" ] ;
+     fhir:definition [ fhir:v "Requer cautela ao usar em combinação" ]
+  ] [
+     fhir:code [ fhir:v "replace-other-therapy" ] ;
+     fhir:display [ fhir:v "Substitui Outra Terapia" ] ;
+     fhir:definition [ fhir:v "Deve substituir outra terapia" ]
+  ] [
+     fhir:code [ fhir:v "replace-other-therapy-contraindicated" ] ;
+     fhir:display [ fhir:v "Substituição Contraindicada" ] ;
+     fhir:definition [ fhir:v "Não deve substituir outra terapia específica" ]
+  ] [
+     fhir:code [ fhir:v "replace-other-therapy-not-recommended" ] ;
+     fhir:display [ fhir:v "Substituição Não Recomendada" ] ;
+     fhir:definition [ fhir:v "Não é recomendado como substituto" ]
+  ] [
+     fhir:code [ fhir:v "indicated-only-after" ] ;
+     fhir:display [ fhir:v "Indicado Apenas Após" ] ;
+     fhir:definition [ fhir:v "Indicado apenas após falha de outra terapia" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

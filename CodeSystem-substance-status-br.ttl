@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-status-br> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-status-br"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-status-br</b></p><a name=\"substance-status-br\"> </a><a name=\"hcsubstance-status-br\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"substance-status-br-active\"> </a></td><td>Ativa</td><td>Substância com status ativo para uso em medicamentos</td></tr><tr><td style=\"white-space:nowrap\">inactive<a name=\"substance-status-br-inactive\"> </a></td><td>Inativa</td><td>Substância com status inativo</td></tr><tr><td style=\"white-space:nowrap\">superseded<a name=\"substance-status-br-superseded\"> </a></td><td>Substituída</td><td>Substância substituída por outra</td></tr><tr><td style=\"white-space:nowrap\">provisional<a name=\"substance-status-br-provisional\"> </a></td><td>Provisória</td><td>Substância com aprovação provisória</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"substance-status-br-withdrawn\"> </a></td><td>Retirada</td><td>Substância retirada do mercado</td></tr><tr><td style=\"white-space:nowrap\">under-review<a name=\"substance-status-br-under-review\"> </a></td><td>Em Análise</td><td>Substância em processo de análise regulatória</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-status-br"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-status-br>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceStatusBR"] ; # 
+  fhir:title [ fhir:v "Status de Substância - Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistema de códigos para status regulatório de substâncias no Brasil"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Ativa" ] ;
+     fhir:definition [ fhir:v "Substância com status ativo para uso em medicamentos" ]
+  ] [
+     fhir:code [ fhir:v "inactive" ] ;
+     fhir:display [ fhir:v "Inativa" ] ;
+     fhir:definition [ fhir:v "Substância com status inativo" ]
+  ] [
+     fhir:code [ fhir:v "superseded" ] ;
+     fhir:display [ fhir:v "Substituída" ] ;
+     fhir:definition [ fhir:v "Substância substituída por outra" ]
+  ] [
+     fhir:code [ fhir:v "provisional" ] ;
+     fhir:display [ fhir:v "Provisória" ] ;
+     fhir:definition [ fhir:v "Substância com aprovação provisória" ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Retirada" ] ;
+     fhir:definition [ fhir:v "Substância retirada do mercado" ]
+  ] [
+     fhir:code [ fhir:v "under-review" ] ;
+     fhir:display [ fhir:v "Em Análise" ] ;
+     fhir:definition [ fhir:v "Substância em processo de análise regulatória" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

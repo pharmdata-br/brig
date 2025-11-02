@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="product-characteristic"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem product-characteristic</b></p><a name="product-characteristic"> </a><a name="hcproduct-characteristic"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">color<a name="product-characteristic-color"> </a></td><td>Cor</td><td>Cor ou coloração do produto medicinal ou componente</td></tr><tr><td style="white-space:nowrap">shape<a name="product-characteristic-shape"> </a></td><td>Forma</td><td>Forma geométrica do produto (ex: redondo, oval, oblongo, triangular)</td></tr><tr><td style="white-space:nowrap">size<a name="product-characteristic-size"> </a></td><td>Tamanho</td><td>Dimensões físicas do produto (comprimento, largura, altura, diâmetro)</td></tr><tr><td style="white-space:nowrap">weight<a name="product-characteristic-weight"> </a></td><td>Peso</td><td>Massa ou peso do produto ou componente</td></tr><tr><td style="white-space:nowrap">thickness<a name="product-characteristic-thickness"> </a></td><td>Espessura</td><td>Espessura medida do produto sólido</td></tr><tr><td style="white-space:nowrap">imprint<a name="product-characteristic-imprint"> </a></td><td>Gravação</td><td>Texto, código ou símbolo gravado ou impresso no produto</td></tr><tr><td style="white-space:nowrap">score<a name="product-characteristic-score"> </a></td><td>Sulco</td><td>Presença, número e tipo de sulcos para divisão do produto</td></tr><tr><td style="white-space:nowrap">coating<a name="product-characteristic-coating"> </a></td><td>Revestimento</td><td>Tipo e características do revestimento (entérico, film-coated, sugar-coated)</td></tr><tr><td style="white-space:nowrap">appearance<a name="product-characteristic-appearance"> </a></td><td>Aparência</td><td>Aparência visual geral do produto (brilhante, fosco, translúcido, opaco)</td></tr><tr><td style="white-space:nowrap">pack-type<a name="product-characteristic-pack-type"> </a></td><td>Tipo de Embalagem</td><td>Tipo de embalagem primária (blister, frasco, ampola, seringa pré-preenchida)</td></tr><tr><td style="white-space:nowrap">pack-material<a name="product-characteristic-pack-material"> </a></td><td>Material de Embalagem</td><td>Material da embalagem primária (PVC, vidro, HDPE, alumínio)</td></tr><tr><td style="white-space:nowrap">pack-size<a name="product-characteristic-pack-size"> </a></td><td>Tamanho de Embalagem</td><td>Quantidade de unidades na embalagem</td></tr><tr><td style="white-space:nowrap">release-profile<a name="product-characteristic-release-profile"> </a></td><td>Perfil de Liberação</td><td>Perfil de liberação do princípio ativo (liberação imediata, prolongada, modificada)</td></tr><tr><td style="white-space:nowrap">dissolution-rate<a name="product-characteristic-dissolution-rate"> </a></td><td>Taxa de Dissolução</td><td>Taxa de dissolução do produto conforme especificação farmacopeica</td></tr><tr><td style="white-space:nowrap">disintegration-time<a name="product-characteristic-disintegration-time"> </a></td><td>Tempo de Desintegração</td><td>Tempo de desintegração conforme especificação farmacopeica</td></tr><tr><td style="white-space:nowrap">ph<a name="product-characteristic-ph"> </a></td><td>pH</td><td>Valor de pH do produto ou solução</td></tr><tr><td style="white-space:nowrap">osmolarity<a name="product-characteristic-osmolarity"> </a></td><td>Osmolaridade</td><td>Osmolaridade de soluções injetáveis ou oftálmicas</td></tr><tr><td style="white-space:nowrap">viscosity<a name="product-characteristic-viscosity"> </a></td><td>Viscosidade</td><td>Viscosidade de líquidos, géis ou semissólidos</td></tr><tr><td style="white-space:nowrap">specific-gravity<a name="product-characteristic-specific-gravity"> </a></td><td>Densidade</td><td>Densidade ou peso específico do produto líquido</td></tr><tr><td style="white-space:nowrap">taste<a name="product-characteristic-taste"> </a></td><td>Sabor</td><td>Sabor característico do produto (para formas orais)</td></tr><tr><td style="white-space:nowrap">odor<a name="product-characteristic-odor"> </a></td><td>Odor</td><td>Odor característico do produto</td></tr><tr><td style="white-space:nowrap">flavor<a name="product-characteristic-flavor"> </a></td><td>Aroma</td><td>Aroma adicionado ao produto (ex: morango, laranja, menta)</td></tr><tr><td style="white-space:nowrap">shelf-life<a name="product-characteristic-shelf-life"> </a></td><td>Prazo de Validade</td><td>Prazo de validade em meses a partir da fabricação</td></tr><tr><td style="white-space:nowrap">storage-temperature<a name="product-characteristic-storage-temperature"> </a></td><td>Temperatura de Armazenamento</td><td>Faixa de temperatura para armazenamento</td></tr><tr><td style="white-space:nowrap">light-sensitivity<a name="product-characteristic-light-sensitivity"> </a></td><td>Sensibilidade à Luz</td><td>Grau de sensibilidade à luz (proteger da luz, opaco, etc.)</td></tr><tr><td style="white-space:nowrap">dose-strength<a name="product-characteristic-dose-strength"> </a></td><td>Potência</td><td>Concentração ou potência do princípio ativo</td></tr><tr><td style="white-space:nowrap">dose-volume<a name="product-characteristic-dose-volume"> </a></td><td>Volume de Dose</td><td>Volume administrado por dose (para líquidos)</td></tr><tr><td style="white-space:nowrap">dose-unit<a name="product-characteristic-dose-unit"> </a></td><td>Unidade de Dose</td><td>Unidade posológica (comprimido, cápsula, ml, aplicação)</td></tr><tr><td style="white-space:nowrap">bioequivalence<a name="product-characteristic-bioequivalence"> </a></td><td>Bioequivalência</td><td>Indicação de estudo de bioequivalência realizado</td></tr><tr><td style="white-space:nowrap">excipient<a name="product-characteristic-excipient"> </a></td><td>Excipiente</td><td>Excipientes funcionais relevantes (ex: contém lactose, glúten, corantes azóicos)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic"/>
+  <version value="0.0.3"/>
+  <name value="ProductCharacteristic"/>
+  <title value="Características de Produto Medicinal"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Características observáveis e mensuráveis de produtos medicinais. CodeSystem brasileiro como alternativa ao SNOMED CT Observable Entity."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Descrever características físicas, químicas e farmacêuticas de produtos medicinais para fins de identificação, controle de qualidade e rastreabilidade"/>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="30"/>
+  <concept>
+    <code value="color"/>
+    <display value="Cor"/>
+    <definition value="Cor ou coloração do produto medicinal ou componente"/>
+  </concept>
+  <concept>
+    <code value="shape"/>
+    <display value="Forma"/>
+    <definition value="Forma geométrica do produto (ex: redondo, oval, oblongo, triangular)"/>
+  </concept>
+  <concept>
+    <code value="size"/>
+    <display value="Tamanho"/>
+    <definition value="Dimensões físicas do produto (comprimento, largura, altura, diâmetro)"/>
+  </concept>
+  <concept>
+    <code value="weight"/>
+    <display value="Peso"/>
+    <definition value="Massa ou peso do produto ou componente"/>
+  </concept>
+  <concept>
+    <code value="thickness"/>
+    <display value="Espessura"/>
+    <definition value="Espessura medida do produto sólido"/>
+  </concept>
+  <concept>
+    <code value="imprint"/>
+    <display value="Gravação"/>
+    <definition value="Texto, código ou símbolo gravado ou impresso no produto"/>
+  </concept>
+  <concept>
+    <code value="score"/>
+    <display value="Sulco"/>
+    <definition value="Presença, número e tipo de sulcos para divisão do produto"/>
+  </concept>
+  <concept>
+    <code value="coating"/>
+    <display value="Revestimento"/>
+    <definition value="Tipo e características do revestimento (entérico, film-coated, sugar-coated)"/>
+  </concept>
+  <concept>
+    <code value="appearance"/>
+    <display value="Aparência"/>
+    <definition value="Aparência visual geral do produto (brilhante, fosco, translúcido, opaco)"/>
+  </concept>
+  <concept>
+    <code value="pack-type"/>
+    <display value="Tipo de Embalagem"/>
+    <definition value="Tipo de embalagem primária (blister, frasco, ampola, seringa pré-preenchida)"/>
+  </concept>
+  <concept>
+    <code value="pack-material"/>
+    <display value="Material de Embalagem"/>
+    <definition value="Material da embalagem primária (PVC, vidro, HDPE, alumínio)"/>
+  </concept>
+  <concept>
+    <code value="pack-size"/>
+    <display value="Tamanho de Embalagem"/>
+    <definition value="Quantidade de unidades na embalagem"/>
+  </concept>
+  <concept>
+    <code value="release-profile"/>
+    <display value="Perfil de Liberação"/>
+    <definition value="Perfil de liberação do princípio ativo (liberação imediata, prolongada, modificada)"/>
+  </concept>
+  <concept>
+    <code value="dissolution-rate"/>
+    <display value="Taxa de Dissolução"/>
+    <definition value="Taxa de dissolução do produto conforme especificação farmacopeica"/>
+  </concept>
+  <concept>
+    <code value="disintegration-time"/>
+    <display value="Tempo de Desintegração"/>
+    <definition value="Tempo de desintegração conforme especificação farmacopeica"/>
+  </concept>
+  <concept>
+    <code value="ph"/>
+    <display value="pH"/>
+    <definition value="Valor de pH do produto ou solução"/>
+  </concept>
+  <concept>
+    <code value="osmolarity"/>
+    <display value="Osmolaridade"/>
+    <definition value="Osmolaridade de soluções injetáveis ou oftálmicas"/>
+  </concept>
+  <concept>
+    <code value="viscosity"/>
+    <display value="Viscosidade"/>
+    <definition value="Viscosidade de líquidos, géis ou semissólidos"/>
+  </concept>
+  <concept>
+    <code value="specific-gravity"/>
+    <display value="Densidade"/>
+    <definition value="Densidade ou peso específico do produto líquido"/>
+  </concept>
+  <concept>
+    <code value="taste"/>
+    <display value="Sabor"/>
+    <definition value="Sabor característico do produto (para formas orais)"/>
+  </concept>
+  <concept>
+    <code value="odor"/>
+    <display value="Odor"/>
+    <definition value="Odor característico do produto"/>
+  </concept>
+  <concept>
+    <code value="flavor"/>
+    <display value="Aroma"/>
+    <definition value="Aroma adicionado ao produto (ex: morango, laranja, menta)"/>
+  </concept>
+  <concept>
+    <code value="shelf-life"/>
+    <display value="Prazo de Validade"/>
+    <definition value="Prazo de validade em meses a partir da fabricação"/>
+  </concept>
+  <concept>
+    <code value="storage-temperature"/>
+    <display value="Temperatura de Armazenamento"/>
+    <definition value="Faixa de temperatura para armazenamento"/>
+  </concept>
+  <concept>
+    <code value="light-sensitivity"/>
+    <display value="Sensibilidade à Luz"/>
+    <definition value="Grau de sensibilidade à luz (proteger da luz, opaco, etc.)"/>
+  </concept>
+  <concept>
+    <code value="dose-strength"/>
+    <display value="Potência"/>
+    <definition value="Concentração ou potência do princípio ativo"/>
+  </concept>
+  <concept>
+    <code value="dose-volume"/>
+    <display value="Volume de Dose"/>
+    <definition value="Volume administrado por dose (para líquidos)"/>
+  </concept>
+  <concept>
+    <code value="dose-unit"/>
+    <display value="Unidade de Dose"/>
+    <definition value="Unidade posológica (comprimido, cápsula, ml, aplicação)"/>
+  </concept>
+  <concept>
+    <code value="bioequivalence"/>
+    <display value="Bioequivalência"/>
+    <definition value="Indicação de estudo de bioequivalência realizado"/>
+  </concept>
+  <concept>
+    <code value="excipient"/>
+    <display value="Excipiente"/>
+    <definition value="Excipientes funcionais relevantes (ex: contém lactose, glúten, corantes azóicos)"/>
+  </concept>
+</CodeSystem>

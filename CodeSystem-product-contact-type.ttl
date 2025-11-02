@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-contact-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "product-contact-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem product-contact-type</b></p><a name=\"product-contact-type\"> </a><a name=\"hcproduct-contact-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">regulatory-affairs<a name=\"product-contact-type-regulatory-affairs\"> </a></td><td>Assuntos Regulatórios</td><td>Contato para questões regulatórias, registros e conformidade</td></tr><tr><td style=\"white-space:nowrap\">pharmacovigilance<a name=\"product-contact-type-pharmacovigilance\"> </a></td><td>Farmacovigilância</td><td>Contato para notificação de eventos adversos e questões de segurança</td></tr><tr><td style=\"white-space:nowrap\">quality-assurance<a name=\"product-contact-type-quality-assurance\"> </a></td><td>Garantia de Qualidade</td><td>Contato para questões de qualidade do produto e desvios</td></tr><tr><td style=\"white-space:nowrap\">medical-information<a name=\"product-contact-type-medical-information\"> </a></td><td>Informação Médica</td><td>Contato para informações médico-científicas sobre o produto</td></tr><tr><td style=\"white-space:nowrap\">technical-support<a name=\"product-contact-type-technical-support\"> </a></td><td>Suporte Técnico</td><td>Contato para suporte técnico e questões de uso do produto</td></tr><tr><td style=\"white-space:nowrap\">supply-chain<a name=\"product-contact-type-supply-chain\"> </a></td><td>Cadeia de Suprimentos</td><td>Contato para questões de distribuição e disponibilidade</td></tr><tr><td style=\"white-space:nowrap\">product-complaints<a name=\"product-contact-type-product-complaints\"> </a></td><td>Reclamações de Produto</td><td>Contato para reclamações relacionadas à qualidade ou eficácia</td></tr><tr><td style=\"white-space:nowrap\">adverse-event-reporting<a name=\"product-contact-type-adverse-event-reporting\"> </a></td><td>Notificação de Eventos Adversos</td><td>Contato específico para notificação de eventos adversos</td></tr><tr><td style=\"white-space:nowrap\">quality-defect<a name=\"product-contact-type-quality-defect\"> </a></td><td>Defeito de Qualidade</td><td>Contato para notificação de defeitos ou problemas de qualidade</td></tr><tr><td style=\"white-space:nowrap\">general-inquiry<a name=\"product-contact-type-general-inquiry\"> </a></td><td>Consulta Geral</td><td>Contato para consultas gerais sobre o produto</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-contact-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-contact-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ProductContactType"] ; # 
+  fhir:title [ fhir:v "Tipos de Contato para Produto Medicinal"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de contato organizacional relacionados a produtos medicinais (ex: farmacovigilância, assuntos regulatórios)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "regulatory-affairs" ] ;
+     fhir:display [ fhir:v "Assuntos Regulatórios" ] ;
+     fhir:definition [ fhir:v "Contato para questões regulatórias, registros e conformidade" ]
+  ] [
+     fhir:code [ fhir:v "pharmacovigilance" ] ;
+     fhir:display [ fhir:v "Farmacovigilância" ] ;
+     fhir:definition [ fhir:v "Contato para notificação de eventos adversos e questões de segurança" ]
+  ] [
+     fhir:code [ fhir:v "quality-assurance" ] ;
+     fhir:display [ fhir:v "Garantia de Qualidade" ] ;
+     fhir:definition [ fhir:v "Contato para questões de qualidade do produto e desvios" ]
+  ] [
+     fhir:code [ fhir:v "medical-information" ] ;
+     fhir:display [ fhir:v "Informação Médica" ] ;
+     fhir:definition [ fhir:v "Contato para informações médico-científicas sobre o produto" ]
+  ] [
+     fhir:code [ fhir:v "technical-support" ] ;
+     fhir:display [ fhir:v "Suporte Técnico" ] ;
+     fhir:definition [ fhir:v "Contato para suporte técnico e questões de uso do produto" ]
+  ] [
+     fhir:code [ fhir:v "supply-chain" ] ;
+     fhir:display [ fhir:v "Cadeia de Suprimentos" ] ;
+     fhir:definition [ fhir:v "Contato para questões de distribuição e disponibilidade" ]
+  ] [
+     fhir:code [ fhir:v "product-complaints" ] ;
+     fhir:display [ fhir:v "Reclamações de Produto" ] ;
+     fhir:definition [ fhir:v "Contato para reclamações relacionadas à qualidade ou eficácia" ]
+  ] [
+     fhir:code [ fhir:v "adverse-event-reporting" ] ;
+     fhir:display [ fhir:v "Notificação de Eventos Adversos" ] ;
+     fhir:definition [ fhir:v "Contato específico para notificação de eventos adversos" ]
+  ] [
+     fhir:code [ fhir:v "quality-defect" ] ;
+     fhir:display [ fhir:v "Defeito de Qualidade" ] ;
+     fhir:definition [ fhir:v "Contato para notificação de defeitos ou problemas de qualidade" ]
+  ] [
+     fhir:code [ fhir:v "general-inquiry" ] ;
+     fhir:display [ fhir:v "Consulta Geral" ] ;
+     fhir:definition [ fhir:v "Contato para consultas gerais sobre o produto" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

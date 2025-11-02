@@ -1,0 +1,753 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-classification-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "GSRSSubstanceClassificationBR",
+      "title" : "GSRS Substance Classification - Brasil",
+      "description" : "Classificação de substâncias conforme GSRS adaptado para Brasil",
+      "uses" : {
+      },
+      "ValueSet-substance-classification-gsrs-br.html" : "Classificação de Substância GSRS/Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/gsrs-substance-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "GSRSSubstanceStatusBR",
+      "title" : "GSRS Substance Status - Brasil",
+      "description" : "Status de substâncias conforme padrão GSRS adaptado para Brasil",
+      "uses" : {
+      },
+      "ValueSet-substance-status-gsrs-br.html" : "Status de Substância GSRS/Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-basis-anvisa-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "LegalBasisANVISABR",
+      "title" : "Base Legal ANVISA",
+      "description" : "Bases legais para autorizações regulatórias ANVISA",
+      "uses" : {
+      },
+      "ValueSet-legal-basis-anvisa-br.html" : "Base Legal ANVISA Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-status-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationStatusBR",
+      "title" : "Status de Autorização Regulatória ANVISA",
+      "description" : "Status de autorizações regulatórias conforme processos ANVISA para medicamentos",
+      "uses" : {
+      },
+      "ValueSet-regulated-authorization-status-br.html" : "Status de Autorização Regulatória Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulated-authorization-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "RegulatedAuthorizationTypeBR",
+      "title" : "Tipo de Autorização Regulatória ANVISA",
+      "description" : "Tipos de autorizações regulatórias conforme processos ANVISA para medicamentos",
+      "uses" : {
+      },
+      "ValueSet-regulated-authorization-type-br.html" : "Tipo de Autorização Regulatória Brasil"
+    },
+    {
+      "url" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/regulatory-procedure-type-br",
+      "version" : "0.0.3",
+      "status" : "draft",
+      "name" : "RegulatoryProcedureTypeBR",
+      "title" : "Tipo de Procedimento Regulatório Brasil",
+      "description" : "Tipos de procedimentos regulatórios ANVISA",
+      "uses" : {
+      },
+      "ValueSet-regulatory-procedure-type-br.html" : "Tipo de Procedimento Regulatório Brasil"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.1.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ingredient-manufacturer-role",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IngredientManufacturerRole",
+      "title" : "Ingredient Manufacturer Role",
+      "description" : "The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role",
+      "oids" : ["2.16.840.1.113883.4.642.4.2078"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-ingredient-manufacturer-role.html" : "Ingredient Manufacturer Role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/product-intended-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ProductIntendedUse",
+      "title" : "Product Intended Use",
+      "description" : "ProductIntendedUse",
+      "oids" : ["2.16.840.1.113883.4.642.4.1908"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-product-intended-use.html" : "Product Intended Use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-publication-status.html" : "PublicationStatus",
+      "ValueSet-publication-status.html" : "Status de Publicação"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10",
+      "version" : "2.1.1",
+      "status" : "retired",
+      "name" : "Icd10",
+      "title" : "ICD-10",
+      "description" : "International Classification of Diseases revision 10 (ICD 10)",
+      "oids" : ["2.16.840.1.113883.6.3"],
+      "uses" : {
+      },
+      "ValueSet-comorbidity-br.html" : "Comorbidades - Brasil",
+      "ValueSet-contraindication-condition-br.html" : "Condições de Contraindicação - Brasil",
+      "ValueSet-therapeutic-indication-br.html" : "Indicações Terapêuticas - Brasil",
+      "ValueSet-disease-symptom-procedure.html" : "Doença, Sintoma ou Procedimento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/substance-amount-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SubstanceAmountType",
+      "title" : "Substance Amount Type",
+      "description" : "The type of a numeric quantity measurement.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2086"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-substance-amount-type.html" : "Substance Amount Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/substance-form",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SubstanceForm",
+      "title" : "Substance Form",
+      "description" : "SubstanceForm",
+      "oids" : ["2.16.840.1.113883.4.642.4.2111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-substance-form.html" : "Substance Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/substance-name-authority",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SubstanceNameAuthority",
+      "title" : "Substance Name Authority",
+      "description" : "SubstanceNameAuthority",
+      "oids" : ["2.16.840.1.113883.4.642.4.2095"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-substance-name-authority.html" : "Substance Name Authority"
+    },
+    {
+      "url" : "http://hl7.org/fhir/substance-representation-format",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SubstanceRepresentationFormat",
+      "title" : "Substance Representation Format",
+      "description" : "SubstanceRepresentationFormat",
+      "oids" : ["2.16.840.1.113883.4.642.4.2081"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-substance-representation-format.html" : "Substance Representation Format"
+    },
+    {
+      "url" : "http://hl7.org/fhir/substance-structure-technique",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SubstanceStructureTechnique",
+      "title" : "Substance Structure Technique",
+      "description" : "SubstanceStructureTechnique",
+      "oids" : ["2.16.840.1.113883.4.642.4.2082"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-substance-structure-technique.html" : "Structure Technique"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-organization-type.html" : "Organization Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-presentation-unit.html" : "Unidades de Apresentação",
+      "ValueSet-concentration-unit.html" : "Unidades de Concentração"
+    },
+    {
+      "url" : "http://www.whocc.no/atc",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "WC",
+      "title" : "WHO ATC",
+      "description" : "WHO ATC",
+      "oids" : ["2.16.840.1.113883.6.73"],
+      "uses" : {
+      },
+      "ValueSet-substance-code-meddra.html" : "Códigos de Substâncias (MedDRA + ATC)",
+      "ValueSet-substance-code-br.html" : "Códigos de Substância - Brasil",
+      "ValueSet-therapy.html" : "Terapia",
+      "ValueSet-medicinal-product-classification-atc.html" : "Classificação de Produto Medicinal (WHO ATC)",
+      "ValueSet-interactant.html" : "Substância Interagente",
+      "ValueSet-medicinal-product-code-atc.html" : "Códigos de Produto Medicinal (WHO ATC)"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/additional-monitoring-indicator",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AdditionalMonitoringIndicator",
+      "title" : "Indicador de Monitorização Adicional",
+      "description" : "Indicadores de monitorização extra definidos para produtos medicinais que requerem acompanhamento intensivo pós-comercialização",
+      "uses" : {
+      },
+      "ValueSet-additional-monitoring-indicator-vs.html" : "Indicador de Monitorização Adicional"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/animal-tissue-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AnimalTissueType",
+      "title" : "Tipos de Tecido Animal",
+      "description" : "Tipos de tecidos animais para os quais períodos de carência (withdrawal periods) são especificados em produtos veterinários",
+      "uses" : {
+      },
+      "ValueSet-animal-tissue-type-vs.html" : "Tipos de Tecido Animal"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-case-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AuthorizationCaseType",
+      "title" : "Tipo de Processo de Autorização",
+      "description" : "Tipos de processos administrativos para autorização regulatória",
+      "uses" : {
+      },
+      "ValueSet-authorization-case-type-vs.html" : "Tipo de Processo de Autorização"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/authorization-status-reason",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "AuthorizationStatusReason",
+      "title" : "Motivo do Status da Autorização",
+      "description" : "Motivos para o status atual de uma autorização regulatória",
+      "uses" : {
+      },
+      "ValueSet-authorization-status-reason-vs.html" : "Motivo do Status da Autorização"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-genus",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "BiologicalGenus",
+      "title" : "Gênero Biológico",
+      "description" : "Gêneros biológicos comuns em substâncias farmacêuticas",
+      "uses" : {
+      },
+      "ValueSet-biological-genus-vs.html" : "Gênero Biológico"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/biological-species",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "BiologicalSpecies",
+      "title" : "Espécie Biológica",
+      "description" : "Espécies biológicas comuns em substâncias farmacêuticas",
+      "uses" : {
+      },
+      "ValueSet-biological-species-vs.html" : "Espécie Biológica"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-category",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ClinicalUseDefinitionCategory",
+      "title" : "Categoria de Definição de Uso Clínico",
+      "description" : "Categorias que classificam o uso clínico (gravidez, lactação, etc.)",
+      "uses" : {
+      },
+      "ValueSet-clinical-use-definition-category-vs.html" : "Categoria de Definição de Uso Clínico"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ClinicalUseDefinitionType",
+      "title" : "Tipo de Definição de Uso Clínico",
+      "description" : "Tipos de definição de uso clínico de produtos medicinais",
+      "uses" : {
+      },
+      "ValueSet-clinical-use-definition-type-vs.html" : "Tipo de Definição de Uso Clínico"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/disease-status",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "DiseaseStatus",
+      "title" : "Status da Doença",
+      "description" : "Status ou estágio de uma condição médica",
+      "uses" : {
+      },
+      "ValueSet-disease-status-vs.html" : "Status da Doença"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-effect",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionEffect",
+      "title" : "Efeito da Interação",
+      "description" : "Efeito clínico resultante de uma interação",
+      "uses" : {
+      },
+      "ValueSet-interaction-effect-vs.html" : "Efeito da Interação"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-incidence",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionIncidence",
+      "title" : "Incidência de Interação",
+      "description" : "Frequência de ocorrência de interações",
+      "uses" : {
+      },
+      "ValueSet-interaction-incidence-vs.html" : "Incidência de Interação"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-management",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionManagement",
+      "title" : "Manejo de Interação",
+      "description" : "Estratégias de manejo de interações medicamentosas",
+      "uses" : {
+      },
+      "ValueSet-interaction-management-vs.html" : "Manejo de Interação"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "InteractionType",
+      "title" : "Tipo de Interação",
+      "description" : "Tipos de interação medicamentosa e com alimentos",
+      "uses" : {
+      },
+      "ValueSet-interaction-type-vs.html" : "Tipo de Interação"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-location",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ManufacturedItemComponentLocation",
+      "title" : "Localização de Componente de Item Manufaturado",
+      "description" : "Localização de componentes dentro do item manufaturado",
+      "uses" : {
+      },
+      "ValueSet-manufactured-item-component-location-vs.html" : "Localização de Componente"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufactured-item-component-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ManufacturedItemComponentType",
+      "title" : "Tipo de Componente de Item Manufaturado",
+      "description" : "Tipos de componentes estruturais de itens manufaturados",
+      "uses" : {
+      },
+      "ValueSet-manufactured-item-component-type-vs.html" : "Tipo de Componente"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/manufacturing-process",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ManufacturingProcess",
+      "title" : "Processo de Manufatura",
+      "description" : "Processos de manufatura de produtos farmacêuticos",
+      "uses" : {
+      },
+      "ValueSet-manufacturing-process-vs.html" : "Processo de Manufatura"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/medicinal-product-domain",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "MedicinalProductDomain",
+      "title" : "Domínio de Produto Medicinal",
+      "description" : "Domínio aplicável para o produto medicinal (uso humano, veterinário ou ambos)",
+      "uses" : {
+      },
+      "ValueSet-medicinal-product-domain-vs.html" : "Domínio de Produto Medicinal"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/optical-activity",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "OpticalActivity",
+      "title" : "Atividade Óptica",
+      "description" : "Atividade óptica de substâncias quirais (rotação da luz polarizada)",
+      "uses" : {
+      },
+      "ValueSet-optical-activity-vs.html" : "Atividade Óptica"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organism-part",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "OrganismPart",
+      "title" : "Parte do Organismo",
+      "description" : "Partes de organismos usadas como fonte de substâncias",
+      "uses" : {
+      },
+      "ValueSet-organism-part-vs.html" : "Parte do Organismo"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/pediatric-use-indicator",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "PediatricUseIndicator",
+      "title" : "Indicador de Uso Pediátrico",
+      "description" : "Indicadores relacionados a uso pediátrico de produtos medicinais, incluindo requisitos de investigação pediátrica e dispensas",
+      "uses" : {
+      },
+      "ValueSet-pediatric-use-indicator-vs.html" : "Indicador de Uso Pediátrico"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-characteristic",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductCharacteristic",
+      "title" : "Características de Produto Medicinal",
+      "description" : "Características observáveis e mensuráveis de produtos medicinais. CodeSystem brasileiro como alternativa ao SNOMED CT Observable Entity.",
+      "uses" : {
+      },
+      "ValueSet-product-characteristic-hybrid.html" : "Características de Produto (Brasil + MedDRA)",
+      "ValueSet-product-characteristic-vs.html" : "Características de Produto Medicinal"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-confidentiality",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductConfidentiality",
+      "title" : "Confidencialidade de Produto Medicinal",
+      "description" : "Classificação de confidencialidade para informações e operações relacionadas a produtos medicinais",
+      "uses" : {
+      },
+      "ValueSet-product-confidentiality-vs.html" : "Confidencialidade de Produto Medicinal"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-contact-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductContactType",
+      "title" : "Tipos de Contato para Produto Medicinal",
+      "description" : "Tipos de contato organizacional relacionados a produtos medicinais (ex: farmacovigilância, assuntos regulatórios)",
+      "uses" : {
+      },
+      "ValueSet-product-contact-type-vs.html" : "Tipos de Contato para Produto Medicinal"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/product-intended-use",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "ProductIntendedUse",
+      "title" : "Uso Pretendido do Produto",
+      "description" : "Classificação do uso pretendido de produtos farmacêuticos",
+      "uses" : {
+      },
+      "ValueSet-product-intended-use-vs.html" : "Uso Pretendido do Produto"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/source-material-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SourceMaterialType",
+      "title" : "Tipo de Material de Origem",
+      "description" : "Tipos de material de origem para substâncias biológicas",
+      "uses" : {
+      },
+      "ValueSet-source-material-type-vs.html" : "Tipo de Material de Origem"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/special-measures",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SpecialMeasures",
+      "title" : "Medidas Especiais para Produto Medicinal",
+      "description" : "Medidas especiais definidas para produtos medicinais, como requisitos de estudos pós-autorização, planos de gestão de risco ou restrições de prescrição",
+      "uses" : {
+      },
+      "ValueSet-special-measures-vs.html" : "Medidas Especiais para Produto Medicinal"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/stereochemistry",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "Stereochemistry",
+      "title" : "Estereoquímica de Substâncias",
+      "description" : "Classificação estereoquímica de substâncias (quiralidade, configuração espacial)",
+      "uses" : {
+      },
+      "ValueSet-stereochemistry-vs.html" : "Estereoquímica de Substâncias"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-representation-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "StructureRepresentationType",
+      "title" : "Tipo de Representação Estrutural",
+      "description" : "Formatos de representação de estruturas químicas",
+      "uses" : {
+      },
+      "ValueSet-structure-representation-type-vs.html" : "Tipo de Representação Estrutural"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/structure-technique",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "StructureTechnique",
+      "title" : "Técnicas de Caracterização Estrutural",
+      "description" : "Técnicas analíticas para determinação de estrutura molecular",
+      "uses" : {
+      },
+      "ValueSet-structure-technique-vs.html" : "Técnicas de Caracterização Estrutural"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-amount-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceAmountType",
+      "title" : "Tipo de Medida de Quantidade de Substância",
+      "description" : "Tipos de medidas para quantificar substâncias",
+      "uses" : {
+      },
+      "ValueSet-substance-amount-type-vs.html" : "Tipo de Quantidade de Substância"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-form",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceForm",
+      "title" : "Forma Física de Substâncias",
+      "description" : "Estado físico e forma cristalina de substâncias farmacêuticas",
+      "uses" : {
+      },
+      "ValueSet-substance-form-vs.html" : "Forma Física de Substâncias"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-impurity",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceImpurity",
+      "title" : "Tipos de Impurezas em Substâncias Farmacêuticas",
+      "description" : "Classificação de tipos de impurezas encontradas em substâncias farmacêuticas ativas e excipientes",
+      "uses" : {
+      },
+      "ValueSet-substance-impurity-vs.html" : "Impurezas de Substâncias Farmacêuticas"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-authority",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceNameAuthority",
+      "title" : "Autoridade de Nomenclatura de Substâncias",
+      "description" : "Organizações/autoridades que atribuem nomes oficiais a substâncias",
+      "uses" : {
+      },
+      "ValueSet-substance-name-authority-vs.html" : "Autoridade de Nomenclatura"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-domain",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceNameDomain",
+      "title" : "Domínio de Nome de Substância",
+      "description" : "Domínio ou contexto de uso de nome de substância",
+      "uses" : {
+      },
+      "ValueSet-substance-name-domain-vs.html" : "Domínio de Nome de Substância"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-relationship-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "SubstanceRelationshipType",
+      "title" : "Tipo de Relacionamento entre Substâncias",
+      "description" : "Tipos de relacionamentos entre substâncias químicas",
+      "uses" : {
+      },
+      "ValueSet-substance-relationship-type-vs.html" : "Tipo de Relacionamento entre Substâncias"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/target-species",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "TargetSpecies",
+      "title" : "Espécies-Alvo para Produtos Veterinários",
+      "description" : "Espécies animais para as quais um produto medicinal veterinário é destinado",
+      "uses" : {
+      },
+      "ValueSet-target-species-vs.html" : "Espécies-Alvo para Produtos Veterinários"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/therapy-relationship-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "TherapyRelationshipType",
+      "title" : "Tipo de Relacionamento Terapêutico",
+      "description" : "Relacionamento entre terapia e contraindicação ou indicação",
+      "uses" : {
+      },
+      "ValueSet-therapy-relationship-type-vs.html" : "Tipo de Relacionamento Terapêutico"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-classification",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "UndesirableEffectClassification",
+      "title" : "Classificação de Efeito Indesejável",
+      "description" : "Classificação de alta hierarquia para efeitos indesejáveis",
+      "uses" : {
+      },
+      "ValueSet-undesirable-effect-classification-vs.html" : "Classificação de Efeito Indesejável"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/undesirable-effect-frequency",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "UndesirableEffectFrequency",
+      "title" : "Frequência de Efeito Indesejável",
+      "description" : "Frequência de ocorrência de efeitos indesejáveis conforme CIOMS",
+      "uses" : {
+      },
+      "ValueSet-undesirable-effect-frequency-vs.html" : "Frequência de Efeito Indesejável"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/warning-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "WarningType",
+      "title" : "Tipo de Advertência",
+      "description" : "Tipos de advertências e precauções",
+      "uses" : {
+      },
+      "ValueSet-warning-type-vs.html" : "Tipo de Advertência"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "WeightMethod",
+      "title" : "Método de Determinação de Peso Molecular",
+      "description" : "Métodos para determinação de peso/massa molecular",
+      "uses" : {
+      },
+      "ValueSet-weight-method-vs.html" : "Método de Determinação de Peso Molecular"
+    },
+    {
+      "url" : "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-type",
+      "version" : "0.0.3",
+      "status" : "active",
+      "name" : "WeightType",
+      "title" : "Tipo de Peso Molecular",
+      "description" : "Tipos de peso molecular para substâncias",
+      "uses" : {
+      },
+      "ValueSet-weight-type-vs.html" : "Tipo de Peso Molecular"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "ValueSet-language-valueset.html" : "Idiomas (BCP-47)"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "ValueSet-jurisdiction-valueset.html" : "Jurisdições (ISO 3166 + UN M49)",
+      "http://hl7.org/fhir/R5/valueset-iso3166-1-3.html" : "Iso 3166 Part 1: 3 Letter Codes",
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet",
+      "ValueSet-country-valueset.html" : "Países (ISO 3166-1)",
+      "http://hl7.org/fhir/R5/valueset-country.html" : "Country ValueSet"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part2",
+      "title" : "ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code",
+      "description" : "ISO 3166-2 establishes a code that represents the names of the principal administrative divisions, or similar areas, of the countries and entities included in ISO 3166-1.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet"
+    }
+  ]
+}

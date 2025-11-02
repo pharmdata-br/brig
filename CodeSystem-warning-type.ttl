@@ -1,0 +1,160 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/warning-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "warning-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem warning-type</b></p><a name=\"warning-type\"> </a><a name=\"hcwarning-type\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">boxed-warning<a name=\"warning-type-boxed-warning\"> </a></td><td>Tarja Preta</td><td>Advertência em tarja preta (boxed warning) - mais grave</td></tr><tr><td style=\"white-space:nowrap\">special-warning<a name=\"warning-type-special-warning\"> </a></td><td>Advertência Especial</td><td>Advertência especial sobre riscos importantes</td></tr><tr><td style=\"white-space:nowrap\">pregnancy-warning<a name=\"warning-type-pregnancy-warning\"> </a></td><td>Advertência de Gravidez</td><td>Advertência sobre uso na gravidez</td></tr><tr><td style=\"white-space:nowrap\">lactation-warning<a name=\"warning-type-lactation-warning\"> </a></td><td>Advertência de Lactação</td><td>Advertência sobre uso na lactação</td></tr><tr><td style=\"white-space:nowrap\">pediatric-warning<a name=\"warning-type-pediatric-warning\"> </a></td><td>Advertência Pediátrica</td><td>Advertência sobre uso pediátrico</td></tr><tr><td style=\"white-space:nowrap\">geriatric-warning<a name=\"warning-type-geriatric-warning\"> </a></td><td>Advertência Geriátrica</td><td>Advertência sobre uso em idosos</td></tr><tr><td style=\"white-space:nowrap\">renal-warning<a name=\"warning-type-renal-warning\"> </a></td><td>Advertência Renal</td><td>Advertência para insuficiência renal</td></tr><tr><td style=\"white-space:nowrap\">hepatic-warning<a name=\"warning-type-hepatic-warning\"> </a></td><td>Advertência Hepática</td><td>Advertência para insuficiência hepática</td></tr><tr><td style=\"white-space:nowrap\">cardiac-warning<a name=\"warning-type-cardiac-warning\"> </a></td><td>Advertência Cardíaca</td><td>Advertência para condições cardíacas</td></tr><tr><td style=\"white-space:nowrap\">monitoring-warning<a name=\"warning-type-monitoring-warning\"> </a></td><td>Advertência de Monitoramento</td><td>Necessidade de monitoramento especial</td></tr><tr><td style=\"white-space:nowrap\">abuse-potential<a name=\"warning-type-abuse-potential\"> </a></td><td>Potencial de Abuso</td><td>Advertência sobre potencial de abuso ou dependência</td></tr><tr><td style=\"white-space:nowrap\">driving-warning<a name=\"warning-type-driving-warning\"> </a></td><td>Advertência para Condução</td><td>Efeitos sobre capacidade de dirigir veículos</td></tr><tr><td style=\"white-space:nowrap\">photosensitivity<a name=\"warning-type-photosensitivity\"> </a></td><td>Fotossensibilidade</td><td>Advertência sobre fotossensibilidade</td></tr><tr><td style=\"white-space:nowrap\">allergic-reaction<a name=\"warning-type-allergic-reaction\"> </a></td><td>Reação Alérgica</td><td>Risco de reações alérgicas graves</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/warning-type"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/warning-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "WarningType"] ; # 
+  fhir:title [ fhir:v "Tipo de Advertência"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipos de advertências e precauções"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "boxed-warning" ] ;
+     fhir:display [ fhir:v "Tarja Preta" ] ;
+     fhir:definition [ fhir:v "Advertência em tarja preta (boxed warning) - mais grave" ]
+  ] [
+     fhir:code [ fhir:v "special-warning" ] ;
+     fhir:display [ fhir:v "Advertência Especial" ] ;
+     fhir:definition [ fhir:v "Advertência especial sobre riscos importantes" ]
+  ] [
+     fhir:code [ fhir:v "pregnancy-warning" ] ;
+     fhir:display [ fhir:v "Advertência de Gravidez" ] ;
+     fhir:definition [ fhir:v "Advertência sobre uso na gravidez" ]
+  ] [
+     fhir:code [ fhir:v "lactation-warning" ] ;
+     fhir:display [ fhir:v "Advertência de Lactação" ] ;
+     fhir:definition [ fhir:v "Advertência sobre uso na lactação" ]
+  ] [
+     fhir:code [ fhir:v "pediatric-warning" ] ;
+     fhir:display [ fhir:v "Advertência Pediátrica" ] ;
+     fhir:definition [ fhir:v "Advertência sobre uso pediátrico" ]
+  ] [
+     fhir:code [ fhir:v "geriatric-warning" ] ;
+     fhir:display [ fhir:v "Advertência Geriátrica" ] ;
+     fhir:definition [ fhir:v "Advertência sobre uso em idosos" ]
+  ] [
+     fhir:code [ fhir:v "renal-warning" ] ;
+     fhir:display [ fhir:v "Advertência Renal" ] ;
+     fhir:definition [ fhir:v "Advertência para insuficiência renal" ]
+  ] [
+     fhir:code [ fhir:v "hepatic-warning" ] ;
+     fhir:display [ fhir:v "Advertência Hepática" ] ;
+     fhir:definition [ fhir:v "Advertência para insuficiência hepática" ]
+  ] [
+     fhir:code [ fhir:v "cardiac-warning" ] ;
+     fhir:display [ fhir:v "Advertência Cardíaca" ] ;
+     fhir:definition [ fhir:v "Advertência para condições cardíacas" ]
+  ] [
+     fhir:code [ fhir:v "monitoring-warning" ] ;
+     fhir:display [ fhir:v "Advertência de Monitoramento" ] ;
+     fhir:definition [ fhir:v "Necessidade de monitoramento especial" ]
+  ] [
+     fhir:code [ fhir:v "abuse-potential" ] ;
+     fhir:display [ fhir:v "Potencial de Abuso" ] ;
+     fhir:definition [ fhir:v "Advertência sobre potencial de abuso ou dependência" ]
+  ] [
+     fhir:code [ fhir:v "driving-warning" ] ;
+     fhir:display [ fhir:v "Advertência para Condução" ] ;
+     fhir:definition [ fhir:v "Efeitos sobre capacidade de dirigir veículos" ]
+  ] [
+     fhir:code [ fhir:v "photosensitivity" ] ;
+     fhir:display [ fhir:v "Fotossensibilidade" ] ;
+     fhir:definition [ fhir:v "Advertência sobre fotossensibilidade" ]
+  ] [
+     fhir:code [ fhir:v "allergic-reaction" ] ;
+     fhir:display [ fhir:v "Reação Alérgica" ] ;
+     fhir:definition [ fhir:v "Risco de reações alérgicas graves" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

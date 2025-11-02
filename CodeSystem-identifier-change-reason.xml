@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="identifier-change-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem identifier-change-reason</b></p><a name="identifier-change-reason"> </a><a name="hcidentifier-change-reason"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">mah-transfer<a name="identifier-change-reason-mah-transfer"> </a></td><td>Transferência de Titular</td><td>Mudança do titular da autorização de marketing</td></tr><tr><td style="white-space:nowrap">legal-status-change<a name="identifier-change-reason-legal-status-change"> </a></td><td>Mudança de Status Legal</td><td>Alteração do status legal de fornecimento (prescrição, OTC, controlado)</td></tr><tr><td style="white-space:nowrap">indication-change<a name="identifier-change-reason-indication-change"> </a></td><td>Mudança de Indicação Terapêutica</td><td>Adição, remoção ou modificação significativa de indicações terapêuticas</td></tr><tr><td style="white-space:nowrap">strength-change<a name="identifier-change-reason-strength-change"> </a></td><td>Mudança de Concentração</td><td>Alteração na concentração ou força da substância ativa</td></tr><tr><td style="white-space:nowrap">form-change<a name="identifier-change-reason-form-change"> </a></td><td>Mudança de Forma Farmacêutica</td><td>Alteração da forma farmacêutica do produto</td></tr><tr><td style="white-space:nowrap">route-change<a name="identifier-change-reason-route-change"> </a></td><td>Mudança de Via de Administração</td><td>Adição, remoção ou modificação das vias de administração</td></tr><tr><td style="white-space:nowrap">substance-change<a name="identifier-change-reason-substance-change"> </a></td><td>Mudança de Substância Ativa</td><td>Alteração, adição ou remoção de substância ativa</td></tr><tr><td style="white-space:nowrap">package-change<a name="identifier-change-reason-package-change"> </a></td><td>Mudança de Embalagem</td><td>Alteração significativa na embalagem primária ou secundária</td></tr><tr><td style="white-space:nowrap">container-change<a name="identifier-change-reason-container-change"> </a></td><td>Mudança de Container</td><td>Alteração do tipo ou material do container primário</td></tr><tr><td style="white-space:nowrap">quantity-change<a name="identifier-change-reason-quantity-change"> </a></td><td>Mudança de Quantidade</td><td>Alteração da quantidade de unidades por embalagem</td></tr><tr><td style="white-space:nowrap">component-change<a name="identifier-change-reason-component-change"> </a></td><td>Mudança de Componente</td><td>Adição, remoção ou modificação de componentes da embalagem</td></tr><tr><td style="white-space:nowrap">regulatory-requirement<a name="identifier-change-reason-regulatory-requirement"> </a></td><td>Exigência Regulatória</td><td>Mudança requerida por autoridade regulatória</td></tr><tr><td style="white-space:nowrap">safety-update<a name="identifier-change-reason-safety-update"> </a></td><td>Atualização de Segurança</td><td>Mudança motivada por questões de segurança</td></tr><tr><td style="white-space:nowrap">quality-improvement<a name="identifier-change-reason-quality-improvement"> </a></td><td>Melhoria de Qualidade</td><td>Mudança para melhoramento da qualidade do produto</td></tr><tr><td style="white-space:nowrap">brand-change<a name="identifier-change-reason-brand-change"> </a></td><td>Mudança de Marca</td><td>Alteração da marca comercial do produto</td></tr><tr><td style="white-space:nowrap">manufacturer-change<a name="identifier-change-reason-manufacturer-change"> </a></td><td>Mudança de Fabricante</td><td>Alteração do fabricante responsável</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/identifier-change-reason"/>
+  <version value="0.0.3"/>
+  <name value="IdentifierChangeReason"/>
+  <title value="Motivos de Mudança de Identificador"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-04"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para motivos de mudança de identificadores MPID/PCID"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="mah-transfer"/>
+    <display value="Transferência de Titular"/>
+    <definition value="Mudança do titular da autorização de marketing"/>
+  </concept>
+  <concept>
+    <code value="legal-status-change"/>
+    <display value="Mudança de Status Legal"/>
+    <definition value="Alteração do status legal de fornecimento (prescrição, OTC, controlado)"/>
+  </concept>
+  <concept>
+    <code value="indication-change"/>
+    <display value="Mudança de Indicação Terapêutica"/>
+    <definition value="Adição, remoção ou modificação significativa de indicações terapêuticas"/>
+  </concept>
+  <concept>
+    <code value="strength-change"/>
+    <display value="Mudança de Concentração"/>
+    <definition value="Alteração na concentração ou força da substância ativa"/>
+  </concept>
+  <concept>
+    <code value="form-change"/>
+    <display value="Mudança de Forma Farmacêutica"/>
+    <definition value="Alteração da forma farmacêutica do produto"/>
+  </concept>
+  <concept>
+    <code value="route-change"/>
+    <display value="Mudança de Via de Administração"/>
+    <definition value="Adição, remoção ou modificação das vias de administração"/>
+  </concept>
+  <concept>
+    <code value="substance-change"/>
+    <display value="Mudança de Substância Ativa"/>
+    <definition value="Alteração, adição ou remoção de substância ativa"/>
+  </concept>
+  <concept>
+    <code value="package-change"/>
+    <display value="Mudança de Embalagem"/>
+    <definition value="Alteração significativa na embalagem primária ou secundária"/>
+  </concept>
+  <concept>
+    <code value="container-change"/>
+    <display value="Mudança de Container"/>
+    <definition value="Alteração do tipo ou material do container primário"/>
+  </concept>
+  <concept>
+    <code value="quantity-change"/>
+    <display value="Mudança de Quantidade"/>
+    <definition value="Alteração da quantidade de unidades por embalagem"/>
+  </concept>
+  <concept>
+    <code value="component-change"/>
+    <display value="Mudança de Componente"/>
+    <definition value="Adição, remoção ou modificação de componentes da embalagem"/>
+  </concept>
+  <concept>
+    <code value="regulatory-requirement"/>
+    <display value="Exigência Regulatória"/>
+    <definition value="Mudança requerida por autoridade regulatória"/>
+  </concept>
+  <concept>
+    <code value="safety-update"/>
+    <display value="Atualização de Segurança"/>
+    <definition value="Mudança motivada por questões de segurança"/>
+  </concept>
+  <concept>
+    <code value="quality-improvement"/>
+    <display value="Melhoria de Qualidade"/>
+    <definition value="Mudança para melhoramento da qualidade do produto"/>
+  </concept>
+  <concept>
+    <code value="brand-change"/>
+    <display value="Mudança de Marca"/>
+    <definition value="Alteração da marca comercial do produto"/>
+  </concept>
+  <concept>
+    <code value="manufacturer-change"/>
+    <display value="Mudança de Fabricante"/>
+    <definition value="Alteração do fabricante responsável"/>
+  </concept>
+</CodeSystem>

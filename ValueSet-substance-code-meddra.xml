@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="substance-code-meddra"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet substance-code-meddra</b></p><a name="substance-code-meddra"> </a><a name="hcsubstance-code-meddra"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir todos os códigos definidos em <code>http://www.meddra.org</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span></li><li>Incluir todos os códigos definidos em <a href="http://www.whocc.no/atc"><code>http://www.whocc.no/atc</code></a><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span></li><li>Incluir todos os códigos definidos em <code>http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/substance-code-meddra"/>
+  <version value="0.0.3"/>
+  <name value="SubstanceCodeMedDRA"/>
+  <title value="Códigos de Substâncias (MedDRA + ATC)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Códigos de substâncias farmacêuticas usando MedDRA (Medical Dictionary for Regulatory Activities) e WHO ATC como alternativa ao SNOMED CT (Brasil não é signatário)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Identificar substâncias farmacêuticas usando terminologia internacional aceita no Brasil (MedDRA e ATC)"/>
+  <copyright value="MedDRA® é marca registrada da IFPMA. ATC é mantido pela OMS."/>
+  <compose>
+    <include>
+      <system value="http://www.meddra.org"/>
+    </include>
+    <include>
+      <system value="http://www.whocc.no/atc"/>
+    </include>
+    <include>
+      <system value="http://farmaco.maxapex.net/brig/fhir/CodeSystem/anvisa-substance-code"/>
+    </include>
+  </compose>
+</ValueSet>

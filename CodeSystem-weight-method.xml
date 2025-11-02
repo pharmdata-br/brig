@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="weight-method"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem weight-method</b></p><a name="weight-method"> </a><a name="hcweight-method"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">calculated<a name="weight-method-calculated"> </a></td><td>Calculado</td><td>Peso molecular calculado a partir da fórmula química</td></tr><tr><td style="white-space:nowrap">mass-spectrometry<a name="weight-method-mass-spectrometry"> </a></td><td>Espectrometria de Massas</td><td>Determinado por espectrometria de massas</td></tr><tr><td style="white-space:nowrap">gel-permeation<a name="weight-method-gel-permeation"> </a></td><td>Cromatografia de Permeação em Gel</td><td>GPC - Gel Permeation Chromatography</td></tr><tr><td style="white-space:nowrap">light-scattering<a name="weight-method-light-scattering"> </a></td><td>Espalhamento de Luz</td><td>Light scattering techniques</td></tr><tr><td style="white-space:nowrap">ultracentrifugation<a name="weight-method-ultracentrifugation"> </a></td><td>Ultracentrifugação</td><td>Analytical ultracentrifugation</td></tr><tr><td style="white-space:nowrap">osmometry<a name="weight-method-osmometry"> </a></td><td>Osmometria</td><td>Medição de pressão osmótica</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/weight-method"/>
+  <version value="0.0.3"/>
+  <name value="WeightMethod"/>
+  <title value="Método de Determinação de Peso Molecular"/>
+  <status value="active"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Métodos para determinação de peso/massa molecular"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="calculated"/>
+    <display value="Calculado"/>
+    <definition value="Peso molecular calculado a partir da fórmula química"/>
+  </concept>
+  <concept>
+    <code value="mass-spectrometry"/>
+    <display value="Espectrometria de Massas"/>
+    <definition value="Determinado por espectrometria de massas"/>
+  </concept>
+  <concept>
+    <code value="gel-permeation"/>
+    <display value="Cromatografia de Permeação em Gel"/>
+    <definition value="GPC - Gel Permeation Chromatography"/>
+  </concept>
+  <concept>
+    <code value="light-scattering"/>
+    <display value="Espalhamento de Luz"/>
+    <definition value="Light scattering techniques"/>
+  </concept>
+  <concept>
+    <code value="ultracentrifugation"/>
+    <display value="Ultracentrifugação"/>
+    <definition value="Analytical ultracentrifugation"/>
+  </concept>
+  <concept>
+    <code value="osmometry"/>
+    <display value="Osmometria"/>
+    <definition value="Medição de pressão osmótica"/>
+  </concept>
+</CodeSystem>

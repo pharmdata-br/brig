@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>ClinicalUseDefinition-paracetamol-clinical-indication-example-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid" data-fhir="generated-heirarchy">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>invalid</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.indication.diseaseSymptomProcedure.concept.coding[0].display</td><td>Wrong Display Name 'Febre não especificada' for http://hl7.org/fhir/sid/icd-10#R50.9. Valid display is 'Fever, unspecified' (for the language(s) 'pt-BR')</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.indication.diseaseStatus.concept.coding[0].display</td><td>Wrong Display Name 'Acute (qualifier value)' for http://snomed.info/sct#255212004. There are no valid display names found for language(s) 'pt-BR'. Default display is 'Acute-on-chronic'</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.indication.comorbidity[0].concept.coding[0].display</td><td>Wrong Display Name 'Dor não especificada' for http://hl7.org/fhir/sid/icd-10#R52.9. Valid display is 'Pain, unspecified' (for the language(s) 'pt-BR')</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.indication.comorbidity[1].concept.coding[0].display</td><td>Wrong Display Name 'Enxaqueca não especificada' for http://hl7.org/fhir/sid/icd-10#G43.9. Valid display is 'Migraine, unspecified' (for the language(s) 'pt-BR')</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.indication.intendedEffect.concept.coding[0].code</td><td>Unknown code '86799002' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</td><td></td></tr>
+<tr><td>warning</td><td>invalid</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.identifier[0].system</td><td>Não foi possível encontrar uma definição para o valor URL 'http://farmaco.maxapex.net/brig/fhir/NamingSystem/clinical-use-id'</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.category[0].coding[0].system</td><td>A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br' could not be found, so the code cannot be validated</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.category[1].coding[0]</td><td>Não foi possível encontrar uma definição para o CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.category[2].coding[0]</td><td>Não foi possível encontrar uma definição para o CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br', pelo que o código não pode ser validado</td><td></td></tr>
+<tr><td>warning</td><td>not-found</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition.status.coding[0].system</td><td>A definition for CodeSystem 'http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br' could not be found, so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>ClinicalUseDefinition/paracetamol-clinical-indication-example: ClinicalUseDefinition</td><td>Validar recurso em relação ao perfil https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br|0.0.3</td><td></td></tr>
+</table>
+</body>
+</html>

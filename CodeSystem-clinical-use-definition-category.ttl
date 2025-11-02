@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "clinical-use-definition-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem clinical-use-definition-category</b></p><a name=\"clinical-use-definition-category\"> </a><a name=\"hcclinical-use-definition-category\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">pregnancy<a name=\"clinical-use-definition-category-pregnancy\"> </a></td><td>Gravidez</td><td>Uso durante a gravidez</td></tr><tr><td style=\"white-space:nowrap\">lactation<a name=\"clinical-use-definition-category-lactation\"> </a></td><td>Lactação</td><td>Uso durante amamentação</td></tr><tr><td style=\"white-space:nowrap\">pediatric<a name=\"clinical-use-definition-category-pediatric\"> </a></td><td>Pediátrico</td><td>Uso em população pediátrica</td></tr><tr><td style=\"white-space:nowrap\">geriatric<a name=\"clinical-use-definition-category-geriatric\"> </a></td><td>Geriátrico</td><td>Uso em população geriátrica</td></tr><tr><td style=\"white-space:nowrap\">renal-impairment<a name=\"clinical-use-definition-category-renal-impairment\"> </a></td><td>Insuficiência Renal</td><td>Uso em pacientes com insuficiência renal</td></tr><tr><td style=\"white-space:nowrap\">hepatic-impairment<a name=\"clinical-use-definition-category-hepatic-impairment\"> </a></td><td>Insuficiência Hepática</td><td>Uso em pacientes com insuficiência hepática</td></tr><tr><td style=\"white-space:nowrap\">overdose<a name=\"clinical-use-definition-category-overdose\"> </a></td><td>Superdosagem</td><td>Informações sobre superdosagem</td></tr><tr><td style=\"white-space:nowrap\">driving<a name=\"clinical-use-definition-category-driving\"> </a></td><td>Condução de Veículos</td><td>Efeitos sobre capacidade de dirigir</td></tr><tr><td style=\"white-space:nowrap\">alcohol<a name=\"clinical-use-definition-category-alcohol\"> </a></td><td>Álcool</td><td>Interação com álcool</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-category"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-definition-category>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "ClinicalUseDefinitionCategory"] ; # 
+  fhir:title [ fhir:v "Categoria de Definição de Uso Clínico"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Categorias que classificam o uso clínico (gravidez, lactação, etc.)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pregnancy" ] ;
+     fhir:display [ fhir:v "Gravidez" ] ;
+     fhir:definition [ fhir:v "Uso durante a gravidez" ]
+  ] [
+     fhir:code [ fhir:v "lactation" ] ;
+     fhir:display [ fhir:v "Lactação" ] ;
+     fhir:definition [ fhir:v "Uso durante amamentação" ]
+  ] [
+     fhir:code [ fhir:v "pediatric" ] ;
+     fhir:display [ fhir:v "Pediátrico" ] ;
+     fhir:definition [ fhir:v "Uso em população pediátrica" ]
+  ] [
+     fhir:code [ fhir:v "geriatric" ] ;
+     fhir:display [ fhir:v "Geriátrico" ] ;
+     fhir:definition [ fhir:v "Uso em população geriátrica" ]
+  ] [
+     fhir:code [ fhir:v "renal-impairment" ] ;
+     fhir:display [ fhir:v "Insuficiência Renal" ] ;
+     fhir:definition [ fhir:v "Uso em pacientes com insuficiência renal" ]
+  ] [
+     fhir:code [ fhir:v "hepatic-impairment" ] ;
+     fhir:display [ fhir:v "Insuficiência Hepática" ] ;
+     fhir:definition [ fhir:v "Uso em pacientes com insuficiência hepática" ]
+  ] [
+     fhir:code [ fhir:v "overdose" ] ;
+     fhir:display [ fhir:v "Superdosagem" ] ;
+     fhir:definition [ fhir:v "Informações sobre superdosagem" ]
+  ] [
+     fhir:code [ fhir:v "driving" ] ;
+     fhir:display [ fhir:v "Condução de Veículos" ] ;
+     fhir:definition [ fhir:v "Efeitos sobre capacidade de dirigir" ]
+  ] [
+     fhir:code [ fhir:v "alcohol" ] ;
+     fhir:display [ fhir:v "Álcool" ] ;
+     fhir:definition [ fhir:v "Interação com álcool" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

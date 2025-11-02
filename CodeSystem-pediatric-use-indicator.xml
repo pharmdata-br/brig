@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pediatric-use-indicator"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem pediatric-use-indicator</b></p><a name="pediatric-use-indicator"> </a><a name="hcpediatric-use-indicator"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">pediatric-use-approved<a name="pediatric-use-indicator-pediatric-use-approved"> </a></td><td>Uso Pediátrico Autorizado</td><td>Produto aprovado com indicação específica para uso em população pediátrica</td></tr><tr><td style="white-space:nowrap">pediatric-investigation-plan<a name="pediatric-use-indicator-pediatric-investigation-plan"> </a></td><td>Plano de Investigação Pediátrica</td><td>Possui plano de investigação pediátrica aprovado pela autoridade regulatória</td></tr><tr><td style="white-space:nowrap">pediatric-waiver<a name="pediatric-use-indicator-pediatric-waiver"> </a></td><td>Dispensa de Uso Pediátrico</td><td>Dispensa concedida para estudos ou indicações pediátricas (ex: doença que não ocorre em crianças)</td></tr><tr><td style="white-space:nowrap">pediatric-deferral<a name="pediatric-use-indicator-pediatric-deferral"> </a></td><td>Adiamento de Uso Pediátrico</td><td>Adiamento temporário de requisitos de investigação pediátrica</td></tr><tr><td style="white-space:nowrap">pediatric-formulation<a name="pediatric-use-indicator-pediatric-formulation"> </a></td><td>Formulação Pediátrica</td><td>Formulação especificamente desenvolvida para uso pediátrico (ex: suspensão oral, comprimidos dispersíveis)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/pediatric-use-indicator"/>
+  <version value="0.0.3"/>
+  <name value="PediatricUseIndicator"/>
+  <title value="Indicador de Uso Pediátrico"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Indicadores relacionados a uso pediátrico de produtos medicinais, incluindo requisitos de investigação pediátrica e dispensas"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="pediatric-use-approved"/>
+    <display value="Uso Pediátrico Autorizado"/>
+    <definition value="Produto aprovado com indicação específica para uso em população pediátrica"/>
+  </concept>
+  <concept>
+    <code value="pediatric-investigation-plan"/>
+    <display value="Plano de Investigação Pediátrica"/>
+    <definition value="Possui plano de investigação pediátrica aprovado pela autoridade regulatória"/>
+  </concept>
+  <concept>
+    <code value="pediatric-waiver"/>
+    <display value="Dispensa de Uso Pediátrico"/>
+    <definition value="Dispensa concedida para estudos ou indicações pediátricas (ex: doença que não ocorre em crianças)"/>
+  </concept>
+  <concept>
+    <code value="pediatric-deferral"/>
+    <display value="Adiamento de Uso Pediátrico"/>
+    <definition value="Adiamento temporário de requisitos de investigação pediátrica"/>
+  </concept>
+  <concept>
+    <code value="pediatric-formulation"/>
+    <display value="Formulação Pediátrica"/>
+    <definition value="Formulação especificamente desenvolvida para uso pediátrico (ex: suspensão oral, comprimidos dispersíveis)"/>
+  </concept>
+</CodeSystem>

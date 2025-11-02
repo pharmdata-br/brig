@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="organization-operational-scope-br"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem organization-operational-scope-br</b></p><a name="organization-operational-scope-br"> </a><a name="hcorganization-operational-scope-br"> </a><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">local<a name="organization-operational-scope-br-local"> </a></td><td>Local</td><td>Operação local (municipal)</td></tr><tr><td style="white-space:nowrap">state<a name="organization-operational-scope-br-state"> </a></td><td>Estadual</td><td>Operação estadual</td></tr><tr><td style="white-space:nowrap">regional<a name="organization-operational-scope-br-regional"> </a></td><td>Regional</td><td>Operação em região específica do país</td></tr><tr><td style="white-space:nowrap">national<a name="organization-operational-scope-br-national"> </a></td><td>Nacional</td><td>Operação em todo território nacional</td></tr><tr><td style="white-space:nowrap">international<a name="organization-operational-scope-br-international"> </a></td><td>Internacional</td><td>Operação internacional com atividades no Brasil</td></tr><tr><td style="white-space:nowrap">mercosul<a name="organization-operational-scope-br-mercosul"> </a></td><td>MERCOSUL</td><td>Operação nos países do MERCOSUL</td></tr><tr><td style="white-space:nowrap">latin-america<a name="organization-operational-scope-br-latin-america"> </a></td><td>América Latina</td><td>Operação na América Latina</td></tr><tr><td style="white-space:nowrap">global<a name="organization-operational-scope-br-global"> </a></td><td>Global</td><td>Operação global</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/organization-operational-scope-br"/>
+  <version value="0.0.3"/>
+  <name value="OrganizationOperationalScopeBR"/>
+  <title value="Escopo Operacional de Organização - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-08-02"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Sistema de códigos para escopo geográfico de operação"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="local"/>
+    <display value="Local"/>
+    <definition value="Operação local (municipal)"/>
+  </concept>
+  <concept>
+    <code value="state"/>
+    <display value="Estadual"/>
+    <definition value="Operação estadual"/>
+  </concept>
+  <concept>
+    <code value="regional"/>
+    <display value="Regional"/>
+    <definition value="Operação em região específica do país"/>
+  </concept>
+  <concept>
+    <code value="national"/>
+    <display value="Nacional"/>
+    <definition value="Operação em todo território nacional"/>
+  </concept>
+  <concept>
+    <code value="international"/>
+    <display value="Internacional"/>
+    <definition value="Operação internacional com atividades no Brasil"/>
+  </concept>
+  <concept>
+    <code value="mercosul"/>
+    <display value="MERCOSUL"/>
+    <definition value="Operação nos países do MERCOSUL"/>
+  </concept>
+  <concept>
+    <code value="latin-america"/>
+    <display value="América Latina"/>
+    <definition value="Operação na América Latina"/>
+  </concept>
+  <concept>
+    <code value="global"/>
+    <display value="Global"/>
+    <definition value="Operação global"/>
+  </concept>
+</CodeSystem>

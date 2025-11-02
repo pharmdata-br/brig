@@ -1,0 +1,155 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>MedicinalProductDefinition-dipirona-500mg-comp-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:MedicinalProductDefinition ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;dipirona-500mg-comp&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.meta">fhir:meta</a> [
+<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#instant">fhir:v</a> &quot;2025-08-02T10:00:00Z&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/medicinal-product-definition-br&gt;     ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/StructureDefinition/MedicinalProductDefinition-br&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Dipirona Sódica Neo Química 500mg&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Registro ANVISA:&lt;/strong&gt; 1.0123.4567.001-8&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Forma farmacêutica:&lt;/strong&gt; Comprimidos&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Via de administração:&lt;/strong&gt; Oral&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Dosagem:&lt;/strong&gt; 500mg por comprimido&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Embalagem:&lt;/strong&gt; 20 comprimidos&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Ativo para comercialização&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Classificação:&lt;/strong&gt; Medicamento de venda livre&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Indicações:&lt;/strong&gt; Analgésico e antitérmico&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fabricante:&lt;/strong&gt; Neo Química Brasil&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;BR-NEO-001234&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://www.anvisa.gov.br/registro&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://www.anvisa.gov.br/registro&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1.0123.4567.001-8&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://www.gs1.org/gtin&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://www.gs1.org/gtin&gt;     ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;7891234567890&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.type">fhir:type</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/medicinal-product-type-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;medicamento&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.status">fhir:status</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.combinedPharmaceuticalDoseForm">fhir:combinedPharmaceuticalDoseForm</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://standardterms.edqm.eu&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://standardterms.edqm.eu&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;10219000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tablet&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.route">fhir:route</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://standardterms.edqm.eu&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://standardterms.edqm.eu&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;20053000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Oral use&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.indication">fhir:indication</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Dor e febre&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.legalStatusOfSupply">fhir:legalStatusOfSupply</a> [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/legal-status-supply-br&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;venda-livre&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.classification">fhir:classification</a> ( [
+    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://www.whocc.no/atc&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://www.whocc.no/atc&gt;       ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;N02BB02&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Metamizole sodium&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.marketingStatus">fhir:marketingStatus</a> ( [
+<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.country">fhir:country</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;BR&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.status">fhir:status</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/marketing-status-br&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.dateRange">fhir:dateRange</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2020-03-15&quot;^^xsd:date ]     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.contact.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/organization-contact-purpose&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;regulatory-affairs&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.contact.contact">fhir:contact</a> [
+<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:l</a> fhir:OrganizationANVISASimple/neo-quimica-brasil ;
+<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;OrganizationANVISASimple/neo-quimica-brasil&quot; ]     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">fhir:productName</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dipirona Sódica Neo Química&quot; ] ;
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;commercial&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">fhir:productName</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dipirona Sódica&quot; ] ;
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://farmaco.maxapex.net/brig/fhir/CodeSystem/product-name-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;scientific&quot; ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.characteristic">fhir:characteristic</a> ( [
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.characteristic.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/medicinal-product-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/medicinal-product-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;GenericProduct&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.characteristic.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;GENRL&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;generic&quot; ]       ] )     ]
+  ] ) . # 
+
+</code></pre>
+
+</body>
+</html>

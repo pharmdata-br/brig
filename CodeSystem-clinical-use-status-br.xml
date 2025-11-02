@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="clinical-use-status-br"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: CodeSystem clinical-use-status-br</b></p><a name="clinical-use-status-br"> </a><a name="hcclinical-use-status-br"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p></div><p><b>Propriedades</b></p><p><b>Este sistema de códigos define as seguintes propriedades para os seus conceitos</b></p><table class="grid"><tr><td><b>Nome</b></td><td><b>Código</b></td><td><b>Tipo</b></td><td><b>Descrição</b></td></tr><tr><td>regulatory-impact</td><td>regulatory-impact</td><td>string</td><td>Impacto regulatório</td></tr></table><p><b>Conceitos</b></p><p>Este  sistema de código  define o seguinte código:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td><td><b>regulatory-impact</b></td><td><b>English (English, en)</b></td></tr><tr><td style="white-space:nowrap">active<a name="clinical-use-status-br-active"> </a></td><td>Ativo</td><td>Definição de uso clínico ativa e aplicável</td><td>total</td><td>Active</td></tr><tr><td style="white-space:nowrap">suspended<a name="clinical-use-status-br-suspended"> </a></td><td>Suspenso</td><td>Definição temporariamente suspensa por decisão regulatória ou técnica</td><td>parcial</td><td>Suspended</td></tr><tr><td style="white-space:nowrap">deprecated<a name="clinical-use-status-br-deprecated"> </a></td><td>Depreciado</td><td>Definição depreciada mantida por compatibilidade histórica</td><td>mínimo</td><td>Deprecated</td></tr><tr><td style="white-space:nowrap">under-review<a name="clinical-use-status-br-under-review"> </a></td><td>Em revisão</td><td>Definição sob revisão técnica ou regulatória</td><td>parcial</td><td>Under review</td></tr><tr><td style="white-space:nowrap">pending-approval<a name="clinical-use-status-br-pending-approval"> </a></td><td>Pendente aprovação</td><td>Definição pendente de aprovação regulatória</td><td>nenhum</td><td>Pending approval</td></tr><tr><td style="white-space:nowrap">rejected<a name="clinical-use-status-br-rejected"> </a></td><td>Rejeitado</td><td>Definição rejeitada por não conformidade técnica ou regulatória</td><td>nenhum</td><td>Rejected</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/clinical-use-status-br"/>
+  <version value="0.0.3"/>
+  <name value="ClinicalUseStatusBR"/>
+  <title value="Status de Uso Clínico - Brasil"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-07"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="Status das definições de uso clínico adaptados para o contexto regulatório brasileiro."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."/>
+  <caseSensitive value="true"/>
+  <compositional value="false"/>
+  <versionNeeded value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <property>
+    <code value="regulatory-impact"/>
+    <description value="Impacto regulatório"/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="active"/>
+    <display value="Ativo"/>
+    <definition value="Definição de uso clínico ativa e aplicável"/>
+    <designation>
+      <language value="pt-BR"/>
+      <value value="Ativo"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Active"/>
+    </designation>
+    <property>
+      <code value="regulatory-impact"/>
+      <valueString value="total"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="suspended"/>
+    <display value="Suspenso"/>
+    <definition value="Definição temporariamente suspensa por decisão regulatória ou técnica"/>
+    <designation>
+      <language value="pt-BR"/>
+      <value value="Suspenso"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Suspended"/>
+    </designation>
+    <property>
+      <code value="regulatory-impact"/>
+      <valueString value="parcial"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="deprecated"/>
+    <display value="Depreciado"/>
+    <definition value="Definição depreciada mantida por compatibilidade histórica"/>
+    <designation>
+      <language value="pt-BR"/>
+      <value value="Depreciado"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Deprecated"/>
+    </designation>
+    <property>
+      <code value="regulatory-impact"/>
+      <valueString value="mínimo"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="under-review"/>
+    <display value="Em revisão"/>
+    <definition value="Definição sob revisão técnica ou regulatória"/>
+    <designation>
+      <language value="pt-BR"/>
+      <value value="Em revisão"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Under review"/>
+    </designation>
+    <property>
+      <code value="regulatory-impact"/>
+      <valueString value="parcial"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="pending-approval"/>
+    <display value="Pendente aprovação"/>
+    <definition value="Definição pendente de aprovação regulatória"/>
+    <designation>
+      <language value="pt-BR"/>
+      <value value="Pendente aprovação"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Pending approval"/>
+    </designation>
+    <property>
+      <code value="regulatory-impact"/>
+      <valueString value="nenhum"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="rejected"/>
+    <display value="Rejeitado"/>
+    <definition value="Definição rejeitada por não conformidade técnica ou regulatória"/>
+    <designation>
+      <language value="pt-BR"/>
+      <value value="Rejeitado"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Rejected"/>
+    </designation>
+    <property>
+      <code value="regulatory-impact"/>
+      <valueString value="nenhum"/>
+    </property>
+  </concept>
+</CodeSystem>

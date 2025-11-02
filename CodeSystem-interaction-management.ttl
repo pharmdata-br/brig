@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-management> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "interaction-management"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem interaction-management</b></p><a name=\"interaction-management\"> </a><a name=\"hcinteraction-management\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">avoid-combination<a name=\"interaction-management-avoid-combination\"> </a></td><td>Evitar Combinação</td><td>A combinação deve ser evitada</td></tr><tr><td style=\"white-space:nowrap\">use-alternative<a name=\"interaction-management-use-alternative\"> </a></td><td>Usar Alternativa</td><td>Considerar terapia alternativa</td></tr><tr><td style=\"white-space:nowrap\">monitor-closely<a name=\"interaction-management-monitor-closely\"> </a></td><td>Monitorar Rigorosamente</td><td>Usar com monitoramento clínico rigoroso</td></tr><tr><td style=\"white-space:nowrap\">adjust-dose<a name=\"interaction-management-adjust-dose\"> </a></td><td>Ajustar Dose</td><td>Ajuste de dose pode ser necessário</td></tr><tr><td style=\"white-space:nowrap\">separate-administration<a name=\"interaction-management-separate-administration\"> </a></td><td>Separar Administração</td><td>Administrar em horários diferentes</td></tr><tr><td style=\"white-space:nowrap\">monitor-lab<a name=\"interaction-management-monitor-lab\"> </a></td><td>Monitorar Exames Laboratoriais</td><td>Monitorar parâmetros laboratoriais</td></tr><tr><td style=\"white-space:nowrap\">inform-patient<a name=\"interaction-management-inform-patient\"> </a></td><td>Informar Paciente</td><td>Orientar paciente sobre sinais de alerta</td></tr><tr><td style=\"white-space:nowrap\">no-action-needed<a name=\"interaction-management-no-action-needed\"> </a></td><td>Nenhuma Ação Necessária</td><td>Interação clinicamente não significativa</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-management"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/interaction-management>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "InteractionManagement"] ; # 
+  fhir:title [ fhir:v "Manejo de Interação"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-31"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Estratégias de manejo de interações medicamentosas"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "avoid-combination" ] ;
+     fhir:display [ fhir:v "Evitar Combinação" ] ;
+     fhir:definition [ fhir:v "A combinação deve ser evitada" ]
+  ] [
+     fhir:code [ fhir:v "use-alternative" ] ;
+     fhir:display [ fhir:v "Usar Alternativa" ] ;
+     fhir:definition [ fhir:v "Considerar terapia alternativa" ]
+  ] [
+     fhir:code [ fhir:v "monitor-closely" ] ;
+     fhir:display [ fhir:v "Monitorar Rigorosamente" ] ;
+     fhir:definition [ fhir:v "Usar com monitoramento clínico rigoroso" ]
+  ] [
+     fhir:code [ fhir:v "adjust-dose" ] ;
+     fhir:display [ fhir:v "Ajustar Dose" ] ;
+     fhir:definition [ fhir:v "Ajuste de dose pode ser necessário" ]
+  ] [
+     fhir:code [ fhir:v "separate-administration" ] ;
+     fhir:display [ fhir:v "Separar Administração" ] ;
+     fhir:definition [ fhir:v "Administrar em horários diferentes" ]
+  ] [
+     fhir:code [ fhir:v "monitor-lab" ] ;
+     fhir:display [ fhir:v "Monitorar Exames Laboratoriais" ] ;
+     fhir:definition [ fhir:v "Monitorar parâmetros laboratoriais" ]
+  ] [
+     fhir:code [ fhir:v "inform-patient" ] ;
+     fhir:display [ fhir:v "Informar Paciente" ] ;
+     fhir:definition [ fhir:v "Orientar paciente sobre sinais de alerta" ]
+  ] [
+     fhir:code [ fhir:v "no-action-needed" ] ;
+     fhir:display [ fhir:v "Nenhuma Ação Necessária" ] ;
+     fhir:definition [ fhir:v "Interação clinicamente não significativa" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

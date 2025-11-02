@@ -1,0 +1,92 @@
+{
+  "resourceType" : "ClinicalUseDefinition",
+  "id" : "paracetamol-clinical-indication-example",
+  "meta" : {
+    "profile" : ["https://idmp-br.github.io/brig-idmp-brasil/StructureDefinition/clinical-use-definition-br"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ClinicalUseDefinition paracetamol-clinical-indication-example</b></p><a name=\"paracetamol-clinical-indication-example\"> </a><a name=\"hcparacetamol-clinical-indication-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-clinical-use-definition-br.html\">Definição de Uso Clínico - Brasil</a></p></div><p><b>identifier</b>: <code>http://farmaco.maxapex.net/brig/fhir/NamingSystem/clinical-use-id</code>/BRIG-CU-PAR-001</p><p><b>type</b>: Indication</p><p><b>category</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br cbaf}\">cbaf</span>, <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br otc}\">otc</span>, <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br pediatric}\">pediatric</span></p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-paracetamol-750mg-example.html\">MedicinalProductDefinition: identifier = http://farmaco.maxapex.net/brig/fhir/CodeSystem/mpid#BRIG-MPID-PAR-750,http://www.anvisa.gov.br/registro#100000000002; type = Medicamento; domain = Human use; status = Active; combinedPharmaceuticalDoseForm = Tablet; route = Oral; legalStatusOfSupply = Venda Livre; classification = paracetamol</a></p><p><b>status</b>: <span title=\"Códigos:{http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br active}\">active</span></p><blockquote><p><b>indication</b></p><h3>DiseaseSymptomProcedures</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://hl7.org/fhir/sid/icd-10 R50.9}\">Febre não especificada</span></td></tr></table><h3>DiseaseStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://snomed.info/sct 255212004}\">Febre aguda</span></td></tr></table><h3>Comorbidities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://hl7.org/fhir/sid/icd-10 R52.9}\">Dor não especificada</span></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://hl7.org/fhir/sid/icd-10 G43.9}\">Enxaqueca não especificada</span></td></tr></table><h3>IntendedEffects</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://snomed.info/sct 86799002}\">Fever reduction (procedure)</span></td></tr></table><p><b>duration</b>: 3 dias</p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://farmaco.maxapex.net/brig/fhir/NamingSystem/clinical-use-id",
+    "value" : "BRIG-CU-PAR-001"
+  }],
+  "type" : "indication",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br",
+      "code" : "cbaf"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br",
+      "code" : "otc"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-category-br",
+      "code" : "pediatric"
+    }]
+  }],
+  "subject" : [{
+    "reference" : "MedicinalProductDefinition/paracetamol-750mg-example"
+  }],
+  "status" : {
+    "coding" : [{
+      "system" : "http://farmaco.maxapex.net/brig/fhir/CodeSystem/clinical-use-status-br",
+      "code" : "active"
+    }]
+  },
+  "indication" : {
+    "diseaseSymptomProcedure" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "R50.9",
+          "display" : "Febre não especificada"
+        }]
+      }
+    },
+    "diseaseStatus" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "255212004",
+          "display" : "Acute (qualifier value)"
+        }],
+        "text" : "Febre aguda"
+      }
+    },
+    "comorbidity" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "R52.9",
+          "display" : "Dor não especificada"
+        }]
+      }
+    },
+    {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "G43.9",
+          "display" : "Enxaqueca não especificada"
+        }]
+      }
+    }],
+    "intendedEffect" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "86799002",
+          "display" : "Fever reduction (procedure)"
+        }]
+      }
+    },
+    "durationString" : "3 dias"
+  }
+}

@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-authority> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "substance-name-authority"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem substance-name-authority</b></p><a name=\"substance-name-authority\"> </a><a name=\"hcsubstance-name-authority\"> </a><p>Este  sistema de código  define o seguinte código:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">IUPAC<a name=\"substance-name-authority-IUPAC\"> </a></td><td>IUPAC</td><td>International Union of Pure and Applied Chemistry</td></tr><tr><td style=\"white-space:nowrap\">WHO-INN<a name=\"substance-name-authority-WHO-INN\"> </a></td><td>WHO INN</td><td>World Health Organization - International Nonproprietary Names</td></tr><tr><td style=\"white-space:nowrap\">USP<a name=\"substance-name-authority-USP\"> </a></td><td>USP</td><td>United States Pharmacopeia</td></tr><tr><td style=\"white-space:nowrap\">EP<a name=\"substance-name-authority-EP\"> </a></td><td>EP</td><td>European Pharmacopoeia</td></tr><tr><td style=\"white-space:nowrap\">JP<a name=\"substance-name-authority-JP\"> </a></td><td>JP</td><td>Japanese Pharmacopoeia</td></tr><tr><td style=\"white-space:nowrap\">BP<a name=\"substance-name-authority-BP\"> </a></td><td>BP</td><td>British Pharmacopoeia</td></tr><tr><td style=\"white-space:nowrap\">FB<a name=\"substance-name-authority-FB\"> </a></td><td>Farmacopeia Brasileira</td><td>Farmacopeia Brasileira - ANVISA</td></tr><tr><td style=\"white-space:nowrap\">ANVISA<a name=\"substance-name-authority-ANVISA\"> </a></td><td>ANVISA</td><td>Agência Nacional de Vigilância Sanitária</td></tr><tr><td style=\"white-space:nowrap\">DCB<a name=\"substance-name-authority-DCB\"> </a></td><td>DCB</td><td>Denominação Comum Brasileira</td></tr><tr><td style=\"white-space:nowrap\">CAS<a name=\"substance-name-authority-CAS\"> </a></td><td>CAS</td><td>Chemical Abstracts Service</td></tr><tr><td style=\"white-space:nowrap\">USAN<a name=\"substance-name-authority-USAN\"> </a></td><td>USAN</td><td>United States Adopted Names</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 0 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "draft" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"^^xsd:anyURI ;
+           fhir:l <https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-authority"^^xsd:anyURI ;
+     fhir:l <https://idmp-br.github.io/brig-idmp-brasil/CodeSystem/substance-name-authority>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.3"] ; # 
+  fhir:name [ fhir:v "SubstanceNameAuthority"] ; # 
+  fhir:title [ fhir:v "Autoridade de Nomenclatura de Substâncias"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "IDMP Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "IDMP Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "eugenio@farmaco.io" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://idmp-br.github.io/brig-idmp-brasil" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Organizações/autoridades que atribuem nomes oficiais a substâncias"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2025 Farmaco.io. Este trabalho está licenciado sob a MIT License. FHIR® é marca registrada da HL7 International, usada com permissão."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "IUPAC" ] ;
+     fhir:display [ fhir:v "IUPAC" ] ;
+     fhir:definition [ fhir:v "International Union of Pure and Applied Chemistry" ]
+  ] [
+     fhir:code [ fhir:v "WHO-INN" ] ;
+     fhir:display [ fhir:v "WHO INN" ] ;
+     fhir:definition [ fhir:v "World Health Organization - International Nonproprietary Names" ]
+  ] [
+     fhir:code [ fhir:v "USP" ] ;
+     fhir:display [ fhir:v "USP" ] ;
+     fhir:definition [ fhir:v "United States Pharmacopeia" ]
+  ] [
+     fhir:code [ fhir:v "EP" ] ;
+     fhir:display [ fhir:v "EP" ] ;
+     fhir:definition [ fhir:v "European Pharmacopoeia" ]
+  ] [
+     fhir:code [ fhir:v "JP" ] ;
+     fhir:display [ fhir:v "JP" ] ;
+     fhir:definition [ fhir:v "Japanese Pharmacopoeia" ]
+  ] [
+     fhir:code [ fhir:v "BP" ] ;
+     fhir:display [ fhir:v "BP" ] ;
+     fhir:definition [ fhir:v "British Pharmacopoeia" ]
+  ] [
+     fhir:code [ fhir:v "FB" ] ;
+     fhir:display [ fhir:v "Farmacopeia Brasileira" ] ;
+     fhir:definition [ fhir:v "Farmacopeia Brasileira - ANVISA" ]
+  ] [
+     fhir:code [ fhir:v "ANVISA" ] ;
+     fhir:display [ fhir:v "ANVISA" ] ;
+     fhir:definition [ fhir:v "Agência Nacional de Vigilância Sanitária" ]
+  ] [
+     fhir:code [ fhir:v "DCB" ] ;
+     fhir:display [ fhir:v "DCB" ] ;
+     fhir:definition [ fhir:v "Denominação Comum Brasileira" ]
+  ] [
+     fhir:code [ fhir:v "CAS" ] ;
+     fhir:display [ fhir:v "CAS" ] ;
+     fhir:definition [ fhir:v "Chemical Abstracts Service" ]
+  ] [
+     fhir:code [ fhir:v "USAN" ] ;
+     fhir:display [ fhir:v "USAN" ] ;
+     fhir:definition [ fhir:v "United States Adopted Names" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

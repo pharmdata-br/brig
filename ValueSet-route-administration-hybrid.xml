@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="route-administration-hybrid"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet route-administration-hybrid</b></p><a name="route-administration-hybrid"> </a><a name="hcroute-administration-hybrid"> </a><p>Este conjunto de valores inclui códigos baseados nas seguintes regras:</p><ul><li>Incluir códigos de<code>http://standardterms.edqm.eu</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span> onde concept  descende de ROA</li><li>Incluir códigos de<code>http://www.meddra.org</code><span title="Version is not explicity stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span> onde concept  descende de 10201100</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://idmp-br.github.io/brig-idmp-brasil/ImplementationGuide/brig.idmp.brazil"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="https://idmp-br.github.io/brig-idmp-brasil/ValueSet/route-administration-hybrid"/>
+  <version value="0.0.3"/>
+  <name value="RouteAdministrationHybrid"/>
+  <title value="Vias de Administração (EDQM + MedDRA)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-30"/>
+  <publisher value="IDMP Brasil"/>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="IDMP Brasil"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eugenio@farmaco.io"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://idmp-br.github.io/brig-idmp-brasil"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet híbrido para vias de administração que combina códigos EDQM Standard Terms (padrão internacional IDMP) com códigos MedDRA. Fornece alternativa ao SNOMED CT Route Codes para contexto brasileiro."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Fornecer códigos padronizados para vias de administração compatíveis com FHIR R5 MedicinalProductDefinition.route e AdministrableProductDefinition.routeOfAdministration.code, usando terminologia internacional acessível no Brasil"/>
+  <copyright value="EDQM Standard Terms são mantidos pelo European Directorate for the Quality of Medicines &amp; HealthCare. MedDRA® é marca registrada da IFPMA."/>
+  <compose>
+    <include>
+      <system value="http://standardterms.edqm.eu"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="ROA"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://www.meddra.org"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="10201100"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>
